@@ -18,7 +18,6 @@ export {
 	Google,
 	X,
 	Logo,
-	LogoIcon,
 	Nvdia,
 	GithubFull,
 	Supabase,
