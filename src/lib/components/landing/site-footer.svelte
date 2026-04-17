@@ -2,7 +2,7 @@
 	import { Button } from "$lib/components/ui/button";
 	import { DecorIcon } from "$lib/components/ui/decor-icon";
 	import { FullWidthDivider } from "$lib/components/ui/full-width-divider";
-	import { Github, X as XLogo } from "$lib/svgs";
+	import { GithubIcon, XIcon } from "$lib/svgs/social/";
 	import { MoonIcon, SunIcon } from "@lucide/svelte";
 	import { mode, toggleMode } from "mode-watcher";
 	import { StripedPattern } from "../magic/striped-pattern";
@@ -97,9 +97,9 @@
 									variant="ghost"
 								>
 									{#if social.id === "x"}
-										<XLogo class="size-4" />
+										<XIcon class="size-4" />
 									{:else}
-										<Github class="size-4" />
+										<GithubIcon class="size-4" />
 									{/if}
 								</Button>
 							{/each}

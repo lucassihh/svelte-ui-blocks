@@ -192,10 +192,6 @@
 	.container {
 		@apply mx-auto w-full max-w-7xl;
 	}
-
-	.cpx {
-		@apply px-4 lg:px-6;
-	}
 }
 
 number-flow-svelte::part(suffix) {

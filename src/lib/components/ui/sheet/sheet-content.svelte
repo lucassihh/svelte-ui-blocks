@@ -7,7 +7,6 @@
 	import XIcon from '@lucide/svelte/icons/x';
 	import { cn, type WithoutChildrenOrChild } from "$lib/utils.js";
 	import type { ComponentProps } from "svelte";
-
 	let {
 		ref = $bindable(null),
 		class: className,
@@ -133,7 +132,9 @@
 		{...restProps}
 	>
 		{@render children?.()}
-		{#if showCloseButton}
+	   
+       <!-- Close Btn -->
+    	{#if showCloseButton}
 			<SheetPrimitive.Close data-slot="sheet-close">
 				{#snippet child({ props })}
 					<Button 

@@ -8,7 +8,7 @@
 		LinkedinIcon,
 		YoutubeIcon,
 		type Icon
-	} from "@lucide/svelte";
+	} from "$lib/svgs/social/";
 
 	type FooterLink = {
 		title: string;

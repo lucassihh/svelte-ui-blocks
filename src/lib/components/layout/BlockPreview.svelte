@@ -61,7 +61,7 @@
 
 	let ref: PaneAPI | undefined = $state(undefined);
 	let isMobile = new IsMobile();
-	let large = new MediaQuery("min-width: 1024px");
+	let large = new MediaQuery("min-width: 768px");
 	let iframeRef = $state<HTMLIFrameElement | null>(null);
 
 	type ScopedTheme = "veil" | "mist";

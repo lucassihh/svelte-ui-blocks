@@ -5,19 +5,25 @@
   
   // Icons
   import {
-  CalendarIcon, 
-  HouseIcon,
-  InboxIcon,
-  SearchIcon,
-  SettingsIcon,
-  XIcon,
-  MenuIcon} from "@lucide/svelte/icons";
+    MoonIcon, 
+    SunIcon,
+    MenuIcon,
+    XIcon
+    } from "@lucide/svelte/icons";
   
   // Data
   import { landingNavLinks, landingSocialLinks } from "./config";
+  
+  // State and Binds
   let open = $state(false);
-  let showCloseButton = true;
+  let showCloseButton = false;
   let side = "left";
+  
+  // Get Current Theme 
+  import { mode, toggleMode } from "mode-watcher";
+  function themeLabel() {
+	return mode.current === "dark" ? "Switch to light mode" : "Switch to dark mode";
+  }
 </script>
  
 <Sheet.Root bind:open>
@@ -34,19 +40,35 @@
     bind:side
   >
     <!-- Header -->
-    <Sheet.Header class="relative">
-      <Sheet.Title>Menu</Sheet.Title>
+    <Sheet.Header class="flex flex-row items-center justify-between">
+      <Sheet.Title class="text-xl font-medium">Menu</Sheet.Title>
+      <!-- ThemeToggle Btn -->
+      <div>
+         <Button
+           aria-label={themeLabel()}
+           size="icon-sm"
+           title={themeLabel()}
+           variant="secondary"
+           onclick={toggleMode}
+         >
+           {#if mode.current === "dark"}
+             <SunIcon class="size-4" />
+            {:else}
+             <MoonIcon class="size-4" />
+           {/if}
+         </Button>
+      </div>
     </Sheet.Header>
     
     <!-- Main Content -->
-    <main class="p-4">
-      <div class="flex flex-col gap-2">
+    <main class="pl-2">
+      <div class="flex flex-col">
         <!-- Links -->   
         {#each landingNavLinks as link}
           <a 
             href={link.href}
             onclick={() => {open = false;}}
-            class={buttonVariants({ variant: "ghost" }) + " justify-start gap-3 w-full"}
+            class={buttonVariants({ variant: "ghost" }) + " justify-start gap-2 w-full"}
           >
             <span>{link.label}</span>
           </a>
@@ -55,10 +77,11 @@
     </main>
     
     <!-- Footer -->
-    <Sheet.Footer class="hidden">
+    <Sheet.Footer>
+      <!-- Close Btn Footer -->
       <Sheet.Close 
-       class={buttonVariants({ variant: "outline" })}>
-        Close
+       class={buttonVariants({ variant: "outline"})}>
+       Close
       </Sheet.Close>
     </Sheet.Footer>
     

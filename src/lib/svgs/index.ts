@@ -2,7 +2,6 @@ import Github from "./github.svelte";
 import Google from "./google.svelte";
 import X from "./x.svelte";
 import Logo from "./logo.svelte";
-import LogoIcon from "./logo-icon.svelte";
 import Nvdia from "./nvdia.svelte";
 import GithubFull from "./github-full.svelte";
 import Supabase from "./supabase.svelte";

@@ -3,13 +3,15 @@
 	import { cn } from "$lib/utils";
 	import Logo from "$lib/svgs/logo.svelte";
 	import XLogo from "$lib/svgs/x.svelte";
+    import { SvelteDate } from 'svelte/reactivity';
 	import {
 		FacebookIcon,
 		GithubIcon,
 		InstagramIcon,
 		LinkedinIcon,
 		YoutubeIcon
-	} from "@lucide/svelte";
+	} from "$lib/svgs/social/";
+    
 	import type { Component } from "svelte";
 
 	type FooterLink = {
@@ -102,7 +104,7 @@
 		}
 	];
 
-	const currentYear = new Date().getFullYear();
+	const currentYear = new SvelteDate().getFullYear();
 </script>
 
 <footer class="relative">
