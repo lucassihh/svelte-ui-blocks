@@ -530,9 +530,7 @@
 			class="relative mx-auto max-w-7xl px-4 lg:px-0"
 			style={`--preview-min-height: ${MIN_PREVIEW_HEIGHT}px;`}
 		>
-			<div
-				class={cn("z-40 bg-white dark:bg-background", mode === "code" && "hidden")}
-			>
+			<div class={cn("z-40 bg-white dark:bg-background", mode === "code" && "hidden")}>
 				{#if shouldRenderInIframe && previewHref}
 					<PaneGroup direction="horizontal">
 						<Pane

@@ -4,16 +4,9 @@
 	"title": "Header Two",
 	"type": "registry:block",
 	"description": "A framed sticky header with tighter proportions and a softer product shell.",
-	"dependencies": [
-		"@lucide/svelte"
-	],
-	"devDependencies": [
-		"@lucide/svelte@^0.577.0"
-	],
-	"registryDependencies": [
-		"button",
-		"./portal.json"
-	],
+	"dependencies": ["@lucide/svelte"],
+	"devDependencies": ["@lucide/svelte@^0.577.0"],
+	"registryDependencies": ["button", "./portal.json"],
 	"files": [
 		{
 			"content": "<script lang=\"ts\">\r\n\timport { Button } from \"$lib/components/ui/button\";\r\n\timport { createScroll } from \"$lib/hooks/use-scroll.svelte\";\r\n\timport Logo from \"$lib/svgs/logo.svelte\";\r\n\timport { cn } from \"$UTILS$\";\r\n\timport MobileNav from \"./mobile-nav.svelte\";\r\n\timport { navLinks } from \"./nav-links\";\r\n\tlet scroll = createScroll(10);\r\n</script>\r\n\r\n<header\r\n\tclass={cn(\r\n\t\t\"sticky top-0 z-50 mx-auto w-full max-w-4xl border-b border-transparent md:rounded-md md:border md:transition-all md:ease-out\",\r\n\t\tscroll.scrolled &&\r\n\t\t\t\"border-border bg-background/95 backdrop-blur-sm supports-backdrop-filter:bg-background/50 md:top-2 md:max-w-3xl md:shadow\"\r\n\t)}\r\n>\r\n\t<nav\r\n\t\tclass={cn(\r\n\t\t\t\"flex h-14 w-full items-center justify-between px-4 md:h-12 md:transition-all md:ease-out\",\r\n\t\t\tscroll.scrolled && \"md:px-2\"\r\n\t\t)}\r\n\t>\r\n\t\t<a class=\"rounded-md p-2 hover:bg-muted dark:hover:bg-muted/50\" href=\"/\">\r\n\t\t\t<Logo class=\"h-4\" />\r\n\t\t</a>\r\n\t\t<div class=\"hidden items-center gap-2 md:flex\">\r\n\t\t\t<div>\r\n\t\t\t\t{#each navLinks as { label, href }}\r\n\t\t\t\t\t<Button size=\"sm\" variant=\"ghost\" {href}>\r\n\t\t\t\t\t\t{label}\r\n\t\t\t\t\t</Button>\r\n\t\t\t\t{/each}\r\n\t\t\t</div>\r\n\t\t\t<Button size=\"sm\" variant=\"outline\">Sign In</Button>\r\n\t\t\t<Button size=\"sm\">Get Started</Button>\r\n\t\t</div>\r\n\t\t<MobileNav />\r\n\t</nav>\r\n</header>\r\n",

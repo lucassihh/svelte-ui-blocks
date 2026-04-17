@@ -4,12 +4,8 @@
 	"title": "Hero Three",
 	"type": "registry:block",
 	"description": "A modern hero layout with mega-nav header, device mockup spotlight, and compact logo grid.",
-	"dependencies": [
-		"@lucide/svelte"
-	],
-	"devDependencies": [
-		"@lucide/svelte@^0.577.0"
-	],
+	"dependencies": ["@lucide/svelte"],
+	"devDependencies": ["@lucide/svelte@^0.577.0"],
 	"registryDependencies": [
 		"button",
 		"./logo-cloud-five.json",

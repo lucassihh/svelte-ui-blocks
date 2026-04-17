@@ -4,16 +4,9 @@
 	"title": "Header One",
 	"type": "registry:block",
 	"description": "A clean sticky header with simple nav links and a compact mobile sheet.",
-	"dependencies": [
-		"@lucide/svelte"
-	],
-	"devDependencies": [
-		"@lucide/svelte@^0.577.0"
-	],
-	"registryDependencies": [
-		"button",
-		"./portal.json"
-	],
+	"dependencies": ["@lucide/svelte"],
+	"devDependencies": ["@lucide/svelte@^0.577.0"],
+	"registryDependencies": ["button", "./portal.json"],
 	"files": [
 		{
 			"content": "<script lang=\"ts\">\r\n\timport { Button } from \"$lib/components/ui/button\";\r\n\timport { createScroll } from \"$lib/hooks/use-scroll.svelte\";\r\n\timport Logo from \"$lib/svgs/logo.svelte\";\r\n\timport { cn } from \"$UTILS$\";\r\n\timport MobileNav from \"./mobile-nav.svelte\";\r\n\timport { navLinks } from \"./nav-links\";\r\n\r\n\tlet scroll = createScroll(10);\r\n</script>\r\n\r\n<header\r\n\tclass={cn(\r\n\t\t\"sticky top-0 z-50 w-full border-b border-transparent\",\r\n\t\tscroll.scrolled &&\r\n\t\t\t\"border-border bg-background/95 backdrop-blur-sm supports-backdrop-filter:bg-background/50\"\r\n\t)}\r\n>\r\n\t<nav class=\"mx-auto flex h-14 w-full max-w-5xl items-center justify-between px-4\">\r\n\t\t<a class=\"w-fit rounded-md p-2 hover:bg-muted dark:hover:bg-muted/50\" href=\"/\">\r\n\t\t\t<Logo class=\"h-4\" />\r\n\t\t</a>\r\n\t\t<div class=\"hidden items-center gap-2 md:flex\">\r\n\t\t\t{#each navLinks as link}\r\n\t\t\t\t<Button href={link.href} size=\"sm\" variant=\"ghost\">\r\n\t\t\t\t\t{link.label}\r\n\t\t\t\t</Button>\r\n\t\t\t{/each}\r\n\t\t\t<Button size=\"sm\" variant=\"outline\">Sign In</Button>\r\n\t\t\t<Button size=\"sm\">Get Started</Button>\r\n\t\t</div>\r\n\t\t<MobileNav />\r\n\t</nav>\r\n</header>\r\n",

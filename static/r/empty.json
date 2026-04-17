@@ -3,9 +3,7 @@
 	"name": "empty",
 	"title": "Empty",
 	"type": "registry:block",
-	"devDependencies": [
-		"tailwind-variants@^3.2.2"
-	],
+	"devDependencies": ["tailwind-variants@^3.2.2"],
 	"files": [
 		{
 			"content": "<script lang=\"ts\">\n\timport { cn, type WithElementRef } from \"$UTILS$.js\";\n\timport type { HTMLAttributes } from \"svelte/elements\";\n\n\tlet {\n\t\tref = $bindable(null),\n\t\tclass: className,\n\t\tchildren,\n\t\t...restProps\n\t}: WithElementRef<HTMLAttributes<HTMLDivElement>> = $props();\n</script>\n\n<div\n\tbind:this={ref}\n\tdata-slot=\"empty\"\n\tclass={cn(\n\t\t\"gap-4 rounded-xl border-dashed p-6 flex w-full min-w-0 flex-1 flex-col items-center justify-center text-center text-balance\",\n\t\tclassName\n\t)}\n\t{...restProps}\n>\n\t{@render children?.()}\n</div>\n",

@@ -201,7 +201,6 @@ number-flow-svelte::part(suffix) {
 	/* color: var(--muted); */
 }
 
-
 /* Scroll Fade Effect  */
 @layer base {
 	@keyframes show-top-mask {
@@ -228,10 +227,6 @@ number-flow-svelte::part(suffix) {
 		}
 	}
 }
-
-
-
-
 
 @property --top-mask-height {
 	syntax: "<length>";

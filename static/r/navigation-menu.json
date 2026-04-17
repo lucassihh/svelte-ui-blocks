@@ -3,10 +3,7 @@
 	"name": "navigation-menu",
 	"title": "Navigation menu",
 	"type": "registry:block",
-	"dependencies": [
-		"bits-ui",
-		"@lucide/svelte"
-	],
+	"dependencies": ["bits-ui", "@lucide/svelte"],
 	"devDependencies": [
 		"bits-ui@^2.16.3",
 		"@internationalized/date@^3.12.0",

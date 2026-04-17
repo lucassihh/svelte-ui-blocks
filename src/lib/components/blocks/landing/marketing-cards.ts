@@ -133,5 +133,5 @@ export const marketingCards: MarketingCardConfig[] = [
 		count: integrationBlocks.length,
 		countLabel: formatBlockLabel(integrationBlocks.length),
 		previewComponent: IntegrationsPreview
-	},
+	}
 ];

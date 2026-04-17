@@ -26,10 +26,10 @@
 </script>
 
 <MetaTags
-	title={title}
+	{title}
 	description={desc}
-	titleTemplate={titleTemplate}
-	canonical={canonical}
+	{titleTemplate}
+	{canonical}
 	openGraph={{
 		type: "website",
 		title: fullTitle,

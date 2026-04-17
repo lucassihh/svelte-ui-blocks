@@ -4,16 +4,9 @@
 	"title": "Testimonial Three",
 	"type": "registry:block",
 	"description": "A three-card testimonial grid with decorative corners, lifted middle emphasis, and richer profile metadata.",
-	"dependencies": [
-		"@lucide/svelte"
-	],
-	"devDependencies": [
-		"@lucide/svelte@^0.577.0"
-	],
-	"registryDependencies": [
-		"avatar",
-		"./decor-icon.json"
-	],
+	"dependencies": ["@lucide/svelte"],
+	"devDependencies": ["@lucide/svelte@^0.577.0"],
+	"registryDependencies": ["avatar", "./decor-icon.json"],
 	"files": [
 		{
 			"content": "<script lang=\"ts\">\n\timport TestimonialCard from \"./testimonial-card.svelte\";\n\n\ttype Testimonial = {\n\t\tquote: string;\n\t\tname: string;\n\t\trole: string;\n\t\tcompany: string;\n\t\timage: string;\n\t};\n\tlet testimonials: Testimonial[] = [\n\t\t{\n\t\t\tquote: \"We just acquired Efferd for 3 gazillion dollars. We're calling it iEfferd. It's our best product yet.\",\n\t\t\timage: \"https://unavatar.io/x/tim_cook\",\n\t\t\tname: \"Tim Cook\",\n\t\t\trole: \"CEO\",\n\t\t\tcompany: \"Apple\"\n\t\t},\n\t\t{\n\t\t\tquote: \"I'm considering shipping Efferd components with Prime delivery. 2-day shipping on beautiful UIs? Done.\",\n\t\t\timage: \"https://unavatar.io/x/JeffBezos\",\n\t\t\tname: \"Jeff Bezos\",\n\t\t\trole: \"Founder\",\n\t\t\tcompany: \"Amazon\"\n\t\t},\n\t\t{\n\t\t\tquote: \"We're rewriting OpenAI's entire frontend in Efferd. The AGI told us it's the only logical choice.\",\n\t\t\timage: \"https://unavatar.io/x/sama\",\n\t\t\tname: \"Sam Altman\",\n\t\t\trole: \"CEO\",\n\t\t\tcompany: \"OpenAI\"\n\t\t}\n\t];\n</script>\n\n<div class=\"mx-auto -mt-10 grid w-full max-w-5xl gap-8 md:grid-cols-3 md:gap-6\">\n\t{#each testimonials as testimonial, index}\n\t\t<TestimonialCard {index} {testimonial} />\n\t{/each}\n</div>\n",

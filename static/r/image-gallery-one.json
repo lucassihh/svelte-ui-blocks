@@ -4,12 +4,8 @@
 	"title": "Image Gallery One",
 	"type": "registry:block",
 	"description": "A responsive editorial gallery with staggered aspect ratios, lazy-loaded media, and a clean masonry-style rhythm.",
-	"dependencies": [
-		"motion-sv"
-	],
-	"registryDependencies": [
-		"aspect-ratio"
-	],
+	"dependencies": ["motion-sv"],
+	"registryDependencies": ["aspect-ratio"],
 	"files": [
 		{
 			"content": "<script lang=\"ts\">\n\timport LazyImage from \"./lazy-image.svelte\";\n\n\ttype GalleryImage = {\n\t\tid: string;\n\t\talt: string;\n\t\tsrc: string;\n\t\tfallback: string;\n\t\tratio: number;\n\t};\n\n\tfunction getOrientation(column: number, index: number) {\n\t\tconst seed = Math.sin((column + 1) * 97 + (index + 1) * 131) * 10_000;\n\t\treturn seed - Math.floor(seed) > 0.5;\n\t}\n\n\tfunction createImage(column: number, index: number): GalleryImage {\n\t\tconst isPortrait = getOrientation(column, index);\n\t\tconst width = isPortrait ? 1080 : 1920;\n\t\tconst height = isPortrait ? 1920 : 1080;\n\n\t\treturn {\n\t\t\tid: `${column}-${index}`,\n\t\t\talt: `Image ${column}-${index}`,\n\t\t\tfallback: `https://placehold.co/${width}x${height}/`,\n\t\t\tratio: isPortrait ? 9 / 16 : 16 / 9,\n\t\t\tsrc: `https://picsum.photos/seed/${column}-${index}/${width}/${height}`\n\t\t};\n\t}\n\n\tconst columns = Array.from({ length: 4 }, (_, column) =>\n\t\tArray.from({ length: 8 }, (_, index) => createImage(column, index))\n\t);\n</script>\n\n<section class=\"relative flex min-h-screen w-full flex-col items-center justify-center px-4 py-10\">\n\t<div\n\t\tclass=\"mx-auto grid w-full max-w-5xl grid-cols-1 gap-4 sm:grid-cols-2 md:grid-cols-4 md:gap-6\"\n\t>\n\t\t{#each columns as column, columnIndex (columnIndex)}\n\t\t\t<div class=\"grid gap-4\">\n\t\t\t\t{#each column as image (image.id)}\n\t\t\t\t\t<LazyImage\n\t\t\t\t\t\talt={image.alt}\n\t\t\t\t\t\tcontainerClassName=\"rounded-xl\"\n\t\t\t\t\t\tfallback={image.fallback}\n\t\t\t\t\t\tinView={true}\n\t\t\t\t\t\tratio={image.ratio}\n\t\t\t\t\t\tsrc={image.src}\n\t\t\t\t\t/>\n\t\t\t\t{/each}\n\t\t\t</div>\n\t\t{/each}\n\t</div>\n</section>\n",

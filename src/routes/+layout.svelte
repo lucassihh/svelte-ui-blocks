@@ -14,13 +14,11 @@
 	const keys = new PressedKeys();
 	keys.onKeys(["d"], () => {
 		console.log("open command palette");
-		toggleMode()
+		toggleMode();
 	});
-    
-    // Sidebar
-    import * as Sidebar from "$lib/components/ui/sidebar/index.js";
-    
-    
+
+	// Sidebar
+	import * as Sidebar from "$lib/components/ui/sidebar/index.js";
 </script>
 
 <svelte:head>
@@ -35,20 +33,19 @@
 		{@render children()}
 	</div>
 {:else}
-   
-   <Sidebar.Provider>
-	<div class="relative supports-[overflow:clip]:overflow-clip dark:bg-background w-full">
-  	<SiteHeader />
-		<main
-			class={cn(
-				"relative container grow",
-				"before:absolute before:-inset-y-20 before:-left-px before:z-1 before:border-dashed before:border-primary/20 xl:before:border-l",
-				"after:absolute after:-inset-y-20 after:-right-px after:z-1 after:border-dashed after:border-primary/20 xl:after:border-r"
-			)}
-		>
-			{@render children()}
-		</main>
-		<SiteFooter />
-	</div>
-   </Sidebar.Provider>
+	<Sidebar.Provider>
+		<div class="relative w-full supports-[overflow:clip]:overflow-clip dark:bg-background">
+			<SiteHeader />
+			<main
+				class={cn(
+					"relative container grow",
+					"before:absolute before:-inset-y-20 before:-left-px before:z-1 before:border-dashed before:border-primary/20 xl:before:border-l",
+					"after:absolute after:-inset-y-20 after:-right-px after:z-1 after:border-dashed after:border-primary/20 xl:after:border-r"
+				)}
+			>
+				{@render children()}
+			</main>
+			<SiteFooter />
+		</div>
+	</Sidebar.Provider>
 {/if}

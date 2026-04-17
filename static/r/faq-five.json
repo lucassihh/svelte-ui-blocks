@@ -4,12 +4,8 @@
 	"title": "FAQ Five",
 	"type": "registry:block",
 	"description": "A searchable FAQ page with category filters, empty state handling, and structured dividers.",
-	"dependencies": [
-		"@lucide/svelte"
-	],
-	"devDependencies": [
-		"@lucide/svelte@^0.577.0"
-	],
+	"dependencies": ["@lucide/svelte"],
+	"devDependencies": ["@lucide/svelte@^0.577.0"],
 	"registryDependencies": [
 		"button",
 		"accordion",

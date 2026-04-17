@@ -4,12 +4,8 @@
 	"title": "Hero Two",
 	"type": "registry:block",
 	"description": "A framed product hero with a floating screen, structured header, and bordered logo section.",
-	"dependencies": [
-		"@lucide/svelte"
-	],
-	"devDependencies": [
-		"@lucide/svelte@^0.577.0"
-	],
+	"dependencies": ["@lucide/svelte"],
+	"devDependencies": ["@lucide/svelte@^0.577.0"],
 	"registryDependencies": [
 		"button",
 		"./decor-icon.json",

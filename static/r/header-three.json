@@ -4,17 +4,9 @@
 	"title": "Header Three",
 	"type": "registry:block",
 	"description": "A richer sticky header with mega-menu navigation and a full mobile fallback.",
-	"dependencies": [
-		"@lucide/svelte"
-	],
-	"devDependencies": [
-		"@lucide/svelte@^0.577.0"
-	],
-	"registryDependencies": [
-		"button",
-		"navigation-menu",
-		"./portal.json"
-	],
+	"dependencies": ["@lucide/svelte"],
+	"devDependencies": ["@lucide/svelte@^0.577.0"],
+	"registryDependencies": ["button", "navigation-menu", "./portal.json"],
 	"files": [
 		{
 			"content": "<script lang=\"ts\">\r\n\timport { Button } from \"$lib/components/ui/button\";\r\n\timport { createScroll } from \"$lib/hooks/use-scroll.svelte\";\r\n\timport Logo from \"$lib/svgs/logo.svelte\";\r\n\timport { cn } from \"$UTILS$\";\r\n\timport DesktopNav from \"./desktop-nav.svelte\";\r\n\timport MobileNav from \"./mobile-nav.svelte\";\r\n\r\n\tlet scroll = createScroll(50);\r\n</script>\r\n\r\n<header\r\n\tclass={cn(\r\n\t\t\"sticky top-0 z-50 w-full border-b border-transparent\",\r\n\t\tscroll.scrolled &&\r\n\t\t\t\"border-border bg-background/95 backdrop-blur-sm supports-backdrop-filter:bg-background/50\"\r\n\t)}\r\n>\r\n\t<nav class=\"mx-auto flex h-14 w-full max-w-5xl items-center justify-between px-4\">\r\n\t\t<div class=\"flex items-center gap-5\">\r\n\t\t\t<a class=\"rounded-lg px-3 py-2.5 hover:bg-muted dark:hover:bg-muted/50\" href=\"/\">\r\n\t\t\t\t<Logo class=\"h-4\" />\r\n\t\t\t</a>\r\n\t\t\t<DesktopNav />\r\n\t\t</div>\r\n\t\t<div class=\"hidden items-center gap-2 md:flex\">\r\n\t\t\t<Button variant=\"outline\">Sign In</Button>\r\n\t\t\t<Button>Get Started</Button>\r\n\t\t</div>\r\n\t\t<MobileNav />\r\n\t</nav>\r\n</header>\r\n",

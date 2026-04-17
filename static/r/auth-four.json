@@ -4,12 +4,8 @@
 	"title": "Auth Four",
 	"type": "registry:block",
 	"description": "A bordered auth layout with divider rails and a gentle email-first continuation flow.",
-	"dependencies": [
-		"@lucide/svelte"
-	],
-	"devDependencies": [
-		"@lucide/svelte@^0.577.0"
-	],
+	"dependencies": ["@lucide/svelte"],
+	"devDependencies": ["@lucide/svelte@^0.577.0"],
 	"registryDependencies": [
 		"button",
 		"./auth-divider.json",

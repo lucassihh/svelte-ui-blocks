@@ -4,17 +4,9 @@
 	"title": "Hero One",
 	"type": "registry:block",
 	"description": "A full hero composition with sticky header, editorial spotlight, and a marquee trust band.",
-	"dependencies": [
-		"@lucide/svelte"
-	],
-	"devDependencies": [
-		"@lucide/svelte@^0.577.0"
-	],
-	"registryDependencies": [
-		"button",
-		"./logo-cloud-three.json",
-		"./portal.json"
-	],
+	"dependencies": ["@lucide/svelte"],
+	"devDependencies": ["@lucide/svelte@^0.577.0"],
+	"registryDependencies": ["button", "./logo-cloud-three.json", "./portal.json"],
 	"files": [
 		{
 			"content": "<script lang=\"ts\">\n\timport HeaderOne from \"$lib/components/efferd/header/header-one/header-one.svelte\";\n\timport Hero from \"./hero.svelte\";\n\timport LogoSection from \"./logo-section.svelte\";\n</script>\n\n<div class=\"flex min-h-screen flex-col\">\n\t<HeaderOne />\n\t<main class=\"grow\">\n\t\t<Hero />\n\t\t<LogoSection />\n\t</main>\n</div>\n",

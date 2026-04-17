@@ -4,12 +4,8 @@
 	"title": "Auth Five",
 	"type": "registry:block",
 	"description": "A split-screen auth experience with animated background paths and broader provider options.",
-	"dependencies": [
-		"@lucide/svelte"
-	],
-	"devDependencies": [
-		"@lucide/svelte@^0.577.0"
-	],
+	"dependencies": ["@lucide/svelte"],
+	"devDependencies": ["@lucide/svelte@^0.577.0"],
 	"registryDependencies": [
 		"button",
 		"./auth-divider.json",

@@ -3,7 +3,7 @@
 	import { cn } from "$lib/utils";
 	import Logo from "$lib/svgs/logo.svelte";
 	import XLogo from "$lib/svgs/x.svelte";
-    import { SvelteDate } from 'svelte/reactivity';
+	import { SvelteDate } from "svelte/reactivity";
 	import {
 		FacebookIcon,
 		GithubIcon,
@@ -11,7 +11,7 @@
 		LinkedinIcon,
 		YoutubeIcon
 	} from "$lib/svgs/social/";
-    
+
 	import type { Component } from "svelte";
 
 	type FooterLink = {

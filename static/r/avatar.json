@@ -3,13 +3,8 @@
 	"name": "avatar",
 	"title": "Avatar",
 	"type": "registry:block",
-	"dependencies": [
-		"bits-ui"
-	],
-	"devDependencies": [
-		"bits-ui@^2.16.3",
-		"@internationalized/date@^3.12.0"
-	],
+	"dependencies": ["bits-ui"],
+	"devDependencies": ["bits-ui@^2.16.3", "@internationalized/date@^3.12.0"],
 	"files": [
 		{
 			"content": "<script lang=\"ts\">\n\timport { Avatar as AvatarPrimitive } from \"bits-ui\";\n\timport { cn } from \"$UTILS$.js\";\n\n\tlet {\n\t\tref = $bindable(null),\n\t\tloadingStatus = $bindable(\"loading\"),\n\t\tclass: className,\n\t\t...restProps\n\t}: AvatarPrimitive.RootProps = $props();\n</script>\n\n<AvatarPrimitive.Root\n\tbind:ref\n\tbind:loadingStatus\n\tdata-slot=\"avatar\"\n\tclass={cn(\"relative flex size-8 shrink-0 overflow-hidden rounded-full\", className)}\n\t{...restProps}\n/>\n",

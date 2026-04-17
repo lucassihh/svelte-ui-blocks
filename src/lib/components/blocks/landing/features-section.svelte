@@ -24,8 +24,7 @@
 			{
 				eyebrow: "Premium blocks",
 				title: "54 ready-to-use marketing blocks",
-				description:
-					"Includes hero, footer, CTA, blog, FAQ, contact, pricing, and more.",
+				description: "Includes hero, footer, CTA, blog, FAQ, contact, pricing, and more.",
 				icon: BlocksIcon,
 				className: "bg-linear-to-br from-secondary/40 via-background to-background",
 				iconWrapClass: "bg-secondary/60"
@@ -45,8 +44,7 @@
 			{
 				eyebrow: "CLI install",
 				title: "Install with the shadcn-svelte CLI",
-				description:
-					"Install blocks using the shadcn-svelte CLI for a seamless setup",
+				description: "Install blocks using the shadcn-svelte CLI for a seamless setup",
 				icon: PackageOpenIcon,
 				className:
 					"bg-[radial-gradient(circle_at_left_top,color-mix(in_oklab,var(--foreground)_7%,transparent)_0%,transparent_60%)]",
@@ -89,8 +87,9 @@
 				></div>
 			</div>
 
-
-			<div class="relative border-b border-dashed border-muted-foreground/40 px-4 py-5 sm:px-6">
+			<div
+				class="relative border-b border-dashed border-muted-foreground/40 px-4 py-5 sm:px-6"
+			>
 				<p
 					class="text-[10px] font-medium tracking-[0.24em] text-muted-foreground uppercase"
 				>

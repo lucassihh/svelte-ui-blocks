@@ -5,12 +5,4 @@ import InstagramIcon from "./instagram.svelte";
 import LinkedinIcon from "./linkedin.svelte";
 import YoutubeIcon from "./youtube.svelte";
 
-
-export {
-	FacebookIcon,
-	GithubIcon,
-    XIcon,
-	InstagramIcon,
-	LinkedinIcon,
-	YoutubeIcon
-};
+export { FacebookIcon, GithubIcon, XIcon, InstagramIcon, LinkedinIcon, YoutubeIcon };
