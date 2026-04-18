@@ -1,7 +1,7 @@
 <script lang="ts">
 	import { asset } from "$app/paths";
 	import { MetaTags, JsonLd } from "svelte-meta-tags";
-	import BlocksLandingPage from "$lib/components/blocks/landing/blocks-landing-page.svelte";
+	import SiteHero from "$lib/components/landing/site-hero.svelte";
 	import favicon from "$lib/assets/favicon.svg";
 
 	const siteName = "Svelte Efferd Blocks";
@@ -150,4 +150,4 @@
 />
 <JsonLd schema={jsonLdSchema} />
 
-<BlocksLandingPage />
+<SiteHero />

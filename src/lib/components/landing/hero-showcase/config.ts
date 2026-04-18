@@ -24,9 +24,10 @@ import ImageGalleryPreview from "./category-previews/image-gallery-preview.svelt
 import IntegrationsPreview from "./category-previews/integrations-preview.svelte";
 import LogoCloudPreview from "./category-previews/logo-cloud-preview.svelte";
 
-export type MarketingCardConfig = {
+export type TypesCard = {
 	slug: string;
 	title: string;
+    description: string;
 	href: string;
 	count: number;
 	countLabel: string;
@@ -37,10 +38,11 @@ function formatBlockLabel(count: number) {
 	return `${count} ${count === 1 ? "block" : "blocks"}`;
 }
 
-export const marketingCards: MarketingCardConfig[] = [
+export const dataBlocks: TypesCard[] = [
 	{
 		slug: "header",
 		title: "Header",
+		description: "Responsive navigation bars and mega-menus",
 		href: "/blocks/header",
 		count: headerBlocks.length,
 		countLabel: formatBlockLabel(headerBlocks.length),
@@ -49,6 +51,7 @@ export const marketingCards: MarketingCardConfig[] = [
 	{
 		slug: "hero",
 		title: "Hero Sections",
+		description: "High-impact landing page entrance sections",
 		href: "/blocks/hero",
 		count: heroBlocks.length,
 		countLabel: formatBlockLabel(heroBlocks.length),
@@ -57,6 +60,7 @@ export const marketingCards: MarketingCardConfig[] = [
 	{
 		slug: "auth",
 		title: "Auth",
+		description: "Login, registration, and password recovery forms",
 		href: "/blocks/auth",
 		count: authBlocks.length,
 		countLabel: formatBlockLabel(authBlocks.length),
@@ -65,6 +69,7 @@ export const marketingCards: MarketingCardConfig[] = [
 	{
 		slug: "features",
 		title: "Features",
+		description: "Grids and lists to showcase product capabilities",
 		href: "/blocks/features",
 		count: featureBlocks.length,
 		countLabel: formatBlockLabel(featureBlocks.length),
@@ -73,6 +78,7 @@ export const marketingCards: MarketingCardConfig[] = [
 	{
 		slug: "blog",
 		title: "Blog Sections",
+		description: "Article previews and content feed layouts",
 		href: "/blocks/blog",
 		count: blogBlocks.length,
 		countLabel: formatBlockLabel(blogBlocks.length),
@@ -81,6 +87,7 @@ export const marketingCards: MarketingCardConfig[] = [
 	{
 		slug: "contact",
 		title: "Contact",
+		description: "Support channels and lead generation forms",
 		href: "/blocks/contact",
 		count: contactBlocks.length,
 		countLabel: formatBlockLabel(contactBlocks.length),
@@ -89,6 +96,7 @@ export const marketingCards: MarketingCardConfig[] = [
 	{
 		slug: "cta",
 		title: "Call to Action",
+		description: "Conversion-focused prompts and buttons",
 		href: "/blocks/cta",
 		count: ctaBlocks.length,
 		countLabel: formatBlockLabel(ctaBlocks.length),
@@ -97,6 +105,7 @@ export const marketingCards: MarketingCardConfig[] = [
 	{
 		slug: "faqs",
 		title: "FAQs",
+		description: "Accordion-style frequently asked questions",
 		href: "/blocks/faqs",
 		count: faqBlocks.length,
 		countLabel: formatBlockLabel(faqBlocks.length),
@@ -105,6 +114,7 @@ export const marketingCards: MarketingCardConfig[] = [
 	{
 		slug: "logo-cloud",
 		title: "Logo Cloud",
+		description: "Display grids for partner and client logos",
 		href: "/blocks/logo-cloud",
 		count: logoCloudBlocks.length,
 		countLabel: formatBlockLabel(logoCloudBlocks.length),
@@ -113,6 +123,7 @@ export const marketingCards: MarketingCardConfig[] = [
 	{
 		slug: "footer",
 		title: "Footer",
+		description: "Site-wide navigation and legal information",
 		href: "/blocks/footer",
 		count: footerBlocks.length,
 		countLabel: formatBlockLabel(footerBlocks.length),
@@ -121,6 +132,7 @@ export const marketingCards: MarketingCardConfig[] = [
 	{
 		slug: "image-gallery",
 		title: "Image Gallery",
+		description: "Visual showcases for photos and portfolios",
 		href: "/blocks/image-gallery",
 		count: imageGalleryBlocks.length,
 		countLabel: formatBlockLabel(imageGalleryBlocks.length),
@@ -129,6 +141,7 @@ export const marketingCards: MarketingCardConfig[] = [
 	{
 		slug: "integrations",
 		title: "Integrations",
+		description: "Connectors for third-party tools and services",
 		href: "/blocks/integrations",
 		count: integrationBlocks.length,
 		countLabel: formatBlockLabel(integrationBlocks.length),

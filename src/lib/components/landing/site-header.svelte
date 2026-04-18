@@ -5,10 +5,10 @@
 	import { MoonIcon, SunIcon } from "@lucide/svelte";
 	import { mode, toggleMode } from "mode-watcher";
 
-	import { landingNavLinks, landingSocialLinks } from "./config";
+	import { sidebarLinks, socialLinks} from "./config";
 
 	// Sidebar for Mobile
-	import AppSidebar from "$lib/components/landing/app-sidebar.svelte";
+	import SiteSidebar from "$lib/components/landing/site-sidebar.svelte";
 
 	// Get Current Theme
 	function themeLabel() {
@@ -24,7 +24,7 @@
 		<div class="flex items-center gap-2">
 			<!-- Mobile Sidebar -->
 			<div class="md:hidden">
-				<AppSidebar />
+				<SiteSidebar />
 			</div>
 			<!-- Logon -->
 			<a aria-label="home" class="flex items-center gap-1" href="/">
@@ -36,7 +36,7 @@
 		<!-- Desktop Links -->
 		<div class="hidden flex-1 items-center justify-center md:flex">
 			<div class="flex items-center gap-1">
-				{#each landingNavLinks as link}
+				{#each sidebarLinks as link}
 					<Button
 						class="px-3 text-sm text-muted-foreground hover:text-foreground"
 						href={link.href}
@@ -52,7 +52,7 @@
 		<!-- Social Links & ThemeToggle Btn -->
 		<div class="flex items-center gap-2">
 			<div class="flex items-center gap-1 rounded-xl bg-card p-0.5">
-				{#each landingSocialLinks as link}
+				{#each socialLinks as link}
 					<Button
 						target="_blank"
 						aria-label={link.label}

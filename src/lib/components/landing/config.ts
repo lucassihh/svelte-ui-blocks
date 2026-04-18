@@ -1,4 +1,4 @@
-export const landingNavLinks = [
+export const sidebarLinks = [
 	{
 		label: "Home",
 		href: "/"
@@ -7,17 +7,17 @@ export const landingNavLinks = [
 		label: "Blocks",
 		href: "/blocks/hero"
 	},
-	// {
-	// 	label: "Docs",
-	// 	href: "/docs"
-	// },
+	{
+		label: "Docs",
+		href: "/docs"
+	},
 	{
 		label: "Changelog",
 		href: "/changelog"
 	}
 ] as const;
 
-export const landingSocialLinks = [
+export const socialLinks = [
 	{
 		id: "x",
 		label: "X",
@@ -29,18 +29,3 @@ export const landingSocialLinks = [
 		href: "https://github.com/SikandarJODD/sv-efferd"
 	}
 ] as const;
-
-export const landingHero = {
-	chip: "50 New Components",
-	title: "Svelte Efferd Blocks.",
-	description:
-		"Save hours of design time with clean, ready-to-use shadcn blocks that just work, modern, responsive, and built for speed.",
-	primaryCta: {
-		label: "Explore",
-		href: "/blocks"
-	},
-	secondaryCta: {
-		label: "Star on GitHub",
-		href: "https://github.com/SikandarJODD/sv-efferd"
-	}
-} as const;

@@ -1,12 +1,12 @@
 <script lang="ts">
 	import { Button } from "$lib/components/ui/button";
 	import { DecorIcon } from "$lib/components/ui/decor-icon";
-	import { Github } from "$lib/svgs";
 	import { ArrowRight, Rocket } from "@lucide/svelte";
-	import { landingHero } from "./config";
 	import { DashedLine } from "../ui/dashed-line";
 	import { BorderSeparator } from "../ui/border-seperator";
 	import { DashedLines } from "../ui/dashed-lines";
+    // Hero ShowCase
+    import HeroShowcase from "$lib/components/landing/hero-showcase/hero-showcase.svelte";
 </script>
 
 <section
@@ -37,9 +37,10 @@
 	/>
 
 	<div class=" relative z-10 mx-auto flex flex-col items-center text-center">
-		<a
+		<!-- Version -->
+        <a
 			class="group mx-auto flex w-fit items-center gap-3 rounded-full border bg-transparent py-1 pr-1 pl-3 shadow-lg backdrop-blur-lg"
-			href="/blocks"
+			href="/blocks/hero"
 			id="link"
 		>
 			<Rocket class="size-3 text-muted-foreground" />
@@ -52,32 +53,30 @@
 			</span>
 		</a>
 
-		<h1
+        
+         <!-- Hero Text-->
+		<div class="flex flex-col gap-1">
+            <h1
 			class="mt-8 max-w-4xl text-4xl font-semibold tracking-normal text-balance sm:text-5xl lg:text-6xl"
-		>
-			{landingHero.title}
-		</h1>
+		    >
+			    Svelte UI Blocks
+		    </h1>
+    
+		    <p
+			    class="mt-6 max-w-2xl text-base leading-7 text-pretty text-muted-foreground sm:text-lg sm:leading-8"
+		    >
+			    Save hours of design time with clean, ready-to-use shadcn blocks that just work, modern, responsive, and built for speed.
+		    </p>
+        </div> 
 
-		<p
-			class="mt-6 max-w-2xl text-base leading-7 text-pretty text-muted-foreground sm:text-lg sm:leading-8"
-		>
-			{landingHero.description}
-		</p>
-
+        <!-- Hero Buttons --> 
 		<div class="mt-8 flex flex-col items-center gap-3 sm:flex-row">
-			<Button class="rounded-none" href={landingHero.primaryCta.href} size="lg">
-				<span>{landingHero.primaryCta.label}</span>
-			</Button>
-
-			<Button
-				class="rounded-none"
-				variant="outline"
-				href={landingHero.secondaryCta.href}
-				size="lg"
-			>
-				<Github class="size-4" />
-				<span>{landingHero.secondaryCta.label}</span>
+			<Button class="rounded-none" href="blocks/hero" size="lg">
+				<span>Explore</span>
 			</Button>
 		</div>
 	</div>
 </section>
+
+
+<HeroShowcase />

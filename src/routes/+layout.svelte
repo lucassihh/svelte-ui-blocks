@@ -2,10 +2,13 @@
 	import { page } from "$app/state";
 	import favicon from "$lib/assets/favicon.svg";
 	import "./layout.css";
+    
+    import SiteHeader from "$lib/components/landing/site-header.svelte";
 	import SiteFooter from "$lib/components/landing/site-footer.svelte";
+    
 	import { ModeWatcher, toggleMode } from "mode-watcher";
 	import { cn } from "$lib/utils";
-	import SiteHeader from "$lib/components/landing/site-header.svelte";
+	
 	import { PressedKeys } from "runed";
 
 	let { children } = $props();
@@ -42,7 +45,7 @@
 					"before:absolute before:-inset-y-20 before:-left-px before:z-1 before:border-dashed before:border-primary/20 xl:before:border-l",
 					"after:absolute after:-inset-y-20 after:-right-px after:z-1 after:border-dashed after:border-primary/20 xl:after:border-r"
 				)}
-			>
+			> 
 				{@render children()}
 			</main>
 			<SiteFooter />

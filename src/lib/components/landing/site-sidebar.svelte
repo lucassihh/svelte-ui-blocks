@@ -7,7 +7,7 @@
 	import { MoonIcon, SunIcon, MenuIcon, XIcon } from "@lucide/svelte/icons";
 
 	// Data
-	import { landingNavLinks, landingSocialLinks } from "./config";
+	import { sidebarLinks } from "./config";
 
 	// State and Binds
 	let open = $state(false);
@@ -56,7 +56,7 @@
 		<main class="pl-2">
 			<div class="flex flex-col">
 				<!-- Links -->
-				{#each landingNavLinks as link}
+				{#each sidebarLinks as link}
 					<a
 						href={link.href}
 						onclick={() => {
