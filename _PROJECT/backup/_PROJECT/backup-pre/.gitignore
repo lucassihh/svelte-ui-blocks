@@ -1,0 +1,32 @@
+node_modules
+
+# Output
+.output
+.vercel
+.netlify
+.wrangler
+/.svelte-kit
+/build
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Env
+.env
+.env.*
+!.env.example
+!.env.test
+
+# Vite
+vite.config.js.timestamp-*
+vite.config.ts.timestamp-*
+
+/features.md
+
+.cursor/rules
+
+/scripts/*
+!/scripts/create-tailark-feature.mjs
+!/scripts/generate-static-preview-routes.mjs
+!/scripts/generate-install-links.mjs

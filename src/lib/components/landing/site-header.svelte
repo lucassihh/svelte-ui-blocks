@@ -5,7 +5,7 @@
 	import { MoonIcon, SunIcon } from "@lucide/svelte";
 	import { mode, toggleMode } from "mode-watcher";
 
-	import { sidebarLinks, socialLinks} from "./config";
+	import { sidebarLinks, socialLinks } from "./config";
 
 	// Sidebar for Mobile
 	import SiteSidebar from "$lib/components/landing/site-sidebar.svelte";
@@ -51,20 +51,19 @@
 
 		<!-- Social Links & ThemeToggle Btn -->
 		<div class="flex items-center gap-2">
-			<div class="flex items-center gap-1 rounded-xl bg-card p-0.5">
-				{#each socialLinks as link}
+			<div class="flex items-center gap-1">
+				<!-- Social -->
+				{#each socialLinks as item, index (`social-${item.link}-${index}`)}
+					{@const SocialIcon = item.icon}
 					<Button
-						target="_blank"
-						aria-label={link.label}
-						href={link.href}
+						href={item.link}
+						aria-label={item.label}
+						rel="noreferrer"
 						size="icon-sm"
-						variant="ghost"
+						target="_blank"
+						variant="outline"
 					>
-						{#if link.id === "x"}
-							<XIcon class="size-4" />
-						{:else}
-							<GithubIcon class="size-4" />
-						{/if}
+						<SocialIcon class="size-4" />
 					</Button>
 				{/each}
 			</div>

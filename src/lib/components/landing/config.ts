@@ -1,4 +1,25 @@
-export const sidebarLinks = [
+import { GithubIcon, InstagramIcon, XIcon, YoutubeIcon } from "$lib/svgs/social";
+import type { Component } from "svelte";
+
+// Types
+type FooterLink = {
+	title: string;
+	href: string;
+};
+
+type SocialLink = {
+	link: string;
+	icon: Component;
+	label: string;
+};
+
+type SidebarLink = {
+	label: string;
+	href: string;
+};
+
+// Sidebar Links
+export const sidebarLinks: SidebarLink[] = [
 	{
 		label: "Home",
 		href: "/"
@@ -17,15 +38,120 @@ export const sidebarLinks = [
 	}
 ] as const;
 
-export const socialLinks = [
+// Social Links / Icons
+export const socialLinks: SocialLink[] = [
 	{
-		id: "x",
-		label: "X",
-		href: "https://x.com/Sikandar_Bhide"
+		icon: GithubIcon,
+		link: "https://github.com/lucassihh/svelte-ui-blocks",
+		label: "Github"
 	},
 	{
-		id: "github",
-		label: "GitHub",
-		href: "https://github.com/SikandarJODD/sv-efferd"
+		icon: InstagramIcon,
+		link: "https://www.instagram.com/lucas_sihh/",
+		label: "Instagram"
+	},
+	// {
+	// 	icon: XIcon,
+	// 	link: "https://x.com",
+	// 	label: "X"
+	// },
+	{
+		icon: YoutubeIcon,
+		link: "https://youtube.com",
+		label: "YouTube"
+	}
+] as const;
+
+// Footer Links
+export const BlocksLinks: FooterLink[] = [
+	{
+		title: "Heros",
+		href: "/blocks/hero"
+	},
+	{
+		title: "Headers",
+		href: "/blocks/header/"
+	},
+	{
+		title: "Logos",
+		href: "/blocks/logo-cloud"
+	},
+	{
+		title: "Features",
+		href: "/blocks/featues/"
+	},
+	{
+		title: "Integrations",
+		href: "/blocks/integrations/"
+	},
+	{
+		title: "Testimonials",
+		href: "/blocks/testimonials/"
+	},
+	{
+		title: "CTA",
+		href: "/blocks/cta/"
+	},
+	{
+		title: "Pricing",
+		href: "/blocks/pricing/"
+	},
+	{
+		title: "Blog Cards",
+		href: "/blocks/blog/"
+	},
+	{
+		title: "Auth",
+		href: "/blocks/auth/"
+	},
+	{
+		title: "FAQs",
+		href: "/blocks/faqs/"
+	},
+	{
+		title: "Contact",
+		href: "/blocks/contact/"
+	},
+	{
+		title: "Footers",
+		href: "/blocks/footer/"
+	},
+	{
+		title: "Image Gallery",
+		href: "/blocks/image-gallery/"
+	},
+	{
+		title: "Not Found",
+		href: "/blocks/not-found/"
+	}
+] as const;
+
+export const DocumentationLinks: FooterLink[] = [
+	{
+		title: "Introduction",
+		href: "/docs/"
+	},
+	{
+		title: "Installation",
+		href: "/docs/installation"
+	},
+	{
+		title: "Usage",
+		href: "/docs/usage"
+	},
+	{
+		title: "Community",
+		href: "/docs/usage"
+	},
+	{
+		title: "Security",
+		href: "/"
+	}
+] as const;
+
+export const ResourcesLinks: FooterLink[] = [
+	{
+		title: "Templates",
+		href: "/docs/templates"
 	}
 ] as const;
