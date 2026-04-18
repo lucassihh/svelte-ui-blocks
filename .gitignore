@@ -2,8 +2,7 @@
 node_modules
 
 # Project
-_PROJECT
-TODO.md
+# _PROJECT
 
 # Output
 .output
@@ -26,3 +25,4 @@ Thumbs.db
 # Vite
 vite.config.js.timestamp-*
 vite.config.ts.timestamp-*
+amp-*
