@@ -20,14 +20,12 @@
 <footer class="relative">
 	<div
 		class={cn(
-			"mx-auto w-full max-w-7xl lg:border-x",
+			"mx-auto w-full max-w-7xl border-t border-border py-8",
 			"dark:bg-[radial-gradient(35%_80%_at_15%_0%,--theme(--color-foreground/.1),transparent)]"
 		)}
 	>
-		<div class="absolute inset-x-0 h-px w-full bg-border"></div>
-
-		<div class="grid grid-cols-1 gap-8 p-4 md:grid-cols-8 md:gap-0">
-			<div class="col-span-8 flex flex-col gap-4 pt-5 md:col-span-4">
+		<div class="grid grid-cols-1 gap-8 px-4 md:grid-cols-8 md:gap-0">
+			<div class="col-span-8 flex flex-col gap-4 md:col-span-4">
 				<!-- Logon -->
 				<a aria-label="home" class="flex items-center gap-1" href="/">
 					<Logo />
@@ -100,14 +98,6 @@
 					</div>
 				</div>
 			</div>
-		</div>
-
-		<div class="absolute inset-x-0 h-px w-full bg-border"></div>
-
-		<div class="flex items-center justify-center py-4 text-center">
-			<p class="text-center text-sm font-light text-muted-foreground">
-				&copy; {currentYear} Svelte UI Blocks.
-			</p>
 		</div>
 	</div>
 </footer>

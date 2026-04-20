@@ -78,7 +78,7 @@ export const BlocksLinks: FooterLink[] = [
 	},
 	{
 		title: "Features",
-		href: "/blocks/featues/"
+		href: "/blocks/features/"
 	},
 	{
 		title: "Integrations",

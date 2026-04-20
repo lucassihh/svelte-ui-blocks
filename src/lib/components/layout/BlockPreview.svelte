@@ -10,8 +10,8 @@
 	import { MediaQuery } from "svelte/reactivity";
 	import { scale } from "svelte/transition";
 	import Button from "../ui/button/button.svelte";
-	import { DecorIcon } from "../ui/decor-icon";
-	import Separator from "../ui/separator/separator.svelte";
+	// import { DecorIcon } from "../ui/decor-icon";
+	// import Separator from "../ui/separator/separator.svelte";
 	import {
 		Tooltip,
 		TooltipContent,
@@ -130,25 +130,13 @@
 </script>
 
 <!-- Block Preview -->
-<main {id} class="group">
+<main {id} class="group mt-12">
 	<!-- Component Description & Action Buttons -->
-	<section class="mx-auto flex w-full max-w-7xl flex-col">
+	<section class="mx-auto flex w-full max-w-7xl flex-col dark:bg-[radial-gradient(35%_80%_at_15%_0%,--theme(--color-foreground/.1),transparent)] border-y border-border p-4">
 		<!-- Text Container -->
-		<div class="relative m-4 border border-border p-4 md:p-8">
-			<!-- Icon Effect -->
-			<DecorIcon class="size-3.5 bg-background stroke-muted-foreground/70" position="top-left" />
-
-			<DecorIcon class="size-3.5 bg-background stroke-muted-foreground/70" position="top-right" />
-
-			<DecorIcon class="size-3.5 bg-background stroke-muted-foreground/70" position="bottom-left" />
-
-			<DecorIcon
-				class="size-3.5 bg-background stroke-muted-foreground/70"
-				position="bottom-right"
-			/>
-
+		<div class="md:text-center">
 			<!-- Component Title & Description -->
-			<div class="flex flex-col gap-1">
+			<div class="flex flex-col gap-2">
 				<!-- Title Text -->
 				<h2 class="text-xl font-medium tracking-tight text-foreground sm:text-[1.4rem]">
 					{title}
@@ -165,11 +153,10 @@
 		<!-- Action Buttons Container -->
 		<div
 			class={cn(
-				"z-40 flex flex-col gap-2 border-b px-4 py-2.5 md:flex-row md:justify-center md:px-8",
-				isMobile.current && "gap-3 py-3"
+				"z-40 flex flex-col gap-2 pt-4 md:flex-row md:justify-center"
 			)}
 		>
-			<div class={cn("flex min-w-0 flex-wrap items-center gap-2.5", isMobile.current && "gap-2")}>
+			<div class={cn("flex min-w-0 flex-wrap items-center gap-2")}>
 				<div class="flex w-fit items-center gap-0.5 md:-ml-3">
 					<Button
 						variant={mode === "preview" ? "secondary" : "ghost"}
@@ -228,7 +215,6 @@
 				</div>
 
 				{#if showViewportControls}
-					<Separator orientation="vertical" class="hidden h-4! lg:block" />
 					<span class="hidden text-sm text-muted-foreground lg:block">
 						{width < MD_SIZE ? "Mobile" : width < LG_SIZE ? "Tablet" : "Desktop"}
 					</span>
@@ -241,7 +227,7 @@
 				{/if}
 			</div>
 
-			<div class={cn("flex flex-wrap items-center gap-2", isMobile.current && "w-full gap-1.5")}>
+			<div class={cn("flex flex-wrap items-center gap-2")}>
 				{#if showViewportControls && showIframeComp}
 					<div transition:scale={{ start: 0.8 }} class="flex items-center gap-2">
 						<TooltipProvider>
@@ -475,7 +461,7 @@
 	<!-- Preview Container -->
 	<section class="relative">
 		<div class="mx-auto w-full max-w-7xl" style={`--preview-min-height: ${MIN_PREVIEW_HEIGHT}px;`}>
-			<div class={cn("z-40 bg-white dark:bg-background", mode === "code" && "hidden")}>
+			<div class={cn("z-40 bg-background", mode === "code" && "hidden")}>
 				{#if shouldRenderInIframe && previewHref}
 					<PaneGroup direction="horizontal">
 						<Pane
