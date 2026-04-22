@@ -1,51 +1,76 @@
 <script lang="ts">
 	import { page } from "$app/state";
-	import { StripedPattern } from "$lib/components/magic/striped-pattern";
-	import { DecorIcon } from "$lib/components/ui/decor-icon";
-	import { cn } from "$lib/utils";
-	import { docsPrimaryPages, docsSecondaryPages, normalizeDocsPath } from "./config";
-
+	import type { ComponentProps } from "svelte";
+	import * as Sidebar from "$lib/components/ui/sidebar/index.js";
+	
+    import { Button } from "$lib/components/ui/button/index.js";
+    import { buttonVariants } from "$lib/components/ui/button/index.js";
+	
+    // Data
+    import { docsPrimaryPages, docsSecondaryPages, normalizeDocsPath } from "./config";
+ 
+	// Current Path
 	let currentPath = $derived(normalizeDocsPath(page.url.pathname));
 
-	function navItemClass(isActive: boolean, tone: "primary" | "secondary") {
-		return cn(
-			"flex items-center rounded-md px-2.5 py-2 text-sm leading-none transition-colors",
-			isActive
-				? "border-border/80 bg-foreground/[0.04] font-medium text-primary/80!"
-				: "border-transparent hover:bg-foreground/[0.03] hover:text-foreground",
-			tone === "secondary" ? "text-muted-foreground/80" : "text-muted-foreground"
-		);
-	}
+    // Hook IsMobile
+    import { IsMobile } from "$lib/hooks/is-mobile.svelte.js";
+    const isMobile = new IsMobile();
+
+    // Mobile = 'right' no mobile, Desktop = 'left'
+    let effectiveSide = $derived(isMobile.current ? "bottom" : "left");
+    
+    let { showCloseButton = true, ref = $bindable(null), ...restProps }: ComponentProps<typeof Sidebar.Root> = $props();
 </script>
 
-<aside class="sticky top-20 hidden self-start md:block">
-	<nav aria-label="Docs">
-		<ul class="space-y-1">
-			{#each docsPrimaryPages as item (item.href)}
-				<li>
-					<a
-						aria-current={currentPath === item.href ? "page" : undefined}
-						class={navItemClass(currentPath === item.href, "primary")}
-						href={item.href}
-					>
-						{item.title}
-					</a>
-				</li>
-			{/each}
-		</ul>
-	</nav>
+<Sidebar.Root bind:ref {showCloseButton} side={effectiveSide} {...restProps} class="w-full md:w-[16rem] md:pt-14 md:border-none">
+    <Sidebar.Content>
+		<Sidebar.Group>
+			<Sidebar.GroupLabel>Documentation</Sidebar.GroupLabel>
+			<Sidebar.Menu class="flex flex-col gap-4">
+				<Sidebar.MenuItem>
+					<Sidebar.MenuButton>
+						{#snippet child({ props })}
+							<span {...props} class="text-primary/80 text-sm ml-2">Important</span>
+						{/snippet}
+					</Sidebar.MenuButton>
+					
+					<Sidebar.MenuSub>
+						{#each docsPrimaryPages as item (item.title)}
+							<Sidebar.MenuSubItem>
+								<Sidebar.MenuSubButton data-active={currentPath === normalizeDocsPath(item.href) ? "true" : undefined}>
+									{#snippet child({ props })}
+										<a href={item.href} {...props}>
+											<span>{item.title}</span>
+										</a>
+									{/snippet}
+								</Sidebar.MenuSubButton>
+							</Sidebar.MenuSubItem>
+						{/each}
+					</Sidebar.MenuSub>
+				</Sidebar.MenuItem>
 
-	<ul>
-		{#each docsSecondaryPages as item (item.href)}
-			<li>
-				<a
-					aria-current={currentPath === item.href ? "page" : undefined}
-					class={navItemClass(currentPath === item.href, "primary")}
-					href={item.href}
-				>
-					{item.title}
-				</a>
-			</li>
-		{/each}
-	</ul>
-</aside>
+				<Sidebar.MenuItem>
+					<Sidebar.MenuButton>
+						{#snippet child({ props })}
+							<span {...props} class="text-primary/80 text-sm ml-2">Resources</span>
+						{/snippet}
+					</Sidebar.MenuButton>
+					
+					<Sidebar.MenuSub>
+						{#each docsSecondaryPages as item (item.title)}
+							<Sidebar.MenuSubItem>
+								<Sidebar.MenuSubButton data-active={currentPath === normalizeDocsPath(item.href) ? "true" : undefined}>
+									{#snippet child({ props })}
+										<a href={item.href} {...props}>
+											<span>{item.title}</span>
+										</a>
+									{/snippet}
+								</Sidebar.MenuSubButton>
+							</Sidebar.MenuSubItem>
+						{/each}
+					</Sidebar.MenuSub>
+				</Sidebar.MenuItem>
+			</Sidebar.Menu>
+		</Sidebar.Group>
+	</Sidebar.Content>
+</Sidebar.Root>

@@ -11,7 +11,7 @@
 
 	// State and Binds
 	let open = $state(false);
-	let showCloseButton = false;
+	let showCloseButton = true;
 	let side = "left";
 
 	// Get Current Theme
@@ -33,9 +33,9 @@
 	<Sheet.Content bind:showCloseButton bind:side>
 		<!-- Header -->
 		<Sheet.Header class="flex flex-row items-center justify-between">
-			<Sheet.Title class="text-xl font-medium">Menu</Sheet.Title>
+			<Sheet.Title>Menu</Sheet.Title>
 			<!-- ThemeToggle Btn -->
-			<div>
+			<div class="absolute top-3 right-12">
 				<Button
 					aria-label={themeLabel()}
 					size="icon-sm"
@@ -53,7 +53,7 @@
 		</Sheet.Header>
 
 		<!-- Main Content -->
-		<main class="pl-2">
+		<main class="px-4">
 			<div class="flex flex-col">
 				<!-- Links -->
 				{#each sidebarLinks as link}
@@ -62,7 +62,7 @@
 						onclick={() => {
 							open = false;
 						}}
-						class={buttonVariants({ variant: "ghost" }) + " w-full justify-start gap-2"}
+						class={buttonVariants({ variant: "ghost" }) + " w-full justify-start gap-1"}
 					>
 						<span>{link.label}</span>
 					</a>
@@ -71,7 +71,7 @@
 		</main>
 
 		<!-- Footer -->
-		<Sheet.Footer>
+		<Sheet.Footer class="hidden">
 			<!-- Close Btn Footer -->
 			<Sheet.Close class={buttonVariants({ variant: "outline" })}>Close</Sheet.Close>
 		</Sheet.Footer>

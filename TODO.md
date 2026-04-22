@@ -2,12 +2,14 @@
 
 ## TODO
 
-- [x] - Fix CodePreview Resize
+Some fixes
+
+- [x] - Fix CodePreview
 - [x] - Add Custom Mobile Sidebar (Sheet)
-- [x] - Fix Footer and Footer/Sidebar Links
-- [x] - Fix CategoryNavigation Menu Design
-- [] - Fix Docs Layout
-- [] -
+- [x] - Fix Footer Design and Hover
+- [x] - Fix CategoryNavigation Design
+- [x] - Fix Docs Sidebar
+- [] - Add Back to Top In Docs / Hero
 - [] -
 - [] -
 - [] -

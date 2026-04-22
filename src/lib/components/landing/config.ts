@@ -29,8 +29,8 @@ export const sidebarLinks: SidebarLink[] = [
 		href: "/blocks/hero"
 	},
 	{
-		label: "Docs",
-		href: "/docs"
+		label: "Documentation",
+		href: "/documentation"
 	},
 	{
 		label: "Changelog",
@@ -45,21 +45,21 @@ export const socialLinks: SocialLink[] = [
 		link: "https://github.com/lucassihh/svelte-ui-blocks",
 		label: "Github"
 	},
-	{
-		icon: InstagramIcon,
-		link: "https://www.instagram.com/lucas_sihh/",
-		label: "Instagram"
-	},
+	// {
+	//	icon: InstagramIcon,
+	//	link: "https://www.instagram.com/",
+	//	label: "Instagram"
+	// },
 	// {
 	// 	icon: XIcon,
 	// 	link: "https://x.com",
 	// 	label: "X"
 	// },
-	{
-		icon: YoutubeIcon,
-		link: "https://youtube.com",
-		label: "YouTube"
-	}
+	// {
+	//	icon: YoutubeIcon,
+	//	link: "https://youtube.com",
+	//	label: "YouTube"
+	// }
 ] as const;
 
 // Footer Links
@@ -129,29 +129,21 @@ export const BlocksLinks: FooterLink[] = [
 export const DocumentationLinks: FooterLink[] = [
 	{
 		title: "Introduction",
-		href: "/docs/"
+		href: "/documentation/"
 	},
 	{
 		title: "Installation",
-		href: "/docs/installation"
+		href: "/documentation/installation"
 	},
 	{
 		title: "Usage",
-		href: "/docs/usage"
-	},
-	{
-		title: "Community",
-		href: "/docs/usage"
-	},
-	{
-		title: "Security",
-		href: "/"
+		href: "/documentation/usage"
 	}
 ] as const;
 
 export const ResourcesLinks: FooterLink[] = [
 	{
 		title: "Templates",
-		href: "/docs/templates"
+		href: "/documentation/templates"
 	}
 ] as const;

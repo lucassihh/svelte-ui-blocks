@@ -22,6 +22,15 @@
 
 	// Sidebar
 	import * as Sidebar from "$lib/components/ui/sidebar/index.js";
+    
+    
+    // If Path include documentation, then don't show footer
+	let showFooter = $derived.by(() => {
+		let path = page.url.pathname;
+		return !path.includes("documentation");
+	});
+    
+    
 </script>
 
 <svelte:head>
@@ -48,7 +57,9 @@
 			> 
 				{@render children()}
 			</main>
-			<SiteFooter />
+            {#if showFooter}
+		 	<SiteFooter />
+            {/if}
 		</div>
 	</Sidebar.Provider>
 {/if}

@@ -3,7 +3,7 @@
 	import type { Snippet } from "svelte";
 	import H1 from "$lib/components/markdown/H1.svelte";
 	import Paragraph from "$lib/components/markdown/Paragraph.svelte";
-
+    import DocsBreadcrumb from "$lib/components/docs/docs-breadcrumb.svelte";
 	type DocsPageProps = {
 		title: string;
 		description: string;
@@ -15,9 +15,12 @@
 	let { title, description, class: className = "", actions, children }: DocsPageProps = $props();
 </script>
 
-<section class={cn("mx-auto w-full max-w-4xl pb-16 sm:pb-0", className)}>
-	<div class="overflow-hidden border-x border-border/80">
-		<div class="border-b border-border/80 px-5 py-10 sm:px-8 sm:py-12 md:px-12">
+
+<section class={cn("mx-auto w-full", className)}>
+	<div class="overflow-hidden">
+		<div class="border-b border-border/80 px-4 py-8">
+            <!-- Breadcrumb -->
+            <DocsBreadcrumb/>
 			<div class="mx-auto max-w-3xl">
 				<H1>{title}</H1>
 				<Paragraph class="max-w-2xl text-base leading-7 sm:text-base"
@@ -32,7 +35,7 @@
 			</div>
 		</div>
 
-		<div class="px-5 py-8 sm:px-8 sm:pt-10 md:px-12">
+		<div class="px-4 py-8">
 			<div class="mx-auto max-w-3xl">
 				{@render children?.()}
 			</div>

@@ -10,7 +10,7 @@
 </script>
 
 <section
-	class="relative flex min-h-[calc(100vh-4rem)] items-center justify-center border-b border-border/80 px-4 py-20 sm:px-6 sm:py-24 lg:px-8 lg:py-32"
+	class="relative flex items-center justify-center border-b border-border/80 px-4 py-20 sm:px-6 sm:py-24 lg:px-8 lg:py-32"
 	id="blocks"
 >
 	<div aria-hidden="true" class="pointer-events-none absolute inset-0">
