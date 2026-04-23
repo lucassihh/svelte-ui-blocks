@@ -1,41 +1,38 @@
 <script lang="ts">
-	import { Button } from "$lib/components/ui/button/index.js";
-	import * as Sheet from "$lib/components/ui/sheet/index.js";
-	import { buttonVariants } from "$lib/components/ui/button/index.js";
-
-	// Icons
-	import { MoonIcon, SunIcon, MenuIcon, XIcon } from "@lucide/svelte/icons";
-
-	// Data
-	import { sidebarLinks } from "./config";
-
-	// State and Binds
-	let open = $state(false);
-	let showCloseButton = true;
-	let side = "left";
-
-	// Get Current Theme
+	import { page } from "$app/state";
+	import type { ComponentProps } from "svelte";
+	import * as Sidebar from "$lib/components/ui/sidebar/index.js";
+    
+    // Icons
+	import { MoonIcon, SunIcon } from "@lucide/svelte/icons";
+    
+    import { Button } from "$lib/components/ui/button/index.js";
+    import { buttonVariants } from "$lib/components/ui/button/index.js";
+	
+    // Data & Normalize Path 
+	import { sidebarLinks, normalizePath} from "./config";
+ 
+	// Current Path
+	let currentPath = $derived(normalizePath(page.url.pathname));
+     
+    // Binds 
+    let { showCloseButton = true, side = "left", ref = $bindable(null), ...restProps }: ComponentProps<typeof Sidebar.Root> = $props();
+     
+    // Get Current Theme
 	import { mode, toggleMode } from "mode-watcher";
 	function themeLabel() {
 		return mode.current === "dark" ? "Switch to light mode" : "Switch to dark mode";
 	}
+    
+    // For Close Sidebar when click on Link 
+    import { useSidebar } from "$lib/components/ui/sidebar/index.js";
+    const sidebar = useSidebar();
 </script>
 
-<Sheet.Root bind:open>
-	<Sheet.Trigger class={buttonVariants({ variant: "secondary", size: "icon-sm" })}>
-		{#if !open}
-			<MenuIcon />
-		{:else}
-			<XIcon />
-		{/if}
-	</Sheet.Trigger>
-
-	<Sheet.Content bind:showCloseButton bind:side>
-		<!-- Header -->
-		<Sheet.Header class="flex flex-row items-center justify-between">
-			<Sheet.Title>Menu</Sheet.Title>
-			<!-- ThemeToggle Btn -->
-			<div class="absolute top-3 right-12">
+<Sidebar.Root bind:ref {showCloseButton} {side} {...restProps} class="w-full md:w-[16rem] md:pt-14 md:border-none">
+    <Sidebar.Content>
+        <!-- ThemeToggle Btn -->
+			<div class="absolute top-3 right-12 z-20">
 				<Button
 					aria-label={themeLabel()}
 					size="icon-sm"
@@ -50,30 +47,33 @@
 					{/if}
 				</Button>
 			</div>
-		</Sheet.Header>
+		<Sidebar.Group>
+			<Sidebar.GroupLabel>Main Menu</Sidebar.GroupLabel>
+			<Sidebar.Menu class="flex flex-col pt-4 px-2">
+				<Sidebar.MenuItem>
+					<Sidebar.Menu class="space-y-1">
+						{#each sidebarLinks as item (item.label)}
+							<Sidebar.MenuSubItem>
+								<Sidebar.MenuSubButton data-active={currentPath === normalizePath(item.href) ? "true" : undefined}>
+									{#snippet child({ props })}
+										<a href={item.href} {...props} onclick={() => sidebar.setOpenMobile(false)}>
+											<span>{item.label}</span>
+										</a>
+									{/snippet}
+								</Sidebar.MenuSubButton>
+							</Sidebar.MenuSubItem>
+						{/each}
+					</Sidebar.Menu>
+				</Sidebar.MenuItem>
+			</Sidebar.Menu>
+		</Sidebar.Group>
+	</Sidebar.Content>
+</Sidebar.Root>
 
-		<!-- Main Content -->
-		<main class="px-4">
-			<div class="flex flex-col">
-				<!-- Links -->
-				{#each sidebarLinks as link}
-					<a
-						href={link.href}
-						onclick={() => {
-							open = false;
-						}}
-						class={buttonVariants({ variant: "ghost" }) + " w-full justify-start gap-1"}
-					>
-						<span>{link.label}</span>
-					</a>
-				{/each}
-			</div>
-		</main>
 
-		<!-- Footer -->
-		<Sheet.Footer class="hidden">
-			<!-- Close Btn Footer -->
-			<Sheet.Close class={buttonVariants({ variant: "outline" })}>Close</Sheet.Close>
-		</Sheet.Footer>
-	</Sheet.Content>
-</Sheet.Root>
+
+
+
+
+
+

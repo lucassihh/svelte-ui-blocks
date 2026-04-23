@@ -10,7 +10,7 @@ Some fixes
 - [x] - Fix CategoryNavigation Design
 - [x] - Fix Docs Sidebar
 - [] - Add Back to Top In Docs / Hero
-- [] -
+- [x] - Fix All Sidebar Active Links
 - [] -
 - [] -
 - [] -

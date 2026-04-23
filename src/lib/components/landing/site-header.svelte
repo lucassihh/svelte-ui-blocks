@@ -2,14 +2,22 @@
 	import { Button } from "$lib/components/ui/button";
 	import { GithubIcon, XIcon } from "$lib/svgs/social/";
 	import Logo from "$lib/svgs/logo.svelte";
-	import { MoonIcon, SunIcon } from "@lucide/svelte";
+	import { MoonIcon, SunIcon, PanelLeftOpen } from "@lucide/svelte/icons";
 	import { mode, toggleMode } from "mode-watcher";
-
+    
+    import * as Sidebar from "$lib/components/ui/sidebar/index.js";
+    
+    // Data
 	import { sidebarLinks, socialLinks } from "./config";
 
 	// Sidebar for Mobile
 	import SiteSidebar from "$lib/components/landing/site-sidebar.svelte";
-
+    
+    // For Custom Button Sidebar
+    import { useSidebar } from "$lib/components/ui/sidebar/index.js";
+    const sidebar = useSidebar();
+    
+    
 	// Get Current Theme
 	function themeLabel() {
 		return mode.current === "dark" ? "Switch to light mode" : "Switch to dark mode";
@@ -24,6 +32,14 @@
 		<div class="flex items-center gap-2">
 			<!-- Mobile Sidebar -->
 			<div class="md:hidden">
+                <!-- Sidebar Trigger -->
+                <Button 
+                        variant="outline" 
+                        size="icon-sm" 
+                        onclick={() => sidebar.toggle()}
+                    >
+                        <PanelLeftOpen class="size-5 text-primary" />
+                    </Button>
 				<SiteSidebar />
 			</div>
 			<!-- Logon -->
@@ -37,14 +53,13 @@
 		<div class="hidden flex-1 items-center justify-center md:flex">
 			<div class="flex items-center gap-1">
 				{#each sidebarLinks as link}
-					<Button
+					<a
 						class="px-3 text-sm text-muted-foreground hover:text-foreground"
 						href={link.href}
 						size="sm"
-						variant="ghost"
 					>
 						{link.label}
-					</Button>
+					</a>
 				{/each}
 			</div>
 		</div>

@@ -19,7 +19,7 @@ type SidebarLink = {
 };
 
 // Sidebar Links
-export const sidebarLinks: SidebarLink[] = [
+const sidebarLinks: SidebarLink[] = [
 	{
 		label: "Home",
 		href: "/"
@@ -36,7 +36,7 @@ export const sidebarLinks: SidebarLink[] = [
 		label: "Changelog",
 		href: "/changelog"
 	}
-] as const;
+];
 
 // Social Links / Icons
 export const socialLinks: SocialLink[] = [
@@ -147,3 +147,20 @@ export const ResourcesLinks: FooterLink[] = [
 		href: "/documentation/templates"
 	}
 ] as const;
+
+
+
+// Normalize path
+export function normalizePath(pathname: string) {
+    if (!pathname) return "/";
+    // Remove duplicates "/"
+    const normalized = pathname.replace(/\/+$/, "") || "/";
+    return normalized;
+}
+
+// Get Docs Page
+export function getPage(pathname: string) {
+	return pagesByHref.get(normalizePath(pathname)) ?? sidebarLinks[0];
+}
+
+export { sidebarLinks };

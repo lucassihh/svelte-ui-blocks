@@ -16,6 +16,10 @@
     import { IsMobile } from "$lib/hooks/is-mobile.svelte.js";
     const isMobile = new IsMobile();
 
+    // For Close Sidebar when click on Link 
+    import { useSidebar } from "$lib/components/ui/sidebar/index.js";
+    const sidebar = useSidebar();
+    
     // Mobile = 'right' no mobile, Desktop = 'left'
     let effectiveSide = $derived(isMobile.current ? "bottom" : "left");
     
@@ -26,7 +30,7 @@
     <Sidebar.Content>
 		<Sidebar.Group>
 			<Sidebar.GroupLabel>Documentation</Sidebar.GroupLabel>
-			<Sidebar.Menu class="flex flex-col gap-4">
+			<Sidebar.Menu class="flex flex-col gap-4 px-0 pt-4">
 				<Sidebar.MenuItem>
 					<Sidebar.MenuButton>
 						{#snippet child({ props })}
@@ -39,7 +43,7 @@
 							<Sidebar.MenuSubItem>
 								<Sidebar.MenuSubButton data-active={currentPath === normalizeDocsPath(item.href) ? "true" : undefined}>
 									{#snippet child({ props })}
-										<a href={item.href} {...props}>
+										<a href={item.href} {...props} onclick={() => sidebar.setOpenMobile(false)}>
 											<span>{item.title}</span>
 										</a>
 									{/snippet}
@@ -61,7 +65,7 @@
 							<Sidebar.MenuSubItem>
 								<Sidebar.MenuSubButton data-active={currentPath === normalizeDocsPath(item.href) ? "true" : undefined}>
 									{#snippet child({ props })}
-										<a href={item.href} {...props}>
+										<a href={item.href} {...props} onclick={() => sidebar.setOpenMobile(false)}>
 											<span>{item.title}</span>
 										</a>
 									{/snippet}
