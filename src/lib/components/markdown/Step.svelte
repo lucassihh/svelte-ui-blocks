@@ -27,9 +27,9 @@
 		align-items: center;
 		justify-content: center;
 		border-radius: 9999px;
-		border: 1px solid hsl(var(--border));
-		background: hsl(var(--background));
-		color: hsl(var(--foreground));
+		border: 1px solid var(--border);
+		background: var(--card);
+		color: var(--primary);
 		font-size: 0.75rem;
 		font-weight: 600;
 		box-shadow: var(--shadow-xs);

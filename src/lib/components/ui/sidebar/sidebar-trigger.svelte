@@ -1,6 +1,6 @@
 <script lang="ts">
 	import { Button } from "$lib/components/ui/button/index.js";
-	import { PanelBottomOpen } from "@lucide/svelte";
+	import { Menu } from "@lucide/svelte";
 	import { cn } from "$lib/utils.js";
 	import type { ComponentProps } from "svelte";
 	import { useSidebar } from "./context.svelte.js";
@@ -31,6 +31,6 @@
 	}}
 	{...restProps}
 >
-	<PanelBottomOpen class="size-5" />
+	<Menu class="size-5" />
 	<span class="sr-only">Toggle Sidebar</span>
 </Button>

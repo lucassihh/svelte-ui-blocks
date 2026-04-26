@@ -1,6 +1,6 @@
 <script lang="ts">
-	import DocsPage from "$lib/components/docs/docs-page.svelte";
-	import { docsSupportLinks } from "$lib/components/docs/config";
+	import DocsPage from "$lib/components/documentation/docs-page.svelte";
+	import { docsSupportLinks } from "$lib/components/documentation/config";
 	import H2 from "$lib/components/markdown/H2.svelte";
 	import Link from "$lib/components/markdown/Link.svelte";
 	import ListItem from "$lib/components/markdown/ListItem.svelte";
@@ -37,6 +37,6 @@
 
 	<Paragraph>
 		For sponsorship interest or broader collaboration, use the owner contact path listed on the
-		<Link href="/docs/sponsors-support">Sponsors & Support</Link> page.
+		<Link href="/documentation/sponsors-support">Sponsors & Support</Link> page.
 	</Paragraph>
 </DocsPage>

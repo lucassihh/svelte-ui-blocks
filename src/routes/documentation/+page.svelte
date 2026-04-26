@@ -1,6 +1,6 @@
 <script lang="ts">
 	import { blockCategories } from "$lib/blocks/categories";
-	import DocsPage from "$lib/components/docs/docs-page.svelte";
+	import DocsPage from "$lib/components/documentation/docs-page.svelte";
 	import Blockquote from "$lib/components/markdown/Blockquote.svelte";
 	import H2 from "$lib/components/markdown/H2.svelte";
 	import H3 from "$lib/components/markdown/H3.svelte";
@@ -43,7 +43,7 @@
 	<H3>Start here</H3>
 	<Paragraph>
 		If you want to explore the library first, head to <Link href="/blocks">Blocks</Link>. If you
-		already know what you want to add, jump to <Link href="/docs/installation"
+		already know what you want to add, jump to <Link href="/documentation/installation"
 			>Installation</Link
 		>.
 	</Paragraph>

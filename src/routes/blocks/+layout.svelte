@@ -4,7 +4,7 @@
 	import Button from "$lib/components/ui/button/button.svelte";
 	import type { Snippet } from "svelte";
 	import { fly } from "svelte/transition";
-	import CategoryNavigation from "$lib/components/layout/CategoryNavigation.svelte";
+	import CategoryNavigation from "$lib/components/blocks/CategoryNavigation.svelte";
 
 	let { children }: { children: Snippet } = $props();
 	let visible = $derived(typeof scrollY.current === "undefined" ? 600 : scrollY.current > 1200);
@@ -14,13 +14,6 @@
 <div>
 	{#if !isBlocksRoot}
 		<CategoryNavigation />
-        <!-- Effect Bg repeating 
-		<section>
-			<div
-				class="h-6 w-full bg-[repeating-linear-gradient(-45deg,var(--color-border),var(--color-border)_1px,transparent_1px,transparent_6px)] opacity-35"
-			></div>
-		</section>
-        -->
 	{/if}
 	{@render children()}
 	{#if visible}

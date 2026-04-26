@@ -1,24 +1,23 @@
 <script lang="ts">
-	import { Button } from "$lib/components/ui/button";
-	import { GithubIcon, XIcon } from "$lib/svgs/social/";
-	import Logo from "$lib/svgs/logo.svelte";
-	import { MoonIcon, SunIcon, PanelLeftOpen } from "@lucide/svelte/icons";
-	import { mode, toggleMode } from "mode-watcher";
+    import { page } from "$app/state";
     
-    import * as Sidebar from "$lib/components/ui/sidebar/index.js";
+	import { Button } from "$lib/components/ui/button";
+    import { buttonVariants } from "$lib/components/ui/button/index.js";
+	
+    // Icons 
+	import { MoonIcon, SunIcon, PanelLeftOpen } from "@lucide/svelte/icons";
+    import { GithubIcon, XIcon } from "$lib/svgs/social/";
+	import Logo from "$lib/svgs/logo.svelte";
     
     // Data
 	import { sidebarLinks, socialLinks } from "./config";
 
-	// Sidebar for Mobile
-	import SiteSidebar from "$lib/components/landing/site-sidebar.svelte";
-    
     // For Custom Button Sidebar
     import { useSidebar } from "$lib/components/ui/sidebar/index.js";
     const sidebar = useSidebar();
     
-    
-	// Get Current Theme
+	// Theme
+    import { mode, toggleMode } from "mode-watcher";
 	function themeLabel() {
 		return mode.current === "dark" ? "Switch to light mode" : "Switch to dark mode";
 	}
@@ -28,21 +27,21 @@
 	class="relative sticky top-0 z-50 mx-auto w-full max-w-7xl border-b border-border/80 bg-background"
 >
 	<nav class="flex items-center justify-between gap-2 p-4">
-		<!-- Mobile Sidebar & Logo -->
+		
+        <!-- Mobile Sidebar & Logo -->
 		<div class="flex items-center gap-2">
-			<!-- Mobile Sidebar -->
-			<div class="md:hidden">
-                <!-- Sidebar Trigger -->
+			<!-- Mobile Sidebar Trigger -->
+             <div class="block md:hidden lg:hidden">
                 <Button 
-                        variant="outline" 
-                        size="icon-sm" 
-                        onclick={() => sidebar.toggle()}
-                    >
-                        <PanelLeftOpen class="size-5 text-primary" />
-                    </Button>
-				<SiteSidebar />
-			</div>
-			<!-- Logon -->
+                    variant="secondary" 
+                    size="icon-sm" 
+                    onclick={() => sidebar.toggle()}
+                >
+                    <PanelLeftOpen class="size-4" />
+                </Button>
+             </div> 
+             
+			<!-- Logo -->
 			<a aria-label="home" class="flex items-center gap-1" href="/">
 				<Logo />
 				<span class="font-mono font-medium tracking-tight">Svelte UI</span>
@@ -50,8 +49,7 @@
 		</div>
 
 		<!-- Desktop Links -->
-		<div class="hidden flex-1 items-center justify-center md:flex">
-			<div class="flex items-center gap-1">
+		<div class="hidden md:flex items-center">
 				{#each sidebarLinks as link}
 					<a
 						class="px-3 text-sm text-muted-foreground hover:text-foreground"
@@ -61,12 +59,10 @@
 						{link.label}
 					</a>
 				{/each}
-			</div>
 		</div>
 
 		<!-- Social Links & ThemeToggle Btn -->
-		<div class="flex items-center gap-2">
-			<div class="flex items-center gap-1">
+	    <div class="flex items-center gap-2">
 				<!-- Social -->
 				{#each socialLinks as item, index (`social-${item.link}-${index}`)}
 					{@const SocialIcon = item.icon}
@@ -81,9 +77,8 @@
 						<SocialIcon class="size-4" />
 					</Button>
 				{/each}
-			</div>
-			<!-- Desktop ThemeToggle Btn -->
-			<div class="hidden md:block">
+			
+			    <!-- ThemeToggle Btn -->
 				<Button
 					aria-label={themeLabel()}
 					size="icon-sm"
@@ -97,7 +92,6 @@
 						<MoonIcon class="size-4" />
 					{/if}
 				</Button>
-			</div>
-		</div>
+		 </div>
 	</nav>
 </header>

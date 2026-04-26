@@ -3,6 +3,9 @@
 	import favicon from "$lib/assets/favicon.svg";
 	import "./layout.css";
     
+    import Button from "$lib/components/ui/button/button.svelte"; 
+    import * as Sidebar from "$lib/components/ui/sidebar/index.js";
+    import SiteSidebar from "$lib/components/landing/site-sidebar.svelte";
     import SiteHeader from "$lib/components/landing/site-header.svelte";
 	import SiteFooter from "$lib/components/landing/site-footer.svelte";
     
@@ -20,15 +23,16 @@
 		toggleMode();
 	});
 
-	// Sidebar
-	import * as Sidebar from "$lib/components/ui/sidebar/index.js";
-    
     // If Path include documentation, then don't show footer
 	let showFooter = $derived.by(() => {
 		let path = page.url.pathname;
 		return !path.includes("documentation");
 	});
     
+    // For Scroll to Top
+    import { scrollY } from "svelte/reactivity/window";
+    import { fly } from "svelte/transition";
+    let visible = $derived(typeof scrollY.current === "undefined" ? 600 : scrollY.current > 800);
     
 </script>
 
@@ -45,6 +49,9 @@
 	</div>
 {:else}
 	<Sidebar.Provider>
+        <div class="md:hidden lg:hidden">
+            <SiteSidebar/>
+        </div> 
 		<div class="relative w-full supports-[overflow:clip]:overflow-clip dark:bg-background">
             <SiteHeader />
 			<main
@@ -55,6 +62,36 @@
 				)}
 			> 
 				{@render children()}
+                
+                {#if visible}
+                 {@render scrollToTop()}
+               {/if}
+            
+            {#snippet scrollToTop()}
+                <div in:fly={{ y: 20 }} out:fly={{ y: 20 }} class="fixed right-4 bottom-4 z-50">
+                    <Button
+                        size="icon"
+                        variant="secondary"
+                        class="rounded-full"
+                        onclick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
+                    >
+                        <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            class="h-6 w-6"
+                            fill="none"
+                            viewBox="0 0 24 24"
+                            stroke="currentColor"
+                        >
+                            <path
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                                stroke-width="2"
+                                d="M5 10l7-7m0 0l7 7m-7-7v18"
+                            />
+                        </svg>
+                    </Button>
+                </div>
+            {/snippet}
 			</main>
             {#if showFooter}
 		 	<SiteFooter />

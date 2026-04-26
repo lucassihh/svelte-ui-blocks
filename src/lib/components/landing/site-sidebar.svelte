@@ -3,9 +3,6 @@
 	import type { ComponentProps } from "svelte";
 	import * as Sidebar from "$lib/components/ui/sidebar/index.js";
     
-    // Icons
-	import { MoonIcon, SunIcon } from "@lucide/svelte/icons";
-    
     import { Button } from "$lib/components/ui/button/index.js";
     import { buttonVariants } from "$lib/components/ui/button/index.js";
 	
@@ -17,12 +14,6 @@
      
     // Binds 
     let { showCloseButton = true, side = "left", ref = $bindable(null), ...restProps }: ComponentProps<typeof Sidebar.Root> = $props();
-     
-    // Get Current Theme
-	import { mode, toggleMode } from "mode-watcher";
-	function themeLabel() {
-		return mode.current === "dark" ? "Switch to light mode" : "Switch to dark mode";
-	}
     
     // For Close Sidebar when click on Link 
     import { useSidebar } from "$lib/components/ui/sidebar/index.js";
@@ -31,24 +22,8 @@
 
 <Sidebar.Root bind:ref {showCloseButton} {side} {...restProps} class="w-full md:w-[16rem] md:pt-14 md:border-none">
     <Sidebar.Content>
-        <!-- ThemeToggle Btn -->
-			<div class="absolute top-3 right-12 z-20">
-				<Button
-					aria-label={themeLabel()}
-					size="icon-sm"
-					title={themeLabel()}
-					variant="secondary"
-					onclick={toggleMode}
-				>
-					{#if mode.current === "dark"}
-						<SunIcon class="size-4" />
-					{:else}
-						<MoonIcon class="size-4" />
-					{/if}
-				</Button>
-			</div>
 		<Sidebar.Group>
-			<Sidebar.GroupLabel>Main Menu</Sidebar.GroupLabel>
+			<Sidebar.GroupLabel>Menu</Sidebar.GroupLabel>
 			<Sidebar.Menu class="flex flex-col pt-4 px-2">
 				<Sidebar.MenuItem>
 					<Sidebar.Menu class="space-y-1">

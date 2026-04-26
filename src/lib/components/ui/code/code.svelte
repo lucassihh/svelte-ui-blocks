@@ -4,6 +4,7 @@
 	import type { CodeRootProps } from "./types";
 	import { useCode } from "./code.svelte.js";
 	import { box } from "svelte-toolbelt";
+    import CodeCopyBtn from "./code-copy-button.svelte";
 	// import '../../../../routes/layout.css'
 
 	let {
@@ -27,6 +28,7 @@
 </script>
 
 <div {...rest} bind:this={ref} class={cn(codeVariants({ variant }), className)}>
+    <CodeCopyBtn/>
 	{@html codeState.highlighted}
 	{@render children?.()}
 </div>
@@ -75,8 +77,8 @@
 		content: counter(step);
 		counter-increment: step;
 		display: inline-block;
-		width: 1.8rem;
-		margin-right: 1.4rem;
+		width: 1rem;
+		margin-right: 1rem;
 		text-align: right;
 	}
 

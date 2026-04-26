@@ -1,5 +1,5 @@
 <script lang="ts">
-	import DocsPage from "$lib/components/docs/docs-page.svelte";
+	import DocsPage from "$lib/components/documentation/docs-page.svelte";
 	import Blockquote from "$lib/components/markdown/Blockquote.svelte";
 	import H2 from "$lib/components/markdown/H2.svelte";
 	import Link from "$lib/components/markdown/Link.svelte";
@@ -13,7 +13,7 @@
 	description="Templates are planned, but this section stays honest for now: the feature is not ready yet."
 >
 	{#snippet actions()}
-		<Button href="/docs/roadmap-feedback" size="sm" variant="outline">See Roadmap</Button>
+		<Button href="/documentation/roadmap-feedback" size="sm" variant="outline">See Roadmap</Button>
 	{/snippet}
 
 	<Blockquote>
@@ -29,6 +29,6 @@
 
 	<Paragraph>
 		For now, the best workflow is to combine individual blocks from the
-		<Link href="/blocks">Blocks</Link> section and track upcoming work on the roadmap page.
+		<Link href="/blocks/hero">Blocks</Link> section and track upcoming work on the roadmap page.
 	</Paragraph>
 </DocsPage>

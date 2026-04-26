@@ -1,5 +1,5 @@
 <script lang="ts">
-	import DocsPage from "$lib/components/docs/docs-page.svelte";
+	import DocsPage from "$lib/components/documentation/docs-page.svelte";
 	import H2 from "$lib/components/markdown/H2.svelte";
 	import H3 from "$lib/components/markdown/H3.svelte";
 	import Link from "$lib/components/markdown/Link.svelte";
@@ -16,8 +16,8 @@
 	description="Once the registry is ready, Efferd works best as a fast browse-to-build loop: compare variants, install the exact block, then tailor it to your product."
 >
 	{#snippet actions()}
-		<Button href="/blocks" size="sm">Browse Blocks</Button>
-		<Button href="/docs/installation" size="sm" variant="outline">Review Installation</Button>
+		<Button href="/blocks/hero" size="sm">Browse Blocks</Button>
+		<Button href="/documentation/installation" size="sm" variant="outline">Review Installation</Button>
 	{/snippet}
 
 	<H2>Recommended workflow</H2>

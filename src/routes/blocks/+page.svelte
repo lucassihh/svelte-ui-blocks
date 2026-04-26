@@ -6,3 +6,4 @@
 
 <Seo title="Blocks" desc={description} link="/blocks" />
 
+<h1>Blocks Page</h1>
