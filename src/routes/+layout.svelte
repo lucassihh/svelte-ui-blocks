@@ -48,11 +48,11 @@
 		{@render children()}
 	</div>
 {:else}
-	<Sidebar.Provider>
+	<Sidebar.Provider class="w-full mx-auto">
         <div class="md:hidden lg:hidden">
             <SiteSidebar/>
         </div> 
-		<div class="relative w-full supports-[overflow:clip]:overflow-clip dark:bg-background">
+		<div class="relative supports-[overflow:clip]:overflow-clip dark:bg-background w-full w-max-4xl mx-auto">
             <SiteHeader />
 			<main
 				class={cn(

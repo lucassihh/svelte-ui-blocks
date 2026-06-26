@@ -1,3 +1,4 @@
+// Types TS
 export type ChangelogChip = {
 	label: string;
 	href: string;
@@ -19,16 +20,18 @@ export type ChangelogPageData = {
 	entries: ChangelogEntry[];
 };
 
+
+// Changlogs Data
 export const changelogPageData: ChangelogPageData = {
 	title: "Changelog",
-	description: "Latest product updates and new blocks.",
+	description: "Latest updates",
 	entries: [
 		{
-			id: "2026-03-22",
-			date: "22 March 2026",
-			sortDate: "2026-03-22",
-			title: "54+ New Blocks",
-			description: "Released a large batch of new blocks across all categories.",
+			id: "2026-01",
+			date: "Juny 2026",
+			sortDate: "2026-04-20",
+			title: "New Blocks",
+			description: "New Blocks Added.",
 			chips: [
 				{ label: "hero", href: "/blocks/hero" },
 				{ label: "contact", href: "/blocks/contact" },
@@ -37,38 +40,24 @@ export const changelogPageData: ChangelogPageData = {
 				{ label: "pricing", href: "/blocks/pricing" },
 				{ label: "auth", href: "/blocks/auth" }
 			]
+		},
+        // TODO
+		{
+			id: '2026-02',
+			date: 'Juny 2026',
+			sortDate: '2026-04-19',
+			title: 'Some Fixies',
+			description: 'I made some improvements to the project.',
+			bullets: [
+				'Fix CodePreview',
+				'Add Mobile Sidebar',
+                'Add Docs Sidebar',
+                'Fix Docs Header (Open Sidebar and Breadcrumb)',
+                'Fix Footer Design',
+                'Fix CategoryNavigation Design',
+                'Add Scroll to Top In Docs & Hero',
+                'Fix All Sidebar Active Links',
+			]
 		}
-		// {
-		// 	id: '2026-03-19',
-		// 	date: '19 March 2026',
-		// 	sortDate: '2026-03-19',
-		// 	title: 'More Block Variants',
-		// 	description: 'Expanded core categories with more ready-to-use sections.',
-		// 	bullets: [
-		// 		'Added more hero, contact, and FAQ variants',
-		// 		'Filled category gaps with simpler section options'
-		// 	],
-		// 	chips: [
-		// 		{ label: 'hero-two', href: '#' },
-		// 		{ label: 'contact variants', href: '#' },
-		// 		{ label: 'faq blocks', href: '#' }
-		// 	]
-		// },
-		// {
-		// 	id: '2026-03-18',
-		// 	date: '18 March 2026',
-		// 	sortDate: '2026-03-18',
-		// 	title: 'March Push Started',
-		// 	description: 'Started the 4-day release push.',
-		// 	bullets: [
-		// 		'Planned the first block batch',
-		// 		'Set the base direction for the full release'
-		// 	],
-		// 	chips: [
-		// 		{ label: 'planning', href: '#' },
-		// 		{ label: 'landing blocks', href: '#' },
-		// 		{ label: 'release push', href: '#' }
-		// 	]
-		// }
 	]
 };

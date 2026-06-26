@@ -5,7 +5,7 @@
 # Layout
 
 - [x] - Fix CodePreview
-- [x] - Add Site Mobile Sidebar
+- [x] - Add Mobile Sidebar
 - [x] - Add Docs Sidebar
 - [x] - Fix Docs Header (Open Sidebar and Breadcrumb)
 - [x] - Fix Footer Design

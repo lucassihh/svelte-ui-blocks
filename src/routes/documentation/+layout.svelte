@@ -12,9 +12,8 @@
  let visible = $derived(typeof scrollY.current === "undefined" ? 600 : scrollY.current > 800);
 </script>
  
- 
+
 <Sidebar.Provider class="bg-card">
- <div class="flex w-full">
     <DocsSidebar/>
         <main class="w-full max-w-7xl mx-auto bg-background md:m-2 md:rounded-xl">
             <DocsHeader/>
@@ -50,5 +49,4 @@
                 </div>
             {/snippet}
         </main>
- </div>   
 </Sidebar.Provider>
