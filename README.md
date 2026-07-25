@@ -1,8 +1,13 @@
 # Svelte UI Blocks
 
-- Beautiful shadcn-svelte blocks.
-- Documentation Template
+This is a Fork of:
 
-## Features
+A collection of beautifully crafted Svelte Shadcn Marketing blocks.
+[Svelte Efferd](https://github.com/SikandarJODD/sv-efferd)
 
-Soon!
+Thanks **SikandarJODD - Sikandar Bhide**
+
+I made some improvements
+
+- 
+
