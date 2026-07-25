@@ -1,9 +1,9 @@
 # Svelte UI Blocks
 
-A collection of beautifully crafted Svelte Shadcn Marketing blocks.
-This is a Fork from [Svelte Efferd](https://github.com/SikandarJODD/sv-efferd)
+### A collection of beautifully crafted Svelte Shadcn & Tailwind CSS Marketing blocks.
 
-Thanks **SikandarJODD - Sikandar Bhide**
+- This is a Fork from [Svelte Efferd](https://github.com/SikandarJODD/sv-efferd)
+  - Thanks **SikandarJODD - Sikandar Bhide**
 
 improvements
 
