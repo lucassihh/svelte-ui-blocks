@@ -2,10 +2,9 @@
 
 ### A collection of beautifully crafted Svelte Shadcn & Tailwind CSS Marketing blocks.
 
-- This is a Fork from [Svelte Efferd](https://github.com/SikandarJODD/sv-efferd)
-  - Thanks **SikandarJODD - Sikandar Bhide**
+This is a Fork from [Svelte Efferd](https://github.com/SikandarJODD/sv-efferd)
 
-improvements
+I made some modifications.
 
 - [x] - Fix CodePreview
 - [x] - Add Mobile Sidebar
