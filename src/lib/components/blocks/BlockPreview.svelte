@@ -91,13 +91,15 @@
 
 	let resolvedIframeHeight = $derived(Math.max(previewHeight ?? iframeHeight, MIN_PREVIEW_HEIGHT));
 
-	// Theme Logic
+	/* 
+     Theme Logic
 	let activePreviewTheme = $derived(resolveScopedTheme(page.url.pathname));
 	let themeSetupHref = $derived.by(() => {
-		if (activePreviewTheme === "veil") return "/v2-docs/veil-theme";
-		if (activePreviewTheme === "mist") return "/v2-docs/mist-theme";
+		if (activePreviewTheme === "veil") return "/documentation/veil-theme";
+		if (activePreviewTheme === "mist") return "/documentation/mist-theme";
 		return null;
 	});
+    */
 
 	// Functions
 	function applyIframeScrollbarStyles(
@@ -441,7 +443,7 @@
 					<InstallComponent id={installId} class={cn(isMobile.current && "flex-1")} />
 				{/if}
 
-				{#if themeSetupHref}
+				<!-- {#if themeSetupHref}
 					<Button
 						variant="outline"
 						size="sm"
@@ -451,7 +453,8 @@
 						<Palette class="size-3.5" />
 						<span>Theme Setup</span>
 					</Button>
-				{/if}
+				{/if} 
+               -->
 			</div>
 		</div>
 	</section>
@@ -521,16 +524,7 @@
 							<Pane id={`preview-resizer-${id}`} order={2} defaultSize={100 - DEFAULT_SIZE} />
 						{/if}
 					</PaneGroup>
-				{:else if activePreviewTheme}
-					<div data-theme={activePreviewTheme}>
-						<div
-							in:scale={{ start: 0.85 }}
-							class="theme-container min-h-(--preview-min-height) w-full overflow-hidden"
-						>
-							<PreviewComponent />
-						</div>
-					</div>
-				{:else}
+				
 					<div
 						in:scale={{ start: 0.85 }}
 						class="flex min-h-(--preview-min-height) w-full items-center justify-center overflow-hidden"

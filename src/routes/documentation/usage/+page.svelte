@@ -80,7 +80,7 @@
 	<H3>Need setup first?</H3>
 	<Paragraph>
 		If the registry flow is not initialized yet, start with
-		<Link href="/docs/installation">Installation</Link>. Once that is done, the block pages
+		<Link href="/documentation/installation">Installation</Link>. Once that is done, the block pages
 		become the main day-to-day workflow.
 	</Paragraph>
 </DocsPage>

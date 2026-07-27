@@ -61,6 +61,6 @@
 	<Paragraph>
 		After the registry is initialized, the main workflow moves to the block pages: compare
 		variants, use the exact install control for the block you want, and customize the generated
-		code locally. The <Link href="/docs/usage">Usage</Link> page covers that flow in more detail.
+		code locally. The <Link href="/documentation/usage">Usage</Link> page covers that flow in more detail.
 	</Paragraph>
 </DocsPage>

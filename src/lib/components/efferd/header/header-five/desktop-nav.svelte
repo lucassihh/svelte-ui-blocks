@@ -60,7 +60,7 @@
 		<NavigationMenu.Item>
 			<NavigationMenu.Link class="rounded-md p-2 px-4 hover:bg-accent">
 				{#snippet child({ props })}
-					<a href="/docs" {...props}>Docs</a>
+					<a href="/documentation" {...props}>Docs</a>
 				{/snippet}
 			</NavigationMenu.Link>
 		</NavigationMenu.Item>
