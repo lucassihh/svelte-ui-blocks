@@ -4,8 +4,9 @@
 	import Logo from "$lib/svgs/logo.svelte";
 	import { MoonIcon, SunIcon } from "@lucide/svelte";
 	import { SvelteDate } from "svelte/reactivity";
-
-	import { socialLinks, BlocksLinks, DocumentationLinks, ResourcesLinks } from "./config";
+    
+    // Data
+	import { socialLinks, BlocksLinks, DocumentationLinks, ResourcesLinks } from "./data.ts";
 
 	// Get Current Theme
 	import { mode, toggleMode } from "mode-watcher";

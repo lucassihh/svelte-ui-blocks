@@ -4,10 +4,13 @@
 	import { AuthDivider } from "$lib/components/ui/auth-divider";
 	import { FloatingPaths } from "$lib/components/ui/floating-paths";
 	import { InputGroup, InputGroupAddon, InputGroupInput } from "$lib/components/ui/input-group";
-	import AppleLogo from "$lib/svgs/apple.svelte";
-	import GithubLogo from "$lib/svgs/github.svelte";
-	import GoogleLogo from "$lib/svgs/google.svelte";
+    
+    // SVG 
+    import AppleLogo from "$lib/svgs/brand/apple.svelte";
+	import GithubLogo from "$lib/svgs/social/github.svelte";
+	import GoogleLogo from "$lib/svgs/brand/google.svelte";
 	import Logo from "$lib/svgs/logo.svelte";
+    
 	import { cn } from "$lib/utils";
 	import type { HTMLAttributes } from "svelte/elements";
 

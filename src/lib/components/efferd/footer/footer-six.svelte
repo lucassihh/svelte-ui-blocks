@@ -1,14 +1,15 @@
 <script lang="ts">
 	import AnimatedContainer from "$lib/components/efferd/footer/AnimatedContainer.svelte";
 	import { Button } from "$lib/components/ui/button";
-	import Logo from "$lib/svgs/logo.svelte";
-	import {
-		FacebookIcon,
-		InstagramIcon,
-		LinkedinIcon,
-		YoutubeIcon,
-		type Icon
-	} from "$lib/svgs/social/";
+	
+    // SVG
+    import FacebookIcon from "$lib/svgs/social/facebook.svelte";
+    import InstagramIcon from "$lib/svgs/social/instagram.svelte";
+    import LinkedinIcon from "$lib/svgs/social/linkedin.svelte";
+    import YoutubeIcon from "$lib/svgs/social/youtube.svelte";
+
+    import Logo from "$lib/svgs/logo.svelte";
+	
 
 	type FooterLink = {
 		title: string;

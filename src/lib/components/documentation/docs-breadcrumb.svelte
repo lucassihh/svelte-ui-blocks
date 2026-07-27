@@ -1,8 +1,9 @@
 <script lang="ts">
   import { page } from "$app/state";   
   import * as Breadcrumb from "$lib/components/ui/breadcrumb";
+ 
   // Data
-  import { getDocsPage } from "./config";
+  import { getDocsPage } from "./data.ts";
   
   // Get Current Page
   let currentPage = $derived(getDocsPage(page.url.pathname));

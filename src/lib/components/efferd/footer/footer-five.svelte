@@ -1,10 +1,15 @@
 <script lang="ts">
 	import { Button } from "$lib/components/ui/button";
-	import AppleLogo from "$lib/svgs/apple.svelte";
-	import PlayStoreLogo from "$lib/svgs/play-store.svelte";
-	import XLogo from "$lib/svgs/x.svelte";
-	import { FacebookIcon, InstagramIcon, LinkedinIcon } from "$lib/svgs/social/";
-	import type { Component } from "svelte";
+	
+    // SVG
+    import AppleLogo from "$lib/svgs/brand/apple.svelte";
+	import PlayStoreLogo from "$lib/svgs/brand/play-store.svelte";
+    import FacebookIcon from "$lib/svgs/social/facebook.svelte";
+    import XLogo from "$lib/svgs/social/x.svelte";
+    import InstagramIcon from "$lib/svgs/social/instagram.svelte";
+    import LinkedinIcon from "$lib/svgs/social/linkedin.svelte";
+
+    import type { Component } from "svelte";
 
 	type FooterLink = {
 		href: string;

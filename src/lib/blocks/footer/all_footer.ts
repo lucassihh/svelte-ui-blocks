@@ -15,11 +15,11 @@ import footerOneSource from "$lib/components/efferd/footer/footer-one.svelte?raw
 import footerSixSource from "$lib/components/efferd/footer/footer-six.svelte?raw";
 import footerThreeSource from "$lib/components/efferd/footer/footer-three.svelte?raw";
 import footerTwoSource from "$lib/components/efferd/footer/footer-two.svelte?raw";
-import appleSvgSource from "$lib/svgs/apple.svelte?raw";
-import githubSvgSource from "$lib/svgs/github.svelte?raw";
+import appleSvgSource from "$lib/svgs/brand/apple.svelte?raw";
+import githubSvgSource from "$lib/svgs/social/github.svelte?raw";
 import logoSvgSource from "$lib/svgs/logo.svelte?raw";
-import playStoreSvgSource from "$lib/svgs/play-store.svelte?raw";
-import xSvgSource from "$lib/svgs/x.svelte?raw";
+import playStoreSvgSource from "$lib/svgs/brand/play-store.svelte?raw";
+import xSvgSource from "$lib/svgs/social/x.svelte?raw";
 
 const buttonFiles = [
 	{
@@ -51,7 +51,7 @@ const linkGroupFiles = [
 const githubFiles = [
 	{
 		id: "shared:github-svg",
-		path: "svgs/github.svelte",
+		path: "svgs/social/github.svelte",
 		lang: "svelte" as const,
 		code: githubSvgSource
 	}
@@ -69,7 +69,7 @@ const logoFiles = [
 const appleFiles = [
 	{
 		id: "shared:apple-svg",
-		path: "svgs/apple.svelte",
+		path: "svgs/brand/apple.svelte",
 		lang: "svelte" as const,
 		code: appleSvgSource
 	}
@@ -78,7 +78,7 @@ const appleFiles = [
 const playStoreFiles = [
 	{
 		id: "shared:play-store-svg",
-		path: "svgs/play-store.svelte",
+		path: "svgs/brand/play-store.svelte",
 		lang: "svelte" as const,
 		code: playStoreSvgSource
 	}
@@ -87,7 +87,7 @@ const playStoreFiles = [
 const xFiles = [
 	{
 		id: "shared:x-svg",
-		path: "svgs/x.svelte",
+		path: "svgs/social/x.svelte",
 		lang: "svelte" as const,
 		code: xSvgSource
 	}

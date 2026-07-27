@@ -3,9 +3,12 @@
 	import { Button } from "$lib/components/ui/button";
 	import { AuthDivider } from "$lib/components/ui/auth-divider";
 	import { InputGroup, InputGroupAddon, InputGroupInput } from "$lib/components/ui/input-group";
-	import GithubLogo from "$lib/svgs/github.svelte";
-	import GoogleLogo from "$lib/svgs/google.svelte";
+    
+    // SVG
+	import GithubLogo from "$lib/svgs/social/github.svelte";
+	import GoogleLogo from "$lib/svgs/brand/google.svelte";
 	import Logo from "$lib/svgs/logo.svelte";
+
 	import { cn } from "$lib/utils";
 	import type { HTMLAttributes } from "svelte/elements";
 

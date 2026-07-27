@@ -7,7 +7,7 @@
     import { buttonVariants } from "$lib/components/ui/button/index.js";
     
     // Data
-    import { docsPrimaryPages, docsSecondaryPages, normalizeDocsPath } from "./config";
+    import { docsPrimaryPages, docsSecondaryPages, normalizeDocsPath } from "./data.ts";
  
 	// Current Path
 	let currentPath = $derived(normalizeDocsPath(page.url.pathname));
@@ -20,13 +20,13 @@
     import { useSidebar } from "$lib/components/ui/sidebar/index.js";
     const sidebar = useSidebar();
     
-    // Mobile = 'right' no mobile, Desktop = 'left'
-    let effectiveSide = $derived(isMobile.current ? "bottom" : "left");
+    // Mobile = 'bottom', Desktop = 'left'
+    let sidebarPosition = $derived(isMobile.current ? "bottom" : "left");
     
     let { showCloseButton = true, ref = $bindable(null), ...restProps }: ComponentProps<typeof Sidebar.Root> = $props();
 </script>
 
-<Sidebar.Root bind:ref {showCloseButton} side={effectiveSide} {...restProps} class="w-full md:w-[16rem] md:pt-14 md:border-none">
+<Sidebar.Root bind:ref {showCloseButton} side={sidebarPosition} {...restProps} class="w-full md:w-[16rem] md:pt-14 md:border-none">
     <Sidebar.Content>
 		<Sidebar.Group>
 			<Sidebar.GroupLabel>Documentation</Sidebar.GroupLabel>

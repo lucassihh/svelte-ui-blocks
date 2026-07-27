@@ -1,6 +1,7 @@
 <script lang="ts">
 	import DocsPage from "$lib/components/documentation/docs-page.svelte";
-	import { docsSupportLinks } from "$lib/components/documentation/config";
+    // Data
+	import { docsSupportLinks } from "$lib/components/documentation/data.ts";
 	import H2 from "$lib/components/markdown/H2.svelte";
 	import Link from "$lib/components/markdown/Link.svelte";
 	import ListItem from "$lib/components/markdown/ListItem.svelte";

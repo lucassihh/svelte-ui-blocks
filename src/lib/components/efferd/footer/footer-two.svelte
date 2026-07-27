@@ -1,17 +1,18 @@
 <script lang="ts">
 	import { Button } from "$lib/components/ui/button";
 	import { cn } from "$lib/utils";
-	import Logo from "$lib/svgs/logo.svelte";
-	import XLogo from "$lib/svgs/x.svelte";
+	
+    // SVG
+    import Logo from "$lib/svgs/logo.svelte";
+    import FacebookIcon from "$lib/svgs/social/facebook.svelte";
+    import GithubIcon from "$lib/svgs/social/github.svelte";
+    import XIcon from "$lib/svgs/social/x.svelte";
+    import InstagramIcon from "$lib/svgs/social/instagram.svelte";
+    import LinkedinIcon from "$lib/svgs/social/linkedin.svelte";
+    import YoutubeIcon from "$lib/svgs/social/youtube.svelte";
+        
 	import { SvelteDate } from "svelte/reactivity";
-	import {
-		FacebookIcon,
-		GithubIcon,
-		InstagramIcon,
-		LinkedinIcon,
-		YoutubeIcon
-	} from "$lib/svgs/social/";
-
+	
 	import type { Component } from "svelte";
 
 	type FooterLink = {
@@ -93,7 +94,7 @@
 			label: "LinkedIn"
 		},
 		{
-			icon: XLogo,
+			icon: XIcon,
 			link: "https://x.com",
 			label: "X"
 		},

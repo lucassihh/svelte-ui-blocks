@@ -31,8 +31,8 @@ import inputIndexSource from "$lib/components/ui/input/index.ts?raw";
 import inputSource from "$lib/components/ui/input/input.svelte?raw";
 import textareaIndexSource from "$lib/components/ui/textarea/index.ts?raw";
 import textareaSource from "$lib/components/ui/textarea/textarea.svelte?raw";
-import githubSvgSource from "$lib/svgs/github.svelte?raw";
-import xSvgSource from "$lib/svgs/x.svelte?raw";
+import githubSvgSource from "$lib/svgs/social/github.svelte?raw";
+import xSvgSource from "$lib/svgs/social/x.svelte?raw";
 
 const buttonFiles = [
 	{
@@ -175,7 +175,7 @@ const textareaFiles = [
 const xSvgFiles = [
 	{
 		id: "shared:x-svg",
-		path: "svgs/x.svelte",
+		path: "svgs/social/x.svelte",
 		lang: "svelte" as const,
 		code: xSvgSource
 	}
@@ -184,7 +184,7 @@ const xSvgFiles = [
 const githubSvgFiles = [
 	{
 		id: "shared:github-svg",
-		path: "svgs/github.svelte",
+		path: "svgs/social/github.svelte",
 		lang: "svelte" as const,
 		code: githubSvgSource
 	}

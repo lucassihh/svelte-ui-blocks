@@ -1,4 +1,11 @@
-import { GithubIcon, InstagramIcon, XIcon, YoutubeIcon } from "$lib/svgs/social";
+// SVG
+import FacebookIcon from "$lib/svgs/social/facebook.svelte";
+import GithubIcon from "$lib/svgs/social/github.svelte";
+import XIcon from "$lib/svgs/social/x.svelte";
+import InstagramIcon from "$lib/svgs/social/instagram.svelte";
+import LinkedinIcon from "$lib/svgs/social/linkedin.svelte";
+import YoutubeIcon from "$lib/svgs/social/youtube.svelte";
+
 import type { Component } from "svelte";
 
 // Types
@@ -45,21 +52,23 @@ export const socialLinks: SocialLink[] = [
 		link: "https://github.com/lucassihh/svelte-ui-blocks",
 		label: "Github"
 	},
-	// {
-	//	icon: InstagramIcon,
-	//	link: "https://www.instagram.com/",
-	//	label: "Instagram"
-	// },
-	// {
-	// 	icon: XIcon,
-	// 	link: "https://x.com",
-	// 	label: "X"
-	// },
-	// {
-	//	icon: YoutubeIcon,
-	//	link: "https://youtube.com",
-	//	label: "YouTube"
-	// }
+    /*
+    {
+		icon: InstagramIcon,
+		link: "https://www.instagram.com/",
+		label: "Instagram"
+	},
+	{
+		icon: XIcon,
+		link: "https://x.com",
+	 	label: "X"
+	},
+    {
+		icon: YoutubeIcon,
+		link: "https://youtube.com",
+		label: "YouTube"
+    }
+    */
 ] as const;
 
 // Footer Links

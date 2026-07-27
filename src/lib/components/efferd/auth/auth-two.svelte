@@ -4,9 +4,12 @@
 	import { AuthDivider } from "$lib/components/ui/auth-divider";
 	import { DecorIcon } from "$lib/components/ui/decor-icon";
 	import { InputGroup, InputGroupAddon, InputGroupInput } from "$lib/components/ui/input-group";
-	import GithubLogo from "$lib/svgs/github.svelte";
-	import GoogleLogo from "$lib/svgs/google.svelte";
-	import { cn } from "$lib/utils";
+    
+    // SVG
+	import GithubLogo from "$lib/svgs/social/github.svelte";
+	import GoogleLogo from "$lib/svgs/brand/google.svelte";
+
+    	import { cn } from "$lib/utils";
 	import type { HTMLAttributes } from "svelte/elements";
 
 	type AuthTwoProps = HTMLAttributes<HTMLDivElement> & {

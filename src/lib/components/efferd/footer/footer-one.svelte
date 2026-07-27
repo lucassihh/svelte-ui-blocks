@@ -1,8 +1,8 @@
 <script lang="ts">
 	import { Button } from "$lib/components/ui/button";
-	import GithubLogo from "$lib/svgs/github.svelte";
+	import GithubLogo from "$lib/svgs/social/github.svelte";
 	import Logo from "$lib/svgs/logo.svelte";
-	import XLogo from "$lib/svgs/x.svelte";
+	import XLogo from "$lib/svgs/social/x.svelte";
 	import type { Component } from "svelte";
 
 	type NavLink = {

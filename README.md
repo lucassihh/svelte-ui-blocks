@@ -4,7 +4,7 @@
 
 This is a Fork from [Svelte Efferd](https://github.com/SikandarJODD/sv-efferd)
 
-I made some modifications.
+I made some improvements 
 
 - [x] - Fix CodePreview
 - [x] - Add Mobile Sidebar

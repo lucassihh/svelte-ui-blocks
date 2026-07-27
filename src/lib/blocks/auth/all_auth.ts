@@ -25,9 +25,9 @@ import inputGroupAddonSource from "$lib/components/ui/input-group/input-group-ad
 import inputGroupIndexSource from "$lib/components/ui/input-group/index.ts?raw";
 import inputGroupInputSource from "$lib/components/ui/input-group/input-group-input.svelte?raw";
 import inputGroupSource from "$lib/components/ui/input-group/input-group.svelte?raw";
-import appleSvgSource from "$lib/svgs/apple.svelte?raw";
-import githubSvgSource from "$lib/svgs/github.svelte?raw";
-import googleSvgSource from "$lib/svgs/google.svelte?raw";
+import appleSvgSource from "$lib/svgs/brand/apple.svelte?raw";
+import githubSvgSource from "$lib/svgs/social/github.svelte?raw";
+import googleSvgSource from "$lib/svgs/brand/google.svelte?raw";
 import logoSvgSource from "$lib/svgs/logo.svelte?raw";
 
 const buttonFiles = [
@@ -153,7 +153,7 @@ const logoFiles = [
 const googleFiles = [
 	{
 		id: "shared:google-svg",
-		path: "svgs/google.svelte",
+		path: "svgs/brand/google.svelte",
 		lang: "svelte" as const,
 		code: googleSvgSource
 	}
@@ -162,7 +162,7 @@ const googleFiles = [
 const githubFiles = [
 	{
 		id: "shared:github-svg",
-		path: "svgs/github.svelte",
+		path: "svgs/social/github.svelte",
 		lang: "svelte" as const,
 		code: githubSvgSource
 	}
@@ -171,7 +171,7 @@ const githubFiles = [
 const appleFiles = [
 	{
 		id: "shared:apple-svg",
-		path: "svgs/apple.svelte",
+		path: "svgs/brand/apple.svelte",
 		lang: "svelte" as const,
 		code: appleSvgSource
 	}

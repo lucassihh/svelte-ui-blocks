@@ -7,13 +7,14 @@
     import { buttonVariants } from "$lib/components/ui/button/index.js";
 	
     // Data & Normalize Path 
-	import { sidebarLinks, normalizePath} from "./config";
+	import { sidebarLinks, normalizePath} from "./data";
  
 	// Current Path
 	let currentPath = $derived(normalizePath(page.url.pathname));
      
     // Binds 
-    let { showCloseButton = true, side = "left", ref = $bindable(null), ...restProps }: ComponentProps<typeof Sidebar.Root> = $props();
+    let sidebarPosition = "left";
+    let { showCloseButton = true, side = sidebarPosition, ref = $bindable(null), ...restProps }: ComponentProps<typeof Sidebar.Root> = $props();
     
     // For Close Sidebar when click on Link 
     import { useSidebar } from "$lib/components/ui/sidebar/index.js";

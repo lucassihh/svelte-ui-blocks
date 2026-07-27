@@ -4,13 +4,12 @@
 	import { Button } from "$lib/components/ui/button";
     import { buttonVariants } from "$lib/components/ui/button/index.js";
 	
-    // Icons 
+    // Icons & Logos
 	import { MoonIcon, SunIcon, PanelLeftOpen } from "@lucide/svelte/icons";
-    import { GithubIcon, XIcon } from "$lib/svgs/social/";
 	import Logo from "$lib/svgs/logo.svelte";
     
     // Data
-	import { sidebarLinks, socialLinks } from "./config";
+	import { sidebarLinks, socialLinks } from "./data.ts";
 
     // For Custom Button Sidebar
     import { useSidebar } from "$lib/components/ui/sidebar/index.js";
@@ -43,7 +42,7 @@
              
 			<!-- Logo -->
 			<a aria-label="home" class="flex items-center gap-1" href="/">
-				<Logo />
+				<!-- <Logo /> -->
 				<span class="font-mono font-medium tracking-tight">Svelte UI</span>
 			</a>
 		</div>
@@ -63,7 +62,7 @@
 
 		<!-- Social Links & ThemeToggle Btn -->
 	    <div class="flex items-center gap-2">
-				<!-- Social -->
+                <!-- SocialLinks Icons by data.ts -->
 				{#each socialLinks as item, index (`social-${item.link}-${index}`)}
 					{@const SocialIcon = item.icon}
 					<Button

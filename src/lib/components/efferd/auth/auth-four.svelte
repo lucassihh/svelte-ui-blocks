@@ -4,8 +4,11 @@
 	import { AuthDivider } from "$lib/components/ui/auth-divider";
 	import { FullWidthDivider } from "$lib/components/ui/full-width-divider";
 	import { InputGroup, InputGroupAddon, InputGroupInput } from "$lib/components/ui/input-group";
-	import GoogleLogo from "$lib/svgs/google.svelte";
+	
+    // SVG
+    import GoogleLogo from "$lib/svgs/brand/google.svelte";
 	import Logo from "$lib/svgs/logo.svelte";
+    
 	import { cn } from "$lib/utils";
 	import type { HTMLAttributes } from "svelte/elements";
 
