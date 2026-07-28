@@ -5,6 +5,8 @@
     
     import Button from "$lib/components/ui/button/button.svelte"; 
     import * as Sidebar from "$lib/components/ui/sidebar/index.js";
+    
+    // Landing Imports
     import SiteSidebar from "$lib/components/landing/site-sidebar.svelte";
     import SiteHeader from "$lib/components/landing/site-header.svelte";
 	import SiteFooter from "$lib/components/landing/site-footer.svelte";
@@ -12,21 +14,21 @@
 	import { ModeWatcher, toggleMode } from "mode-watcher";
 	import { cn } from "$lib/utils";
 	
-	import { PressedKeys } from "runed";
-
 	let { children } = $props();
 	let isPreviewRoute = $derived(page.url.pathname.startsWith("/preview/"));
 
+    // Switch Theme using "T" key
+    import { PressedKeys } from "runed";
+        
 	const keys = new PressedKeys();
-	keys.onKeys(["d"], () => {
-		console.log("open command palette");
+	keys.onKeys(["t"], () => {
 		toggleMode();
 	});
 
-    // If Path include documentation, then don't show footer
-	let showFooter = $derived.by(() => {
+    // If Path include documentation returns --> true
+	let isDocumentation = $derived.by(() => {
 		let path = page.url.pathname;
-		return !path.includes("documentation");
+		return path.includes("documentation");
 	});
     
     // For Scroll to Top
@@ -54,18 +56,14 @@
         </div> 
 		<div class="relative supports-[overflow:clip]:overflow-clip dark:bg-background w-full w-max-4xl mx-auto">
             <SiteHeader />
-			<main
-				class={cn(
-					"relative container grow",
-					"before:absolute before:-inset-y-20 before:-left-px before:z-1 before:border-dashed before:border-primary/20 xl:before:border-l",
-					"after:absolute after:-inset-y-20 after:-right-px after:z-1 after:border-dashed after:border-primary/20 xl:after:border-r"
-				)}
-			> 
-				{@render children()}
-                
-                {#if visible}
+			<main> 
+			
+          	{@render children()}
+               
+            <!-- Scroll to Top -->
+            {#if visible}
                  {@render scrollToTop()}
-               {/if}
+            {/if}
             
             {#snippet scrollToTop()}
                 <div in:fly={{ y: 20 }} out:fly={{ y: 20 }} class="fixed right-4 bottom-4 z-50">
@@ -93,9 +91,11 @@
                 </div>
             {/snippet}
 			</main>
-            {#if showFooter}
+           
+            {#if !isDocumentation}
 		 	<SiteFooter />
             {/if}
+            
 		</div>
 	</Sidebar.Provider>
 {/if}

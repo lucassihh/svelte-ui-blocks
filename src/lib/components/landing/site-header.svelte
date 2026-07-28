@@ -23,7 +23,7 @@
 </script>
 
 <header
-	class="relative sticky top-0 z-50 mx-auto w-full max-w-7xl border-b border-border/80 bg-background"
+	class="relative sticky top-0 z-50 mx-auto w-full max-w-7xl border-b border-border/80 bg-background shrink-0"
 >
 	<nav class="flex items-center justify-between gap-2 p-4">
 		

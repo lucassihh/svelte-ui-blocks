@@ -12,10 +12,11 @@
  let visible = $derived(typeof scrollY.current === "undefined" ? 600 : scrollY.current > 800);
 </script>
  
-
-<Sidebar.Provider class="bg-card">
-    <DocsSidebar/>
-        <main class="w-full max-w-7xl mx-auto bg-background md:m-2 md:rounded-xl">
+<!-- Documentation Layout -->
+<Sidebar.Provider class="flex-col md:flex-row w-full max-w-7xl mx-auto md:p-2 bg-card">
+        <!-- Documentation Sidebar -->
+        <DocsSidebar/>
+        <Sidebar.Inset class="bg-background md:rounded-xl">
             <DocsHeader/>
             {@render children?.()}
             
@@ -48,5 +49,6 @@
                     </Button>
                 </div>
             {/snippet}
-        </main>
+        </Sidebar.Inset>
 </Sidebar.Provider>
+  

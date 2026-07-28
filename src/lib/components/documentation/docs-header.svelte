@@ -18,7 +18,7 @@
 	<div class="flex items-center gap-4">
       <!-- Docs Sidebar Btn Trigger -->
         <Button 
-            class="bg-transparent text-primary"
+            class="bg-transparent text-primary md:hidden lg:hidden"
             size="icon-sm" 
             onclick={() => sidebar.toggle()}
         >
