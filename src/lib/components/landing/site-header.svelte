@@ -30,7 +30,7 @@
         <!-- Mobile Sidebar & Logo -->
 		<div class="flex items-center gap-2">
 			<!-- Mobile Sidebar Trigger -->
-             <div class="block md:hidden lg:hidden">
+             <div class="block md:hidden">
                 <Button 
                     variant="secondary" 
                     size="icon-sm" 
@@ -42,7 +42,7 @@
              
 			<!-- Logo -->
 			<a aria-label="home" class="flex items-center gap-1" href="/">
-				<!-- <Logo /> -->
+				<Logo />
 				<span class="font-mono font-medium tracking-tight">Svelte UI</span>
 			</a>
 		</div>

@@ -14,28 +14,13 @@
 		"shadcn-svelte marketing blocks",
 		"Svelte marketing blocks",
 		"shadcn blocks for marketing",
-		"landing page blocks for Svelte",
-		"hero sections",
-		"CTA blocks",
-		"pricing sections",
-		"testimonial sections",
-		"FAQ sections",
-		"header blocks",
-		"footer blocks",
-		"contact sections"
+		"landing page blocks for Svelte"
 	] as const;
 	const categoryNames = [
 		"Hero sections",
 		"CTA sections",
 		"Pricing sections",
 		"Testimonial sections",
-		"FAQ sections",
-		"Blog sections",
-		"Contact sections",
-		"Header sections",
-		"Footer sections",
-		"Logo cloud sections",
-		"Integration sections",
 		"Feature sections"
 	] as const;
 	const ogImageUrl = new URL(asset("/og.png"), siteUrl).toString();
@@ -52,8 +37,8 @@
 					url: logoUrl
 				},
 				sameAs: [
-					"https://github.com/SikandarJODD/sv-efferd",
-					"https://x.com/Sikandar_Bhide"
+					"https://github.com/",
+					"https://x.com/"
 				]
 			},
 			{
@@ -144,8 +129,8 @@
 		description,
 		image: ogImageUrl,
 		imageAlt: "Svelte Efferd marketing blocks preview",
-		site: "@Sikandar_Bhide",
-		creator: "@Sikandar_Bhide"
+		site: "",
+		creator: ""
 	}}
 />
 <JsonLd schema={jsonLdSchema} />
