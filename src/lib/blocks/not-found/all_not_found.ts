@@ -109,8 +109,7 @@ export const notFoundBlocks: BlockShowcaseItem[] = [
 	{
 		id: "not-found-two",
 		title: "Not Found Two",
-		description:
-			"A minimal full-screen 404 with oversized typography and direct recovery actions.",
+		description: "A minimal full-screen 404 with oversized typography and direct recovery actions.",
 		previewComponent: NotFoundTwo,
 		previewHref: "/preview/not-found/two",
 		previewMode: "iframe",

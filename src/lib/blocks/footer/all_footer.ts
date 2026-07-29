@@ -119,8 +119,7 @@ export const footerBlocks: BlockShowcaseItem[] = [
 	{
 		id: "footer-two",
 		title: "Footer Two",
-		description:
-			"A structured multi-column footer with brand intro and outlined social actions.",
+		description: "A structured multi-column footer with brand intro and outlined social actions.",
 		previewComponent: FooterTwo,
 		previewHref: "/preview/footer/two",
 		previewMode: "iframe",
@@ -141,8 +140,7 @@ export const footerBlocks: BlockShowcaseItem[] = [
 	{
 		id: "footer-three",
 		title: "Footer Three",
-		description:
-			"An animated rounded footer with grouped link columns and softer visual depth.",
+		description: "An animated rounded footer with grouped link columns and softer visual depth.",
 		previewComponent: FooterThree,
 		previewHref: "/preview/footer/three",
 		previewMode: "iframe",

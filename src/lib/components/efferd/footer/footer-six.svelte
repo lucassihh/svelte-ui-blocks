@@ -1,15 +1,14 @@
 <script lang="ts">
 	import AnimatedContainer from "$lib/components/efferd/footer/AnimatedContainer.svelte";
 	import { Button } from "$lib/components/ui/button";
-	
-    // SVG
-    import FacebookIcon from "$lib/svgs/social/facebook.svelte";
-    import InstagramIcon from "$lib/svgs/social/instagram.svelte";
-    import LinkedinIcon from "$lib/svgs/social/linkedin.svelte";
-    import YoutubeIcon from "$lib/svgs/social/youtube.svelte";
 
-    import Logo from "$lib/svgs/logo.svelte";
-	
+	// SVG
+	import FacebookIcon from "$lib/svgs/social/facebook.svelte";
+	import InstagramIcon from "$lib/svgs/social/instagram.svelte";
+	import LinkedinIcon from "$lib/svgs/social/linkedin.svelte";
+	import YoutubeIcon from "$lib/svgs/social/youtube.svelte";
+
+	import Logo from "$lib/svgs/logo.svelte";
 
 	type FooterLink = {
 		title: string;
@@ -141,12 +140,7 @@
 						<div class="flex gap-2">
 							{#each socialLinks as link, index (`social-${link.href}-${index}`)}
 								{@const SocialIcon = link.icon}
-								<Button
-									href={link.href}
-									aria-label={link.title}
-									size="icon-sm"
-									variant="outline"
-								>
+								<Button href={link.href} aria-label={link.title} size="icon-sm" variant="outline">
 									<SocialIcon class="size-4" />
 								</Button>
 							{/each}
@@ -157,9 +151,7 @@
 						<AnimatedContainer class="w-full" delay={0.1 + index * 0.1}>
 							<div class="mb-10 md:mb-0">
 								<h3 class="text-sm uppercase">{group.label}</h3>
-								<ul
-									class="mt-4 space-y-2 text-sm text-muted-foreground md:text-xs lg:text-sm"
-								>
+								<ul class="mt-4 space-y-2 text-sm text-muted-foreground md:text-xs lg:text-sm">
 									{#each group.links as link (link.title)}
 										<li>
 											<a

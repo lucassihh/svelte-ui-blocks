@@ -170,9 +170,7 @@
 			<Accordion type="single" class="space-y-2">
 				{#each filteredFaqs as item (item.id)}
 					<AccordionItem value={item.id.toString()} class="border-b-0">
-						<AccordionTrigger
-							class="bg-muted px-4 py-3 hover:no-underline dark:bg-muted/50"
-						>
+						<AccordionTrigger class="bg-muted px-4 py-3 hover:no-underline dark:bg-muted/50">
 							{item.title}
 						</AccordionTrigger>
 

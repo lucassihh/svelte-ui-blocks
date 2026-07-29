@@ -23,8 +23,8 @@
 
 	<H2>What to expect later</H2>
 	<Paragraph>
-		The template area will eventually cover larger starting points built from multiple blocks,
-		along with guidance for customizing them and turning them into production-ready pages.
+		The template area will eventually cover larger starting points built from multiple blocks, along
+		with guidance for customizing them and turning them into production-ready pages.
 	</Paragraph>
 
 	<Paragraph>

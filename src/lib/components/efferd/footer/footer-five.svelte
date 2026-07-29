@@ -1,15 +1,15 @@
 <script lang="ts">
 	import { Button } from "$lib/components/ui/button";
-	
-    // SVG
-    import AppleLogo from "$lib/svgs/brand/apple.svelte";
-	import PlayStoreLogo from "$lib/svgs/brand/play-store.svelte";
-    import FacebookIcon from "$lib/svgs/social/facebook.svelte";
-    import XLogo from "$lib/svgs/social/x.svelte";
-    import InstagramIcon from "$lib/svgs/social/instagram.svelte";
-    import LinkedinIcon from "$lib/svgs/social/linkedin.svelte";
 
-    import type { Component } from "svelte";
+	// SVG
+	import AppleLogo from "$lib/svgs/brand/apple.svelte";
+	import PlayStoreLogo from "$lib/svgs/brand/play-store.svelte";
+	import FacebookIcon from "$lib/svgs/social/facebook.svelte";
+	import XLogo from "$lib/svgs/social/x.svelte";
+	import InstagramIcon from "$lib/svgs/social/instagram.svelte";
+	import LinkedinIcon from "$lib/svgs/social/linkedin.svelte";
+
+	import type { Component } from "svelte";
 
 	type FooterLink = {
 		href: string;
@@ -128,29 +128,17 @@
 			<div class="flex items-center gap-2">
 				{#each socialLinks as item, index (`social-${item.href}-${index}`)}
 					{@const SocialIcon = item.icon}
-					<Button
-						href={item.href}
-						aria-label={item.label}
-						size="icon-sm"
-						variant="outline"
-					>
+					<Button href={item.href} aria-label={item.label} size="icon-sm" variant="outline">
 						<SocialIcon class="size-4" />
 					</Button>
 				{/each}
 			</div>
 
 			<div class="flex gap-4">
-				<Button
-					href="https://play.google.com/store"
-					class="h-11"
-					target="_blank"
-					rel="noreferrer"
-				>
+				<Button href="https://play.google.com/store" class="h-11" target="_blank" rel="noreferrer">
 					<PlayStoreLogo class="size-5" />
 					<div class="flex flex-col items-start justify-center pr-2 text-left">
-						<span class="text-[10px] leading-none font-light tracking-tighter">
-							GET IT ON
-						</span>
+						<span class="text-[10px] leading-none font-light tracking-tighter"> GET IT ON </span>
 						<p class="text-base leading-none font-bold">Google Play</p>
 					</div>
 				</Button>
@@ -163,9 +151,7 @@
 				>
 					<AppleLogo class="size-5" />
 					<div class="flex flex-col items-start justify-center pr-2 text-left">
-						<span class="text-[10px] leading-none tracking-tighter"
-							>Download on the</span
-						>
+						<span class="text-[10px] leading-none tracking-tighter">Download on the</span>
 						<p class="text-base leading-none font-bold">App Store</p>
 					</div>
 				</Button>

@@ -7,8 +7,8 @@
 	import Steps from "$lib/components/markdown/Steps.svelte";
 	import { Button } from "$lib/components/ui/button";
 	import * as Code from "$lib/components/ui/code";
-    
-    // Code Text
+
+	// Code Text
 	const initCommand = "pnpm dlx shadcn-svelte@latest init shadcn-svelte";
 	const addCommand = "pnpm dlx shadcn-svelte@latest add https://your-site/r/block-id.json";
 </script>
@@ -32,17 +32,17 @@
 
 	<H2>How installation works</H2>
 	<Paragraph>
-		The existing add UI in block previews already reflects a two-step flow. First you initialize
-		the registry in your project. After that, each block can be added from its own generated
-		registry URL.
+		The existing add UI in block previews already reflects a two-step flow. First you initialize the
+		registry in your project. After that, each block can be added from its own generated registry
+		URL.
 	</Paragraph>
 
 	<Steps class="mt-8">
 		<Step>
 			<H2 class="mt-0 text-xl">Initialize once</H2>
 			<Paragraph>
-				Run the init command for your package manager before adding blocks. The preview UI
-				can copy this for you, but the underlying flow is the same.
+				Run the init command for your package manager before adding blocks. The preview UI can copy
+				this for you, but the underlying flow is the same.
 			</Paragraph>
 			<Code.Root class="mt-4" code={initCommand} lang="bash" variant="secondary" />
 		</Step>
@@ -50,8 +50,8 @@
 		<Step>
 			<H2 class="mt-0 text-xl">Add from a block page</H2>
 			<Paragraph>
-				Once the registry is ready, browse <Link href="/blocks">the blocks directory</Link>,
-				open the block you want, and use the install action from that page.
+				Once the registry is ready, browse <Link href="/blocks">the blocks directory</Link>, open
+				the block you want, and use the install action from that page.
 			</Paragraph>
 			<Code.Root class="mt-4" code={addCommand} lang="bash" variant="secondary" />
 		</Step>
@@ -59,8 +59,8 @@
 
 	<H2>After setup</H2>
 	<Paragraph>
-		After the registry is initialized, the main workflow moves to the block pages: compare
-		variants, use the exact install control for the block you want, and customize the generated
-		code locally. The <Link href="/documentation/usage">Usage</Link> page covers that flow in more detail.
+		After the registry is initialized, the main workflow moves to the block pages: compare variants,
+		use the exact install control for the block you want, and customize the generated code locally.
+		The <Link href="/documentation/usage">Usage</Link> page covers that flow in more detail.
 	</Paragraph>
 </DocsPage>

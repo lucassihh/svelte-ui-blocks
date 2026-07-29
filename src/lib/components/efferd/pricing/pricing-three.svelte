@@ -93,8 +93,7 @@
 		</h2>
 
 		<p class="text-center text-sm text-muted-foreground md:text-base">
-			Whether you&apos;re just starting out or growing fast, our flexible pricing has you
-			covered.
+			Whether you&apos;re just starting out or growing fast, our flexible pricing has you covered.
 		</p>
 	</div>
 

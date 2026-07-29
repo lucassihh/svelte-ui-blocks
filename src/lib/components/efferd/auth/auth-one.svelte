@@ -2,13 +2,13 @@
 	import { ChevronLeftIcon } from "@lucide/svelte";
 	import { Particles } from "$lib/components/magic/particles";
 	import { Button } from "$lib/components/ui/button";
-	
-    // SVG
-    import GithubLogo from "$lib/svgs/social/github.svelte";
+
+	// SVG
+	import GithubLogo from "$lib/svgs/social/github.svelte";
 	import GoogleLogo from "$lib/svgs/brand/google.svelte";
 	import Logo from "$lib/svgs/logo.svelte";
-	
-    import { cn } from "$lib/utils";
+
+	import { cn } from "$lib/utils";
 	import type { HTMLAttributes } from "svelte/elements";
 
 	type AuthOneProps = HTMLAttributes<HTMLDivElement> & {

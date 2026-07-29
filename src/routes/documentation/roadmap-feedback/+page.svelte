@@ -1,6 +1,6 @@
 <script lang="ts">
 	import DocsPage from "$lib/components/documentation/docs-page.svelte";
-    // Data
+	// Data
 	import { docsSupportLinks } from "$lib/components/documentation/data.ts";
 	import H2 from "$lib/components/markdown/H2.svelte";
 	import Link from "$lib/components/markdown/Link.svelte";
@@ -32,8 +32,8 @@
 	<H2>How to give feedback</H2>
 	<Paragraph>
 		If something feels missing, confusing, or broken, open a
-		<Link href={docsSupportLinks.githubIssues}>GitHub issue</Link>. That is the clearest place
-		to track fixes and feature requests as the docs and block library expand.
+		<Link href={docsSupportLinks.githubIssues}>GitHub issue</Link>. That is the clearest place to
+		track fixes and feature requests as the docs and block library expand.
 	</Paragraph>
 
 	<Paragraph>

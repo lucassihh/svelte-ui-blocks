@@ -28,10 +28,7 @@
 	{...dropdownRegistryOptionState.props}
 >
 	<span class="flex items-center gap-2">
-		<AddRegistryLogo
-			registry={dropdownRegistryOptionState.opts.registry.current}
-			{fallbackIcon}
-		/>
+		<AddRegistryLogo registry={dropdownRegistryOptionState.opts.registry.current} {fallbackIcon} />
 		{registry}
 	</span>
 	<div class="size-4">

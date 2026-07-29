@@ -10,9 +10,7 @@
 			<NavigationMenu.Trigger class="bg-transparent">Product</NavigationMenu.Trigger>
 			<NavigationMenu.Content class="p-0!">
 				<div class="m-0 bg-muted/50 p-1 pr-1.5 dark:bg-background">
-					<div
-						class="grid w-64 grid-cols-1 gap-2 rounded-lg border bg-popover p-2 shadow"
-					>
+					<div class="grid w-64 grid-cols-1 gap-2 rounded-lg border bg-popover p-2 shadow">
 						{#each productLinks as item, i}
 							<NavigationMenu.Link>
 								<LinkItem {...item} />
@@ -22,9 +20,7 @@
 					<div class="p-2">
 						<p class="text-sm text-muted-foreground">
 							Interested?{" "}
-							<a class="font-medium text-foreground hover:underline" href="/">
-								Schedule a demo
-							</a>
+							<a class="font-medium text-foreground hover:underline" href="/"> Schedule a demo </a>
 						</p>
 					</div>
 				</div>

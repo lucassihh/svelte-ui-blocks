@@ -43,8 +43,8 @@
 	<div class="mb-12 flex max-w-md flex-col justify-center gap-2">
 		<h1 class="text-2xl font-bold md:text-3xl">Contact Us</h1>
 		<p class="text-base text-muted-foreground">
-			We&apos;re here to help and answer any question you might have, We look forward to
-			hearing from you.
+			We&apos;re here to help and answer any question you might have, We look forward to hearing
+			from you.
 		</p>
 	</div>
 	<div
@@ -54,10 +54,7 @@
 			{@const Icon = item.icon}
 			<div class="flex flex-col gap-3 rounded-lg bg-background px-6 py-6 shadow-xs">
 				<div
-					class={cn(
-						"flex items-center gap-x-2",
-						"[&_svg]:size-4 [&_svg]:text-muted-foreground"
-					)}
+					class={cn("flex items-center gap-x-2", "[&_svg]:size-4 [&_svg]:text-muted-foreground")}
 				>
 					<Icon />
 					<h2 class="text-sm">{item.title}</h2>

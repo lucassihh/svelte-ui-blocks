@@ -70,9 +70,7 @@
 			</p>
 			<p class="text-muted-foreground">
 				Can't find what you're looking for?
-				<a class="text-primary hover:underline" href="mailto:support@efferd.com">
-					Contact Us
-				</a>
+				<a class="text-primary hover:underline" href="mailto:support@efferd.com"> Contact Us </a>
 			</p>
 		</div>
 	</div>
@@ -86,10 +84,7 @@
 		<Accordion type="single" class="rounded-none border-x-0 border-y">
 			{#each faqs as item (item.id)}
 				<AccordionItem value={item.id} class="group relative pl-5">
-					<DecorIcon
-						position="bottom-left"
-						class="left-[13px] size-3 group-last:hidden"
-					/>
+					<DecorIcon position="bottom-left" class="left-[13px] size-3 group-last:hidden" />
 
 					<AccordionTrigger
 						class="px-4 py-4 hover:no-underline focus-visible:underline focus-visible:ring-0"

@@ -124,16 +124,11 @@
 						{activeFile.externalLabel ?? activeFile.name}
 					</p>
 					<p class="mt-2 text-sm leading-6 text-muted-foreground">
-						This base UI component is referenced from its original source instead of
-						being duplicated here.
+						This base UI component is referenced from its original source instead of being
+						duplicated here.
 					</p>
 					<div class="mt-4 flex justify-center">
-						<Button
-							href={activeFile.externalUrl}
-							target="_blank"
-							variant="outline"
-							size="sm"
-						>
+						<Button href={activeFile.externalUrl} target="_blank" variant="outline" size="sm">
 							<ExternalLink class="size-3.5" />
 							<span>Open component docs</span>
 						</Button>

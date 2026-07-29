@@ -222,11 +222,9 @@
 			circle.x += circle.dx + vx;
 			circle.y += circle.dy + vy;
 			circle.translateX +=
-				(mouse.x / (normalizedStaticity / circle.magnetism) - circle.translateX) /
-				normalizedEase;
+				(mouse.x / (normalizedStaticity / circle.magnetism) - circle.translateX) / normalizedEase;
 			circle.translateY +=
-				(mouse.y / (normalizedStaticity / circle.magnetism) - circle.translateY) /
-				normalizedEase;
+				(mouse.y / (normalizedStaticity / circle.magnetism) - circle.translateY) / normalizedEase;
 
 			if (
 				circle.x < -circle.size ||

@@ -181,8 +181,7 @@ export const authBlocks: BlockShowcaseItem[] = [
 	{
 		id: "auth-one",
 		title: "Auth One",
-		description:
-			"A centered auth entry screen with ambient particles and social sign-in actions.",
+		description: "A centered auth entry screen with ambient particles and social sign-in actions.",
 		previewComponent: AuthOne,
 		previewHref: "/preview/auth/one",
 		previewMode: "iframe",
@@ -205,8 +204,7 @@ export const authBlocks: BlockShowcaseItem[] = [
 	{
 		id: "auth-two",
 		title: "Auth Two",
-		description:
-			"A framed auth panel that combines email capture with side-by-side social login.",
+		description: "A framed auth panel that combines email capture with side-by-side social login.",
 		previewComponent: AuthTwo,
 		previewHref: "/preview/auth/two",
 		previewMode: "iframe",
@@ -230,8 +228,7 @@ export const authBlocks: BlockShowcaseItem[] = [
 	{
 		id: "auth-three",
 		title: "Auth Three",
-		description:
-			"A minimal single-column auth flow with brand header and stacked sign-in options.",
+		description: "A minimal single-column auth flow with brand header and stacked sign-in options.",
 		previewComponent: AuthThree,
 		previewHref: "/preview/auth/three",
 		previewMode: "iframe",

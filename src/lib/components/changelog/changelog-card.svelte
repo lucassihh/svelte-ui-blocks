@@ -29,9 +29,7 @@
 		</h2>
 
 		{#if entry.description}
-			<p
-				class="mt-1 max-w-2xl text-base leading-7 text-muted-foreground sm:text-base sm:leading-8"
-			>
+			<p class="mt-1 max-w-2xl text-base leading-7 text-muted-foreground sm:text-base sm:leading-8">
 				{entry.description}
 			</p>
 		{/if}
@@ -39,9 +37,7 @@
 		{#if entry.bullets?.length}
 			<ul class="mt-5 space-y-3">
 				{#each entry.bullets as bullet}
-					<li
-						class="flex items-start gap-3 text-sm leading-7 text-foreground sm:text-base"
-					>
+					<li class="flex items-start gap-3 text-sm leading-7 text-foreground sm:text-base">
 						<Check class="mt-1 size-4 shrink-0 text-foreground" />
 						<span>{bullet}</span>
 					</li>

@@ -2,35 +2,48 @@
 	import { page } from "$app/state";
 	import type { ComponentProps } from "svelte";
 	import * as Sidebar from "$lib/components/ui/sidebar/index.js";
-    
-    import { Button } from "$lib/components/ui/button/index.js";
-    import { buttonVariants } from "$lib/components/ui/button/index.js";
-	
-    // Data & Normalize Path 
-	import { sidebarLinks, normalizePath} from "./data";
- 
+
+	import { Button } from "$lib/components/ui/button/index.js";
+	import { buttonVariants } from "$lib/components/ui/button/index.js";
+
+	// Data & Normalize Path
+	import { sidebarLinks, normalizePath } from "./data";
+
 	// Current Path
 	let currentPath = $derived(normalizePath(page.url.pathname));
-     
-    // Binds 
-    let sidebarPosition = "left";
-    let { showCloseButton = true, side = sidebarPosition, ref = $bindable(null), ...restProps }: ComponentProps<typeof Sidebar.Root> = $props();
-    
-    // For Close Sidebar when click on Link 
-    import { useSidebar } from "$lib/components/ui/sidebar/index.js";
-    const sidebar = useSidebar();
+
+	// Binds
+	let sidebarPosition = "left";
+	let {
+		showCloseButton = true,
+		side = sidebarPosition,
+		ref = $bindable(null),
+		...restProps
+	}: ComponentProps<typeof Sidebar.Root> = $props();
+
+	// For Close Sidebar when click on Link
+	import { useSidebar } from "$lib/components/ui/sidebar/index.js";
+	const sidebar = useSidebar();
 </script>
 
-<Sidebar.Root bind:ref {showCloseButton} {side} {...restProps} class="w-full md:w-[16rem] md:pt-14 md:border-none">
-    <Sidebar.Content>
+<Sidebar.Root
+	bind:ref
+	{showCloseButton}
+	{side}
+	{...restProps}
+	class="w-full md:w-[16rem] md:border-none md:pt-14"
+>
+	<Sidebar.Content>
 		<Sidebar.Group>
 			<Sidebar.GroupLabel>Menu</Sidebar.GroupLabel>
-			<Sidebar.Menu class="flex flex-col pt-4 px-2">
+			<Sidebar.Menu class="flex flex-col px-2 pt-4">
 				<Sidebar.MenuItem>
 					<Sidebar.Menu class="space-y-1">
 						{#each sidebarLinks as item (item.label)}
 							<Sidebar.MenuSubItem>
-								<Sidebar.MenuSubButton data-active={currentPath === normalizePath(item.href) ? "true" : undefined}>
+								<Sidebar.MenuSubButton
+									data-active={currentPath === normalizePath(item.href) ? "true" : undefined}
+								>
 									{#snippet child({ props })}
 										<a href={item.href} {...props} onclick={() => sidebar.setOpenMobile(false)}>
 											<span>{item.label}</span>
@@ -45,11 +58,3 @@
 		</Sidebar.Group>
 	</Sidebar.Content>
 </Sidebar.Root>
-
-
-
-
-
-
-
-

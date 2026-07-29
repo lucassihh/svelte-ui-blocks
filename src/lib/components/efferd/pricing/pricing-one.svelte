@@ -46,8 +46,8 @@
 		</h2>
 
 		<p class="mt-2 text-center text-sm text-muted-foreground md:text-base">
-			We offer a single price for all our services. We believe that pricing is a critical
-			component of any successful business.
+			We offer a single price for all our services. We believe that pricing is a critical component
+			of any successful business.
 		</p>
 	</div>
 
@@ -94,19 +94,13 @@
 					<div class="mt-10 space-y-4">
 						<div class="flex items-end gap-0.5 text-xl text-muted-foreground">
 							<span>$</span>
-							<span
-								class="-mb-0.5 text-4xl font-extrabold tracking-tighter text-foreground"
-							>
+							<span class="-mb-0.5 text-4xl font-extrabold tracking-tighter text-foreground">
 								{plan.price}
 							</span>
 							<span>/month</span>
 						</div>
 
-						<Button
-							class="w-full"
-							href="/"
-							variant={plan.featured ? "default" : "outline"}
-						>
+						<Button class="w-full" href="/" variant={plan.featured ? "default" : "outline"}>
 							{plan.cta}
 						</Button>
 					</div>

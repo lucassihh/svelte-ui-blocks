@@ -62,8 +62,8 @@
 	<div class="space-y-2">
 		<h2 class="text-3xl font-semibold md:text-4xl">Frequently Asked Questions</h2>
 		<p class="max-w-2xl text-muted-foreground">
-			Here are some common questions and answers that you might encounter when using Efferd.
-			If you don't find the answer you're looking for, feel free to reach out.
+			Here are some common questions and answers that you might encounter when using Efferd. If you
+			don't find the answer you're looking for, feel free to reach out.
 		</p>
 	</div>
 

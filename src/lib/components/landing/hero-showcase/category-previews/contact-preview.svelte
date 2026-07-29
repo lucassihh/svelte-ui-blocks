@@ -11,8 +11,8 @@
 	<div class="flex flex-col justify-center gap-2">
 		<div>
 			<h1 class="font-heading text-sm font-semibold tracking-tight text-primary">{title}</h1>
-            <p class="font-heading text-xs font-medium text-foreground/80">{description}</p>
-		    <p class="mt-0.5 text-[11px] leading-4 text-muted-foreground">{countLabel}</p>
+			<p class="font-heading text-xs font-medium text-foreground/80">{description}</p>
+			<p class="mt-0.5 text-[11px] leading-4 text-muted-foreground">{countLabel}</p>
 		</div>
 		<div class="h-1.5 w-full rounded-full bg-muted-foreground/14"></div>
 		<div class="h-1.5 w-full rounded-full bg-muted-foreground/14"></div>

@@ -27,7 +27,7 @@ import LogoCloudPreview from "./category-previews/logo-cloud-preview.svelte";
 export type TypesCard = {
 	slug: string;
 	title: string;
-    description: string;
+	description: string;
 	href: string;
 	count: number;
 	countLabel: string;

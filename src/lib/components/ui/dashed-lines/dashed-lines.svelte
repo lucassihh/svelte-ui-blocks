@@ -9,13 +9,7 @@
 		class?: string;
 	}
 
-	let {
-		width = 20,
-		height = 50,
-		x = 10,
-		class: className,
-		...props
-	}: DashedLinesProps = $props();
+	let { width = 20, height = 50, x = 10, class: className, ...props }: DashedLinesProps = $props();
 
 	const id = $props.id();
 </script>

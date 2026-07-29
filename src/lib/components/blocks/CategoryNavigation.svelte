@@ -9,7 +9,9 @@
 	};
 </script>
 
-<div class="absolute top-15 right-0 left-0 z-50 bg-background/80 backdrop-blur-xs w-full max-w-7xl mx-auto border-b border-dashed">
+<div
+	class="absolute top-15 right-0 left-0 z-50 mx-auto w-full max-w-7xl border-b border-dashed bg-background/80 backdrop-blur-xs"
+>
 	<ScrollArea orientation="horizontal" fade={false} class="w-full" scrollbarXClasses="hidden">
 		<div class="mx-auto w-fit max-w-7xl">
 			<ul

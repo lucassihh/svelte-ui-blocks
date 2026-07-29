@@ -6,12 +6,7 @@
 	"description": "A modern hero layout with mega-nav header, device mockup spotlight, and compact logo grid.",
 	"dependencies": ["@lucide/svelte"],
 	"devDependencies": ["@lucide/svelte@^0.577.0"],
-	"registryDependencies": [
-		"button",
-		"./logo-cloud-five.json",
-		"navigation-menu",
-		"./portal.json"
-	],
+	"registryDependencies": ["button", "./logo-cloud-five.json", "navigation-menu", "./portal.json"],
 	"files": [
 		{
 			"content": "<script lang=\"ts\">\n\timport HeaderThree from \"$lib/components/efferd/header/header-three/header-three.svelte\";\n\timport Hero from \"./hero.svelte\";\n\timport LogoSection from \"./logo-section.svelte\";\n</script>\n\n<div class=\"flex min-h-screen flex-col\">\n\t<HeaderThree />\n\t<main class=\"grow\">\n\t\t<Hero />\n\t\t<LogoSection />\n\t</main>\n</div>\n",

@@ -93,8 +93,7 @@
 
 	// Theme Logic
 	let activePreviewTheme = $derived(resolveScopedTheme(page.url.pathname));
-	
-    
+
 	// Functions
 	function applyIframeScrollbarStyles(
 		iframe: HTMLIFrameElement | null,
@@ -128,7 +127,9 @@
 <!-- Block Preview -->
 <main {id} class="group mt-12">
 	<!-- Component Description & Action Buttons -->
-	<section class="mx-auto flex w-full max-w-7xl flex-col dark:bg-[radial-gradient(35%_80%_at_15%_0%,--theme(--color-foreground/.1),transparent)] border-y border-border p-4">
+	<section
+		class="mx-auto flex w-full max-w-7xl flex-col border-y border-border p-4 dark:bg-[radial-gradient(35%_80%_at_15%_0%,--theme(--color-foreground/.1),transparent)]"
+	>
 		<!-- Text Container -->
 		<div class="md:text-center">
 			<!-- Component Title & Description -->
@@ -147,11 +148,7 @@
 		</div>
 
 		<!-- Action Buttons Container -->
-		<div
-			class={cn(
-				"z-40 flex flex-col gap-2 pt-4 md:flex-row md:justify-center"
-			)}
-		>
+		<div class={cn("z-40 flex flex-col gap-2 pt-4 md:flex-row md:justify-center")}>
 			<div class={cn("flex min-w-0 flex-wrap items-center gap-2")}>
 				<div class="flex w-fit items-center gap-0.5 md:-ml-3">
 					<Button
@@ -441,7 +438,6 @@
 	</section>
 	<!-- Component Description & Action Buttons END -->
 
-
 	<!-- Preview Container -->
 	<section class="relative">
 		<div class="mx-auto w-full max-w-7xl" style={`--preview-min-height: ${MIN_PREVIEW_HEIGHT}px;`}>
@@ -505,18 +501,16 @@
 							<Pane id={`preview-resizer-${id}`} order={2} defaultSize={100 - DEFAULT_SIZE} />
 						{/if}
 					</PaneGroup>
-                    
-                    {:else if activePreviewTheme}
-					    <div data-theme={activePreviewTheme}>
-						    <div
-							    in:scale={{ start: 0.85 }}
-							    class="theme-container min-h-(--preview-min-height) w-full overflow-hidden"
-						    >
-							    <PreviewComponent />
-						    </div>
-					    </div>
-				    {:else}
-				
+				{:else if activePreviewTheme}
+					<div data-theme={activePreviewTheme}>
+						<div
+							in:scale={{ start: 0.85 }}
+							class="theme-container min-h-(--preview-min-height) w-full overflow-hidden"
+						>
+							<PreviewComponent />
+						</div>
+					</div>
+				{:else}
 					<div
 						in:scale={{ start: 0.85 }}
 						class="flex min-h-(--preview-min-height) w-full items-center justify-center overflow-hidden"

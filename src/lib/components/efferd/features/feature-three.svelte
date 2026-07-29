@@ -44,9 +44,7 @@
 					"relative flex flex-col justify-between overflow-hidden bg-background p-4 md:p-6"
 				)}
 			>
-				<div
-					class="relative z-10 flex items-center pt-4 pb-6 [&_svg]:size-5 [&_svg]:text-primary"
-				>
+				<div class="relative z-10 flex items-center pt-4 pb-6 [&_svg]:size-5 [&_svg]:text-primary">
 					<FeatureIcon />
 				</div>
 

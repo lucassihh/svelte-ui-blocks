@@ -19,8 +19,8 @@
 
 	<h2 class="text-center text-xl font-semibold md:text-3xl">Start for Free Today!</h2>
 	<p class="text-center text-sm font-medium text-balance text-muted-foreground md:text-base">
-		Begin your 6-day free trial today to fully explore and experience all the features and
-		benefits we offer.
+		Begin your 6-day free trial today to fully explore and experience all the features and benefits
+		we offer.
 	</p>
 
 	<div class="flex items-center justify-center gap-2">

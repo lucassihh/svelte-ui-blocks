@@ -126,8 +126,8 @@
 	<div class="px-4 py-16 lg:px-6">
 		<h1 class="mb-4 text-3xl font-semibold md:text-4xl">Frequently Asked Questions</h1>
 		<p class="mb-8 max-w-2xl text-muted-foreground">
-			Find answers to common questions about Efferd. Can't find what you're looking for? Our
-			support team is here to help.
+			Find answers to common questions about Efferd. Can't find what you're looking for? Our support
+			team is here to help.
 		</p>
 
 		<InputGroup class="max-w-sm">
@@ -196,9 +196,7 @@
 	<div class="flex items-center px-4 py-6 lg:px-6">
 		<p class="text-muted-foreground">
 			Can't find what you're looking for?
-			<a class="text-primary hover:underline" href="mailto:support@efferd.com">
-				Contact Us
-			</a>
+			<a class="text-primary hover:underline" href="mailto:support@efferd.com"> Contact Us </a>
 		</p>
 	</div>
 </div>

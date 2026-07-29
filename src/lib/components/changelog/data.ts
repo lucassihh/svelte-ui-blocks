@@ -20,7 +20,6 @@ export type ChangelogPageData = {
 	entries: ChangelogEntry[];
 };
 
-
 // Changlogs Data
 export const changelogPageData: ChangelogPageData = {
 	title: "Changelog",
@@ -41,22 +40,22 @@ export const changelogPageData: ChangelogPageData = {
 				{ label: "auth", href: "/blocks/auth" }
 			]
 		},
-        // TODO
+		// TODO
 		{
-			id: '2026-02',
-			date: 'Juny 2026',
-			sortDate: '2026-04-19',
-			title: 'Some Fixies',
-			description: 'I made some improvements to the project.',
+			id: "2026-02",
+			date: "Juny 2026",
+			sortDate: "2026-04-19",
+			title: "Some Fixies",
+			description: "I made some improvements to the project.",
 			bullets: [
-				'Fix CodePreview',
-				'Add Mobile Sidebar',
-                'Add Docs Sidebar',
-                'Fix Docs Header (Open Sidebar and Breadcrumb)',
-                'Fix Footer Design',
-                'Fix CategoryNavigation Design',
-                'Add Scroll to Top In Docs & Hero',
-                'Fix All Sidebar Active Links',
+				"Fix CodePreview",
+				"Add Mobile Sidebar",
+				"Add Docs Sidebar",
+				"Fix Docs Header (Open Sidebar and Breadcrumb)",
+				"Fix Footer Design",
+				"Fix CategoryNavigation Design",
+				"Add Scroll to Top In Docs & Hero",
+				"Fix All Sidebar Active Links"
 			]
 		}
 	]

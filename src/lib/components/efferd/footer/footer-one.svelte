@@ -78,9 +78,7 @@
 		</nav>
 	</div>
 
-	<div
-		class="flex items-center justify-between gap-4 border-t py-4 text-sm text-muted-foreground"
-	>
+	<div class="flex items-center justify-between gap-4 border-t py-4 text-sm text-muted-foreground">
 		<p>&copy; {currentYear} efferd</p>
 
 		<p class="inline-flex items-center gap-1">

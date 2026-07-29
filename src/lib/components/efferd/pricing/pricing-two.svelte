@@ -31,13 +31,7 @@
 			period: "month",
 			description: "For fast-growing teams",
 			featuresTitle: "EVERYTHING IN STARTER, PLUS:",
-			features: [
-				"20 customers",
-				"25 documents",
-				"30 invoices",
-				"Auto-updated taxes",
-				"Cloud Sync"
-			]
+			features: ["20 customers", "25 documents", "30 invoices", "Auto-updated taxes", "Cloud Sync"]
 		}
 	];
 </script>
@@ -50,9 +44,7 @@
 		<div class="grid grid-cols-1 gap-px bg-border md:grid-cols-2 lg:grid-cols-4">
 			<div class="flex flex-col bg-background p-8 md:col-span-2">
 				<p class="mb-6 text-sm tracking-wider text-muted-foreground uppercase">PRICING</p>
-				<h1 class="text-3xl leading-tight font-bold md:text-5xl">
-					Pricing that doesn&apos;t suck
-				</h1>
+				<h1 class="text-3xl leading-tight font-bold md:text-5xl">Pricing that doesn&apos;t suck</h1>
 			</div>
 
 			{#each pricingPlans as plan}

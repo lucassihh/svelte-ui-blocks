@@ -24,7 +24,7 @@ const docsPages = [
 		href: "/documentation/usage",
 		section: "primary"
 	},
-    {
+	{
 		title: "Example Markdown",
 		description: "Write a documentation using markdown style",
 		href: "/documentation/example-markdown",
@@ -64,13 +64,12 @@ export const docsSupportLinks = {
 	xShare: "#"
 } as const;
 
-
 // Normalize path
 export function normalizeDocsPath(pathname: string) {
-    if (!pathname) return "/";
-    // Remove duplicates "/"
-    const normalized = pathname.replace(/\/+$/, "") || "/";
-    return normalized;
+	if (!pathname) return "/";
+	// Remove duplicates "/"
+	const normalized = pathname.replace(/\/+$/, "") || "/";
+	return normalized;
 }
 
 // Get Docs Page

@@ -2,29 +2,32 @@
 	import { page } from "$app/state";
 	import type { ComponentProps } from "svelte";
 	import * as Sidebar from "$lib/components/ui/sidebar/index.js";
-	
-    import { Button } from "$lib/components/ui/button/index.js";
-    import { buttonVariants } from "$lib/components/ui/button/index.js";
-    
-    // Data
-    import { docsPrimaryPages, docsSecondaryPages, normalizeDocsPath } from "./data.ts";
- 
+
+	import { Button } from "$lib/components/ui/button/index.js";
+	import { buttonVariants } from "$lib/components/ui/button/index.js";
+
+	// Data
+	import { docsPrimaryPages, docsSecondaryPages, normalizeDocsPath } from "./data.ts";
+
 	// Current Path
 	let currentPath = $derived(normalizeDocsPath(page.url.pathname));
 
-    // For Close Sidebar when click on Link 
-    import { useSidebar } from "$lib/components/ui/sidebar/index.js";
-    const sidebar = useSidebar();
-    
-    // Sidebar Position
-    let sidebarPosition = "bottom";
-    let { showCloseButton = true, side = sidebarPosition, ref = $bindable(null), ...restProps }: ComponentProps<typeof Sidebar.Root> = $props();
+	// For Close Sidebar when click on Link
+	import { useSidebar } from "$lib/components/ui/sidebar/index.js";
+	const sidebar = useSidebar();
+
+	// Sidebar Position
+	let sidebarPosition = "bottom";
+	let {
+		showCloseButton = true,
+		side = sidebarPosition,
+		ref = $bindable(null),
+		...restProps
+	}: ComponentProps<typeof Sidebar.Root> = $props();
 </script>
 
-
-
 <!-- Documentation - Sidebar Mobile (Shadcn) -->
-<div class="block md:hidden w-full">
+<div class="block w-full md:hidden">
 	<Sidebar.Root bind:ref {showCloseButton} {side} {...restProps} class="w-full">
 		<Sidebar.Content>
 			<Sidebar.Group>
@@ -34,14 +37,16 @@
 						<!-- Get Started - Section -->
 						<Sidebar.MenuButton>
 							{#snippet child({ props })}
-								<span {...props} class="text-primary/80 text-xs font-normal ml-2">Get Started</span>
+								<span {...props} class="ml-2 text-xs font-normal text-primary/80">Get Started</span>
 							{/snippet}
 						</Sidebar.MenuButton>
 						<!-- Resources - Section -->
 						<Sidebar.MenuSub>
 							{#each docsPrimaryPages as item (item.title)}
 								<Sidebar.MenuSubItem>
-									<Sidebar.MenuSubButton data-active={currentPath === normalizeDocsPath(item.href) ? "true" : undefined}>
+									<Sidebar.MenuSubButton
+										data-active={currentPath === normalizeDocsPath(item.href) ? "true" : undefined}
+									>
 										{#snippet child({ props })}
 											<a href={item.href} {...props} onclick={() => sidebar.setOpenMobile(false)}>
 												<span>{item.title}</span>
@@ -56,14 +61,16 @@
 					<Sidebar.MenuItem class="flex flex-col gap-2">
 						<Sidebar.MenuButton>
 							{#snippet child({ props })}
-								<span {...props} class="text-primary/80 text-xs font-normal ml-2">Resources</span>
+								<span {...props} class="ml-2 text-xs font-normal text-primary/80">Resources</span>
 							{/snippet}
 						</Sidebar.MenuButton>
-						
+
 						<Sidebar.MenuSub>
 							{#each docsSecondaryPages as item (item.title)}
 								<Sidebar.MenuSubItem>
-									<Sidebar.MenuSubButton data-active={currentPath === normalizeDocsPath(item.href) ? "true" : undefined}>
+									<Sidebar.MenuSubButton
+										data-active={currentPath === normalizeDocsPath(item.href) ? "true" : undefined}
+									>
 										{#snippet child({ props })}
 											<a href={item.href} {...props} onclick={() => sidebar.setOpenMobile(false)}>
 												<span>{item.title}</span>
@@ -81,23 +88,25 @@
 </div>
 
 <!-- Documentation - Sidebar Desktop (Display on MD +, no Shadcn)  -->
-<aside class="hidden md:block w-[16rem] shrink-0 pr-2">
+<aside class="hidden w-[16rem] shrink-0 pr-2 md:block">
 	<div class="flex flex-col gap-4 pt-2">
-		<span class="text-xs font-semibold text-muted-foreground uppercase tracking-wider px-2">
+		<span class="px-2 text-xs font-semibold tracking-wider text-muted-foreground uppercase">
 			Documentation
 		</span>
 
 		<nav class="flex flex-col gap-6">
 			<!-- Get Started - Section -->
 			<div class="flex flex-col gap-2">
-				<span class="text-primary/80 text-xs font-normal px-2">Get Started</span>
-				<ul class="flex flex-col gap-1 border-l border-border/60 ml-2 pl-2">
+				<span class="px-2 text-xs font-normal text-primary/80">Get Started</span>
+				<ul class="ml-2 flex flex-col gap-1 border-l border-border/60 pl-2">
 					{#each docsPrimaryPages as item (item.title)}
 						{@const isActive = currentPath === normalizeDocsPath(item.href)}
 						<li>
 							<a
 								href={item.href}
-								class="block px-3 py-1.5 text-sm rounded-md transition-colors hover:text-foreground hover:bg-accent/50 {isActive ? 'font-medium text-foreground bg-accent' : 'text-muted-foreground'}"
+								class="block rounded-md px-3 py-1.5 text-sm transition-colors hover:bg-accent/50 hover:text-foreground {isActive
+									? 'bg-accent font-medium text-foreground'
+									: 'text-muted-foreground'}"
 							>
 								{item.title}
 							</a>
@@ -108,14 +117,16 @@
 
 			<!-- Resources - Section -->
 			<div class="flex flex-col gap-2">
-				<span class="text-primary/80 text-xs font-normal px-2">Resources</span>
-				<ul class="flex flex-col gap-1 border-l border-border/60 ml-2 pl-2">
+				<span class="px-2 text-xs font-normal text-primary/80">Resources</span>
+				<ul class="ml-2 flex flex-col gap-1 border-l border-border/60 pl-2">
 					{#each docsSecondaryPages as item (item.title)}
 						{@const isActive = currentPath === normalizeDocsPath(item.href)}
 						<li>
 							<a
 								href={item.href}
-								class="block px-3 py-1.5 text-sm rounded-md transition-colors hover:text-foreground hover:bg-accent/50 {isActive ? 'font-medium text-foreground bg-accent' : 'text-muted-foreground'}"
+								class="block rounded-md px-3 py-1.5 text-sm transition-colors hover:bg-accent/50 hover:text-foreground {isActive
+									? 'bg-accent font-medium text-foreground'
+									: 'text-muted-foreground'}"
 							>
 								{item.title}
 							</a>

@@ -255,8 +255,7 @@ export const contactBlocks: BlockShowcaseItem[] = [
 	{
 		id: "contact-four",
 		title: "Contact Four",
-		description:
-			"A split contact form with direct support details and a structured inquiry panel.",
+		description: "A split contact form with direct support details and a structured inquiry panel.",
 		previewComponent: ContactFour,
 		previewHref: "/preview/contact/four",
 		previewMode: "inline",
@@ -278,8 +277,7 @@ export const contactBlocks: BlockShowcaseItem[] = [
 	{
 		id: "contact-five",
 		title: "Contact Five",
-		description:
-			"A bordered contact card pairing essential details with a reusable message form.",
+		description: "A bordered contact card pairing essential details with a reusable message form.",
 		previewComponent: ContactFive,
 		previewHref: "/preview/contact/five",
 		previewMode: "inline",

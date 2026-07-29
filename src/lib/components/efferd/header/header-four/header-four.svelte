@@ -20,10 +20,7 @@
 			"flex h-11 w-full items-center justify-between md:h-11  md:transition-all md:ease-out"
 		)}
 	>
-		<a
-			class="rounded-md border border-border p-2 hover:bg-muted dark:hover:bg-muted/50"
-			href="/"
-		>
+		<a class="rounded-md border border-border p-2 hover:bg-muted dark:hover:bg-muted/50" href="/">
 			<Logo class="h-4" />
 		</a>
 		<div class="hidden items-center gap-2 md:flex">

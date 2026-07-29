@@ -49,8 +49,5 @@
 	<!-- {#if showSm === 'sm:hidden' && showMd === 'md:hidden' && showLg === 'lg:hidden'}
 		<div></div>
 	{/if} -->
-	<div
-		class={cn("pointer-events-none hidden", showSm, showMd, showLg, className)}
-		{...rest}
-	></div>
+	<div class={cn("pointer-events-none hidden", showSm, showMd, showLg, className)} {...rest}></div>
 {/each}

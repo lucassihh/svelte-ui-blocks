@@ -110,9 +110,7 @@
 	</div>
 
 	<div class="place-items-end">
-		<div
-			class="relative size-90 mask-[radial-gradient(ellipse_at_center,black,black,transparent)]"
-		>
+		<div class="relative size-90 mask-[radial-gradient(ellipse_at_center,black,black,transparent)]">
 			{#each tiles as tile (`${tile.row}_${tile.col}`)}
 				<IntegrationCardFour {...tile} />
 			{/each}

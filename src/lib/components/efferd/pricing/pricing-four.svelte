@@ -152,8 +152,8 @@
 		</h2>
 
 		<p class="text-center text-sm text-muted-foreground md:text-base">
-			Whether you&apos;re just starting out or growing fast, our flexible pricing has you
-			covered with no hidden costs.
+			Whether you&apos;re just starting out or growing fast, our flexible pricing has you covered
+			with no hidden costs.
 		</p>
 	</div>
 
@@ -232,10 +232,7 @@
 				</div>
 
 				<div
-					class={cn(
-						"mt-auto w-full border-t p-3",
-						plan.highlighted && "bg-card dark:bg-card/80"
-					)}
+					class={cn("mt-auto w-full border-t p-3", plan.highlighted && "bg-card dark:bg-card/80")}
 				>
 					<Button
 						class="w-full"

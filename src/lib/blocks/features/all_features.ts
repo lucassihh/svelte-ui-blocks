@@ -145,8 +145,7 @@ export const featureBlocks: BlockShowcaseItem[] = [
 	{
 		id: "feature-four",
 		title: "Feature Four",
-		description:
-			"A product-feature showcase with structured cards and subtle editorial chrome.",
+		description: "A product-feature showcase with structured cards and subtle editorial chrome.",
 		previewComponent: FeatureFour,
 		previewHref: "/preview/features/four",
 		previewMode: "iframe",

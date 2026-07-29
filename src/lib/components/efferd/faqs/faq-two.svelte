@@ -65,8 +65,7 @@
 		<div class="space-y-4 px-4 pt-12 pb-4 md:border-r">
 			<h2 class="text-3xl font-black md:text-4xl">FAQs</h2>
 			<p class="text-muted-foreground">
-				Here are some common questions and answers that you might encounter when using
-				Efferd.
+				Here are some common questions and answers that you might encounter when using Efferd.
 			</p>
 		</div>
 
@@ -91,9 +90,7 @@
 	<div class="flex h-14 items-center justify-center border-t">
 		<p class="text-muted-foreground">
 			Can't find what you're looking for?
-			<a class="text-primary hover:underline" href="mailto:support@efferd.com">
-				Contact Us
-			</a>
+			<a class="text-primary hover:underline" href="mailto:support@efferd.com"> Contact Us </a>
 		</p>
 	</div>
 </div>

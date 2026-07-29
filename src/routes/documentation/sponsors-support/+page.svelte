@@ -1,6 +1,6 @@
 <script lang="ts">
 	import DocsPage from "$lib/components/documentation/docs-page.svelte";
-    // Data
+	// Data
 	import { docsSupportLinks } from "$lib/components/documentation/data.ts";
 	import H2 from "$lib/components/markdown/H2.svelte";
 	import Link from "$lib/components/markdown/Link.svelte";
@@ -32,12 +32,12 @@
 	<H2>Support the project</H2>
 	<UnorderedList>
 		<ListItem>
-			Star the <Link href={docsSupportLinks.githubRepo}>GitHub repository</Link> to help more people
-			discover the project.
+			Star the <Link href={docsSupportLinks.githubRepo}>GitHub repository</Link> to help more people discover
+			the project.
 		</ListItem>
 		<ListItem>
-			Share the project using the <Link href={docsSupportLinks.xShare}>X share link</Link> or by
-			posting it directly to your own communities.
+			Share the project using the <Link href={docsSupportLinks.xShare}>X share link</Link> or by posting
+			it directly to your own communities.
 		</ListItem>
 		<ListItem>
 			If you want to discuss sponsorship or collaboration, reach out through the existing

@@ -66,10 +66,7 @@
 		<div class="flex items-center justify-center -space-x-4 mask-r-from-90 mask-l-from-90 p-1">
 			{#each data as item (item.name)}
 				<div
-					class={cn(
-						"relative z-0 transition-transform",
-						item.src && "hover:z-10 hover:scale-110"
-					)}
+					class={cn("relative z-0 transition-transform", item.src && "hover:z-10 hover:scale-110")}
 				>
 					<div
 						class="flex size-12 items-center justify-center overflow-hidden rounded-full border bg-card shadow-sm md:size-16"

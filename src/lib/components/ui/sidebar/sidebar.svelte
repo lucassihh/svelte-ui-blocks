@@ -10,7 +10,7 @@
 		side = "left",
 		variant = "sidebar",
 		collapsible = "offcanvas",
-        showCloseButton = true, // New
+		showCloseButton = true, // New
 		class: className,
 		children,
 		...restProps
@@ -18,7 +18,7 @@
 		side?: "left" | "right";
 		variant?: "sidebar" | "floating" | "inset";
 		collapsible?: "offcanvas" | "icon" | "none";
-        showCloseButton?: boolean;
+		showCloseButton?: boolean;
 	} = $props();
 
 	const sidebar = useSidebar();
@@ -35,24 +35,17 @@
 	>
 		{@render children?.()}
 	</div>
-    
 {:else if sidebar.isMobile}
-	<Sheet.Root
-		bind:open={() => sidebar.openMobile, (v) => sidebar.setOpenMobile(v)}
-		{...restProps}
-	>
+	<Sheet.Root bind:open={() => sidebar.openMobile, (v) => sidebar.setOpenMobile(v)} {...restProps}>
 		<Sheet.Content
 			bind:ref
 			data-sidebar="sidebar"
 			data-slot="sidebar"
 			data-mobile="true"
-			class={cn(
-				"w-(--sidebar-width) bg-sidebar p-0 text-sidebar-foreground",
-				className
-			)}
+			class={cn("w-(--sidebar-width) bg-sidebar p-0 text-sidebar-foreground", className)}
 			style="--sidebar-width: {SIDEBAR_WIDTH_MOBILE};"
 			{side}
-            {showCloseButton}
+			{showCloseButton}
 		>
 			<Sheet.Header class="sr-only">
 				<Sheet.Title>Sidebar</Sheet.Title>

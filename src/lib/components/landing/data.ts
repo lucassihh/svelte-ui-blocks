@@ -51,8 +51,8 @@ export const socialLinks: SocialLink[] = [
 		icon: GithubIcon,
 		link: "https://github.com/lucassihh/svelte-ui-blocks",
 		label: "Github"
-	},
-    /*
+	}
+	/*
     {
 		icon: InstagramIcon,
 		link: "https://www.instagram.com/",
@@ -157,14 +157,12 @@ export const ResourcesLinks: FooterLink[] = [
 	}
 ] as const;
 
-
-
 // Normalize path
 export function normalizePath(pathname: string) {
-    if (!pathname) return "/";
-    // Remove duplicates "/"
-    const normalized = pathname.replace(/\/+$/, "") || "/";
-    return normalized;
+	if (!pathname) return "/";
+	// Remove duplicates "/"
+	const normalized = pathname.replace(/\/+$/, "") || "/";
+	return normalized;
 }
 
 // Get Docs Page

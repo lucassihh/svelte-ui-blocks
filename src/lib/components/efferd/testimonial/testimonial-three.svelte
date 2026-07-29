@@ -10,21 +10,24 @@
 	};
 	let testimonials: Testimonial[] = [
 		{
-			quote: "We just acquired Efferd for 3 gazillion dollars. We're calling it iEfferd. It's our best product yet.",
+			quote:
+				"We just acquired Efferd for 3 gazillion dollars. We're calling it iEfferd. It's our best product yet.",
 			image: "https://unavatar.io/x/tim_cook",
 			name: "Tim Cook",
 			role: "CEO",
 			company: "Apple"
 		},
 		{
-			quote: "I'm considering shipping Efferd components with Prime delivery. 2-day shipping on beautiful UIs? Done.",
+			quote:
+				"I'm considering shipping Efferd components with Prime delivery. 2-day shipping on beautiful UIs? Done.",
 			image: "https://unavatar.io/x/JeffBezos",
 			name: "Jeff Bezos",
 			role: "Founder",
 			company: "Amazon"
 		},
 		{
-			quote: "We're rewriting OpenAI's entire frontend in Efferd. The AGI told us it's the only logical choice.",
+			quote:
+				"We're rewriting OpenAI's entire frontend in Efferd. The AGI told us it's the only logical choice.",
 			image: "https://unavatar.io/x/sama",
 			name: "Sam Altman",
 			role: "CEO",

@@ -47,17 +47,13 @@
 
 	<div class={cn("relative mb-4 rounded-xl border p-4", featured && "bg-card shadow-xs")}>
 		<div class="mb-8 flex items-center justify-between">
-			<div
-				class="flex items-center gap-2 text-sm font-medium [&_svg:not([class*='size-'])]:size-4"
-			>
+			<div class="flex items-center gap-2 text-sm font-medium [&_svg:not([class*='size-'])]:size-4">
 				<Icon />
 				<span>{name}</span>
 			</div>
 
 			{#if badge}
-				<span class="rounded-full border bg-background px-3 py-1 text-xs shadow-xs"
-					>{badge}</span
-				>
+				<span class="rounded-full border bg-background px-3 py-1 text-xs shadow-xs">{badge}</span>
 			{/if}
 		</div>
 

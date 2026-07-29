@@ -96,8 +96,7 @@ export function createBlockCodeTree(
 		for (const folderName of folderSegments) {
 			currentPath = currentPath ? `${currentPath}/${folderName}` : folderName;
 			let folder = currentNodes.find(
-				(node): node is BlockCodeFolder =>
-					isBlockCodeFolder(node) && node.name === folderName
+				(node): node is BlockCodeFolder => isBlockCodeFolder(node) && node.name === folderName
 			);
 
 			if (!folder) {

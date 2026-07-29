@@ -1,10 +1,10 @@
 <script lang="ts">
 	import { FullWidthDivider } from "$lib/components/ui/full-width-divider";
 	// SVG
-    import GithubLogo from "$lib/svgs/social/github.svelte";
+	import GithubLogo from "$lib/svgs/social/github.svelte";
 	import XLogo from "$lib/svgs/social/x.svelte";
-	
-    import { cn } from "$lib/utils";
+
+	import { cn } from "$lib/utils";
 	import { Mail, MapPin, Phone, type Icon as IconType } from "@lucide/svelte";
 	import type { Component } from "svelte";
 
@@ -142,9 +142,7 @@
 	<FullWidthDivider />
 
 	<div class="z-1 flex h-full flex-col items-center justify-center gap-4 py-24">
-		<h2
-			class="text-center text-2xl font-medium tracking-tight text-muted-foreground md:text-3xl"
-		>
+		<h2 class="text-center text-2xl font-medium tracking-tight text-muted-foreground md:text-3xl">
 			Find us <span class="text-foreground">online</span>
 		</h2>
 		<div class="flex flex-wrap items-center gap-2">

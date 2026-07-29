@@ -5,8 +5,8 @@
 	import { DashedLine } from "../ui/dashed-line";
 	import { BorderSeparator } from "../ui/border-seperator";
 	import { DashedLines } from "../ui/dashed-lines";
-    // Hero ShowCase
-    import HeroShowcase from "$lib/components/landing/hero-showcase/hero-showcase.svelte";
+	// Hero ShowCase
+	import HeroShowcase from "$lib/components/landing/hero-showcase/hero-showcase.svelte";
 </script>
 
 <section
@@ -27,18 +27,12 @@
 
 	<DecorIcon class="z-40 size-4 bg-background stroke-muted-foreground/80" position="top-left" />
 	<DecorIcon class="z-40 size-4 bg-background stroke-muted-foreground/80" position="top-right" />
-	<DecorIcon
-		class="z-40 size-4 bg-background stroke-muted-foreground/80"
-		position="bottom-left"
-	/>
-	<DecorIcon
-		class="z-40 size-4 bg-background stroke-muted-foreground/80"
-		position="bottom-right"
-	/>
+	<DecorIcon class="z-40 size-4 bg-background stroke-muted-foreground/80" position="bottom-left" />
+	<DecorIcon class="z-40 size-4 bg-background stroke-muted-foreground/80" position="bottom-right" />
 
 	<div class=" relative z-10 mx-auto flex flex-col items-center text-center">
 		<!-- Version -->
-        <a
+		<a
 			class="group mx-auto flex w-fit items-center gap-3 rounded-full border bg-transparent py-1 pr-1 pl-3 shadow-lg backdrop-blur-lg"
 			href="/blocks/hero"
 			id="link"
@@ -53,23 +47,23 @@
 			</span>
 		</a>
 
-        
-         <!-- Hero Text-->
+		<!-- Hero Text-->
 		<div class="flex flex-col gap-1">
-            <h1
-			class="mt-8 max-w-4xl text-4xl font-semibold tracking-normal text-balance sm:text-5xl lg:text-6xl"
-		    >
-			    Svelte UI Blocks
-		    </h1>
-    
-		    <p
-			    class="mt-6 max-w-2xl text-base leading-7 text-pretty text-muted-foreground sm:text-lg sm:leading-8"
-		    >
-			    Save hours of design time with clean, ready-to-use shadcn blocks that just work, modern, responsive, and built for speed.
-		    </p>
-        </div> 
+			<h1
+				class="mt-8 max-w-4xl text-4xl font-semibold tracking-normal text-balance sm:text-5xl lg:text-6xl"
+			>
+				Svelte UI Blocks
+			</h1>
 
-        <!-- Hero Buttons --> 
+			<p
+				class="mt-6 max-w-2xl text-base leading-7 text-pretty text-muted-foreground sm:text-lg sm:leading-8"
+			>
+				Save hours of design time with clean, ready-to-use shadcn blocks that just work, modern,
+				responsive, and built for speed.
+			</p>
+		</div>
+
+		<!-- Hero Buttons -->
 		<div class="mt-8 flex flex-col items-center gap-3 sm:flex-row">
 			<Button class="rounded-none" href="blocks/hero" size="lg">
 				<span>Explore</span>
@@ -77,6 +71,5 @@
 		</div>
 	</div>
 </section>
-
 
 <HeroShowcase />

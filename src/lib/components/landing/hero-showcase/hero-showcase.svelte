@@ -14,7 +14,11 @@
 					aria-label={`${block.title} - ${block.countLabel}`}
 				>
 					<div class="relative h-full">
-						<PreviewComponent title={block.title} description={block.description} countLabel={block.countLabel} />
+						<PreviewComponent
+							title={block.title}
+							description={block.description}
+							countLabel={block.countLabel}
+						/>
 					</div>
 				</a>
 			{/each}

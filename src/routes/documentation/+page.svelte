@@ -32,8 +32,7 @@
 			Inspiration from clean registry-driven workflows and modern component libraries.
 		</ListItem>
 		<ListItem>
-			Credits to the Svelte and shadcn-svelte ecosystem for the underlying patterns and
-			tooling.
+			Credits to the Svelte and shadcn-svelte ecosystem for the underlying patterns and tooling.
 		</ListItem>
 		<ListItem>
 			Additional product updates live on the <Link href="/changelog">changelog</Link>.

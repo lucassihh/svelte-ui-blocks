@@ -609,12 +609,7 @@
 					"target": "svgs/social/github.svelte"
 				}
 			],
-			"registryDependencies": [
-				"button",
-				"local:auth-divider",
-				"local:decor-icon",
-				"input-group"
-			],
+			"registryDependencies": ["button", "local:auth-divider", "local:decor-icon", "input-group"],
 			"dependencies": ["@lucide/svelte"]
 		},
 		{

@@ -36,10 +36,7 @@
 					"@type": "ImageObject",
 					url: logoUrl
 				},
-				sameAs: [
-					"https://github.com/",
-					"https://x.com/"
-				]
+				sameAs: ["https://github.com/", "https://x.com/"]
 			},
 			{
 				"@type": "WebSite",

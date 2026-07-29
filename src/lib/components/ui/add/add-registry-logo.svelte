@@ -37,8 +37,7 @@
 			logo: GitlabLogo
 		},
 		{
-			matches: (r: string) =>
-				r.startsWith("bitbucket") || r.startsWith("https://bitbucket.org/"),
+			matches: (r: string) => r.startsWith("bitbucket") || r.startsWith("https://bitbucket.org/"),
 			logo: BitbucketLogo
 		},
 		{

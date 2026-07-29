@@ -58,13 +58,7 @@
 		</p>
 		<div class="flex -space-x-[0.45rem] *:rounded-full *:ring-2 *:ring-background">
 			{#each avatars as avatar}
-				<img
-					alt={avatar.alt}
-					height="24"
-					src={avatar.src}
-					width="24"
-					class="size-6 object-cover"
-				/>
+				<img alt={avatar.alt} height="24" src={avatar.src} width="24" class="size-6 object-cover" />
 			{/each}
 		</div>
 	</div>

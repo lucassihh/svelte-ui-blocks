@@ -62,8 +62,7 @@ export const integrationBlocks: BlockShowcaseItem[] = [
 	{
 		id: "integration-one",
 		title: "Integration One",
-		description:
-			"A compact integration strip with lightweight cards and a simple link-out action.",
+		description: "A compact integration strip with lightweight cards and a simple link-out action.",
 		previewComponent: IntegrationOne,
 		previewHref: "/preview/integrations/one",
 		previewMode: "inline",
@@ -82,8 +81,7 @@ export const integrationBlocks: BlockShowcaseItem[] = [
 	{
 		id: "integration-two",
 		title: "Integration Two",
-		description:
-			"A structured integration grid with framed cards and decorative corner accents.",
+		description: "A structured integration grid with framed cards and decorative corner accents.",
 		previewComponent: IntegrationTwo,
 		previewHref: "/preview/integrations/two",
 		previewMode: "inline",
