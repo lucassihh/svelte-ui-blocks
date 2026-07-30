@@ -1,4 +1,4 @@
-import { pricingBlocks } from "$lib/blocks/pricing/all_pricing";
+import { pricingBlocks } from "$lib/imports/pricing/all_pricing";
 import type { PageLoad } from "./$types";
 
 export const prerender = true;

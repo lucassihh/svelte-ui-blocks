@@ -1,5 +1,5 @@
 <script lang="ts">
-	import IntegrationOne from "$lib/components/efferd/integrations/integration-one.svelte";
+	import IntegrationOne from "$lib/components/efferd-ui/integrations/integration-one.svelte";
 </script>
 
 <svelte:head>

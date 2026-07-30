@@ -1,5 +1,5 @@
 <script lang="ts">
-	import { blockCategories } from "$lib/blocks/categories";
+	import { blockCategories } from "$lib/imports/categories";
 	import DocsPage from "$lib/components/documentation/docs-page.svelte";
 	import Blockquote from "$lib/components/markdown/Blockquote.svelte";
 	import H2 from "$lib/components/markdown/H2.svelte";

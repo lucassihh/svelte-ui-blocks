@@ -1,4 +1,4 @@
-import { ctaBlocks } from "$lib/blocks/cta/all_cta";
+import { ctaBlocks } from "$lib/imports/cta/all_cta";
 import type { PageLoad } from "./$types";
 
 export const prerender = true;

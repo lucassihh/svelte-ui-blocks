@@ -1,4 +1,4 @@
-import { integrationBlocks } from "$lib/blocks/integrations/all_integrations";
+import { integrationBlocks } from "$lib/imports/integrations/all_integrations";
 import type { PageLoad } from "./$types";
 
 export const prerender = true;
