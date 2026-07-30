@@ -138,7 +138,7 @@ export const testimonialBlocks: BlockShowcaseItem[] = [
 		description:
 			"A centered single testimonial with brand mark, compact author block, and soft editorial framing.",
 		previewComponent: TestimonialOne,
-		previewHref: "/preview/testimonials/one",
+		previewHref: "/preview/efferd-ui/testimonials/one",
 		previewMode: "inline",
 		previewHeight: 500,
 		installId: "testimonial-one",
@@ -158,7 +158,7 @@ export const testimonialBlocks: BlockShowcaseItem[] = [
 		description:
 			"A framed testimonial layout with masked divider rails, asymmetrical composition, and avatar-led emphasis.",
 		previewComponent: TestimonialTwo,
-		previewHref: "/preview/testimonials/two",
+		previewHref: "/preview/efferd-ui/testimonials/two",
 		previewMode: "inline",
 		previewHeight: 520,
 		installId: "testimonial-two",
@@ -179,7 +179,7 @@ export const testimonialBlocks: BlockShowcaseItem[] = [
 		description:
 			"A three-card testimonial grid with decorative corners, lifted middle emphasis, and richer profile metadata.",
 		previewComponent: TestimonialThree,
-		previewHref: "/preview/testimonials/three",
+		previewHref: "/preview/efferd-ui/testimonials/three",
 		previewMode: "inline",
 		previewHeight: 700,
 		installId: "testimonial-three",
@@ -206,7 +206,7 @@ export const testimonialBlocks: BlockShowcaseItem[] = [
 		description:
 			"A split testimonial layout with divider rails, dense quote cards, and a stronger editorial grid.",
 		previewComponent: TestimonialFour,
-		previewHref: "/preview/testimonials/four",
+		previewHref: "/preview/efferd-ui/testimonials/four",
 		previewMode: "iframe",
 		previewHeight: 980,
 		installId: "testimonial-four",
@@ -232,7 +232,7 @@ export const testimonialBlocks: BlockShowcaseItem[] = [
 		description:
 			"A dense social-proof wall with grid fillers, patterned cards, and a long-form testimonial mosaic.",
 		previewComponent: TestimonialFive,
-		previewHref: "/preview/testimonials/five",
+		previewHref: "/preview/efferd-ui/testimonials/five",
 		previewMode: "iframe",
 		previewHeight: 1300,
 		installId: "testimonial-five",

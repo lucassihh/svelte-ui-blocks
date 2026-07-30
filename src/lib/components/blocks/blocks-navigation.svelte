@@ -4,8 +4,13 @@
 	import ScrollArea from "$lib/components/ui/scroll-area/scroll-area.svelte";
 	import { cn } from "$lib/utils";
 
-	let isActive = (slug: string) => {
-		return page.url.pathname === `/blocks/${slug}`;
+	// Get namespace after blocks/
+	const baseFolder = $derived(page.url.pathname.split("/")[2] || "efferd-ui");
+	const basePath = $derived(`/blocks/${baseFolder}`);
+
+	// active-link logic
+	const isActive = (slug: string) => {
+		return page.url.pathname === `${basePath}/${slug}`;
 	};
 </script>
 
@@ -25,7 +30,7 @@
 						)}
 					>
 						<a
-							href="/blocks/{category.slug}"
+							href="{basePath}/{category.slug}"
 							class={cn(
 								isActive(category.slug) && "text-primary!",
 								"flex h-7 w-fit items-center rounded-sm px-1 text-[13px] text-nowrap text-muted-foreground transition-all duration-300 hover:text-foreground lg:-mx-2 lg:px-3 dark:text-muted-foreground"

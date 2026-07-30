@@ -322,7 +322,7 @@ export const heroBlocks: BlockShowcaseItem[] = [
 		description:
 			"A full hero composition with sticky header, editorial spotlight, and a marquee trust band.",
 		previewComponent: HeroOnePreview,
-		previewHref: "/preview/hero/one",
+		previewHref: "/preview/efferd-ui/hero/one",
 		previewMode: "iframe",
 		previewHeight: 820,
 		installId: "hero-one",
@@ -359,7 +359,7 @@ export const heroBlocks: BlockShowcaseItem[] = [
 		description:
 			"A framed product hero with a floating screen, structured header, and bordered logo section.",
 		previewComponent: HeroTwoPreview,
-		previewHref: "/preview/hero/two",
+		previewHref: "/preview/efferd-ui/hero/two",
 		previewMode: "iframe",
 		previewHeight: 860,
 		installId: "hero-two",
@@ -398,7 +398,7 @@ export const heroBlocks: BlockShowcaseItem[] = [
 		description:
 			"A modern hero layout with mega-nav header, device mockup spotlight, and compact logo grid.",
 		previewComponent: HeroThreePreview,
-		previewHref: "/preview/hero/three",
+		previewHref: "/preview/efferd-ui/hero/three",
 		previewMode: "iframe",
 		previewHeight: 840,
 		installId: "hero-three",

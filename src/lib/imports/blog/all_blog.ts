@@ -68,7 +68,7 @@ export const blogBlocks: BlockShowcaseItem[] = [
 		title: "Blog One",
 		description: "A vertical editorial list with full-width dividers and compact summaries.",
 		previewComponent: BlogOne,
-		previewHref: "/preview/blog/one",
+		previewHref: "/preview/efferd-ui/blog/one",
 		previewMode: "iframe",
 		previewHeight: 900,
 		installId: "blog-one",
@@ -93,7 +93,7 @@ export const blogBlocks: BlockShowcaseItem[] = [
 		title: "Blog Two",
 		description: "A structured blog grid with metadata rows and filler cells for balance.",
 		previewComponent: BlogTwo,
-		previewHref: "/preview/blog/two",
+		previewHref: "/preview/efferd-ui/blog/two",
 		previewMode: "inline",
 		installId: "blog-two",
 		codeTree: createBlockCodeTree("blog-two:component", [
@@ -118,7 +118,7 @@ export const blogBlocks: BlockShowcaseItem[] = [
 		title: "Blog Three",
 		description: "A card-based blog grid with media thumbnails and richer reading metadata.",
 		previewComponent: BlogThree,
-		previewHref: "/preview/blog/three",
+		previewHref: "/preview/efferd-ui/blog/three",
 		previewMode: "inline",
 		installId: "blog-three",
 		codeTree: createBlockCodeTree("blog-three:component", [

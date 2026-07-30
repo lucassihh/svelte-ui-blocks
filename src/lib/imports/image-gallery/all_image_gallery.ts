@@ -29,7 +29,7 @@ export const imageGalleryBlocks: BlockShowcaseItem[] = [
 		description:
 			"A responsive editorial gallery with staggered aspect ratios, lazy-loaded media, and a clean masonry-style rhythm.",
 		previewComponent: ImageGallery,
-		previewHref: "/preview/image-gallery/one",
+		previewHref: "/preview/efferd-ui/image-gallery/one",
 		previewMode: "iframe",
 		previewHeight: 1800,
 		installId: "image-gallery-one",

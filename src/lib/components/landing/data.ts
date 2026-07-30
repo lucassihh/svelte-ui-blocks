@@ -32,8 +32,8 @@ const sidebarLinks: SidebarLink[] = [
 		href: "/"
 	},
 	{
-		label: "Blocks",
-		href: "/blocks/hero"
+		label: "Efferd-UI Blocks",
+		href: "/blocks/efferd-ui/hero"
 	},
 	{
 		label: "Documentation",

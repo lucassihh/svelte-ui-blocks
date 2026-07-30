@@ -62,7 +62,7 @@ export const pricingBlocks: BlockShowcaseItem[] = [
 		description:
 			"A two-plan comparison with corner accents, compact savings callouts, and a stronger featured tier.",
 		previewComponent: PricingOne,
-		previewHref: "/preview/pricing/one",
+		previewHref: "/preview/efferd-ui/pricing/one",
 		previewMode: "inline",
 		previewHeight: 700,
 		installId: "pricing-one",
@@ -83,7 +83,7 @@ export const pricingBlocks: BlockShowcaseItem[] = [
 		description:
 			"A bordered editorial pricing grid with divider rails, concise plan summaries, and feature checklists.",
 		previewComponent: PricingTwo,
-		previewHref: "/preview/pricing/two",
+		previewHref: "/preview/efferd-ui/pricing/two",
 		previewMode: "iframe",
 		previewHeight: 920,
 		installId: "pricing-two",
@@ -104,7 +104,7 @@ export const pricingBlocks: BlockShowcaseItem[] = [
 		description:
 			"A reusable three-tier pricing layout with icon-led cards and a highlighted middle plan.",
 		previewComponent: PricingThree,
-		previewHref: "/preview/pricing/three",
+		previewHref: "/preview/efferd-ui/pricing/three",
 		previewMode: "inline",
 		previewHeight: 900,
 		installId: "pricing-three",
@@ -130,7 +130,7 @@ export const pricingBlocks: BlockShowcaseItem[] = [
 		description:
 			"An animated pricing table with monthly-yearly toggles, live number transitions, and motion badges.",
 		previewComponent: PricingFour,
-		previewHref: "/preview/pricing/four",
+		previewHref: "/preview/efferd-ui/pricing/four",
 		previewMode: "inline",
 		previewHeight: 980,
 		installId: "pricing-four",
