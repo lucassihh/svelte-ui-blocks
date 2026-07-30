@@ -1,5 +1,5 @@
 <script lang="ts">
-	import type { BlockCodeNode } from "$lib/blocks/showcase";
+	import type { BlockCodeNode } from "$lib/imports/showcase";
 	import { cn } from "$lib/utils";
 	import ChevronDown from "@lucide/svelte/icons/chevron-down";
 	import ChevronRight from "@lucide/svelte/icons/chevron-right";

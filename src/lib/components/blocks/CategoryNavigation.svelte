@@ -1,6 +1,6 @@
 <script lang="ts">
 	import { page } from "$app/state";
-	import { blockCategories } from "$lib/blocks/categories";
+	import { blockCategories } from "$lib/imports/categories";
 	import ScrollArea from "$lib/components/ui/scroll-area/scroll-area.svelte";
 	import { cn } from "$lib/utils";
 

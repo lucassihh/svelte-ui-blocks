@@ -1,7 +1,7 @@
 <script lang="ts">
 	import { DecorIcon } from "$lib/components/ui/decor-icon";
 	import { FullWidthDivider } from "$lib/components/ui/full-width-divider";
-	import { StripedPattern } from "../magic/striped-pattern";
+	import { StripedPattern } from "$lib/components/magic-ui/striped-pattern";
 	import ChangelogCard from "./changelog-card.svelte";
 	import { changelogPageData } from "./data";
 
