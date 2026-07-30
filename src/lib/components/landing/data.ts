@@ -1,10 +1,10 @@
 // SVG
-import FacebookIcon from "$lib/svgs/social/facebook.svelte";
-import GithubIcon from "$lib/svgs/social/github.svelte";
-import XIcon from "$lib/svgs/social/x.svelte";
-import InstagramIcon from "$lib/svgs/social/instagram.svelte";
-import LinkedinIcon from "$lib/svgs/social/linkedin.svelte";
-import YoutubeIcon from "$lib/svgs/social/youtube.svelte";
+import FacebookIcon from "$lib/assets/svg/social/facebook.svelte";
+import GithubIcon from "$lib/assets/svg/social/github.svelte";
+import XIcon from "$lib/assets/svg/social/x.svelte";
+import InstagramIcon from "$lib/assets/svg/social/instagram.svelte";
+import LinkedinIcon from "$lib/assets/svg/social/linkedin.svelte";
+import YoutubeIcon from "$lib/assets/svg/social/youtube.svelte";
 
 import type { Component } from "svelte";
 

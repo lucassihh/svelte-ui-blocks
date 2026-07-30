@@ -1,8 +1,8 @@
 <script lang="ts">
 	import { FullWidthDivider } from "$lib/components/ui/full-width-divider";
 	// SVG
-	import GithubLogo from "$lib/svgs/social/github.svelte";
-	import XLogo from "$lib/svgs/social/x.svelte";
+	import GithubLogo from "$lib/assets/svg/social/github.svelte";
+	import XLogo from "$lib/assets/svg/social/x.svelte";
 
 	import { cn } from "$lib/utils";
 	import { Mail, MapPin, Phone, type Icon as IconType } from "@lucide/svelte";

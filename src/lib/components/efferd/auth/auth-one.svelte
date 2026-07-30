@@ -4,9 +4,9 @@
 	import { Button } from "$lib/components/ui/button";
 
 	// SVG
-	import GithubLogo from "$lib/svgs/social/github.svelte";
-	import GoogleLogo from "$lib/svgs/brand/google.svelte";
-	import Logo from "$lib/svgs/logo.svelte";
+	import GithubLogo from "$lib/assets/svg/social/github.svelte";
+	import GoogleLogo from "$lib/assets/svg/brand/google.svelte";
+	import Logo from "$lib/assets/svg/logo.svelte";
 
 	import { cn } from "$lib/utils";
 	import type { HTMLAttributes } from "svelte/elements";

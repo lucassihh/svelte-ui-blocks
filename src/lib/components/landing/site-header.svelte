@@ -6,7 +6,7 @@
 
 	// Icons & Logos
 	import { MoonIcon, SunIcon, PanelLeftOpen } from "@lucide/svelte/icons";
-	import Logo from "$lib/svgs/logo.svelte";
+	import Logo from "$lib/assets/svg/logo.svelte";
 
 	// Data
 	import { sidebarLinks, socialLinks } from "./data.ts";

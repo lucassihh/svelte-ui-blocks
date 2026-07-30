@@ -6,10 +6,10 @@
 	import { InputGroup, InputGroupAddon, InputGroupInput } from "$lib/components/ui/input-group";
 
 	// SVG
-	import AppleLogo from "$lib/svgs/brand/apple.svelte";
-	import GithubLogo from "$lib/svgs/social/github.svelte";
-	import GoogleLogo from "$lib/svgs/brand/google.svelte";
-	import Logo from "$lib/svgs/logo.svelte";
+	import AppleLogo from "$lib/assets/svg/brand/apple.svelte";
+	import GithubLogo from "$lib/assets/svg/social/github.svelte";
+	import GoogleLogo from "$lib/assets/svg/brand/google.svelte";
+	import Logo from "$lib/assets/svg/logo.svelte";
 
 	import { cn } from "$lib/utils";
 	import type { HTMLAttributes } from "svelte/elements";

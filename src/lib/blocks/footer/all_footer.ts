@@ -15,11 +15,11 @@ import footerOneSource from "$lib/components/efferd/footer/footer-one.svelte?raw
 import footerSixSource from "$lib/components/efferd/footer/footer-six.svelte?raw";
 import footerThreeSource from "$lib/components/efferd/footer/footer-three.svelte?raw";
 import footerTwoSource from "$lib/components/efferd/footer/footer-two.svelte?raw";
-import appleSvgSource from "$lib/svgs/brand/apple.svelte?raw";
-import githubSvgSource from "$lib/svgs/social/github.svelte?raw";
-import logoSvgSource from "$lib/svgs/logo.svelte?raw";
-import playStoreSvgSource from "$lib/svgs/brand/play-store.svelte?raw";
-import xSvgSource from "$lib/svgs/social/x.svelte?raw";
+import appleSvgSource from "$lib/assets/svg/brand/apple.svelte?raw";
+import githubSvgSource from "$lib/assets/svg/social/github.svelte?raw";
+import logoSvgSource from "$lib/assets/svg/logo.svelte?raw";
+import playStoreSvgSource from "$lib/assets/svg/brand/play-store.svelte?raw";
+import xSvgSource from "$lib/assets/svg/social/x.svelte?raw";
 
 const buttonFiles = [
 	{

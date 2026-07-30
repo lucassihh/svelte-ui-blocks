@@ -2,7 +2,7 @@
 	// Necessary
 	import { page } from "$app/state";
 	import favicon from "$lib/assets/favicon.svg";
-	import "./layout.css";
+	import "$lib/styles/app.css";
 
 	// Landing Imports
 	import * as Sidebar from "$lib/components/ui/sidebar/index.js";
@@ -37,20 +37,20 @@
 		{@render children()}
 	</div>
 {:else}
-	<Sidebar.Provider class="relative mx-auto w-full overflow-hidden">
-		<!-- Show Mobile Sidebar -->
-		<div class="md:hidden lg:hidden">
-			<SiteMobileSidebar />
-		</div>
-
-		<div class="w-max-7xl mx-auto w-full bg-background">
-			<SiteHeader />
+	<Sidebar.Provider class="relative mx-auto w-full max-w-7xl overflow-hidden">
+		<main class="w-full">
+            <!-- Show Mobile Sidebar -->
+		    <div class="md:hidden lg:hidden">
+			    <SiteMobileSidebar />
+		    </div>
+        
+            <SiteHeader />
 
 			{@render children()}
 
 			{#if !isDocumentation}
 				<SiteFooter />
 			{/if}
-		</div>
+		</main>
 	</Sidebar.Provider>
 {/if}

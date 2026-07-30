@@ -25,10 +25,10 @@ import inputGroupAddonSource from "$lib/components/ui/input-group/input-group-ad
 import inputGroupIndexSource from "$lib/components/ui/input-group/index.ts?raw";
 import inputGroupInputSource from "$lib/components/ui/input-group/input-group-input.svelte?raw";
 import inputGroupSource from "$lib/components/ui/input-group/input-group.svelte?raw";
-import appleSvgSource from "$lib/svgs/brand/apple.svelte?raw";
-import githubSvgSource from "$lib/svgs/social/github.svelte?raw";
-import googleSvgSource from "$lib/svgs/brand/google.svelte?raw";
-import logoSvgSource from "$lib/svgs/logo.svelte?raw";
+import appleSvgSource from "$lib/assets/svg/brand/apple.svelte?raw";
+import githubSvgSource from "$lib/assets/svg/social/github.svelte?raw";
+import googleSvgSource from "$lib/assets/svg/brand/google.svelte?raw";
+import logoSvgSource from "$lib/assets/svg/logo.svelte?raw";
 
 const buttonFiles = [
 	{

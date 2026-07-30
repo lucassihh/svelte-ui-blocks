@@ -3,11 +3,11 @@
 	import { cn } from "$lib/utils";
 
 	// SVG
-	import FacebookIcon from "$lib/svgs/social/facebook.svelte";
-	import InstagramIcon from "$lib/svgs/social/instagram.svelte";
-	import LinkedinIcon from "$lib/svgs/social/linkedin.svelte";
-	import YoutubeIcon from "$lib/svgs/social/youtube.svelte";
-	import Logo from "$lib/svgs/logo.svelte";
+	import FacebookIcon from "$lib/assets/svg/social/facebook.svelte";
+	import InstagramIcon from "$lib/assets/svg/social/instagram.svelte";
+	import LinkedinIcon from "$lib/assets/svg/social/linkedin.svelte";
+	import YoutubeIcon from "$lib/assets/svg/social/youtube.svelte";
+	import Logo from "$lib/assets/svg/logo.svelte";
 
 	type FooterLink = {
 		title: string;

@@ -6,8 +6,8 @@
 	import { InputGroup, InputGroupAddon, InputGroupInput } from "$lib/components/ui/input-group";
 
 	// SVG
-	import GoogleLogo from "$lib/svgs/brand/google.svelte";
-	import Logo from "$lib/svgs/logo.svelte";
+	import GoogleLogo from "$lib/assets/svg/brand/google.svelte";
+	import Logo from "$lib/assets/svg/logo.svelte";
 
 	import { cn } from "$lib/utils";
 	import type { HTMLAttributes } from "svelte/elements";

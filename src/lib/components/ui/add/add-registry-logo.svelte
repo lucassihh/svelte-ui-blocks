@@ -1,10 +1,10 @@
 <script lang="ts">
-	import GithubLogo from "$lib/svgs/social/github.svelte";
-	import JsrepoLogo from "$lib/svgs/logos/jsrepo.svelte";
-	import GitlabLogo from "$lib/svgs/logos/gitlab.svelte";
-	import BitbucketLogo from "$lib/svgs/logos/bitbucket.svelte";
+	import GithubLogo from "$lib/assets/svg/social/github.svelte";
+	import JsrepoLogo from "$lib/assets/svg/logos/jsrepo.svelte";
+	import GitlabLogo from "$lib/assets/svg/logos/gitlab.svelte";
+	import BitbucketLogo from "$lib/assets/svg/logos/bitbucket.svelte";
 	import type { Component } from "svelte";
-	import AzureDevops from "$lib/svgs/logos/azure-devops.svelte";
+	import AzureDevops from "$lib/assets/svg/logos/azure-devops.svelte";
 	import ServerIcon from "@lucide/svelte/icons/server";
 	import { cn } from "$lib/utils";
 

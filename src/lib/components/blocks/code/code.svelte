@@ -137,7 +137,7 @@
 </div>
 
 <style lang="postcss">
-	@reference '../../../../routes/layout.css'
+	@reference '$lib/styles/app.css'
 
 	:global(.dark) {
 		:global(.shiki, .shiki span) {

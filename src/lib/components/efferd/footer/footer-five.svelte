@@ -2,12 +2,12 @@
 	import { Button } from "$lib/components/ui/button";
 
 	// SVG
-	import AppleLogo from "$lib/svgs/brand/apple.svelte";
-	import PlayStoreLogo from "$lib/svgs/brand/play-store.svelte";
-	import FacebookIcon from "$lib/svgs/social/facebook.svelte";
-	import XLogo from "$lib/svgs/social/x.svelte";
-	import InstagramIcon from "$lib/svgs/social/instagram.svelte";
-	import LinkedinIcon from "$lib/svgs/social/linkedin.svelte";
+	import AppleLogo from "$lib/assets/svg/brand/apple.svelte";
+	import PlayStoreLogo from "$lib/assets/svg/brand/play-store.svelte";
+	import FacebookIcon from "$lib/assets/svg/social/facebook.svelte";
+	import XLogo from "$lib/assets/svg/social/x.svelte";
+	import InstagramIcon from "$lib/assets/svg/social/instagram.svelte";
+	import LinkedinIcon from "$lib/assets/svg/social/linkedin.svelte";
 
 	import type { Component } from "svelte";
 
