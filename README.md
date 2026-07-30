@@ -32,4 +32,4 @@ With some improvements
 - [x] Move `src/layout.css` to `lib/styles/app.css`
 - [x] Rename `lib/components/efferd` to `lib/components/efferd-ui`
 - [x] Rename `lib/components/magic` to `lib/components/magic-ui`
-- [x] Rename `lib/blocks` imports to `lib/imports`
+- [x] Remove `lib/blocks` and move imports to `lib/registry`
