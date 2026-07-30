@@ -1,16 +1,9 @@
-import { authBlocks } from "$lib/imports/auth/all_auth";
-import { blogBlocks } from "$lib/imports/blog/all_blog";
-import { contactBlocks } from "$lib/imports/contact/all_contact";
-import { ctaBlocks } from "$lib/imports/cta/all_cta";
-import { faqBlocks } from "$lib/imports/faqs/all_faqs";
-import { featureBlocks } from "$lib/imports/features/all_features";
-import { footerBlocks } from "$lib/imports/footer/all_footer";
-import { headerBlocks } from "$lib/imports/header/all_header";
-import { heroBlocks } from "$lib/imports/hero/all_hero";
-import { imageGalleryBlocks } from "$lib/imports/image-gallery/all_image_gallery";
-import { integrationBlocks } from "$lib/imports/integrations/all_integrations";
-import { logoCloudBlocks } from "$lib/imports/logo-cloud/all_logo_cloud";
+// For efferd-ui blocks informations
+import { registry } from "$lib/registry";
+const efferd = registry["efferd-ui"];
+
 import type { Component } from "svelte";
+
 import AuthPreview from "./category-previews/auth-preview.svelte";
 import BlogPreview from "./category-previews/blog-preview.svelte";
 import ContactPreview from "./category-previews/contact-preview.svelte";
@@ -34,7 +27,9 @@ export type TypesCard = {
 	previewComponent: Component<{ title: string; countLabel: string }>;
 };
 
-function formatBlockLabel(count: number) {
+// Function to return label correctly
+// 1 === "Block", 2++ === "Blocks"
+function isSingularOrPlural(count: number) {
 	return `${count} ${count === 1 ? "block" : "blocks"}`;
 }
 
@@ -43,108 +38,108 @@ export const dataBlocks: TypesCard[] = [
 		slug: "header",
 		title: "Header",
 		description: "Responsive navigation bars and mega-menus",
-		href: "/blocks/header",
-		count: headerBlocks.length,
-		countLabel: formatBlockLabel(headerBlocks.length),
+		href: "/blocks/efferd-ui/header",
+		count: efferd.header.length,
+		countLabel: isSingularOrPlural(efferd.header.length),
 		previewComponent: HeaderPreview
 	},
 	{
 		slug: "hero",
 		title: "Hero Sections",
 		description: "High-impact landing page entrance sections",
-		href: "/blocks/hero",
-		count: heroBlocks.length,
-		countLabel: formatBlockLabel(heroBlocks.length),
+		href: "/blocks/efferd-ui/hero",
+		count: efferd.hero.length,
+		countLabel: isSingularOrPlural(efferd.hero.length),
 		previewComponent: HeroPreview
 	},
 	{
 		slug: "auth",
 		title: "Auth",
 		description: "Login, registration, and password recovery forms",
-		href: "/blocks/auth",
-		count: authBlocks.length,
-		countLabel: formatBlockLabel(authBlocks.length),
+		href: "/blocks/efferd-ui/auth",
+		count: efferd.auth.length,
+		countLabel: isSingularOrPlural(efferd.auth.length),
 		previewComponent: AuthPreview
 	},
 	{
 		slug: "features",
 		title: "Features",
 		description: "Grids and lists to showcase product capabilities",
-		href: "/blocks/features",
-		count: featureBlocks.length,
-		countLabel: formatBlockLabel(featureBlocks.length),
+		href: "/blocks/efferd-ui/features",
+		count: efferd.features.length,
+		countLabel: isSingularOrPlural(efferd.features.length),
 		previewComponent: FeaturesPreview
 	},
 	{
 		slug: "blog",
 		title: "Blog Sections",
 		description: "Article previews and content feed layouts",
-		href: "/blocks/blog",
-		count: blogBlocks.length,
-		countLabel: formatBlockLabel(blogBlocks.length),
+		href: "/blocks/efferd-ui/blog",
+		count: efferd.blog.length,
+		countLabel: isSingularOrPlural(efferd.blog.length),
 		previewComponent: BlogPreview
 	},
 	{
 		slug: "contact",
 		title: "Contact",
 		description: "Support channels and lead generation forms",
-		href: "/blocks/contact",
-		count: contactBlocks.length,
-		countLabel: formatBlockLabel(contactBlocks.length),
+		href: "/blocks/efferd-ui/contact",
+		count: efferd.contact.length,
+		countLabel: isSingularOrPlural(efferd.contact.length),
 		previewComponent: ContactPreview
 	},
 	{
 		slug: "cta",
 		title: "Call to Action",
 		description: "Conversion-focused prompts and buttons",
-		href: "/blocks/cta",
-		count: ctaBlocks.length,
-		countLabel: formatBlockLabel(ctaBlocks.length),
+		href: "/blocks/efferd-ui/cta",
+		count: efferd.cta.length,
+		countLabel: isSingularOrPlural(efferd.cta.length),
 		previewComponent: CtaPreview
 	},
 	{
 		slug: "faqs",
 		title: "FAQs",
 		description: "Accordion-style frequently asked questions",
-		href: "/blocks/faqs",
-		count: faqBlocks.length,
-		countLabel: formatBlockLabel(faqBlocks.length),
+		href: "/blocks/efferd-ui/faqs",
+		count: efferd.faqs.length,
+		countLabel: isSingularOrPlural(efferd.faqs.length),
 		previewComponent: FaqsPreview
 	},
 	{
 		slug: "logo-cloud",
 		title: "Logo Cloud",
 		description: "Display grids for partner and client logos",
-		href: "/blocks/logo-cloud",
-		count: logoCloudBlocks.length,
-		countLabel: formatBlockLabel(logoCloudBlocks.length),
+		href: "/blocks/efferd-ui/logo-cloud",
+		count: efferd.logoCloud.length,
+		countLabel: isSingularOrPlural(efferd.logoCloud.length),
 		previewComponent: LogoCloudPreview
 	},
 	{
 		slug: "footer",
 		title: "Footer",
 		description: "Site-wide navigation and legal information",
-		href: "/blocks/footer",
-		count: footerBlocks.length,
-		countLabel: formatBlockLabel(footerBlocks.length),
+		href: "/blocks/efferd-ui/footer",
+		count: efferd.footer.length,
+		countLabel: isSingularOrPlural(efferd.footer.length),
 		previewComponent: FooterPreview
 	},
 	{
 		slug: "image-gallery",
 		title: "Image Gallery",
 		description: "Visual showcases for photos and portfolios",
-		href: "/blocks/image-gallery",
-		count: imageGalleryBlocks.length,
-		countLabel: formatBlockLabel(imageGalleryBlocks.length),
+		href: "/blocks/efferd-ui/image-gallery",
+		count: efferd.imageGallery.length,
+		countLabel: isSingularOrPlural(efferd.imageGallery.length),
 		previewComponent: ImageGalleryPreview
 	},
 	{
 		slug: "integrations",
 		title: "Integrations",
 		description: "Connectors for third-party tools and services",
-		href: "/blocks/integrations",
-		count: integrationBlocks.length,
-		countLabel: formatBlockLabel(integrationBlocks.length),
+		href: "/blocks/efferd-ui/integrations",
+		count: efferd.integration.length,
+		countLabel: isSingularOrPlural(efferd.integration.length),
 		previewComponent: IntegrationsPreview
 	}
 ];

@@ -1,17 +1,40 @@
 <script lang="ts">
 	import { page } from "$app/state";
-	import { blockCategories } from "$lib/imports/categories";
 	import ScrollArea from "$lib/components/ui/scroll-area/scroll-area.svelte";
 	import { cn } from "$lib/utils";
-
-	// Get namespace after blocks/
-	const baseFolder = $derived(page.url.pathname.split("/")[2] || "efferd-ui");
-	const basePath = $derived(`/blocks/${baseFolder}`);
-
-	// active-link logic
-	const isActive = (slug: string) => {
-		return page.url.pathname === `${basePath}/${slug}`;
+    
+    // Types
+	export type BlockCategory = {
+		slug: string;
+		label: string;
 	};
+
+	const blockCategories = [
+		{ slug: "hero", label: "Hero" },
+		{ slug: "header", label: "Header" },
+		{ slug: "logo-cloud", label: "Logo Cloud" },
+		{ slug: "features", label: "Features" },
+		{ slug: "integrations", label: "Integrations" },
+		{ slug: "testimonials", label: "Testimonials" },
+		{ slug: "cta", label: "CTA" },
+		{ slug: "pricing", label: "Pricing" },
+		{ slug: "blog", label: "Blog" },
+		{ slug: "auth", label: "Auth" },
+		{ slug: "faqs", label: "FAQ's" },
+		{ slug: "contact", label: "Contact" },
+		{ slug: "footer", label: "Footer" },
+		{ slug: "image-gallery", label: "Image Gallery" },
+		{ slug: "not-found", label: "Not Found" }
+	] as const satisfies readonly BlockCategory[];
+
+	// Get ui folder (efferd-ui, magic-ui,)
+	const library = $derived(page.url.pathname.split("/")[2] || "efferd-ui");
+
+	// Get the component url /(hero, header, footer)
+	const currentCategory = $derived(page.url.pathname.split("/")[3] ?? "");
+    
+    // Set activelink if the component url same as page slug
+	const isActive = (slug: string) => currentCategory === slug;
 </script>
 
 <div
@@ -30,13 +53,15 @@
 						)}
 					>
 						<a
-							href="{basePath}/{category.slug}"
+							href={`/blocks/${library}/${category.slug}`}
 							class={cn(
-								isActive(category.slug) && "text-primary!",
-								"flex h-7 w-fit items-center rounded-sm px-1 text-[13px] text-nowrap text-muted-foreground transition-all duration-300 hover:text-foreground lg:-mx-2 lg:px-3 dark:text-muted-foreground"
+								"flex h-7 w-fit items-center rounded-sm px-1 text-[13px] text-nowrap text-muted-foreground transition-all duration-300 hover:text-foreground lg:-mx-2 lg:px-3 dark:text-muted-foreground",
+								isActive(category.slug) && "text-primary!"
 							)}
 						>
-							<span class="block w-max text-nowrap capitalize">{category.label}</span>
+							<span class="block w-max text-nowrap capitalize">
+								{category.label}
+							</span>
 						</a>
 					</li>
 				{/each}

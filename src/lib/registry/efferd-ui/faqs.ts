@@ -1,5 +1,5 @@
-import type { BlockShowcaseItem } from "$lib/imports/showcase";
-import { createBlockCodeTree } from "$lib/imports/showcase";
+import type { BlockShowcaseItem } from "$lib/components/blocks/blocks-code-three";
+import { createBlockCodeTree } from "$lib/components/blocks/blocks-code-three";
 import FaqFive from "$lib/components/efferd-ui/faqs/faq-five.svelte";
 import FaqFour from "$lib/components/efferd-ui/faqs/faq-four.svelte";
 import FaqOne from "$lib/components/efferd-ui/faqs/faq-one.svelte";

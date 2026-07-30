@@ -1,10 +1,10 @@
-import { heroBlocks } from "$lib/imports/hero/all_hero";
+import { registry } from "$lib/registry";
 import type { PageLoad } from "./$types";
 
 export const prerender = true;
 
 export const load: PageLoad = () => {
 	return {
-		blocks: heroBlocks
+		blocks: registry["efferd-ui"].hero
 	};
 };

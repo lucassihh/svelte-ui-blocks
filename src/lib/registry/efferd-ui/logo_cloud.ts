@@ -1,5 +1,5 @@
-import type { BlockShowcaseItem } from "$lib/imports/showcase";
-import { createBlockCodeTree } from "$lib/imports/showcase";
+import type { BlockShowcaseItem } from "$lib/components/blocks/blocks-code-three";
+import { createBlockCodeTree } from "$lib/components/blocks/blocks-code-three";
 import LogoCloudFive from "$lib/components/efferd-ui/logo-cloud/five/logo-cloud-five.svelte";
 import LogoCloudFour from "$lib/components/efferd-ui/logo-cloud/four/logo-cloud-four.svelte";
 import LogoCloudOne from "$lib/components/efferd-ui/logo-cloud/logo-cloud-one.svelte";

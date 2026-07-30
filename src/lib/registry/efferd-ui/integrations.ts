@@ -1,5 +1,5 @@
-import type { BlockShowcaseItem } from "$lib/imports/showcase";
-import { createBlockCodeTree } from "$lib/imports/showcase";
+import type { BlockShowcaseItem } from "$lib/components/blocks/blocks-code-three";
+import { createBlockCodeTree } from "$lib/components/blocks/blocks-code-three";
 import IntegrationFive from "$lib/components/efferd-ui/integrations/integration-five.svelte";
 import IntegrationFour from "$lib/components/efferd-ui/integrations/integration-four.svelte";
 import IntegrationOne from "$lib/components/efferd-ui/integrations/integration-one.svelte";
@@ -58,7 +58,7 @@ const dividerFiles = [
 	}
 ];
 
-export const integrationBlocks: BlockShowcaseItem[] = [
+export const integrationsBlocks: BlockShowcaseItem[] = [
 	{
 		id: "integration-one",
 		title: "Integration One",
@@ -177,5 +177,5 @@ export const integrationBlocks: BlockShowcaseItem[] = [
 ];
 
 export function getIntegrationBlock(id: string) {
-	return integrationBlocks.find((block) => block.id === id);
+	return integrationsBlocks.find((block) => block.id === id);
 }

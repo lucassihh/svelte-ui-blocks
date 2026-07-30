@@ -1,5 +1,5 @@
-import type { BlockShowcaseItem } from "$lib/imports/showcase";
-import { createBlockCodeTree } from "$lib/imports/showcase";
+import type { BlockShowcaseItem } from "$lib/components/blocks/blocks-code-three";
+import { createBlockCodeTree } from "$lib/components/blocks/blocks-code-three";
 import FeatureFive from "$lib/components/efferd-ui/features/feature-five/feature-five.svelte";
 import FeatureFour from "$lib/components/efferd-ui/features/feature-four/feature-four.svelte";
 import FeatureOne from "$lib/components/efferd-ui/features/feature-one.svelte";
@@ -82,7 +82,7 @@ const gridPatternFiles = [
 	}
 ];
 
-export const featureBlocks: BlockShowcaseItem[] = [
+export const featuresBlocks: BlockShowcaseItem[] = [
 	{
 		id: "feature-one",
 		title: "Feature One",
@@ -196,5 +196,5 @@ export const featureBlocks: BlockShowcaseItem[] = [
 ];
 
 export function getFeatureBlock(id: string) {
-	return featureBlocks.find((block) => block.id === id);
+	return featuresBlocks.find((block) => block.id === id);
 }

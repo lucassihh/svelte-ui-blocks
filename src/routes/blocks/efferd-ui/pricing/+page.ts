@@ -1,10 +1,10 @@
-import { pricingBlocks } from "$lib/imports/pricing/all_pricing";
+import { registry } from "$lib/registry";
 import type { PageLoad } from "./$types";
 
 export const prerender = true;
 
 export const load: PageLoad = () => {
 	return {
-		blocks: pricingBlocks
+		blocks: registry["efferd-ui"].pricing
 	};
 };

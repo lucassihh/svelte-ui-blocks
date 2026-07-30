@@ -1,5 +1,5 @@
-import type { BlockShowcaseItem } from "$lib/imports/showcase";
-import { createBlockCodeTree } from "$lib/imports/showcase";
+import type { BlockShowcaseItem } from "$lib/components/blocks/blocks-code-three";
+import { createBlockCodeTree } from "$lib/components/blocks/blocks-code-three";
 import PricingFour from "$lib/components/efferd-ui/pricing/pricing-four.svelte";
 import PricingOne from "$lib/components/efferd-ui/pricing/pricing-one.svelte";
 import PricingThree from "$lib/components/efferd-ui/pricing/pricing-three.svelte";

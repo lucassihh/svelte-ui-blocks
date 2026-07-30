@@ -1,10 +1,10 @@
-import { footerBlocks } from "$lib/imports/footer/all_footer";
+import { registry } from "$lib/registry";
 import type { PageLoad } from "./$types";
 
 export const prerender = true;
 
 export const load: PageLoad = () => {
 	return {
-		blocks: footerBlocks
+		blocks: registry["efferd-ui"].footer
 	};
 };

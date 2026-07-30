@@ -1,10 +1,10 @@
-import { notFoundBlocks } from "$lib/imports/not-found/all_not_found";
+import { registry } from "$lib/registry";
 import type { PageLoad } from "./$types";
 
 export const prerender = true;
 
 export const load: PageLoad = () => {
 	return {
-		blocks: notFoundBlocks
+		blocks: registry["efferd-ui"].notFound
 	};
 };

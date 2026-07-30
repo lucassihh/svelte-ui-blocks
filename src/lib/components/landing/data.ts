@@ -75,63 +75,63 @@ export const socialLinks: SocialLink[] = [
 export const BlocksLinks: FooterLink[] = [
 	{
 		title: "Heros",
-		href: "/blocks/hero"
+		href: "/blocks/efferd-ui/hero"
 	},
 	{
 		title: "Headers",
-		href: "/blocks/header/"
+		href: "/blocks/efferd-ui/header/"
 	},
 	{
 		title: "Logos",
-		href: "/blocks/logo-cloud"
+		href: "/blocks/efferd-ui/logo-cloud"
 	},
 	{
 		title: "Features",
-		href: "/blocks/features/"
+		href: "/blocks/efferd-ui/features/"
 	},
 	{
 		title: "Integrations",
-		href: "/blocks/integrations/"
+		href: "/blocks/efferd-ui/integrations/"
 	},
 	{
 		title: "Testimonials",
-		href: "/blocks/testimonials/"
+		href: "/blocks/efferd-ui/testimonials/"
 	},
 	{
 		title: "CTA",
-		href: "/blocks/cta/"
+		href: "/blocks/efferd-ui/cta/"
 	},
 	{
 		title: "Pricing",
-		href: "/blocks/pricing/"
+		href: "/blocks/efferd-ui/pricing/"
 	},
 	{
 		title: "Blog Cards",
-		href: "/blocks/blog/"
+		href: "/blocks/efferd-ui/blog/"
 	},
 	{
 		title: "Auth",
-		href: "/blocks/auth/"
+		href: "/blocks/efferd-ui/auth/"
 	},
 	{
 		title: "FAQs",
-		href: "/blocks/faqs/"
+		href: "/blocks/efferd-ui/faqs/"
 	},
 	{
 		title: "Contact",
-		href: "/blocks/contact/"
+		href: "/blocks/efferd-ui/contact/"
 	},
 	{
 		title: "Footers",
-		href: "/blocks/footer/"
+		href: "/blocks/efferd-ui/footer/"
 	},
 	{
 		title: "Image Gallery",
-		href: "/blocks/image-gallery/"
+		href: "/blocks/efferd-ui/image-gallery/"
 	},
 	{
 		title: "Not Found",
-		href: "/blocks/not-found/"
+		href: "/blocks/efferd-ui/not-found/"
 	}
 ] as const;
 

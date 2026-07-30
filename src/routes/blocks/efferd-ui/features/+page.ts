@@ -1,10 +1,10 @@
-import { featureBlocks } from "$lib/imports/features/all_features";
+import { registry } from "$lib/registry";
 import type { PageLoad } from "./$types";
 
 export const prerender = true;
 
 export const load: PageLoad = () => {
 	return {
-		blocks: featureBlocks
+		blocks: registry["efferd-ui"].features
 	};
 };

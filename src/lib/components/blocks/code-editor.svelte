@@ -4,7 +4,7 @@
 		findBlockCodeFile,
 		flattenBlockCodeFiles,
 		type BlockCodeTree
-	} from "$lib/imports/showcase";
+	} from "$lib/components/blocks/blocks-code-three";
 	import Check from "@lucide/svelte/icons/check";
 	import Copy from "@lucide/svelte/icons/copy";
 	import ExternalLink from "@lucide/svelte/icons/external-link";

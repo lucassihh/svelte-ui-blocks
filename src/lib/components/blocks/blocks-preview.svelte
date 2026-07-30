@@ -1,6 +1,6 @@
 <script lang="ts">
 	import { page } from "$app/state";
-	import type { BlockCodeTree } from "$lib/imports/showcase";
+	import type { BlockCodeTree } from "$lib/components/blocks/blocks-code-three";
 	import { IsMobile } from "$lib/hooks/is-mobile.svelte.js";
 	import { cn } from "$lib/utils";
 	import Palette from "@lucide/svelte/icons/palette";

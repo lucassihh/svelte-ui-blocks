@@ -24,7 +24,7 @@ With some improvements
 - [x] - Make blocks-navigation dinamyc
 
 - [x] - Improve `src/routes/blocks/` folder structure
-- [ ] - Improve `src/routes/preview/` folder structure
+- [x] - Improve `src/routes/preview/` folder structure
 
 **Project structure**
 

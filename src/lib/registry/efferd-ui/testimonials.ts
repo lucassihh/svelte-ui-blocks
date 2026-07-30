@@ -1,5 +1,5 @@
-import type { BlockShowcaseItem } from "$lib/imports/showcase";
-import { createBlockCodeTree } from "$lib/imports/showcase";
+import type { BlockShowcaseItem } from "$lib/components/blocks/blocks-code-three";
+import { createBlockCodeTree } from "$lib/components/blocks/blocks-code-three";
 import TestimonialOne from "$lib/components/efferd-ui/testimonial/testimonial-one.svelte";
 import TestimonialThree from "$lib/components/efferd-ui/testimonial/testimonial-three.svelte";
 import TestimonialTwo from "$lib/components/efferd-ui/testimonial/testimonial-two.svelte";
@@ -131,7 +131,7 @@ const maskLineFiles = [
 	}
 ];
 
-export const testimonialBlocks: BlockShowcaseItem[] = [
+export const testimonialsBlocks: BlockShowcaseItem[] = [
 	{
 		id: "testimonial-one",
 		title: "Testimonial One",
@@ -258,5 +258,5 @@ export const testimonialBlocks: BlockShowcaseItem[] = [
 ];
 
 export function getTestimonialBlock(id: string) {
-	return testimonialBlocks.find((block) => block.id === id);
+	return testimonialsBlocks.find((block) => block.id === id);
 }

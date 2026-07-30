@@ -1,10 +1,10 @@
-import { ctaBlocks } from "$lib/imports/cta/all_cta";
+import { registry } from "$lib/registry";
 import type { PageLoad } from "./$types";
 
 export const prerender = true;
 
 export const load: PageLoad = () => {
 	return {
-		blocks: ctaBlocks
+		blocks: registry["efferd-ui"].cta
 	};
 };
