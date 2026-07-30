@@ -12,7 +12,7 @@
 	import { scale } from "svelte/transition";
 	import Button from "../ui/button/button.svelte";
 	import Code from "./code/code.svelte";
-	import CodeTreeNode from "./CodeTreeNode.svelte";
+	import CodeTreeNode from "./code-three-node.svelte";
 
 	let { codeTree }: { codeTree: BlockCodeTree } = $props();
 

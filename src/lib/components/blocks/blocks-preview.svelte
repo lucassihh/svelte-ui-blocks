@@ -18,8 +18,8 @@
 		TooltipProvider,
 		TooltipTrigger
 	} from "$lib/components/ui/tooltip";
-	import CodeEditor from "./CodeEditor.svelte";
-	import InstallComponent from "./InstallComponent.svelte";
+	import CodeEditor from "./code-editor.svelte";
+	import InstallComponent from "./install-component.svelte";
 
 	// Props
 	interface BlockPreviewProps {

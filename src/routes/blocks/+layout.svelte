@@ -4,7 +4,7 @@
 	import Button from "$lib/components/ui/button/button.svelte";
 	import type { Snippet } from "svelte";
 	import { fly } from "svelte/transition";
-	import CategoryNavigation from "$lib/components/blocks/CategoryNavigation.svelte";
+	import CategoryNavigation from "$lib/components/blocks/blocks-navigation.svelte";
 
 	let { children }: { children: Snippet } = $props();
 	let visible = $derived(typeof scrollY.current === "undefined" ? 600 : scrollY.current > 1200);
