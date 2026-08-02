@@ -1,4 +1,4 @@
-// For efferd-ui blocks informations
+// Import efferd-ui blocks informations
 import { registry } from "$lib/registry";
 const efferd = registry["efferd-ui"];
 

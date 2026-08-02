@@ -10,7 +10,7 @@
 	);
 </script>
 
-<section class="mx-auto w-full max-w-3xl pb-16 sm:pb-20">
+<section class="mx-auto w-full max-w-4xl p-4 pb-16 sm:pb-20">
 	<div class="relative border-x border-border/80">
 		<DecorIcon class="size-4 stroke-muted-foreground/70" position="top-left" />
 		<DecorIcon class="size-4 stroke-muted-foreground/70" position="top-right" />

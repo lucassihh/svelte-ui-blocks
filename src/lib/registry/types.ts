@@ -1,12 +1,12 @@
-// All types for registry 
+// All types for registry
 export interface RegistryCategory {
-    [key: string]: unknown[];
+	[key: string]: unknown[];
 }
 
 export interface RegistryLibrary {
-    [category: string]: unknown[];
+	[category: string]: unknown[];
 }
 
 export interface Registry {
-    [library: string]: RegistryLibrary;
+	[library: string]: RegistryLibrary;
 }

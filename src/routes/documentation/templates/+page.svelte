@@ -29,6 +29,6 @@
 
 	<Paragraph>
 		For now, the best workflow is to combine individual blocks from the
-		<Link href="/blocks/hero">Blocks</Link> section and track upcoming work on the roadmap page.
+		<Link href="/blocks/efferd-ui/hero">Blocks</Link> section and track upcoming work on the roadmap page.
 	</Paragraph>
 </DocsPage>

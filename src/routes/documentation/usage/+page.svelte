@@ -16,7 +16,7 @@
 	description="Once the registry is ready, Efferd works best as a fast browse-to-build loop: compare variants, install the exact block, then tailor it to your product."
 >
 	{#snippet actions()}
-		<Button href="/blocks/hero" size="sm">Browse Blocks</Button>
+		<Button href="/blocks/efferd-ui/hero" size="sm">Browse Blocks</Button>
 		<Button href="/documentation/installation" size="sm" variant="outline"
 			>Review Installation</Button
 		>
@@ -33,7 +33,7 @@
 		<Step>
 			<H2 class="mt-0 text-xl">Start with the right category</H2>
 			<Paragraph>
-				Open <Link href="/blocks">Blocks</Link> and go to the section family that matches your page: hero,
+				Open <Link href="/blocks/efferd-ui/hero/">Blocks</Link> and go to the section family that matches your page: hero,
 				pricing, FAQ, footer, and so on.
 			</Paragraph>
 		</Step>

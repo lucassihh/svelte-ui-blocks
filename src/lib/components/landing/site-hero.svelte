@@ -2,9 +2,9 @@
 	import { Button } from "$lib/components/ui/button";
 	import { DecorIcon } from "$lib/components/ui/decor-icon";
 	import { ArrowRight, Rocket } from "@lucide/svelte";
-	import { DashedLine } from "../ui/dashed-line";
-	import { BorderSeparator } from "../ui/border-seperator";
-	import { DashedLines } from "../ui/dashed-lines";
+	import { DashedLine } from "$lib/components/ui/dashed-line";
+	import { BorderSeparator } from "$lib/components/ui/border-seperator";
+	import { DashedLines } from "$lib/components/ui/dashed-lines";
 	// Hero ShowCase
 	import HeroShowcase from "$lib/components/landing/hero-showcase/hero-showcase.svelte";
 </script>
@@ -34,7 +34,7 @@
 		<!-- Version -->
 		<a
 			class="group mx-auto flex w-fit items-center gap-3 rounded-full border bg-transparent py-1 pr-1 pl-3 shadow-lg backdrop-blur-lg"
-			href="/blocks/hero"
+			href="/blocks/efferd-ui/hero"
 			id="link"
 		>
 			<Rocket class="size-3 text-muted-foreground" />
@@ -65,7 +65,7 @@
 
 		<!-- Hero Buttons -->
 		<div class="mt-8 flex flex-col items-center gap-3 sm:flex-row">
-			<Button class="rounded-none" href="blocks/hero" size="lg">
+			<Button class="rounded-none" href="blocks/efferd-ui/hero" size="lg">
 				<span>Explore</span>
 			</Button>
 		</div>

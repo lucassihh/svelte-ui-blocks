@@ -32,12 +32,12 @@ export const changelogPageData: ChangelogPageData = {
 			title: "New Blocks",
 			description: "New Blocks Added.",
 			chips: [
-				{ label: "hero", href: "/blocks/hero" },
-				{ label: "contact", href: "/blocks/contact" },
-				{ label: "faqs", href: "/blocks/faqs" },
-				{ label: "footer", href: "/blocks/footer" },
-				{ label: "pricing", href: "/blocks/pricing" },
-				{ label: "auth", href: "/blocks/auth" }
+				{ label: "hero", href: "/blocks/efferd-ui/hero" },
+				{ label: "contact", href: "/blocks/efferd-ui/contact" },
+				{ label: "faqs", href: "/blocks/efferd-ui/faqs" },
+				{ label: "footer", href: "/blocks/efferd-ui/footer" },
+				{ label: "pricing", href: "/blocks/efferd-ui/pricing" },
+				{ label: "auth", href: "/blocks/efferd-ui/auth" }
 			]
 		},
 		// TODO

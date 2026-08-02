@@ -2,8 +2,8 @@
 	import { page } from "$app/state";
 	import ScrollArea from "$lib/components/ui/scroll-area/scroll-area.svelte";
 	import { cn } from "$lib/utils";
-    
-    // Types
+
+	// Types
 	export type BlockCategory = {
 		slug: string;
 		label: string;
@@ -32,8 +32,8 @@
 
 	// Get the component url /(hero, header, footer)
 	const currentCategory = $derived(page.url.pathname.split("/")[3] ?? "");
-    
-    // Set activelink if the component url same as page slug
+
+	// Set activelink if the component url same as page slug
 	const isActive = (slug: string) => currentCategory === slug;
 </script>
 

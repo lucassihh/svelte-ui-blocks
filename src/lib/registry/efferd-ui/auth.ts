@@ -1,11 +1,15 @@
+// Import Code Tree
 import type { BlockShowcaseItem } from "$lib/components/blocks/blocks-code-three";
 import { createBlockCodeTree } from "$lib/components/blocks/blocks-code-three";
+
+// Import Auth Components
 import AuthFive from "$lib/components/efferd-ui/auth/auth-five.svelte";
 import AuthFour from "$lib/components/efferd-ui/auth/auth-four.svelte";
 import AuthOne from "$lib/components/efferd-ui/auth/auth-one.svelte";
 import AuthThree from "$lib/components/efferd-ui/auth/auth-three.svelte";
 import AuthTwo from "$lib/components/efferd-ui/auth/auth-two.svelte";
 
+// Import Auth Sources
 import authFiveSource from "$lib/components/efferd-ui/auth/auth-five.svelte?raw";
 import authFourSource from "$lib/components/efferd-ui/auth/auth-four.svelte?raw";
 import authOneSource from "$lib/components/efferd-ui/auth/auth-one.svelte?raw";

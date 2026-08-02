@@ -39,12 +39,12 @@
 {:else}
 	<Sidebar.Provider class="relative mx-auto w-full max-w-7xl overflow-hidden">
 		<main class="w-full">
-            <!-- Show Mobile Sidebar -->
-		    <div class="md:hidden lg:hidden">
-			    <SiteMobileSidebar />
-		    </div>
-        
-            <SiteHeader />
+			<!-- Show Mobile Sidebar -->
+			<div class="md:hidden lg:hidden">
+				<SiteMobileSidebar />
+			</div>
+
+			<SiteHeader />
 
 			{@render children()}
 

@@ -18,7 +18,7 @@
 	description="Efferd follows the same registry-style flow already built into the block preview experience: initialize once, then add the block you want."
 >
 	{#snippet actions()}
-		<Button href="/blocks/hero" size="sm">See Blocks</Button>
+		<Button href="/blocks/efferd-ui/hero" size="sm">See Blocks</Button>
 		<Button
 			href="https://jsrepo.dev/docs/cli/add"
 			size="sm"
@@ -50,7 +50,7 @@
 		<Step>
 			<H2 class="mt-0 text-xl">Add from a block page</H2>
 			<Paragraph>
-				Once the registry is ready, browse <Link href="/blocks">the blocks directory</Link>, open
+				Once the registry is ready, browse <Link href="/blocks/efferd-ui/hero">the blocks directory</Link>, open
 				the block you want, and use the install action from that page.
 			</Paragraph>
 			<Code.Root class="mt-4" code={addCommand} lang="bash" variant="secondary" />
