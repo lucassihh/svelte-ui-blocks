@@ -4,11 +4,11 @@
 	import favicon from "$lib/assets/favicon.svg";
 	import "$lib/styles/app.css";
 
-	// Landing Imports
+	// Landing Imports (Main page)
 	import * as Sidebar from "$lib/components/ui/sidebar/index.js";
-	import SiteMobileSidebar from "$lib/components/landing/site-sidebar.svelte";
-	import SiteHeader from "$lib/components/landing/site-header.svelte";
-	import SiteFooter from "$lib/components/landing/site-footer.svelte";
+	import LandingMobileSidebar from "$lib/components/landing/landing-sidebar.svelte";
+	import LandingHeader from "$lib/components/landing/landing-header.svelte";
+	import LandingFooter from "$lib/components/landing/landing-footer.svelte";
 
 	// For Theme
 	import { ModeWatcher } from "mode-watcher";
@@ -41,15 +41,15 @@
 		<main class="w-full">
 			<!-- Show Mobile Sidebar -->
 			<div class="md:hidden lg:hidden">
-				<SiteMobileSidebar />
+				<LandingMobileSidebar />
 			</div>
 
-			<SiteHeader />
+			<LandingHeader />
 
 			{@render children()}
 
 			{#if !isDocumentation}
-				<SiteFooter />
+				<LandingFooter />
 			{/if}
 		</main>
 	</Sidebar.Provider>

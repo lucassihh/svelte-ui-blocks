@@ -1,135 +1,73 @@
 <script lang="ts">
 	import { asset } from "$app/paths";
 	import { MetaTags, JsonLd } from "svelte-meta-tags";
-	import SiteHero from "$lib/components/landing/site-hero.svelte";
-	import favicon from "$lib/assets/favicon.svg";
+	import LandingHero from "$lib/components/landing/landing-hero.svelte";
 
+	// Seo
 	const siteName = "Svelte Efferd Blocks";
-	const siteUrl = "https://sv-efferd.pages.dev";
+	const siteUrl = "https://127.0.0.1";
 	const canonicalUrl = `${siteUrl}/`;
-	const title = "Svelte Efferd Blocks | Marketing Blocks for Shadcn-Svelte";
+	const title = `${siteName}`;
+
 	const description =
 		"Browse beautiful shadcn-svelte marketing blocks for landing pages, hero sections, CTAs, pricing, testimonials, FAQs, headers, footers, and more.";
-	const keywords = [
-		"shadcn-svelte marketing blocks",
-		"Svelte marketing blocks",
-		"shadcn blocks for marketing",
-		"landing page blocks for Svelte"
-	] as const;
-	const categoryNames = [
-		"Hero sections",
-		"CTA sections",
-		"Pricing sections",
-		"Testimonial sections",
-		"Feature sections"
-	] as const;
+	const keywords = ["shadcn-svelte blocks", "shadcn blocks", "blocks for Svelte"] as const;
+
+	// URLs base
 	const ogImageUrl = new URL(asset("/og.png"), siteUrl).toString();
-	const logoUrl = new URL(favicon, siteUrl).toString();
+	const logoUrl = new URL(siteUrl).toString();
+
+	// JSON-LD
 	const jsonLdSchema = {
 		"@graph": [
 			{
 				"@type": "Organization",
-				"@id": `${canonicalUrl}#organization`,
-				name: "Svelte Efferd",
-				url: canonicalUrl,
-				logo: {
-					"@type": "ImageObject",
-					url: logoUrl
-				},
+				"@id": `${siteUrl}#organization`,
+				name: siteName,
+				url: siteUrl,
+				logo: logoUrl,
 				sameAs: ["https://github.com/", "https://x.com/"]
 			},
 			{
 				"@type": "WebSite",
-				"@id": `${canonicalUrl}#website`,
-				url: canonicalUrl,
+				"@id": `${siteUrl}#website`,
 				name: siteName,
-				description,
-				inLanguage: "en",
-				publisher: {
-					"@id": `${canonicalUrl}#organization`
-				}
-			},
-			{
-				"@type": "CollectionPage",
-				"@id": `${canonicalUrl}#webpage`,
-				url: canonicalUrl,
-				name: title,
-				description,
-				isPartOf: {
-					"@id": `${canonicalUrl}#website`
-				},
-				about: [
-					{
-						"@type": "Thing",
-						name: "Marketing blocks"
-					},
-					{
-						"@type": "Thing",
-						name: "shadcn-svelte components"
-					},
-					{
-						"@type": "Thing",
-						name: "Svelte landing page sections"
-					}
-				],
-				primaryImageOfPage: {
-					"@type": "ImageObject",
-					url: ogImageUrl
-				},
-				mainEntity: {
-					"@type": "ItemList",
-					name: "Marketing block categories",
-					numberOfItems: categoryNames.length,
-					itemListElement: categoryNames.map((name, index) => ({
-						"@type": "ListItem",
-						position: index + 1,
-						name
-					}))
-				},
-				publisher: {
-					"@id": `${canonicalUrl}#organization`
-				}
+				url: siteUrl,
+				publisher: { "@id": `${siteUrl}#organization` }
 			}
 		]
 	};
 </script>
 
-<svelte:head>
-	<link rel="icon" href={favicon} />
-</svelte:head>
-
+<!-- Tags Meta/OG  -->
 <MetaTags
 	{title}
 	{description}
-	{keywords}
+	canonical={canonicalUrl}
 	openGraph={{
 		type: "website",
 		title,
 		description,
+		url: canonicalUrl,
+		siteName,
 		images: [
 			{
 				url: ogImageUrl,
-				alt: "Svelte Efferd marketing blocks preview",
+				alt: title,
 				width: 1200,
-				height: 630,
-				type: "image/png"
+				height: 630
 			}
-		],
-		siteName,
-		url: canonicalUrl,
-		locale: "en_US"
+		]
 	}}
-	canonical={canonicalUrl}
 	twitter={{
 		cardType: "summary_large_image",
 		title,
 		description,
-		image: ogImageUrl,
-		imageAlt: "Svelte Efferd marketing blocks preview",
-		site: "",
-		creator: ""
+		image: ogImageUrl
 	}}
 />
+
 <JsonLd schema={jsonLdSchema} />
 
-<SiteHero />
+<!-- Landing Hero -->
+<LandingHero />

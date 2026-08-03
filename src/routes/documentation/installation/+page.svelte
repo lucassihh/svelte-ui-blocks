@@ -50,8 +50,9 @@
 		<Step>
 			<H2 class="mt-0 text-xl">Add from a block page</H2>
 			<Paragraph>
-				Once the registry is ready, browse <Link href="/blocks/efferd-ui/hero">the blocks directory</Link>, open
-				the block you want, and use the install action from that page.
+				Once the registry is ready, browse <Link href="/blocks/efferd-ui/hero"
+					>the blocks directory</Link
+				>, open the block you want, and use the install action from that page.
 			</Paragraph>
 			<Code.Root class="mt-4" code={addCommand} lang="bash" variant="secondary" />
 		</Step>
