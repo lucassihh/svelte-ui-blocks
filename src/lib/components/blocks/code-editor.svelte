@@ -1,25 +1,32 @@
 <script lang="ts">
+	// Local Imports
 	import {
 		collectDefaultOpenFolderIds,
 		findBlockCodeFile,
 		flattenBlockCodeFiles,
 		type BlockCodeTree
-	} from "$lib/components/blocks/blocks-code-three";
-	import Check from "@lucide/svelte/icons/check";
-	import Copy from "@lucide/svelte/icons/copy";
-	import ExternalLink from "@lucide/svelte/icons/external-link";
-	import { UseClipboard } from "$lib/hooks/use-clipboard.svelte";
-	import { scale } from "svelte/transition";
-	import Button from "../ui/button/button.svelte";
+	} from "./blocks-code-three";
 	import Code from "./code/code.svelte";
 	import CodeTreeNode from "./code-three-node.svelte";
 
+	// UI
+	import Button from "../ui/button/button.svelte";
+
+	// Icons
+	import Check from "@lucide/svelte/icons/check";
+	import Copy from "@lucide/svelte/icons/copy";
+	import ExternalLink from "@lucide/svelte/icons/external-link";
+
+	// Hooks & Other
+	import { UseClipboard } from "$lib/hooks/use-clipboard.svelte";
+	import { scale } from "svelte/transition";
+
+	// CodeThree Props
 	let { codeTree }: { codeTree: BlockCodeTree } = $props();
 
 	let clipboard = new UseClipboard({ delay: 1500 });
 	let openFolderIds = $state(new Set<string>());
 	let activeFileId = $state("");
-
 	let files = $derived(flattenBlockCodeFiles(codeTree.nodes));
 	let fallbackFileId = $derived(codeTree.defaultFileId || files[0]?.id || "");
 	let activeFile = $derived(findBlockCodeFile(codeTree, activeFileId) ?? files[0]);

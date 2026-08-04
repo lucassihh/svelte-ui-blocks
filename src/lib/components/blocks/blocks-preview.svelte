@@ -1,27 +1,33 @@
 <script lang="ts">
 	import { page } from "$app/state";
-	import type { BlockCodeTree } from "$lib/components/blocks/blocks-code-three";
-	import { IsMobile } from "$lib/hooks/is-mobile.svelte.js";
-	import { cn } from "$lib/utils";
-	import Palette from "@lucide/svelte/icons/palette";
-	import { Pane, PaneGroup, PaneResizer, type PaneAPI } from "paneforge";
-	import { watch } from "runed";
-	import type { Component } from "svelte";
-	import { MediaQuery } from "svelte/reactivity";
-	import { scale } from "svelte/transition";
-	import Button from "../ui/button/button.svelte";
-	// import { DecorIcon } from "../ui/decor-icon";
-	// import Separator from "../ui/separator/separator.svelte";
+
+	// Local Imports
+	import type { BlockCodeTree } from "./blocks-code-three";
+	import CodeEditor from "./code-editor.svelte";
+	import InstallComponent from "./install-component.svelte";
+
+	// UI
+	import Button from "$lib/components/ui/button/button.svelte";
 	import {
 		Tooltip,
 		TooltipContent,
 		TooltipProvider,
 		TooltipTrigger
 	} from "$lib/components/ui/tooltip";
-	import CodeEditor from "./code-editor.svelte";
-	import InstallComponent from "./install-component.svelte";
 
-	// Props
+	// Icons
+	import Palette from "@lucide/svelte/icons/palette";
+
+	// Hooks & Other
+	import { cn } from "$lib/utils";
+	import type { Component } from "svelte";
+	import { Pane, PaneGroup, PaneResizer, type PaneAPI } from "paneforge";
+	import { watch } from "runed";
+	import { IsMobile } from "$lib/hooks/is-mobile.svelte.js";
+	import { MediaQuery } from "svelte/reactivity";
+	import { scale } from "svelte/transition";
+
+	// Props Types
 	interface BlockPreviewProps {
 		id: string;
 		title: string;
@@ -33,7 +39,8 @@
 		previewHeight?: number;
 		installId?: string;
 	}
-
+   
+   // Props
 	let {
 		id,
 		title,

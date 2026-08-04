@@ -1,14 +1,20 @@
 <script lang="ts">
 	import { page } from "$app/state";
+
+	// Ui
 	import * as Add from "$lib/components/ui/add";
 	import { AGENTS, type Agent } from "$lib/components/ui/add";
-	import { cn } from "$lib/utils";
 
+	// Hooks & Other
+	import { cn } from "$lib/utils";
+    
+    // Props Types
 	interface InstallComponentProps {
 		id?: string;
 		class?: string;
 	}
-
+    
+    // Props
 	let { id, class: className = "" }: InstallComponentProps = $props();
 
 	let currentAgent: Agent = $state("pnpm");

@@ -1,15 +1,21 @@
 <script lang="ts">
-	import type { BlockCodeNode } from "$lib/components/blocks/blocks-code-three";
+	// Local Imports
+	import type { BlockCodeNode } from "./blocks-code-three";
+	import CodeTreeNode from "./code-three-node.svelte";
+
+	// Hooks & Other
 	import { cn } from "$lib/utils";
+	import { slide } from "svelte/transition";
+
+	// Icons
 	import ChevronDown from "@lucide/svelte/icons/chevron-down";
 	import ChevronRight from "@lucide/svelte/icons/chevron-right";
 	import ExternalLink from "@lucide/svelte/icons/external-link";
 	import FileCode2 from "@lucide/svelte/icons/file-code-2";
 	import Folder from "@lucide/svelte/icons/folder";
 	import FolderOpen from "@lucide/svelte/icons/folder-open";
-	import CodeTreeNode from "./code-three-node.svelte";
-	import { slide } from "svelte/transition";
-
+    
+    // Props Types
 	interface CodeTreeNodeProps {
 		node: BlockCodeNode;
 		activeFileId: string;
@@ -17,7 +23,8 @@
 		onSelectFile: (fileId: string) => void;
 		onToggleFolder: (folderId: string) => void;
 	}
-
+    
+    // Props
 	let { node, activeFileId, openFolderIds, onSelectFile, onToggleFolder }: CodeTreeNodeProps =
 		$props();
 

@@ -1,5 +1,8 @@
 <script lang="ts">
+    // Icon
 	import { DecorIcon } from "$lib/components/ui/decor-icon";
+   
+    // Data
 	import { dataBlocks } from "./config.ts";
 </script>
 

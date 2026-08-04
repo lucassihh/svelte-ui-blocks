@@ -1,12 +1,19 @@
 <script lang="ts">
+    // Hooks & Other
 	import { cn } from "$lib/utils";
+    
+    // Icon
 	import { ArrowUpRight } from "@lucide/svelte";
+    
+    // Data
 	import type { ChangelogChip as ChangelogChipType } from "./data";
-
+    
+    // Props Types
 	type ChangelogChipProps = ChangelogChipType & {
 		class?: string;
 	};
-
+    
+    // Props
 	let { label, href, class: className }: ChangelogChipProps = $props();
 </script>
 

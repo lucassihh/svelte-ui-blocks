@@ -1,3 +1,4 @@
+// Types Ts
 export type DocsPage = {
 	title: string;
 	description: string;
@@ -5,6 +6,7 @@ export type DocsPage = {
 	section: "primary" | "secondary";
 };
 
+// Documentation Links
 const docsPages = [
 	{
 		title: "Introduction",

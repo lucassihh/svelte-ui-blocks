@@ -1,8 +1,13 @@
 <script lang="ts">
+    // Hooks & Other
 	import { cn } from "$lib/utils";
 	import type { Snippet } from "svelte";
+
+	// Markdown Components
 	import H1 from "$lib/components/markdown/H1.svelte";
 	import Paragraph from "$lib/components/markdown/Paragraph.svelte";
+
+	// Props Types
 	type DocsPageProps = {
 		title: string;
 		description: string;
@@ -10,7 +15,8 @@
 		actions?: Snippet;
 		children?: Snippet;
 	};
-
+    
+    // Props
 	let { title, description, class: className = "", actions, children }: DocsPageProps = $props();
 </script>
 

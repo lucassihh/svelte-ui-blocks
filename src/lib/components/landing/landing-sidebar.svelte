@@ -1,8 +1,9 @@
 <script lang="ts">
 	import { page } from "$app/state";
 	import type { ComponentProps } from "svelte";
+    
+    // UI
 	import * as Sidebar from "$lib/components/ui/sidebar/index.js";
-
 	import { Button } from "$lib/components/ui/button/index.js";
 	import { buttonVariants } from "$lib/components/ui/button/index.js";
 

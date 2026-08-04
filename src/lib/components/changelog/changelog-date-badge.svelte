@@ -1,11 +1,14 @@
 <script lang="ts">
+    // Hooks & Other
 	import { cn } from "$lib/utils";
-
+    
+    // Props Types
 	type ChangelogDateBadgeProps = {
 		date: string;
 		class?: string;
 	};
-
+    
+    // Props
 	let { date, class: className }: ChangelogDateBadgeProps = $props();
 </script>
 

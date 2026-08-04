@@ -1,10 +1,15 @@
 <script lang="ts">
+    // UI
 	import { Button } from "$lib/components/ui/button";
-	import { cn } from "$lib/utils";
+	
+    // Hooks & Other
+    import { cn } from "$lib/utils";
+    import { SvelteDate } from "svelte/reactivity";
+    
+    // Icon
 	import Logo from "$lib/assets/svg/logo.svelte";
 	import { MoonIcon, SunIcon } from "@lucide/svelte";
-	import { SvelteDate } from "svelte/reactivity";
-
+	
 	// Data
 	import { socialLinks, BlocksLinks, DocumentationLinks, ResourcesLinks } from "./data.ts";
 

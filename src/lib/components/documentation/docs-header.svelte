@@ -1,6 +1,8 @@
 <script lang="ts">
+    // Local Imports
 	import DocsBreadcrumb from "./docs-breadcrumb.svelte";
-
+    
+    // UI
 	import { Button } from "$lib/components/ui/button";
 	import { buttonVariants } from "$lib/components/ui/button/index.js";
 

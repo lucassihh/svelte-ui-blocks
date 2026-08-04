@@ -1,9 +1,13 @@
 <script lang="ts">
 	import { page } from "$app/state";
+    
+    // UI
 	import ScrollArea from "$lib/components/ui/scroll-area/scroll-area.svelte";
-	import { cn } from "$lib/utils";
+	
+    // Hooks & Other
+    import { cn } from "$lib/utils";
 
-	// Types
+	// blockCategories Types
 	export type BlockCategory = {
 		slug: string;
 		label: string;
