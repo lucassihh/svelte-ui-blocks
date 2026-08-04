@@ -1,92 +1,64 @@
 <script lang="ts">
-	import { page } from "$app/state";
-    
     // UI
 	import { Button } from "$lib/components/ui/button";
-	import { buttonVariants } from "$lib/components/ui/button/index.js";
-
-	// Icons & Logos
-	import { MoonIcon, SunIcon, PanelLeftOpen } from "@lucide/svelte/icons";
-	import Logo from "$lib/assets/svg/logo.svelte";
-
-	// Data
-	import { sidebarLinks, socialLinks } from "./data.ts";
-
-	// For Custom Button Sidebar
-	import { useSidebar } from "$lib/components/ui/sidebar/index.js";
-	const sidebar = useSidebar();
-
-	// Theme
-	import { mode, toggleMode } from "mode-watcher";
-	function themeLabel() {
-		return mode.current === "dark" ? "Switch to light mode" : "Switch to dark mode";
-	}
+    
+    // Hooks & Other 
+	import { createScroll } from "$lib/hooks/use-scroll.svelte";
+	import { cn } from "$lib/utils";
+    
+    // Icon
+    import Logo from "$lib/assets/svg/logo.svelte";
+    import { MoonIcon, SunIcon } from "@lucide/svelte";
+    
+    // Local Imports
+	import MobileNav from "./mobile-nav.svelte";
+    import SocialLinks from "./social-links.svelte";
+    import ThemeToggle from "./theme-toggle.svelte";
+    
+    // Data
+	import { navLinks } from "./nav-links";
+	let scroll = createScroll(10);
 </script>
 
 <header
-	class="relative sticky top-0 z-50 mx-auto w-full max-w-7xl shrink-0 border-b border-border/80 bg-background"
+	class={cn(
+		"sticky top-2 z-50 mx-auto flex h-11 w-[92svw] max-w-4xl items-center justify-between rounded-lg border bg-background/95 px-1 shadow-sm backdrop-blur-sm transition-[max-width] duration-300 ease-out supports-backdrop-filter:bg-background/50",
+		scroll.scrolled &&
+			"border-border bg-background/95 backdrop-blur-sm supports-backdrop-filter:bg-background/50 md:top-2 md:max-w-3xl md:shadow"
+	)}
 >
-	<nav class="flex items-center justify-between gap-2 p-4">
-		<!-- Mobile Sidebar & Logo -->
-		<div class="flex items-center gap-2">
-			<!-- Mobile Sidebar Trigger -->
-			<div class="block md:hidden">
-				<Button variant="secondary" size="icon-sm" onclick={() => sidebar.toggle()}>
-					<PanelLeftOpen class="size-4" />
-				</Button>
+	<nav
+		class={cn(
+			"flex h-11 w-full items-center justify-between md:h-11  md:transition-all md:ease-out"
+		)}
+	>
+		<a
+			class="rounded-md border border-border p-2 hover:bg-muted dark:hover:bg-muted/50"
+			href="/"
+		>
+			<Logo class="h-4" />
+		</a>
+		<div class="hidden items-center gap-2 md:flex">
+			<div>
+				{#each navLinks as { label, href }}
+					<Button size="sm" variant="ghost" {href}>
+						{label}
+					</Button>
+				{/each}
 			</div>
-
-			<!-- Logo -->
-			<a aria-label="home" class="flex items-center gap-1" href="/">
-				<Logo />
-				<span class="font-mono font-medium tracking-tight">Svelte UI</span>
-			</a>
 		</div>
-
-		<!-- Desktop Links -->
-		<div class="hidden items-center md:flex">
-			{#each sidebarLinks as link}
-				<a
-					class="px-3 text-sm text-muted-foreground hover:text-foreground"
-					href={link.href}
-					size="sm"
-				>
-					{link.label}
-				</a>
-			{/each}
+		<div class="hidden">
+			<Button size="sm" variant="ghost">Login</Button>
+			<Button size="sm">Sign Up</Button>
 		</div>
-
-		<!-- Social Links & ThemeToggle Btn -->
-		<div class="flex items-center gap-2">
-			<!-- SocialLinks Icons by data.ts -->
-			{#each socialLinks as item, index (`social-${item.link}-${index}`)}
-				{@const SocialIcon = item.icon}
-				<Button
-					href={item.link}
-					aria-label={item.label}
-					rel="noreferrer"
-					size="icon-sm"
-					target="_blank"
-					variant="outline"
-				>
-					<SocialIcon class="size-4" />
-				</Button>
-			{/each}
-
-			<!-- ThemeToggle Btn -->
-			<Button
-				aria-label={themeLabel()}
-				size="icon-sm"
-				title={themeLabel()}
-				variant="secondary"
-				onclick={toggleMode}
-			>
-				{#if mode.current === "dark"}
-					<SunIcon class="size-4" />
-				{:else}
-					<MoonIcon class="size-4" />
-				{/if}
-			</Button>
-		</div>
+        
+        <div class="flex items-center gap-1">
+            <!-- Social Links & ThemeToggle Btn -->
+		    <div class="flex items-center gap-2">
+               <SocialLinks/>
+			    <ThemeToggle/>
+		    </div>
+		    <MobileNav />
+        </div>
 	</nav>
 </header>

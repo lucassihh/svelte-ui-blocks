@@ -6,7 +6,6 @@
 
 	// Landing Imports (Main page)
 	import * as Sidebar from "$lib/components/ui/sidebar/index.js";
-	import LandingMobileSidebar from "$lib/components/landing/landing-sidebar.svelte";
 	import LandingHeader from "$lib/components/landing/landing-header.svelte";
 	import LandingFooter from "$lib/components/landing/landing-footer.svelte";
 
@@ -39,11 +38,6 @@
 {:else}
 	<Sidebar.Provider class="relative mx-auto w-full max-w-7xl overflow-hidden">
 		<main class="w-full">
-			<!-- Show Mobile Sidebar -->
-			<div class="md:hidden lg:hidden">
-				<LandingMobileSidebar />
-			</div>
-
 			<LandingHeader />
 
 			{@render children()}
