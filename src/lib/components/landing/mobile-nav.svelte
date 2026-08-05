@@ -1,17 +1,17 @@
 <script lang="ts">
-    // UI
+	// UI
 	import { Button } from "$lib/components/ui/button";
-    
-    // Portal for Menu
+
+	// Portal for Menu
 	import { Portal, PortalBackdrop } from "$lib/components/ui/portal";
-    
-    // Hooks & Other
+
+	// Hooks & Other
 	import { cn } from "$lib/utils";
-    
-    // Icon
+
+	// Icon
 	import { MenuIcon, XIcon } from "@lucide/svelte";
-    
-    // Data
+
+	// Data
 	import { navLinks } from "./nav-links";
 	let open = $state(false);
 </script>
@@ -45,13 +45,13 @@
 				<ul class="grid gap-y-4">
 					{#each navLinks as link, i}
 						<li>
-							<a href={link.href} class="text-xl font-medium" onclick={() => open = false}>
+							<a href={link.href} class="text-xl font-medium" onclick={() => (open = false)}>
 								{link.label}
 							</a>
 						</li>
 					{/each}
 				</ul>
-				<div class="mt-4 grid grid-cols-2 gap-2 hidden">
+				<div class="mt-4 grid hidden grid-cols-2 gap-2">
 					<Button variant="outline">Sign In</Button>
 					<Button>Get Started</Button>
 				</div>

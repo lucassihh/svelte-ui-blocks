@@ -14,8 +14,8 @@
 	import FileCode2 from "@lucide/svelte/icons/file-code-2";
 	import Folder from "@lucide/svelte/icons/folder";
 	import FolderOpen from "@lucide/svelte/icons/folder-open";
-    
-    // Props Types
+
+	// Props Types
 	interface CodeTreeNodeProps {
 		node: BlockCodeNode;
 		activeFileId: string;
@@ -23,8 +23,8 @@
 		onSelectFile: (fileId: string) => void;
 		onToggleFolder: (folderId: string) => void;
 	}
-    
-    // Props
+
+	// Props
 	let { node, activeFileId, openFolderIds, onSelectFile, onToggleFolder }: CodeTreeNodeProps =
 		$props();
 

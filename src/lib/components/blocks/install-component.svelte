@@ -7,14 +7,14 @@
 
 	// Hooks & Other
 	import { cn } from "$lib/utils";
-    
-    // Props Types
+
+	// Props Types
 	interface InstallComponentProps {
 		id?: string;
 		class?: string;
 	}
-    
-    // Props
+
+	// Props
 	let { id, class: className = "" }: InstallComponentProps = $props();
 
 	let currentAgent: Agent = $state("pnpm");

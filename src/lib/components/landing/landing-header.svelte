@@ -1,21 +1,21 @@
 <script lang="ts">
-    // UI
+	// UI
 	import { Button } from "$lib/components/ui/button";
-    
-    // Hooks & Other 
+
+	// Hooks & Other
 	import { createScroll } from "$lib/hooks/use-scroll.svelte";
 	import { cn } from "$lib/utils";
-    
-    // Icon
-    import Logo from "$lib/assets/svg/logo.svelte";
-    import { MoonIcon, SunIcon } from "@lucide/svelte";
-    
-    // Local Imports
+
+	// Icon
+	import Logo from "$lib/assets/svg/logo.svelte";
+	import { MoonIcon, SunIcon } from "@lucide/svelte";
+
+	// Local Imports
 	import MobileNav from "./mobile-nav.svelte";
-    import SocialLinks from "./social-links.svelte";
-    import ThemeToggle from "./theme-toggle.svelte";
-    
-    // Data
+	import SocialLinks from "./social-links.svelte";
+	import ThemeToggle from "./theme-toggle.svelte";
+
+	// Data
 	import { navLinks } from "./nav-links";
 	let scroll = createScroll(10);
 </script>
@@ -32,10 +32,7 @@
 			"flex h-11 w-full items-center justify-between md:h-11  md:transition-all md:ease-out"
 		)}
 	>
-		<a
-			class="rounded-md border border-border p-2 hover:bg-muted dark:hover:bg-muted/50"
-			href="/"
-		>
+		<a class="rounded-md border border-border p-2 hover:bg-muted dark:hover:bg-muted/50" href="/">
 			<Logo class="h-4" />
 		</a>
 		<div class="hidden items-center gap-2 md:flex">
@@ -51,14 +48,14 @@
 			<Button size="sm" variant="ghost">Login</Button>
 			<Button size="sm">Sign Up</Button>
 		</div>
-        
-        <div class="flex items-center gap-1">
-            <!-- Social Links & ThemeToggle Btn -->
-		    <div class="flex items-center gap-2">
-               <SocialLinks/>
-			    <ThemeToggle/>
-		    </div>
-		    <MobileNav />
-        </div>
+
+		<div class="flex items-center gap-1">
+			<!-- Social Links & ThemeToggle Btn -->
+			<div class="flex items-center gap-2">
+				<SocialLinks />
+				<ThemeToggle />
+			</div>
+			<MobileNav />
+		</div>
 	</nav>
 </header>

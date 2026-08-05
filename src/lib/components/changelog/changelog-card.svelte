@@ -1,24 +1,24 @@
 <script lang="ts">
-    // Hooks & Other
+	// Hooks & Other
 	import { cn } from "$lib/utils";
-    
-    // Icon
+
+	// Icon
 	import { Check } from "@lucide/svelte";
-    
-    // Local Imports
+
+	// Local Imports
 	import ChangelogChip from "./changelog-chip.svelte";
 	import ChangelogDateBadge from "./changelog-date-badge.svelte";
-    
-    // Data
+
+	// Data
 	import type { ChangelogEntry } from "./data";
 
-    // Props Types
+	// Props Types
 	type ChangelogCardProps = {
 		entry: ChangelogEntry;
 		class?: string;
 	};
-    
-    // Props
+
+	// Props
 	let { entry, class: className }: ChangelogCardProps = $props();
 </script>
 

@@ -1,13 +1,13 @@
 <script lang="ts">
-    // UI
-    import { DecorIcon } from "$lib/components/ui/decor-icon";
+	// UI
+	import { DecorIcon } from "$lib/components/ui/decor-icon";
 	import { FullWidthDivider } from "$lib/components/ui/full-width-divider";
 	import { StripedPattern } from "$lib/components/magic-ui/striped-pattern";
-    
-    // Local Imports
+
+	// Local Imports
 	import ChangelogCard from "./changelog-card.svelte";
-    
-    // Data
+
+	// Data
 	import { changelogPageData } from "./data";
 
 	const entries = [...changelogPageData.entries].sort((a, b) =>

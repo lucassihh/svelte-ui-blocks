@@ -70,7 +70,6 @@ export const footerLinks: FooterLink[] = [
 	}
 ] as const;
 
-
 // Documentation Links
 export const documentationLinks: FooterLink[] = [
 	{
@@ -86,8 +85,6 @@ export const documentationLinks: FooterLink[] = [
 		href: "/documentation/usage"
 	}
 ] as const;
-
-
 
 // Other Resources
 export const otherResourcesLinks: FooterLink[] = [

@@ -39,8 +39,8 @@
 		previewHeight?: number;
 		installId?: string;
 	}
-   
-   // Props
+
+	// Props
 	let {
 		id,
 		title,
@@ -132,7 +132,7 @@
 </script>
 
 <!-- Block Preview -->
-<main {id} class="group mt-12">
+<main {id} class="group mt-4">
 	<!-- Component Description & Action Buttons -->
 	<section
 		class="mx-auto flex w-full max-w-7xl flex-col border-y border-border p-4 dark:bg-[radial-gradient(35%_80%_at_15%_0%,--theme(--color-foreground/.1),transparent)]"
@@ -155,7 +155,7 @@
 		</div>
 
 		<!-- Action Buttons Container -->
-		<div class={cn("z-40 flex flex-col gap-2 pt-4 md:flex-row md:justify-center")}>
+		<div class={cn("flex flex-col gap-2 pt-4 md:flex-row md:justify-center")}>
 			<div class={cn("flex min-w-0 flex-wrap items-center gap-2")}>
 				<div class="flex w-fit items-center gap-0.5 md:-ml-3">
 					<Button

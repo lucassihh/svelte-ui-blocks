@@ -1,14 +1,14 @@
 <script lang="ts">
-    // Icon
-    import { ArrowRight, Rocket } from "@lucide/svelte";
-    
-    // UI
+	// Icon
+	import { ArrowRight, Rocket } from "@lucide/svelte";
+
+	// UI
 	import { Button } from "$lib/components/ui/button";
 	import { DecorIcon } from "$lib/components/ui/decor-icon";
 	import { DashedLine } from "$lib/components/ui/dashed-line";
 	import { BorderSeparator } from "$lib/components/ui/border-seperator";
 	import { DashedLines } from "$lib/components/ui/dashed-lines";
-    
+
 	// Hero ShowCase
 	import HeroShowcase from "$lib/components/landing/hero-showcase/hero-showcase.svelte";
 </script>

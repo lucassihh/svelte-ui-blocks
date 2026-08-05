@@ -1,25 +1,19 @@
 <script lang="ts">
-    // Hooks & Other
-    import { cn } from "$lib/utils";
-    import { SvelteDate } from "svelte/reactivity";
-    
-    // Icon
+	// Hooks & Other
+	import { cn } from "$lib/utils";
+
+	// Icon
 	import Logo from "$lib/assets/svg/logo.svelte";
-	
+
 	// Data
-	import {footerLinks, documentationLinks, otherResourcesLinks } from "./footer-links.ts";
-    
-    // Local Imports
-    import SocialLinks from "./social-links.svelte";
-    import ThemeToggle from "./theme-toggle.svelte";
-   
-	// Get Current Theme
-	import { mode, toggleMode } from "mode-watcher";
-	function themeLabel() {
-		return mode.current === "dark" ? "Switch to light mode" : "Switch to dark mode";
-	}
+	import { footerLinks, documentationLinks, otherResourcesLinks } from "./footer-links.ts";
+
+	// Local Imports
+	import SocialLinks from "./social-links.svelte";
+	import ThemeToggle from "./theme-toggle.svelte";
 
 	// Get Current Year
+    import { SvelteDate } from "svelte/reactivity";
 	const currentYear = new SvelteDate().getFullYear();
 </script>
 
@@ -40,10 +34,10 @@
 				<p class="max-w-sm text-sm text-balance text-muted-foreground">
 					Save hours of design time with clean, ready-to-use shadcn blocks.
 				</p>
-                <!-- ThemeToggle & Social Links -->
+				<!-- ThemeToggle & Social Links -->
 				<div class="flex gap-2">
-					<ThemeToggle/>
-					<SocialLinks/>
+					<ThemeToggle />
+					<SocialLinks />
 				</div>
 			</div>
 

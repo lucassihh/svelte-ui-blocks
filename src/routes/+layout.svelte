@@ -5,14 +5,13 @@
 	import "$lib/styles/app.css";
 
 	// Landing Imports (Main page)
-	import * as Sidebar from "$lib/components/ui/sidebar/index.js";
 	import LandingHeader from "$lib/components/landing/landing-header.svelte";
 	import LandingFooter from "$lib/components/landing/landing-footer.svelte";
 
 	// For Theme
 	import { ModeWatcher } from "mode-watcher";
 
-	// For Preview Components
+	// For Preview logic
 	let isPreviewRoute = $derived(page.url.pathname.startsWith("/preview/"));
 
 	// If Path include documentation returns --> true
@@ -36,15 +35,15 @@
 		{@render children()}
 	</div>
 {:else}
-	<Sidebar.Provider class="relative mx-auto w-full max-w-7xl overflow-hidden">
-		<main class="w-full">
-			<LandingHeader />
 
+<!-- Landing Header -->
+  <LandingHeader />
+       <!-- Main Content -->
+		<main class="w-full max-w-7xl mx-auto">
 			{@render children()}
 
 			{#if !isDocumentation}
 				<LandingFooter />
 			{/if}
 		</main>
-	</Sidebar.Provider>
 {/if}

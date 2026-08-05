@@ -1,7 +1,7 @@
 <script lang="ts">
 	import { page } from "$app/state";
-    
-    // UI
+
+	// UI
 	import * as Breadcrumb from "$lib/components/ui/breadcrumb";
 
 	// Data

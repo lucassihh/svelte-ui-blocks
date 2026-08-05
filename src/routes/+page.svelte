@@ -1,14 +1,15 @@
 <script lang="ts">
 	import { asset } from "$app/paths";
-	import { MetaTags, JsonLd } from "svelte-meta-tags";
+	
+    // Hero
 	import LandingHero from "$lib/components/landing/landing-hero.svelte";
 
 	// Seo
+    import { MetaTags, JsonLd } from "svelte-meta-tags";
 	const siteName = "Svelte Efferd Blocks";
 	const siteUrl = "https://127.0.0.1";
 	const canonicalUrl = `${siteUrl}/`;
 	const title = `${siteName}`;
-
 	const description =
 		"Browse beautiful shadcn-svelte marketing blocks for landing pages, hero sections, CTAs, pricing, testimonials, FAQs, headers, footers, and more.";
 	const keywords = ["shadcn-svelte blocks", "shadcn blocks", "blocks for Svelte"] as const;
@@ -70,4 +71,6 @@
 <JsonLd schema={jsonLdSchema} />
 
 <!-- Landing Hero -->
-<LandingHero />
+<div class="overflow-hidden">
+    <LandingHero />
+</div>

@@ -1,5 +1,5 @@
 <script lang="ts">
-    // Hooks & Other
+	// Hooks & Other
 	import { cn } from "$lib/utils";
 	import type { Snippet } from "svelte";
 
@@ -15,8 +15,8 @@
 		actions?: Snippet;
 		children?: Snippet;
 	};
-    
-    // Props
+
+	// Props
 	let { title, description, class: className = "", actions, children }: DocsPageProps = $props();
 </script>
 

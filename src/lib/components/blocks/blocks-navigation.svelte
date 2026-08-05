@@ -1,11 +1,11 @@
 <script lang="ts">
 	import { page } from "$app/state";
-    
-    // UI
+
+	// UI
 	import ScrollArea from "$lib/components/ui/scroll-area/scroll-area.svelte";
-	
-    // Hooks & Other
-    import { cn } from "$lib/utils";
+
+	// Hooks & Other
+	import { cn } from "$lib/utils";
 
 	// blockCategories Types
 	export type BlockCategory = {
@@ -42,7 +42,7 @@
 </script>
 
 <div
-	class="sticky top-15 right-0 left-0 z-30 mx-auto w-full max-w-7xl border-b border-dashed bg-background/80 backdrop-blur-xs"
+	class="sticky top-15 right-0 left-0 z-40 mx-auto w-full max-w-7xl border-b border-dashed bg-background/80 backdrop-blur-xs"
 >
 	<ScrollArea orientation="horizontal" fade={false} class="w-full" scrollbarXClasses="hidden">
 		<div class="mx-auto w-fit max-w-7xl">
