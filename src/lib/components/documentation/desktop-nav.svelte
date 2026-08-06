@@ -1,13 +1,12 @@
 <script lang="ts">
-import { page } from "$app/state";
+	import { page } from "$app/state";
 
-   // Data
-   import { docsPrimaryPages, docsSecondaryPages, normalizeDocsPath } from "./data.ts"
+	// Data
+	import { docsPrimaryPages, docsSecondaryPages, normalizeDocsPath } from "./data.ts";
 
-  // Current Path
-  let currentPath = $derived(normalizeDocsPath(page.url.pathname));
+	// Current Path
+	let currentPath = $derived(normalizeDocsPath(page.url.pathname));
 </script>
-
 
 <!-- Sidebar Desktop - Hidden on Mobile, Shadcn Like Style -->
 <aside class="hidden w-[16rem] shrink-0 pr-2 md:block">

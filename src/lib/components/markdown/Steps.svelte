@@ -8,6 +8,6 @@
 	}>();
 </script>
 
-<div class={cn("relative mb-12 m-0 [counter-reset:step]", className)}>
+<div class={cn("relative m-0 mb-12 [counter-reset:step]", className)}>
 	{@render children?.()}
 </div>

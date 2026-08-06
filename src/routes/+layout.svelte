@@ -35,15 +35,14 @@
 		{@render children()}
 	</div>
 {:else}
+	<!-- Landing Header -->
+	<LandingHeader />
+	<!-- Main Content -->
+	<main class="mx-auto w-full max-w-7xl">
+		{@render children()}
 
-<!-- Landing Header -->
-  <LandingHeader />
-       <!-- Main Content -->
-		<main class="w-full max-w-7xl mx-auto">
-			{@render children()}
-
-			{#if !isDocumentation}
-				<LandingFooter />
-			{/if}
-		</main>
+		{#if !isDocumentation}
+			<LandingFooter />
+		{/if}
+	</main>
 {/if}

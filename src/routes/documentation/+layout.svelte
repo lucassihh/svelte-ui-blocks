@@ -1,16 +1,16 @@
 <script lang="ts">
-    // UI
-    import * as Sidebar from "$lib/components/ui/sidebar/index.js";
-    import Button from "$lib/components/ui/button/button.svelte";
-    import { buttonVariants } from "$lib/components/ui/button/index.js";
-    
-    // Necessary
+	// UI
+	import * as Sidebar from "$lib/components/ui/sidebar/index.js";
+	import Button from "$lib/components/ui/button/button.svelte";
+	import { buttonVariants } from "$lib/components/ui/button/index.js";
+
+	// Necessary
 	import DocsBreadcrumb from "$lib/components/documentation/docs-breadcrumb.svelte";
-    import MobileNavbar from "$lib/components/documentation/mobile-nav.svelte";
-    import DesktopNavbar from "$lib/components/documentation/desktop-nav.svelte";
-    
-    import type { Snippet } from "svelte";
-    let { children } = $props();
+	import MobileDrawer from "$lib/components/documentation/mobile-drawer.svelte";
+	import DesktopNavbar from "$lib/components/documentation/desktop-nav.svelte";
+
+	import type { Snippet } from "svelte";
+	let { children } = $props();
 
 	// For Scroll to Top
 	import { scrollY } from "svelte/reactivity/window";
@@ -19,18 +19,20 @@
 </script>
 
 <!-- Documentation Layout -->
-<Sidebar.Provider class="w-full max-w-7xl mx-auto flex-col justify-center bg-card md:flex-row md:p-2 mt-4">
-    <!-- Desktop Aside -->
-    <DesktopNavbar />
-    
-    <main class="bg-background md:rounded-xl min-h-screen">
-        <!-- Breadcrumb and Mobile Nav -->
-        <div class="flex items-center p-4">
-            <div class="block md:hidden">
-              <MobileNavbar/>
-            </div> 
-		    <DocsBreadcrumb />
-        </div>
+<Sidebar.Provider
+	class="mx-auto mt-4 w-full max-w-7xl flex-col justify-center bg-card md:flex-row md:p-2"
+>
+	<!-- Desktop Aside -->
+	<DesktopNavbar />
+
+	<main class="min-h-screen bg-background md:rounded-xl">
+		<!-- Breadcrumb and Mobile Drawer -->
+		<div class="flex items-center p-4 gap-2">
+			<div class="block md:hidden">
+				<MobileDrawer />
+			</div>
+			<DocsBreadcrumb />
+		</div>
 		{@render children?.()}
 
 		{#if visible}

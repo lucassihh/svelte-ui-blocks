@@ -1,9 +1,9 @@
 <script lang="ts">
+	import PanelLeftIcon from '@lucide/svelte/icons/panel-left';
 	import { Button } from "$lib/components/ui/button/index.js";
-	import { Menu } from "@lucide/svelte";
 	import { cn } from "$lib/utils.js";
-	import type { ComponentProps } from "svelte";
 	import { useSidebar } from "./context.svelte.js";
+	import type { ComponentProps } from "svelte";
 
 	let {
 		ref = $bindable(null),
@@ -31,6 +31,6 @@
 	}}
 	{...restProps}
 >
-	<Menu class="size-5" />
+	<PanelLeftIcon  />
 	<span class="sr-only">Toggle Sidebar</span>
 </Button>

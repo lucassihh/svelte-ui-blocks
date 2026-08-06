@@ -13,7 +13,7 @@
 	import ThemeToggle from "./theme-toggle.svelte";
 
 	// Get Current Year
-    import { SvelteDate } from "svelte/reactivity";
+	import { SvelteDate } from "svelte/reactivity";
 	const currentYear = new SvelteDate().getFullYear();
 </script>
 
