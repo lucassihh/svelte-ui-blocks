@@ -3,9 +3,9 @@
 ### A collection of beautifully crafted Svelte Shadcn & Tailwind CSS Marketing blocks.
 
 This is a Fork from [Svelte Efferd](https://github.com/SikandarJODD/sv-efferd)
-With some improvements
+With some modifications.
 
-### To do
+### Todo
 
 **Landing**
 

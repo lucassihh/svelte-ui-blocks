@@ -6,7 +6,7 @@ type FooterLink = {
 	href: string;
 };
 
-// Footer Links - All blocks
+// Footer - All blocks
 export const footerLinks: FooterLink[] = [
 	{
 		title: "Heros",
@@ -70,7 +70,7 @@ export const footerLinks: FooterLink[] = [
 	}
 ] as const;
 
-// Documentation Links
+// Documentation
 export const documentationLinks: FooterLink[] = [
 	{
 		title: "Introduction",
@@ -86,7 +86,7 @@ export const documentationLinks: FooterLink[] = [
 	}
 ] as const;
 
-// Other Resources
+// Resources
 export const otherResourcesLinks: FooterLink[] = [
 	{
 		title: "Templates",

@@ -1,6 +1,9 @@
 <script lang="ts">
 	import DocsPage from "$lib/components/documentation/docs-page.svelte";
 
+	// Seo
+	import Seo from "$lib/components/base/Seo.svelte";
+
 	// Markdown
 	import Blockquote from "$lib/components/markdown/Blockquote.svelte";
 	import H2 from "$lib/components/markdown/H2.svelte";
@@ -13,6 +16,9 @@
 
 	import { Button } from "$lib/components/ui/button";
 </script>
+
+<!-- Seo -->
+<Seo title="Documentation" desc="Documentation page" link="/documentation" />
 
 <DocsPage
 	title="Introduction"

@@ -14,7 +14,7 @@
 </script>
 
 <section
-	class="relative flex items-center justify-center border-b border-border/80 px-4 py-20 sm:px-6 sm:py-24 lg:px-8 lg:py-32"
+	class="relative m-4 flex items-center justify-center border-b border-border/80 px-4 py-20 sm:px-6 sm:py-24 lg:px-8 lg:py-32"
 	id="blocks"
 >
 	<div aria-hidden="true" class="pointer-events-none absolute inset-0">
@@ -25,6 +25,7 @@
 			class="absolute inset-x-[0%] inset-y-[0%] bg-[radial-gradient(circle_at_center,color-mix(in_oklab,var(--foreground)_6%,transparent)_0%,transparent_75%)] opacity-70"
 		></div>
 	</div>
+
 	<DashedLines
 		class="absolute bottom-0 h-12 mask-[linear-gradient(to_bottom,transparent,var(--muted-foreground),var(--muted-foreground))] stroke-muted-foreground/50 dark:stroke-muted-foreground/30"
 	/>
@@ -51,7 +52,7 @@
 			</span>
 		</a>
 
-		<!-- Hero Text-->
+		<!-- Hero Text -->
 		<div class="flex flex-col gap-1">
 			<h1
 				class="mt-8 max-w-4xl text-4xl font-semibold tracking-normal text-balance sm:text-5xl lg:text-6xl"

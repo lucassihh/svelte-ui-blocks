@@ -25,7 +25,6 @@
 
 <svelte:head>
 	<link rel="icon" href={favicon} />
-	<title>Svelte Efferd Blocks</title>
 </svelte:head>
 
 <ModeWatcher defaultMode="dark" />

@@ -27,7 +27,7 @@
 
 	<main class="min-h-screen bg-background md:rounded-xl">
 		<!-- Breadcrumb and Mobile Drawer -->
-		<div class="flex items-center p-4 gap-2">
+		<div class="flex items-center gap-2 p-4">
 			<div class="block md:hidden">
 				<MobileDrawer />
 			</div>

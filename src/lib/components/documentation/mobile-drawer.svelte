@@ -17,9 +17,6 @@
 
 	// Current Path
 	let currentPath = $derived(normalizeDocsPath(page.url.pathname));
-
-	// For menu Style
-	import * as Sidebar from "$lib/components/ui/sidebar/index.js";
 </script>
 
 <Drawer.Root direction={DRAWER_SIDE} bind:open>
@@ -39,56 +36,49 @@
 
 		<!-- Content -->
 		<div class="no-scrollbar overflow-y-auto px-4 pb-4">
-			<Sidebar.Menu class="flex flex-col gap-4 px-0 pt-4">
-				<Sidebar.MenuItem class="flex flex-col gap-2">
-					<!-- Get Started - Section -->
-					<Sidebar.MenuButton>
-						{#snippet child({ props })}
-							<span {...props} class="ml-2 text-xs font-normal text-primary/80">Get Started</span>
-						{/snippet}
-					</Sidebar.MenuButton>
-					<!-- Resources - Section -->
-					<Sidebar.MenuSub>
+			<nav class="flex flex-col gap-6">
+				<!-- Get Started - Section -->
+				<div class="flex flex-col gap-2">
+					<span class="px-2 text-xs font-normal text-primary/80">Get Started</span>
+					<ul class="ml-2 flex flex-col gap-1 border-l border-border/60 pl-2">
 						{#each docsPrimaryPages as item (item.title)}
-							<Sidebar.MenuSubItem>
-								<Sidebar.MenuSubButton
-									data-active={currentPath === normalizeDocsPath(item.href) ? "true" : undefined}
+							{@const isActive = currentPath === normalizeDocsPath(item.href)}
+							<li>
+								<a
+									href={item.href}
+									onclick={() => (open = false)}
+									class="block rounded-md px-3 py-1.5 text-sm transition-colors hover:bg-accent/50 hover:text-foreground {isActive
+										? 'bg-accent font-medium text-foreground'
+										: 'text-muted-foreground'}"
 								>
-									{#snippet child({ props })}
-										<a href={item.href} {...props} onclick={() => (open = false)}>
-											<span>{item.title}</span>
-										</a>
-									{/snippet}
-								</Sidebar.MenuSubButton>
-							</Sidebar.MenuSubItem>
+									{item.title}
+								</a>
+							</li>
 						{/each}
-					</Sidebar.MenuSub>
-				</Sidebar.MenuItem>
+					</ul>
+				</div>
 
-				<Sidebar.MenuItem class="flex flex-col gap-2">
-					<Sidebar.MenuButton>
-						{#snippet child({ props })}
-							<span {...props} class="ml-2 text-xs font-normal text-primary/80">Resources</span>
-						{/snippet}
-					</Sidebar.MenuButton>
-
-					<Sidebar.MenuSub>
+				<!-- Resources - Section -->
+				<div class="flex flex-col gap-2">
+					<span class="px-2 text-xs font-normal text-primary/80">Resources</span>
+					<ul class="ml-2 flex flex-col gap-1 border-l border-border/60 pl-2">
 						{#each docsSecondaryPages as item (item.title)}
-							<Sidebar.MenuSubItem>
-								<Sidebar.MenuSubButton
-									data-active={currentPath === normalizeDocsPath(item.href) ? "true" : undefined}
+							{@const isActive = currentPath === normalizeDocsPath(item.href)}
+							<li>
+								<a
+									href={item.href}
+									onclick={() => (open = false)}
+									class="block rounded-md px-3 py-1.5 text-sm transition-colors hover:bg-accent/50 hover:text-foreground {isActive
+										? 'bg-accent font-medium text-foreground'
+										: 'text-muted-foreground'}"
 								>
-									{#snippet child({ props })}
-										<a href={item.href} {...props} onclick={() => (open = false)}>
-											<span>{item.title}</span>
-										</a>
-									{/snippet}
-								</Sidebar.MenuSubButton>
-							</Sidebar.MenuSubItem>
+									{item.title}
+								</a>
+							</li>
 						{/each}
-					</Sidebar.MenuSub>
-				</Sidebar.MenuItem>
-			</Sidebar.Menu>
+					</ul>
+				</div>
+			</nav>
 		</div>
 
 		<!-- 

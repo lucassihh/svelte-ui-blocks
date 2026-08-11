@@ -2,19 +2,19 @@
 	import { asset } from "$app/paths";
 	import { MetaTags } from "svelte-meta-tags";
 
-	// Props types
 	type Props = {
 		title: string;
 		desc: string;
 		link?: string;
 	};
 
-	let siteName = "Svelte Efferd Blocks";
-	let siteUrl = "https://127.0.0.1";
-	let titleTemplate = `%s | ${siteName}`;
-	let locale = "en_US";
-	let twitterHandle = "@your-name";
-	let ogImageUrl = new URL(asset("/og.png"), siteUrl).toString();
+	// Default Settings
+	const siteName = "Svelte Template";
+	const siteUrl = "https://mysite.com";
+	const titleTemplate = `%s | ${siteName}`;
+	const locale = "en";
+	const twitterHandle = "@my_twitter";
+	const ogImageUrl = new URL(asset("/og.png"), siteUrl).toString();
 
 	// Props
 	let { title, desc, link }: Props = $props();
