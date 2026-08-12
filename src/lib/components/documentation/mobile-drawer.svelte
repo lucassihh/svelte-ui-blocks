@@ -20,6 +20,7 @@
 </script>
 
 <Drawer.Root direction={DRAWER_SIDE} bind:open>
+    <!-- Open Btn -->
 	<Drawer.Trigger
 		class={cn(buttonVariants({ variant: "secondary", size: "icon-sm" }), "capitalize")}
 	>

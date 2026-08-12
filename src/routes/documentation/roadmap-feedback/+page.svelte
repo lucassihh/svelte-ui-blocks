@@ -2,13 +2,15 @@
 	import DocsPage from "$lib/components/documentation/docs-page.svelte";
 	// Data
 	import { docsSupportLinks } from "$lib/components/documentation/data.ts";
-	import H2 from "$lib/components/markdown/H2.svelte";
-	import Link from "$lib/components/markdown/Link.svelte";
-	import ListItem from "$lib/components/markdown/ListItem.svelte";
-	import Paragraph from "$lib/components/markdown/Paragraph.svelte";
-	import UnorderedList from "$lib/components/markdown/UnorderedList.svelte";
+    // Markdown
+	import H2 from "$lib/components/ui/markdown/H2.svelte";
+	import Link from "$lib/components/ui/markdown/Link.svelte";
+	import ListItem from "$lib/components/ui/markdown/ListItem.svelte";
+	import Paragraph from "$lib/components/ui/markdown/Paragraph.svelte";
+	import UnorderedList from "$lib/components/ui/markdown/UnorderedList.svelte";
+    // UI
 	import { Button } from "$lib/components/ui/button";
-
+    // Array
 	const roadmapItems = ["Add SEO metatags", "Build templates", "Expand docs and product polish"];
 </script>
 

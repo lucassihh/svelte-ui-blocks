@@ -12,7 +12,7 @@
 
 	// Local Imports
 	import MobileNav from "./mobile-nav.svelte";
-	import SocialLinks from "./social-links.svelte";
+	import Social from "./social.svelte";
 	import ThemeToggle from "./theme-toggle.svelte";
 
 	// Data
@@ -52,7 +52,7 @@
 		<div class="flex items-center gap-1">
 			<!-- Social Links & ThemeToggle Btn -->
 			<div class="flex items-center gap-2">
-				<SocialLinks />
+				<Social />
 				<ThemeToggle />
 			</div>
 			<MobileNav />

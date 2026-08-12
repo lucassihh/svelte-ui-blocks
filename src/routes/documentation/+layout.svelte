@@ -1,6 +1,5 @@
 <script lang="ts">
 	// UI
-	import * as Sidebar from "$lib/components/ui/sidebar/index.js";
 	import Button from "$lib/components/ui/button/button.svelte";
 	import { buttonVariants } from "$lib/components/ui/button/index.js";
 
@@ -19,20 +18,23 @@
 </script>
 
 <!-- Documentation Layout -->
-<Sidebar.Provider
-	class="mx-auto mt-4 w-full max-w-7xl flex-col justify-center bg-card md:flex-row md:p-2"
->
+<div
+	class="w-full max-w-7xl mx-auto flex flex-col justify-center bg-card mt-4 md:flex-row md:p-2"
+>   
 	<!-- Desktop Aside -->
-	<DesktopNavbar />
-
-	<main class="min-h-screen bg-background md:rounded-xl">
-		<!-- Breadcrumb and Mobile Drawer -->
+    <div class="hidden md:block">
+	    <DesktopNavbar />
+    </div>
+    
+	<main class="min-h-screen w-full overflow-hidden bg-background md:rounded-xl">
+    	<!-- Breadcrumb and Mobile Drawer -->
 		<div class="flex items-center gap-2 p-4">
 			<div class="block md:hidden">
 				<MobileDrawer />
 			</div>
 			<DocsBreadcrumb />
 		</div>
+        
 		{@render children?.()}
 
 		{#if visible}
@@ -65,4 +67,4 @@
 			</div>
 		{/snippet}
 	</main>
-</Sidebar.Provider>
+</div>

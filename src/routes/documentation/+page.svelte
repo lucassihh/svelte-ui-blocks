@@ -4,16 +4,6 @@
 	// Seo
 	import Seo from "$lib/components/base/Seo.svelte";
 
-	// Markdown
-	import Blockquote from "$lib/components/markdown/Blockquote.svelte";
-	import H2 from "$lib/components/markdown/H2.svelte";
-	import H3 from "$lib/components/markdown/H3.svelte";
-	import Link from "$lib/components/markdown/Link.svelte";
-	import ListItem from "$lib/components/markdown/ListItem.svelte";
-	import Paragraph from "$lib/components/markdown/Paragraph.svelte";
-	import Strong from "$lib/components/markdown/Strong.svelte";
-	import UnorderedList from "$lib/components/markdown/UnorderedList.svelte";
-
 	import { Button } from "$lib/components/ui/button";
 </script>
 

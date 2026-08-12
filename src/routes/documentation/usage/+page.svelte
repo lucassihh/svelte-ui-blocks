@@ -1,13 +1,15 @@
 <script lang="ts">
 	import DocsPage from "$lib/components/documentation/docs-page.svelte";
-	import H2 from "$lib/components/markdown/H2.svelte";
-	import H3 from "$lib/components/markdown/H3.svelte";
-	import Link from "$lib/components/markdown/Link.svelte";
-	import ListItem from "$lib/components/markdown/ListItem.svelte";
-	import Paragraph from "$lib/components/markdown/Paragraph.svelte";
-	import Step from "$lib/components/markdown/Step.svelte";
-	import Steps from "$lib/components/markdown/Steps.svelte";
-	import UnorderedList from "$lib/components/markdown/UnorderedList.svelte";
+    // Markdown
+	import H2 from "$lib/components/ui/markdown/H2.svelte";
+	import H3 from "$lib/components/ui/markdown/H3.svelte";
+	import Link from "$lib/components/ui/markdown/Link.svelte";
+	import ListItem from "$lib/components/ui/markdown/ListItem.svelte";
+	import Paragraph from "$lib/components/ui/markdown/Paragraph.svelte";
+	import Step from "$lib/components/ui/markdown/Step.svelte";
+	import Steps from "$lib/components/ui/markdown/Steps.svelte";
+	import UnorderedList from "$lib/components/ui/markdown/UnorderedList.svelte";
+    // UI
 	import { Button } from "$lib/components/ui/button";
 </script>
 

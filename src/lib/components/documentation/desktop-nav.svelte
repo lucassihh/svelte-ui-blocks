@@ -8,8 +8,8 @@
 	let currentPath = $derived(normalizeDocsPath(page.url.pathname));
 </script>
 
-<!-- Sidebar Desktop - Hidden on Mobile, Shadcn Like Style -->
-<aside class="hidden w-[16rem] shrink-0 pr-2 md:block">
+<!-- Sidebar Desktop - Hidden on Mobile -->
+<aside class="w-[16rem] shrink-0 pr-2">
 	<div class="flex flex-col gap-4 pt-2">
 		<span class="px-2 text-xs font-semibold tracking-wider text-muted-foreground uppercase">
 			Documentation

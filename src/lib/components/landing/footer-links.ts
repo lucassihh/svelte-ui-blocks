@@ -6,8 +6,8 @@ type FooterLink = {
 	href: string;
 };
 
-// Footer - All blocks
-export const footerLinks: FooterLink[] = [
+// Blocks
+export const blocksLinks: FooterLink[] = [
 	{
 		title: "Heros",
 		href: "/blocks/efferd-ui/hero"
@@ -83,13 +83,5 @@ export const documentationLinks: FooterLink[] = [
 	{
 		title: "Usage",
 		href: "/documentation/usage"
-	}
-] as const;
-
-// Resources
-export const otherResourcesLinks: FooterLink[] = [
-	{
-		title: "Templates",
-		href: "/documentation/templates"
 	}
 ] as const;

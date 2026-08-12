@@ -6,10 +6,10 @@
 	import Logo from "$lib/assets/svg/logo.svelte";
 
 	// Data
-	import { footerLinks, documentationLinks, otherResourcesLinks } from "./footer-links.ts";
+	import { blocksLinks, documentationLinks } from "./footer-links.ts";
 
 	// Local Imports
-	import SocialLinks from "./social-links.svelte";
+	import Social from "./social.svelte";
 	import ThemeToggle from "./theme-toggle.svelte";
 
 	// Get Current Year
@@ -37,17 +37,17 @@
 				<!-- ThemeToggle & Social Links -->
 				<div class="flex gap-2">
 					<ThemeToggle />
-					<SocialLinks />
+					<Social />
 				</div>
 			</div>
 
 			<!-- Links -->
 			<div class="col-span-8 flex justify-center md:col-span-4">
-				<!-- Footer Links -->
+				<!-- Blocks Links -->
 				<div class="w-full">
 					<span class="text-xs text-muted-foreground">All Blocks</span>
 					<div class="mt-2 flex flex-col gap-2">
-						{#each footerLinks as item (item.title)}
+						{#each blocksLinks as item (item.title)}
 							<a class="w-max text-sm hover:underline" href={item.href}>
 								{item.title}
 							</a>
@@ -60,18 +60,6 @@
 					<span class="text-xs text-muted-foreground">Documentation</span>
 					<div class="mt-2 flex flex-col gap-2">
 						{#each documentationLinks as item (item.title)}
-							<a class="w-max text-sm hover:underline" href={item.href}>
-								{item.title}
-							</a>
-						{/each}
-					</div>
-				</div>
-
-				<!-- Other Links -->
-				<div class="w-full">
-					<span class="text-xs text-muted-foreground">Other Resources</span>
-					<div class="mt-2 flex flex-col gap-2">
-						{#each otherResourcesLinks as item (item.title)}
 							<a class="w-max text-sm hover:underline" href={item.href}>
 								{item.title}
 							</a>

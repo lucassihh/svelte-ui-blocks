@@ -1,26 +1,21 @@
 <script lang="ts">
 	import DocsPage from "$lib/components/documentation/docs-page.svelte";
-	// Heading
-	import H1 from "$lib/components/markdown/H1.svelte";
-	import H2 from "$lib/components/markdown/H2.svelte";
-	import H3 from "$lib/components/markdown/H3.svelte";
+    
+	// Markdown
+	import H1 from "$lib/components/ui/markdown/H1.svelte";
+	import H2 from "$lib/components/ui/markdown/H2.svelte";
+	import H3 from "$lib/components/ui/markdown/H3.svelte";
+	import Link from "$lib/components/ui/markdown/Link.svelte";
+	import Strong from "$lib/components/ui/markdown/Strong.svelte";
+	import Paragraph from "$lib/components/ui/markdown/Paragraph.svelte";
+	import Blockquote from "$lib/components/ui/markdown/Blockquote.svelte";
+	import Ul from "$lib/components/ui/markdown/UnorderedList.svelte";
+	import Ol from "$lib/components/ui/markdown/OrderedList.svelte";
+	import Li from "$lib/components/ui/markdown/ListItem.svelte";
+	import Step from "$lib/components/ui/markdown/Step.svelte";
+	import Steps from "$lib/components/ui/markdown/Steps.svelte";
 
-	// Texto e Links
-	import Link from "$lib/components/markdown/Link.svelte";
-	import Strong from "$lib/components/markdown/Strong.svelte";
-	import Paragraph from "$lib/components/markdown/Paragraph.svelte";
-	import Blockquote from "$lib/components/markdown/Blockquote.svelte"; // Adicionado
-
-	// Listas (Comum em documentações)
-	import Ul from "$lib/components/markdown/UnorderedList.svelte";
-	import Ol from "$lib/components/markdown/OrderedList.svelte"; // Adicionado
-	import Li from "$lib/components/markdown/ListItem.svelte"; // Adicionado
-
-	// Steps
-	import Step from "$lib/components/markdown/Step.svelte";
-	import Steps from "$lib/components/markdown/Steps.svelte";
-
-	// UI e Code
+	// UI
 	import { Button } from "$lib/components/ui/button";
 	import * as Code from "$lib/components/ui/code";
 </script>

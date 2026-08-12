@@ -3,9 +3,9 @@
 	import { cn } from "$lib/utils";
 	import type { Snippet } from "svelte";
 
-	// Markdown Components
-	import H1 from "$lib/components/markdown/H1.svelte";
-	import Paragraph from "$lib/components/markdown/Paragraph.svelte";
+	// Markdown
+	import H1 from "$lib/components/ui/markdown/H1.svelte";
+	import Paragraph from "$lib/components/ui/markdown/Paragraph.svelte";
 
 	// Props Types
 	type DocsPageProps = {
