@@ -22,15 +22,15 @@ export const blocksLinks: FooterLink[] = [
 	},
 	{
 		title: "Features",
-		href: "/blocks/efferd-ui/features/"
+		href: "/blocks/efferd-ui/feature/"
 	},
 	{
 		title: "Integrations",
-		href: "/blocks/efferd-ui/integrations/"
+		href: "/blocks/efferd-ui/integration/"
 	},
 	{
 		title: "Testimonials",
-		href: "/blocks/efferd-ui/testimonials/"
+		href: "/blocks/efferd-ui/testimonial/"
 	},
 	{
 		title: "CTA",
@@ -50,7 +50,7 @@ export const blocksLinks: FooterLink[] = [
 	},
 	{
 		title: "FAQs",
-		href: "/blocks/efferd-ui/faqs/"
+		href: "/blocks/efferd-ui/faq/"
 	},
 	{
 		title: "Contact",

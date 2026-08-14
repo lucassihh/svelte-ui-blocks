@@ -127,7 +127,7 @@
 	{#if !hideCopy}
 		<div
 			class={cn(
-				"absolute top-2 right-2 flex place-items-center justify-center",
+				"top-2 right-2 absolute flex place-items-center justify-center",
 				copyButtonContainerClass
 			)}
 		>
@@ -157,7 +157,7 @@
 	}
 
 	:global(pre.shiki) {
-		@apply overflow-auto rounded-none bg-inherit py-4 text-xs;
+		@apply py-4 text-xs overflow-auto rounded-none bg-inherit;
 		max-height: min(100%, 650px);
 		-ms-overflow-style: none; /* IE and Edge */
 		scrollbar-width: none; /* Firefox */
@@ -168,7 +168,7 @@
 	}
 
 	:global(pre.shiki code) {
-		@apply grid min-w-full rounded-none border-0 bg-transparent p-0 break-words;
+		@apply p-0 grid min-w-full rounded-none border-0 bg-transparent break-words;
 		counter-reset: line;
 		box-decoration-break: clone;
 	}
@@ -200,7 +200,7 @@
 	}
 
 	:global(pre .line) {
-		@apply inline-block min-h-4 w-full px-4 py-0.5;
+		@apply min-h-4 px-4 py-0.5 inline-block w-full;
 	}
 
 	:global(pre.line-numbers .line) {

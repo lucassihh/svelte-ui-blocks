@@ -7,7 +7,7 @@
 </script>
 
 <!-- SocialLinks With Icons -->
-<div class="flex items-center gap-1">
+<div class="gap-1 flex items-center">
 	{#each socialLinks as item, index (`social-${item.link}-${index}`)}
 		{@const SocialIcon = item.icon}
 		<Button

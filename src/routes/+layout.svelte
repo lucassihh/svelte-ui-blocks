@@ -2,6 +2,8 @@
 	// Necessary
 	import { page } from "$app/state";
 	import favicon from "$lib/assets/favicon.svg";
+
+	// Main CSS
 	import "$lib/styles/app.css";
 
 	// Landing Imports (Main page)
@@ -37,7 +39,7 @@
 	<!-- Landing Header -->
 	<LandingHeader />
 	<!-- Main Content -->
-	<main class="mx-auto w-full max-w-7xl">
+	<main class="max-w-7xl mx-auto w-full">
 		{@render children()}
 
 		{#if !isDocumentation}

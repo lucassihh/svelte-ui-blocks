@@ -1,0 +1,10 @@
+<script lang="ts">
+	import PricingFour from "$lib/components/efferd-ui/pricing/pricing-four/pricing.svelte";
+</script>
+
+<svelte:head>
+	<title>Pricing Four Preview | Svelte Efferd</title>
+	<meta name="description" content="Standalone preview for Pricing Four in Svelte Efferd." />
+</svelte:head>
+
+<PricingFour />

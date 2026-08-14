@@ -22,7 +22,7 @@
 
 <svg
 	aria-hidden="true"
-	class={cn("pointer-events-none absolute inset-0 z-10 h-full w-full stroke-[0.5]", className)}
+	class={cn("inset-0 pointer-events-none absolute z-10 h-full w-full stroke-[0.5]", className)}
 	xmlns="http://www.w3.org/2000/svg"
 	{...restProps}
 >

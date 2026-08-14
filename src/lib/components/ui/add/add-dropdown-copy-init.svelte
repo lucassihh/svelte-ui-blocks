@@ -15,9 +15,9 @@
 	const mergedProps = $derived(mergeProps(rest, dropdownCopyInitState.props));
 </script>
 
-<DropdownMenu.Item class={cn("flex flex-col place-items-start! gap-1", className)} {...mergedProps}>
+<DropdownMenu.Item class={cn("gap-1 flex flex-col place-items-start!", className)} {...mergedProps}>
 	<span class="text-xs">
 		{dropdownCopyInitState.root.initCommand}
 	</span>
-	<span class="text-start text-xs text-muted-foreground">Init registry</span>
+	<span class="text-xs text-start text-muted-foreground">Init registry</span>
 </DropdownMenu.Item>

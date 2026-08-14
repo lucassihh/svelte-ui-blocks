@@ -1,32 +1,33 @@
 import type { BlockShowcaseItem } from "$lib/components/blocks/blocks-code-three";
 import { createBlockCodeTree } from "$lib/components/blocks/blocks-code-three";
-import HeaderFive from "$lib/components/efferd-ui/header/header-five/header-five.svelte";
-import HeaderFour from "$lib/components/efferd-ui/header/header-four/header-four.svelte";
-import HeaderOne from "$lib/components/efferd-ui/header/header-one/header-one.svelte";
-import HeaderThree from "$lib/components/efferd-ui/header/header-three/header-three.svelte";
-import HeaderTwo from "$lib/components/efferd-ui/header/header-two/header-two.svelte";
+import HeaderFivePreview from "$lib/components/efferd-ui/header/header-five/desktop-nav.svelte";
+import HeaderFourPreview from "$lib/components/efferd-ui/header/header-four/mobile-nav.svelte";
+import HeaderOnePreview from "$lib/components/efferd-ui/header/header-one/mobile-nav.svelte";
+import HeaderThreePreview from "$lib/components/efferd-ui/header/header-three/desktop-nav.svelte";
+import HeaderTwoPreview from "$lib/components/efferd-ui/header/header-two/mobile-nav.svelte";
 
-import headerFiveDesktopNavSource from "$lib/components/efferd-ui/header/header-five/desktop-nav.svelte?raw";
-import headerFiveSource from "$lib/components/efferd-ui/header/header-five/header-five.svelte?raw";
-import headerFiveLinkItemSource from "$lib/components/efferd-ui/header/header-five/link-item.svelte?raw";
-import headerFiveMobileNavSource from "$lib/components/efferd-ui/header/header-five/mobile-nav.svelte?raw";
-import headerFiveNavLinksSource from "$lib/components/efferd-ui/header/header-five/nav-links.ts?raw";
-import headerFiveTypesSource from "$lib/components/efferd-ui/header/header-five/types.ts?raw";
-import headerFourSource from "$lib/components/efferd-ui/header/header-four/header-four.svelte?raw";
-import headerFourMobileNavSource from "$lib/components/efferd-ui/header/header-four/mobile-nav.svelte?raw";
-import headerFourNavLinksSource from "$lib/components/efferd-ui/header/header-four/nav-links.ts?raw";
-import headerOneSource from "$lib/components/efferd-ui/header/header-one/header-one.svelte?raw";
-import headerOneMobileNavSource from "$lib/components/efferd-ui/header/header-one/mobile-nav.svelte?raw";
-import headerOneNavLinksSource from "$lib/components/efferd-ui/header/header-one/nav-links.ts?raw";
-import headerThreeDesktopNavSource from "$lib/components/efferd-ui/header/header-three/desktop-nav.svelte?raw";
-import headerThreeSource from "$lib/components/efferd-ui/header/header-three/header-three.svelte?raw";
-import headerThreeLinkItemSource from "$lib/components/efferd-ui/header/header-three/link-item.svelte?raw";
-import headerThreeMobileNavSource from "$lib/components/efferd-ui/header/header-three/mobile-nav.svelte?raw";
-import headerThreeNavLinksSource from "$lib/components/efferd-ui/header/header-three/nav-links.ts?raw";
-import headerThreeTypesSource from "$lib/components/efferd-ui/header/header-three/types.ts?raw";
-import headerTwoSource from "$lib/components/efferd-ui/header/header-two/header-two.svelte?raw";
-import headerTwoMobileNavSource from "$lib/components/efferd-ui/header/header-two/mobile-nav.svelte?raw";
-import headerTwoNavLinksSource from "$lib/components/efferd-ui/header/header-two/nav-links.ts?raw";
+import headerHeaderFiveDesktopNavSource from "$lib/components/efferd-ui/header/header-five/desktop-nav.svelte?raw";
+import headerHeaderFiveHeaderSource from "$lib/components/efferd-ui/header/header-five/header.svelte?raw";
+import headerHeaderFiveLinkItemSource from "$lib/components/efferd-ui/header/header-five/link-item.svelte?raw";
+import headerHeaderFiveMobileNavSource from "$lib/components/efferd-ui/header/header-five/mobile-nav.svelte?raw";
+import headerHeaderFiveNavLinksSource from "$lib/components/efferd-ui/header/header-five/nav-links.ts?raw";
+import headerHeaderFiveTypesSource from "$lib/components/efferd-ui/header/header-five/types.ts?raw";
+import headerHeaderFourHeaderSource from "$lib/components/efferd-ui/header/header-four/header.svelte?raw";
+import headerHeaderFourMobileNavSource from "$lib/components/efferd-ui/header/header-four/mobile-nav.svelte?raw";
+import headerHeaderFourNavLinksSource from "$lib/components/efferd-ui/header/header-four/nav-links.ts?raw";
+import headerHeaderOneHeaderSource from "$lib/components/efferd-ui/header/header-one/header.svelte?raw";
+import headerHeaderOneMobileNavSource from "$lib/components/efferd-ui/header/header-one/mobile-nav.svelte?raw";
+import headerHeaderOneNavLinksSource from "$lib/components/efferd-ui/header/header-one/nav-links.ts?raw";
+import headerHeaderThreeDesktopNavSource from "$lib/components/efferd-ui/header/header-three/desktop-nav.svelte?raw";
+import headerHeaderThreeHeaderSource from "$lib/components/efferd-ui/header/header-three/header.svelte?raw";
+import headerHeaderThreeLinkItemSource from "$lib/components/efferd-ui/header/header-three/link-item.svelte?raw";
+import headerHeaderThreeMobileNavSource from "$lib/components/efferd-ui/header/header-three/mobile-nav.svelte?raw";
+import headerHeaderThreeNavLinksSource from "$lib/components/efferd-ui/header/header-three/nav-links.ts?raw";
+import headerHeaderThreeTypesSource from "$lib/components/efferd-ui/header/header-three/types.ts?raw";
+import headerHeaderTwoHeaderSource from "$lib/components/efferd-ui/header/header-two/header.svelte?raw";
+import headerHeaderTwoMobileNavSource from "$lib/components/efferd-ui/header/header-two/mobile-nav.svelte?raw";
+import headerHeaderTwoNavLinksSource from "$lib/components/efferd-ui/header/header-two/nav-links.ts?raw";
+import logoSvgSource from "$lib/assets/svg/logo.svelte?raw";
 import navigationMenuContentSource from "$lib/components/ui/navigation-menu/navigation-menu-content.svelte?raw";
 import navigationMenuIndexSource from "$lib/components/ui/navigation-menu/index.ts?raw";
 import navigationMenuIndicatorSource from "$lib/components/ui/navigation-menu/navigation-menu-indicator.svelte?raw";
@@ -40,7 +41,6 @@ import portalBackdropSource from "$lib/components/ui/portal/portal-backdrop.svel
 import portalIndexSource from "$lib/components/ui/portal/index.ts?raw";
 import portalSource from "$lib/components/ui/portal/portal.svelte?raw";
 import useScrollHookSource from "$lib/hooks/use-scroll.svelte.ts?raw";
-import logoSvgSource from "$lib/assets/svg/logo.svelte?raw";
 
 const buttonFiles = [
 	{
@@ -50,7 +50,6 @@ const buttonFiles = [
 		externalLabel: "Shadcn Svelte Button"
 	}
 ];
-
 const logoFiles = [
 	{
 		id: "shared:logo-svg",
@@ -59,19 +58,12 @@ const logoFiles = [
 		code: logoSvgSource
 	}
 ];
-
 const navigationMenuFiles = [
 	{
 		id: "shared:navigation-menu-index",
 		path: "components/ui/navigation-menu/index.ts",
 		lang: "typescript" as const,
 		code: navigationMenuIndexSource
-	},
-	{
-		id: "shared:navigation-menu-root",
-		path: "components/ui/navigation-menu/navigation-menu.svelte",
-		lang: "svelte" as const,
-		code: navigationMenuRootSource
 	},
 	{
 		id: "shared:navigation-menu-content",
@@ -114,9 +106,14 @@ const navigationMenuFiles = [
 		path: "components/ui/navigation-menu/navigation-menu-viewport.svelte",
 		lang: "svelte" as const,
 		code: navigationMenuViewportSource
+	},
+	{
+		id: "shared:navigation-menu-root",
+		path: "components/ui/navigation-menu/navigation-menu.svelte",
+		lang: "svelte" as const,
+		code: navigationMenuRootSource
 	}
 ];
-
 const portalFiles = [
 	{
 		id: "shared:portal-index",
@@ -125,19 +122,18 @@ const portalFiles = [
 		code: portalIndexSource
 	},
 	{
+		id: "shared:portal-portal-backdrop",
+		path: "components/ui/portal/portal-backdrop.svelte",
+		lang: "svelte" as const,
+		code: portalBackdropSource
+	},
+	{
 		id: "shared:portal",
 		path: "components/ui/portal/portal.svelte",
 		lang: "svelte" as const,
 		code: portalSource
-	},
-	{
-		id: "shared:portal-backdrop",
-		path: "components/ui/portal/portal-backdrop.svelte",
-		lang: "svelte" as const,
-		code: portalBackdropSource
 	}
 ];
-
 const scrollHookFiles = [
 	{
 		id: "shared:use-scroll",
@@ -149,118 +145,50 @@ const scrollHookFiles = [
 
 export const headerBlocks: BlockShowcaseItem[] = [
 	{
-		id: "header-one",
-		title: "Header One",
-		description: "A clean sticky header with simple nav links and a compact mobile sheet.",
-		previewComponent: HeaderOne,
-		previewHref: "/preview/efferd-ui/header/one",
+		id: "header-five",
+		title: "Header Five",
+		description: "A Header Five composition.",
+		previewComponent: HeaderFivePreview,
+		previewHref: "/preview/efferd-ui/header/header-five",
 		previewMode: "iframe",
-		previewHeight: 860,
-		installId: "header-one",
-		codeTree: createBlockCodeTree("header-one:component", [
+		previewHeight: 820,
+		installId: "header-five",
+		codeTree: createBlockCodeTree("header-five:preview", [
 			{
-				id: "header-one:component",
-				path: "components/efferd/header/header-one/header-one.svelte",
+				id: "header-five:desktop-nav",
+				path: "components/efferd/header/header-five/desktop-nav.svelte",
 				lang: "svelte",
-				code: headerOneSource
+				code: headerHeaderFiveDesktopNavSource
 			},
 			{
-				id: "header-one:mobile-nav",
-				path: "components/efferd/header/header-one/mobile-nav.svelte",
+				id: "header-five:header",
+				path: "components/efferd/header/header-five/header.svelte",
 				lang: "svelte",
-				code: headerOneMobileNavSource
+				code: headerHeaderFiveHeaderSource
 			},
 			{
-				id: "header-one:nav-links",
-				path: "components/efferd/header/header-one/nav-links.ts",
+				id: "header-five:link-item",
+				path: "components/efferd/header/header-five/link-item.svelte",
+				lang: "svelte",
+				code: headerHeaderFiveLinkItemSource
+			},
+			{
+				id: "header-five:mobile-nav",
+				path: "components/efferd/header/header-five/mobile-nav.svelte",
+				lang: "svelte",
+				code: headerHeaderFiveMobileNavSource
+			},
+			{
+				id: "header-five:nav-links",
+				path: "components/efferd/header/header-five/nav-links.ts",
 				lang: "typescript",
-				code: headerOneNavLinksSource
-			},
-			...buttonFiles,
-			...logoFiles,
-			...portalFiles,
-			...scrollHookFiles
-		])
-	},
-	{
-		id: "header-two",
-		title: "Header Two",
-		description: "A framed sticky header with tighter proportions and a softer product shell.",
-		previewComponent: HeaderTwo,
-		previewHref: "/preview/efferd-ui/header/two",
-		previewMode: "iframe",
-		previewHeight: 860,
-		installId: "header-two",
-		codeTree: createBlockCodeTree("header-two:component", [
-			{
-				id: "header-two:component",
-				path: "components/efferd/header/header-two/header-two.svelte",
-				lang: "svelte",
-				code: headerTwoSource
+				code: headerHeaderFiveNavLinksSource
 			},
 			{
-				id: "header-two:mobile-nav",
-				path: "components/efferd/header/header-two/mobile-nav.svelte",
-				lang: "svelte",
-				code: headerTwoMobileNavSource
-			},
-			{
-				id: "header-two:nav-links",
-				path: "components/efferd/header/header-two/nav-links.ts",
+				id: "header-five:types",
+				path: "components/efferd/header/header-five/types.ts",
 				lang: "typescript",
-				code: headerTwoNavLinksSource
-			},
-			...buttonFiles,
-			...logoFiles,
-			...portalFiles,
-			...scrollHookFiles
-		])
-	},
-	{
-		id: "header-three",
-		title: "Header Three",
-		description: "A richer sticky header with mega-menu navigation and a full mobile fallback.",
-		previewComponent: HeaderThree,
-		previewHref: "/preview/efferd-ui/header/three",
-		previewMode: "iframe",
-		previewHeight: 980,
-		installId: "header-three",
-		codeTree: createBlockCodeTree("header-three:component", [
-			{
-				id: "header-three:component",
-				path: "components/efferd/header/header-three/header-three.svelte",
-				lang: "svelte",
-				code: headerThreeSource
-			},
-			{
-				id: "header-three:desktop-nav",
-				path: "components/efferd/header/header-three/desktop-nav.svelte",
-				lang: "svelte",
-				code: headerThreeDesktopNavSource
-			},
-			{
-				id: "header-three:mobile-nav",
-				path: "components/efferd/header/header-three/mobile-nav.svelte",
-				lang: "svelte",
-				code: headerThreeMobileNavSource
-			},
-			{
-				id: "header-three:link-item",
-				path: "components/efferd/header/header-three/link-item.svelte",
-				lang: "svelte",
-				code: headerThreeLinkItemSource
-			},
-			{
-				id: "header-three:nav-links",
-				path: "components/efferd/header/header-three/nav-links.ts",
-				lang: "typescript",
-				code: headerThreeNavLinksSource
-			},
-			{
-				id: "header-three:types",
-				path: "components/efferd/header/header-three/types.ts",
-				lang: "typescript",
-				code: headerThreeTypesSource
+				code: headerHeaderFiveTypesSource
 			},
 			...buttonFiles,
 			...logoFiles,
@@ -272,31 +200,30 @@ export const headerBlocks: BlockShowcaseItem[] = [
 	{
 		id: "header-four",
 		title: "Header Four",
-		description:
-			"A floating rounded header with stronger auth actions and a simplified mobile drawer.",
-		previewComponent: HeaderFour,
-		previewHref: "/preview/efferd-ui/header/four",
+		description: "A Header Four composition.",
+		previewComponent: HeaderFourPreview,
+		previewHref: "/preview/efferd-ui/header/header-four",
 		previewMode: "iframe",
-		previewHeight: 860,
+		previewHeight: 820,
 		installId: "header-four",
-		codeTree: createBlockCodeTree("header-four:component", [
+		codeTree: createBlockCodeTree("header-four:preview", [
 			{
-				id: "header-four:component",
-				path: "components/efferd/header/header-four/header-four.svelte",
+				id: "header-four:header",
+				path: "components/efferd/header/header-four/header.svelte",
 				lang: "svelte",
-				code: headerFourSource
+				code: headerHeaderFourHeaderSource
 			},
 			{
 				id: "header-four:mobile-nav",
 				path: "components/efferd/header/header-four/mobile-nav.svelte",
 				lang: "svelte",
-				code: headerFourMobileNavSource
+				code: headerHeaderFourMobileNavSource
 			},
 			{
 				id: "header-four:nav-links",
 				path: "components/efferd/header/header-four/nav-links.ts",
 				lang: "typescript",
-				code: headerFourNavLinksSource
+				code: headerHeaderFourNavLinksSource
 			},
 			...buttonFiles,
 			...logoFiles,
@@ -305,55 +232,122 @@ export const headerBlocks: BlockShowcaseItem[] = [
 		])
 	},
 	{
-		id: "header-five",
-		title: "Header Five",
-		description:
-			"A polished rounded header with compact mega-menu panels and stronger pill-shaped actions.",
-		previewComponent: HeaderFive,
-		previewHref: "/preview/efferd-ui/header/five",
+		id: "header-one",
+		title: "Header One",
+		description: "A Header One composition.",
+		previewComponent: HeaderOnePreview,
+		previewHref: "/preview/efferd-ui/header/header-one",
 		previewMode: "iframe",
-		previewHeight: 980,
-		installId: "header-five",
-		codeTree: createBlockCodeTree("header-five:component", [
+		previewHeight: 820,
+		installId: "header-one",
+		codeTree: createBlockCodeTree("header-one:preview", [
 			{
-				id: "header-five:component",
-				path: "components/efferd/header/header-five/header-five.svelte",
+				id: "header-one:header",
+				path: "components/efferd/header/header-one/header.svelte",
 				lang: "svelte",
-				code: headerFiveSource
+				code: headerHeaderOneHeaderSource
 			},
 			{
-				id: "header-five:desktop-nav",
-				path: "components/efferd/header/header-five/desktop-nav.svelte",
+				id: "header-one:mobile-nav",
+				path: "components/efferd/header/header-one/mobile-nav.svelte",
 				lang: "svelte",
-				code: headerFiveDesktopNavSource
+				code: headerHeaderOneMobileNavSource
 			},
 			{
-				id: "header-five:mobile-nav",
-				path: "components/efferd/header/header-five/mobile-nav.svelte",
-				lang: "svelte",
-				code: headerFiveMobileNavSource
-			},
-			{
-				id: "header-five:link-item",
-				path: "components/efferd/header/header-five/link-item.svelte",
-				lang: "svelte",
-				code: headerFiveLinkItemSource
-			},
-			{
-				id: "header-five:nav-links",
-				path: "components/efferd/header/header-five/nav-links.ts",
+				id: "header-one:nav-links",
+				path: "components/efferd/header/header-one/nav-links.ts",
 				lang: "typescript",
-				code: headerFiveNavLinksSource
+				code: headerHeaderOneNavLinksSource
+			},
+			...buttonFiles,
+			...logoFiles,
+			...portalFiles,
+			...scrollHookFiles
+		])
+	},
+	{
+		id: "header-three",
+		title: "Header Three",
+		description: "A Header Three composition.",
+		previewComponent: HeaderThreePreview,
+		previewHref: "/preview/efferd-ui/header/header-three",
+		previewMode: "iframe",
+		previewHeight: 820,
+		installId: "header-three",
+		codeTree: createBlockCodeTree("header-three:preview", [
+			{
+				id: "header-three:desktop-nav",
+				path: "components/efferd/header/header-three/desktop-nav.svelte",
+				lang: "svelte",
+				code: headerHeaderThreeDesktopNavSource
 			},
 			{
-				id: "header-five:types",
-				path: "components/efferd/header/header-five/types.ts",
+				id: "header-three:header",
+				path: "components/efferd/header/header-three/header.svelte",
+				lang: "svelte",
+				code: headerHeaderThreeHeaderSource
+			},
+			{
+				id: "header-three:link-item",
+				path: "components/efferd/header/header-three/link-item.svelte",
+				lang: "svelte",
+				code: headerHeaderThreeLinkItemSource
+			},
+			{
+				id: "header-three:mobile-nav",
+				path: "components/efferd/header/header-three/mobile-nav.svelte",
+				lang: "svelte",
+				code: headerHeaderThreeMobileNavSource
+			},
+			{
+				id: "header-three:nav-links",
+				path: "components/efferd/header/header-three/nav-links.ts",
 				lang: "typescript",
-				code: headerFiveTypesSource
+				code: headerHeaderThreeNavLinksSource
+			},
+			{
+				id: "header-three:types",
+				path: "components/efferd/header/header-three/types.ts",
+				lang: "typescript",
+				code: headerHeaderThreeTypesSource
 			},
 			...buttonFiles,
 			...logoFiles,
 			...navigationMenuFiles,
+			...portalFiles,
+			...scrollHookFiles
+		])
+	},
+	{
+		id: "header-two",
+		title: "Header Two",
+		description: "A Header Two composition.",
+		previewComponent: HeaderTwoPreview,
+		previewHref: "/preview/efferd-ui/header/header-two",
+		previewMode: "iframe",
+		previewHeight: 820,
+		installId: "header-two",
+		codeTree: createBlockCodeTree("header-two:preview", [
+			{
+				id: "header-two:header",
+				path: "components/efferd/header/header-two/header.svelte",
+				lang: "svelte",
+				code: headerHeaderTwoHeaderSource
+			},
+			{
+				id: "header-two:mobile-nav",
+				path: "components/efferd/header/header-two/mobile-nav.svelte",
+				lang: "svelte",
+				code: headerHeaderTwoMobileNavSource
+			},
+			{
+				id: "header-two:nav-links",
+				path: "components/efferd/header/header-two/nav-links.ts",
+				lang: "typescript",
+				code: headerHeaderTwoNavLinksSource
+			},
+			...buttonFiles,
+			...logoFiles,
 			...portalFiles,
 			...scrollHookFiles
 		])

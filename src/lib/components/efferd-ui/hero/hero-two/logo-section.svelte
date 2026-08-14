@@ -1,11 +1,11 @@
 <script lang="ts">
-	import LogoCloudTwo from "$lib/components/efferd-ui/logo-cloud/two/logo-cloud-two.svelte";
+	import LogoCloudTwo from "$lib/components/efferd-ui/logo-cloud/logo-cloud-two/logo-cloud.svelte";
 	import { DecorIcon } from "$lib/components/ui/decor-icon";
 	import { FullWidthDivider } from "$lib/components/ui/full-width-divider";
 </script>
 
 <section class="mb-12">
-	<h2 class="py-6 text-center text-lg font-medium tracking-tight text-muted-foreground md:text-xl">
+	<h2 class="py-6 text-lg font-medium tracking-tight md:text-xl text-center text-muted-foreground">
 		Trusted by <span class="text-foreground">experts</span>
 	</h2>
 	<div class="relative *:border-0">

@@ -8,7 +8,7 @@
 	}>();
 </script>
 
-<div class={cn("step relative mb-10 ml-8 last:mb-0", className)}>
+<div class={cn("step mb-10 ml-8 last:mb-0 relative", className)}>
 	<div class="space-y-4">
 		{@render children?.()}
 	</div>

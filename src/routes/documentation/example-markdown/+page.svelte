@@ -1,6 +1,6 @@
 <script lang="ts">
 	import DocsPage from "$lib/components/documentation/docs-page.svelte";
-    
+
 	// Markdown
 	import H1 from "$lib/components/ui/markdown/H1.svelte";
 	import H2 from "$lib/components/ui/markdown/H2.svelte";

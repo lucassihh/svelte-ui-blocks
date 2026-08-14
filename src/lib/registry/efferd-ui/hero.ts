@@ -4,31 +4,36 @@ import HeroOnePreview from "$lib/components/efferd-ui/hero/hero-one/preview.svel
 import HeroThreePreview from "$lib/components/efferd-ui/hero/hero-three/preview.svelte";
 import HeroTwoPreview from "$lib/components/efferd-ui/hero/hero-two/preview.svelte";
 
-import headerOneSource from "$lib/components/efferd-ui/header/header-one/header-one.svelte?raw";
-import headerOneMobileNavSource from "$lib/components/efferd-ui/header/header-one/mobile-nav.svelte?raw";
-import headerOneNavLinksSource from "$lib/components/efferd-ui/header/header-one/nav-links.ts?raw";
-import headerThreeDesktopNavSource from "$lib/components/efferd-ui/header/header-three/desktop-nav.svelte?raw";
-import headerThreeSource from "$lib/components/efferd-ui/header/header-three/header-three.svelte?raw";
-import headerThreeLinkItemSource from "$lib/components/efferd-ui/header/header-three/link-item.svelte?raw";
-import headerThreeMobileNavSource from "$lib/components/efferd-ui/header/header-three/mobile-nav.svelte?raw";
-import headerThreeNavLinksSource from "$lib/components/efferd-ui/header/header-three/nav-links.ts?raw";
-import headerThreeTypesSource from "$lib/components/efferd-ui/header/header-three/types.ts?raw";
-import headerTwoSource from "$lib/components/efferd-ui/header/header-two/header-two.svelte?raw";
-import headerTwoMobileNavSource from "$lib/components/efferd-ui/header/header-two/mobile-nav.svelte?raw";
-import headerTwoNavLinksSource from "$lib/components/efferd-ui/header/header-two/nav-links.ts?raw";
-import heroOneSource from "$lib/components/efferd-ui/hero/hero-one/hero.svelte?raw";
-import heroOneLogoSectionSource from "$lib/components/efferd-ui/hero/hero-one/logo-section.svelte?raw";
-import heroOnePreviewSource from "$lib/components/efferd-ui/hero/hero-one/preview.svelte?raw";
-import heroThreeSource from "$lib/components/efferd-ui/hero/hero-three/hero.svelte?raw";
-import heroThreeLogoSectionSource from "$lib/components/efferd-ui/hero/hero-three/logo-section.svelte?raw";
-import heroThreePreviewSource from "$lib/components/efferd-ui/hero/hero-three/preview.svelte?raw";
-import heroTwoSource from "$lib/components/efferd-ui/hero/hero-two/hero.svelte?raw";
-import heroTwoLogoSectionSource from "$lib/components/efferd-ui/hero/hero-two/logo-section.svelte?raw";
-import heroTwoPreviewSource from "$lib/components/efferd-ui/hero/hero-two/preview.svelte?raw";
-import logoCloudFiveSource from "$lib/components/efferd-ui/logo-cloud/five/logo-cloud-five.svelte?raw";
-import logoCloudThreeSource from "$lib/components/efferd-ui/logo-cloud/three/logo-cloud-three.svelte?raw";
-import logoCloudTwoLogoCardSource from "$lib/components/efferd-ui/logo-cloud/two/logo-card.svelte?raw";
-import logoCloudTwoSource from "$lib/components/efferd-ui/logo-cloud/two/logo-cloud-two.svelte?raw";
+import decorIconIndexSource from "$lib/components/ui/decor-icon/index.ts?raw";
+import decorIconSource from "$lib/components/ui/decor-icon/decor-icon.svelte?raw";
+import dividerIndexSource from "$lib/components/ui/full-width-divider/index.ts?raw";
+import dividerSource from "$lib/components/ui/full-width-divider/full-width-divider.svelte?raw";
+import headerHeaderOneHeaderSource from "$lib/components/efferd-ui/header/header-one/header.svelte?raw";
+import headerHeaderOneMobileNavSource from "$lib/components/efferd-ui/header/header-one/mobile-nav.svelte?raw";
+import headerHeaderOneNavLinksSource from "$lib/components/efferd-ui/header/header-one/nav-links.ts?raw";
+import headerHeaderThreeDesktopNavSource from "$lib/components/efferd-ui/header/header-three/desktop-nav.svelte?raw";
+import headerHeaderThreeHeaderSource from "$lib/components/efferd-ui/header/header-three/header.svelte?raw";
+import headerHeaderThreeLinkItemSource from "$lib/components/efferd-ui/header/header-three/link-item.svelte?raw";
+import headerHeaderThreeMobileNavSource from "$lib/components/efferd-ui/header/header-three/mobile-nav.svelte?raw";
+import headerHeaderThreeNavLinksSource from "$lib/components/efferd-ui/header/header-three/nav-links.ts?raw";
+import headerHeaderThreeTypesSource from "$lib/components/efferd-ui/header/header-three/types.ts?raw";
+import headerHeaderTwoHeaderSource from "$lib/components/efferd-ui/header/header-two/header.svelte?raw";
+import headerHeaderTwoMobileNavSource from "$lib/components/efferd-ui/header/header-two/mobile-nav.svelte?raw";
+import headerHeaderTwoNavLinksSource from "$lib/components/efferd-ui/header/header-two/nav-links.ts?raw";
+import heroHeroOneHeroSource from "$lib/components/efferd-ui/hero/hero-one/hero.svelte?raw";
+import heroHeroOneLogoSectionSource from "$lib/components/efferd-ui/hero/hero-one/logo-section.svelte?raw";
+import heroHeroOnePreviewSource from "$lib/components/efferd-ui/hero/hero-one/preview.svelte?raw";
+import heroHeroThreeHeroSource from "$lib/components/efferd-ui/hero/hero-three/hero.svelte?raw";
+import heroHeroThreeLogoSectionSource from "$lib/components/efferd-ui/hero/hero-three/logo-section.svelte?raw";
+import heroHeroThreePreviewSource from "$lib/components/efferd-ui/hero/hero-three/preview.svelte?raw";
+import heroHeroTwoHeroSource from "$lib/components/efferd-ui/hero/hero-two/hero.svelte?raw";
+import heroHeroTwoLogoSectionSource from "$lib/components/efferd-ui/hero/hero-two/logo-section.svelte?raw";
+import heroHeroTwoPreviewSource from "$lib/components/efferd-ui/hero/hero-two/preview.svelte?raw";
+import logoCloudLogoCloudFiveLogoCloudSource from "$lib/components/efferd-ui/logo-cloud/logo-cloud-five/logo-cloud.svelte?raw";
+import logoCloudLogoCloudThreeLogoCloudSource from "$lib/components/efferd-ui/logo-cloud/logo-cloud-three/logo-cloud.svelte?raw";
+import logoCloudLogoCloudTwoLogoCardSource from "$lib/components/efferd-ui/logo-cloud/logo-cloud-two/logo-card.svelte?raw";
+import logoCloudLogoCloudTwoLogoCloudSource from "$lib/components/efferd-ui/logo-cloud/logo-cloud-two/logo-cloud.svelte?raw";
+import logoSvgSource from "$lib/assets/svg/logo.svelte?raw";
 import marqueeIndexSource from "$lib/components/magic-ui/marquee/index.ts?raw";
 import marqueeSource from "$lib/components/magic-ui/marquee/marquee.svelte?raw";
 import navigationMenuContentSource from "$lib/components/ui/navigation-menu/navigation-menu-content.svelte?raw";
@@ -43,12 +48,7 @@ import navigationMenuViewportSource from "$lib/components/ui/navigation-menu/nav
 import portalBackdropSource from "$lib/components/ui/portal/portal-backdrop.svelte?raw";
 import portalIndexSource from "$lib/components/ui/portal/index.ts?raw";
 import portalSource from "$lib/components/ui/portal/portal.svelte?raw";
-import decorIconIndexSource from "$lib/components/ui/decor-icon/index.ts?raw";
-import decorIconSource from "$lib/components/ui/decor-icon/decor-icon.svelte?raw";
-import dividerIndexSource from "$lib/components/ui/full-width-divider/index.ts?raw";
-import dividerSource from "$lib/components/ui/full-width-divider/full-width-divider.svelte?raw";
 import useScrollHookSource from "$lib/hooks/use-scroll.svelte.ts?raw";
-import logoSvgSource from "$lib/assets/svg/logo.svelte?raw";
 
 const buttonFiles = [
 	{
@@ -58,37 +58,34 @@ const buttonFiles = [
 		externalLabel: "Shadcn Svelte Button"
 	}
 ];
-
 const decorIconFiles = [
-	{
-		id: "shared:decor-icon-index",
-		path: "components/ui/decor-icon/index.ts",
-		lang: "typescript" as const,
-		code: decorIconIndexSource
-	},
 	{
 		id: "shared:decor-icon",
 		path: "components/ui/decor-icon/decor-icon.svelte",
 		lang: "svelte" as const,
 		code: decorIconSource
+	},
+	{
+		id: "shared:decor-icon-index",
+		path: "components/ui/decor-icon/index.ts",
+		lang: "typescript" as const,
+		code: decorIconIndexSource
 	}
 ];
-
 const dividerFiles = [
-	{
-		id: "shared:divider-index",
-		path: "components/ui/full-width-divider/index.ts",
-		lang: "typescript" as const,
-		code: dividerIndexSource
-	},
 	{
 		id: "shared:divider",
 		path: "components/ui/full-width-divider/full-width-divider.svelte",
 		lang: "svelte" as const,
 		code: dividerSource
+	},
+	{
+		id: "shared:divider-index",
+		path: "components/ui/full-width-divider/index.ts",
+		lang: "typescript" as const,
+		code: dividerIndexSource
 	}
 ];
-
 const logoFiles = [
 	{
 		id: "shared:logo-svg",
@@ -97,7 +94,6 @@ const logoFiles = [
 		code: logoSvgSource
 	}
 ];
-
 const marqueeFiles = [
 	{
 		id: "shared:marquee-index",
@@ -112,19 +108,12 @@ const marqueeFiles = [
 		code: marqueeSource
 	}
 ];
-
 const navigationMenuFiles = [
 	{
 		id: "shared:navigation-menu-index",
 		path: "components/ui/navigation-menu/index.ts",
 		lang: "typescript" as const,
 		code: navigationMenuIndexSource
-	},
-	{
-		id: "shared:navigation-menu-root",
-		path: "components/ui/navigation-menu/navigation-menu.svelte",
-		lang: "svelte" as const,
-		code: navigationMenuRootSource
 	},
 	{
 		id: "shared:navigation-menu-content",
@@ -167,9 +156,14 @@ const navigationMenuFiles = [
 		path: "components/ui/navigation-menu/navigation-menu-viewport.svelte",
 		lang: "svelte" as const,
 		code: navigationMenuViewportSource
+	},
+	{
+		id: "shared:navigation-menu-root",
+		path: "components/ui/navigation-menu/navigation-menu.svelte",
+		lang: "svelte" as const,
+		code: navigationMenuRootSource
 	}
 ];
-
 const portalFiles = [
 	{
 		id: "shared:portal-index",
@@ -178,19 +172,18 @@ const portalFiles = [
 		code: portalIndexSource
 	},
 	{
+		id: "shared:portal-portal-backdrop",
+		path: "components/ui/portal/portal-backdrop.svelte",
+		lang: "svelte" as const,
+		code: portalBackdropSource
+	},
+	{
 		id: "shared:portal",
 		path: "components/ui/portal/portal.svelte",
 		lang: "svelte" as const,
 		code: portalSource
-	},
-	{
-		id: "shared:portal-backdrop",
-		path: "components/ui/portal/portal-backdrop.svelte",
-		lang: "svelte" as const,
-		code: portalBackdropSource
 	}
 ];
-
 const scrollHookFiles = [
 	{
 		id: "shared:use-scroll",
@@ -199,119 +192,112 @@ const scrollHookFiles = [
 		code: useScrollHookSource
 	}
 ];
-
-const headerOneFiles = [
+const headerHeaderOneFiles = [
 	{
 		id: "hero-one:header",
-		path: "components/efferd/header/header-one/header-one.svelte",
+		path: "components/efferd/header/header-one/header.svelte",
 		lang: "svelte" as const,
-		code: headerOneSource
+		code: headerHeaderOneHeaderSource
 	},
 	{
-		id: "hero-one:header-mobile-nav",
+		id: "hero-one:mobile-nav",
 		path: "components/efferd/header/header-one/mobile-nav.svelte",
 		lang: "svelte" as const,
-		code: headerOneMobileNavSource
+		code: headerHeaderOneMobileNavSource
 	},
 	{
-		id: "hero-one:header-nav-links",
+		id: "hero-one:nav-links",
 		path: "components/efferd/header/header-one/nav-links.ts",
 		lang: "typescript" as const,
-		code: headerOneNavLinksSource
+		code: headerHeaderOneNavLinksSource
 	}
 ];
-
-const headerTwoFiles = [
+const headerHeaderThreeFiles = [
 	{
-		id: "hero-two:header",
-		path: "components/efferd/header/header-two/header-two.svelte",
-		lang: "svelte" as const,
-		code: headerTwoSource
-	},
-	{
-		id: "hero-two:header-mobile-nav",
-		path: "components/efferd/header/header-two/mobile-nav.svelte",
-		lang: "svelte" as const,
-		code: headerTwoMobileNavSource
-	},
-	{
-		id: "hero-two:header-nav-links",
-		path: "components/efferd/header/header-two/nav-links.ts",
-		lang: "typescript" as const,
-		code: headerTwoNavLinksSource
-	}
-];
-
-const headerThreeFiles = [
-	{
-		id: "hero-three:header",
-		path: "components/efferd/header/header-three/header-three.svelte",
-		lang: "svelte" as const,
-		code: headerThreeSource
-	},
-	{
-		id: "hero-three:header-desktop-nav",
+		id: "hero-three:desktop-nav",
 		path: "components/efferd/header/header-three/desktop-nav.svelte",
 		lang: "svelte" as const,
-		code: headerThreeDesktopNavSource
+		code: headerHeaderThreeDesktopNavSource
 	},
 	{
-		id: "hero-three:header-mobile-nav",
-		path: "components/efferd/header/header-three/mobile-nav.svelte",
+		id: "hero-three:header",
+		path: "components/efferd/header/header-three/header.svelte",
 		lang: "svelte" as const,
-		code: headerThreeMobileNavSource
+		code: headerHeaderThreeHeaderSource
 	},
 	{
-		id: "hero-three:header-link-item",
+		id: "hero-three:link-item",
 		path: "components/efferd/header/header-three/link-item.svelte",
 		lang: "svelte" as const,
-		code: headerThreeLinkItemSource
+		code: headerHeaderThreeLinkItemSource
 	},
 	{
-		id: "hero-three:header-nav-links",
+		id: "hero-three:mobile-nav",
+		path: "components/efferd/header/header-three/mobile-nav.svelte",
+		lang: "svelte" as const,
+		code: headerHeaderThreeMobileNavSource
+	},
+	{
+		id: "hero-three:nav-links",
 		path: "components/efferd/header/header-three/nav-links.ts",
 		lang: "typescript" as const,
-		code: headerThreeNavLinksSource
+		code: headerHeaderThreeNavLinksSource
 	},
 	{
-		id: "hero-three:header-types",
+		id: "hero-three:types",
 		path: "components/efferd/header/header-three/types.ts",
 		lang: "typescript" as const,
-		code: headerThreeTypesSource
+		code: headerHeaderThreeTypesSource
 	}
 ];
-
-const logoCloudTwoFiles = [
+const headerHeaderTwoFiles = [
 	{
-		id: "hero-two:logo-cloud",
-		path: "components/efferd/logo-cloud/two/logo-cloud-two.svelte",
+		id: "hero-two:header",
+		path: "components/efferd/header/header-two/header.svelte",
 		lang: "svelte" as const,
-		code: logoCloudTwoSource
+		code: headerHeaderTwoHeaderSource
 	},
 	{
-		id: "hero-two:logo-card",
-		path: "components/efferd/logo-cloud/two/logo-card.svelte",
+		id: "hero-two:mobile-nav",
+		path: "components/efferd/header/header-two/mobile-nav.svelte",
 		lang: "svelte" as const,
-		code: logoCloudTwoLogoCardSource
+		code: headerHeaderTwoMobileNavSource
+	},
+	{
+		id: "hero-two:nav-links",
+		path: "components/efferd/header/header-two/nav-links.ts",
+		lang: "typescript" as const,
+		code: headerHeaderTwoNavLinksSource
 	}
 ];
-
-const logoCloudThreeFiles = [
-	{
-		id: "hero-one:logo-cloud",
-		path: "components/efferd/logo-cloud/three/logo-cloud-three.svelte",
-		lang: "svelte" as const,
-		code: logoCloudThreeSource
-	},
-	...marqueeFiles
-];
-
-const logoCloudFiveFiles = [
+const logoCloudLogoCloudFiveFiles = [
 	{
 		id: "hero-three:logo-cloud",
-		path: "components/efferd/logo-cloud/five/logo-cloud-five.svelte",
+		path: "components/efferd/logo-cloud/logo-cloud-five/logo-cloud.svelte",
 		lang: "svelte" as const,
-		code: logoCloudFiveSource
+		code: logoCloudLogoCloudFiveLogoCloudSource
+	}
+];
+const logoCloudLogoCloudThreeFiles = [
+	{
+		id: "hero-one:logo-cloud",
+		path: "components/efferd/logo-cloud/logo-cloud-three/logo-cloud.svelte",
+		lang: "svelte" as const,
+		code: logoCloudLogoCloudThreeLogoCloudSource
+	}
+];
+const logoCloudLogoCloudTwoFiles = [
+	{
+		id: "hero-two:logo-card",
+		path: "components/efferd/logo-cloud/logo-cloud-two/logo-card.svelte",
+		lang: "svelte" as const,
+		code: logoCloudLogoCloudTwoLogoCardSource
+	},
+	{
+		id: "hero-two:logo-cloud",
+		path: "components/efferd/logo-cloud/logo-cloud-two/logo-cloud.svelte",
+		lang: "svelte" as const,
+		code: logoCloudLogoCloudTwoLogoCloudSource
 	}
 ];
 
@@ -322,72 +308,34 @@ export const heroBlocks: BlockShowcaseItem[] = [
 		description:
 			"A full hero composition with sticky header, editorial spotlight, and a marquee trust band.",
 		previewComponent: HeroOnePreview,
-		previewHref: "/preview/efferd-ui/hero/one",
+		previewHref: "/preview/efferd-ui/hero/hero-one",
 		previewMode: "iframe",
 		previewHeight: 820,
 		installId: "hero-one",
 		codeTree: createBlockCodeTree("hero-one:preview", [
 			{
-				id: "hero-one:preview",
-				path: "components/efferd/hero/hero-one/preview.svelte",
-				lang: "svelte",
-				code: heroOnePreviewSource
-			},
-			{
 				id: "hero-one:hero",
 				path: "components/efferd/hero/hero-one/hero.svelte",
 				lang: "svelte",
-				code: heroOneSource
+				code: heroHeroOneHeroSource
 			},
 			{
 				id: "hero-one:logo-section",
 				path: "components/efferd/hero/hero-one/logo-section.svelte",
 				lang: "svelte",
-				code: heroOneLogoSectionSource
+				code: heroHeroOneLogoSectionSource
 			},
-			...headerOneFiles,
-			...logoCloudThreeFiles,
+			{
+				id: "hero-one:preview",
+				path: "components/efferd/hero/hero-one/preview.svelte",
+				lang: "svelte",
+				code: heroHeroOnePreviewSource
+			},
 			...buttonFiles,
+			...headerHeaderOneFiles,
+			...logoCloudLogoCloudThreeFiles,
 			...logoFiles,
-			...portalFiles,
-			...scrollHookFiles
-		])
-	},
-	{
-		id: "hero-two",
-		title: "Hero Two",
-		description:
-			"A framed product hero with a floating screen, structured header, and bordered logo section.",
-		previewComponent: HeroTwoPreview,
-		previewHref: "/preview/efferd-ui/hero/two",
-		previewMode: "iframe",
-		previewHeight: 860,
-		installId: "hero-two",
-		codeTree: createBlockCodeTree("hero-two:preview", [
-			{
-				id: "hero-two:preview",
-				path: "components/efferd/hero/hero-two/preview.svelte",
-				lang: "svelte",
-				code: heroTwoPreviewSource
-			},
-			{
-				id: "hero-two:hero",
-				path: "components/efferd/hero/hero-two/hero.svelte",
-				lang: "svelte",
-				code: heroTwoSource
-			},
-			{
-				id: "hero-two:logo-section",
-				path: "components/efferd/hero/hero-two/logo-section.svelte",
-				lang: "svelte",
-				code: heroTwoLogoSectionSource
-			},
-			...headerTwoFiles,
-			...logoCloudTwoFiles,
-			...buttonFiles,
-			...decorIconFiles,
-			...dividerFiles,
-			...logoFiles,
+			...marqueeFiles,
 			...portalFiles,
 			...scrollHookFiles
 		])
@@ -398,34 +346,73 @@ export const heroBlocks: BlockShowcaseItem[] = [
 		description:
 			"A modern hero layout with mega-nav header, device mockup spotlight, and compact logo grid.",
 		previewComponent: HeroThreePreview,
-		previewHref: "/preview/efferd-ui/hero/three",
+		previewHref: "/preview/efferd-ui/hero/hero-three",
 		previewMode: "iframe",
 		previewHeight: 840,
 		installId: "hero-three",
 		codeTree: createBlockCodeTree("hero-three:preview", [
 			{
-				id: "hero-three:preview",
-				path: "components/efferd/hero/hero-three/preview.svelte",
-				lang: "svelte",
-				code: heroThreePreviewSource
-			},
-			{
 				id: "hero-three:hero",
 				path: "components/efferd/hero/hero-three/hero.svelte",
 				lang: "svelte",
-				code: heroThreeSource
+				code: heroHeroThreeHeroSource
 			},
 			{
 				id: "hero-three:logo-section",
 				path: "components/efferd/hero/hero-three/logo-section.svelte",
 				lang: "svelte",
-				code: heroThreeLogoSectionSource
+				code: heroHeroThreeLogoSectionSource
 			},
-			...headerThreeFiles,
-			...logoCloudFiveFiles,
+			{
+				id: "hero-three:preview",
+				path: "components/efferd/hero/hero-three/preview.svelte",
+				lang: "svelte",
+				code: heroHeroThreePreviewSource
+			},
 			...buttonFiles,
+			...headerHeaderThreeFiles,
+			...logoCloudLogoCloudFiveFiles,
 			...logoFiles,
 			...navigationMenuFiles,
+			...portalFiles,
+			...scrollHookFiles
+		])
+	},
+	{
+		id: "hero-two",
+		title: "Hero Two",
+		description:
+			"A framed product hero with a floating screen, structured header, and bordered logo section.",
+		previewComponent: HeroTwoPreview,
+		previewHref: "/preview/efferd-ui/hero/hero-two",
+		previewMode: "iframe",
+		previewHeight: 860,
+		installId: "hero-two",
+		codeTree: createBlockCodeTree("hero-two:preview", [
+			{
+				id: "hero-two:hero",
+				path: "components/efferd/hero/hero-two/hero.svelte",
+				lang: "svelte",
+				code: heroHeroTwoHeroSource
+			},
+			{
+				id: "hero-two:logo-section",
+				path: "components/efferd/hero/hero-two/logo-section.svelte",
+				lang: "svelte",
+				code: heroHeroTwoLogoSectionSource
+			},
+			{
+				id: "hero-two:preview",
+				path: "components/efferd/hero/hero-two/preview.svelte",
+				lang: "svelte",
+				code: heroHeroTwoPreviewSource
+			},
+			...buttonFiles,
+			...decorIconFiles,
+			...dividerFiles,
+			...headerHeaderTwoFiles,
+			...logoCloudLogoCloudTwoFiles,
+			...logoFiles,
 			...portalFiles,
 			...scrollHookFiles
 		])

@@ -29,14 +29,14 @@
 	{@render children?.()}
 	{#if collapsed}
 		<div
-			class="absolute bottom-0 left-0 z-10 h-full w-full bg-linear-to-t from-background to-transparent"
+			class="bottom-0 left-0 absolute z-10 h-full w-full bg-linear-to-t from-background to-transparent"
 		></div>
 	{/if}
 	{#if collapsed}
 		<Button
 			variant="secondary"
 			size="sm"
-			class="absolute bottom-2 left-1/2 z-20 w-fit -translate-x-1/2"
+			class="bottom-2 absolute left-1/2 z-20 w-fit -translate-x-1/2"
 			onclick={state.toggleCollapsed}
 		>
 			Expand

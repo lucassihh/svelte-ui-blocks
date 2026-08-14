@@ -1,24 +1,27 @@
 import type { BlockShowcaseItem } from "$lib/components/blocks/blocks-code-three";
 import { createBlockCodeTree } from "$lib/components/blocks/blocks-code-three";
-import CtaFive from "$lib/components/efferd-ui/cta/cta-five.svelte";
-import CtaFour from "$lib/components/efferd-ui/cta/cta-four.svelte";
-import CtaOne from "$lib/components/efferd-ui/cta/cta-one.svelte";
-import CtaThree from "$lib/components/efferd-ui/cta/cta-three.svelte";
-import CtaTwo from "$lib/components/efferd-ui/cta/cta-two.svelte";
+import CtaFivePreview from "$lib/components/efferd-ui/cta/cta-five/cta.svelte";
+import CtaFourPreview from "$lib/components/efferd-ui/cta/cta-four/cta.svelte";
+import CtaOnePreview from "$lib/components/efferd-ui/cta/cta-one/cta.svelte";
+import CtaThreePreview from "$lib/components/efferd-ui/cta/cta-three/cta.svelte";
+import CtaTwoPreview from "$lib/components/efferd-ui/cta/cta-two/cta.svelte";
 
-import ctaFiveSource from "$lib/components/efferd-ui/cta/cta-five.svelte?raw";
-import ctaFourSource from "$lib/components/efferd-ui/cta/cta-four.svelte?raw";
-import ctaOneSource from "$lib/components/efferd-ui/cta/cta-one.svelte?raw";
-import ctaThreeSource from "$lib/components/efferd-ui/cta/cta-three.svelte?raw";
-import ctaTwoSource from "$lib/components/efferd-ui/cta/cta-two.svelte?raw";
+import ctaCtaFiveCtaSource from "$lib/components/efferd-ui/cta/cta-five/cta.svelte?raw";
+import ctaCtaFourCtaSource from "$lib/components/efferd-ui/cta/cta-four/cta.svelte?raw";
+import ctaCtaOneCtaSource from "$lib/components/efferd-ui/cta/cta-one/cta.svelte?raw";
+import ctaCtaThreeCtaSource from "$lib/components/efferd-ui/cta/cta-three/cta.svelte?raw";
+import ctaCtaTwoCtaSource from "$lib/components/efferd-ui/cta/cta-two/cta.svelte?raw";
 import decorIconIndexSource from "$lib/components/ui/decor-icon/index.ts?raw";
 import decorIconSource from "$lib/components/ui/decor-icon/decor-icon.svelte?raw";
 import dividerIndexSource from "$lib/components/ui/full-width-divider/index.ts?raw";
 import dividerSource from "$lib/components/ui/full-width-divider/full-width-divider.svelte?raw";
 import inputGroupAddonSource from "$lib/components/ui/input-group/input-group-addon.svelte?raw";
+import inputGroupButtonSource from "$lib/components/ui/input-group/input-group-button.svelte?raw";
 import inputGroupIndexSource from "$lib/components/ui/input-group/index.ts?raw";
 import inputGroupInputSource from "$lib/components/ui/input-group/input-group-input.svelte?raw";
 import inputGroupSource from "$lib/components/ui/input-group/input-group.svelte?raw";
+import inputGroupTextSource from "$lib/components/ui/input-group/input-group-text.svelte?raw";
+import inputGroupTextareaSource from "$lib/components/ui/input-group/input-group-textarea.svelte?raw";
 
 const buttonFiles = [
 	{
@@ -28,98 +31,90 @@ const buttonFiles = [
 		externalLabel: "Shadcn Svelte Button"
 	}
 ];
-
-const dividerFiles = [
-	{
-		id: "shared:divider-index",
-		path: "components/ui/full-width-divider/index.ts",
-		lang: "typescript" as const,
-		code: dividerIndexSource
-	},
-	{
-		id: "shared:divider",
-		path: "components/ui/full-width-divider/full-width-divider.svelte",
-		lang: "svelte" as const,
-		code: dividerSource
-	}
-];
-
 const decorIconFiles = [
-	{
-		id: "shared:decor-icon-index",
-		path: "components/ui/decor-icon/index.ts",
-		lang: "typescript" as const,
-		code: decorIconIndexSource
-	},
 	{
 		id: "shared:decor-icon",
 		path: "components/ui/decor-icon/decor-icon.svelte",
 		lang: "svelte" as const,
 		code: decorIconSource
+	},
+	{
+		id: "shared:decor-icon-index",
+		path: "components/ui/decor-icon/index.ts",
+		lang: "typescript" as const,
+		code: decorIconIndexSource
 	}
 ];
-
-const inputGroupFiles = [
+const dividerFiles = [
 	{
-		id: "shared:input-group-index",
-		path: "components/ui/input-group/index.ts",
+		id: "shared:divider",
+		path: "components/ui/full-width-divider/full-width-divider.svelte",
+		lang: "svelte" as const,
+		code: dividerSource
+	},
+	{
+		id: "shared:divider-index",
+		path: "components/ui/full-width-divider/index.ts",
 		lang: "typescript" as const,
-		code: inputGroupIndexSource
-	},
-	{
-		id: "shared:input-group",
-		path: "components/ui/input-group/input-group.svelte",
-		lang: "svelte" as const,
-		code: inputGroupSource
-	},
-	{
-		id: "shared:input-group-addon",
-		path: "components/ui/input-group/input-group-addon.svelte",
-		lang: "svelte" as const,
-		code: inputGroupAddonSource
-	},
-	{
-		id: "shared:input-group-input",
-		path: "components/ui/input-group/input-group-input.svelte",
-		lang: "svelte" as const,
-		code: inputGroupInputSource
+		code: dividerIndexSource
 	}
 ];
 
 export const ctaBlocks: BlockShowcaseItem[] = [
 	{
-		id: "cta-one",
-		title: "CTA One",
-		description: "A split CTA with quiet structure, balanced actions, and full-width dividers.",
-		previewComponent: CtaOne,
-		previewHref: "/preview/efferd-ui/cta/one",
-		previewMode: "inline",
-		installId: "cta-one",
-		codeTree: createBlockCodeTree("cta-one:component", [
+		id: "cta-five",
+		title: "Cta Five",
+		description: "A Cta Five composition.",
+		previewComponent: CtaFivePreview,
+		previewHref: "/preview/efferd-ui/cta/cta-five",
+		previewMode: "iframe",
+		previewHeight: 820,
+		installId: "cta-five",
+		codeTree: createBlockCodeTree("cta-five:preview", [
 			{
-				id: "cta-one:component",
-				path: "components/efferd/cta/cta-one.svelte",
+				id: "cta-five:cta",
+				path: "components/efferd/cta/cta-five/cta.svelte",
 				lang: "svelte",
-				code: ctaOneSource
+				code: ctaCtaFiveCtaSource
 			},
 			...buttonFiles,
 			...dividerFiles
 		])
 	},
 	{
-		id: "cta-two",
-		title: "CTA Two",
-		description: "A centered CTA with a softer secondary band and directional primary action.",
-		previewComponent: CtaTwo,
-		previewHref: "/preview/efferd-ui/cta/two",
-		previewMode: "inline",
-		installId: "cta-two",
-		codeTree: createBlockCodeTree("cta-two:component", [
+		id: "cta-four",
+		title: "Cta Four",
+		description: "A Cta Four composition.",
+		previewComponent: CtaFourPreview,
+		previewHref: "/preview/efferd-ui/cta/cta-four",
+		previewMode: "iframe",
+		previewHeight: 820,
+		installId: "cta-four",
+		codeTree: createBlockCodeTree("cta-four:preview", [
 			{
-				id: "cta-two:component",
-				path: "components/efferd/cta/cta-two.svelte",
+				id: "cta-four:cta",
+				path: "components/efferd/cta/cta-four/cta.svelte",
 				lang: "svelte",
-				code: ctaTwoSource
+				code: ctaCtaFourCtaSource
+			},
+			...buttonFiles
+		])
+	},
+	{
+		id: "cta-one",
+		title: "Cta One",
+		description: "A Cta One composition.",
+		previewComponent: CtaOnePreview,
+		previewHref: "/preview/efferd-ui/cta/cta-one",
+		previewMode: "iframe",
+		previewHeight: 820,
+		installId: "cta-one",
+		codeTree: createBlockCodeTree("cta-one:preview", [
+			{
+				id: "cta-one:cta",
+				path: "components/efferd/cta/cta-one/cta.svelte",
+				lang: "svelte",
+				code: ctaCtaOneCtaSource
 			},
 			...buttonFiles,
 			...dividerFiles
@@ -127,59 +122,42 @@ export const ctaBlocks: BlockShowcaseItem[] = [
 	},
 	{
 		id: "cta-three",
-		title: "CTA Three",
-		description: "A more decorative CTA with corner accents and a stronger editorial feel.",
-		previewComponent: CtaThree,
-		previewHref: "/preview/efferd-ui/cta/three",
-		previewMode: "inline",
+		title: "Cta Three",
+		description: "A Cta Three composition.",
+		previewComponent: CtaThreePreview,
+		previewHref: "/preview/efferd-ui/cta/cta-three",
+		previewMode: "iframe",
+		previewHeight: 820,
 		installId: "cta-three",
-		codeTree: createBlockCodeTree("cta-three:component", [
+		codeTree: createBlockCodeTree("cta-three:preview", [
 			{
-				id: "cta-three:component",
-				path: "components/efferd/cta/cta-three.svelte",
+				id: "cta-three:cta",
+				path: "components/efferd/cta/cta-three/cta.svelte",
 				lang: "svelte",
-				code: ctaThreeSource
+				code: ctaCtaThreeCtaSource
 			},
 			...buttonFiles,
 			...decorIconFiles
 		])
 	},
 	{
-		id: "cta-four",
-		title: "CTA Four",
-		description: "A compact card CTA with credit-card reassurance and elevated actions.",
-		previewComponent: CtaFour,
-		previewHref: "/preview/efferd-ui/cta/four",
-		previewMode: "inline",
-		installId: "cta-four",
-		codeTree: createBlockCodeTree("cta-four:component", [
+		id: "cta-two",
+		title: "Cta Two",
+		description: "A Cta Two composition.",
+		previewComponent: CtaTwoPreview,
+		previewHref: "/preview/efferd-ui/cta/cta-two",
+		previewMode: "iframe",
+		previewHeight: 820,
+		installId: "cta-two",
+		codeTree: createBlockCodeTree("cta-two:preview", [
 			{
-				id: "cta-four:component",
-				path: "components/efferd/cta/cta-four.svelte",
+				id: "cta-two:cta",
+				path: "components/efferd/cta/cta-two/cta.svelte",
 				lang: "svelte",
-				code: ctaFourSource
-			},
-			...buttonFiles
-		])
-	},
-	{
-		id: "cta-five",
-		title: "CTA Five",
-		description: "A newsletter CTA that blends subscription form controls with social proof.",
-		previewComponent: CtaFive,
-		previewHref: "/preview/efferd-ui/cta/five",
-		previewMode: "inline",
-		installId: "cta-five",
-		codeTree: createBlockCodeTree("cta-five:component", [
-			{
-				id: "cta-five:component",
-				path: "components/efferd/cta/cta-five.svelte",
-				lang: "svelte",
-				code: ctaFiveSource
+				code: ctaCtaTwoCtaSource
 			},
 			...buttonFiles,
-			...dividerFiles,
-			...inputGroupFiles
+			...dividerFiles
 		])
 	}
 ];

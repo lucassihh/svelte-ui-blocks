@@ -1,6 +1,6 @@
 <script lang="ts">
 	import DocsPage from "$lib/components/documentation/docs-page.svelte";
-    // Markdown
+	// Markdown
 	import H2 from "$lib/components/ui/markdown/H2.svelte";
 	import H3 from "$lib/components/ui/markdown/H3.svelte";
 	import Link from "$lib/components/ui/markdown/Link.svelte";
@@ -9,7 +9,7 @@
 	import Step from "$lib/components/ui/markdown/Step.svelte";
 	import Steps from "$lib/components/ui/markdown/Steps.svelte";
 	import UnorderedList from "$lib/components/ui/markdown/UnorderedList.svelte";
-    // UI
+	// UI
 	import { Button } from "$lib/components/ui/button";
 </script>
 

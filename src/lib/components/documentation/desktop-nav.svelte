@@ -9,24 +9,24 @@
 </script>
 
 <!-- Sidebar Desktop - Hidden on Mobile -->
-<aside class="w-[16rem] shrink-0 pr-2">
-	<div class="flex flex-col gap-4 pt-2">
+<aside class="pr-2 w-[16rem] shrink-0">
+	<div class="gap-4 pt-2 flex flex-col">
 		<span class="px-2 text-xs font-semibold tracking-wider text-muted-foreground uppercase">
 			Documentation
 		</span>
 
-		<nav class="flex flex-col gap-6">
+		<nav class="gap-6 flex flex-col">
 			<!-- Get Started - Section -->
-			<div class="flex flex-col gap-2">
+			<div class="gap-2 flex flex-col">
 				<span class="px-2 text-xs font-normal text-primary/80">Get Started</span>
-				<ul class="ml-2 flex flex-col gap-1 border-l border-border/60 pl-2">
+				<ul class="ml-2 gap-1 pl-2 flex flex-col border-l border-border/60">
 					{#each docsPrimaryPages as item (item.title)}
 						{@const isActive = currentPath === normalizeDocsPath(item.href)}
 						<li>
 							<a
 								href={item.href}
-								class="block rounded-md px-3 py-1.5 text-sm transition-colors hover:bg-accent/50 hover:text-foreground {isActive
-									? 'bg-accent font-medium text-foreground'
+								class="px-3 py-1.5 text-sm block rounded-md transition-colors hover:bg-accent/50 hover:text-foreground {isActive
+									? 'font-medium bg-accent text-foreground'
 									: 'text-muted-foreground'}"
 							>
 								{item.title}
@@ -37,16 +37,16 @@
 			</div>
 
 			<!-- Resources - Section -->
-			<div class="flex flex-col gap-2">
+			<div class="gap-2 flex flex-col">
 				<span class="px-2 text-xs font-normal text-primary/80">Resources</span>
-				<ul class="ml-2 flex flex-col gap-1 border-l border-border/60 pl-2">
+				<ul class="ml-2 gap-1 pl-2 flex flex-col border-l border-border/60">
 					{#each docsSecondaryPages as item (item.title)}
 						{@const isActive = currentPath === normalizeDocsPath(item.href)}
 						<li>
 							<a
 								href={item.href}
-								class="block rounded-md px-3 py-1.5 text-sm transition-colors hover:bg-accent/50 hover:text-foreground {isActive
-									? 'bg-accent font-medium text-foreground'
+								class="px-3 py-1.5 text-sm block rounded-md transition-colors hover:bg-accent/50 hover:text-foreground {isActive
+									? 'font-medium bg-accent text-foreground'
 									: 'text-muted-foreground'}"
 							>
 								{item.title}

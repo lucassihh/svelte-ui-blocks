@@ -29,11 +29,11 @@
 			<div
 				class={cn(
 					"ease-out data-[slot=open]:animate-in data-[slot=open]:zoom-in-97",
-					"size-full px-6 py-4"
+					"px-6 py-4 size-full"
 				)}
 				data-slot={open ? "open" : "closed"}
 			>
-				<ul class="grid gap-y-4">
+				<ul class="gap-y-4 grid">
 					{#each navLinks as link, i}
 						<li>
 							<a href={link.href} class="text-xl font-medium">
@@ -42,7 +42,7 @@
 						</li>
 					{/each}
 				</ul>
-				<div class="mt-4 grid grid-cols-2 gap-2">
+				<div class="mt-4 gap-2 grid grid-cols-2">
 					<Button variant="outline">Sign In</Button>
 					<Button>Get Started</Button>
 				</div>

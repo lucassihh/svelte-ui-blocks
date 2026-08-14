@@ -1,15 +1,15 @@
 <script lang="ts">
 	import DocsPage from "$lib/components/documentation/docs-page.svelte";
-	
-    // Markdown
-    import H2 from "$lib/components/ui/markdown/H2.svelte";
+
+	// Markdown
+	import H2 from "$lib/components/ui/markdown/H2.svelte";
 	import Link from "$lib/components/ui/markdown/Link.svelte";
 	import Paragraph from "$lib/components/ui/markdown/Paragraph.svelte";
 	import Step from "$lib/components/ui/markdown/Step.svelte";
 	import Steps from "$lib/components/ui/markdown/Steps.svelte";
-	
-    // UI
-    import { Button } from "$lib/components/ui/button";
+
+	// UI
+	import { Button } from "$lib/components/ui/button";
 	import * as Code from "$lib/components/ui/code";
 
 	// Code Text

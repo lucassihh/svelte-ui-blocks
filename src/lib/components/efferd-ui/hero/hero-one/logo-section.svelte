@@ -1,12 +1,12 @@
 <script lang="ts">
-	import LogoCloudThree from "$lib/components/efferd-ui/logo-cloud/three/logo-cloud-three.svelte";
+	import LogoCloudThree from "$lib/components/efferd-ui/logo-cloud/logo-cloud-three/logo-cloud.svelte";
 </script>
 
-<section class="relative space-y-4 border-t pt-6 pb-10">
-	<h2 class="text-center text-lg font-medium tracking-tight text-muted-foreground md:text-xl">
+<section class="space-y-4 pt-6 pb-10 relative border-t">
+	<h2 class="text-lg font-medium tracking-tight md:text-xl text-center text-muted-foreground">
 		Trusted by <span class="text-foreground">experts</span>
 	</h2>
-	<div class="relative z-10 mx-auto max-w-4xl">
+	<div class="max-w-4xl relative z-10 mx-auto">
 		<LogoCloudThree />
 	</div>
 </section>

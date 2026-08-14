@@ -7,14 +7,14 @@
 	let { title, description, countLabel }: Props = $props();
 </script>
 
-<div class="flex h-full flex-col gap-2 px-3 py-3 sm:px-4 sm:py-4">
+<div class="gap-2 px-3 py-3 sm:px-4 sm:py-4 flex h-full flex-col">
 	<div class="text-center">
 		<h1 class="font-heading text-sm font-semibold tracking-tight text-primary">{title}</h1>
 		<p class="font-heading text-xs font-medium text-foreground/80">{description}</p>
-		<p class="mt-0.5 text-[11px] leading-4 text-muted-foreground">{countLabel}</p>
+		<p class="mt-0.5 leading-4 text-[11px] text-muted-foreground">{countLabel}</p>
 	</div>
 	<div class="relative flex-1 overflow-hidden">
-		<div class="absolute inset-0 grid grid-cols-4 gap-1.5">
+		<div class="inset-0 gap-1.5 absolute grid grid-cols-4">
 			<div class="space-y-1.5">
 				<div class="aspect-square rounded-sm bg-muted-foreground/10"></div>
 				<div class="aspect-square rounded-sm bg-muted-foreground/10"></div>

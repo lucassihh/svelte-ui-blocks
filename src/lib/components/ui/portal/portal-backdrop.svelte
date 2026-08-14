@@ -15,7 +15,7 @@
 <div
 	data-state={state}
 	class={cn(
-		"fixed inset-0 -z-1 bg-background/95 backdrop-blur-sm duration-500 data-[state=closed]:animate-out data-[state=closed]:fade-out-0 data-[state=open]:animate-in data-[state=open]:fade-in-0 supports-backdrop-filter:bg-background/60",
+		"inset-0 backdrop-blur-sm data-[state=closed]:animate-out data-[state=closed]:fade-out-0 data-[state=open]:animate-in data-[state=open]:fade-in-0 fixed -z-1 bg-background/95 duration-500 supports-backdrop-filter:bg-background/60",
 		className
 	)}
 >

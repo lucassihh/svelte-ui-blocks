@@ -31,19 +31,19 @@
 			<div
 				class={cn(
 					"ease-out data-[slot=open]:animate-in data-[slot=open]:zoom-in-97",
-					"size-full p-4"
+					"p-4 size-full"
 				)}
 				out:fade|global={{ duration: 150 }}
 				data-slot={open ? "open" : "closed"}
 			>
-				<div class="grid gap-y-2">
+				<div class="gap-y-2 grid">
 					{#each navLinks as link}
 						<Button class="justify-start" variant="ghost" href={link.href}>
 							{link.label}
 						</Button>
 					{/each}
 				</div>
-				<div class="mt-12 flex flex-col gap-2">
+				<div class="mt-12 gap-2 flex flex-col">
 					<Button class="w-full" variant="outline">Sign In</Button>
 					<Button class="w-full">Get Started</Button>
 				</div>

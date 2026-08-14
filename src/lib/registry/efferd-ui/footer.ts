@@ -1,25 +1,30 @@
 import type { BlockShowcaseItem } from "$lib/components/blocks/blocks-code-three";
 import { createBlockCodeTree } from "$lib/components/blocks/blocks-code-three";
-import FooterFive from "$lib/components/efferd-ui/footer/footer-five.svelte";
-import FooterFour from "$lib/components/efferd-ui/footer/footer-four.svelte";
-import FooterOne from "$lib/components/efferd-ui/footer/footer-one.svelte";
-import FooterSix from "$lib/components/efferd-ui/footer/footer-six.svelte";
-import FooterThree from "$lib/components/efferd-ui/footer/footer-three.svelte";
-import FooterTwo from "$lib/components/efferd-ui/footer/footer-two.svelte";
+import FooterFivePreview from "$lib/components/efferd-ui/footer/footer-five/footer.svelte";
+import FooterFourPreview from "$lib/components/efferd-ui/footer/footer-four/LinkGroup.svelte";
+import FooterOnePreview from "$lib/components/efferd-ui/footer/footer-one/footer.svelte";
+import FooterSixPreview from "$lib/components/efferd-ui/footer/footer-six/AnimatedContainer.svelte";
+import FooterThreePreview from "$lib/components/efferd-ui/footer/footer-three/AnimatedContainer.svelte";
+import FooterTwoPreview from "$lib/components/efferd-ui/footer/footer-two/footer.svelte";
 
-import animatedContainerSource from "$lib/components/efferd-ui/footer/AnimatedContainer.svelte?raw";
-import linkGroupSource from "$lib/components/efferd-ui/footer/LinkGroup.svelte?raw";
-import footerFiveSource from "$lib/components/efferd-ui/footer/footer-five.svelte?raw";
-import footerFourSource from "$lib/components/efferd-ui/footer/footer-four.svelte?raw";
-import footerOneSource from "$lib/components/efferd-ui/footer/footer-one.svelte?raw";
-import footerSixSource from "$lib/components/efferd-ui/footer/footer-six.svelte?raw";
-import footerThreeSource from "$lib/components/efferd-ui/footer/footer-three.svelte?raw";
-import footerTwoSource from "$lib/components/efferd-ui/footer/footer-two.svelte?raw";
-import appleSvgSource from "$lib/assets/svg/brand/apple.svelte?raw";
-import githubSvgSource from "$lib/assets/svg/social/github.svelte?raw";
+import appleSource from "$lib/assets/svg/brand/apple.svelte?raw";
+import facebookSource from "$lib/assets/svg/social/facebook.svelte?raw";
+import footerFooterFiveFooterSource from "$lib/components/efferd-ui/footer/footer-five/footer.svelte?raw";
+import footerFooterFourFooterSource from "$lib/components/efferd-ui/footer/footer-four/footer.svelte?raw";
+import footerFooterFourLinkgroupSource from "$lib/components/efferd-ui/footer/footer-four/LinkGroup.svelte?raw";
+import footerFooterOneFooterSource from "$lib/components/efferd-ui/footer/footer-one/footer.svelte?raw";
+import footerFooterSixAnimatedcontainerSource from "$lib/components/efferd-ui/footer/footer-six/AnimatedContainer.svelte?raw";
+import footerFooterSixFooterSource from "$lib/components/efferd-ui/footer/footer-six/footer.svelte?raw";
+import footerFooterThreeAnimatedcontainerSource from "$lib/components/efferd-ui/footer/footer-three/AnimatedContainer.svelte?raw";
+import footerFooterThreeFooterSource from "$lib/components/efferd-ui/footer/footer-three/footer.svelte?raw";
+import footerFooterTwoFooterSource from "$lib/components/efferd-ui/footer/footer-two/footer.svelte?raw";
+import githubSource from "$lib/assets/svg/social/github.svelte?raw";
+import instagramSource from "$lib/assets/svg/social/instagram.svelte?raw";
+import linkedinSource from "$lib/assets/svg/social/linkedin.svelte?raw";
 import logoSvgSource from "$lib/assets/svg/logo.svelte?raw";
-import playStoreSvgSource from "$lib/assets/svg/brand/play-store.svelte?raw";
-import xSvgSource from "$lib/assets/svg/social/x.svelte?raw";
+import playStoreSource from "$lib/assets/svg/brand/play-store.svelte?raw";
+import xSource from "$lib/assets/svg/social/x.svelte?raw";
+import youtubeSource from "$lib/assets/svg/social/youtube.svelte?raw";
 
 const buttonFiles = [
 	{
@@ -29,34 +34,6 @@ const buttonFiles = [
 		externalLabel: "Shadcn Svelte Button"
 	}
 ];
-
-const animatedContainerFiles = [
-	{
-		id: "shared:animated-container",
-		path: "components/efferd/footer/AnimatedContainer.svelte",
-		lang: "svelte" as const,
-		code: animatedContainerSource
-	}
-];
-
-const linkGroupFiles = [
-	{
-		id: "shared:link-group",
-		path: "components/efferd/footer/LinkGroup.svelte",
-		lang: "svelte" as const,
-		code: linkGroupSource
-	}
-];
-
-const githubFiles = [
-	{
-		id: "shared:github-svg",
-		path: "svgs/social/github.svelte",
-		lang: "svelte" as const,
-		code: githubSvgSource
-	}
-];
-
 const logoFiles = [
 	{
 		id: "shared:logo-svg",
@@ -66,157 +43,137 @@ const logoFiles = [
 	}
 ];
 
-const appleFiles = [
-	{
-		id: "shared:apple-svg",
-		path: "svgs/brand/apple.svelte",
-		lang: "svelte" as const,
-		code: appleSvgSource
-	}
-];
-
-const playStoreFiles = [
-	{
-		id: "shared:play-store-svg",
-		path: "svgs/brand/play-store.svelte",
-		lang: "svelte" as const,
-		code: playStoreSvgSource
-	}
-];
-
-const xFiles = [
-	{
-		id: "shared:x-svg",
-		path: "svgs/social/x.svelte",
-		lang: "svelte" as const,
-		code: xSvgSource
-	}
-];
-
 export const footerBlocks: BlockShowcaseItem[] = [
 	{
-		id: "footer-one",
-		title: "Footer One",
-		description: "A compact product footer with inline social links and a simple closing bar.",
-		previewComponent: FooterOne,
-		previewHref: "/preview/efferd-ui/footer/one",
+		id: "footer-five",
+		title: "Footer Five",
+		description: "A Footer Five composition.",
+		previewComponent: FooterFivePreview,
+		previewHref: "/preview/efferd-ui/footer/footer-five",
 		previewMode: "iframe",
-		previewHeight: 280,
-		installId: "footer-one",
-		codeTree: createBlockCodeTree("footer-one:component", [
+		previewHeight: 820,
+		installId: "footer-five",
+		codeTree: createBlockCodeTree("footer-five:preview", [
 			{
-				id: "footer-one:component",
-				path: "components/efferd/footer/footer-one.svelte",
+				id: "footer-five:footer",
+				path: "components/efferd/footer/footer-five/footer.svelte",
 				lang: "svelte",
-				code: footerOneSource
+				code: footerFooterFiveFooterSource
 			},
-			...buttonFiles,
-			...githubFiles,
-			...logoFiles,
-			...xFiles
-		])
-	},
-	{
-		id: "footer-two",
-		title: "Footer Two",
-		description: "A structured multi-column footer with brand intro and outlined social actions.",
-		previewComponent: FooterTwo,
-		previewHref: "/preview/efferd-ui/footer/two",
-		previewMode: "iframe",
-		previewHeight: 360,
-		installId: "footer-two",
-		codeTree: createBlockCodeTree("footer-two:component", [
-			{
-				id: "footer-two:component",
-				path: "components/efferd/footer/footer-two.svelte",
-				lang: "svelte",
-				code: footerTwoSource
-			},
-			...buttonFiles,
-			...logoFiles,
-			...xFiles
-		])
-	},
-	{
-		id: "footer-three",
-		title: "Footer Three",
-		description: "An animated rounded footer with grouped link columns and softer visual depth.",
-		previewComponent: FooterThree,
-		previewHref: "/preview/efferd-ui/footer/three",
-		previewMode: "iframe",
-		previewHeight: 420,
-		installId: "footer-three",
-		codeTree: createBlockCodeTree("footer-three:component", [
-			{
-				id: "footer-three:component",
-				path: "components/efferd/footer/footer-three.svelte",
-				lang: "svelte",
-				code: footerThreeSource
-			},
-			...animatedContainerFiles,
-			...logoFiles
+			...buttonFiles
 		])
 	},
 	{
 		id: "footer-four",
 		title: "Footer Four",
-		description: "A directory-style footer with stacked social headers and nested link groups.",
-		previewComponent: FooterFour,
-		previewHref: "/preview/efferd-ui/footer/four",
+		description: "A Footer Four composition.",
+		previewComponent: FooterFourPreview,
+		previewHref: "/preview/efferd-ui/footer/footer-four",
 		previewMode: "iframe",
-		previewHeight: 620,
+		previewHeight: 820,
 		installId: "footer-four",
-		codeTree: createBlockCodeTree("footer-four:component", [
+		codeTree: createBlockCodeTree("footer-four:preview", [
 			{
-				id: "footer-four:component",
-				path: "components/efferd/footer/footer-four.svelte",
+				id: "footer-four:LinkGroup",
+				path: "components/efferd/footer/footer-four/LinkGroup.svelte",
 				lang: "svelte",
-				code: footerFourSource
+				code: footerFooterFourLinkgroupSource
 			},
-			...linkGroupFiles
+			{
+				id: "footer-four:footer",
+				path: "components/efferd/footer/footer-four/footer.svelte",
+				lang: "svelte",
+				code: footerFooterFourFooterSource
+			}
 		])
 	},
 	{
-		id: "footer-five",
-		title: "Footer Five",
-		description:
-			"A marketplace-style footer with store badges, social actions, and dense support links.",
-		previewComponent: FooterFive,
-		previewHref: "/preview/efferd-ui/footer/five",
+		id: "footer-one",
+		title: "Footer One",
+		description: "A Footer One composition.",
+		previewComponent: FooterOnePreview,
+		previewHref: "/preview/efferd-ui/footer/footer-one",
 		previewMode: "iframe",
-		previewHeight: 560,
-		installId: "footer-five",
-		codeTree: createBlockCodeTree("footer-five:component", [
+		previewHeight: 820,
+		installId: "footer-one",
+		codeTree: createBlockCodeTree("footer-one:preview", [
 			{
-				id: "footer-five:component",
-				path: "components/efferd/footer/footer-five.svelte",
+				id: "footer-one:footer",
+				path: "components/efferd/footer/footer-one/footer.svelte",
 				lang: "svelte",
-				code: footerFiveSource
+				code: footerFooterOneFooterSource
 			},
 			...buttonFiles,
-			...appleFiles,
-			...playStoreFiles,
-			...xFiles
+			...logoFiles
 		])
 	},
 	{
 		id: "footer-six",
 		title: "Footer Six",
-		description:
-			"A cinematic sticky footer with animated columns and a long-form enterprise sitemap.",
-		previewComponent: FooterSix,
-		previewHref: "/preview/efferd-ui/footer/six",
+		description: "A Footer Six composition.",
+		previewComponent: FooterSixPreview,
+		previewHref: "/preview/efferd-ui/footer/footer-six",
 		previewMode: "iframe",
-		previewHeight: 500,
+		previewHeight: 820,
 		installId: "footer-six",
-		codeTree: createBlockCodeTree("footer-six:component", [
+		codeTree: createBlockCodeTree("footer-six:preview", [
 			{
-				id: "footer-six:component",
-				path: "components/efferd/footer/footer-six.svelte",
+				id: "footer-six:AnimatedContainer",
+				path: "components/efferd/footer/footer-six/AnimatedContainer.svelte",
 				lang: "svelte",
-				code: footerSixSource
+				code: footerFooterSixAnimatedcontainerSource
 			},
-			...animatedContainerFiles,
+			{
+				id: "footer-six:footer",
+				path: "components/efferd/footer/footer-six/footer.svelte",
+				lang: "svelte",
+				code: footerFooterSixFooterSource
+			},
+			...buttonFiles,
+			...logoFiles
+		])
+	},
+	{
+		id: "footer-three",
+		title: "Footer Three",
+		description: "A Footer Three composition.",
+		previewComponent: FooterThreePreview,
+		previewHref: "/preview/efferd-ui/footer/footer-three",
+		previewMode: "iframe",
+		previewHeight: 820,
+		installId: "footer-three",
+		codeTree: createBlockCodeTree("footer-three:preview", [
+			{
+				id: "footer-three:AnimatedContainer",
+				path: "components/efferd/footer/footer-three/AnimatedContainer.svelte",
+				lang: "svelte",
+				code: footerFooterThreeAnimatedcontainerSource
+			},
+			{
+				id: "footer-three:footer",
+				path: "components/efferd/footer/footer-three/footer.svelte",
+				lang: "svelte",
+				code: footerFooterThreeFooterSource
+			},
+			...logoFiles
+		])
+	},
+	{
+		id: "footer-two",
+		title: "Footer Two",
+		description: "A Footer Two composition.",
+		previewComponent: FooterTwoPreview,
+		previewHref: "/preview/efferd-ui/footer/footer-two",
+		previewMode: "iframe",
+		previewHeight: 820,
+		installId: "footer-two",
+		codeTree: createBlockCodeTree("footer-two:preview", [
+			{
+				id: "footer-two:footer",
+				path: "components/efferd/footer/footer-two/footer.svelte",
+				lang: "svelte",
+				code: footerFooterTwoFooterSource
+			},
 			...buttonFiles,
 			...logoFiles
 		])

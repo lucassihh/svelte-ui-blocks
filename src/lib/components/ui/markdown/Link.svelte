@@ -16,7 +16,7 @@
 	{href}
 	{...restProps}
 	class={cn(
-		"text-foreground underline underline-offset-2 transition-[color] duration-150 ease-out hover:text-foreground/70",
+		"ease-out text-foreground underline underline-offset-2 transition-[color] duration-150 hover:text-foreground/70",
 		className
 	)}
 >

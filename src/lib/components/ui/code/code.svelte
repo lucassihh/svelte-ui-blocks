@@ -54,7 +54,7 @@
 	}
 
 	:global(pre.shiki) {
-		@apply overflow-x-auto rounded-lg bg-inherit py-4 text-sm;
+		@apply py-4 text-sm overflow-x-auto rounded-lg bg-inherit;
 	}
 
 	:global(pre.shiki:not([data-code-overflow] *):not([data-code-overflow])) {
@@ -63,7 +63,7 @@
 	}
 
 	:global(pre.shiki code) {
-		@apply grid min-w-full rounded-none border-0 bg-transparent p-0 wrap-break-word;
+		@apply p-0 grid min-w-full rounded-none border-0 bg-transparent wrap-break-word;
 		counter-reset: line;
 		box-decoration-break: clone;
 	}
@@ -95,7 +95,7 @@
 	}
 
 	:global(pre .line) {
-		@apply inline-block min-h-4 w-full px-4 py-0.5;
+		@apply min-h-4 px-4 py-0.5 inline-block w-full;
 	}
 
 	:global(pre.line-numbers .line) {

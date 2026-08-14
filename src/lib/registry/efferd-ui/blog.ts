@@ -1,64 +1,42 @@
 import type { BlockShowcaseItem } from "$lib/components/blocks/blocks-code-three";
 import { createBlockCodeTree } from "$lib/components/blocks/blocks-code-three";
-import BlogOne from "$lib/components/efferd-ui/blogs/blog-one/blog-one.svelte";
-import BlogThree from "$lib/components/efferd-ui/blogs/blog-three/blog-three.svelte";
-import BlogTwo from "$lib/components/efferd-ui/blogs/blog-two/blog-two.svelte";
+import BlogOnePreview from "$lib/components/efferd-ui/blog/blog-one/blog-card.svelte";
+import BlogThreePreview from "$lib/components/efferd-ui/blog/blog-three/blog-card.svelte";
+import BlogTwoPreview from "$lib/components/efferd-ui/blog/blog-two/blog-card.svelte";
 
-import blogOneCardSource from "$lib/components/efferd-ui/blogs/blog-one/blog-card.svelte?raw";
-import blogOneSource from "$lib/components/efferd-ui/blogs/blog-one/blog-one.svelte?raw";
-import blogThreeCardSource from "$lib/components/efferd-ui/blogs/blog-three/blog-card.svelte?raw";
-import blogThreeSource from "$lib/components/efferd-ui/blogs/blog-three/blog-three.svelte?raw";
-import blogTwoCardSource from "$lib/components/efferd-ui/blogs/blog-two/blog-card.svelte?raw";
-import blogTwoSource from "$lib/components/efferd-ui/blogs/blog-two/blog-two.svelte?raw";
 import aspectRatioIndexSource from "$lib/components/ui/aspect-ratio/index.ts?raw";
 import aspectRatioSource from "$lib/components/ui/aspect-ratio/aspect-ratio.svelte?raw";
+import blogBlogOneBlogCardSource from "$lib/components/efferd-ui/blog/blog-one/blog-card.svelte?raw";
+import blogBlogOneBlogSource from "$lib/components/efferd-ui/blog/blog-one/blog.svelte?raw";
+import blogBlogThreeBlogCardSource from "$lib/components/efferd-ui/blog/blog-three/blog-card.svelte?raw";
+import blogBlogThreeBlogSource from "$lib/components/efferd-ui/blog/blog-three/blog.svelte?raw";
+import blogBlogTwoBlogCardSource from "$lib/components/efferd-ui/blog/blog-two/blog-card.svelte?raw";
+import blogBlogTwoBlogSource from "$lib/components/efferd-ui/blog/blog-two/blog.svelte?raw";
 import dividerIndexSource from "$lib/components/ui/full-width-divider/index.ts?raw";
 import dividerSource from "$lib/components/ui/full-width-divider/full-width-divider.svelte?raw";
 import gridFillerIndexSource from "$lib/components/ui/grid-filler/index.ts?raw";
 import gridFillerSource from "$lib/components/ui/grid-filler/grid-filler.svelte?raw";
 
-const dividerFiles = [
+const buttonFiles = [
 	{
-		id: "shared:divider-index",
-		path: "components/ui/full-width-divider/index.ts",
-		lang: "typescript" as const,
-		code: dividerIndexSource
-	},
+		id: "shared:button",
+		path: "components/ui/button/button.svelte",
+		externalUrl: "https://shadcn-svelte.com/docs/components/button",
+		externalLabel: "Shadcn Svelte Button"
+	}
+];
+const dividerFiles = [
 	{
 		id: "shared:divider",
 		path: "components/ui/full-width-divider/full-width-divider.svelte",
 		lang: "svelte" as const,
 		code: dividerSource
-	}
-];
-
-const gridFillerFiles = [
-	{
-		id: "shared:grid-filler-index",
-		path: "components/ui/grid-filler/index.ts",
-		lang: "typescript" as const,
-		code: gridFillerIndexSource
 	},
 	{
-		id: "shared:grid-filler",
-		path: "components/ui/grid-filler/grid-filler.svelte",
-		lang: "svelte" as const,
-		code: gridFillerSource
-	}
-];
-
-const aspectRatioFiles = [
-	{
-		id: "shared:aspect-ratio-index",
-		path: "components/ui/aspect-ratio/index.ts",
+		id: "shared:divider-index",
+		path: "components/ui/full-width-divider/index.ts",
 		lang: "typescript" as const,
-		code: aspectRatioIndexSource
-	},
-	{
-		id: "shared:aspect-ratio",
-		path: "components/ui/aspect-ratio/aspect-ratio.svelte",
-		lang: "svelte" as const,
-		code: aspectRatioSource
+		code: dividerIndexSource
 	}
 ];
 
@@ -66,24 +44,49 @@ export const blogBlocks: BlockShowcaseItem[] = [
 	{
 		id: "blog-one",
 		title: "Blog One",
-		description: "A vertical editorial list with full-width dividers and compact summaries.",
-		previewComponent: BlogOne,
-		previewHref: "/preview/efferd-ui/blog/one",
+		description: "A Blog One composition.",
+		previewComponent: BlogOnePreview,
+		previewHref: "/preview/efferd-ui/blog/blog-one",
 		previewMode: "iframe",
-		previewHeight: 900,
+		previewHeight: 820,
 		installId: "blog-one",
-		codeTree: createBlockCodeTree("blog-one:component", [
+		codeTree: createBlockCodeTree("blog-one:preview", [
 			{
-				id: "blog-one:component",
-				path: "components/efferd/blogs/blog-one/blog-one.svelte",
+				id: "blog-one:blog-card",
+				path: "components/efferd/blog/blog-one/blog-card.svelte",
 				lang: "svelte",
-				code: blogOneSource
+				code: blogBlogOneBlogCardSource
 			},
 			{
-				id: "blog-one:card",
-				path: "components/efferd/blogs/blog-one/blog-card.svelte",
+				id: "blog-one:blog",
+				path: "components/efferd/blog/blog-one/blog.svelte",
 				lang: "svelte",
-				code: blogOneCardSource
+				code: blogBlogOneBlogSource
+			},
+			...dividerFiles
+		])
+	},
+	{
+		id: "blog-three",
+		title: "Blog Three",
+		description: "A Blog Three composition.",
+		previewComponent: BlogThreePreview,
+		previewHref: "/preview/efferd-ui/blog/blog-three",
+		previewMode: "iframe",
+		previewHeight: 820,
+		installId: "blog-three",
+		codeTree: createBlockCodeTree("blog-three:preview", [
+			{
+				id: "blog-three:blog-card",
+				path: "components/efferd/blog/blog-three/blog-card.svelte",
+				lang: "svelte",
+				code: blogBlogThreeBlogCardSource
+			},
+			{
+				id: "blog-three:blog",
+				path: "components/efferd/blog/blog-three/blog.svelte",
+				lang: "svelte",
+				code: blogBlogThreeBlogSource
 			},
 			...dividerFiles
 		])
@@ -91,51 +94,26 @@ export const blogBlocks: BlockShowcaseItem[] = [
 	{
 		id: "blog-two",
 		title: "Blog Two",
-		description: "A structured blog grid with metadata rows and filler cells for balance.",
-		previewComponent: BlogTwo,
-		previewHref: "/preview/efferd-ui/blog/two",
-		previewMode: "inline",
+		description: "A Blog Two composition.",
+		previewComponent: BlogTwoPreview,
+		previewHref: "/preview/efferd-ui/blog/blog-two",
+		previewMode: "iframe",
+		previewHeight: 820,
 		installId: "blog-two",
-		codeTree: createBlockCodeTree("blog-two:component", [
+		codeTree: createBlockCodeTree("blog-two:preview", [
 			{
-				id: "blog-two:component",
-				path: "components/efferd/blogs/blog-two/blog-two.svelte",
+				id: "blog-two:blog-card",
+				path: "components/efferd/blog/blog-two/blog-card.svelte",
 				lang: "svelte",
-				code: blogTwoSource
+				code: blogBlogTwoBlogCardSource
 			},
 			{
-				id: "blog-two:card",
-				path: "components/efferd/blogs/blog-two/blog-card.svelte",
+				id: "blog-two:blog",
+				path: "components/efferd/blog/blog-two/blog.svelte",
 				lang: "svelte",
-				code: blogTwoCardSource
+				code: blogBlogTwoBlogSource
 			},
-			...dividerFiles,
-			...gridFillerFiles
-		])
-	},
-	{
-		id: "blog-three",
-		title: "Blog Three",
-		description: "A card-based blog grid with media thumbnails and richer reading metadata.",
-		previewComponent: BlogThree,
-		previewHref: "/preview/efferd-ui/blog/three",
-		previewMode: "inline",
-		installId: "blog-three",
-		codeTree: createBlockCodeTree("blog-three:component", [
-			{
-				id: "blog-three:component",
-				path: "components/efferd/blogs/blog-three/blog-three.svelte",
-				lang: "svelte",
-				code: blogThreeSource
-			},
-			{
-				id: "blog-three:card",
-				path: "components/efferd/blogs/blog-three/blog-card.svelte",
-				lang: "svelte",
-				code: blogThreeCardSource
-			},
-			...dividerFiles,
-			...aspectRatioFiles
+			...dividerFiles
 		])
 	}
 ];

@@ -60,14 +60,14 @@
 </script>
 
 <!-- border-t -->
-<div class="flex flex-col sm:min-h-[36rem] sm:flex-row">
+<div class="sm:min-h-[36rem] sm:flex-row flex flex-col">
 	<div
-		class="w-full border-b bg-neutral-50 text-black [--color-background:var(--color-zinc-900)] [--color-foreground:white] [--color-muted:var(--color-zinc-800)] sm:w-72 sm:border-r sm:border-b-0 dark:bg-zinc-900/25 dark:text-white"
+		class="bg-neutral-50 text-black sm:w-72 sm:border-r sm:border-b-0 dark:bg-zinc-900/25 dark:text-white w-full border-b [--color-background:var(--color-zinc-900)] [--color-foreground:white] [--color-muted:var(--color-zinc-800)]"
 	>
-		<div class="border-b px-4 py-3 font-mono text-sm tracking-wider text-muted-foreground">
+		<div class="px-4 py-3 text-sm tracking-wider border-b font-mono text-muted-foreground">
 			Files
 		</div>
-		<div class="max-h-[18rem] overflow-auto px-2 py-3 sm:max-h-[36rem]">
+		<div class="px-2 py-3 sm:max-h-[36rem] max-h-[18rem] overflow-auto">
 			{#each codeTree.nodes as node (node.id)}
 				<CodeTreeNode
 					{node}
@@ -80,13 +80,13 @@
 		</div>
 	</div>
 
-	<div class="relative min-h-[32rem] min-w-0 flex-1">
-		<div class="flex items-center justify-between gap-3 border-b py-1.5 pr-2 pl-4">
-			<p class="min-w-0 truncate font-mono text-sm tracking-wider text-muted-foreground">
+	<div class="min-w-0 relative min-h-[32rem] flex-1">
+		<div class="gap-3 py-1.5 pr-2 pl-4 flex items-center justify-between border-b">
+			<p class="min-w-0 text-sm tracking-wider truncate font-mono text-muted-foreground">
 				{activeFile?.name ?? "No file selected"}
 			</p>
 
-			<div class="flex items-center gap-1">
+			<div class="gap-1 flex items-center">
 				{#if activeFile?.externalUrl}
 					<Button
 						class="h-8 gap-1.5 px-3 text-xs"
@@ -125,7 +125,7 @@
 		{#if activeFile?.code}
 			<Code code={activeFile.code} lang={activeFile.lang} highlight={activeFile.highlight} />
 		{:else if activeFile?.externalUrl}
-			<div class="flex min-h-[20rem] items-center justify-center px-6">
+			<div class="px-6 flex min-h-[20rem] items-center justify-center">
 				<div class="max-w-md text-center">
 					<p class="text-sm font-medium text-foreground">
 						{activeFile.externalLabel ?? activeFile.name}
@@ -144,7 +144,7 @@
 			</div>
 		{:else}
 			<div
-				class="flex h-full min-h-[20rem] items-center justify-center px-6 text-sm text-muted-foreground"
+				class="px-6 text-sm flex h-full min-h-[20rem] items-center justify-center text-muted-foreground"
 			>
 				No code files are available for this block yet.
 			</div>

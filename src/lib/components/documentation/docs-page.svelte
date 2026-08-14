@@ -22,13 +22,13 @@
 
 <section class={cn("mx-auto w-full", className)}>
 	<div class="overflow-hidden">
-		<div class="border-b border-border/80 px-4 py-8">
-			<div class="mx-auto max-w-3xl">
+		<div class="px-4 py-8 border-b border-border/80">
+			<div class="max-w-3xl mx-auto">
 				<H1>{title}</H1>
 				<Paragraph class="max-w-2xl text-base leading-7 sm:text-base">{description}</Paragraph>
 
 				{#if actions}
-					<div class="mt-5 flex flex-wrap gap-2">
+					<div class="mt-5 gap-2 flex flex-wrap">
 						{@render actions()}
 					</div>
 				{/if}
@@ -36,7 +36,7 @@
 		</div>
 
 		<div class="px-4 py-8">
-			<div class="mx-auto max-w-3xl">
+			<div class="max-w-3xl mx-auto">
 				{@render children?.()}
 			</div>
 		</div>

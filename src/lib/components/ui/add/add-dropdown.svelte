@@ -14,7 +14,7 @@
 <DropdownMenu.Root>
 	<DropdownMenu.Trigger
 		class={cn(
-			"flex size-9 items-center justify-center rounded-r-md transition-colors hover:bg-accent [&_svg]:size-3.5",
+			"size-9 [&_svg]:size-3.5 flex items-center justify-center rounded-r-md transition-colors hover:bg-accent",
 			className
 		)}
 		{...rest}

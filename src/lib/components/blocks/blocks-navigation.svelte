@@ -17,14 +17,14 @@
 		{ slug: "hero", label: "Hero" },
 		{ slug: "header", label: "Header" },
 		{ slug: "logo-cloud", label: "Logo Cloud" },
-		{ slug: "features", label: "Features" },
-		{ slug: "integrations", label: "Integrations" },
-		{ slug: "testimonials", label: "Testimonials" },
+		{ slug: "feature", label: "Features" },
+		{ slug: "integration", label: "Integrations" },
+		{ slug: "testimonial", label: "Testimonials" },
 		{ slug: "cta", label: "CTA" },
 		{ slug: "pricing", label: "Pricing" },
 		{ slug: "blog", label: "Blog" },
 		{ slug: "auth", label: "Auth" },
-		{ slug: "faqs", label: "FAQ's" },
+		{ slug: "faq", label: "FAQ's" },
 		{ slug: "contact", label: "Contact" },
 		{ slug: "footer", label: "Footer" },
 		{ slug: "image-gallery", label: "Image Gallery" },
@@ -42,12 +42,12 @@
 </script>
 
 <div
-	class="sticky top-15 right-0 left-0 z-40 mx-auto w-full max-w-7xl border-b border-dashed bg-background/80 backdrop-blur-xs"
+	class="top-15 right-0 left-0 max-w-7xl backdrop-blur-xs sticky z-40 mx-auto w-full border-b border-dashed bg-background/80"
 >
 	<ScrollArea orientation="horizontal" fade={false} class="w-full" scrollbarXClasses="hidden">
-		<div class="mx-auto w-fit max-w-7xl">
+		<div class="max-w-7xl mx-auto w-fit">
 			<ul
-				class="relative flex h-12 min-w-max snap-x snap-mandatory items-center gap-6 px-4 sm:px-6 lg:gap-4"
+				class="h-12 gap-6 px-4 sm:px-6 lg:gap-4 relative flex min-w-max snap-x snap-mandatory items-center"
 			>
 				{#each blockCategories as category}
 					<li
@@ -59,7 +59,7 @@
 						<a
 							href={`/blocks/${library}/${category.slug}`}
 							class={cn(
-								"flex h-7 w-fit items-center rounded-sm px-1 text-[13px] text-nowrap text-muted-foreground transition-all duration-300 hover:text-foreground lg:-mx-2 lg:px-3 dark:text-muted-foreground",
+								"h-7 px-1 lg:-mx-2 lg:px-3 flex w-fit items-center rounded-sm text-[13px] text-nowrap text-muted-foreground transition-all duration-300 hover:text-foreground dark:text-muted-foreground",
 								isActive(category.slug) && "text-primary!"
 							)}
 						>

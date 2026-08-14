@@ -13,29 +13,29 @@
 <button
 	type="button"
 	class={cn(
-		"flex min-w-0 flex-1 place-items-center rounded-l-md transition-colors hover:bg-accent md:pr-2 [&_svg]:size-3.5",
+		"min-w-0 md:pr-2 [&_svg]:size-3.5 flex flex-1 place-items-center rounded-l-md transition-colors hover:bg-accent",
 		className
 	)}
 	{...rest}
 	{...buttonState.props}
 >
-	<div class="flex size-9 items-center justify-center">
+	<div class="size-9 flex items-center justify-center">
 		<CheckIcon
 			class={cn(
-				"absolute scale-0 transition-all ease-out",
+				"ease-out absolute scale-0 transition-all",
 				buttonState.root.clipboard.copied && "scale-100"
 			)}
 		/>
 		<AddAgentLogo
 			agent={buttonState.root.agent}
 			class={cn(
-				"absolute scale-100 transition-all ease-out",
+				"ease-out absolute scale-100 transition-all",
 				buttonState.root.clipboard.copied && "scale-0"
 			)}
 		/>
 	</div>
 	<span
-		class="flex-1 overflow-hidden pr-1 text-left font-mono text-[9px] leading-4 text-nowrap break-all text-ellipsis select-text md:w-60 md:flex-none md:pr-0 md:text-xs"
+		class="pr-1 leading-4 md:w-60 md:flex-none md:pr-0 md:text-xs flex-1 overflow-hidden text-left font-mono text-[9px] text-nowrap break-all text-ellipsis select-text"
 	>
 		{buttonState.root.addCommand}
 	</span>

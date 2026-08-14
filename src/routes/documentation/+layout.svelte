@@ -18,23 +18,21 @@
 </script>
 
 <!-- Documentation Layout -->
-<div
-	class="w-full max-w-7xl mx-auto flex flex-col justify-center bg-card mt-4 md:flex-row md:p-2"
->   
+<div class="mt-4 max-w-7xl md:flex-row md:p-2 mx-auto flex w-full flex-col justify-center bg-card">
 	<!-- Desktop Aside -->
-    <div class="hidden md:block">
-	    <DesktopNavbar />
-    </div>
-    
-	<main class="min-h-screen w-full overflow-hidden bg-background md:rounded-xl">
-    	<!-- Breadcrumb and Mobile Drawer -->
-		<div class="flex items-center gap-2 p-4">
-			<div class="block md:hidden">
+	<div class="md:block hidden">
+		<DesktopNavbar />
+	</div>
+
+	<main class="md:rounded-xl min-h-screen w-full overflow-hidden bg-background">
+		<!-- Breadcrumb and Mobile Drawer -->
+		<div class="gap-2 p-4 flex items-center">
+			<div class="md:hidden block">
 				<MobileDrawer />
 			</div>
 			<DocsBreadcrumb />
 		</div>
-        
+
 		{@render children?.()}
 
 		{#if visible}
@@ -42,7 +40,7 @@
 		{/if}
 
 		{#snippet scrollToTop()}
-			<div in:fly={{ y: 20 }} out:fly={{ y: 20 }} class="fixed right-4 bottom-4 z-50">
+			<div in:fly={{ y: 20 }} out:fly={{ y: 20 }} class="right-4 bottom-4 fixed z-50">
 				<Button
 					size="icon"
 					variant="secondary"

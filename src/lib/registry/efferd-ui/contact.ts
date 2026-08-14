@@ -1,19 +1,21 @@
 import type { BlockShowcaseItem } from "$lib/components/blocks/blocks-code-three";
 import { createBlockCodeTree } from "$lib/components/blocks/blocks-code-three";
-import ContactFive from "$lib/components/efferd-ui/contact/contact-five.svelte";
-import ContactFour from "$lib/components/efferd-ui/contact/contact-four.svelte";
-import ContactOne from "$lib/components/efferd-ui/contact/contact-one.svelte";
-import ContactThree from "$lib/components/efferd-ui/contact/contact-three.svelte";
-import ContactTwo from "$lib/components/efferd-ui/contact/contact-two.svelte";
+import ContactFivePreview from "$lib/components/efferd-ui/contact/contact-five/contact.svelte";
+import ContactFourPreview from "$lib/components/efferd-ui/contact/contact-four/contact.svelte";
+import ContactOnePreview from "$lib/components/efferd-ui/contact/contact-one/contact.svelte";
+import ContactThreePreview from "$lib/components/efferd-ui/contact/contact-three/contact.svelte";
+import ContactTwoPreview from "$lib/components/efferd-ui/contact/contact-two/contact.svelte";
 
-import contactFiveSource from "$lib/components/efferd-ui/contact/contact-five.svelte?raw";
-import contactFormSource from "$lib/components/efferd-ui/contact/contact-form.svelte?raw";
-import contactFourSource from "$lib/components/efferd-ui/contact/contact-four.svelte?raw";
-import contactOneSource from "$lib/components/efferd-ui/contact/contact-one.svelte?raw";
-import contactThreeSource from "$lib/components/efferd-ui/contact/contact-three.svelte?raw";
-import contactTwoSource from "$lib/components/efferd-ui/contact/contact-two.svelte?raw";
+import contactContactFiveContactFormSource from "$lib/components/efferd-ui/contact/contact-five/contact-form.svelte?raw";
+import contactContactFiveContactSource from "$lib/components/efferd-ui/contact/contact-five/contact.svelte?raw";
+import contactContactFourContactSource from "$lib/components/efferd-ui/contact/contact-four/contact.svelte?raw";
+import contactContactOneContactSource from "$lib/components/efferd-ui/contact/contact-one/contact.svelte?raw";
+import contactContactThreeContactSource from "$lib/components/efferd-ui/contact/contact-three/contact.svelte?raw";
+import contactContactTwoContactSource from "$lib/components/efferd-ui/contact/contact-two/contact.svelte?raw";
 import decorIconIndexSource from "$lib/components/ui/decor-icon/index.ts?raw";
 import decorIconSource from "$lib/components/ui/decor-icon/decor-icon.svelte?raw";
+import dividerIndexSource from "$lib/components/ui/full-width-divider/index.ts?raw";
+import dividerSource from "$lib/components/ui/full-width-divider/full-width-divider.svelte?raw";
 import fieldContentSource from "$lib/components/ui/field/field-content.svelte?raw";
 import fieldDescriptionSource from "$lib/components/ui/field/field-description.svelte?raw";
 import fieldErrorSource from "$lib/components/ui/field/field-error.svelte?raw";
@@ -21,18 +23,16 @@ import fieldGroupSource from "$lib/components/ui/field/field-group.svelte?raw";
 import fieldIndexSource from "$lib/components/ui/field/index.ts?raw";
 import fieldLabelSource from "$lib/components/ui/field/field-label.svelte?raw";
 import fieldLegendSource from "$lib/components/ui/field/field-legend.svelte?raw";
-import fieldRootSource from "$lib/components/ui/field/field.svelte?raw";
 import fieldSeparatorSource from "$lib/components/ui/field/field-separator.svelte?raw";
 import fieldSetSource from "$lib/components/ui/field/field-set.svelte?raw";
+import fieldSource from "$lib/components/ui/field/field.svelte?raw";
 import fieldTitleSource from "$lib/components/ui/field/field-title.svelte?raw";
-import dividerIndexSource from "$lib/components/ui/full-width-divider/index.ts?raw";
-import dividerSource from "$lib/components/ui/full-width-divider/full-width-divider.svelte?raw";
+import githubSource from "$lib/assets/svg/social/github.svelte?raw";
 import inputIndexSource from "$lib/components/ui/input/index.ts?raw";
 import inputSource from "$lib/components/ui/input/input.svelte?raw";
 import textareaIndexSource from "$lib/components/ui/textarea/index.ts?raw";
 import textareaSource from "$lib/components/ui/textarea/textarea.svelte?raw";
-import githubSvgSource from "$lib/assets/svg/social/github.svelte?raw";
-import xSvgSource from "$lib/assets/svg/social/x.svelte?raw";
+import xSource from "$lib/assets/svg/social/x.svelte?raw";
 
 const buttonFiles = [
 	{
@@ -42,170 +42,115 @@ const buttonFiles = [
 		externalLabel: "Shadcn Svelte Button"
 	}
 ];
-
-const dividerFiles = [
-	{
-		id: "shared:divider-index",
-		path: "components/ui/full-width-divider/index.ts",
-		lang: "typescript" as const,
-		code: dividerIndexSource
-	},
-	{
-		id: "shared:divider",
-		path: "components/ui/full-width-divider/full-width-divider.svelte",
-		lang: "svelte" as const,
-		code: dividerSource
-	}
-];
-
 const decorIconFiles = [
-	{
-		id: "shared:decor-icon-index",
-		path: "components/ui/decor-icon/index.ts",
-		lang: "typescript" as const,
-		code: decorIconIndexSource
-	},
 	{
 		id: "shared:decor-icon",
 		path: "components/ui/decor-icon/decor-icon.svelte",
 		lang: "svelte" as const,
 		code: decorIconSource
-	}
-];
-
-const fieldFiles = [
+	},
 	{
-		id: "shared:field-index",
-		path: "components/ui/field/index.ts",
+		id: "shared:decor-icon-index",
+		path: "components/ui/decor-icon/index.ts",
 		lang: "typescript" as const,
-		code: fieldIndexSource
-	},
-	{
-		id: "shared:field-root",
-		path: "components/ui/field/field.svelte",
-		lang: "svelte" as const,
-		code: fieldRootSource
-	},
-	{
-		id: "shared:field-set",
-		path: "components/ui/field/field-set.svelte",
-		lang: "svelte" as const,
-		code: fieldSetSource
-	},
-	{
-		id: "shared:field-legend",
-		path: "components/ui/field/field-legend.svelte",
-		lang: "svelte" as const,
-		code: fieldLegendSource
-	},
-	{
-		id: "shared:field-group",
-		path: "components/ui/field/field-group.svelte",
-		lang: "svelte" as const,
-		code: fieldGroupSource
-	},
-	{
-		id: "shared:field-content",
-		path: "components/ui/field/field-content.svelte",
-		lang: "svelte" as const,
-		code: fieldContentSource
-	},
-	{
-		id: "shared:field-label",
-		path: "components/ui/field/field-label.svelte",
-		lang: "svelte" as const,
-		code: fieldLabelSource
-	},
-	{
-		id: "shared:field-title",
-		path: "components/ui/field/field-title.svelte",
-		lang: "svelte" as const,
-		code: fieldTitleSource
-	},
-	{
-		id: "shared:field-description",
-		path: "components/ui/field/field-description.svelte",
-		lang: "svelte" as const,
-		code: fieldDescriptionSource
-	},
-	{
-		id: "shared:field-separator",
-		path: "components/ui/field/field-separator.svelte",
-		lang: "svelte" as const,
-		code: fieldSeparatorSource
-	},
-	{
-		id: "shared:field-error",
-		path: "components/ui/field/field-error.svelte",
-		lang: "svelte" as const,
-		code: fieldErrorSource
+		code: decorIconIndexSource
 	}
 ];
-
-const inputFiles = [
+const dividerFiles = [
 	{
-		id: "shared:input-index",
-		path: "components/ui/input/index.ts",
+		id: "shared:divider",
+		path: "components/ui/full-width-divider/full-width-divider.svelte",
+		lang: "svelte" as const,
+		code: dividerSource
+	},
+	{
+		id: "shared:divider-index",
+		path: "components/ui/full-width-divider/index.ts",
 		lang: "typescript" as const,
-		code: inputIndexSource
-	},
-	{
-		id: "shared:input",
-		path: "components/ui/input/input.svelte",
-		lang: "svelte" as const,
-		code: inputSource
-	}
-];
-
-const textareaFiles = [
-	{
-		id: "shared:textarea-index",
-		path: "components/ui/textarea/index.ts",
-		lang: "typescript" as const,
-		code: textareaIndexSource
-	},
-	{
-		id: "shared:textarea",
-		path: "components/ui/textarea/textarea.svelte",
-		lang: "svelte" as const,
-		code: textareaSource
-	}
-];
-
-const xSvgFiles = [
-	{
-		id: "shared:x-svg",
-		path: "svgs/social/x.svelte",
-		lang: "svelte" as const,
-		code: xSvgSource
-	}
-];
-
-const githubSvgFiles = [
-	{
-		id: "shared:github-svg",
-		path: "svgs/social/github.svelte",
-		lang: "svelte" as const,
-		code: githubSvgSource
+		code: dividerIndexSource
 	}
 ];
 
 export const contactBlocks: BlockShowcaseItem[] = [
 	{
+		id: "contact-five",
+		title: "Contact Five",
+		description: "A Contact Five composition.",
+		previewComponent: ContactFivePreview,
+		previewHref: "/preview/efferd-ui/contact/contact-five",
+		previewMode: "iframe",
+		previewHeight: 820,
+		installId: "contact-five",
+		codeTree: createBlockCodeTree("contact-five:preview", [
+			{
+				id: "contact-five:contact-form",
+				path: "components/efferd/contact/contact-five/contact-form.svelte",
+				lang: "svelte",
+				code: contactContactFiveContactFormSource
+			},
+			{
+				id: "contact-five:contact",
+				path: "components/efferd/contact/contact-five/contact.svelte",
+				lang: "svelte",
+				code: contactContactFiveContactSource
+			},
+			...buttonFiles,
+			...decorIconFiles
+		])
+	},
+	{
+		id: "contact-four",
+		title: "Contact Four",
+		description: "A Contact Four composition.",
+		previewComponent: ContactFourPreview,
+		previewHref: "/preview/efferd-ui/contact/contact-four",
+		previewMode: "iframe",
+		previewHeight: 820,
+		installId: "contact-four",
+		codeTree: createBlockCodeTree("contact-four:preview", [
+			{
+				id: "contact-four:contact",
+				path: "components/efferd/contact/contact-four/contact.svelte",
+				lang: "svelte",
+				code: contactContactFourContactSource
+			},
+			...buttonFiles
+		])
+	},
+	{
 		id: "contact-one",
 		title: "Contact One",
-		description: "A compact contact strip with quick details framed by full-width dividers.",
-		previewComponent: ContactOne,
-		previewHref: "/preview/efferd-ui/contact/one",
-		previewMode: "inline",
-		previewHeight: 420,
+		description: "A Contact One composition.",
+		previewComponent: ContactOnePreview,
+		previewHref: "/preview/efferd-ui/contact/contact-one",
+		previewMode: "iframe",
+		previewHeight: 820,
 		installId: "contact-one",
-		codeTree: createBlockCodeTree("contact-one:component", [
+		codeTree: createBlockCodeTree("contact-one:preview", [
 			{
-				id: "contact-one:component",
-				path: "components/efferd/contact/contact-one.svelte",
+				id: "contact-one:contact",
+				path: "components/efferd/contact/contact-one/contact.svelte",
 				lang: "svelte",
-				code: contactOneSource
+				code: contactContactOneContactSource
+			},
+			...dividerFiles
+		])
+	},
+	{
+		id: "contact-three",
+		title: "Contact Three",
+		description: "A Contact Three composition.",
+		previewComponent: ContactThreePreview,
+		previewHref: "/preview/efferd-ui/contact/contact-three",
+		previewMode: "iframe",
+		previewHeight: 820,
+		installId: "contact-three",
+		codeTree: createBlockCodeTree("contact-three:preview", [
+			{
+				id: "contact-three:contact",
+				path: "components/efferd/contact/contact-three/contact.svelte",
+				lang: "svelte",
+				code: contactContactThreeContactSource
 			},
 			...dividerFiles
 		])
@@ -213,94 +158,20 @@ export const contactBlocks: BlockShowcaseItem[] = [
 	{
 		id: "contact-two",
 		title: "Contact Two",
-		description: "A three-column contact hub for email, social DMs, and community support.",
-		previewComponent: ContactTwo,
-		previewHref: "/preview/efferd-ui/contact/two",
-		previewMode: "inline",
-		previewHeight: 520,
-		installId: "contact-two",
-		codeTree: createBlockCodeTree("contact-two:component", [
-			{
-				id: "contact-two:component",
-				path: "components/efferd/contact/contact-two.svelte",
-				lang: "svelte",
-				code: contactTwoSource
-			},
-			...buttonFiles,
-			...xSvgFiles
-		])
-	},
-	{
-		id: "contact-three",
-		title: "Contact Three",
-		description:
-			"A full-page contact layout with detailed channels, office info, and social links.",
-		previewComponent: ContactThree,
-		previewHref: "/preview/efferd-ui/contact/three",
+		description: "A Contact Two composition.",
+		previewComponent: ContactTwoPreview,
+		previewHref: "/preview/efferd-ui/contact/contact-two",
 		previewMode: "iframe",
-		previewHeight: 980,
-		installId: "contact-three",
-		codeTree: createBlockCodeTree("contact-three:component", [
-			{
-				id: "contact-three:component",
-				path: "components/efferd/contact/contact-three.svelte",
-				lang: "svelte",
-				code: contactThreeSource
-			},
-			...dividerFiles,
-			...githubSvgFiles,
-			...xSvgFiles
-		])
-	},
-	{
-		id: "contact-four",
-		title: "Contact Four",
-		description: "A split contact form with direct support details and a structured inquiry panel.",
-		previewComponent: ContactFour,
-		previewHref: "/preview/efferd-ui/contact/four",
-		previewMode: "inline",
 		previewHeight: 820,
-		installId: "contact-four",
-		codeTree: createBlockCodeTree("contact-four:component", [
+		installId: "contact-two",
+		codeTree: createBlockCodeTree("contact-two:preview", [
 			{
-				id: "contact-four:component",
-				path: "components/efferd/contact/contact-four.svelte",
+				id: "contact-two:contact",
+				path: "components/efferd/contact/contact-two/contact.svelte",
 				lang: "svelte",
-				code: contactFourSource
+				code: contactContactTwoContactSource
 			},
-			...buttonFiles,
-			...fieldFiles,
-			...inputFiles,
-			...textareaFiles
-		])
-	},
-	{
-		id: "contact-five",
-		title: "Contact Five",
-		description: "A bordered contact card pairing essential details with a reusable message form.",
-		previewComponent: ContactFive,
-		previewHref: "/preview/efferd-ui/contact/five",
-		previewMode: "inline",
-		previewHeight: 860,
-		installId: "contact-five",
-		codeTree: createBlockCodeTree("contact-five:component", [
-			{
-				id: "contact-five:component",
-				path: "components/efferd/contact/contact-five.svelte",
-				lang: "svelte",
-				code: contactFiveSource
-			},
-			{
-				id: "contact-five:form",
-				path: "components/efferd/contact/contact-form.svelte",
-				lang: "svelte",
-				code: contactFormSource
-			},
-			...buttonFiles,
-			...decorIconFiles,
-			...fieldFiles,
-			...inputFiles,
-			...textareaFiles
+			...buttonFiles
 		])
 	}
 ];

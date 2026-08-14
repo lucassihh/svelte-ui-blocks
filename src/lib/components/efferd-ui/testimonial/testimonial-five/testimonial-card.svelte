@@ -20,16 +20,16 @@
 
 <div
 	class={cn(
-		"relative grid grid-cols-[auto_1fr] gap-x-3 overflow-hidden bg-background p-4",
+		"gap-x-3 p-4 relative grid grid-cols-[auto_1fr] overflow-hidden bg-background",
 		className
 	)}
 	{...props}
 >
 	<div
-		class="pointer-events-none absolute top-0 left-1/2 -mt-2 -ml-20 size-full mask-[radial-gradient(farthest-side_at_top,white,transparent)]"
+		class="top-0 -mt-2 -ml-20 pointer-events-none absolute left-1/2 size-full mask-[radial-gradient(farthest-side_at_top,white,transparent)]"
 	>
 		<GridPattern
-			class="absolute inset-0 size-full stroke-border"
+			class="inset-0 absolute size-full stroke-border"
 			height={25}
 			width={25}
 			x={-12}
@@ -43,8 +43,8 @@
 	</Avatar>
 	<figure>
 		<figcaption class="-mt-0.5 -space-y-0.5">
-			<cite class="text-sm not-italic md:text-base">{testimonial.name}</cite>
-			<span class="block text-[11px] font-light tracking-tight text-muted-foreground">
+			<cite class="text-sm md:text-base not-italic">{testimonial.name}</cite>
+			<span class="font-light tracking-tight block text-[11px] text-muted-foreground">
 				{testimonial.role}
 				{testimonial.company && `, ${testimonial.company}`}
 			</span>
