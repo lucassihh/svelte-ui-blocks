@@ -1,6 +1,6 @@
 <script lang="ts">
 	import { ChevronLeftIcon } from "@lucide/svelte";
-	import { Particles } from "$lib/components/magic-ui/particles";
+	import { Particles } from "$lib/components/ui-blocks/magic-ui/particles";
 	import { Button } from "$lib/components/ui/button";
 
 	// SVG

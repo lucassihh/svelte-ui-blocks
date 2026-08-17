@@ -1,17 +1,21 @@
-import type { BlockShowcaseItem } from "$lib/components/blocks/blocks-code-three";
-import { createBlockCodeTree } from "$lib/components/blocks/blocks-code-three";
-import AuthFivePreview from "$lib/components/efferd-ui/auth/auth-five/auth.svelte";
-import AuthFourPreview from "$lib/components/efferd-ui/auth/auth-four/auth.svelte";
-import AuthOnePreview from "$lib/components/efferd-ui/auth/auth-one/auth.svelte";
-import AuthThreePreview from "$lib/components/efferd-ui/auth/auth-three/auth.svelte";
-import AuthTwoPreview from "$lib/components/efferd-ui/auth/auth-two/auth.svelte";
+// CodeTree Component
+import type { BlockShowcaseItem } from "$lib/components/blocks/blocks-code-tree";
+import { createBlockCodeTree } from "$lib/components/blocks/blocks-code-tree";
 
+// Preview Imports
+import AuthFivePreview from "$lib/components/ui-blocks/efferd-ui/auth/auth-five/auth.svelte";
+import AuthFourPreview from "$lib/components/ui-blocks/efferd-ui/auth/auth-four/auth.svelte";
+import AuthOnePreview from "$lib/components/ui-blocks/efferd-ui/auth/auth-one/auth.svelte";
+import AuthThreePreview from "$lib/components/ui-blocks/efferd-ui/auth/auth-three/auth.svelte";
+import AuthTwoPreview from "$lib/components/ui-blocks/efferd-ui/auth/auth-two/auth.svelte";
+
+// Raw
 import appleSource from "$lib/assets/svg/brand/apple.svelte?raw";
-import authAuthFiveAuthSource from "$lib/components/efferd-ui/auth/auth-five/auth.svelte?raw";
-import authAuthFourAuthSource from "$lib/components/efferd-ui/auth/auth-four/auth.svelte?raw";
-import authAuthOneAuthSource from "$lib/components/efferd-ui/auth/auth-one/auth.svelte?raw";
-import authAuthThreeAuthSource from "$lib/components/efferd-ui/auth/auth-three/auth.svelte?raw";
-import authAuthTwoAuthSource from "$lib/components/efferd-ui/auth/auth-two/auth.svelte?raw";
+import authAuthFiveAuthSource from "$lib/components/ui-blocks/efferd-ui/auth/auth-five/auth.svelte?raw";
+import authAuthFourAuthSource from "$lib/components/ui-blocks/efferd-ui/auth/auth-four/auth.svelte?raw";
+import authAuthOneAuthSource from "$lib/components/ui-blocks/efferd-ui/auth/auth-one/auth.svelte?raw";
+import authAuthThreeAuthSource from "$lib/components/ui-blocks/efferd-ui/auth/auth-three/auth.svelte?raw";
+import authAuthTwoAuthSource from "$lib/components/ui-blocks/efferd-ui/auth/auth-two/auth.svelte?raw";
 import authDividerIndexSource from "$lib/components/ui/auth-divider/index.ts?raw";
 import authDividerSource from "$lib/components/ui/auth-divider/auth-divider.svelte?raw";
 import decorIconIndexSource from "$lib/components/ui/decor-icon/index.ts?raw";
@@ -30,9 +34,8 @@ import inputGroupSource from "$lib/components/ui/input-group/input-group.svelte?
 import inputGroupTextSource from "$lib/components/ui/input-group/input-group-text.svelte?raw";
 import inputGroupTextareaSource from "$lib/components/ui/input-group/input-group-textarea.svelte?raw";
 import logoSvgSource from "$lib/assets/svg/logo.svelte?raw";
-import particlesIndexSource from "$lib/components/magic-ui/particles/index.ts?raw";
-import particlesSource from "$lib/components/magic-ui/particles/particles.svelte?raw";
 
+// Shared Items
 const buttonFiles = [
 	{
 		id: "shared:button",
@@ -82,77 +85,76 @@ export const authBlocks: BlockShowcaseItem[] = [
 	{
 		id: "auth-one",
 		title: "Auth One",
-		description:
-			"A Auth One composition.",
+		description: "A Auth One composition.",
 		previewComponent: AuthOnePreview,
 		previewHref: "/preview/efferd-ui/auth/auth-one",
 		previewMode: "iframe",
 		previewHeight: 820,
 		installId: "auth-one",
-		codeTree: createBlockCodeTree("auth-one:preview", [
+		codeTree: createBlockCodeTree("auth-one:auth", [
 			{
 				id: "auth-one:auth",
-				path: "components/efferd/auth/auth-one/auth.svelte",
+				path: "src/lib/components/ui-blocks/efferd-ui/auth/auth-one/auth.svelte",
 				lang: "svelte",
 				code: authAuthOneAuthSource
 			},
 			...buttonFiles,
 			...logoFiles
 		])
-	},	{
+	},
+	{
 		id: "auth-two",
 		title: "Auth Two",
-		description:
-			"A Auth Two composition.",
+		description: "A Auth Two composition.",
 		previewComponent: AuthTwoPreview,
 		previewHref: "/preview/efferd-ui/auth/auth-two",
 		previewMode: "iframe",
 		previewHeight: 820,
 		installId: "auth-two",
-		codeTree: createBlockCodeTree("auth-two:preview", [
+		codeTree: createBlockCodeTree("auth-two:auth", [
 			{
 				id: "auth-two:auth",
-				path: "components/efferd/auth/auth-two/auth.svelte",
+				path: "src/lib/components/ui-blocks/efferd-ui/auth/auth-two/auth.svelte",
 				lang: "svelte",
 				code: authAuthTwoAuthSource
 			},
 			...buttonFiles,
 			...decorIconFiles
 		])
-	},	{
+	},
+	{
 		id: "auth-three",
 		title: "Auth Three",
-		description:
-			"A Auth Three composition.",
+		description: "A Auth Three composition.",
 		previewComponent: AuthThreePreview,
 		previewHref: "/preview/efferd-ui/auth/auth-three",
 		previewMode: "iframe",
 		previewHeight: 820,
 		installId: "auth-three",
-		codeTree: createBlockCodeTree("auth-three:preview", [
+		codeTree: createBlockCodeTree("auth-three:auth", [
 			{
 				id: "auth-three:auth",
-				path: "components/efferd/auth/auth-three/auth.svelte",
+				path: "src/lib/components/ui-blocks/efferd-ui/auth/auth-three/auth.svelte",
 				lang: "svelte",
 				code: authAuthThreeAuthSource
 			},
 			...buttonFiles,
 			...logoFiles
 		])
-	},	{
+	},
+	{
 		id: "auth-four",
 		title: "Auth Four",
-		description:
-			"A Auth Four composition.",
+		description: "A Auth Four composition.",
 		previewComponent: AuthFourPreview,
 		previewHref: "/preview/efferd-ui/auth/auth-four",
 		previewMode: "iframe",
 		previewHeight: 820,
 		installId: "auth-four",
-		codeTree: createBlockCodeTree("auth-four:preview", [
+		codeTree: createBlockCodeTree("auth-four:auth", [
 			{
 				id: "auth-four:auth",
-				path: "components/efferd/auth/auth-four/auth.svelte",
+				path: "src/lib/components/ui-blocks/efferd-ui/auth/auth-four/auth.svelte",
 				lang: "svelte",
 				code: authAuthFourAuthSource
 			},
@@ -160,20 +162,20 @@ export const authBlocks: BlockShowcaseItem[] = [
 			...dividerFiles,
 			...logoFiles
 		])
-	},	{
+	},
+	{
 		id: "auth-five",
 		title: "Auth Five",
-		description:
-			"A Auth Five composition.",
+		description: "A Auth Five composition.",
 		previewComponent: AuthFivePreview,
 		previewHref: "/preview/efferd-ui/auth/auth-five",
 		previewMode: "iframe",
 		previewHeight: 820,
 		installId: "auth-five",
-		codeTree: createBlockCodeTree("auth-five:preview", [
+		codeTree: createBlockCodeTree("auth-five:auth", [
 			{
 				id: "auth-five:auth",
-				path: "components/efferd/auth/auth-five/auth.svelte",
+				path: "src/lib/components/ui-blocks/efferd-ui/auth/auth-five/auth.svelte",
 				lang: "svelte",
 				code: authAuthFiveAuthSource
 			},

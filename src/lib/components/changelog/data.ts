@@ -34,7 +34,7 @@ export const changelogPageData: ChangelogPageData = {
 			chips: [
 				{ label: "hero", href: "/blocks/efferd-ui/hero" },
 				{ label: "contact", href: "/blocks/efferd-ui/contact" },
-				{ label: "faqs", href: "/blocks/efferd-ui/faqs" },
+				{ label: "faqs", href: "/blocks/efferd-ui/faq" },
 				{ label: "footer", href: "/blocks/efferd-ui/footer" },
 				{ label: "pricing", href: "/blocks/efferd-ui/pricing" },
 				{ label: "auth", href: "/blocks/efferd-ui/auth" }

@@ -183,7 +183,7 @@ def process_category(category_dir: Path, ui_name: str):
 
 def main():
     for ui_name in UI_NAMES:
-        source_dir = ROOT_DIR / "src" / "lib" / "components" / ui_name
+        source_dir = ROOT_DIR / "src" / "lib" / "components" / "ui-blocks/" / ui_name
         if not source_dir.exists():
             print(f"Source directory not found for '{ui_name}': {source_dir}")
             continue

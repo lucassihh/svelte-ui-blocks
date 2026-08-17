@@ -1,5 +1,6 @@
 <script lang="ts">
-	import { Marquee } from "$lib/components/magic-ui/marquee";
+	import { Marquee } from "$lib/components/ui-blocks/magic-ui/marquee";
+	import { ProgressiveBlur } from "$lib/components/ui/progressive-blur";
 
 	const logos = [
 		{
@@ -37,8 +38,10 @@
 	];
 </script>
 
-<div class="py-4 overflow-hidden mask-[linear-gradient(to_right,transparent,black,transparent)]">
-	<Marquee>
+<div
+	class="py-6 relative border-x border-y bg-linear-to-r from-secondary/50 via-transparent to-secondary/50"
+>
+	<Marquee class="gap-20 flex items-center" style="--duration: 30s; --gap: 2rem;">
 		{#each logos as logo}
 			<img
 				alt={logo.alt}
@@ -50,4 +53,15 @@
 			/>
 		{/each}
 	</Marquee>
+
+	<ProgressiveBlur
+		blurIntensity={1}
+		class="top-0 left-0 md:w-[160px] pointer-events-none absolute h-full w-[100px]"
+		direction="left"
+	/>
+	<ProgressiveBlur
+		blurIntensity={1}
+		class="top-0 right-0 md:w-[160px] pointer-events-none absolute h-full w-[100px]"
+		direction="right"
+	/>
 </div>

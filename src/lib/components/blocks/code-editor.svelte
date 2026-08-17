@@ -5,9 +5,10 @@
 		findBlockCodeFile,
 		flattenBlockCodeFiles,
 		type BlockCodeTree
-	} from "./blocks-code-three";
-	import Code from "./code/code.svelte";
-	import CodeTreeNode from "./code-three-node.svelte";
+	} from "./blocks-code-tree";
+
+	import Code from "$lib/components/ui/code/code.svelte";
+	import CodeTreeNode from "./code-tree-node.svelte";
 
 	// UI
 	import Button from "../ui/button/button.svelte";

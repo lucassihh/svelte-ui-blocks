@@ -440,7 +440,7 @@
 	<!-- Preview Container -->
 	<section class="relative">
 		<div class="max-w-7xl mx-auto w-full" style={`--preview-min-height: ${MIN_PREVIEW_HEIGHT}px;`}>
-			<div class={cn("bg-background z-40", mode === "code" && "hidden")}>
+			<div class={cn("z-40 bg-background", mode === "code" && "hidden")}>
 				{#if shouldRenderInIframe && previewHref}
 					<PaneGroup direction="horizontal">
 						<Pane

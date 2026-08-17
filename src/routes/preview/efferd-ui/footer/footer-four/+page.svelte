@@ -1,5 +1,5 @@
 <script lang="ts">
-	import FooterFour from "$lib/components/efferd-ui/footer/footer-four/footer.svelte";
+	import FooterFour from "$lib/components/ui-blocks/efferd-ui/footer/footer-four/footer.svelte";
 </script>
 
 <svelte:head>
@@ -7,6 +7,6 @@
 	<meta name="description" content="Standalone preview for Footer Four in Svelte Efferd." />
 </svelte:head>
 
-<div class="flex flex-col min-h-screen w-full justify-center p-2">
+<div class="p-2 flex min-h-screen w-full flex-col justify-center">
 	<FooterFour />
 </div>

@@ -13,7 +13,7 @@
 		"lint": "prettier --check ./src/",
 		"format": "prettier --write .",
 		"gen:registry": "python ./scripts/build-registry.py",
-        "gen:routes": "python ./scripts/build-routes.py"
+		"gen:routes": "python ./scripts/build-routes.py"
 	},
 	"devDependencies": {
 		"@internationalized/date": "^3.12.0",

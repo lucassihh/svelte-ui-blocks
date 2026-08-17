@@ -1,16 +1,20 @@
-import type { BlockShowcaseItem } from "$lib/components/blocks/blocks-code-three";
-import { createBlockCodeTree } from "$lib/components/blocks/blocks-code-three";
-import CtaFivePreview from "$lib/components/efferd-ui/cta/cta-five/cta.svelte";
-import CtaFourPreview from "$lib/components/efferd-ui/cta/cta-four/cta.svelte";
-import CtaOnePreview from "$lib/components/efferd-ui/cta/cta-one/cta.svelte";
-import CtaThreePreview from "$lib/components/efferd-ui/cta/cta-three/cta.svelte";
-import CtaTwoPreview from "$lib/components/efferd-ui/cta/cta-two/cta.svelte";
+// CodeTree Component
+import type { BlockShowcaseItem } from "$lib/components/blocks/blocks-code-tree";
+import { createBlockCodeTree } from "$lib/components/blocks/blocks-code-tree";
 
-import ctaCtaFiveCtaSource from "$lib/components/efferd-ui/cta/cta-five/cta.svelte?raw";
-import ctaCtaFourCtaSource from "$lib/components/efferd-ui/cta/cta-four/cta.svelte?raw";
-import ctaCtaOneCtaSource from "$lib/components/efferd-ui/cta/cta-one/cta.svelte?raw";
-import ctaCtaThreeCtaSource from "$lib/components/efferd-ui/cta/cta-three/cta.svelte?raw";
-import ctaCtaTwoCtaSource from "$lib/components/efferd-ui/cta/cta-two/cta.svelte?raw";
+// Preview Imports
+import CtaFivePreview from "$lib/components/ui-blocks/efferd-ui/cta/cta-five/cta.svelte";
+import CtaFourPreview from "$lib/components/ui-blocks/efferd-ui/cta/cta-four/cta.svelte";
+import CtaOnePreview from "$lib/components/ui-blocks/efferd-ui/cta/cta-one/cta.svelte";
+import CtaThreePreview from "$lib/components/ui-blocks/efferd-ui/cta/cta-three/cta.svelte";
+import CtaTwoPreview from "$lib/components/ui-blocks/efferd-ui/cta/cta-two/cta.svelte";
+
+// Raw
+import ctaCtaFiveCtaSource from "$lib/components/ui-blocks/efferd-ui/cta/cta-five/cta.svelte?raw";
+import ctaCtaFourCtaSource from "$lib/components/ui-blocks/efferd-ui/cta/cta-four/cta.svelte?raw";
+import ctaCtaOneCtaSource from "$lib/components/ui-blocks/efferd-ui/cta/cta-one/cta.svelte?raw";
+import ctaCtaThreeCtaSource from "$lib/components/ui-blocks/efferd-ui/cta/cta-three/cta.svelte?raw";
+import ctaCtaTwoCtaSource from "$lib/components/ui-blocks/efferd-ui/cta/cta-two/cta.svelte?raw";
 import decorIconIndexSource from "$lib/components/ui/decor-icon/index.ts?raw";
 import decorIconSource from "$lib/components/ui/decor-icon/decor-icon.svelte?raw";
 import dividerIndexSource from "$lib/components/ui/full-width-divider/index.ts?raw";
@@ -23,6 +27,7 @@ import inputGroupSource from "$lib/components/ui/input-group/input-group.svelte?
 import inputGroupTextSource from "$lib/components/ui/input-group/input-group-text.svelte?raw";
 import inputGroupTextareaSource from "$lib/components/ui/input-group/input-group-textarea.svelte?raw";
 
+// Shared Items
 const buttonFiles = [
 	{
 		id: "shared:button",
@@ -64,96 +69,95 @@ export const ctaBlocks: BlockShowcaseItem[] = [
 	{
 		id: "cta-one",
 		title: "Cta One",
-		description:
-			"A Cta One composition.",
+		description: "A Cta One composition.",
 		previewComponent: CtaOnePreview,
 		previewHref: "/preview/efferd-ui/cta/cta-one",
 		previewMode: "iframe",
 		previewHeight: 820,
 		installId: "cta-one",
-		codeTree: createBlockCodeTree("cta-one:preview", [
+		codeTree: createBlockCodeTree("cta-one:cta", [
 			{
 				id: "cta-one:cta",
-				path: "components/efferd/cta/cta-one/cta.svelte",
+				path: "src/lib/components/ui-blocks/efferd-ui/cta/cta-one/cta.svelte",
 				lang: "svelte",
 				code: ctaCtaOneCtaSource
 			},
 			...buttonFiles,
 			...dividerFiles
 		])
-	},	{
+	},
+	{
 		id: "cta-two",
 		title: "Cta Two",
-		description:
-			"A Cta Two composition.",
+		description: "A Cta Two composition.",
 		previewComponent: CtaTwoPreview,
 		previewHref: "/preview/efferd-ui/cta/cta-two",
 		previewMode: "iframe",
 		previewHeight: 820,
 		installId: "cta-two",
-		codeTree: createBlockCodeTree("cta-two:preview", [
+		codeTree: createBlockCodeTree("cta-two:cta", [
 			{
 				id: "cta-two:cta",
-				path: "components/efferd/cta/cta-two/cta.svelte",
+				path: "src/lib/components/ui-blocks/efferd-ui/cta/cta-two/cta.svelte",
 				lang: "svelte",
 				code: ctaCtaTwoCtaSource
 			},
 			...buttonFiles,
 			...dividerFiles
 		])
-	},	{
+	},
+	{
 		id: "cta-three",
 		title: "Cta Three",
-		description:
-			"A Cta Three composition.",
+		description: "A Cta Three composition.",
 		previewComponent: CtaThreePreview,
 		previewHref: "/preview/efferd-ui/cta/cta-three",
 		previewMode: "iframe",
 		previewHeight: 820,
 		installId: "cta-three",
-		codeTree: createBlockCodeTree("cta-three:preview", [
+		codeTree: createBlockCodeTree("cta-three:cta", [
 			{
 				id: "cta-three:cta",
-				path: "components/efferd/cta/cta-three/cta.svelte",
+				path: "src/lib/components/ui-blocks/efferd-ui/cta/cta-three/cta.svelte",
 				lang: "svelte",
 				code: ctaCtaThreeCtaSource
 			},
 			...buttonFiles,
 			...decorIconFiles
 		])
-	},	{
+	},
+	{
 		id: "cta-four",
 		title: "Cta Four",
-		description:
-			"A Cta Four composition.",
+		description: "A Cta Four composition.",
 		previewComponent: CtaFourPreview,
 		previewHref: "/preview/efferd-ui/cta/cta-four",
 		previewMode: "iframe",
 		previewHeight: 820,
 		installId: "cta-four",
-		codeTree: createBlockCodeTree("cta-four:preview", [
+		codeTree: createBlockCodeTree("cta-four:cta", [
 			{
 				id: "cta-four:cta",
-				path: "components/efferd/cta/cta-four/cta.svelte",
+				path: "src/lib/components/ui-blocks/efferd-ui/cta/cta-four/cta.svelte",
 				lang: "svelte",
 				code: ctaCtaFourCtaSource
 			},
 			...buttonFiles
 		])
-	},	{
+	},
+	{
 		id: "cta-five",
 		title: "Cta Five",
-		description:
-			"A Cta Five composition.",
+		description: "A Cta Five composition.",
 		previewComponent: CtaFivePreview,
 		previewHref: "/preview/efferd-ui/cta/cta-five",
 		previewMode: "iframe",
 		previewHeight: 820,
 		installId: "cta-five",
-		codeTree: createBlockCodeTree("cta-five:preview", [
+		codeTree: createBlockCodeTree("cta-five:cta", [
 			{
 				id: "cta-five:cta",
-				path: "components/efferd/cta/cta-five/cta.svelte",
+				path: "src/lib/components/ui-blocks/efferd-ui/cta/cta-five/cta.svelte",
 				lang: "svelte",
 				code: ctaCtaFiveCtaSource
 			},

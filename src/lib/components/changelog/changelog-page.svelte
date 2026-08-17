@@ -2,7 +2,7 @@
 	// UI
 	import { DecorIcon } from "$lib/components/ui/decor-icon";
 	import { FullWidthDivider } from "$lib/components/ui/full-width-divider";
-	import { StripedPattern } from "$lib/components/magic-ui/striped-pattern";
+	import { StripedPattern } from "$lib/components/ui-blocks/magic-ui/striped-pattern";
 
 	// Local Imports
 	import ChangelogCard from "./changelog-card.svelte";

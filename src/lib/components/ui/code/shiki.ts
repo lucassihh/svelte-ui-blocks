@@ -18,7 +18,7 @@ export const highlighter = createHighlighterCore({
 	themes: [
 		import("@shikijs/themes/github-light-default"),
 		import("@shikijs/themes/github-dark-default"),
-		import("@shikijs/themes/vesper")
+		import("@shikijs/themes/dracula")
 	],
 	langs: Object.entries(bundledLanguages).map(([_, lang]) => lang),
 	engine: createJavaScriptRegexEngine()

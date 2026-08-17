@@ -1,7 +1,7 @@
 <script lang="ts">
 	// Local Imports
-	import type { BlockCodeNode } from "./blocks-code-three";
-	import CodeTreeNode from "./code-three-node.svelte";
+	import type { BlockCodeNode } from "./blocks-code-tree";
+	import CodeTreeNode from "./code-tree-node.svelte";
 
 	// Hooks & Other
 	import { cn } from "$lib/utils";

@@ -60,7 +60,7 @@ BLOCK_METADATA_PATTERNS = {
     },
     "feature": {
         "description": "Interactive feature showcase section with custom graphics and controls.",
-        "height": 600,
+        "height": 520,
         "previewMode": "iframe"
     },
     "default": {
@@ -338,7 +338,6 @@ def process_category(category_dir: Path, ui_name: str, output_dir: Path):
                         clean_path = "svgs/logo.svelte"
                     elif shared_array_name == "marqueeFiles":
                         item_id = f"shared:marquee-{file_stem}" if file_stem != "marquee" else "shared:marquee"
-                        clean_path = clean_path.replace("components/magic-ui/", "components/magic/")
                     elif shared_array_name == "navigationMenuFiles":
                         if file_stem == "navigation-menu":
                             item_id = "shared:navigation-menu-root"
@@ -368,7 +367,7 @@ def process_category(category_dir: Path, ui_name: str, output_dir: Path):
                 continue
 
             # Internal Components
-            display_path = rel_path.replace(f"src/lib/components/{ui_name}/", "components/efferd/")
+            display_path = rel_path.replace(f"src/lib/components/{ui_name}/", f"components/{ui_name}/")
 
             if f"{ui_name}/{category_name}/{block_id}" in rel_path:
                 file_stem = abs_file.stem
@@ -433,7 +432,7 @@ def process_category(category_dir: Path, ui_name: str, output_dir: Path):
             f'\t\tpreviewMode: "{meta["previewMode"]}",\n'
             f'\t\tpreviewHeight: {meta["height"]},\n'
             f'\t\tinstallId: "{block_id}",\n'
-            f'\t\tcodeTree: createBlockCodeTree("{block_id}:preview", [\n'
+            f'\t\tcodeTree: createBlockCodeTree("{block_id}:{category_name}", [\n'
             f'{code_tree_str}\n'
             f'\t\t])\n'
             f'\t}}'
@@ -453,13 +452,19 @@ def process_category(category_dir: Path, ui_name: str, output_dir: Path):
             items.append("\t...marqueeFiles")
         formatted_items = ",\n".join(items)
         shared_arrays_code.append(f"const {arr_name} = [\n{formatted_items}\n];")
+        
+    # Template output
+    ts_content = f"""// CodeTree Component
+import type {{ BlockShowcaseItem }} from "$lib/components/blocks/blocks-code-tree";
+import {{ createBlockCodeTree }} from "$lib/components/blocks/blocks-code-tree";
 
-    ts_content = f"""import type {{ BlockShowcaseItem }} from "$lib/components/blocks/blocks-code-three";
-import {{ createBlockCodeTree }} from "$lib/components/blocks/blocks-code-three";
+// Preview Imports
 {chr(10).join(sorted(preview_imports))}
 
+// Raw
 {chr(10).join(sorted(raw_imports))}
 
+// Shared Items
 {chr(10).join(shared_arrays_code)}
 
 export const {category_camel}Blocks: BlockShowcaseItem[] = [
@@ -479,7 +484,7 @@ export function get{category_cap}Block(id: string) {{
 
 def main():
     for ui_name in UI_NAMES:
-        source_dir = ROOT_DIR / "src" / "lib" / "components" / ui_name
+        source_dir = ROOT_DIR / "src" / "lib" / "components" / "ui-blocks/" / ui_name
         output_dir = ROOT_DIR / "src" / "lib" / "registry" / ui_name
 
         if not source_dir.exists():

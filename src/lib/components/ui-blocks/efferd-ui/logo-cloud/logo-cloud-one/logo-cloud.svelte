@@ -1,7 +1,4 @@
 <script lang="ts">
-	import { Marquee } from "$lib/components/magic-ui/marquee";
-	import { ProgressiveBlur } from "$lib/components/ui/progressive-blur";
-
 	const logos = [
 		{
 			src: "https://storage.efferd.com/logo/nvidia-wordmark.svg",
@@ -38,30 +35,17 @@
 	];
 </script>
 
-<div
-	class="py-6 relative border-x border-y bg-linear-to-r from-secondary/50 via-transparent to-secondary/50"
->
-	<Marquee class="gap-20 flex items-center" style="--duration: 30s; --gap: 2rem;">
-		{#each logos as logo}
+<div class="shadow md:grid-cols-4 grid grid-cols-2 rounded-lg bg-border">
+	{#each logos as logo, i}
+		<div class="p-8 flex items-center justify-center rounded-lg border bg-background">
 			<img
 				alt={logo.alt}
-				class="h-4 md:h-5 pointer-events-none select-none dark:brightness-0 dark:invert"
+				class="h-4 md:h-5 pointer-events-none block select-none dark:brightness-0 dark:invert"
 				height="auto"
 				loading="lazy"
 				src={logo.src}
 				width="auto"
 			/>
-		{/each}
-	</Marquee>
-
-	<ProgressiveBlur
-		blurIntensity={1}
-		class="top-0 left-0 md:w-[160px] pointer-events-none absolute h-full w-[100px]"
-		direction="left"
-	/>
-	<ProgressiveBlur
-		blurIntensity={1}
-		class="top-0 right-0 md:w-[160px] pointer-events-none absolute h-full w-[100px]"
-		direction="right"
-	/>
+		</div>
+	{/each}
 </div>

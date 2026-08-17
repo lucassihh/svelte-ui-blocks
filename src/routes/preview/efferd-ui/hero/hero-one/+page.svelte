@@ -1,5 +1,5 @@
 <script lang="ts">
-	import HeroOne from "$lib/components/efferd-ui/hero/hero-one/hero.svelte";
+	import HeroOne from "$lib/components/ui-blocks/efferd-ui/hero/hero-one/hero.svelte";
 </script>
 
 <svelte:head>
@@ -7,6 +7,6 @@
 	<meta name="description" content="Standalone preview for Hero One in Svelte Efferd." />
 </svelte:head>
 
-<div class="flex flex-col min-h-screen w-full">
+<div class="flex min-h-screen w-full flex-col">
 	<HeroOne />
 </div>

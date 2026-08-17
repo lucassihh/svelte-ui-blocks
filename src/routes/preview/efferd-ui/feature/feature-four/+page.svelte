@@ -1,5 +1,5 @@
 <script lang="ts">
-	import FeatureFour from "$lib/components/efferd-ui/feature/feature-four/feature.svelte";
+	import FeatureFour from "$lib/components/ui-blocks/efferd-ui/feature/feature-four/feature.svelte";
 </script>
 
 <svelte:head>
@@ -7,6 +7,6 @@
 	<meta name="description" content="Standalone preview for Feature Four in Svelte Efferd." />
 </svelte:head>
 
-<div class="flex flex-col min-h-screen w-full justify-center p-2">
+<div class="p-2 flex min-h-screen w-full flex-col justify-center">
 	<FeatureFour />
 </div>

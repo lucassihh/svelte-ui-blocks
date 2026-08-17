@@ -1,21 +1,26 @@
-import type { BlockShowcaseItem } from "$lib/components/blocks/blocks-code-three";
-import { createBlockCodeTree } from "$lib/components/blocks/blocks-code-three";
-import PricingFourPreview from "$lib/components/efferd-ui/pricing/pricing-four/frequency-toggle.svelte";
-import PricingOnePreview from "$lib/components/efferd-ui/pricing/pricing-one/pricing.svelte";
-import PricingThreePreview from "$lib/components/efferd-ui/pricing/pricing-three/pricing-card.svelte";
-import PricingTwoPreview from "$lib/components/efferd-ui/pricing/pricing-two/pricing.svelte";
+// CodeTree Component
+import type { BlockShowcaseItem } from "$lib/components/blocks/blocks-code-tree";
+import { createBlockCodeTree } from "$lib/components/blocks/blocks-code-tree";
 
+// Preview Imports
+import PricingFourPreview from "$lib/components/ui-blocks/efferd-ui/pricing/pricing-four/frequency-toggle.svelte";
+import PricingOnePreview from "$lib/components/ui-blocks/efferd-ui/pricing/pricing-one/pricing.svelte";
+import PricingThreePreview from "$lib/components/ui-blocks/efferd-ui/pricing/pricing-three/pricing-card.svelte";
+import PricingTwoPreview from "$lib/components/ui-blocks/efferd-ui/pricing/pricing-two/pricing.svelte";
+
+// Raw
 import decorIconIndexSource from "$lib/components/ui/decor-icon/index.ts?raw";
 import decorIconSource from "$lib/components/ui/decor-icon/decor-icon.svelte?raw";
 import dividerIndexSource from "$lib/components/ui/full-width-divider/index.ts?raw";
 import dividerSource from "$lib/components/ui/full-width-divider/full-width-divider.svelte?raw";
-import pricingPricingFourFrequencyToggleSource from "$lib/components/efferd-ui/pricing/pricing-four/frequency-toggle.svelte?raw";
-import pricingPricingFourPricingSource from "$lib/components/efferd-ui/pricing/pricing-four/pricing.svelte?raw";
-import pricingPricingOnePricingSource from "$lib/components/efferd-ui/pricing/pricing-one/pricing.svelte?raw";
-import pricingPricingThreePricingCardSource from "$lib/components/efferd-ui/pricing/pricing-three/pricing-card.svelte?raw";
-import pricingPricingThreePricingSource from "$lib/components/efferd-ui/pricing/pricing-three/pricing.svelte?raw";
-import pricingPricingTwoPricingSource from "$lib/components/efferd-ui/pricing/pricing-two/pricing.svelte?raw";
+import pricingPricingFourFrequencyToggleSource from "$lib/components/ui-blocks/efferd-ui/pricing/pricing-four/frequency-toggle.svelte?raw";
+import pricingPricingFourPricingSource from "$lib/components/ui-blocks/efferd-ui/pricing/pricing-four/pricing.svelte?raw";
+import pricingPricingOnePricingSource from "$lib/components/ui-blocks/efferd-ui/pricing/pricing-one/pricing.svelte?raw";
+import pricingPricingThreePricingCardSource from "$lib/components/ui-blocks/efferd-ui/pricing/pricing-three/pricing-card.svelte?raw";
+import pricingPricingThreePricingSource from "$lib/components/ui-blocks/efferd-ui/pricing/pricing-three/pricing.svelte?raw";
+import pricingPricingTwoPricingSource from "$lib/components/ui-blocks/efferd-ui/pricing/pricing-two/pricing.svelte?raw";
 
+// Shared Items
 const buttonFiles = [
 	{
 		id: "shared:button",
@@ -57,88 +62,87 @@ export const pricingBlocks: BlockShowcaseItem[] = [
 	{
 		id: "pricing-one",
 		title: "Pricing One",
-		description:
-			"A Pricing One composition.",
+		description: "A Pricing One composition.",
 		previewComponent: PricingOnePreview,
 		previewHref: "/preview/efferd-ui/pricing/pricing-one",
 		previewMode: "iframe",
 		previewHeight: 820,
 		installId: "pricing-one",
-		codeTree: createBlockCodeTree("pricing-one:preview", [
+		codeTree: createBlockCodeTree("pricing-one:pricing", [
 			{
 				id: "pricing-one:pricing",
-				path: "components/efferd/pricing/pricing-one/pricing.svelte",
+				path: "src/lib/components/ui-blocks/efferd-ui/pricing/pricing-one/pricing.svelte",
 				lang: "svelte",
 				code: pricingPricingOnePricingSource
 			},
 			...buttonFiles,
 			...decorIconFiles
 		])
-	},	{
+	},
+	{
 		id: "pricing-two",
 		title: "Pricing Two",
-		description:
-			"A Pricing Two composition.",
+		description: "A Pricing Two composition.",
 		previewComponent: PricingTwoPreview,
 		previewHref: "/preview/efferd-ui/pricing/pricing-two",
 		previewMode: "iframe",
 		previewHeight: 820,
 		installId: "pricing-two",
-		codeTree: createBlockCodeTree("pricing-two:preview", [
+		codeTree: createBlockCodeTree("pricing-two:pricing", [
 			{
 				id: "pricing-two:pricing",
-				path: "components/efferd/pricing/pricing-two/pricing.svelte",
+				path: "src/lib/components/ui-blocks/efferd-ui/pricing/pricing-two/pricing.svelte",
 				lang: "svelte",
 				code: pricingPricingTwoPricingSource
 			},
 			...buttonFiles,
 			...dividerFiles
 		])
-	},	{
+	},
+	{
 		id: "pricing-three",
 		title: "Pricing Three",
-		description:
-			"A Pricing Three composition.",
+		description: "A Pricing Three composition.",
 		previewComponent: PricingThreePreview,
 		previewHref: "/preview/efferd-ui/pricing/pricing-three",
 		previewMode: "iframe",
 		previewHeight: 820,
 		installId: "pricing-three",
-		codeTree: createBlockCodeTree("pricing-three:preview", [
+		codeTree: createBlockCodeTree("pricing-three:pricing", [
 			{
 				id: "pricing-three:pricing-card",
-				path: "components/efferd/pricing/pricing-three/pricing-card.svelte",
+				path: "src/lib/components/ui-blocks/efferd-ui/pricing/pricing-three/pricing-card.svelte",
 				lang: "svelte",
 				code: pricingPricingThreePricingCardSource
 			},
 			{
 				id: "pricing-three:pricing",
-				path: "components/efferd/pricing/pricing-three/pricing.svelte",
+				path: "src/lib/components/ui-blocks/efferd-ui/pricing/pricing-three/pricing.svelte",
 				lang: "svelte",
 				code: pricingPricingThreePricingSource
 			},
 			...buttonFiles
 		])
-	},	{
+	},
+	{
 		id: "pricing-four",
 		title: "Pricing Four",
-		description:
-			"A Pricing Four composition.",
+		description: "A Pricing Four composition.",
 		previewComponent: PricingFourPreview,
 		previewHref: "/preview/efferd-ui/pricing/pricing-four",
 		previewMode: "iframe",
 		previewHeight: 820,
 		installId: "pricing-four",
-		codeTree: createBlockCodeTree("pricing-four:preview", [
+		codeTree: createBlockCodeTree("pricing-four:pricing", [
 			{
 				id: "pricing-four:frequency-toggle",
-				path: "components/efferd/pricing/pricing-four/frequency-toggle.svelte",
+				path: "src/lib/components/ui-blocks/efferd-ui/pricing/pricing-four/frequency-toggle.svelte",
 				lang: "svelte",
 				code: pricingPricingFourFrequencyToggleSource
 			},
 			{
 				id: "pricing-four:pricing",
-				path: "components/efferd/pricing/pricing-four/pricing.svelte",
+				path: "src/lib/components/ui-blocks/efferd-ui/pricing/pricing-four/pricing.svelte",
 				lang: "svelte",
 				code: pricingPricingFourPricingSource
 			},

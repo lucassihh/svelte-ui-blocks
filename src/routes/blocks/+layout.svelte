@@ -11,7 +11,7 @@
 </script>
 
 <div>
-	 <CategoryNavigation />
+	<CategoryNavigation />
 	{@render children()}
 	{#if visible}
 		{@render scrollToTop()}

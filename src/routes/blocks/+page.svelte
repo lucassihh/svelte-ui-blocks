@@ -10,6 +10,6 @@
 	link="/blocks"
 />
 
-<div class="flex items-center justify-center p-20 bg-card border border-border">
-    <h1>Choose Any Block Section :)</h1>
+<div class="p-20 flex items-center justify-center border border-border bg-card">
+	<h1>Choose Any Block Section :)</h1>
 </div>
