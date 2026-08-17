@@ -61,37 +61,70 @@ const dividerFiles = [
 
 export const featureBlocks: BlockShowcaseItem[] = [
 	{
-		id: "feature-five",
-		title: "Feature Five",
-		description: "A Feature Five composition.",
-		previewComponent: FeatureFivePreview,
-		previewHref: "/preview/efferd-ui/feature/feature-five",
+		id: "feature-one",
+		title: "Feature One",
+		description:
+			"Interactive feature showcase section with custom graphics and controls.",
+		previewComponent: FeatureOnePreview,
+		previewHref: "/preview/efferd-ui/feature/feature-one",
 		previewMode: "iframe",
-		previewHeight: 820,
-		installId: "feature-five",
-		codeTree: createBlockCodeTree("feature-five:preview", [
+		previewHeight: 600,
+		installId: "feature-one",
+		codeTree: createBlockCodeTree("feature-one:preview", [
 			{
-				id: "feature-five:feature-card",
-				path: "components/efferd/feature/feature-five/feature-card.svelte",
+				id: "feature-one:feature",
+				path: "components/efferd/feature/feature-one/feature.svelte",
 				lang: "svelte",
-				code: featureFeatureFiveFeatureCardSource
-			},
-			{
-				id: "feature-five:feature",
-				path: "components/efferd/feature/feature-five/feature.svelte",
-				lang: "svelte",
-				code: featureFeatureFiveFeatureSource
+				code: featureFeatureOneFeatureSource
 			}
 		])
-	},
-	{
+	},	{
+		id: "feature-two",
+		title: "Feature Two",
+		description:
+			"Interactive feature showcase section with custom graphics and controls.",
+		previewComponent: FeatureTwoPreview,
+		previewHref: "/preview/efferd-ui/feature/feature-two",
+		previewMode: "iframe",
+		previewHeight: 600,
+		installId: "feature-two",
+		codeTree: createBlockCodeTree("feature-two:preview", [
+			{
+				id: "feature-two:feature",
+				path: "components/efferd/feature/feature-two/feature.svelte",
+				lang: "svelte",
+				code: featureFeatureTwoFeatureSource
+			},
+			...decorIconFiles
+		])
+	},	{
+		id: "feature-three",
+		title: "Feature Three",
+		description:
+			"Interactive feature showcase section with custom graphics and controls.",
+		previewComponent: FeatureThreePreview,
+		previewHref: "/preview/efferd-ui/feature/feature-three",
+		previewMode: "iframe",
+		previewHeight: 600,
+		installId: "feature-three",
+		codeTree: createBlockCodeTree("feature-three:preview", [
+			{
+				id: "feature-three:feature",
+				path: "components/efferd/feature/feature-three/feature.svelte",
+				lang: "svelte",
+				code: featureFeatureThreeFeatureSource
+			},
+			...dividerFiles
+		])
+	},	{
 		id: "feature-four",
 		title: "Feature Four",
-		description: "A Feature Four composition.",
+		description:
+			"Interactive feature showcase section with custom graphics and controls.",
 		previewComponent: FeatureFourPreview,
 		previewHref: "/preview/efferd-ui/feature/feature-four",
 		previewMode: "iframe",
-		previewHeight: 820,
+		previewHeight: 600,
 		installId: "feature-four",
 		codeTree: createBlockCodeTree("feature-four:preview", [
 			{
@@ -108,61 +141,29 @@ export const featureBlocks: BlockShowcaseItem[] = [
 			},
 			...decorIconFiles
 		])
-	},
-	{
-		id: "feature-one",
-		title: "Feature One",
-		description: "A Feature One composition.",
-		previewComponent: FeatureOnePreview,
-		previewHref: "/preview/efferd-ui/feature/feature-one",
+	},	{
+		id: "feature-five",
+		title: "Feature Five",
+		description:
+			"Interactive feature showcase section with custom graphics and controls.",
+		previewComponent: FeatureFivePreview,
+		previewHref: "/preview/efferd-ui/feature/feature-five",
 		previewMode: "iframe",
-		previewHeight: 820,
-		installId: "feature-one",
-		codeTree: createBlockCodeTree("feature-one:preview", [
+		previewHeight: 600,
+		installId: "feature-five",
+		codeTree: createBlockCodeTree("feature-five:preview", [
 			{
-				id: "feature-one:feature",
-				path: "components/efferd/feature/feature-one/feature.svelte",
+				id: "feature-five:feature-card",
+				path: "components/efferd/feature/feature-five/feature-card.svelte",
 				lang: "svelte",
-				code: featureFeatureOneFeatureSource
+				code: featureFeatureFiveFeatureCardSource
+			},
+			{
+				id: "feature-five:feature",
+				path: "components/efferd/feature/feature-five/feature.svelte",
+				lang: "svelte",
+				code: featureFeatureFiveFeatureSource
 			}
-		])
-	},
-	{
-		id: "feature-three",
-		title: "Feature Three",
-		description: "A Feature Three composition.",
-		previewComponent: FeatureThreePreview,
-		previewHref: "/preview/efferd-ui/feature/feature-three",
-		previewMode: "iframe",
-		previewHeight: 820,
-		installId: "feature-three",
-		codeTree: createBlockCodeTree("feature-three:preview", [
-			{
-				id: "feature-three:feature",
-				path: "components/efferd/feature/feature-three/feature.svelte",
-				lang: "svelte",
-				code: featureFeatureThreeFeatureSource
-			},
-			...dividerFiles
-		])
-	},
-	{
-		id: "feature-two",
-		title: "Feature Two",
-		description: "A Feature Two composition.",
-		previewComponent: FeatureTwoPreview,
-		previewHref: "/preview/efferd-ui/feature/feature-two",
-		previewMode: "iframe",
-		previewHeight: 820,
-		installId: "feature-two",
-		codeTree: createBlockCodeTree("feature-two:preview", [
-			{
-				id: "feature-two:feature",
-				path: "components/efferd/feature/feature-two/feature.svelte",
-				lang: "svelte",
-				code: featureFeatureTwoFeatureSource
-			},
-			...decorIconFiles
 		])
 	}
 ];

@@ -80,29 +80,70 @@ const logoFiles = [
 
 export const authBlocks: BlockShowcaseItem[] = [
 	{
-		id: "auth-five",
-		title: "Auth Five",
-		description: "A Auth Five composition.",
-		previewComponent: AuthFivePreview,
-		previewHref: "/preview/efferd-ui/auth/auth-five",
+		id: "auth-one",
+		title: "Auth One",
+		description:
+			"A Auth One composition.",
+		previewComponent: AuthOnePreview,
+		previewHref: "/preview/efferd-ui/auth/auth-one",
 		previewMode: "iframe",
 		previewHeight: 820,
-		installId: "auth-five",
-		codeTree: createBlockCodeTree("auth-five:preview", [
+		installId: "auth-one",
+		codeTree: createBlockCodeTree("auth-one:preview", [
 			{
-				id: "auth-five:auth",
-				path: "components/efferd/auth/auth-five/auth.svelte",
+				id: "auth-one:auth",
+				path: "components/efferd/auth/auth-one/auth.svelte",
 				lang: "svelte",
-				code: authAuthFiveAuthSource
+				code: authAuthOneAuthSource
 			},
 			...buttonFiles,
 			...logoFiles
 		])
-	},
-	{
+	},	{
+		id: "auth-two",
+		title: "Auth Two",
+		description:
+			"A Auth Two composition.",
+		previewComponent: AuthTwoPreview,
+		previewHref: "/preview/efferd-ui/auth/auth-two",
+		previewMode: "iframe",
+		previewHeight: 820,
+		installId: "auth-two",
+		codeTree: createBlockCodeTree("auth-two:preview", [
+			{
+				id: "auth-two:auth",
+				path: "components/efferd/auth/auth-two/auth.svelte",
+				lang: "svelte",
+				code: authAuthTwoAuthSource
+			},
+			...buttonFiles,
+			...decorIconFiles
+		])
+	},	{
+		id: "auth-three",
+		title: "Auth Three",
+		description:
+			"A Auth Three composition.",
+		previewComponent: AuthThreePreview,
+		previewHref: "/preview/efferd-ui/auth/auth-three",
+		previewMode: "iframe",
+		previewHeight: 820,
+		installId: "auth-three",
+		codeTree: createBlockCodeTree("auth-three:preview", [
+			{
+				id: "auth-three:auth",
+				path: "components/efferd/auth/auth-three/auth.svelte",
+				lang: "svelte",
+				code: authAuthThreeAuthSource
+			},
+			...buttonFiles,
+			...logoFiles
+		])
+	},	{
 		id: "auth-four",
 		title: "Auth Four",
-		description: "A Auth Four composition.",
+		description:
+			"A Auth Four composition.",
 		previewComponent: AuthFourPreview,
 		previewHref: "/preview/efferd-ui/auth/auth-four",
 		previewMode: "iframe",
@@ -119,65 +160,25 @@ export const authBlocks: BlockShowcaseItem[] = [
 			...dividerFiles,
 			...logoFiles
 		])
-	},
-	{
-		id: "auth-one",
-		title: "Auth One",
-		description: "A Auth One composition.",
-		previewComponent: AuthOnePreview,
-		previewHref: "/preview/efferd-ui/auth/auth-one",
+	},	{
+		id: "auth-five",
+		title: "Auth Five",
+		description:
+			"A Auth Five composition.",
+		previewComponent: AuthFivePreview,
+		previewHref: "/preview/efferd-ui/auth/auth-five",
 		previewMode: "iframe",
 		previewHeight: 820,
-		installId: "auth-one",
-		codeTree: createBlockCodeTree("auth-one:preview", [
+		installId: "auth-five",
+		codeTree: createBlockCodeTree("auth-five:preview", [
 			{
-				id: "auth-one:auth",
-				path: "components/efferd/auth/auth-one/auth.svelte",
+				id: "auth-five:auth",
+				path: "components/efferd/auth/auth-five/auth.svelte",
 				lang: "svelte",
-				code: authAuthOneAuthSource
+				code: authAuthFiveAuthSource
 			},
 			...buttonFiles,
 			...logoFiles
-		])
-	},
-	{
-		id: "auth-three",
-		title: "Auth Three",
-		description: "A Auth Three composition.",
-		previewComponent: AuthThreePreview,
-		previewHref: "/preview/efferd-ui/auth/auth-three",
-		previewMode: "iframe",
-		previewHeight: 820,
-		installId: "auth-three",
-		codeTree: createBlockCodeTree("auth-three:preview", [
-			{
-				id: "auth-three:auth",
-				path: "components/efferd/auth/auth-three/auth.svelte",
-				lang: "svelte",
-				code: authAuthThreeAuthSource
-			},
-			...buttonFiles,
-			...logoFiles
-		])
-	},
-	{
-		id: "auth-two",
-		title: "Auth Two",
-		description: "A Auth Two composition.",
-		previewComponent: AuthTwoPreview,
-		previewHref: "/preview/efferd-ui/auth/auth-two",
-		previewMode: "iframe",
-		previewHeight: 820,
-		installId: "auth-two",
-		codeTree: createBlockCodeTree("auth-two:preview", [
-			{
-				id: "auth-two:auth",
-				path: "components/efferd/auth/auth-two/auth.svelte",
-				lang: "svelte",
-				code: authAuthTwoAuthSource
-			},
-			...buttonFiles,
-			...decorIconFiles
 		])
 	}
 ];

@@ -45,52 +45,10 @@ const logoFiles = [
 
 export const footerBlocks: BlockShowcaseItem[] = [
 	{
-		id: "footer-five",
-		title: "Footer Five",
-		description: "A Footer Five composition.",
-		previewComponent: FooterFivePreview,
-		previewHref: "/preview/efferd-ui/footer/footer-five",
-		previewMode: "iframe",
-		previewHeight: 820,
-		installId: "footer-five",
-		codeTree: createBlockCodeTree("footer-five:preview", [
-			{
-				id: "footer-five:footer",
-				path: "components/efferd/footer/footer-five/footer.svelte",
-				lang: "svelte",
-				code: footerFooterFiveFooterSource
-			},
-			...buttonFiles
-		])
-	},
-	{
-		id: "footer-four",
-		title: "Footer Four",
-		description: "A Footer Four composition.",
-		previewComponent: FooterFourPreview,
-		previewHref: "/preview/efferd-ui/footer/footer-four",
-		previewMode: "iframe",
-		previewHeight: 820,
-		installId: "footer-four",
-		codeTree: createBlockCodeTree("footer-four:preview", [
-			{
-				id: "footer-four:LinkGroup",
-				path: "components/efferd/footer/footer-four/LinkGroup.svelte",
-				lang: "svelte",
-				code: footerFooterFourLinkgroupSource
-			},
-			{
-				id: "footer-four:footer",
-				path: "components/efferd/footer/footer-four/footer.svelte",
-				lang: "svelte",
-				code: footerFooterFourFooterSource
-			}
-		])
-	},
-	{
 		id: "footer-one",
 		title: "Footer One",
-		description: "A Footer One composition.",
+		description:
+			"A Footer One composition.",
 		previewComponent: FooterOnePreview,
 		previewHref: "/preview/efferd-ui/footer/footer-one",
 		previewMode: "iframe",
@@ -106,37 +64,31 @@ export const footerBlocks: BlockShowcaseItem[] = [
 			...buttonFiles,
 			...logoFiles
 		])
-	},
-	{
-		id: "footer-six",
-		title: "Footer Six",
-		description: "A Footer Six composition.",
-		previewComponent: FooterSixPreview,
-		previewHref: "/preview/efferd-ui/footer/footer-six",
+	},	{
+		id: "footer-two",
+		title: "Footer Two",
+		description:
+			"A Footer Two composition.",
+		previewComponent: FooterTwoPreview,
+		previewHref: "/preview/efferd-ui/footer/footer-two",
 		previewMode: "iframe",
 		previewHeight: 820,
-		installId: "footer-six",
-		codeTree: createBlockCodeTree("footer-six:preview", [
+		installId: "footer-two",
+		codeTree: createBlockCodeTree("footer-two:preview", [
 			{
-				id: "footer-six:AnimatedContainer",
-				path: "components/efferd/footer/footer-six/AnimatedContainer.svelte",
+				id: "footer-two:footer",
+				path: "components/efferd/footer/footer-two/footer.svelte",
 				lang: "svelte",
-				code: footerFooterSixAnimatedcontainerSource
-			},
-			{
-				id: "footer-six:footer",
-				path: "components/efferd/footer/footer-six/footer.svelte",
-				lang: "svelte",
-				code: footerFooterSixFooterSource
+				code: footerFooterTwoFooterSource
 			},
 			...buttonFiles,
 			...logoFiles
 		])
-	},
-	{
+	},	{
 		id: "footer-three",
 		title: "Footer Three",
-		description: "A Footer Three composition.",
+		description:
+			"A Footer Three composition.",
 		previewComponent: FooterThreePreview,
 		previewHref: "/preview/efferd-ui/footer/footer-three",
 		previewMode: "iframe",
@@ -157,22 +109,71 @@ export const footerBlocks: BlockShowcaseItem[] = [
 			},
 			...logoFiles
 		])
-	},
-	{
-		id: "footer-two",
-		title: "Footer Two",
-		description: "A Footer Two composition.",
-		previewComponent: FooterTwoPreview,
-		previewHref: "/preview/efferd-ui/footer/footer-two",
+	},	{
+		id: "footer-four",
+		title: "Footer Four",
+		description:
+			"A Footer Four composition.",
+		previewComponent: FooterFourPreview,
+		previewHref: "/preview/efferd-ui/footer/footer-four",
 		previewMode: "iframe",
 		previewHeight: 820,
-		installId: "footer-two",
-		codeTree: createBlockCodeTree("footer-two:preview", [
+		installId: "footer-four",
+		codeTree: createBlockCodeTree("footer-four:preview", [
 			{
-				id: "footer-two:footer",
-				path: "components/efferd/footer/footer-two/footer.svelte",
+				id: "footer-four:LinkGroup",
+				path: "components/efferd/footer/footer-four/LinkGroup.svelte",
 				lang: "svelte",
-				code: footerFooterTwoFooterSource
+				code: footerFooterFourLinkgroupSource
+			},
+			{
+				id: "footer-four:footer",
+				path: "components/efferd/footer/footer-four/footer.svelte",
+				lang: "svelte",
+				code: footerFooterFourFooterSource
+			}
+		])
+	},	{
+		id: "footer-five",
+		title: "Footer Five",
+		description:
+			"A Footer Five composition.",
+		previewComponent: FooterFivePreview,
+		previewHref: "/preview/efferd-ui/footer/footer-five",
+		previewMode: "iframe",
+		previewHeight: 820,
+		installId: "footer-five",
+		codeTree: createBlockCodeTree("footer-five:preview", [
+			{
+				id: "footer-five:footer",
+				path: "components/efferd/footer/footer-five/footer.svelte",
+				lang: "svelte",
+				code: footerFooterFiveFooterSource
+			},
+			...buttonFiles
+		])
+	},	{
+		id: "footer-six",
+		title: "Footer Six",
+		description:
+			"A Footer Six composition.",
+		previewComponent: FooterSixPreview,
+		previewHref: "/preview/efferd-ui/footer/footer-six",
+		previewMode: "iframe",
+		previewHeight: 820,
+		installId: "footer-six",
+		codeTree: createBlockCodeTree("footer-six:preview", [
+			{
+				id: "footer-six:AnimatedContainer",
+				path: "components/efferd/footer/footer-six/AnimatedContainer.svelte",
+				lang: "svelte",
+				code: footerFooterSixAnimatedcontainerSource
+			},
+			{
+				id: "footer-six:footer",
+				path: "components/efferd/footer/footer-six/footer.svelte",
+				lang: "svelte",
+				code: footerFooterSixFooterSource
 			},
 			...buttonFiles,
 			...logoFiles

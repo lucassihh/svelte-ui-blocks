@@ -7,9 +7,9 @@
 </script>
 
 <Seo
-	title="Testimonials Blocks"
+	title="Testimonial Blocks"
 	desc="Preview curated testimonial block variants with a tree-style source explorer in Svelte Efferd Blocks."
-	link="/blocks/testimonials"
+	link="/blocks/testimonial"
 />
 
 {#each data.blocks as block (block.id)}

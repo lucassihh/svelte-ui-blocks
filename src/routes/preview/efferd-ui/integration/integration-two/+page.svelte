@@ -7,4 +7,6 @@
 	<meta name="description" content="Standalone preview for Integration Two in Svelte Efferd." />
 </svelte:head>
 
-<IntegrationTwo />
+<div class="flex flex-col min-h-screen w-full justify-center p-2">
+	<IntegrationTwo />
+</div>

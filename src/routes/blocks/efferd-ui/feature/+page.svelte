@@ -9,7 +9,7 @@
 <Seo
 	title="Feature Blocks"
 	desc="Preview curated feature block variants with a tree-style source explorer in Svelte Efferd Blocks."
-	link="/blocks/features"
+	link="/blocks/feature"
 />
 
 {#each data.blocks as block (block.id)}

@@ -66,8 +66,8 @@ export const dataBlocks: TypesCard[] = [
 		title: "Features",
 		description: "Grids and lists to showcase product capabilities",
 		href: "/blocks/efferd-ui/features",
-		count: efferd.features.length,
-		countLabel: isSingularOrPlural(efferd.features.length),
+		count: efferd.feature.length,
+		countLabel: isSingularOrPlural(efferd.feature.length),
 		previewComponent: FeaturesPreview
 	},
 	{
@@ -102,8 +102,8 @@ export const dataBlocks: TypesCard[] = [
 		title: "FAQs",
 		description: "Accordion-style frequently asked questions",
 		href: "/blocks/efferd-ui/faqs",
-		count: efferd.faqs.length,
-		countLabel: isSingularOrPlural(efferd.faqs.length),
+		count: efferd.faq.length,
+		countLabel: isSingularOrPlural(efferd.faq.length),
 		previewComponent: FaqsPreview
 	},
 	{

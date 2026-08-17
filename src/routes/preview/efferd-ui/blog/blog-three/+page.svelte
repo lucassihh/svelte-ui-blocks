@@ -7,6 +7,6 @@
 	<meta name="description" content="Standalone preview for Blog Three in Svelte Efferd." />
 </svelte:head>
 
-<div class="px-6 py-10 bg-background">
+<div class="flex flex-col min-h-screen w-full justify-center p-2">
 	<BlogThree />
 </div>

@@ -9,7 +9,7 @@
 <Seo
 	title="Integration Blocks"
 	desc="Preview curated integration block variants with a tree-style source explorer in Svelte Efferd Blocks."
-	link="/blocks/integrations"
+	link="/blocks/integration"
 />
 
 {#each data.blocks as block (block.id)}

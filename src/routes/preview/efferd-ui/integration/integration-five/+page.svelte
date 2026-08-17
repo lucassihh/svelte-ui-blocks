@@ -7,4 +7,6 @@
 	<meta name="description" content="Standalone preview for Integration Five in Svelte Efferd." />
 </svelte:head>
 
-<IntegrationFive />
+<div class="flex flex-col min-h-screen w-full justify-center p-2">
+	<IntegrationFive />
+</div>

@@ -7,4 +7,6 @@
 	<meta name="description" content="Standalone preview for Pricing Three in Svelte Efferd." />
 </svelte:head>
 
-<PricingThree />
+<div class="flex flex-col min-h-screen w-full justify-center p-2">
+	<PricingThree />
+</div>

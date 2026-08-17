@@ -3,8 +3,10 @@
 </script>
 
 <svelte:head>
-	<title>FAQ Four Preview | Svelte Efferd</title>
-	<meta name="description" content="Standalone preview for FAQ Four in Svelte Efferd." />
+	<title>Faq Four Preview | Svelte Efferd</title>
+	<meta name="description" content="Standalone preview for Faq Four in Svelte Efferd." />
 </svelte:head>
 
-<FaqFour />
+<div class="flex flex-col min-h-screen w-full justify-center p-2">
+	<FaqFour />
+</div>

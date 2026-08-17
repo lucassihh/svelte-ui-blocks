@@ -7,4 +7,6 @@
 	<meta name="description" content="Standalone preview for Integration Three in Svelte Efferd." />
 </svelte:head>
 
-<IntegrationThree />
+<div class="flex flex-col min-h-screen w-full justify-center p-2">
+	<IntegrationThree />
+</div>

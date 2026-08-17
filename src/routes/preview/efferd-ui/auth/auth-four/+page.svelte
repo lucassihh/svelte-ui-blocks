@@ -7,4 +7,6 @@
 	<meta name="description" content="Standalone preview for Auth Four in Svelte Efferd." />
 </svelte:head>
 
-<AuthFour />
+<div class="flex flex-col min-h-screen w-full justify-center p-2">
+	<AuthFour />
+</div>

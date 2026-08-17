@@ -8,7 +8,7 @@
 
 <Seo
 	title="Logo Cloud Blocks"
-	desc="Preview curated logo cloud block variants with a tree-style source explorer in Svelte Efferd Blocks."
+	desc="Preview curated logo-cloud block variants with a tree-style source explorer in Svelte Efferd Blocks."
 	link="/blocks/logo-cloud"
 />
 

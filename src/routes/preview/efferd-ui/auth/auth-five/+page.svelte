@@ -7,4 +7,6 @@
 	<meta name="description" content="Standalone preview for Auth Five in Svelte Efferd." />
 </svelte:head>
 
-<AuthFive />
+<div class="flex flex-col min-h-screen w-full justify-center p-2">
+	<AuthFive />
+</div>

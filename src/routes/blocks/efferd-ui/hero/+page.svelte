@@ -9,7 +9,7 @@
 <Seo
 	title="Hero Blocks"
 	desc="Preview curated hero block variants with a tree-style source explorer in Svelte Efferd Blocks."
-	link="/blocks/efferd-ui/hero"
+	link="/blocks/hero"
 />
 
 {#each data.blocks as block (block.id)}

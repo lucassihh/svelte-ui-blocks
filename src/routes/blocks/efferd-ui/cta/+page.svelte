@@ -7,8 +7,8 @@
 </script>
 
 <Seo
-	title="CTA Blocks"
-	desc="Preview curated CTA block variants with a tree-style source explorer in Svelte Efferd Blocks."
+	title="Cta Blocks"
+	desc="Preview curated cta block variants with a tree-style source explorer in Svelte Efferd Blocks."
 	link="/blocks/cta"
 />
 

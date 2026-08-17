@@ -7,4 +7,6 @@
 	<meta name="description" content="Standalone preview for Footer Five in Svelte Efferd." />
 </svelte:head>
 
-<FooterFive />
+<div class="flex flex-col min-h-screen w-full justify-center p-2">
+	<FooterFive />
+</div>

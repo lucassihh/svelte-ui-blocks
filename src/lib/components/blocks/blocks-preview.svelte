@@ -55,7 +55,7 @@
 	const SM_SIZE = 30;
 	const MD_SIZE = 62;
 	const LG_SIZE = 82;
-	const MIN_PREVIEW_HEIGHT = 520;
+	const MIN_PREVIEW_HEIGHT = 400;
 	const radioItem =
 		"rounded-(--radius) duration-200 flex items-center justify-center h-8 px-2.5 gap-2 transition-[color] data-[state=checked]:bg-muted";
 
@@ -440,7 +440,7 @@
 	<!-- Preview Container -->
 	<section class="relative">
 		<div class="max-w-7xl mx-auto w-full" style={`--preview-min-height: ${MIN_PREVIEW_HEIGHT}px;`}>
-			<div class={cn("z-40 bg-background", mode === "code" && "hidden")}>
+			<div class={cn("bg-background z-40", mode === "code" && "hidden")}>
 				{#if shouldRenderInIframe && previewHref}
 					<PaneGroup direction="horizontal">
 						<Pane

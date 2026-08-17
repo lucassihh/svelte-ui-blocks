@@ -7,4 +7,6 @@
 	<meta name="description" content="Standalone preview for Not Found Two in Svelte Efferd." />
 </svelte:head>
 
-<NotFoundTwo />
+<div class="flex flex-col min-h-screen w-full justify-center p-2">
+	<NotFoundTwo />
+</div>

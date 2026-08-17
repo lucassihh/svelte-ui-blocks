@@ -7,4 +7,6 @@
 	<meta name="description" content="Standalone preview for Feature Two in Svelte Efferd." />
 </svelte:head>
 
-<FeatureTwo />
+<div class="flex flex-col min-h-screen w-full justify-center p-2">
+	<FeatureTwo />
+</div>

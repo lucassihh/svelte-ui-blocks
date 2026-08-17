@@ -1,5 +1,5 @@
 <script lang="ts">
-	import Preview from "$lib/components/efferd-ui/logo-cloud/logo-cloud-two/preview.svelte";
+	import LogoCloudTwo from "$lib/components/efferd-ui/logo-cloud/logo-cloud-two/logo-cloud.svelte";
 </script>
 
 <svelte:head>
@@ -7,4 +7,6 @@
 	<meta name="description" content="Standalone preview for Logo Cloud Two in Svelte Efferd." />
 </svelte:head>
 
-<Preview />
+<div class="flex flex-col min-h-screen w-full justify-center p-2">
+	<LogoCloudTwo />
+</div>

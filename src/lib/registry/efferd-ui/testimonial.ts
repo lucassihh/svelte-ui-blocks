@@ -67,59 +67,10 @@ const dividerFiles = [
 
 export const testimonialBlocks: BlockShowcaseItem[] = [
 	{
-		id: "testimonial-five",
-		title: "Testimonial Five",
-		description: "A Testimonial Five composition.",
-		previewComponent: TestimonialFivePreview,
-		previewHref: "/preview/efferd-ui/testimonial/testimonial-five",
-		previewMode: "iframe",
-		previewHeight: 820,
-		installId: "testimonial-five",
-		codeTree: createBlockCodeTree("testimonial-five:preview", [
-			{
-				id: "testimonial-five:testimonial-card",
-				path: "components/efferd/testimonial/testimonial-five/testimonial-card.svelte",
-				lang: "svelte",
-				code: testimonialTestimonialFiveTestimonialCardSource
-			},
-			{
-				id: "testimonial-five:testimonial",
-				path: "components/efferd/testimonial/testimonial-five/testimonial.svelte",
-				lang: "svelte",
-				code: testimonialTestimonialFiveTestimonialSource
-			},
-			...dividerFiles
-		])
-	},
-	{
-		id: "testimonial-four",
-		title: "Testimonial Four",
-		description: "A Testimonial Four composition.",
-		previewComponent: TestimonialFourPreview,
-		previewHref: "/preview/efferd-ui/testimonial/testimonial-four",
-		previewMode: "iframe",
-		previewHeight: 820,
-		installId: "testimonial-four",
-		codeTree: createBlockCodeTree("testimonial-four:preview", [
-			{
-				id: "testimonial-four:testimonial-card",
-				path: "components/efferd/testimonial/testimonial-four/testimonial-card.svelte",
-				lang: "svelte",
-				code: testimonialTestimonialFourTestimonialCardSource
-			},
-			{
-				id: "testimonial-four:testimonial",
-				path: "components/efferd/testimonial/testimonial-four/testimonial.svelte",
-				lang: "svelte",
-				code: testimonialTestimonialFourTestimonialSource
-			},
-			...dividerFiles
-		])
-	},
-	{
 		id: "testimonial-one",
 		title: "Testimonial One",
-		description: "A Testimonial One composition.",
+		description:
+			"A Testimonial One composition.",
 		previewComponent: TestimonialOnePreview,
 		previewHref: "/preview/efferd-ui/testimonial/testimonial-one",
 		previewMode: "iframe",
@@ -133,11 +84,29 @@ export const testimonialBlocks: BlockShowcaseItem[] = [
 				code: testimonialTestimonialOneTestimonialSource
 			}
 		])
-	},
-	{
+	},	{
+		id: "testimonial-two",
+		title: "Testimonial Two",
+		description:
+			"A Testimonial Two composition.",
+		previewComponent: TestimonialTwoPreview,
+		previewHref: "/preview/efferd-ui/testimonial/testimonial-two",
+		previewMode: "iframe",
+		previewHeight: 820,
+		installId: "testimonial-two",
+		codeTree: createBlockCodeTree("testimonial-two:preview", [
+			{
+				id: "testimonial-two:testimonial",
+				path: "components/efferd/testimonial/testimonial-two/testimonial.svelte",
+				lang: "svelte",
+				code: testimonialTestimonialTwoTestimonialSource
+			}
+		])
+	},	{
 		id: "testimonial-three",
 		title: "Testimonial Three",
-		description: "A Testimonial Three composition.",
+		description:
+			"A Testimonial Three composition.",
 		previewComponent: TestimonialThreePreview,
 		previewHref: "/preview/efferd-ui/testimonial/testimonial-three",
 		previewMode: "iframe",
@@ -158,23 +127,55 @@ export const testimonialBlocks: BlockShowcaseItem[] = [
 			},
 			...decorIconFiles
 		])
-	},
-	{
-		id: "testimonial-two",
-		title: "Testimonial Two",
-		description: "A Testimonial Two composition.",
-		previewComponent: TestimonialTwoPreview,
-		previewHref: "/preview/efferd-ui/testimonial/testimonial-two",
+	},	{
+		id: "testimonial-four",
+		title: "Testimonial Four",
+		description:
+			"A Testimonial Four composition.",
+		previewComponent: TestimonialFourPreview,
+		previewHref: "/preview/efferd-ui/testimonial/testimonial-four",
 		previewMode: "iframe",
 		previewHeight: 820,
-		installId: "testimonial-two",
-		codeTree: createBlockCodeTree("testimonial-two:preview", [
+		installId: "testimonial-four",
+		codeTree: createBlockCodeTree("testimonial-four:preview", [
 			{
-				id: "testimonial-two:testimonial",
-				path: "components/efferd/testimonial/testimonial-two/testimonial.svelte",
+				id: "testimonial-four:testimonial-card",
+				path: "components/efferd/testimonial/testimonial-four/testimonial-card.svelte",
 				lang: "svelte",
-				code: testimonialTestimonialTwoTestimonialSource
-			}
+				code: testimonialTestimonialFourTestimonialCardSource
+			},
+			{
+				id: "testimonial-four:testimonial",
+				path: "components/efferd/testimonial/testimonial-four/testimonial.svelte",
+				lang: "svelte",
+				code: testimonialTestimonialFourTestimonialSource
+			},
+			...dividerFiles
+		])
+	},	{
+		id: "testimonial-five",
+		title: "Testimonial Five",
+		description:
+			"A Testimonial Five composition.",
+		previewComponent: TestimonialFivePreview,
+		previewHref: "/preview/efferd-ui/testimonial/testimonial-five",
+		previewMode: "iframe",
+		previewHeight: 820,
+		installId: "testimonial-five",
+		codeTree: createBlockCodeTree("testimonial-five:preview", [
+			{
+				id: "testimonial-five:testimonial-card",
+				path: "components/efferd/testimonial/testimonial-five/testimonial-card.svelte",
+				lang: "svelte",
+				code: testimonialTestimonialFiveTestimonialCardSource
+			},
+			{
+				id: "testimonial-five:testimonial",
+				path: "components/efferd/testimonial/testimonial-five/testimonial.svelte",
+				lang: "svelte",
+				code: testimonialTestimonialFiveTestimonialSource
+			},
+			...dividerFiles
 		])
 	}
 ];

@@ -74,48 +74,10 @@ const dividerFiles = [
 
 export const faqBlocks: BlockShowcaseItem[] = [
 	{
-		id: "faq-five",
-		title: "Faq Five",
-		description: "A Faq Five composition.",
-		previewComponent: FaqFivePreview,
-		previewHref: "/preview/efferd-ui/faq/faq-five",
-		previewMode: "iframe",
-		previewHeight: 820,
-		installId: "faq-five",
-		codeTree: createBlockCodeTree("faq-five:preview", [
-			{
-				id: "faq-five:faq",
-				path: "components/efferd/faq/faq-five/faq.svelte",
-				lang: "svelte",
-				code: faqFaqFiveFaqSource
-			},
-			...buttonFiles,
-			...dividerFiles
-		])
-	},
-	{
-		id: "faq-four",
-		title: "Faq Four",
-		description: "A Faq Four composition.",
-		previewComponent: FaqFourPreview,
-		previewHref: "/preview/efferd-ui/faq/faq-four",
-		previewMode: "iframe",
-		previewHeight: 820,
-		installId: "faq-four",
-		codeTree: createBlockCodeTree("faq-four:preview", [
-			{
-				id: "faq-four:faq",
-				path: "components/efferd/faq/faq-four/faq.svelte",
-				lang: "svelte",
-				code: faqFaqFourFaqSource
-			},
-			...buttonFiles
-		])
-	},
-	{
 		id: "faq-one",
 		title: "Faq One",
-		description: "A Faq One composition.",
+		description:
+			"A Faq One composition.",
 		previewComponent: FaqOnePreview,
 		previewHref: "/preview/efferd-ui/faq/faq-one",
 		previewMode: "iframe",
@@ -129,11 +91,29 @@ export const faqBlocks: BlockShowcaseItem[] = [
 				code: faqFaqOneFaqSource
 			}
 		])
-	},
-	{
+	},	{
+		id: "faq-two",
+		title: "Faq Two",
+		description:
+			"A Faq Two composition.",
+		previewComponent: FaqTwoPreview,
+		previewHref: "/preview/efferd-ui/faq/faq-two",
+		previewMode: "iframe",
+		previewHeight: 820,
+		installId: "faq-two",
+		codeTree: createBlockCodeTree("faq-two:preview", [
+			{
+				id: "faq-two:faq",
+				path: "components/efferd/faq/faq-two/faq.svelte",
+				lang: "svelte",
+				code: faqFaqTwoFaqSource
+			}
+		])
+	},	{
 		id: "faq-three",
 		title: "Faq Three",
-		description: "A Faq Three composition.",
+		description:
+			"A Faq Three composition.",
 		previewComponent: FaqThreePreview,
 		previewHref: "/preview/efferd-ui/faq/faq-three",
 		previewMode: "iframe",
@@ -148,23 +128,44 @@ export const faqBlocks: BlockShowcaseItem[] = [
 			},
 			...decorIconFiles
 		])
-	},
-	{
-		id: "faq-two",
-		title: "Faq Two",
-		description: "A Faq Two composition.",
-		previewComponent: FaqTwoPreview,
-		previewHref: "/preview/efferd-ui/faq/faq-two",
+	},	{
+		id: "faq-four",
+		title: "Faq Four",
+		description:
+			"A Faq Four composition.",
+		previewComponent: FaqFourPreview,
+		previewHref: "/preview/efferd-ui/faq/faq-four",
 		previewMode: "iframe",
 		previewHeight: 820,
-		installId: "faq-two",
-		codeTree: createBlockCodeTree("faq-two:preview", [
+		installId: "faq-four",
+		codeTree: createBlockCodeTree("faq-four:preview", [
 			{
-				id: "faq-two:faq",
-				path: "components/efferd/faq/faq-two/faq.svelte",
+				id: "faq-four:faq",
+				path: "components/efferd/faq/faq-four/faq.svelte",
 				lang: "svelte",
-				code: faqFaqTwoFaqSource
-			}
+				code: faqFaqFourFaqSource
+			},
+			...buttonFiles
+		])
+	},	{
+		id: "faq-five",
+		title: "Faq Five",
+		description:
+			"A Faq Five composition.",
+		previewComponent: FaqFivePreview,
+		previewHref: "/preview/efferd-ui/faq/faq-five",
+		previewMode: "iframe",
+		previewHeight: 820,
+		installId: "faq-five",
+		codeTree: createBlockCodeTree("faq-five:preview", [
+			{
+				id: "faq-five:faq",
+				path: "components/efferd/faq/faq-five/faq.svelte",
+				lang: "svelte",
+				code: faqFaqFiveFaqSource
+			},
+			...buttonFiles,
+			...dividerFiles
 		])
 	}
 ];

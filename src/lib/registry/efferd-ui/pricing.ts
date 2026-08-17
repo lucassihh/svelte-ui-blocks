@@ -55,34 +55,10 @@ const dividerFiles = [
 
 export const pricingBlocks: BlockShowcaseItem[] = [
 	{
-		id: "pricing-four",
-		title: "Pricing Four",
-		description: "A Pricing Four composition.",
-		previewComponent: PricingFourPreview,
-		previewHref: "/preview/efferd-ui/pricing/pricing-four",
-		previewMode: "iframe",
-		previewHeight: 820,
-		installId: "pricing-four",
-		codeTree: createBlockCodeTree("pricing-four:preview", [
-			{
-				id: "pricing-four:frequency-toggle",
-				path: "components/efferd/pricing/pricing-four/frequency-toggle.svelte",
-				lang: "svelte",
-				code: pricingPricingFourFrequencyToggleSource
-			},
-			{
-				id: "pricing-four:pricing",
-				path: "components/efferd/pricing/pricing-four/pricing.svelte",
-				lang: "svelte",
-				code: pricingPricingFourPricingSource
-			},
-			...buttonFiles
-		])
-	},
-	{
 		id: "pricing-one",
 		title: "Pricing One",
-		description: "A Pricing One composition.",
+		description:
+			"A Pricing One composition.",
 		previewComponent: PricingOnePreview,
 		previewHref: "/preview/efferd-ui/pricing/pricing-one",
 		previewMode: "iframe",
@@ -98,11 +74,31 @@ export const pricingBlocks: BlockShowcaseItem[] = [
 			...buttonFiles,
 			...decorIconFiles
 		])
-	},
-	{
+	},	{
+		id: "pricing-two",
+		title: "Pricing Two",
+		description:
+			"A Pricing Two composition.",
+		previewComponent: PricingTwoPreview,
+		previewHref: "/preview/efferd-ui/pricing/pricing-two",
+		previewMode: "iframe",
+		previewHeight: 820,
+		installId: "pricing-two",
+		codeTree: createBlockCodeTree("pricing-two:preview", [
+			{
+				id: "pricing-two:pricing",
+				path: "components/efferd/pricing/pricing-two/pricing.svelte",
+				lang: "svelte",
+				code: pricingPricingTwoPricingSource
+			},
+			...buttonFiles,
+			...dividerFiles
+		])
+	},	{
 		id: "pricing-three",
 		title: "Pricing Three",
-		description: "A Pricing Three composition.",
+		description:
+			"A Pricing Three composition.",
 		previewComponent: PricingThreePreview,
 		previewHref: "/preview/efferd-ui/pricing/pricing-three",
 		previewMode: "iframe",
@@ -123,25 +119,30 @@ export const pricingBlocks: BlockShowcaseItem[] = [
 			},
 			...buttonFiles
 		])
-	},
-	{
-		id: "pricing-two",
-		title: "Pricing Two",
-		description: "A Pricing Two composition.",
-		previewComponent: PricingTwoPreview,
-		previewHref: "/preview/efferd-ui/pricing/pricing-two",
+	},	{
+		id: "pricing-four",
+		title: "Pricing Four",
+		description:
+			"A Pricing Four composition.",
+		previewComponent: PricingFourPreview,
+		previewHref: "/preview/efferd-ui/pricing/pricing-four",
 		previewMode: "iframe",
 		previewHeight: 820,
-		installId: "pricing-two",
-		codeTree: createBlockCodeTree("pricing-two:preview", [
+		installId: "pricing-four",
+		codeTree: createBlockCodeTree("pricing-four:preview", [
 			{
-				id: "pricing-two:pricing",
-				path: "components/efferd/pricing/pricing-two/pricing.svelte",
+				id: "pricing-four:frequency-toggle",
+				path: "components/efferd/pricing/pricing-four/frequency-toggle.svelte",
 				lang: "svelte",
-				code: pricingPricingTwoPricingSource
+				code: pricingPricingFourFrequencyToggleSource
 			},
-			...buttonFiles,
-			...dividerFiles
+			{
+				id: "pricing-four:pricing",
+				path: "components/efferd/pricing/pricing-four/pricing.svelte",
+				lang: "svelte",
+				code: pricingPricingFourPricingSource
+			},
+			...buttonFiles
 		])
 	}
 ];

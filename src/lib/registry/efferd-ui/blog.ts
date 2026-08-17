@@ -44,7 +44,8 @@ export const blogBlocks: BlockShowcaseItem[] = [
 	{
 		id: "blog-one",
 		title: "Blog One",
-		description: "A Blog One composition.",
+		description:
+			"A Blog One composition.",
 		previewComponent: BlogOnePreview,
 		previewHref: "/preview/efferd-ui/blog/blog-one",
 		previewMode: "iframe",
@@ -65,36 +66,11 @@ export const blogBlocks: BlockShowcaseItem[] = [
 			},
 			...dividerFiles
 		])
-	},
-	{
-		id: "blog-three",
-		title: "Blog Three",
-		description: "A Blog Three composition.",
-		previewComponent: BlogThreePreview,
-		previewHref: "/preview/efferd-ui/blog/blog-three",
-		previewMode: "iframe",
-		previewHeight: 820,
-		installId: "blog-three",
-		codeTree: createBlockCodeTree("blog-three:preview", [
-			{
-				id: "blog-three:blog-card",
-				path: "components/efferd/blog/blog-three/blog-card.svelte",
-				lang: "svelte",
-				code: blogBlogThreeBlogCardSource
-			},
-			{
-				id: "blog-three:blog",
-				path: "components/efferd/blog/blog-three/blog.svelte",
-				lang: "svelte",
-				code: blogBlogThreeBlogSource
-			},
-			...dividerFiles
-		])
-	},
-	{
+	},	{
 		id: "blog-two",
 		title: "Blog Two",
-		description: "A Blog Two composition.",
+		description:
+			"A Blog Two composition.",
 		previewComponent: BlogTwoPreview,
 		previewHref: "/preview/efferd-ui/blog/blog-two",
 		previewMode: "iframe",
@@ -112,6 +88,31 @@ export const blogBlocks: BlockShowcaseItem[] = [
 				path: "components/efferd/blog/blog-two/blog.svelte",
 				lang: "svelte",
 				code: blogBlogTwoBlogSource
+			},
+			...dividerFiles
+		])
+	},	{
+		id: "blog-three",
+		title: "Blog Three",
+		description:
+			"A Blog Three composition.",
+		previewComponent: BlogThreePreview,
+		previewHref: "/preview/efferd-ui/blog/blog-three",
+		previewMode: "iframe",
+		previewHeight: 820,
+		installId: "blog-three",
+		codeTree: createBlockCodeTree("blog-three:preview", [
+			{
+				id: "blog-three:blog-card",
+				path: "components/efferd/blog/blog-three/blog-card.svelte",
+				lang: "svelte",
+				code: blogBlogThreeBlogCardSource
+			},
+			{
+				id: "blog-three:blog",
+				path: "components/efferd/blog/blog-three/blog.svelte",
+				lang: "svelte",
+				code: blogBlogThreeBlogSource
 			},
 			...dividerFiles
 		])

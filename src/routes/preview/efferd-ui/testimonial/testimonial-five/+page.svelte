@@ -7,4 +7,6 @@
 	<meta name="description" content="Standalone preview for Testimonial Five in Svelte Efferd." />
 </svelte:head>
 
-<TestimonialFive />
+<div class="flex flex-col min-h-screen w-full justify-center p-2">
+	<TestimonialFive />
+</div>

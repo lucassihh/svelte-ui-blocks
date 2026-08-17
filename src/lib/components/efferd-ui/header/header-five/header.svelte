@@ -36,3 +36,23 @@
 		<MobileNav />
 	</nav>
 </header>
+
+
+<!-- Content Example -->
+<main class="flex flex-col gap-4">
+    <div class="flex items-center justify-center p-20 mt-10 bg-card border border-border">
+        <h1>Content Here</h1>
+    </div> 
+    
+    <div class="flex items-center justify-center p-20 mt-10 bg-card border border-border">
+        <h1>Content Here</h1>
+    </div>
+    
+    <div class="flex items-center justify-center p-20 mt-10 bg-card border border-border">
+        <h1>Content Here</h1>
+    </div>                 
+    
+    <div class="flex items-center justify-center p-20 mt-10 bg-card border border-border">
+        <h1>Content Here</h1>
+    </div> 
+</main>

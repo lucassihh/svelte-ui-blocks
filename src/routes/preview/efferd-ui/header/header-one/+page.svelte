@@ -7,14 +7,6 @@
 	<meta name="description" content="Standalone preview for Header One in Svelte Efferd." />
 </svelte:head>
 
-<div class="min-h-[180vh] bg-background">
+<div class="flex flex-col min-h-screen w-full">
 	<HeaderOne />
-	<main class="max-w-5xl px-4 py-12 mx-auto">
-		<div class="space-y-4">
-			<h1 class="text-3xl font-semibold tracking-tight">Header One Preview</h1>
-			<p class="max-w-2xl text-muted-foreground">
-				Scroll this page to preview the sticky header state and the mobile navigation behavior.
-			</p>
-		</div>
-	</main>
 </div>

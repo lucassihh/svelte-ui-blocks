@@ -7,8 +7,6 @@
 	<meta name="description" content="Standalone preview for Logo Cloud One in Svelte Efferd." />
 </svelte:head>
 
-<div class="p-4 min-h-screen w-full place-content-center">
-	<div class="max-w-3xl mx-auto w-full">
-		<LogoCloudOne />
-	</div>
+<div class="flex flex-col min-h-screen w-full justify-center p-2">
+	<LogoCloudOne />
 </div>

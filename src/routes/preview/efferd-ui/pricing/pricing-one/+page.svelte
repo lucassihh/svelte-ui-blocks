@@ -7,4 +7,6 @@
 	<meta name="description" content="Standalone preview for Pricing One in Svelte Efferd." />
 </svelte:head>
 
-<PricingOne />
+<div class="flex flex-col min-h-screen w-full justify-center p-2">
+	<PricingOne />
+</div>

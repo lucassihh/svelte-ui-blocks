@@ -7,4 +7,6 @@
 	<meta name="description" content="Standalone preview for Auth Two in Svelte Efferd." />
 </svelte:head>
 
-<AuthTwo />
+<div class="flex flex-col min-h-screen w-full justify-center p-2">
+	<AuthTwo />
+</div>

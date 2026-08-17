@@ -73,9 +73,86 @@ const dividerFiles = [
 
 export const contactBlocks: BlockShowcaseItem[] = [
 	{
+		id: "contact-one",
+		title: "Contact One",
+		description:
+			"A Contact One composition.",
+		previewComponent: ContactOnePreview,
+		previewHref: "/preview/efferd-ui/contact/contact-one",
+		previewMode: "iframe",
+		previewHeight: 820,
+		installId: "contact-one",
+		codeTree: createBlockCodeTree("contact-one:preview", [
+			{
+				id: "contact-one:contact",
+				path: "components/efferd/contact/contact-one/contact.svelte",
+				lang: "svelte",
+				code: contactContactOneContactSource
+			},
+			...dividerFiles
+		])
+	},	{
+		id: "contact-two",
+		title: "Contact Two",
+		description:
+			"A Contact Two composition.",
+		previewComponent: ContactTwoPreview,
+		previewHref: "/preview/efferd-ui/contact/contact-two",
+		previewMode: "iframe",
+		previewHeight: 820,
+		installId: "contact-two",
+		codeTree: createBlockCodeTree("contact-two:preview", [
+			{
+				id: "contact-two:contact",
+				path: "components/efferd/contact/contact-two/contact.svelte",
+				lang: "svelte",
+				code: contactContactTwoContactSource
+			},
+			...buttonFiles
+		])
+	},	{
+		id: "contact-three",
+		title: "Contact Three",
+		description:
+			"A Contact Three composition.",
+		previewComponent: ContactThreePreview,
+		previewHref: "/preview/efferd-ui/contact/contact-three",
+		previewMode: "iframe",
+		previewHeight: 820,
+		installId: "contact-three",
+		codeTree: createBlockCodeTree("contact-three:preview", [
+			{
+				id: "contact-three:contact",
+				path: "components/efferd/contact/contact-three/contact.svelte",
+				lang: "svelte",
+				code: contactContactThreeContactSource
+			},
+			...dividerFiles
+		])
+	},	{
+		id: "contact-four",
+		title: "Contact Four",
+		description:
+			"A Contact Four composition.",
+		previewComponent: ContactFourPreview,
+		previewHref: "/preview/efferd-ui/contact/contact-four",
+		previewMode: "iframe",
+		previewHeight: 820,
+		installId: "contact-four",
+		codeTree: createBlockCodeTree("contact-four:preview", [
+			{
+				id: "contact-four:contact",
+				path: "components/efferd/contact/contact-four/contact.svelte",
+				lang: "svelte",
+				code: contactContactFourContactSource
+			},
+			...buttonFiles
+		])
+	},	{
 		id: "contact-five",
 		title: "Contact Five",
-		description: "A Contact Five composition.",
+		description:
+			"A Contact Five composition.",
 		previewComponent: ContactFivePreview,
 		previewHref: "/preview/efferd-ui/contact/contact-five",
 		previewMode: "iframe",
@@ -96,82 +173,6 @@ export const contactBlocks: BlockShowcaseItem[] = [
 			},
 			...buttonFiles,
 			...decorIconFiles
-		])
-	},
-	{
-		id: "contact-four",
-		title: "Contact Four",
-		description: "A Contact Four composition.",
-		previewComponent: ContactFourPreview,
-		previewHref: "/preview/efferd-ui/contact/contact-four",
-		previewMode: "iframe",
-		previewHeight: 820,
-		installId: "contact-four",
-		codeTree: createBlockCodeTree("contact-four:preview", [
-			{
-				id: "contact-four:contact",
-				path: "components/efferd/contact/contact-four/contact.svelte",
-				lang: "svelte",
-				code: contactContactFourContactSource
-			},
-			...buttonFiles
-		])
-	},
-	{
-		id: "contact-one",
-		title: "Contact One",
-		description: "A Contact One composition.",
-		previewComponent: ContactOnePreview,
-		previewHref: "/preview/efferd-ui/contact/contact-one",
-		previewMode: "iframe",
-		previewHeight: 820,
-		installId: "contact-one",
-		codeTree: createBlockCodeTree("contact-one:preview", [
-			{
-				id: "contact-one:contact",
-				path: "components/efferd/contact/contact-one/contact.svelte",
-				lang: "svelte",
-				code: contactContactOneContactSource
-			},
-			...dividerFiles
-		])
-	},
-	{
-		id: "contact-three",
-		title: "Contact Three",
-		description: "A Contact Three composition.",
-		previewComponent: ContactThreePreview,
-		previewHref: "/preview/efferd-ui/contact/contact-three",
-		previewMode: "iframe",
-		previewHeight: 820,
-		installId: "contact-three",
-		codeTree: createBlockCodeTree("contact-three:preview", [
-			{
-				id: "contact-three:contact",
-				path: "components/efferd/contact/contact-three/contact.svelte",
-				lang: "svelte",
-				code: contactContactThreeContactSource
-			},
-			...dividerFiles
-		])
-	},
-	{
-		id: "contact-two",
-		title: "Contact Two",
-		description: "A Contact Two composition.",
-		previewComponent: ContactTwoPreview,
-		previewHref: "/preview/efferd-ui/contact/contact-two",
-		previewMode: "iframe",
-		previewHeight: 820,
-		installId: "contact-two",
-		codeTree: createBlockCodeTree("contact-two:preview", [
-			{
-				id: "contact-two:contact",
-				path: "components/efferd/contact/contact-two/contact.svelte",
-				lang: "svelte",
-				code: contactContactTwoContactSource
-			},
-			...buttonFiles
 		])
 	}
 ];

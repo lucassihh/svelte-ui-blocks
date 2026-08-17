@@ -3,12 +3,10 @@
 </script>
 
 <svelte:head>
-	<title>CTA Two Preview | Svelte Efferd</title>
-	<meta name="description" content="Standalone preview for CTA Two in Svelte Efferd." />
+	<title>Cta Two Preview | Svelte Efferd</title>
+	<meta name="description" content="Standalone preview for Cta Two in Svelte Efferd." />
 </svelte:head>
 
-<div class="px-6 py-10 flex min-h-screen w-full items-center justify-center bg-background">
-	<div class="max-w-6xl w-full">
-		<CtaTwo />
-	</div>
+<div class="flex flex-col min-h-screen w-full justify-center p-2">
+	<CtaTwo />
 </div>

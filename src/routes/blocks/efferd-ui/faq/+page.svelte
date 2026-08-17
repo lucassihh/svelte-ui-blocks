@@ -7,9 +7,9 @@
 </script>
 
 <Seo
-	title="FAQ Blocks"
-	desc="Preview curated FAQ block variants with a tree-style source explorer in Svelte Efferd Blocks."
-	link="/blocks/faqs"
+	title="Faq Blocks"
+	desc="Preview curated faq block variants with a tree-style source explorer in Svelte Efferd Blocks."
+	link="/blocks/faq"
 />
 
 {#each data.blocks as block (block.id)}

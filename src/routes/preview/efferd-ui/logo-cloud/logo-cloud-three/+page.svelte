@@ -1,5 +1,5 @@
 <script lang="ts">
-	import Showcase from "$lib/components/efferd-ui/logo-cloud/logo-cloud-three/showcase.svelte";
+	import LogoCloudThree from "$lib/components/efferd-ui/logo-cloud/logo-cloud-three/logo-cloud.svelte";
 </script>
 
 <svelte:head>
@@ -7,4 +7,6 @@
 	<meta name="description" content="Standalone preview for Logo Cloud Three in Svelte Efferd." />
 </svelte:head>
 
-<Showcase />
+<div class="flex flex-col min-h-screen w-full justify-center p-2">
+	<LogoCloudThree />
+</div>

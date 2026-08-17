@@ -1,5 +1,5 @@
 <script lang="ts">
-	import HeroTwoPreview from "$lib/components/efferd-ui/hero/hero-two/preview.svelte";
+	import HeroTwo from "$lib/components/efferd-ui/hero/hero-two/hero.svelte";
 </script>
 
 <svelte:head>
@@ -7,4 +7,6 @@
 	<meta name="description" content="Standalone preview for Hero Two in Svelte Efferd." />
 </svelte:head>
 
-<HeroTwoPreview />
+<div class="flex flex-col min-h-screen w-full">
+	<HeroTwo />
+</div>

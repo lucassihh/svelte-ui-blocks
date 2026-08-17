@@ -1,10 +1,6 @@
 # Dependencies
 node_modules
 
-# Project
-_PROJECT
-/scripts
-
 # Output
 .output
 .vercel

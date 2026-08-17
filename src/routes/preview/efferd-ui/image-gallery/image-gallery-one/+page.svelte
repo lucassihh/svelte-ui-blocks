@@ -1,5 +1,5 @@
 <script lang="ts">
-	import ImageGallery from "$lib/components/efferd-ui/image-gallery/image-gallery-one/image-gallery.svelte";
+	import ImageGalleryOne from "$lib/components/efferd-ui/image-gallery/image-gallery-one/image-gallery.svelte";
 </script>
 
 <svelte:head>
@@ -7,4 +7,6 @@
 	<meta name="description" content="Standalone preview for Image Gallery One in Svelte Efferd." />
 </svelte:head>
 
-<ImageGallery />
+<div class="flex flex-col min-h-screen w-full justify-center p-2">
+	<ImageGalleryOne />
+</div>

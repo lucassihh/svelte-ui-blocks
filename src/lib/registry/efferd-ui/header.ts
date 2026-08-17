@@ -145,96 +145,10 @@ const scrollHookFiles = [
 
 export const headerBlocks: BlockShowcaseItem[] = [
 	{
-		id: "header-five",
-		title: "Header Five",
-		description: "A Header Five composition.",
-		previewComponent: HeaderFivePreview,
-		previewHref: "/preview/efferd-ui/header/header-five",
-		previewMode: "iframe",
-		previewHeight: 820,
-		installId: "header-five",
-		codeTree: createBlockCodeTree("header-five:preview", [
-			{
-				id: "header-five:desktop-nav",
-				path: "components/efferd/header/header-five/desktop-nav.svelte",
-				lang: "svelte",
-				code: headerHeaderFiveDesktopNavSource
-			},
-			{
-				id: "header-five:header",
-				path: "components/efferd/header/header-five/header.svelte",
-				lang: "svelte",
-				code: headerHeaderFiveHeaderSource
-			},
-			{
-				id: "header-five:link-item",
-				path: "components/efferd/header/header-five/link-item.svelte",
-				lang: "svelte",
-				code: headerHeaderFiveLinkItemSource
-			},
-			{
-				id: "header-five:mobile-nav",
-				path: "components/efferd/header/header-five/mobile-nav.svelte",
-				lang: "svelte",
-				code: headerHeaderFiveMobileNavSource
-			},
-			{
-				id: "header-five:nav-links",
-				path: "components/efferd/header/header-five/nav-links.ts",
-				lang: "typescript",
-				code: headerHeaderFiveNavLinksSource
-			},
-			{
-				id: "header-five:types",
-				path: "components/efferd/header/header-five/types.ts",
-				lang: "typescript",
-				code: headerHeaderFiveTypesSource
-			},
-			...buttonFiles,
-			...logoFiles,
-			...navigationMenuFiles,
-			...portalFiles,
-			...scrollHookFiles
-		])
-	},
-	{
-		id: "header-four",
-		title: "Header Four",
-		description: "A Header Four composition.",
-		previewComponent: HeaderFourPreview,
-		previewHref: "/preview/efferd-ui/header/header-four",
-		previewMode: "iframe",
-		previewHeight: 820,
-		installId: "header-four",
-		codeTree: createBlockCodeTree("header-four:preview", [
-			{
-				id: "header-four:header",
-				path: "components/efferd/header/header-four/header.svelte",
-				lang: "svelte",
-				code: headerHeaderFourHeaderSource
-			},
-			{
-				id: "header-four:mobile-nav",
-				path: "components/efferd/header/header-four/mobile-nav.svelte",
-				lang: "svelte",
-				code: headerHeaderFourMobileNavSource
-			},
-			{
-				id: "header-four:nav-links",
-				path: "components/efferd/header/header-four/nav-links.ts",
-				lang: "typescript",
-				code: headerHeaderFourNavLinksSource
-			},
-			...buttonFiles,
-			...logoFiles,
-			...portalFiles,
-			...scrollHookFiles
-		])
-	},
-	{
 		id: "header-one",
 		title: "Header One",
-		description: "A Header One composition.",
+		description:
+			"A Header One composition.",
 		previewComponent: HeaderOnePreview,
 		previewHref: "/preview/efferd-ui/header/header-one",
 		previewMode: "iframe",
@@ -264,11 +178,45 @@ export const headerBlocks: BlockShowcaseItem[] = [
 			...portalFiles,
 			...scrollHookFiles
 		])
-	},
-	{
+	},	{
+		id: "header-two",
+		title: "Header Two",
+		description:
+			"A Header Two composition.",
+		previewComponent: HeaderTwoPreview,
+		previewHref: "/preview/efferd-ui/header/header-two",
+		previewMode: "iframe",
+		previewHeight: 820,
+		installId: "header-two",
+		codeTree: createBlockCodeTree("header-two:preview", [
+			{
+				id: "header-two:header",
+				path: "components/efferd/header/header-two/header.svelte",
+				lang: "svelte",
+				code: headerHeaderTwoHeaderSource
+			},
+			{
+				id: "header-two:mobile-nav",
+				path: "components/efferd/header/header-two/mobile-nav.svelte",
+				lang: "svelte",
+				code: headerHeaderTwoMobileNavSource
+			},
+			{
+				id: "header-two:nav-links",
+				path: "components/efferd/header/header-two/nav-links.ts",
+				lang: "typescript",
+				code: headerHeaderTwoNavLinksSource
+			},
+			...buttonFiles,
+			...logoFiles,
+			...portalFiles,
+			...scrollHookFiles
+		])
+	},	{
 		id: "header-three",
 		title: "Header Three",
-		description: "A Header Three composition.",
+		description:
+			"A Header Three composition.",
 		previewComponent: HeaderThreePreview,
 		previewHref: "/preview/efferd-ui/header/header-three",
 		previewMode: "iframe",
@@ -317,37 +265,90 @@ export const headerBlocks: BlockShowcaseItem[] = [
 			...portalFiles,
 			...scrollHookFiles
 		])
-	},
-	{
-		id: "header-two",
-		title: "Header Two",
-		description: "A Header Two composition.",
-		previewComponent: HeaderTwoPreview,
-		previewHref: "/preview/efferd-ui/header/header-two",
+	},	{
+		id: "header-four",
+		title: "Header Four",
+		description:
+			"A Header Four composition.",
+		previewComponent: HeaderFourPreview,
+		previewHref: "/preview/efferd-ui/header/header-four",
 		previewMode: "iframe",
 		previewHeight: 820,
-		installId: "header-two",
-		codeTree: createBlockCodeTree("header-two:preview", [
+		installId: "header-four",
+		codeTree: createBlockCodeTree("header-four:preview", [
 			{
-				id: "header-two:header",
-				path: "components/efferd/header/header-two/header.svelte",
+				id: "header-four:header",
+				path: "components/efferd/header/header-four/header.svelte",
 				lang: "svelte",
-				code: headerHeaderTwoHeaderSource
+				code: headerHeaderFourHeaderSource
 			},
 			{
-				id: "header-two:mobile-nav",
-				path: "components/efferd/header/header-two/mobile-nav.svelte",
+				id: "header-four:mobile-nav",
+				path: "components/efferd/header/header-four/mobile-nav.svelte",
 				lang: "svelte",
-				code: headerHeaderTwoMobileNavSource
+				code: headerHeaderFourMobileNavSource
 			},
 			{
-				id: "header-two:nav-links",
-				path: "components/efferd/header/header-two/nav-links.ts",
+				id: "header-four:nav-links",
+				path: "components/efferd/header/header-four/nav-links.ts",
 				lang: "typescript",
-				code: headerHeaderTwoNavLinksSource
+				code: headerHeaderFourNavLinksSource
 			},
 			...buttonFiles,
 			...logoFiles,
+			...portalFiles,
+			...scrollHookFiles
+		])
+	},	{
+		id: "header-five",
+		title: "Header Five",
+		description:
+			"A Header Five composition.",
+		previewComponent: HeaderFivePreview,
+		previewHref: "/preview/efferd-ui/header/header-five",
+		previewMode: "iframe",
+		previewHeight: 820,
+		installId: "header-five",
+		codeTree: createBlockCodeTree("header-five:preview", [
+			{
+				id: "header-five:desktop-nav",
+				path: "components/efferd/header/header-five/desktop-nav.svelte",
+				lang: "svelte",
+				code: headerHeaderFiveDesktopNavSource
+			},
+			{
+				id: "header-five:header",
+				path: "components/efferd/header/header-five/header.svelte",
+				lang: "svelte",
+				code: headerHeaderFiveHeaderSource
+			},
+			{
+				id: "header-five:link-item",
+				path: "components/efferd/header/header-five/link-item.svelte",
+				lang: "svelte",
+				code: headerHeaderFiveLinkItemSource
+			},
+			{
+				id: "header-five:mobile-nav",
+				path: "components/efferd/header/header-five/mobile-nav.svelte",
+				lang: "svelte",
+				code: headerHeaderFiveMobileNavSource
+			},
+			{
+				id: "header-five:nav-links",
+				path: "components/efferd/header/header-five/nav-links.ts",
+				lang: "typescript",
+				code: headerHeaderFiveNavLinksSource
+			},
+			{
+				id: "header-five:types",
+				path: "components/efferd/header/header-five/types.ts",
+				lang: "typescript",
+				code: headerHeaderFiveTypesSource
+			},
+			...buttonFiles,
+			...logoFiles,
+			...navigationMenuFiles,
 			...portalFiles,
 			...scrollHookFiles
 		])

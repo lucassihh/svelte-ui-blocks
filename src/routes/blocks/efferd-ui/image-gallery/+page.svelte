@@ -8,7 +8,7 @@
 
 <Seo
 	title="Image Gallery Blocks"
-	desc="Preview curated image gallery block variants with a tree-style source explorer in Svelte Efferd Blocks."
+	desc="Preview curated image-gallery block variants with a tree-style source explorer in Svelte Efferd Blocks."
 	link="/blocks/image-gallery"
 />
 

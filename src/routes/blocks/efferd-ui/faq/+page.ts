@@ -5,6 +5,6 @@ export const prerender = true;
 
 export const load: PageLoad = () => {
 	return {
-		blocks: registry["efferd-ui"].faqs
+		blocks: registry["efferd-ui"].faq
 	};
 };

@@ -7,8 +7,6 @@
 	<meta name="description" content="Standalone preview for Contact Two in Svelte Efferd." />
 </svelte:head>
 
-<div class="px-6 py-10 flex min-h-screen w-full items-center justify-center bg-background">
-	<div class="max-w-5xl w-full">
-		<ContactTwo />
-	</div>
+<div class="flex flex-col min-h-screen w-full justify-center p-2">
+	<ContactTwo />
 </div>

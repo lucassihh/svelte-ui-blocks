@@ -9,7 +9,7 @@
 <Seo
 	title="Contact Blocks"
 	desc="Preview curated contact block variants with a tree-style source explorer in Svelte Efferd Blocks."
-	link="/blocks/efferd-ui/contact"
+	link="/blocks/contact"
 />
 
 {#each data.blocks as block (block.id)}
