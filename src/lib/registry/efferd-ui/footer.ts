@@ -52,7 +52,8 @@ export const footerBlocks: BlockShowcaseItem[] = [
 	{
 		id: "footer-one",
 		title: "Footer One",
-		description: "A Footer One composition.",
+		description:
+			"A Footer One composition.",
 		previewComponent: FooterOnePreview,
 		previewHref: "/preview/efferd-ui/footer/footer-one",
 		previewMode: "iframe",
@@ -68,11 +69,11 @@ export const footerBlocks: BlockShowcaseItem[] = [
 			...buttonFiles,
 			...logoFiles
 		])
-	},
-	{
+	},	{
 		id: "footer-two",
 		title: "Footer Two",
-		description: "A Footer Two composition.",
+		description:
+			"A Footer Two composition.",
 		previewComponent: FooterTwoPreview,
 		previewHref: "/preview/efferd-ui/footer/footer-two",
 		previewMode: "iframe",
@@ -88,11 +89,11 @@ export const footerBlocks: BlockShowcaseItem[] = [
 			...buttonFiles,
 			...logoFiles
 		])
-	},
-	{
+	},	{
 		id: "footer-three",
 		title: "Footer Three",
-		description: "A Footer Three composition.",
+		description:
+			"A Footer Three composition.",
 		previewComponent: FooterThreePreview,
 		previewHref: "/preview/efferd-ui/footer/footer-three",
 		previewMode: "iframe",
@@ -113,11 +114,11 @@ export const footerBlocks: BlockShowcaseItem[] = [
 			},
 			...logoFiles
 		])
-	},
-	{
+	},	{
 		id: "footer-four",
 		title: "Footer Four",
-		description: "A Footer Four composition.",
+		description:
+			"A Footer Four composition.",
 		previewComponent: FooterFourPreview,
 		previewHref: "/preview/efferd-ui/footer/footer-four",
 		previewMode: "iframe",
@@ -137,11 +138,11 @@ export const footerBlocks: BlockShowcaseItem[] = [
 				code: footerFooterFourFooterSource
 			}
 		])
-	},
-	{
+	},	{
 		id: "footer-five",
 		title: "Footer Five",
-		description: "A Footer Five composition.",
+		description:
+			"A Footer Five composition.",
 		previewComponent: FooterFivePreview,
 		previewHref: "/preview/efferd-ui/footer/footer-five",
 		previewMode: "iframe",
@@ -156,11 +157,11 @@ export const footerBlocks: BlockShowcaseItem[] = [
 			},
 			...buttonFiles
 		])
-	},
-	{
+	},	{
 		id: "footer-six",
 		title: "Footer Six",
-		description: "A Footer Six composition.",
+		description:
+			"A Footer Six composition.",
 		previewComponent: FooterSixPreview,
 		previewHref: "/preview/efferd-ui/footer/footer-six",
 		previewMode: "iframe",

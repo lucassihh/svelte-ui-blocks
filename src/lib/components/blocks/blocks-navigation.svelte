@@ -1,51 +1,60 @@
 <script lang="ts">
 	import { page } from "$app/state";
+	import { registry } from "$lib/registry/index.ts";
 
 	// UI
 	import ScrollArea from "$lib/components/ui/scroll-area/scroll-area.svelte";
 
 	// Hooks & Other
 	import { cn } from "$lib/utils";
+    
+    // Logic to Read registry [ui-name] for nav links
+    
+	// Convert camelCase/kebab-case for slugs (URL), Example: myName -> my-name
+	function camelToKebab(str: string) {
+		return str.replace(/([a-z0-9])([A-Z])/g, "$1-$2").toLowerCase();
+	}
+    
+    // Convert camelCase/kebab-case for Labels, Example: myName -> My Name
+	function formatLabel(str: string) {
+		// It handles specific exceptions
+		// const customLabels: Record<string, string> = {
+		//	faq: "FAQ",
+		//	cta: "CTA"
+		// };
+		// if (customLabels[str.toLowerCase()]) return customLabels[str.toLowerCase()];
 
-	// blockCategories Types
-	export type BlockCategory = {
-		slug: string;
-		label: string;
-	};
+		return str
+			.replace(/([A-Z])/g, " $1")
+			.replace(/^./, (s) => s.toUpperCase())
+			.trim();
+	}
 
-	const blockCategories = [
-		{ slug: "hero", label: "Hero" },
-		{ slug: "header", label: "Header" },
-		{ slug: "logo-cloud", label: "Logo Cloud" },
-		{ slug: "feature", label: "Features" },
-		{ slug: "integration", label: "Integrations" },
-		{ slug: "testimonial", label: "Testimonials" },
-		{ slug: "cta", label: "CTA" },
-		{ slug: "pricing", label: "Pricing" },
-		{ slug: "blog", label: "Blog" },
-		{ slug: "auth", label: "Auth" },
-		{ slug: "faq", label: "FAQ's" },
-		{ slug: "contact", label: "Contact" },
-		{ slug: "footer", label: "Footer" },
-		{ slug: "image-gallery", label: "Image Gallery" },
-		{ slug: "not-found", label: "Not Found" }
-	] as const satisfies readonly BlockCategory[];
+	// Identifies the current library (example: "efferd-ui")
+	const library = $derived((page.url.pathname.split("/")[2] || "efferd-ui") as keyof typeof registry);
 
-	// Get ui folder (efferd-ui, magic-ui,)
-	const library = $derived(page.url.pathname.split("/")[2] || "efferd-ui");
-
-	// Get the component url /(hero, header, footer)
+	// Get the selected category from the URL
 	const currentCategory = $derived(page.url.pathname.split("/")[3] ?? "");
 
-	// Set activelink if the component url same as page slug
+	// Generates categories dynamically from the selected registry
+	const blockCategories = $derived.by(() => {
+		const currentRegistry = registry[library] || registry["efferd-ui"];
+		
+		return Object.keys(currentRegistry).map((key) => ({
+			slug: camelToKebab(key), // "logoCloud" -> "logo-cloud"
+			label: formatLabel(key)   // "logoCloud" -> "Logo Cloud"
+		}));
+	});
+
 	const isActive = (slug: string) => currentCategory === slug;
 </script>
+
 
 <div
 	class="top-15 right-0 left-0 max-w-7xl backdrop-blur-xs sticky z-40 mx-auto w-full border-b border-dashed bg-background/80"
 >
 	<ScrollArea orientation="horizontal" fade={false} class="w-full" scrollbarXClasses="hidden">
-		<div class="max-w-7xl mx-auto w-fit">
+		<nav class="max-w-7xl mx-auto w-fit">
 			<ul
 				class="h-12 gap-6 px-4 sm:px-6 lg:gap-4 relative flex min-w-max snap-x snap-mandatory items-center"
 			>
@@ -70,6 +79,6 @@
 					</li>
 				{/each}
 			</ul>
-		</div>
+		</nav>
 	</ScrollArea>
 </div>

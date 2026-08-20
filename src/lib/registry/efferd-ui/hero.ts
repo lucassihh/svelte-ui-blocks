@@ -83,8 +83,7 @@ export const heroBlocks: BlockShowcaseItem[] = [
 			},
 			...buttonFiles
 		])
-	},
-	{
+	},	{
 		id: "hero-two",
 		title: "Hero Two",
 		description:
@@ -111,8 +110,7 @@ export const heroBlocks: BlockShowcaseItem[] = [
 			...decorIconFiles,
 			...dividerFiles
 		])
-	},
-	{
+	},	{
 		id: "hero-three",
 		title: "Hero Three",
 		description:

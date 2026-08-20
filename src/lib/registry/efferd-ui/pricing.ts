@@ -62,7 +62,8 @@ export const pricingBlocks: BlockShowcaseItem[] = [
 	{
 		id: "pricing-one",
 		title: "Pricing One",
-		description: "A Pricing One composition.",
+		description:
+			"A Pricing One composition.",
 		previewComponent: PricingOnePreview,
 		previewHref: "/preview/efferd-ui/pricing/pricing-one",
 		previewMode: "iframe",
@@ -78,11 +79,11 @@ export const pricingBlocks: BlockShowcaseItem[] = [
 			...buttonFiles,
 			...decorIconFiles
 		])
-	},
-	{
+	},	{
 		id: "pricing-two",
 		title: "Pricing Two",
-		description: "A Pricing Two composition.",
+		description:
+			"A Pricing Two composition.",
 		previewComponent: PricingTwoPreview,
 		previewHref: "/preview/efferd-ui/pricing/pricing-two",
 		previewMode: "iframe",
@@ -98,11 +99,11 @@ export const pricingBlocks: BlockShowcaseItem[] = [
 			...buttonFiles,
 			...dividerFiles
 		])
-	},
-	{
+	},	{
 		id: "pricing-three",
 		title: "Pricing Three",
-		description: "A Pricing Three composition.",
+		description:
+			"A Pricing Three composition.",
 		previewComponent: PricingThreePreview,
 		previewHref: "/preview/efferd-ui/pricing/pricing-three",
 		previewMode: "iframe",
@@ -123,11 +124,11 @@ export const pricingBlocks: BlockShowcaseItem[] = [
 			},
 			...buttonFiles
 		])
-	},
-	{
+	},	{
 		id: "pricing-four",
 		title: "Pricing Four",
-		description: "A Pricing Four composition.",
+		description:
+			"A Pricing Four composition.",
 		previewComponent: PricingFourPreview,
 		previewHref: "/preview/efferd-ui/pricing/pricing-four",
 		previewMode: "iframe",

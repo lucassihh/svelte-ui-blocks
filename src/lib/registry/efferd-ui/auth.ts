@@ -34,6 +34,8 @@ import inputGroupSource from "$lib/components/ui/input-group/input-group.svelte?
 import inputGroupTextSource from "$lib/components/ui/input-group/input-group-text.svelte?raw";
 import inputGroupTextareaSource from "$lib/components/ui/input-group/input-group-textarea.svelte?raw";
 import logoSvgSource from "$lib/assets/svg/logo.svelte?raw";
+import particlesIndexSource from "$lib/components/ui-blocks/magic-ui/particles/index.ts?raw";
+import particlesSource from "$lib/components/ui-blocks/magic-ui/particles/particles.svelte?raw";
 
 // Shared Items
 const buttonFiles = [
@@ -85,7 +87,8 @@ export const authBlocks: BlockShowcaseItem[] = [
 	{
 		id: "auth-one",
 		title: "Auth One",
-		description: "A Auth One composition.",
+		description:
+			"A Auth One composition.",
 		previewComponent: AuthOnePreview,
 		previewHref: "/preview/efferd-ui/auth/auth-one",
 		previewMode: "iframe",
@@ -101,11 +104,11 @@ export const authBlocks: BlockShowcaseItem[] = [
 			...buttonFiles,
 			...logoFiles
 		])
-	},
-	{
+	},	{
 		id: "auth-two",
 		title: "Auth Two",
-		description: "A Auth Two composition.",
+		description:
+			"A Auth Two composition.",
 		previewComponent: AuthTwoPreview,
 		previewHref: "/preview/efferd-ui/auth/auth-two",
 		previewMode: "iframe",
@@ -121,11 +124,11 @@ export const authBlocks: BlockShowcaseItem[] = [
 			...buttonFiles,
 			...decorIconFiles
 		])
-	},
-	{
+	},	{
 		id: "auth-three",
 		title: "Auth Three",
-		description: "A Auth Three composition.",
+		description:
+			"A Auth Three composition.",
 		previewComponent: AuthThreePreview,
 		previewHref: "/preview/efferd-ui/auth/auth-three",
 		previewMode: "iframe",
@@ -141,11 +144,11 @@ export const authBlocks: BlockShowcaseItem[] = [
 			...buttonFiles,
 			...logoFiles
 		])
-	},
-	{
+	},	{
 		id: "auth-four",
 		title: "Auth Four",
-		description: "A Auth Four composition.",
+		description:
+			"A Auth Four composition.",
 		previewComponent: AuthFourPreview,
 		previewHref: "/preview/efferd-ui/auth/auth-four",
 		previewMode: "iframe",
@@ -162,11 +165,11 @@ export const authBlocks: BlockShowcaseItem[] = [
 			...dividerFiles,
 			...logoFiles
 		])
-	},
-	{
+	},	{
 		id: "auth-five",
 		title: "Auth Five",
-		description: "A Auth Five composition.",
+		description:
+			"A Auth Five composition.",
 		previewComponent: AuthFivePreview,
 		previewHref: "/preview/efferd-ui/auth/auth-five",
 		previewMode: "iframe",

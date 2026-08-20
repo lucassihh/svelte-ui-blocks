@@ -65,7 +65,8 @@ export const integrationBlocks: BlockShowcaseItem[] = [
 	{
 		id: "integration-one",
 		title: "Integration One",
-		description: "A Integration One composition.",
+		description:
+			"A Integration One composition.",
 		previewComponent: IntegrationOnePreview,
 		previewHref: "/preview/efferd-ui/integration/integration-one",
 		previewMode: "iframe",
@@ -80,11 +81,11 @@ export const integrationBlocks: BlockShowcaseItem[] = [
 			},
 			...buttonFiles
 		])
-	},
-	{
+	},	{
 		id: "integration-two",
 		title: "Integration Two",
-		description: "A Integration Two composition.",
+		description:
+			"A Integration Two composition.",
 		previewComponent: IntegrationTwoPreview,
 		previewHref: "/preview/efferd-ui/integration/integration-two",
 		previewMode: "iframe",
@@ -105,11 +106,11 @@ export const integrationBlocks: BlockShowcaseItem[] = [
 			},
 			...decorIconFiles
 		])
-	},
-	{
+	},	{
 		id: "integration-three",
 		title: "Integration Three",
-		description: "A Integration Three composition.",
+		description:
+			"A Integration Three composition.",
 		previewComponent: IntegrationThreePreview,
 		previewHref: "/preview/efferd-ui/integration/integration-three",
 		previewMode: "iframe",
@@ -131,11 +132,11 @@ export const integrationBlocks: BlockShowcaseItem[] = [
 			...buttonFiles,
 			...dividerFiles
 		])
-	},
-	{
+	},	{
 		id: "integration-four",
 		title: "Integration Four",
-		description: "A Integration Four composition.",
+		description:
+			"A Integration Four composition.",
 		previewComponent: IntegrationFourPreview,
 		previewHref: "/preview/efferd-ui/integration/integration-four",
 		previewMode: "iframe",
@@ -155,11 +156,11 @@ export const integrationBlocks: BlockShowcaseItem[] = [
 				code: integrationIntegrationFourIntegrationSource
 			}
 		])
-	},
-	{
+	},	{
 		id: "integration-five",
 		title: "Integration Five",
-		description: "A Integration Five composition.",
+		description:
+			"A Integration Five composition.",
 		previewComponent: IntegrationFivePreview,
 		previewHref: "/preview/efferd-ui/integration/integration-five",
 		previewMode: "iframe",

@@ -81,7 +81,8 @@ export const faqBlocks: BlockShowcaseItem[] = [
 	{
 		id: "faq-one",
 		title: "Faq One",
-		description: "A Faq One composition.",
+		description:
+			"A Faq One composition.",
 		previewComponent: FaqOnePreview,
 		previewHref: "/preview/efferd-ui/faq/faq-one",
 		previewMode: "iframe",
@@ -95,11 +96,11 @@ export const faqBlocks: BlockShowcaseItem[] = [
 				code: faqFaqOneFaqSource
 			}
 		])
-	},
-	{
+	},	{
 		id: "faq-two",
 		title: "Faq Two",
-		description: "A Faq Two composition.",
+		description:
+			"A Faq Two composition.",
 		previewComponent: FaqTwoPreview,
 		previewHref: "/preview/efferd-ui/faq/faq-two",
 		previewMode: "iframe",
@@ -113,11 +114,11 @@ export const faqBlocks: BlockShowcaseItem[] = [
 				code: faqFaqTwoFaqSource
 			}
 		])
-	},
-	{
+	},	{
 		id: "faq-three",
 		title: "Faq Three",
-		description: "A Faq Three composition.",
+		description:
+			"A Faq Three composition.",
 		previewComponent: FaqThreePreview,
 		previewHref: "/preview/efferd-ui/faq/faq-three",
 		previewMode: "iframe",
@@ -132,11 +133,11 @@ export const faqBlocks: BlockShowcaseItem[] = [
 			},
 			...decorIconFiles
 		])
-	},
-	{
+	},	{
 		id: "faq-four",
 		title: "Faq Four",
-		description: "A Faq Four composition.",
+		description:
+			"A Faq Four composition.",
 		previewComponent: FaqFourPreview,
 		previewHref: "/preview/efferd-ui/faq/faq-four",
 		previewMode: "iframe",
@@ -151,11 +152,11 @@ export const faqBlocks: BlockShowcaseItem[] = [
 			},
 			...buttonFiles
 		])
-	},
-	{
+	},	{
 		id: "faq-five",
 		title: "Faq Five",
-		description: "A Faq Five composition.",
+		description:
+			"A Faq Five composition.",
 		previewComponent: FaqFivePreview,
 		previewHref: "/preview/efferd-ui/faq/faq-five",
 		previewMode: "iframe",

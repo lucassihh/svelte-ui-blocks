@@ -152,7 +152,8 @@ export const headerBlocks: BlockShowcaseItem[] = [
 	{
 		id: "header-one",
 		title: "Header One",
-		description: "A Header One composition.",
+		description:
+			"A Header One composition.",
 		previewComponent: HeaderOnePreview,
 		previewHref: "/preview/efferd-ui/header/header-one",
 		previewMode: "iframe",
@@ -182,11 +183,11 @@ export const headerBlocks: BlockShowcaseItem[] = [
 			...portalFiles,
 			...scrollHookFiles
 		])
-	},
-	{
+	},	{
 		id: "header-two",
 		title: "Header Two",
-		description: "A Header Two composition.",
+		description:
+			"A Header Two composition.",
 		previewComponent: HeaderTwoPreview,
 		previewHref: "/preview/efferd-ui/header/header-two",
 		previewMode: "iframe",
@@ -216,11 +217,11 @@ export const headerBlocks: BlockShowcaseItem[] = [
 			...portalFiles,
 			...scrollHookFiles
 		])
-	},
-	{
+	},	{
 		id: "header-three",
 		title: "Header Three",
-		description: "A Header Three composition.",
+		description:
+			"A Header Three composition.",
 		previewComponent: HeaderThreePreview,
 		previewHref: "/preview/efferd-ui/header/header-three",
 		previewMode: "iframe",
@@ -269,11 +270,11 @@ export const headerBlocks: BlockShowcaseItem[] = [
 			...portalFiles,
 			...scrollHookFiles
 		])
-	},
-	{
+	},	{
 		id: "header-four",
 		title: "Header Four",
-		description: "A Header Four composition.",
+		description:
+			"A Header Four composition.",
 		previewComponent: HeaderFourPreview,
 		previewHref: "/preview/efferd-ui/header/header-four",
 		previewMode: "iframe",
@@ -303,11 +304,11 @@ export const headerBlocks: BlockShowcaseItem[] = [
 			...portalFiles,
 			...scrollHookFiles
 		])
-	},
-	{
+	},	{
 		id: "header-five",
 		title: "Header Five",
-		description: "A Header Five composition.",
+		description:
+			"A Header Five composition.",
 		previewComponent: HeaderFivePreview,
 		previewHref: "/preview/efferd-ui/header/header-five",
 		previewMode: "iframe",

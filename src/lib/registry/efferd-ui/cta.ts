@@ -69,7 +69,8 @@ export const ctaBlocks: BlockShowcaseItem[] = [
 	{
 		id: "cta-one",
 		title: "Cta One",
-		description: "A Cta One composition.",
+		description:
+			"A Cta One composition.",
 		previewComponent: CtaOnePreview,
 		previewHref: "/preview/efferd-ui/cta/cta-one",
 		previewMode: "iframe",
@@ -85,11 +86,11 @@ export const ctaBlocks: BlockShowcaseItem[] = [
 			...buttonFiles,
 			...dividerFiles
 		])
-	},
-	{
+	},	{
 		id: "cta-two",
 		title: "Cta Two",
-		description: "A Cta Two composition.",
+		description:
+			"A Cta Two composition.",
 		previewComponent: CtaTwoPreview,
 		previewHref: "/preview/efferd-ui/cta/cta-two",
 		previewMode: "iframe",
@@ -105,11 +106,11 @@ export const ctaBlocks: BlockShowcaseItem[] = [
 			...buttonFiles,
 			...dividerFiles
 		])
-	},
-	{
+	},	{
 		id: "cta-three",
 		title: "Cta Three",
-		description: "A Cta Three composition.",
+		description:
+			"A Cta Three composition.",
 		previewComponent: CtaThreePreview,
 		previewHref: "/preview/efferd-ui/cta/cta-three",
 		previewMode: "iframe",
@@ -125,11 +126,11 @@ export const ctaBlocks: BlockShowcaseItem[] = [
 			...buttonFiles,
 			...decorIconFiles
 		])
-	},
-	{
+	},	{
 		id: "cta-four",
 		title: "Cta Four",
-		description: "A Cta Four composition.",
+		description:
+			"A Cta Four composition.",
 		previewComponent: CtaFourPreview,
 		previewHref: "/preview/efferd-ui/cta/cta-four",
 		previewMode: "iframe",
@@ -144,11 +145,11 @@ export const ctaBlocks: BlockShowcaseItem[] = [
 			},
 			...buttonFiles
 		])
-	},
-	{
+	},	{
 		id: "cta-five",
 		title: "Cta Five",
-		description: "A Cta Five composition.",
+		description:
+			"A Cta Five composition.",
 		previewComponent: CtaFivePreview,
 		previewHref: "/preview/efferd-ui/cta/cta-five",
 		previewMode: "iframe",

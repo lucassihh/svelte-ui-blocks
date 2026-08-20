@@ -25,7 +25,8 @@ export const imageGalleryBlocks: BlockShowcaseItem[] = [
 	{
 		id: "image-gallery-one",
 		title: "Image Gallery One",
-		description: "A Image Gallery One composition.",
+		description:
+			"A Image Gallery One composition.",
 		previewComponent: ImageGalleryOnePreview,
 		previewHref: "/preview/efferd-ui/image-gallery/image-gallery-one",
 		previewMode: "iframe",

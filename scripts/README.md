@@ -27,7 +27,7 @@ src/
 └── blocks/ # Blocks Page ( to Preview multi blocks )
 └── [ui-name]/ # Example: efferd-ui, magic-ui/
 └── [category]/ # Example: hero, footer, faq
-└── + page.svelte # Seo & `$lib/components/blocks/blocks-preview` for blocks navigation header
+└── + page.svelte # Seo & `$lib/components/blocks/blocks-preview` for blocks-page
 └── +page.ts # import { registry } from "$lib/registry";
 ```
 

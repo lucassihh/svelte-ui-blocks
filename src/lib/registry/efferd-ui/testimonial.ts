@@ -74,7 +74,8 @@ export const testimonialBlocks: BlockShowcaseItem[] = [
 	{
 		id: "testimonial-one",
 		title: "Testimonial One",
-		description: "A Testimonial One composition.",
+		description:
+			"A Testimonial One composition.",
 		previewComponent: TestimonialOnePreview,
 		previewHref: "/preview/efferd-ui/testimonial/testimonial-one",
 		previewMode: "iframe",
@@ -88,11 +89,11 @@ export const testimonialBlocks: BlockShowcaseItem[] = [
 				code: testimonialTestimonialOneTestimonialSource
 			}
 		])
-	},
-	{
+	},	{
 		id: "testimonial-two",
 		title: "Testimonial Two",
-		description: "A Testimonial Two composition.",
+		description:
+			"A Testimonial Two composition.",
 		previewComponent: TestimonialTwoPreview,
 		previewHref: "/preview/efferd-ui/testimonial/testimonial-two",
 		previewMode: "iframe",
@@ -106,11 +107,11 @@ export const testimonialBlocks: BlockShowcaseItem[] = [
 				code: testimonialTestimonialTwoTestimonialSource
 			}
 		])
-	},
-	{
+	},	{
 		id: "testimonial-three",
 		title: "Testimonial Three",
-		description: "A Testimonial Three composition.",
+		description:
+			"A Testimonial Three composition.",
 		previewComponent: TestimonialThreePreview,
 		previewHref: "/preview/efferd-ui/testimonial/testimonial-three",
 		previewMode: "iframe",
@@ -131,11 +132,11 @@ export const testimonialBlocks: BlockShowcaseItem[] = [
 			},
 			...decorIconFiles
 		])
-	},
-	{
+	},	{
 		id: "testimonial-four",
 		title: "Testimonial Four",
-		description: "A Testimonial Four composition.",
+		description:
+			"A Testimonial Four composition.",
 		previewComponent: TestimonialFourPreview,
 		previewHref: "/preview/efferd-ui/testimonial/testimonial-four",
 		previewMode: "iframe",
@@ -156,11 +157,11 @@ export const testimonialBlocks: BlockShowcaseItem[] = [
 			},
 			...dividerFiles
 		])
-	},
-	{
+	},	{
 		id: "testimonial-five",
 		title: "Testimonial Five",
-		description: "A Testimonial Five composition.",
+		description:
+			"A Testimonial Five composition.",
 		previewComponent: TestimonialFivePreview,
 		previewHref: "/preview/efferd-ui/testimonial/testimonial-five",
 		previewMode: "iframe",

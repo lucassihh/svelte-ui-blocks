@@ -7,6 +7,6 @@
 	<meta name="description" content="Standalone preview for Contact Five in Svelte Efferd." />
 </svelte:head>
 
-<div class="p-2 flex min-h-screen w-full flex-col justify-center">
+<div class="flex flex-col min-h-screen w-full justify-center p-2">
 	<ContactFive />
 </div>

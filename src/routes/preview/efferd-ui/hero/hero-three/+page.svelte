@@ -7,6 +7,6 @@
 	<meta name="description" content="Standalone preview for Hero Three in Svelte Efferd." />
 </svelte:head>
 
-<div class="flex min-h-screen w-full flex-col">
+<div class="flex flex-col min-h-screen w-full">
 	<HeroThree />
 </div>

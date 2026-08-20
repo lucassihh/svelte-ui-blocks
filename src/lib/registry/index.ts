@@ -32,7 +32,7 @@ export const registry = {
 		contact: contactBlocks,
 		footer: footerBlocks,
 		imageGallery: imageGalleryBlocks,
-		notFound: notFoundBlocks
+		notFound: notFoundBlocks,
 	}
 };
 
