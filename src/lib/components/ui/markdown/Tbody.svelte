@@ -10,6 +10,6 @@
 	const { children, class: className = "", ...restProps }: ComponentProps = $props();
 </script>
 
-<tbody {...restProps} class={cn("divide-y divide-border/60", className)}>
+<tbody {...restProps} class={cn("divide-border/60 divide-y", className)}>
 	{@render children?.()}
 </tbody>

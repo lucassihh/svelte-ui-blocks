@@ -2,36 +2,33 @@
 	import { cn } from "$lib/utils";
 	import type { Snippet } from "svelte";
 
-	let { class: className, children } = $props<{
+	type Props = {
+		id?: string;
 		class?: string;
+		title?: string;
+		titleBaseClass?: string;
 		children?: Snippet;
-	}>();
+		[prop: string]: unknown;
+	};
+	let { id = "", class: className, children, title, titleBaseClass }: Props = $props();
 </script>
 
-<div class={cn("step mb-10 ml-8 last:mb-0 relative", className)}>
-	<div class="space-y-4">
+<div class={cn("relative pb-10 pl-8", className)} {id}>
+	{#if title}
+		<div class={cn("mb-2 flex h-8 items-center", titleBaseClass)}>
+			<span
+				class="border-border bg-card text-foreground absolute -left-4 flex size-8 items-center justify-center rounded-full border text-xs font-medium shadow-sm [counter-increment:step] before:content-[counter(step)]"
+			></span>
+			<h3 class="text-base leading-none font-medium">
+				{title}
+			</h3>
+		</div>
+	{:else}
+		<span
+			class="border-border bg-card text-foreground absolute top-1 -left-4 flex size-8 items-center justify-center rounded-full border text-xs font-medium [counter-increment:step] before:content-[counter(step)]"
+		></span>
+	{/if}
+	<div class="text-foreground/70 text-base leading-relaxed">
 		{@render children?.()}
 	</div>
 </div>
-
-<style>
-	.step::before {
-		counter-increment: step;
-		content: counter(step);
-		position: absolute;
-		top: 0;
-		left: -2.125rem;
-		display: flex;
-		height: 1.5rem;
-		width: 1.5rem;
-		align-items: center;
-		justify-content: center;
-		border-radius: 9999px;
-		border: 1px solid var(--border);
-		background: var(--card);
-		color: var(--primary);
-		font-size: 0.75rem;
-		font-weight: 600;
-		box-shadow: var(--shadow-xs);
-	}
-</style>

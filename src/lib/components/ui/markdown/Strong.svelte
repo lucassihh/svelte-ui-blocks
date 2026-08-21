@@ -11,6 +11,6 @@
 	const { children, class: className = "", ...restProps }: ComponentProps = $props();
 </script>
 
-<strong {...restProps} class={cn("font-medium text-foreground", className)}>
+<strong {...restProps} class={cn("text-foreground text-base font-medium", className)}>
 	{@render children?.()}
 </strong>

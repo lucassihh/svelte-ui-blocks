@@ -17,6 +17,7 @@ import Td from "./Td.svelte";
 import Th from "./Th.svelte";
 import Thead from "./Thead.svelte";
 import Tr from "./Tr.svelte";
+import CodeSpan from "./CodeSpan.svelte";
 
 export {
 	H1,
@@ -37,5 +38,6 @@ export {
 	Td,
 	Th,
 	Thead,
-	Tr
+	Tr,
+	CodeSpan,
 };
