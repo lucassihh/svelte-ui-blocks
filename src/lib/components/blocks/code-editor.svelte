@@ -17,7 +17,11 @@
 	import Check from "@lucide/svelte/icons/check";
 	import Copy from "@lucide/svelte/icons/copy";
 	import ExternalLink from "@lucide/svelte/icons/external-link";
-
+    // Svg Icons
+    import JavascriptIcon from "$lib/assets/svg/logos/javascript.svelte";
+    import TypescriptIcon from "$lib/assets/svg/logos/typescript.svelte";
+    import SvelteIcon from "$lib/assets/svg/logos/svelte.svelte";
+    
 	// Hooks & Other
 	import { UseClipboard } from "$lib/hooks/use-clipboard.svelte";
 	import { scale } from "svelte/transition";
@@ -83,7 +87,14 @@
 
 	<div class="min-w-0 relative min-h-[32rem] flex-1">
 		<div class="gap-3 py-1.5 pr-2 pl-4 flex items-center justify-between border-b">
-			<p class="min-w-0 text-sm tracking-wider truncate font-mono text-muted-foreground">
+			<p class="flex items-center gap-2 min-w-0 text-sm tracking-wider truncate font-mono text-muted-foreground">
+                {#if activeFile?.name.includes(".svelte")}
+                  <SvelteIcon/>
+                  {:else if activeFile?.name.includes(".ts")} 
+                  <TypescriptIcon/>
+                  {:else if activeFile?.name.includes(".js")} 
+                  <JavascriptIcon/>
+                {/if}
 				{activeFile?.name ?? "No file selected"}
 			</p>
 
