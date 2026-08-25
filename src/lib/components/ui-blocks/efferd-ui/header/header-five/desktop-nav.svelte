@@ -4,13 +4,13 @@
 	import { companyLinks, companyLinks2, productLinks } from "./nav-links";
 </script>
 
-<NavigationMenu.Root class="md:flex hidden">
+<NavigationMenu.Root class="hidden md:flex">
 	<NavigationMenu.List>
 		<NavigationMenu.Item>
 			<NavigationMenu.Trigger class="bg-transparent">Product</NavigationMenu.Trigger>
 			<NavigationMenu.Content class="p-0!">
-				<div class="m-0 p-1 pr-1.5 bg-muted/50 dark:bg-background">
-					<div class="w-64 gap-2 p-2 shadow grid grid-cols-1 rounded-lg border bg-popover">
+				<div class="m-0 bg-muted/50 p-1 pr-1.5 dark:bg-background">
+					<div class="grid w-64 grid-cols-1 gap-2 rounded-lg border bg-popover p-2 shadow">
 						{#each productLinks as item, i}
 							<NavigationMenu.Link>
 								<LinkItem {...item} />
@@ -29,9 +29,9 @@
 		<NavigationMenu.Item>
 			<NavigationMenu.Trigger class="bg-transparent">Company</NavigationMenu.Trigger>
 			<NavigationMenu.Content class="p-0">
-				<div class="p-1 pr-1.5 pb-1.5 bg-muted/50 dark:bg-background">
-					<div class="w-sm gap-2 grid grid-cols-2">
-						<div class="space-y-2 p-2 shadow rounded-lg border bg-popover">
+				<div class="bg-muted/50 p-1 pr-1.5 pb-1.5 dark:bg-background">
+					<div class="grid w-sm grid-cols-2 gap-2">
+						<div class="space-y-2 rounded-lg border bg-popover p-2 shadow">
 							{#each companyLinks as item, i}
 								<NavigationMenu.Link>
 									<LinkItem {...item} />
@@ -42,7 +42,7 @@
 							{#each companyLinks2 as item, i}
 								{@const IconComp = item.icon}
 								<NavigationMenu.Link>
-									<div class="gap-2 flex items-center">
+									<div class="flex items-center gap-2">
 										<IconComp />
 										{item.label}
 									</div>
@@ -54,7 +54,7 @@
 			</NavigationMenu.Content>
 		</NavigationMenu.Item>
 		<NavigationMenu.Item>
-			<NavigationMenu.Link class="p-2 px-4 rounded-md hover:bg-accent">
+			<NavigationMenu.Link class="rounded-md p-2 px-4 hover:bg-accent">
 				{#snippet child({ props })}
 					<a href="/documentation" {...props}>Docs</a>
 				{/snippet}

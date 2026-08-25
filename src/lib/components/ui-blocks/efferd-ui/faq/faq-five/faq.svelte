@@ -122,7 +122,7 @@
 	);
 </script>
 
-<div class="max-w-3xl md:border-x mx-auto min-h-screen w-full">
+<div class="mx-auto min-h-screen w-full max-w-3xl md:border-x">
 	<div class="px-4 py-16 lg:px-6">
 		<h1 class="mb-4 text-3xl font-semibold md:text-4xl">Frequently Asked Questions</h1>
 		<p class="mb-8 max-w-2xl text-muted-foreground">
@@ -140,21 +140,21 @@
 
 	<FullWidthDivider contained={true} />
 
-	<div class="gap-1 px-4 md:gap-3 flex flex-wrap border-b">
+	<div class="flex flex-wrap gap-1 border-b px-4 md:gap-3">
 		{#each categories as category (category.id)}
 			<Button
 				type="button"
 				variant="ghost"
 				aria-pressed={activeCategory === category.id}
 				class={cn(
-					"px-1 py-2 text-sm md:px-2 md:text-base relative h-auto rounded-none text-muted-foreground shadow-none hover:text-primary",
+					"relative h-auto rounded-none px-1 py-2 text-sm text-muted-foreground shadow-none hover:text-primary md:px-2 md:text-base",
 					activeCategory === category.id && "text-primary"
 				)}
 				onclick={() => (activeCategory = category.id)}
 			>
 				{category.label}
 				{#if activeCategory === category.id}
-					<span class="inset-x-0 bottom-0 h-0.5 absolute rounded-full bg-primary"></span>
+					<span class="absolute inset-x-0 bottom-0 h-0.5 rounded-full bg-primary"></span>
 				{/if}
 			</Button>
 		{/each}
@@ -164,7 +164,7 @@
 		{#each filteredFaqs as faq (faq.id)}
 			<AccordionItem
 				value={faq.id.toString()}
-				class="px-4 py-0 shadow-xs rounded-lg border last:border-b"
+				class="rounded-lg border px-4 py-0 shadow-xs last:border-b"
 			>
 				<AccordionTrigger class="py-3 hover:no-underline">
 					{faq.title}
@@ -193,7 +193,7 @@
 		</Empty>
 	{/if}
 
-	<div class="px-4 py-6 lg:px-6 flex items-center">
+	<div class="flex items-center px-4 py-6 lg:px-6">
 		<p class="text-muted-foreground">
 			Can't find what you're looking for?
 			<a class="text-primary hover:underline" href="mailto:support@efferd.com"> Contact Us </a>

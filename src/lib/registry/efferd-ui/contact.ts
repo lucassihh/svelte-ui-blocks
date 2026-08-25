@@ -80,8 +80,7 @@ export const contactBlocks: BlockShowcaseItem[] = [
 	{
 		id: "contact-one",
 		title: "Contact One",
-		description:
-			"A Contact One composition.",
+		description: "A Contact One composition.",
 		previewComponent: ContactOnePreview,
 		previewHref: "/preview/efferd-ui/contact/contact-one",
 		previewMode: "iframe",
@@ -96,11 +95,11 @@ export const contactBlocks: BlockShowcaseItem[] = [
 			},
 			...dividerFiles
 		])
-	},	{
+	},
+	{
 		id: "contact-two",
 		title: "Contact Two",
-		description:
-			"A Contact Two composition.",
+		description: "A Contact Two composition.",
 		previewComponent: ContactTwoPreview,
 		previewHref: "/preview/efferd-ui/contact/contact-two",
 		previewMode: "iframe",
@@ -115,11 +114,11 @@ export const contactBlocks: BlockShowcaseItem[] = [
 			},
 			...buttonFiles
 		])
-	},	{
+	},
+	{
 		id: "contact-three",
 		title: "Contact Three",
-		description:
-			"A Contact Three composition.",
+		description: "A Contact Three composition.",
 		previewComponent: ContactThreePreview,
 		previewHref: "/preview/efferd-ui/contact/contact-three",
 		previewMode: "iframe",
@@ -134,11 +133,11 @@ export const contactBlocks: BlockShowcaseItem[] = [
 			},
 			...dividerFiles
 		])
-	},	{
+	},
+	{
 		id: "contact-four",
 		title: "Contact Four",
-		description:
-			"A Contact Four composition.",
+		description: "A Contact Four composition.",
 		previewComponent: ContactFourPreview,
 		previewHref: "/preview/efferd-ui/contact/contact-four",
 		previewMode: "iframe",
@@ -153,11 +152,11 @@ export const contactBlocks: BlockShowcaseItem[] = [
 			},
 			...buttonFiles
 		])
-	},	{
+	},
+	{
 		id: "contact-five",
 		title: "Contact Five",
-		description:
-			"A Contact Five composition.",
+		description: "A Contact Five composition.",
 		previewComponent: ContactFivePreview,
 		previewHref: "/preview/efferd-ui/contact/contact-five",
 		previewMode: "iframe",

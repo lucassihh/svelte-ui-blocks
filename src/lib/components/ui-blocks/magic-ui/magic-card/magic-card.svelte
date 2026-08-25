@@ -91,7 +91,7 @@
 	role="region"
 >
 	<motion.div
-		class="inset-0 pointer-events-none absolute rounded-[inherit] bg-border duration-300 group-hover:opacity-100"
+		class="pointer-events-none absolute inset-0 rounded-[inherit] bg-border duration-300 group-hover:opacity-100"
 		style={{ background: borderGradient }}
 	/>
 	<div class="absolute inset-px rounded-[inherit] bg-background"></div>

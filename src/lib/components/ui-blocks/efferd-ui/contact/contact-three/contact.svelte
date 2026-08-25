@@ -86,26 +86,26 @@
 	];
 </script>
 
-<div class="max-w-5xl relative mx-auto min-h-screen overflow-x-clip border-x">
-	<div class="px-4 py-18 md:items-center flex grow flex-col justify-center">
+<div class="relative mx-auto min-h-screen max-w-5xl overflow-x-clip border-x">
+	<div class="flex grow flex-col justify-center px-4 py-18 md:items-center">
 		<h1 class="text-4xl font-bold md:text-5xl">Contact Us</h1>
 		<p class="mb-5 text-base text-muted-foreground">Contact the support team at efferd.</p>
 	</div>
 
 	<FullWidthDivider />
 
-	<div class="md:grid-cols-3 grid">
+	<div class="grid md:grid-cols-3">
 		{#each contactItems as item, index}
 			{@const Icon = item.icon}
 			<div
 				class={cn(
-					"md:border-r md:border-b-0 flex flex-col justify-between border-b",
-					index === contactItems.length - 1 && "md:border-r-0 border-b-0"
+					"flex flex-col justify-between border-b md:border-r md:border-b-0",
+					index === contactItems.length - 1 && "border-b-0 md:border-r-0"
 				)}
 			>
 				<div
 					class={cn(
-						"gap-x-3 p-4 flex items-center border-b bg-secondary/50 dark:bg-secondary/20",
+						"flex items-center gap-x-3 border-b bg-secondary/50 p-4 dark:bg-secondary/20",
 						"[&_svg]:size-5 [&_svg]:stroke-[1.5] [&_svg]:text-muted-foreground"
 					)}
 				>
@@ -113,18 +113,18 @@
 					<h2 class="text-lg font-medium tracking-wider">{item.title}</h2>
 				</div>
 
-				<div class="gap-x-2 p-4 py-12 flex items-center">
+				<div class="flex items-center gap-x-2 p-4 py-12">
 					<div>
 						{#each item.content as entry}
 							{#if entry.type === "link"}
 								<a
-									class="text-sm font-medium tracking-wide block font-mono hover:underline"
+									class="block font-mono text-sm font-medium tracking-wide hover:underline"
 									href={entry.href}
 								>
 									{entry.label}
 								</a>
 							{:else}
-								<span class="text-sm font-medium tracking-wide font-mono">
+								<span class="font-mono text-sm font-medium tracking-wide">
 									{entry.label}
 								</span>
 							{/if}
@@ -132,7 +132,7 @@
 					</div>
 				</div>
 
-				<div class="p-4 border-t">
+				<div class="border-t p-4">
 					<p class="text-sm text-muted-foreground">{item.description}</p>
 				</div>
 			</div>
@@ -141,21 +141,21 @@
 
 	<FullWidthDivider />
 
-	<div class="gap-4 py-24 z-1 flex h-full flex-col items-center justify-center">
-		<h2 class="text-2xl font-medium tracking-tight md:text-3xl text-center text-muted-foreground">
+	<div class="z-1 flex h-full flex-col items-center justify-center gap-4 py-24">
+		<h2 class="text-center text-2xl font-medium tracking-tight text-muted-foreground md:text-3xl">
 			Find us <span class="text-foreground">online</span>
 		</h2>
-		<div class="gap-2 flex flex-wrap items-center">
+		<div class="flex flex-wrap items-center gap-2">
 			{#each socialLinks as link}
 				{@const Icon = link.icon}
 				<a
-					class="gap-x-2 px-3 py-1.5 shadow flex items-center rounded-full border bg-card hover:bg-accent"
+					class="flex items-center gap-x-2 rounded-full border bg-card px-3 py-1.5 shadow hover:bg-accent"
 					href={link.href}
 					rel="noopener noreferrer"
 					target="_blank"
 				>
 					<Icon class="size-3.5 text-muted-foreground" />
-					<span class="text-xs font-medium tracking-wide font-mono">{link.label}</span>
+					<span class="font-mono text-xs font-medium tracking-wide">{link.label}</span>
 				</a>
 			{/each}
 		</div>

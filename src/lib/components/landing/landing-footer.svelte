@@ -20,35 +20,35 @@
 <footer class="relative">
 	<div
 		class={cn(
-			"max-w-7xl py-8 mx-auto w-full border-t border-border",
+			"mx-auto w-full max-w-7xl border-t border-border py-8",
 			"dark:bg-[radial-gradient(35%_80%_at_15%_0%,--theme(--color-foreground/.1),transparent)]"
 		)}
 	>
-		<div class="gap-8 px-4 md:grid-cols-8 md:gap-0 grid grid-cols-1">
-			<div class="gap-4 md:col-span-4 col-span-8 flex flex-col">
+		<div class="grid grid-cols-1 gap-8 px-4 md:grid-cols-8 md:gap-0">
+			<div class="col-span-8 flex flex-col gap-4 md:col-span-4">
 				<!-- Logo -->
-				<a aria-label="home" class="gap-1 flex items-center" href="/">
+				<a aria-label="home" class="flex items-center gap-1" href="/">
 					<Logo />
-					<span class="font-medium tracking-tight font-mono">Svelte UI</span>
+					<span class="font-mono font-medium tracking-tight">Svelte UI</span>
 				</a>
 				<p class="max-w-sm text-sm text-balance text-muted-foreground">
 					Save hours of design time with clean, ready-to-use shadcn blocks.
 				</p>
 				<!-- ThemeToggle & Social Links -->
-				<div class="gap-2 flex">
+				<div class="flex gap-2">
 					<ThemeToggle />
 					<Social />
 				</div>
 			</div>
 
 			<!-- Links -->
-			<div class="md:col-span-4 col-span-8 flex justify-center">
+			<div class="col-span-8 flex justify-center md:col-span-4">
 				<!-- Blocks Links -->
 				<div class="w-full">
 					<span class="text-xs text-muted-foreground">All Blocks</span>
-					<div class="mt-2 gap-2 flex flex-col">
+					<div class="mt-2 flex flex-col gap-2">
 						{#each blocksLinks as item (item.title)}
-							<a class="text-sm w-max hover:underline" href={item.href}>
+							<a class="w-max text-sm hover:underline" href={item.href}>
 								{item.title}
 							</a>
 						{/each}
@@ -58,9 +58,9 @@
 				<!-- Documentation Links -->
 				<div class="w-full">
 					<span class="text-xs text-muted-foreground">Documentation</span>
-					<div class="mt-2 gap-2 flex flex-col">
+					<div class="mt-2 flex flex-col gap-2">
 						{#each documentationLinks as item (item.title)}
-							<a class="text-sm w-max hover:underline" href={item.href}>
+							<a class="w-max text-sm hover:underline" href={item.href}>
 								{item.title}
 							</a>
 						{/each}

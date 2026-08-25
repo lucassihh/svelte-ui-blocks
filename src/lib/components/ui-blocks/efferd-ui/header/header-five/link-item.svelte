@@ -12,10 +12,10 @@
 	let IconComponent: Component | typeof Icon = $derived(icon);
 </script>
 
-<a class={cn("gap-x-2 flex items-center", className)} {href} {...props}>
+<a class={cn("flex items-center gap-x-2", className)} {href} {...props}>
 	<div
 		class={cn(
-			"size-9 shadow-xs [&_svg]:size-4 flex aspect-square items-center justify-center rounded-lg border bg-card outline outline-offset-2 outline-border/60 [&_svg]:text-foreground"
+			"flex aspect-square size-9 items-center justify-center rounded-lg border bg-card shadow-xs outline outline-offset-2 outline-border/60 [&_svg]:size-4 [&_svg]:text-foreground"
 		)}
 	>
 		<IconComponent />

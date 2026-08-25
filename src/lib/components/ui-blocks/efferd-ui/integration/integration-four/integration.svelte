@@ -98,9 +98,9 @@
 	];
 </script>
 
-<div class="max-w-5xl gap-12 p-4 md:grid-cols-2 md:items-center mx-auto grid grid-cols-1">
+<div class="mx-auto grid max-w-5xl grid-cols-1 gap-12 p-4 md:grid-cols-2 md:items-center">
 	<div class="max-w-xl space-y-5">
-		<h2 class="text-3xl font-medium tracking-tight sm:text-4xl md:text-5xl text-foreground">
+		<h2 class="text-3xl font-medium tracking-tight text-foreground sm:text-4xl md:text-5xl">
 			Seamless Integration
 		</h2>
 		<p class="text-lg leading-8 text-muted-foreground">
@@ -110,7 +110,7 @@
 	</div>
 
 	<div class="place-items-end">
-		<div class="size-90 relative mask-[radial-gradient(ellipse_at_center,black,black,transparent)]">
+		<div class="relative size-90 mask-[radial-gradient(ellipse_at_center,black,black,transparent)]">
 			{#each tiles as tile (`${tile.row}_${tile.col}`)}
 				<IntegrationCardFour {...tile} />
 			{/each}

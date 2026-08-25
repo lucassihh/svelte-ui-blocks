@@ -35,15 +35,15 @@
 	];
 </script>
 
-<section class="max-w-4xl relative mx-auto min-h-screen w-full place-content-center border-x">
+<section class="relative mx-auto min-h-screen w-full max-w-4xl place-content-center border-x">
 	<FullWidthDivider />
-	<div class="md:grid-cols-[2fr_1px_1fr] grid">
+	<div class="grid md:grid-cols-[2fr_1px_1fr]">
 		<div class="divide-y">
 			{#each testimonials.slice(0, 2) as testimonial}
 				<TestimonialCard {testimonial} />
 			{/each}
 		</div>
-		<div class="md:h-auto h-px bg-border"></div>
+		<div class="h-px bg-border md:h-auto"></div>
 		<div class="flex items-center">
 			<TestimonialCard testimonial={testimonials[2] as Testimonial} />
 		</div>

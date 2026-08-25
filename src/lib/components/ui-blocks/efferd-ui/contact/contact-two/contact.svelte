@@ -39,8 +39,8 @@
 	];
 </script>
 
-<div class="max-w-4xl mx-auto">
-	<div class="mb-12 max-w-md gap-2 flex flex-col justify-center">
+<div class="mx-auto max-w-4xl">
+	<div class="mb-12 flex max-w-md flex-col justify-center gap-2">
 		<h1 class="text-2xl font-bold md:text-3xl">Contact Us</h1>
 		<p class="text-base text-muted-foreground">
 			We&apos;re here to help and answer any question you might have, We look forward to hearing
@@ -48,19 +48,19 @@
 		</p>
 	</div>
 	<div
-		class="gap-0.5 p-0.5 md:grid-cols-3 grid overflow-hidden rounded-lg bg-muted dark:bg-muted/50"
+		class="grid gap-0.5 overflow-hidden rounded-lg bg-muted p-0.5 md:grid-cols-3 dark:bg-muted/50"
 	>
 		{#each data as item}
 			{@const Icon = item.icon}
-			<div class="gap-3 px-6 py-6 shadow-xs flex flex-col rounded-lg bg-background">
+			<div class="flex flex-col gap-3 rounded-lg bg-background px-6 py-6 shadow-xs">
 				<div
-					class={cn("gap-x-2 flex items-center", "[&_svg]:size-4 [&_svg]:text-muted-foreground")}
+					class={cn("flex items-center gap-x-2", "[&_svg]:size-4 [&_svg]:text-muted-foreground")}
 				>
 					<Icon />
 					<h2 class="text-sm">{item.title}</h2>
 				</div>
 				<p class="text-sm text-muted-foreground">{item.description}</p>
-				<div class="mt-1 gap-x-2 flex items-center">
+				<div class="mt-1 flex items-center gap-x-2">
 					<Button variant="link" href={item.href}>
 						{item.label}
 					</Button>

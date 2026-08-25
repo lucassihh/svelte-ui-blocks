@@ -35,12 +35,12 @@
 	];
 </script>
 
-<div class="shadow md:grid-cols-4 grid grid-cols-2 rounded-lg bg-border">
+<div class="grid grid-cols-2 rounded-lg bg-border shadow md:grid-cols-4">
 	{#each logos as logo, i}
-		<div class="p-8 flex items-center justify-center rounded-lg border bg-background">
+		<div class="flex items-center justify-center rounded-lg border bg-background p-8">
 			<img
 				alt={logo.alt}
-				class="h-4 md:h-5 pointer-events-none block select-none dark:brightness-0 dark:invert"
+				class="pointer-events-none block h-4 select-none md:h-5 dark:brightness-0 dark:invert"
 				height="auto"
 				loading="lazy"
 				src={logo.src}

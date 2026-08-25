@@ -59,10 +59,10 @@
 	];
 </script>
 
-<section class="max-w-5xl md:grid-cols-2 lg:border-x mx-auto grid min-h-screen w-full grid-cols-1">
+<section class="mx-auto grid min-h-screen w-full max-w-5xl grid-cols-1 md:grid-cols-2 lg:border-x">
 	<div class="px-4 pt-12 pb-6">
 		<div class="space-y-5">
-			<h2 class="text-4xl font-bold md:text-6xl lg:font-black text-balance">
+			<h2 class="text-4xl font-bold text-balance md:text-6xl lg:font-black">
 				Frequently Asked Questions
 			</h2>
 			<p class="text-muted-foreground">
@@ -78,13 +78,13 @@
 	<div class="relative place-content-center">
 		<div
 			aria-hidden="true"
-			class="inset-y-0 left-3 pointer-events-none absolute h-full w-px bg-border"
+			class="pointer-events-none absolute inset-y-0 left-3 h-full w-px bg-border"
 		></div>
 
 		<Accordion type="single" class="rounded-none border-x-0 border-y">
 			{#each faqs as item (item.id)}
-				<AccordionItem value={item.id} class="group pl-5 relative">
-					<DecorIcon position="bottom-left" class="size-3 left-[13px] group-last:hidden" />
+				<AccordionItem value={item.id} class="group relative pl-5">
+					<DecorIcon position="bottom-left" class="left-[13px] size-3 group-last:hidden" />
 
 					<AccordionTrigger
 						class="px-4 py-4 hover:no-underline focus-visible:underline focus-visible:ring-0"

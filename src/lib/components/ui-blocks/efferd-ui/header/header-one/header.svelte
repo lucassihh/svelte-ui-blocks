@@ -4,22 +4,24 @@
 	import Logo from "$lib/assets/svg/logo.svelte";
 	import { cn } from "$lib/utils";
 	import MobileNav from "./mobile-nav.svelte";
+	import HeroOne from "../../hero/hero-one/hero.svelte";
+	import FaqOne from "../../faq/faq-one/faq.svelte";
 	import { navLinks } from "./nav-links";
 	let scroll = createScroll(10);
 </script>
 
 <header
 	class={cn(
-		"top-0 sticky z-50 w-full border-b border-transparent",
+		"sticky top-0 z-50 w-full border-b border-transparent",
 		scroll.scrolled &&
-			"backdrop-blur-sm border-border bg-background/95 supports-backdrop-filter:bg-background/50"
+			"border-border bg-background/95 backdrop-blur-sm supports-backdrop-filter:bg-background/50"
 	)}
 >
-	<nav class="h-14 max-w-5xl px-4 mx-auto flex w-full items-center justify-between">
-		<a class="p-2 w-fit rounded-md hover:bg-muted dark:hover:bg-muted/50" href="/">
+	<nav class="mx-auto flex h-14 w-full max-w-5xl items-center justify-between px-4">
+		<a class="w-fit rounded-md p-2 hover:bg-muted dark:hover:bg-muted/50" href="/">
 			<Logo class="h-4" />
 		</a>
-		<div class="gap-2 md:flex hidden items-center">
+		<div class="hidden items-center gap-2 md:flex">
 			{#each navLinks as link}
 				<Button href={link.href} size="sm" variant="ghost">
 					{link.label}
@@ -33,17 +35,5 @@
 </header>
 
 <!-- Content Example -->
-<div
-	class={cn(
-		"grid grid-cols-2 gap-px bg-border p-px lg:grid-cols-4",
-		"*:min-h-48 *:w-full *:bg-background/90"
-	)}
->
-	<div></div>
-	<div></div>
-	<div></div>
-	<div></div>
-	<div class="col-span-2 min-h-114! lg:col-span-4"></div>
-	<div class="col-span-2 min-h-92! lg:col-span-2"></div>
-	<div class="col-span-2 min-h-92! lg:col-span-2"></div>
-</div>
+<HeroOne />
+<FaqOne />

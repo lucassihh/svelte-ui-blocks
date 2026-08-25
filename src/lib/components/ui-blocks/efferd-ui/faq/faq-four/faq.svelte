@@ -134,16 +134,16 @@
 	let currentCategory = $derived(categories.find((category) => category.id === activeCategory));
 </script>
 
-<section class="max-w-5xl mx-auto min-h-screen w-full">
-	<div class="gap-4 px-4 py-16 flex flex-col items-center justify-center">
-		<h2 class="text-4xl font-black md:text-5xl lg:font-black font-mono text-balance">FaQs</h2>
+<section class="mx-auto min-h-screen w-full max-w-5xl">
+	<div class="flex flex-col items-center justify-center gap-4 px-4 py-16">
+		<h2 class="font-mono text-4xl font-black text-balance md:text-5xl lg:font-black">FaQs</h2>
 		<p class="text-muted-foreground">Your questions answered here.</p>
 	</div>
 
-	<div class="py-12 md:grid-cols-3 relative grid min-h-full grid-cols-1">
-		<div class="pb-2 md:border-b-0 flex h-full items-start justify-center border-b">
+	<div class="relative grid min-h-full grid-cols-1 py-12 md:grid-cols-3">
+		<div class="flex h-full items-start justify-center border-b pb-2 md:border-b-0">
 			<div
-				class="gap-2 md:flex-col md:justify-center flex w-max flex-wrap items-start justify-start"
+				class="flex w-max flex-wrap items-start justify-start gap-2 md:flex-col md:justify-center"
 			>
 				{#each categories as category (category.id)}
 					{@const CategoryIcon = category.icon}
@@ -158,10 +158,10 @@
 			</div>
 		</div>
 
-		<div class="space-y-5 px-4 py-5 col-span-2">
+		<div class="col-span-2 space-y-5 px-4 py-5">
 			{#if currentCategory}
 				{@const CurrentCategoryIcon = currentCategory.icon}
-				<div class="gap-2 flex items-center">
+				<div class="flex items-center gap-2">
 					<CurrentCategoryIcon class="size-4" />
 					<span class="font-medium">{currentCategory.label}</span>
 				</div>
@@ -170,7 +170,7 @@
 			<Accordion type="single" class="space-y-2">
 				{#each filteredFaqs as item (item.id)}
 					<AccordionItem value={item.id.toString()} class="border-b-0">
-						<AccordionTrigger class="px-4 py-3 bg-muted hover:no-underline dark:bg-muted/50">
+						<AccordionTrigger class="bg-muted px-4 py-3 hover:no-underline dark:bg-muted/50">
 							{item.title}
 						</AccordionTrigger>
 

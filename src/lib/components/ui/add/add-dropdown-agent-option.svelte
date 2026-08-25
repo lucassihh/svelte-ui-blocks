@@ -17,11 +17,11 @@
 </script>
 
 <DropdownMenu.Item
-	class={cn("[&_svg]:size-3.5 flex items-center justify-between", className)}
+	class={cn("flex items-center justify-between [&_svg]:size-3.5", className)}
 	{...rest}
 	{...dropdownAgentOptionState.props}
 >
-	<span class="gap-2 flex items-center">
+	<span class="flex items-center gap-2">
 		<AddAgentLogo agent={dropdownAgentOptionState.opts.agent.current} />
 		{agent}
 	</span>

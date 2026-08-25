@@ -15,23 +15,23 @@
 	);
 </script>
 
-<section class="max-w-4xl p-4 pb-16 sm:pb-20 mx-auto w-full">
+<section class="mx-auto w-full max-w-4xl p-4 pb-16 sm:pb-20">
 	<div class="relative border-x border-border/80">
 		<DecorIcon class="size-4 stroke-muted-foreground/70" position="top-left" />
 		<DecorIcon class="size-4 stroke-muted-foreground/70" position="top-right" />
 		<DecorIcon class="size-4 stroke-muted-foreground/70" position="bottom-left" />
 		<DecorIcon class="size-4 stroke-muted-foreground/70" position="bottom-right" />
 
-		<div class="px-5 py-10 sm:px-8 sm:py-14 md:px-12 md:py-8 relative">
+		<div class="relative px-5 py-10 sm:px-8 sm:py-14 md:px-12 md:py-8">
 			<StripedPattern
 				class="mask-[radial-gradient(400px_circle_at_right,white,transparent)] opacity-20"
 			/>
-			<div class="max-w-2xl mx-auto">
+			<div class="mx-auto max-w-2xl">
 				<h1 class="text-3xl font-medium tracking-tight sm:text-3xl">
 					{changelogPageData.title}
 				</h1>
 				<p
-					class="mt-1 max-w-xl text-base leading-7 sm:text-base sm:leading-8 text-muted-foreground/70"
+					class="mt-1 max-w-xl text-base leading-7 text-muted-foreground/70 sm:text-base sm:leading-8"
 				>
 					{changelogPageData.description}
 				</p>

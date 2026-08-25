@@ -81,23 +81,23 @@
 </script>
 
 <section class="w-full">
-	<div class="mb-4 max-w-md space-y-2 mx-auto">
+	<div class="mx-auto mb-4 max-w-md space-y-2">
 		<div class="flex justify-center">
-			<div class="px-4 py-1 text-sm rounded-md border">Pricing</div>
+			<div class="rounded-md border px-4 py-1 text-sm">Pricing</div>
 		</div>
 
 		<h2
-			class="text-2xl font-bold tracking-tight md:text-3xl lg:text-4xl lg:font-extrabold text-center"
+			class="text-center text-2xl font-bold tracking-tight md:text-3xl lg:text-4xl lg:font-extrabold"
 		>
 			Plans that Scale with You
 		</h2>
 
-		<p class="text-sm md:text-base text-center text-muted-foreground">
+		<p class="text-center text-sm text-muted-foreground md:text-base">
 			Whether you&apos;re just starting out or growing fast, our flexible pricing has you covered.
 		</p>
 	</div>
 
-	<div class="max-w-4xl gap-4 p-6 md:grid-cols-3 mx-auto grid w-full">
+	<div class="mx-auto grid w-full max-w-4xl gap-4 p-6 md:grid-cols-3">
 		{#each plans as plan, index}
 			<PricingCard
 				class={cn("w-full max-w-full", index === 1 && "md:scale-105")}

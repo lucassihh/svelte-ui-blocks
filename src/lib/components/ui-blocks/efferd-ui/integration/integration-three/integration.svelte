@@ -95,16 +95,16 @@
 </script>
 
 <div
-	class="max-w-4xl gap-12 md:grid-cols-2 md:items-center relative mx-auto grid grid-cols-1 border-x"
+	class="relative mx-auto grid max-w-4xl grid-cols-1 gap-12 border-x md:grid-cols-2 md:items-center"
 >
 	<FullWidthDivider class="-top-px" />
 
 	<div class="p-4 md:p-6">
 		<div class="space-y-4">
-			<h2 class="text-3xl font-medium tracking-tight sm:text-4xl text-foreground">
+			<h2 class="text-3xl font-medium tracking-tight text-foreground sm:text-4xl">
 				Connect with your favorite tools
 			</h2>
-			<p class="text-sm md:text-base text-muted-foreground">
+			<p class="text-sm text-muted-foreground md:text-base">
 				Connect your favorite tools with our growing library of integrations.
 			</p>
 			<Button size="sm" href="/">Explore integrations</Button>
@@ -112,10 +112,10 @@
 	</div>
 
 	<div class="place-items-end">
-		<div class="size-80 relative">
+		<div class="relative size-80">
 			<div
 				class={cn(
-					"inset-0 absolute size-full",
+					"absolute inset-0 size-full",
 					"bg-[linear-gradient(to_right,theme(--color-border)_1px,transparent_1px),linear-gradient(to_bottom,theme(--color-border)_1px,transparent_1px)]",
 					"bg-size-[64px_64px]",
 					"mask-[radial-gradient(ellipse_at_center,black,black,transparent)]"

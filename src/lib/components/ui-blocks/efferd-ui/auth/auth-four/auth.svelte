@@ -32,11 +32,11 @@
 	}: AuthFourProps = $props();
 </script>
 
-<div class={cn("px-4 md:h-screen relative w-full overflow-hidden", className)} {...restProps}>
+<div class={cn("relative w-full overflow-hidden px-4 md:h-screen", className)} {...restProps}>
 	<div
-		class="max-w-sm *:px-6 relative mx-auto flex min-h-screen w-full flex-col justify-center border-x"
+		class="relative mx-auto flex min-h-screen w-full max-w-sm flex-col justify-center border-x *:px-6"
 	>
-		<div class="space-y-6 flex flex-col">
+		<div class="flex flex-col space-y-6">
 			<a aria-label="Home" href={logoHref}>
 				<Logo class="h-4.5 w-auto" />
 			</a>
@@ -47,7 +47,7 @@
 			</div>
 		</div>
 
-		<div class="my-6 gap-4 py-8 relative flex size-full flex-col">
+		<div class="relative my-6 flex size-full flex-col gap-4 py-8">
 			<FullWidthDivider position="top" />
 
 			<Button class="w-full" type="button" variant="outline">
@@ -75,7 +75,7 @@
 			<FullWidthDivider position="bottom" />
 		</div>
 
-		<p class="text-sm text-center text-muted-foreground">
+		<p class="text-center text-sm text-muted-foreground">
 			This site is protected by reCAPTCHA and the Google
 			<a class="underline underline-offset-4 hover:text-primary" href={privacyHref}
 				>Privacy Policy</a

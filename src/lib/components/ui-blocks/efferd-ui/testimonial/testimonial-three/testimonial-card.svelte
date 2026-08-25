@@ -24,28 +24,28 @@
 
 <figure
 	class={cn(
-		"gap-6 px-8 pt-8 pb-6 shadow-xs md:translate-y-[calc(3rem*var(--t-card-index))] relative flex flex-col justify-between",
+		"relative flex flex-col justify-between gap-6 px-8 pt-8 pb-6 shadow-xs md:translate-y-[calc(3rem*var(--t-card-index))]",
 		"dark:bg-[radial-gradient(50%_80%_at_25%_0%,--theme(--color-foreground/.1),transparent)]",
 		className
 	)}
 	style={`--t-card-index: ${index}`}
 	{...props}
 >
-	<div class="-inset-y-4 absolute -left-px w-px bg-border"></div>
-	<div class="-inset-y-4 absolute -right-px w-px bg-border"></div>
-	<div class="-inset-x-4 absolute -top-px h-px bg-border"></div>
-	<div class="-right-4 -left-4 absolute -bottom-px h-px bg-border"></div>
+	<div class="absolute -inset-y-4 -left-px w-px bg-border"></div>
+	<div class="absolute -inset-y-4 -right-px w-px bg-border"></div>
+	<div class="absolute -inset-x-4 -top-px h-px bg-border"></div>
+	<div class="absolute -right-4 -bottom-px -left-4 h-px bg-border"></div>
 	<DecorIcon class="size-3.5" position="top-left" />
 
-	<blockquote class="gap-4 flex">
+	<blockquote class="flex gap-4">
 		<QuoteIcon aria-hidden="true" class="size-6 shrink-0 stroke-1" />
 
-		<p class="text-base leading-relaxed font-normal flex-1 text-muted-foreground">
+		<p class="flex-1 text-base leading-relaxed font-normal text-muted-foreground">
 			{testimonial.quote}
 		</p>
 	</blockquote>
 
-	<figcaption class="gap-3 flex items-center">
+	<figcaption class="flex items-center gap-3">
 		<Avatar
 			class="size-10 rounded-full ring-2 ring-border ring-offset-2 ring-offset-background transition-shadow group-hover:ring-foreground/20"
 		>

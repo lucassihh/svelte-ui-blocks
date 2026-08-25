@@ -39,7 +39,7 @@
 		)}
 		{@const gradient = `linear-gradient(${angle}deg, ${gradientStops.join(", ")})`}
 		<div
-			class="inset-0 pointer-events-none absolute rounded-[inherit]"
+			class="pointer-events-none absolute inset-0 rounded-[inherit]"
 			style="mask-image: {gradient};
   -webkit-mask-image: {gradient};
   backdrop-filter: blur({index * blurIntensity}px); z-index: {index * 10};"

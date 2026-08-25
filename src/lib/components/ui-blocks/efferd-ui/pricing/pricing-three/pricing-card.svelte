@@ -40,24 +40,24 @@
 </script>
 
 <div
-	class={cn("max-w-xs p-1 relative w-full rounded-xl border bg-background", className)}
+	class={cn("relative w-full max-w-xs rounded-xl border bg-background p-1", className)}
 	{...restProps}
 >
 	<!-- {@const Icon = icon} -->
 
-	<div class={cn("mb-4 p-4 relative rounded-xl border", featured && "shadow-xs bg-card")}>
+	<div class={cn("relative mb-4 rounded-xl border p-4", featured && "bg-card shadow-xs")}>
 		<div class="mb-8 flex items-center justify-between">
-			<div class="gap-2 text-sm font-medium [&_svg:not([class*='size-'])]:size-4 flex items-center">
+			<div class="flex items-center gap-2 text-sm font-medium [&_svg:not([class*='size-'])]:size-4">
 				<Icon />
 				<span>{name}</span>
 			</div>
 
 			{#if badge}
-				<span class="px-3 py-1 text-xs shadow-xs rounded-full border bg-background">{badge}</span>
+				<span class="rounded-full border bg-background px-3 py-1 text-xs shadow-xs">{badge}</span>
 			{/if}
 		</div>
 
-		<div class="mb-3 gap-1 flex items-end">
+		<div class="mb-3 flex items-end gap-1">
 			<span class="text-3xl font-extrabold tracking-tight">{price}</span>
 
 			{#if period}
@@ -65,11 +65,11 @@
 			{/if}
 
 			{#if original}
-				<span class="text-lg ml-auto text-muted-foreground line-through">{original}</span>
+				<span class="ml-auto text-lg text-muted-foreground line-through">{original}</span>
 			{/if}
 		</div>
 
-		<Button class="font-semibold w-full" {href} variant={buttonVariant}>
+		<Button class="w-full font-semibold" {href} variant={buttonVariant}>
 			{buttonLabel}
 		</Button>
 	</div>
@@ -79,7 +79,7 @@
 
 		<ul class="space-y-3">
 			{#each features as feature}
-				<li class="gap-3 text-xs flex items-start text-muted-foreground">
+				<li class="flex items-start gap-3 text-xs text-muted-foreground">
 					<CheckCircle2 aria-hidden="true" class="size-4 text-foreground" />
 					<span>{feature}</span>
 				</li>

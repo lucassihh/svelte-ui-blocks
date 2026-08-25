@@ -14,23 +14,23 @@
 
 <a
 	class={cn(
-		"group h-24 gap-y-1 p-4 flex w-full flex-col justify-center hover:cursor-pointer hover:bg-accent/30 active:bg-accent dark:active:bg-accent/50"
+		"group flex h-24 w-full flex-col justify-center gap-y-1 p-4 hover:cursor-pointer hover:bg-accent/30 active:bg-accent dark:active:bg-accent/50"
 	)}
 	{...props}
 >
-	<div class="gap-2 relative flex items-end justify-center">
-		<h3 class="text-lg font-medium md:text-xl whitespace-nowrap text-foreground">
+	<div class="relative flex items-end justify-center gap-2">
+		<h3 class="text-lg font-medium whitespace-nowrap text-foreground md:text-xl">
 			{title}
 		</h3>
 		<span class="mb-1.5 w-full border-b-2 border-dashed"></span>
 		<span
-			class="text-xs md:text-sm font-mono whitespace-nowrap text-muted-foreground uppercase group-hover:text-foreground"
+			class="font-mono text-xs whitespace-nowrap text-muted-foreground uppercase group-hover:text-foreground md:text-sm"
 		>
 			{date}
 		</span>
 	</div>
 	<div
-		class="max-w-sm text-sm md:max-w-full md:text-base text-muted-foreground group-hover:text-foreground"
+		class="max-w-sm text-sm text-muted-foreground group-hover:text-foreground md:max-w-full md:text-base"
 	>
 		{description}
 	</div>

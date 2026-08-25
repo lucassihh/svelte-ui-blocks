@@ -5,25 +5,25 @@
 </script>
 
 <div
-	class="max-w-3xl gap-y-4 px-4 py-8 relative mx-auto flex w-full flex-col justify-between border-y dark:bg-[radial-gradient(35%_80%_at_25%_0%,--theme(--color-foreground/.08),transparent)]"
+	class="relative mx-auto flex w-full max-w-3xl flex-col justify-between gap-y-4 border-y px-4 py-8 dark:bg-[radial-gradient(35%_80%_at_25%_0%,--theme(--color-foreground/.08),transparent)]"
 >
 	<DecorIcon class="size-4" position="top-left" />
 	<DecorIcon class="size-4" position="top-right" />
 	<DecorIcon class="size-4" position="bottom-left" />
 	<DecorIcon class="size-4" position="bottom-right" />
 
-	<div class="-inset-y-6 pointer-events-none absolute -left-px w-px border-l"></div>
-	<div class="-inset-y-6 pointer-events-none absolute -right-px w-px border-r"></div>
+	<div class="pointer-events-none absolute -inset-y-6 -left-px w-px border-l"></div>
+	<div class="pointer-events-none absolute -inset-y-6 -right-px w-px border-r"></div>
 
-	<div class="top-0 absolute left-1/2 -z-10 h-full border-l border-dashed"></div>
+	<div class="absolute top-0 left-1/2 -z-10 h-full border-l border-dashed"></div>
 
-	<h2 class="text-xl font-semibold md:text-3xl text-center">Start for Free Today!</h2>
-	<p class="text-sm font-medium md:text-base text-center text-balance text-muted-foreground">
+	<h2 class="text-center text-xl font-semibold md:text-3xl">Start for Free Today!</h2>
+	<p class="text-center text-sm font-medium text-balance text-muted-foreground md:text-base">
 		Begin your 6-day free trial today to fully explore and experience all the features and benefits
 		we offer.
 	</p>
 
-	<div class="gap-2 flex items-center justify-center">
+	<div class="flex items-center justify-center gap-2">
 		<Button variant="outline">Contact Sales</Button>
 		<Button>
 			Get Started

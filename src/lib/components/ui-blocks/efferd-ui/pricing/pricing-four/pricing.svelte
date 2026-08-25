@@ -143,15 +143,15 @@
 	}
 </script>
 
-<section class="space-y-7 p-4 flex w-full flex-col items-center justify-center">
-	<div class="max-w-xl space-y-2 mx-auto">
+<section class="flex w-full flex-col items-center justify-center space-y-7 p-4">
+	<div class="mx-auto max-w-xl space-y-2">
 		<h2
-			class="text-2xl font-bold tracking-tight md:text-3xl lg:text-4xl lg:font-extrabold text-center"
+			class="text-center text-2xl font-bold tracking-tight md:text-3xl lg:text-4xl lg:font-extrabold"
 		>
 			Plans that Scale with You
 		</h2>
 
-		<p class="text-sm md:text-base text-center text-muted-foreground">
+		<p class="text-center text-sm text-muted-foreground md:text-base">
 			Whether you&apos;re just starting out or growing fast, our flexible pricing has you covered
 			with no hidden costs.
 		</p>
@@ -159,17 +159,17 @@
 
 	<FrequencyToggle {frequency} {setFrequency} />
 
-	<div class="max-w-4xl gap-6 md:grid-cols-3 mx-auto grid w-full grid-cols-1">
+	<div class="mx-auto grid w-full max-w-4xl grid-cols-1 gap-6 md:grid-cols-3">
 		{#each plans as plan (plan.name)}
 			<div
 				class={cn(
-					"shadow-xs relative flex w-full flex-col overflow-hidden rounded-lg border",
+					"relative flex w-full flex-col overflow-hidden rounded-lg border shadow-xs",
 					plan.highlighted && "scale-105"
 				)}
 			>
-				<div class={cn("p-4 border-b", plan.highlighted && "bg-card dark:bg-card/80")}>
+				<div class={cn("border-b p-4", plan.highlighted && "bg-card dark:bg-card/80")}>
 					<layout.div
-						class="top-2 right-2 gap-2 absolute z-10 flex items-center"
+						class="absolute top-2 right-2 z-10 flex items-center gap-2"
 						layout
 						layoutDependency={frequency}
 					>
@@ -178,7 +178,7 @@
 								<layout.div
 									animate={{ opacity: 1, scale: 1, y: 0 }}
 									class={cn(
-										"gap-1 px-2 py-0.5 text-xs flex items-center rounded-md border",
+										"flex items-center gap-1 rounded-md border px-2 py-0.5 text-xs",
 										badge.variant === "primary"
 											? "bg-primary text-primary-foreground"
 											: "bg-background"
@@ -200,7 +200,7 @@
 					<div class="text-lg font-medium">{plan.name}</div>
 					<p class="text-sm font-normal text-muted-foreground">{plan.info}</p>
 
-					<h3 class="mt-6 mb-1 gap-1 flex w-max items-end">
+					<h3 class="mt-6 mb-1 flex w-max items-end gap-1">
 						<!-- tabular-nums text-3xl font-extrabold  -->
 						<NumberFlow
 							class="text-3xl font-extrabold [&::part(suffix)]:text-base [&::part(suffix)]:font-normal [&::part(suffix)]:text-muted-foreground"
@@ -224,7 +224,7 @@
 					)}
 				>
 					{#each plan.features as feature}
-						<div class="gap-2 flex items-center">
+						<div class="flex items-center gap-2">
 							<CircleCheck class="size-3.5 text-foreground" />
 							<p>{feature}</p>
 						</div>
@@ -232,7 +232,7 @@
 				</div>
 
 				<div
-					class={cn("p-3 mt-auto w-full border-t", plan.highlighted && "bg-card dark:bg-card/80")}
+					class={cn("mt-auto w-full border-t p-3", plan.highlighted && "bg-card dark:bg-card/80")}
 				>
 					<Button
 						class="w-full"

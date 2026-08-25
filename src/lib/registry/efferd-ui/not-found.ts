@@ -47,8 +47,7 @@ export const notFoundBlocks: BlockShowcaseItem[] = [
 	{
 		id: "not-found-one",
 		title: "Not Found One",
-		description:
-			"A Not Found One composition.",
+		description: "A Not Found One composition.",
 		previewComponent: NotFoundOnePreview,
 		previewHref: "/preview/efferd-ui/not-found/not-found-one",
 		previewMode: "iframe",
@@ -64,11 +63,11 @@ export const notFoundBlocks: BlockShowcaseItem[] = [
 			...buttonFiles,
 			...dividerFiles
 		])
-	},	{
+	},
+	{
 		id: "not-found-two",
 		title: "Not Found Two",
-		description:
-			"A Not Found Two composition.",
+		description: "A Not Found Two composition.",
 		previewComponent: NotFoundTwoPreview,
 		previewHref: "/preview/efferd-ui/not-found/not-found-two",
 		previewMode: "iframe",

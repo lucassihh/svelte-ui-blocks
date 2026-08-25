@@ -16,7 +16,7 @@
 </script>
 
 <CopyButton
-	class={cn("top-2 right-2 absolute", className)}
+	class={cn("absolute top-2 right-2", className)}
 	text={copyButton.code}
 	{variant}
 	{size}

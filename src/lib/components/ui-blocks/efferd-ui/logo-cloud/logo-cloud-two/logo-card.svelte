@@ -17,12 +17,12 @@
 </script>
 
 <div
-	class={cn("px-4 py-8 md:p-8 flex items-center justify-center bg-background", className)}
+	class={cn("flex items-center justify-center bg-background px-4 py-8 md:p-8", className)}
 	{...props}
 >
 	<img
 		alt={logo.alt}
-		class="h-4 md:h-5 pointer-events-none select-none dark:brightness-0 dark:invert"
+		class="pointer-events-none h-4 select-none md:h-5 dark:brightness-0 dark:invert"
 		height="auto"
 		src={logo.src}
 		width="auto"

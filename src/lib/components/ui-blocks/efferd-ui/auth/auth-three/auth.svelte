@@ -30,9 +30,9 @@
 	}: AuthThreeProps = $props();
 </script>
 
-<div class={cn("md:h-screen relative w-full overflow-hidden", className)} {...restProps}>
+<div class={cn("relative w-full overflow-hidden md:h-screen", className)} {...restProps}>
 	<div
-		class="max-w-sm p-6 md:p-8 relative mx-auto flex min-h-screen w-full flex-col justify-between"
+		class="relative mx-auto flex min-h-screen w-full max-w-sm flex-col justify-between p-6 md:p-8"
 	>
 		<div class="flex justify-center">
 			<a href={logoHref}>
@@ -40,8 +40,8 @@
 			</a>
 		</div>
 
-		<div class="animate-in space-y-4 fade-in slide-in-from-bottom-4 w-full duration-600">
-			<div class="space-y-1 flex flex-col">
+		<div class="animate-in fade-in slide-in-from-bottom-4 w-full space-y-4 duration-600">
+			<div class="flex flex-col space-y-1">
 				<h1 class="text-2xl font-bold tracking-wide">Join Now!</h1>
 				<p class="text-base text-muted-foreground">Login or create your efferd account.</p>
 			</div>
@@ -72,7 +72,7 @@
 			</div>
 		</div>
 
-		<p class="text-sm text-center text-muted-foreground">
+		<p class="text-center text-sm text-muted-foreground">
 			This site is protected by reCAPTCHA and the Google
 			<a class="underline underline-offset-4 hover:text-primary" href={privacyHref}
 				>Privacy Policy</a

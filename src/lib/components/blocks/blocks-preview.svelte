@@ -131,19 +131,19 @@
 <main {id} class="group mt-4">
 	<!-- Component Description & Action Buttons -->
 	<section
-		class="max-w-7xl p-4 mx-auto flex w-full flex-col border-y border-border dark:bg-[radial-gradient(35%_80%_at_15%_0%,--theme(--color-foreground/.1),transparent)]"
+		class="mx-auto flex w-full max-w-7xl flex-col border-y border-border p-4 dark:bg-[radial-gradient(35%_80%_at_15%_0%,--theme(--color-foreground/.1),transparent)]"
 	>
 		<!-- Text Container -->
 		<div class="md:text-center">
 			<!-- Component Title & Description -->
-			<div class="gap-2 flex flex-col">
+			<div class="flex flex-col gap-2">
 				<!-- Title Text -->
-				<h2 class="text-xl font-medium tracking-tight sm:text-[1.4rem] text-foreground">
+				<h2 class="text-xl font-medium tracking-tight text-foreground sm:text-[1.4rem]">
 					{title}
 				</h2>
 				<!-- Description Text -->
 				{#if description}
-					<p class="leading-5 text-[13px] text-muted-foreground">
+					<p class="text-[13px] leading-5 text-muted-foreground">
 						{description}
 					</p>
 				{/if}
@@ -151,9 +151,9 @@
 		</div>
 
 		<!-- Action Buttons Container -->
-		<div class={cn("gap-2 pt-4 md:justify-center flex flex-row")}>
-			<div class={cn("min-w-0 gap-2 flex flex-wrap items-center")}>
-				<div class="gap-0.5 md:-ml-3 flex w-fit items-center">
+		<div class={cn("flex flex-row gap-2 pt-4 md:justify-center")}>
+			<div class={cn("flex min-w-0 flex-wrap items-center gap-2")}>
+				<div class="flex w-fit items-center gap-0.5 md:-ml-3">
 					<Button
 						variant={mode === "preview" ? "secondary" : "ghost"}
 						onclick={() => (mode = "preview")}
@@ -211,28 +211,28 @@
 				</div>
 
 				{#if showViewportControls}
-					<span class="text-sm lg:block hidden text-muted-foreground">
+					<span class="hidden text-sm text-muted-foreground lg:block">
 						{width < MD_SIZE ? "Mobile" : width < LG_SIZE ? "Tablet" : "Desktop"}
 					</span>
 
 					{#if shouldShowIframeScrollHint}
-						<span class="text-sm lg:block hidden text-muted-foreground">
+						<span class="hidden text-sm text-muted-foreground lg:block">
 							Scroll inside preview
 						</span>
 					{/if}
 				{/if}
 			</div>
 
-			<div class={cn("gap-2 flex flex-wrap items-center")}>
+			<div class={cn("flex flex-wrap items-center gap-2")}>
 				{#if showViewportControls && showIframeComp}
-					<div transition:scale={{ start: 0.8 }} class="gap-2 flex items-center">
+					<div transition:scale={{ start: 0.8 }} class="flex items-center gap-2">
 						<TooltipProvider>
 							<Tooltip>
 								<TooltipTrigger>
 									<Button
 										onclick={() => ref?.resize(DEFAULT_SIZE)}
 										size="icon"
-										class="h-8 w-8 relative cursor-pointer shadow-none"
+										class="relative h-8 w-8 cursor-pointer shadow-none"
 										variant="outline"
 										aria-label="Set to Desktop View"
 									>
@@ -273,7 +273,7 @@
 									<Button
 										onclick={() => ref?.resize(MD_SIZE)}
 										size="icon"
-										class="h-8 w-8 relative cursor-pointer shadow-none"
+										class="relative h-8 w-8 cursor-pointer shadow-none"
 										variant="outline"
 										aria-label="Set to Tablet View"
 									>
@@ -311,7 +311,7 @@
 									<Button
 										onclick={() => ref?.resize(SM_SIZE)}
 										size="icon"
-										class="h-8 w-8 relative cursor-pointer shadow-none"
+										class="relative h-8 w-8 cursor-pointer shadow-none"
 										variant="outline"
 										aria-label="Set to Mobile View"
 									>
@@ -359,7 +359,7 @@
 										showIframeComp = !showIframeComp;
 										isLoading = showIframeComp;
 									}}
-									class="h-8 w-8 relative cursor-pointer shadow-none"
+									class="relative h-8 w-8 cursor-pointer shadow-none"
 									variant="outline"
 									aria-label="Toggle Responsive UI"
 								>
@@ -439,7 +439,7 @@
 
 	<!-- Preview Container -->
 	<section class="relative">
-		<div class="max-w-7xl mx-auto w-full" style={`--preview-min-height: ${MIN_PREVIEW_HEIGHT}px;`}>
+		<div class="mx-auto w-full max-w-7xl" style={`--preview-min-height: ${MIN_PREVIEW_HEIGHT}px;`}>
 			<div class={cn("z-40 bg-background", mode === "code" && "hidden")}>
 				{#if shouldRenderInIframe && previewHref}
 					<PaneGroup direction="horizontal">
@@ -483,7 +483,7 @@
 
 							{#if isLoading}
 								<div
-									class="inset-0 right-2 absolute flex items-center justify-center border-x bg-background"
+									class="absolute inset-0 right-2 flex items-center justify-center border-x bg-background"
 								>
 									<div
 										class="size-6 animate-spin rounded-full border border-primary border-t-transparent"
@@ -495,7 +495,7 @@
 						<!-- Resize Line (Important) -->
 						{#if canToggleResponsivePreview || isLargeViewport}
 							<PaneResizer
-								class="w-2 before:inset-0 before:h-12 before:w-1 before:bg-zinc-300 hover:before:h-16 hover:before:bg-zinc-400 focus:before:bg-zinc-400 dark:before:bg-zinc-600 dark:hover:before:bg-zinc-500 dark:focus:before:bg-zinc-400 relative before:absolute before:m-auto before:rounded-full before:transition-[height,background]"
+								class="relative w-2 before:absolute before:inset-0 before:m-auto before:h-12 before:w-1 before:rounded-full before:bg-zinc-300 before:transition-[height,background] hover:before:h-16 hover:before:bg-zinc-400 focus:before:bg-zinc-400 dark:before:bg-zinc-600 dark:hover:before:bg-zinc-500 dark:focus:before:bg-zinc-400"
 							/>
 							<Pane id={`preview-resizer-${id}`} order={2} defaultSize={100 - DEFAULT_SIZE} />
 						{/if}

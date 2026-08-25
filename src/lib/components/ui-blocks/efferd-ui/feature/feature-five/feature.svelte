@@ -50,18 +50,18 @@
 	];
 </script>
 
-<div class="max-w-5xl space-y-8 mx-auto w-full">
-	<div class="max-w-3xl mx-auto text-center">
-		<h2 class="text-2xl font-medium md:text-4xl lg:text-5xl text-balance">
+<div class="mx-auto w-full max-w-5xl space-y-8">
+	<div class="mx-auto max-w-3xl text-center">
+		<h2 class="text-2xl font-medium text-balance md:text-4xl lg:text-5xl">
 			Power. Speed. Control.
 		</h2>
-		<p class="mt-4 text-sm md:text-base text-balance text-muted-foreground">
+		<p class="mt-4 text-sm text-balance text-muted-foreground md:text-base">
 			Everything you need to build fast, secure, scalable apps.
 		</p>
 	</div>
 
 	<div class="overflow-hidden rounded-lg border">
-		<div class="sm:grid-cols-2 md:grid-cols-3 grid grid-cols-1 gap-px bg-border">
+		<div class="grid grid-cols-1 gap-px bg-border sm:grid-cols-2 md:grid-cols-3">
 			{#each features as feature (feature.title)}
 				<FeatureCard {feature} />
 			{/each}

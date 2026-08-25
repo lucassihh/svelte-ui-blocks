@@ -58,9 +58,9 @@
 	];
 </script>
 
-<div class="max-w-5xl lg:border-x mx-auto min-h-screen w-full">
+<div class="mx-auto min-h-screen w-full max-w-5xl lg:border-x">
 	<div
-		class="mx-4 md:mx-0 md:grid-cols-2 md:border-x-0 grid h-[calc(100vh-3.5rem)] grid-cols-1 border-x"
+		class="mx-4 grid h-[calc(100vh-3.5rem)] grid-cols-1 border-x md:mx-0 md:grid-cols-2 md:border-x-0"
 	>
 		<div class="space-y-4 px-4 pt-12 pb-4 md:border-r">
 			<h2 class="text-3xl font-black md:text-4xl">FAQs</h2>
@@ -87,7 +87,7 @@
 		</div>
 	</div>
 
-	<div class="h-14 flex items-center justify-center border-t">
+	<div class="flex h-14 items-center justify-center border-t">
 		<p class="text-muted-foreground">
 			Can't find what you're looking for?
 			<a class="text-primary hover:underline" href="mailto:support@efferd.com"> Contact Us </a>

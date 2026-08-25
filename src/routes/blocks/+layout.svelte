@@ -19,7 +19,7 @@
 </div>
 
 {#snippet scrollToTop()}
-	<div in:fly={{ y: 20 }} out:fly={{ y: 20 }} class="right-4 bottom-4 fixed z-50">
+	<div in:fly={{ y: 20 }} out:fly={{ y: 20 }} class="fixed right-4 bottom-4 z-50">
 		<Button
 			size="icon"
 			variant="secondary"

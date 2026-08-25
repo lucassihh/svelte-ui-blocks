@@ -88,7 +88,7 @@
 	];
 </script>
 
-<div class="max-w-5xl py-4 lg:border-x mx-auto w-full">
+<div class="mx-auto w-full max-w-5xl py-4 lg:border-x">
 	<div class="space-y-2 px-4 py-8 md:py-12">
 		<h1 class="text-2xl font-semibold tracking-wide md:text-4xl">Latest Blogs</h1>
 		<p class="text-sm text-muted-foreground">
@@ -96,7 +96,7 @@
 		</p>
 	</div>
 	<FullWidthDivider contained={true} />
-	<div class="sm:grid-cols-2 md:grid-cols-3 grid grid-cols-1 gap-px bg-border">
+	<div class="grid grid-cols-1 gap-px bg-border sm:grid-cols-2 md:grid-cols-3">
 		{#each blogs as blog (blog.title)}
 			<BlogCard {...blog} />
 		{/each}

@@ -41,10 +41,10 @@
 	const currentYear = new Date().getFullYear();
 </script>
 
-<footer class="max-w-5xl *:px-4 *:md:px-6 mx-auto">
-	<div class="gap-6 py-6 flex flex-col">
+<footer class="mx-auto max-w-5xl *:px-4 *:md:px-6">
+	<div class="flex flex-col gap-6 py-6">
 		<div class="flex items-center justify-between">
-			<div class="gap-2 flex items-center">
+			<div class="flex items-center gap-2">
 				<Logo class="h-4.5 w-auto" />
 			</div>
 
@@ -66,7 +66,7 @@
 		</div>
 
 		<nav>
-			<ul class="gap-4 text-sm font-medium md:gap-6 flex flex-wrap text-muted-foreground">
+			<ul class="flex flex-wrap gap-4 text-sm font-medium text-muted-foreground md:gap-6">
 				{#each navLinks as link (link.label)}
 					<li>
 						<a class="hover:text-foreground" href={link.href}>
@@ -78,14 +78,14 @@
 		</nav>
 	</div>
 
-	<div class="gap-4 py-4 text-sm flex items-center justify-between border-t text-muted-foreground">
+	<div class="flex items-center justify-between gap-4 border-t py-4 text-sm text-muted-foreground">
 		<p>&copy; {currentYear} efferd</p>
 
-		<p class="gap-1 inline-flex items-center">
+		<p class="inline-flex items-center gap-1">
 			<span>Built by</span>
 			<a
 				aria-label="x/twitter"
-				class="gap-1 inline-flex items-center text-foreground/80 hover:text-foreground hover:underline"
+				class="inline-flex items-center gap-1 text-foreground/80 hover:text-foreground hover:underline"
 				href="https://x.com/Sikandar_Bhide"
 				rel="noreferrer"
 				target="_blank"

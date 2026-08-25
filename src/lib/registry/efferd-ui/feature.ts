@@ -68,8 +68,7 @@ export const featureBlocks: BlockShowcaseItem[] = [
 	{
 		id: "feature-one",
 		title: "Feature One",
-		description:
-			"Interactive feature showcase section with custom graphics and controls.",
+		description: "Interactive feature showcase section with custom graphics and controls.",
 		previewComponent: FeatureOnePreview,
 		previewHref: "/preview/efferd-ui/feature/feature-one",
 		previewMode: "iframe",
@@ -83,11 +82,11 @@ export const featureBlocks: BlockShowcaseItem[] = [
 				code: featureFeatureOneFeatureSource
 			}
 		])
-	},	{
+	},
+	{
 		id: "feature-two",
 		title: "Feature Two",
-		description:
-			"Interactive feature showcase section with custom graphics and controls.",
+		description: "Interactive feature showcase section with custom graphics and controls.",
 		previewComponent: FeatureTwoPreview,
 		previewHref: "/preview/efferd-ui/feature/feature-two",
 		previewMode: "iframe",
@@ -102,11 +101,11 @@ export const featureBlocks: BlockShowcaseItem[] = [
 			},
 			...decorIconFiles
 		])
-	},	{
+	},
+	{
 		id: "feature-three",
 		title: "Feature Three",
-		description:
-			"Interactive feature showcase section with custom graphics and controls.",
+		description: "Interactive feature showcase section with custom graphics and controls.",
 		previewComponent: FeatureThreePreview,
 		previewHref: "/preview/efferd-ui/feature/feature-three",
 		previewMode: "iframe",
@@ -121,11 +120,11 @@ export const featureBlocks: BlockShowcaseItem[] = [
 			},
 			...dividerFiles
 		])
-	},	{
+	},
+	{
 		id: "feature-four",
 		title: "Feature Four",
-		description:
-			"Interactive feature showcase section with custom graphics and controls.",
+		description: "Interactive feature showcase section with custom graphics and controls.",
 		previewComponent: FeatureFourPreview,
 		previewHref: "/preview/efferd-ui/feature/feature-four",
 		previewMode: "iframe",
@@ -146,11 +145,11 @@ export const featureBlocks: BlockShowcaseItem[] = [
 			},
 			...decorIconFiles
 		])
-	},	{
+	},
+	{
 		id: "feature-five",
 		title: "Feature Five",
-		description:
-			"Interactive feature showcase section with custom graphics and controls.",
+		description: "Interactive feature showcase section with custom graphics and controls.",
 		previewComponent: FeatureFivePreview,
 		previewHref: "/preview/efferd-ui/feature/feature-five",
 		previewMode: "iframe",

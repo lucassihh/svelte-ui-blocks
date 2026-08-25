@@ -31,7 +31,7 @@
 
 <div
 	aria-hidden="true"
-	class={cn("inset-0 pointer-events-none absolute", className)}
+	class={cn("pointer-events-none absolute inset-0", className)}
 	{...restProps}
 >
 	<svg class="h-full w-full text-primary" fill="none" viewBox="0 0 696 316">

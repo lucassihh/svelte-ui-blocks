@@ -14,7 +14,7 @@
 
 <div
 	class={cn(
-		"px-3 py-1.5 text-sm font-medium inline-flex w-fit items-center rounded-none border border-border/80 bg-secondary text-foreground shadow-none dark:bg-secondary/30",
+		"inline-flex w-fit items-center rounded-none border border-border/80 bg-secondary px-3 py-1.5 text-sm font-medium text-foreground shadow-none dark:bg-secondary/30",
 		className
 	)}
 >

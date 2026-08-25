@@ -39,13 +39,13 @@
 </script>
 
 <div
-	class="py-6 relative border-x border-y bg-linear-to-r from-secondary/50 via-transparent to-secondary/50"
+	class="relative border-x border-y bg-linear-to-r from-secondary/50 via-transparent to-secondary/50 py-6"
 >
-	<Marquee class="gap-20 flex items-center" style="--duration: 30s; --gap: 2rem;">
+	<Marquee class="flex items-center gap-20" style="--duration: 30s; --gap: 2rem;">
 		{#each logos as logo}
 			<img
 				alt={logo.alt}
-				class="h-4 md:h-5 pointer-events-none select-none dark:brightness-0 dark:invert"
+				class="pointer-events-none h-4 select-none md:h-5 dark:brightness-0 dark:invert"
 				height="auto"
 				loading="lazy"
 				src={logo.src}
@@ -56,12 +56,12 @@
 
 	<ProgressiveBlur
 		blurIntensity={1}
-		class="top-0 left-0 md:w-[160px] pointer-events-none absolute h-full w-[100px]"
+		class="pointer-events-none absolute top-0 left-0 h-full w-[100px] md:w-[160px]"
 		direction="left"
 	/>
 	<ProgressiveBlur
 		blurIntensity={1}
-		class="top-0 right-0 md:w-[160px] pointer-events-none absolute h-full w-[100px]"
+		class="pointer-events-none absolute top-0 right-0 h-full w-[100px] md:w-[160px]"
 		direction="right"
 	/>
 </div>

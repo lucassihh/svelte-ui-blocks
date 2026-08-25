@@ -3,16 +3,16 @@
 	import { FullWidthDivider } from "$lib/components/ui/full-width-divider";
 </script>
 
-<div class="max-w-3xl md:flex-row relative mx-auto flex w-full flex-col justify-between border-x">
+<div class="relative mx-auto flex w-full max-w-3xl flex-col justify-between border-x md:flex-row">
 	<FullWidthDivider position="top" />
 
-	<div class="p-4 md:border-b-0 border-b">
-		<h2 class="text-lg font-bold md:text-left md:text-2xl text-center">
+	<div class="border-b p-4 md:border-b-0">
+		<h2 class="text-center text-lg font-bold md:text-left md:text-2xl">
 			Let your plans shape the future.
 		</h2>
 	</div>
 
-	<div class="gap-2 p-4 md:border-l flex items-center justify-center">
+	<div class="flex items-center justify-center gap-2 p-4 md:border-l">
 		<Button variant="secondary">Contact Sales</Button>
 		<Button>Get Started</Button>
 	</div>

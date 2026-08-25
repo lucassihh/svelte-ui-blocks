@@ -111,21 +111,21 @@
 <footer class="relative">
 	<div
 		class={cn(
-			"max-w-5xl lg:border-x mx-auto",
+			"mx-auto max-w-5xl lg:border-x",
 			"dark:bg-[radial-gradient(35%_80%_at_15%_0%,--theme(--color-foreground/.1),transparent)]"
 		)}
 	>
-		<div class="inset-x-0 absolute h-px w-full bg-border"></div>
+		<div class="absolute inset-x-0 h-px w-full bg-border"></div>
 
-		<div class="max-w-5xl gap-6 p-4 grid grid-cols-6">
-			<div class="gap-4 pt-5 md:col-span-4 col-span-6 flex flex-col">
+		<div class="grid max-w-5xl grid-cols-6 gap-6 p-4">
+			<div class="col-span-6 flex flex-col gap-4 pt-5 md:col-span-4">
 				<a class="w-max" href="/">
 					<Logo class="h-5 w-auto" />
 				</a>
 				<p class="max-w-sm text-sm text-balance text-muted-foreground">
 					Beautify your app with efferd.
 				</p>
-				<div class="gap-2 flex">
+				<div class="flex gap-2">
 					{#each socialLinks as item, index (`social-${item.link}-${index}`)}
 						{@const SocialIcon = item.icon}
 						<Button
@@ -142,22 +142,22 @@
 				</div>
 			</div>
 
-			<div class="md:col-span-1 col-span-3 w-full">
+			<div class="col-span-3 w-full md:col-span-1">
 				<span class="text-xs text-muted-foreground">Resources</span>
-				<div class="mt-2 gap-2 flex flex-col">
+				<div class="mt-2 flex flex-col gap-2">
 					{#each resources as item (item.title)}
-						<a class="text-sm w-max hover:underline" href={item.href}>
+						<a class="w-max text-sm hover:underline" href={item.href}>
 							{item.title}
 						</a>
 					{/each}
 				</div>
 			</div>
 
-			<div class="md:col-span-1 col-span-3 w-full">
+			<div class="col-span-3 w-full md:col-span-1">
 				<span class="text-xs text-muted-foreground">Company</span>
-				<div class="mt-2 gap-2 flex flex-col">
+				<div class="mt-2 flex flex-col gap-2">
 					{#each company as item (item.title)}
-						<a class="text-sm w-max hover:underline" href={item.href}>
+						<a class="w-max text-sm hover:underline" href={item.href}>
 							{item.title}
 						</a>
 					{/each}
@@ -165,10 +165,10 @@
 			</div>
 		</div>
 
-		<div class="inset-x-0 absolute h-px w-full bg-border"></div>
+		<div class="absolute inset-x-0 h-px w-full bg-border"></div>
 
-		<div class="max-w-4xl gap-2 py-4 flex flex-col justify-between">
-			<p class="text-sm font-light text-center text-muted-foreground">
+		<div class="flex max-w-4xl flex-col justify-between gap-2 py-4">
+			<p class="text-center text-sm font-light text-muted-foreground">
 				&copy; {currentYear} efferd, All rights reserved
 			</p>
 		</div>

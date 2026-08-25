@@ -4,19 +4,19 @@
 	import { FullWidthDivider } from "$lib/components/ui/full-width-divider";
 </script>
 
-<div class="max-w-3xl relative mx-auto flex w-full flex-col justify-between border-x">
+<div class="relative mx-auto flex w-full max-w-3xl flex-col justify-between border-x">
 	<FullWidthDivider position="top" />
 
-	<div class="px-2 py-8 border-b">
-		<h2 class="text-lg font-semibold md:text-2xl text-center">
+	<div class="border-b px-2 py-8">
+		<h2 class="text-center text-lg font-semibold md:text-2xl">
 			Plan the present. Build the future.
 		</h2>
-		<p class="text-sm md:text-base text-center text-balance text-muted-foreground">
+		<p class="text-center text-sm text-balance text-muted-foreground md:text-base">
 			Start your journey today by clicking the button below.
 		</p>
 	</div>
 
-	<div class="gap-2 p-4 flex items-center justify-center bg-secondary/80 dark:bg-secondary/40">
+	<div class="flex items-center justify-center gap-2 bg-secondary/80 p-4 dark:bg-secondary/40">
 		<Button variant="outline">Contact Sales</Button>
 		<Button>
 			Get Started

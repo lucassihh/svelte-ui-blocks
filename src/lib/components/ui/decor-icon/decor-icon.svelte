@@ -4,7 +4,7 @@
 	import { type VariantProps, tv } from "tailwind-variants";
 
 	export const decorIconVariants = tv({
-		base: "size-5 pointer-events-none absolute z-1 shrink-0 stroke-muted-foreground stroke-1",
+		base: "pointer-events-none absolute z-1 size-5 shrink-0 stroke-muted-foreground stroke-1",
 		variants: {
 			position: {
 				"top-left": "top-0 left-0 -translate-x-[calc(50%+0.5px)] -translate-y-[calc(50%+0.5px)]",

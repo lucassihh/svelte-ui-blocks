@@ -37,12 +37,12 @@
 	];
 </script>
 
-<div class="py-4 overflow-hidden mask-[linear-gradient(to_right,transparent,black,transparent)]">
+<div class="overflow-hidden mask-[linear-gradient(to_right,transparent,black,transparent)] py-4">
 	<Marquee>
 		{#each logos as logo}
 			<img
 				alt={logo.alt}
-				class="h-4 md:h-5 pointer-events-none select-none dark:brightness-0 dark:invert"
+				class="pointer-events-none h-4 select-none md:h-5 dark:brightness-0 dark:invert"
 				height="auto"
 				loading="lazy"
 				src={logo.src}

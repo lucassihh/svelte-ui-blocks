@@ -4,7 +4,7 @@
 </script>
 
 <figure
-	class="max-w-lg md:grid md:grid-cols-[auto_1fr] mx-auto flex w-full flex-col items-center justify-center"
+	class="mx-auto flex w-full max-w-lg flex-col items-center justify-center md:grid md:grid-cols-[auto_1fr]"
 >
 	<div class="relative">
 		<!-- Vertical lines  -->
@@ -15,13 +15,13 @@
 		<MaskLine class="bottom-0 md:w-xl" orientation="horizontal" />
 
 		<Avatar
-			class="size-24 md:size-32 rounded-none mask-[radial-gradient(circle,black_60%,transparent)] *:rounded-none"
+			class="size-24 rounded-none mask-[radial-gradient(circle,black_60%,transparent)] *:rounded-none md:size-32"
 		>
 			<AvatarImage alt="Shadcn's profile picture" src="https://github.com/shadcn.png" />
 			<AvatarFallback>SH</AvatarFallback>
 		</Avatar>
 	</div>
-	<figcaption class="space-y-4 p-8 md:p-6 md:text-left text-center">
+	<figcaption class="space-y-4 p-8 text-center md:p-6 md:text-left">
 		<blockquote class="text-lg leading-tight tracking-tight text-muted-foreground">
 			&quot;<span class="font-medium text-foreground">Svelte Efferd</span> is so polished I might just
 			retire. The ecosystem is in safe hands.&quot;

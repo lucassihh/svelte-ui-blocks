@@ -39,16 +39,16 @@
 </script>
 
 <div
-	class="max-w-5xl gap-12 px-4 py-12 md:px-8 mx-auto flex min-h-screen w-full flex-col justify-center"
+	class="mx-auto flex min-h-screen w-full max-w-5xl flex-col justify-center gap-12 px-4 py-12 md:px-8"
 >
-	<div class="max-w-2xl space-y-2 mx-auto text-center">
+	<div class="mx-auto max-w-2xl space-y-2 text-center">
 		<h2 class="text-3xl font-medium tracking-tight md:text-5xl">Build apps faster</h2>
-		<p class="text-sm leading-relaxed md:text-base text-muted-foreground">
+		<p class="text-sm leading-relaxed text-muted-foreground md:text-base">
 			The complete platform for secure, scalable apps. You code, we handle the rest.
 		</p>
 	</div>
 
-	<div class="gap-8 md:grid-cols-2 lg:grid-cols-4 grid grid-cols-1">
+	<div class="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-4">
 		{#each features as feature (feature.title)}
 			<FeatureCard {feature} />
 		{/each}

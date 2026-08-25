@@ -24,9 +24,9 @@
 	];
 </script>
 
-<div class="max-w-lg relative mx-auto w-full border">
-	<div class="px-6 py-8 border-b">
-		<div class="mb-8 gap-2 flex flex-col">
+<div class="relative mx-auto w-full max-w-lg border">
+	<div class="border-b px-6 py-8">
+		<div class="mb-8 flex flex-col gap-2">
 			<h1 class="text-xl font-semibold md:text-2xl">Get in touch</h1>
 			{" "}
 			<p class="text-sm text-muted-foreground">
@@ -34,14 +34,14 @@
 			</p>
 		</div>
 
-		<div class="gap-2 md:grid-cols-2 grid">
+		<div class="grid gap-2 md:grid-cols-2">
 			{#each data as item}
 				{@const Icon = item.icon}
-				<div class="gap-4 p-2 flex items-center">
+				<div class="flex items-center gap-4 p-2">
 					<div class="[&_svg]:size-5 [&_svg]:text-muted-foreground">
 						<Icon />
 					</div>
-					<div class={cn("gap-y-0.5 flex flex-col")}>
+					<div class={cn("flex flex-col gap-y-0.5")}>
 						<h2 class="text-sm">{item.title}</h2>
 						<p class="text-xs text-muted-foreground">{item.value}</p>
 					</div>
@@ -51,7 +51,7 @@
 	</div>
 
 	<div class="px-6 py-8">
-		<div class="mb-8 gap-1.5 flex flex-col">
+		<div class="mb-8 flex flex-col gap-1.5">
 			<h2 class="text-xl font-medium">Send a message</h2>
 			{" "}
 			<p class="text-sm text-muted-foreground">

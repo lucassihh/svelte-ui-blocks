@@ -17,11 +17,11 @@
 	import Check from "@lucide/svelte/icons/check";
 	import Copy from "@lucide/svelte/icons/copy";
 	import ExternalLink from "@lucide/svelte/icons/external-link";
-    // Svg Icons
-    import JavascriptIcon from "$lib/assets/svg/logos/javascript.svelte";
-    import TypescriptIcon from "$lib/assets/svg/logos/typescript.svelte";
-    import SvelteIcon from "$lib/assets/svg/logos/svelte.svelte";
-    
+	// Svg Icons
+	import JavascriptIcon from "$lib/assets/svg/logos/javascript.svelte";
+	import TypescriptIcon from "$lib/assets/svg/logos/typescript.svelte";
+	import SvelteIcon from "$lib/assets/svg/logos/svelte.svelte";
+
 	// Hooks & Other
 	import { UseClipboard } from "$lib/hooks/use-clipboard.svelte";
 	import { scale } from "svelte/transition";
@@ -65,14 +65,14 @@
 </script>
 
 <!-- border-t -->
-<div class="sm:min-h-[36rem] sm:flex-row flex flex-col">
+<div class="flex flex-col sm:min-h-[36rem] sm:flex-row">
 	<div
-		class="bg-neutral-50 text-black sm:w-72 sm:border-r sm:border-b-0 dark:bg-zinc-900/25 dark:text-white w-full border-b [--color-background:var(--color-zinc-900)] [--color-foreground:white] [--color-muted:var(--color-zinc-800)]"
+		class="w-full border-b bg-neutral-50 text-black [--color-background:var(--color-zinc-900)] [--color-foreground:white] [--color-muted:var(--color-zinc-800)] sm:w-72 sm:border-r sm:border-b-0 dark:bg-zinc-900/25 dark:text-white"
 	>
-		<div class="px-4 py-3 text-sm tracking-wider border-b font-mono text-muted-foreground">
+		<div class="border-b px-4 py-3 font-mono text-sm tracking-wider text-muted-foreground">
 			Files
 		</div>
-		<div class="px-2 py-3 sm:max-h-[36rem] max-h-[18rem] overflow-auto">
+		<div class="max-h-[18rem] overflow-auto px-2 py-3 sm:max-h-[36rem]">
 			{#each codeTree.nodes as node (node.id)}
 				<CodeTreeNode
 					{node}
@@ -85,20 +85,22 @@
 		</div>
 	</div>
 
-	<div class="min-w-0 relative min-h-[32rem] flex-1">
-		<div class="gap-3 py-1.5 pr-2 pl-4 flex items-center justify-between border-b">
-			<p class="flex items-center gap-2 min-w-0 text-sm tracking-wider truncate font-mono text-muted-foreground">
-                {#if activeFile?.name.includes(".svelte")}
-                  <SvelteIcon/>
-                  {:else if activeFile?.name.includes(".ts")} 
-                  <TypescriptIcon/>
-                  {:else if activeFile?.name.includes(".js")} 
-                  <JavascriptIcon/>
-                {/if}
+	<div class="relative min-h-[32rem] min-w-0 flex-1">
+		<div class="flex items-center justify-between gap-3 border-b py-1.5 pr-2 pl-4">
+			<p
+				class="flex min-w-0 items-center gap-2 truncate font-mono text-sm tracking-wider text-muted-foreground"
+			>
+				{#if activeFile?.name.includes(".svelte")}
+					<SvelteIcon />
+				{:else if activeFile?.name.includes(".ts")}
+					<TypescriptIcon />
+				{:else if activeFile?.name.includes(".js")}
+					<JavascriptIcon />
+				{/if}
 				{activeFile?.name ?? "No file selected"}
 			</p>
 
-			<div class="gap-1 flex items-center">
+			<div class="flex items-center gap-1">
 				{#if activeFile?.externalUrl}
 					<Button
 						class="h-8 gap-1.5 px-3 text-xs"
@@ -137,7 +139,7 @@
 		{#if activeFile?.code}
 			<Code code={activeFile.code} lang={activeFile.lang} highlight={activeFile.highlight} />
 		{:else if activeFile?.externalUrl}
-			<div class="px-6 flex min-h-[20rem] items-center justify-center">
+			<div class="flex min-h-[20rem] items-center justify-center px-6">
 				<div class="max-w-md text-center">
 					<p class="text-sm font-medium text-foreground">
 						{activeFile.externalLabel ?? activeFile.name}
@@ -156,7 +158,7 @@
 			</div>
 		{:else}
 			<div
-				class="px-6 text-sm flex h-full min-h-[20rem] items-center justify-center text-muted-foreground"
+				class="flex h-full min-h-[20rem] items-center justify-center px-6 text-sm text-muted-foreground"
 			>
 				No code files are available for this block yet.
 			</div>

@@ -12,10 +12,10 @@
 	let IconComponent: Component | typeof Icon = $derived(icon);
 </script>
 
-<a class={cn("gap-x-2 flex items-center", className)} {href} {...props}>
+<a class={cn("flex items-center gap-x-2", className)} {href} {...props}>
 	<div
 		class={cn(
-			"size-9 text-sm shadow-sm flex aspect-square items-center justify-center rounded-md border bg-card",
+			"flex aspect-square size-9 items-center justify-center rounded-md border bg-card text-sm shadow-sm",
 			"[&_svg:not([class*='size-'])]:size-4 [&_svg:not([class*='size-'])]:text-foreground"
 		)}
 	>
@@ -23,7 +23,7 @@
 	</div>
 	<div class="flex flex-col items-start justify-center">
 		<span class="font-medium">{label}</span>
-		<span class="text-xs line-clamp-2 text-muted-foreground">
+		<span class="line-clamp-2 text-xs text-muted-foreground">
 			{description}
 		</span>
 	</div>

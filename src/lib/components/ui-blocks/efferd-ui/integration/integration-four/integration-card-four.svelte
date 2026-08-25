@@ -18,8 +18,8 @@
 
 <div
 	class={cn(
-		"size-18 absolute flex items-center justify-center rounded-md border",
-		logo ? "shadow-xs bg-card dark:bg-card/60" : "bg-secondary/30 dark:bg-background"
+		"absolute flex size-18 items-center justify-center rounded-md border",
+		logo ? "bg-card shadow-xs dark:bg-card/60" : "bg-secondary/30 dark:bg-background"
 	)}
 	style:left={`${col * 72}px`}
 	style:top={`${row * 72}px`}
@@ -28,7 +28,7 @@
 		<img
 			alt={logo.alt}
 			class={cn(
-				"size-8 p-1 pointer-events-none object-contain select-none",
+				"pointer-events-none size-8 object-contain p-1 select-none",
 				logo.isInvertable && "dark:invert"
 			)}
 			height="40"

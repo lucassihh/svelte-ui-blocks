@@ -113,31 +113,31 @@
 	class="relative h-(--footer-height) w-full border-t [--footer-height:520px]"
 	style="clip-path: polygon(0% 0, 100% 0%, 100% 100%, 0 100%);"
 >
-	<div class="bottom-0 fixed h-(--footer-height) w-full">
+	<div class="fixed bottom-0 h-(--footer-height) w-full">
 		<div class="sticky top-[calc(100vh-var(--footer-height))] h-full overflow-y-auto">
 			<div
 				aria-hidden="true"
-				class="inset-0 absolute isolate z-0 opacity-50 contain-strict dark:opacity-60"
+				class="absolute inset-0 isolate z-0 opacity-50 contain-strict dark:opacity-60"
 			>
 				<div
-					class="top-0 left-0 h-320 w-140 -translate-y-87.5 absolute -rotate-45 rounded-full bg-[radial-gradient(68.54%_68.72%_at_55.02%_31.46%,--theme(--color-foreground/.06)_0,hsla(0,0%,55%,.02)_50%,--theme(--color-foreground/.01)_80%)]"
+					class="absolute top-0 left-0 h-320 w-140 -translate-y-87.5 -rotate-45 rounded-full bg-[radial-gradient(68.54%_68.72%_at_55.02%_31.46%,--theme(--color-foreground/.06)_0,hsla(0,0%,55%,.02)_50%,--theme(--color-foreground/.01)_80%)]"
 				></div>
 				<div
-					class="top-0 left-0 h-320 w-60 absolute [translate:5%_-50%] -rotate-45 rounded-full bg-[radial-gradient(50%_50%_at_50%_50%,--theme(--color-foreground/.04)_0,--theme(--color-foreground/.01)_80%,transparent_100%)]"
+					class="absolute top-0 left-0 h-320 w-60 [translate:5%_-50%] -rotate-45 rounded-full bg-[radial-gradient(50%_50%_at_50%_50%,--theme(--color-foreground/.04)_0,--theme(--color-foreground/.01)_80%,transparent_100%)]"
 				></div>
 				<div
-					class="top-0 left-0 h-320 w-60 -translate-y-87.5 absolute -rotate-45 rounded-full bg-[radial-gradient(50%_50%_at_50%_50%,--theme(--color-foreground/.04)_0,--theme(--color-foreground/.01)_80%,transparent_100%)]"
+					class="absolute top-0 left-0 h-320 w-60 -translate-y-87.5 -rotate-45 rounded-full bg-[radial-gradient(50%_50%_at_50%_50%,--theme(--color-foreground/.04)_0,--theme(--color-foreground/.01)_80%,transparent_100%)]"
 				></div>
 			</div>
 
-			<div class="max-w-6xl gap-5 relative mx-auto flex size-full flex-col justify-between">
-				<div class="gap-8 px-4 pt-12 md:grid-cols-2 lg:grid-cols-4 grid grid-cols-1">
-					<AnimatedContainer class="space-y-4 w-full">
+			<div class="relative mx-auto flex size-full max-w-6xl flex-col justify-between gap-5">
+				<div class="grid grid-cols-1 gap-8 px-4 pt-12 md:grid-cols-2 lg:grid-cols-4">
+					<AnimatedContainer class="w-full space-y-4">
 						<Logo class="h-5 w-auto" />
-						<p class="mt-8 text-sm md:mt-0 text-muted-foreground">
+						<p class="mt-8 text-sm text-muted-foreground md:mt-0">
 							Beautifully crafted shadcn blocks by efferd.
 						</p>
-						<div class="gap-2 flex">
+						<div class="flex gap-2">
 							{#each socialLinks as link, index (`social-${link.href}-${index}`)}
 								{@const SocialIcon = link.icon}
 								<Button href={link.href} aria-label={link.title} size="icon-sm" variant="outline">
@@ -151,11 +151,11 @@
 						<AnimatedContainer class="w-full" delay={0.1 + index * 0.1}>
 							<div class="mb-10 md:mb-0">
 								<h3 class="text-sm uppercase">{group.label}</h3>
-								<ul class="mt-4 space-y-2 text-sm md:text-xs lg:text-sm text-muted-foreground">
+								<ul class="mt-4 space-y-2 text-sm text-muted-foreground md:text-xs lg:text-sm">
 									{#each group.links as link (link.title)}
 										<li>
 											<a
-												class="[&_svg]:me-1 [&_svg]:size-4 inline-flex items-center hover:text-foreground"
+												class="inline-flex items-center hover:text-foreground [&_svg]:me-1 [&_svg]:size-4"
 												href={link.href}
 											>
 												{#if link.icon}
@@ -173,7 +173,7 @@
 				</div>
 
 				<div
-					class="gap-2 p-4 text-sm md:flex-row flex flex-col items-center justify-between border-t text-muted-foreground"
+					class="flex flex-col items-center justify-between gap-2 border-t p-4 text-sm text-muted-foreground md:flex-row"
 				>
 					<p>&copy; {currentYear} efferd, All rights reserved.</p>
 					<a class="hover:text-foreground" href="/">License</a>

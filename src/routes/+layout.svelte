@@ -39,7 +39,7 @@
 	<!-- Landing Header -->
 	<LandingHeader />
 	<!-- Main Content -->
-	<main class="max-w-7xl mx-auto w-full font-jakarta">
+	<main class="mx-auto w-full max-w-7xl font-jakarta">
 		{@render children()}
 
 		{#if !isDocumentation}

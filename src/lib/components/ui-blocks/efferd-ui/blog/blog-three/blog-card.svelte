@@ -45,14 +45,14 @@
 <a
 	{href}
 	class={cn(
-		"group gap-2 p-3 flex flex-col rounded-xl transition-colors hover:bg-muted/50 active:bg-muted",
+		"group flex flex-col gap-2 rounded-xl p-3 transition-colors hover:bg-muted/50 active:bg-muted",
 		className
 	)}
 	{...props}
 >
 	<AspectRatio
 		ratio={16 / 9}
-		class="shadow-md overflow-hidden rounded-xl outline outline-offset-3 outline-border/50"
+		class="overflow-hidden rounded-xl shadow-md outline outline-offset-3 outline-border/50"
 	>
 		<img
 			src={imageSrc}
@@ -65,7 +65,7 @@
 
 	<div class="space-y-2 px-2 pb-2">
 		<div
-			class="gap-2 sm:text-xs flex flex-wrap items-center text-[11px] text-muted-foreground transition-colors group-hover:text-foreground"
+			class="flex flex-wrap items-center gap-2 text-[11px] text-muted-foreground transition-colors group-hover:text-foreground sm:text-xs"
 		>
 			<p>by {author}</p>
 			<div class="size-1 rounded-full bg-current"></div>
@@ -74,9 +74,9 @@
 			<p>{readTime}</p>
 		</div>
 
-		<h2 class="text-lg font-semibold line-clamp-2">{title}</h2>
+		<h2 class="line-clamp-2 text-lg font-semibold">{title}</h2>
 		<p
-			class="text-sm line-clamp-3 text-muted-foreground transition-colors group-active:text-foreground"
+			class="line-clamp-3 text-sm text-muted-foreground transition-colors group-active:text-foreground"
 		>
 			{description}
 		</p>

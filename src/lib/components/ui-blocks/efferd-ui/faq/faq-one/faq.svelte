@@ -58,7 +58,7 @@
 	];
 </script>
 
-<div class="max-w-2xl space-y-7 px-4 mx-auto w-full">
+<div class="mx-auto w-full max-w-2xl space-y-7 px-4">
 	<div class="space-y-2">
 		<h2 class="text-3xl font-semibold md:text-4xl">Frequently Asked Questions</h2>
 		<p class="max-w-2xl text-muted-foreground">

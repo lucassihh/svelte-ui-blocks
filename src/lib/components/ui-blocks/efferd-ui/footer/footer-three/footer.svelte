@@ -80,21 +80,21 @@
 
 <footer
 	class={cn(
-		"md:rounded-t-6xl max-w-5xl rounded-t-4xl px-6 md:px-8 relative mx-auto flex w-full flex-col items-center justify-center border-t",
+		"md:rounded-t-6xl relative mx-auto flex w-full max-w-5xl flex-col items-center justify-center rounded-t-4xl border-t px-6 md:px-8",
 		"dark:bg-[radial-gradient(35%_128px_at_50%_0%,--theme(--color-foreground/.1),transparent)]"
 	)}
 >
 	<div
-		class="top-0 blur absolute right-1/2 left-1/2 h-px w-1/3 -translate-x-1/2 -translate-y-1/2 rounded-full bg-foreground/20"
+		class="absolute top-0 right-1/2 left-1/2 h-px w-1/3 -translate-x-1/2 -translate-y-1/2 rounded-full bg-foreground/20 blur"
 	></div>
 
-	<div class="gap-8 py-6 md:py-8 lg:grid-cols-3 lg:gap-8 grid w-full">
+	<div class="grid w-full gap-8 py-6 md:py-8 lg:grid-cols-3 lg:gap-8">
 		<AnimatedContainer class="space-y-4">
 			<Logo class="h-4 w-auto" />
-			<p class="mt-8 text-sm md:mt-0 text-muted-foreground">Beautify your app with efferd.</p>
+			<p class="mt-8 text-sm text-muted-foreground md:mt-0">Beautify your app with efferd.</p>
 		</AnimatedContainer>
 
-		<div class="mt-10 gap-8 md:grid-cols-4 lg:col-span-2 lg:mt-0 grid grid-cols-2">
+		<div class="mt-10 grid grid-cols-2 gap-8 md:grid-cols-4 lg:col-span-2 lg:mt-0">
 			{#each footerLinks as section, index (section.label)}
 				<AnimatedContainer delay={0.1 + index * 0.1}>
 					<div class="mb-10 md:mb-0">
@@ -103,7 +103,7 @@
 							{#each section.links as link (`${section.label}-${link.title}`)}
 								<li>
 									<a
-										class="[&_svg]:me-1 [&_svg]:size-4 inline-flex items-center duration-250 hover:text-foreground"
+										class="inline-flex items-center duration-250 hover:text-foreground [&_svg]:me-1 [&_svg]:size-4"
 										href={link.href}
 										rel={link.icon ? "noreferrer" : undefined}
 										target={link.icon ? "_blank" : undefined}
@@ -125,7 +125,7 @@
 
 	<div class="h-px w-full bg-linear-to-r via-border"></div>
 
-	<div class="py-4 flex w-full items-center justify-center">
+	<div class="flex w-full items-center justify-center py-4">
 		<p class="text-sm text-muted-foreground">
 			&copy; {currentYear} efferd, All rights reserved
 		</p>

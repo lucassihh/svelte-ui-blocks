@@ -102,17 +102,17 @@
 	];
 </script>
 
-<div class="max-w-5xl space-y-8 py-6 mx-auto min-h-screen overflow-x-clip border-x">
-	<div class="gap-2 px-4 md:px-6 flex flex-col">
-		<h1 class="text-3xl font-semibold tracking-wide md:text-4xl xl:font-bold text-balance">
+<div class="mx-auto min-h-screen max-w-5xl space-y-8 overflow-x-clip border-x py-6">
+	<div class="flex flex-col gap-2 px-4 md:px-6">
+		<h1 class="text-3xl font-semibold tracking-wide text-balance md:text-4xl xl:font-bold">
 			Real Results, Real Voices
 		</h1>
-		<p class="text-sm md:text-base lg:text-lg text-muted-foreground">
+		<p class="text-sm text-muted-foreground md:text-base lg:text-lg">
 			Used by thousands of developers to build beautiful, accessible, and performant web
 			applications.
 		</p>
 	</div>
-	<div class="sm:grid-cols-2 lg:grid-cols-3 relative grid grid-cols-1 gap-px bg-border">
+	<div class="relative grid grid-cols-1 gap-px bg-border sm:grid-cols-2 lg:grid-cols-3">
 		<FullWidthDivider position="top" />
 		{#each testimonials as testimonial}
 			<TestimonialCard {testimonial} />

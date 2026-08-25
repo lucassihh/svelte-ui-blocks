@@ -30,27 +30,27 @@
 
 <div
 	class={cn(
-		"px-6 md:px-8 relative flex h-screen w-full items-center justify-center overflow-hidden",
+		"relative flex h-screen w-full items-center justify-center overflow-hidden px-6 md:px-8",
 		className
 	)}
 	{...restProps}
 >
 	<div
 		class={cn(
-			"max-w-sm p-6 md:p-8 relative flex w-full flex-col justify-between",
+			"relative flex w-full max-w-sm flex-col justify-between p-6 md:p-8",
 			"dark:bg-[radial-gradient(50%_80%_at_20%_0%,--theme(--color-foreground/.1),transparent)]"
 		)}
 	>
-		<div class="-inset-y-6 absolute -left-px w-px bg-border"></div>
-		<div class="-inset-y-6 absolute -right-px w-px bg-border"></div>
-		<div class="-inset-x-6 absolute -top-px h-px bg-border"></div>
-		<div class="-inset-x-6 absolute -bottom-px h-px bg-border"></div>
+		<div class="absolute -inset-y-6 -left-px w-px bg-border"></div>
+		<div class="absolute -inset-y-6 -right-px w-px bg-border"></div>
+		<div class="absolute -inset-x-6 -top-px h-px bg-border"></div>
+		<div class="absolute -inset-x-6 -bottom-px h-px bg-border"></div>
 
 		<DecorIcon position="top-left" />
 		<DecorIcon position="bottom-right" />
 
-		<div class="max-w-sm animate-in space-y-8 w-full">
-			<div class="space-y-1 flex flex-col">
+		<div class="animate-in w-full max-w-sm space-y-8">
+			<div class="flex flex-col space-y-1">
 				<h1 class="text-2xl font-bold tracking-wide">Join Now!</h1>
 				<p class="text-base text-muted-foreground">Login or create your efferd account.</p>
 			</div>
@@ -69,7 +69,7 @@
 
 				<AuthDivider>OR</AuthDivider>
 
-				<div class="gap-2 grid grid-cols-2">
+				<div class="grid grid-cols-2 gap-2">
 					<Button class="w-full" type="button" variant="outline">
 						<GoogleLogo data-icon="inline-start" />
 						Google

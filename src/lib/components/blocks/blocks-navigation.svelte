@@ -7,15 +7,15 @@
 
 	// Hooks & Other
 	import { cn } from "$lib/utils";
-    
-    // Logic to Read registry [ui-name] for nav links
-    
+
+	// Logic to Read registry [ui-name] for nav links
+
 	// Convert camelCase/kebab-case for slugs (URL), Example: myName -> my-name
 	function camelToKebab(str: string) {
 		return str.replace(/([a-z0-9])([A-Z])/g, "$1-$2").toLowerCase();
 	}
-    
-    // Convert camelCase/kebab-case for Labels, Example: myName -> My Name
+
+	// Convert camelCase/kebab-case for Labels, Example: myName -> My Name
 	function formatLabel(str: string) {
 		// It handles specific exceptions
 		// const customLabels: Record<string, string> = {
@@ -31,7 +31,9 @@
 	}
 
 	// Identifies the current library (example: "efferd-ui")
-	const library = $derived((page.url.pathname.split("/")[2] || "efferd-ui") as keyof typeof registry);
+	const library = $derived(
+		(page.url.pathname.split("/")[2] || "efferd-ui") as keyof typeof registry
+	);
 
 	// Get the selected category from the URL
 	const currentCategory = $derived(page.url.pathname.split("/")[3] ?? "");
@@ -39,24 +41,23 @@
 	// Generates categories dynamically from the selected registry
 	const blockCategories = $derived.by(() => {
 		const currentRegistry = registry[library] || registry["efferd-ui"];
-		
+
 		return Object.keys(currentRegistry).map((key) => ({
 			slug: camelToKebab(key), // "logoCloud" -> "logo-cloud"
-			label: formatLabel(key)   // "logoCloud" -> "Logo Cloud"
+			label: formatLabel(key) // "logoCloud" -> "Logo Cloud"
 		}));
 	});
 
 	const isActive = (slug: string) => currentCategory === slug;
 </script>
 
-
 <div
-	class="top-15 right-0 left-0 max-w-7xl backdrop-blur-xs sticky z-40 mx-auto w-full border-b border-dashed bg-background/80"
+	class="sticky top-15 right-0 left-0 z-40 mx-auto w-full max-w-7xl border border-dashed bg-background/80 backdrop-blur-xs"
 >
 	<ScrollArea orientation="horizontal" fade={false} class="w-full" scrollbarXClasses="hidden">
-		<nav class="max-w-7xl mx-auto w-fit">
+		<nav class="mx-auto w-fit max-w-7xl">
 			<ul
-				class="h-12 gap-6 px-4 sm:px-6 lg:gap-4 relative flex min-w-max snap-x snap-mandatory items-center"
+				class="relative flex h-12 min-w-max snap-x snap-mandatory items-center gap-6 px-4 sm:px-6 lg:gap-4"
 			>
 				{#each blockCategories as category}
 					<li
@@ -68,7 +69,7 @@
 						<a
 							href={`/blocks/${library}/${category.slug}`}
 							class={cn(
-								"h-7 px-1 lg:-mx-2 lg:px-3 flex w-fit items-center rounded-sm text-[13px] text-nowrap text-muted-foreground transition-all duration-300 hover:text-foreground dark:text-muted-foreground",
+								"flex h-7 w-fit items-center rounded-sm px-1 text-[13px] text-nowrap text-muted-foreground transition-all duration-300 hover:text-foreground lg:-mx-2 lg:px-3 dark:text-muted-foreground",
 								isActive(category.slug) && "text-primary!"
 							)}
 						>

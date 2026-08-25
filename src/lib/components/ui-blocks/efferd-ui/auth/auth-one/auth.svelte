@@ -27,19 +27,19 @@
 	}: AuthOneProps = $props();
 </script>
 
-<div class={cn("md:h-screen md:overflow-hidden relative w-full", className)} {...restProps}>
-	<Particles class="inset-0 absolute" color="#666666" ease={20} quantity={120} />
+<div class={cn("relative w-full md:h-screen md:overflow-hidden", className)} {...restProps}>
+	<Particles class="absolute inset-0" color="#666666" ease={20} quantity={120} />
 
-	<div class="max-w-5xl px-8 relative mx-auto flex min-h-screen flex-col justify-center">
-		<Button class="top-4 left-4 absolute" href={homeHref} variant="ghost">
+	<div class="relative mx-auto flex min-h-screen max-w-5xl flex-col justify-center px-8">
+		<Button class="absolute top-4 left-4" href={homeHref} variant="ghost">
 			<ChevronLeftIcon data-icon="inline-start" />
 			Home
 		</Button>
 
-		<div class="max-w-sm space-y-4 mx-auto w-full">
+		<div class="mx-auto w-full max-w-sm space-y-4">
 			<Logo class="h-5 w-auto" />
 
-			<div class="space-y-1 flex flex-col">
+			<div class="flex flex-col space-y-1">
 				<h1 class="text-2xl font-bold tracking-wide">Sign In or Join Now!</h1>
 				<p class="text-base text-muted-foreground">login or create your efferd account.</p>
 			</div>

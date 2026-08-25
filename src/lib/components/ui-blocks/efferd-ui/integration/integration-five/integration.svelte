@@ -11,9 +11,6 @@
 
 	const data: Integration[] = [
 		{
-			name: "Empty 1"
-		},
-		{
 			name: "Vercel",
 			src: "https://storage.efferd.com/logo/vercel.svg",
 			isInvertable: true
@@ -47,35 +44,32 @@
 		{
 			name: "Neon",
 			src: "https://storage.efferd.com/logo/neon.svg"
-		},
-		{
-			name: "Empty 2"
 		}
 	];
 </script>
 
-<div class="gap-6 py-24 flex flex-col items-center justify-center">
+<div class="flex flex-col items-center justify-center gap-6 py-24">
 	<div class="max-w-xl space-y-2 px-4 text-center">
 		<h2 class="text-4xl font-semibold tracking-tight">All types of integration</h2>
-		<p class="text-base md:text-lg text-muted-foreground">
+		<p class="text-base text-muted-foreground md:text-lg">
 			Connect your favourite apps and services easily
 		</p>
 	</div>
 
 	<div class="flex flex-col justify-center rounded-full border bg-secondary dark:bg-secondary/10">
-		<div class="-space-x-4 mask-r-from-90 mask-l-from-90 p-1 flex items-center justify-center">
+		<div class="flex items-center justify-center -space-x-4 mask-r-from-90 mask-l-from-90 p-1">
 			{#each data as item (item.name)}
 				<div
 					class={cn("relative z-0 transition-transform", item.src && "hover:z-10 hover:scale-110")}
 				>
 					<div
-						class="size-12 shadow-sm md:size-16 flex items-center justify-center overflow-hidden rounded-full border bg-card"
+						class="flex size-12 items-center justify-center overflow-hidden rounded-full border bg-card shadow-sm md:size-16"
 					>
 						{#if item.src}
 							<img
 								alt={item.name}
 								class={cn(
-									"size-5 md:size-6 pointer-events-auto object-contain select-none",
+									"pointer-events-auto size-5 object-contain select-none md:size-6",
 									item.isInvertable && "dark:invert"
 								)}
 								height="24"
@@ -89,7 +83,7 @@
 		</div>
 	</div>
 
-	<Button href="/" class="px-5 rounded-full">
+	<Button href="/" class="rounded-full px-5">
 		See all integrations
 		<ArrowUpRightIcon data-icon="inline-end" />
 	</Button>

@@ -33,25 +33,25 @@
 			<PortalBackdrop />
 			<div
 				class={cn(
-					"p-4 size-full overflow-y-auto",
-					"ease-out data-[slot=open]:animate-in data-[slot=open]:zoom-in-97"
+					"size-full overflow-y-auto p-4",
+					"data-[slot=open]:animate-in data-[slot=open]:zoom-in-97 ease-out"
 				)}
 				data-slot={open ? "open" : "closed"}
 			>
-				<div class="gap-y-2 flex w-full flex-col">
+				<div class="flex w-full flex-col gap-y-2">
 					<span class="text-sm">Product</span>
 					{#each productLinks as link}
-						<LinkItem class="p-2 rounded-lg active:bg-muted dark:active:bg-muted/50" {...link} />
+						<LinkItem class="rounded-lg p-2 active:bg-muted dark:active:bg-muted/50" {...link} />
 					{/each}
 					<span class="text-sm">Company</span>
 					{#each companyLinks as link}
-						<LinkItem class="p-2 rounded-lg active:bg-muted dark:active:bg-muted/50" {...link} />
+						<LinkItem class="rounded-lg p-2 active:bg-muted dark:active:bg-muted/50" {...link} />
 					{/each}
 					{#each companyLinks2 as link}
-						<LinkItem class="p-2 rounded-lg active:bg-muted dark:active:bg-muted/50" {...link} />
+						<LinkItem class="rounded-lg p-2 active:bg-muted dark:active:bg-muted/50" {...link} />
 					{/each}
 				</div>
-				<div class="mt-5 gap-2 flex flex-col">
+				<div class="mt-5 flex flex-col gap-2">
 					<Button class="w-full" variant="outline">Sign In</Button>
 					<Button class="w-full">Get Started</Button>
 				</div>

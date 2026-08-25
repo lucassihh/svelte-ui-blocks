@@ -17,16 +17,16 @@
 	import { navLinks } from "./nav-links";
 </script>
 
-<header class="top-0 sticky w-full z-50 bg-background/90 backdrop-blur-sm p-2 px-4">
-	<nav class="h-11 flex w-full items-center justify-between">
-        <!-- MobileNav & Logo -->
-        <div class="flex items-center gap-1">
-            <MobileNav />
-		    <a href="/">
-			    <h1>Svelte UI</h1>
-		    </a>
-        </div>    
-		<div class="gap-2 md:flex hidden items-center">
+<header class="sticky top-0 z-50 w-full bg-background/80 p-2 px-4 backdrop-blur-sm">
+	<nav class="flex h-11 w-full items-center justify-between">
+		<!-- MobileNav & Logo -->
+		<div class="flex items-center gap-1">
+			<MobileNav />
+			<a href="/">
+				<h1>Svelte UI</h1>
+			</a>
+		</div>
+		<div class="hidden items-center gap-2 md:flex">
 			<div>
 				{#each navLinks as { label, href }}
 					<Button size="sm" variant="ghost" {href}>
@@ -40,9 +40,9 @@
 			<Button size="sm">Sign Up</Button>
 		</div>
 
-		<div class="gap-1 flex items-center">
+		<div class="flex items-center gap-1">
 			<!-- Social Links & ThemeToggle Btn -->
-			<div class="gap-2 flex items-center">
+			<div class="flex items-center gap-2">
 				<Social />
 				<ThemeToggle />
 			</div>

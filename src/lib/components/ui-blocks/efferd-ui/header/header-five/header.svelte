@@ -5,28 +5,30 @@
 	import { cn } from "$lib/utils";
 	import DesktopNav from "./desktop-nav.svelte";
 	import MobileNav from "./mobile-nav.svelte";
+	import HeroOne from "../../hero/hero-one/hero.svelte";
+	import FaqOne from "../../faq/faq-one/faq.svelte";
 	import { navLinks } from "./nav-links";
 	let scroll = createScroll(10);
 </script>
 
 <header
 	class={cn(
-		"top-0 max-w-5xl shadow-sm backdrop-blur-sm ease-out md:transition-all md:ease-out sticky  z-50 mx-auto w-full border-b border-border transition-[max-width] duration-300 supports-backdrop-filter:bg-background/50",
+		"sticky top-0 z-50 mx-auto w-full max-w-5xl border-b border-border  shadow-sm backdrop-blur-sm transition-[max-width] duration-300 ease-out supports-backdrop-filter:bg-background/50 md:transition-all md:ease-out",
 		scroll.scrolled &&
-			"backdrop-blur-sm md:top-2 md:max-w-4xl md:shadow rounded-full border border-border bg-background/95 supports-backdrop-filter:bg-background/50"
+			"rounded-full border border-border bg-background/95 backdrop-blur-sm supports-backdrop-filter:bg-background/50 md:top-2 md:max-w-4xl md:shadow"
 	)}
 >
 	<nav
 		class={cn(
-			"h-14 px-4 md:h-14 md:transition-all md:ease-out flex w-full items-center justify-between",
+			"flex h-14 w-full items-center justify-between px-4 md:h-14 md:transition-all md:ease-out",
 			scroll.scrolled && "md:h-12 md:px-2"
 		)}
 	>
-		<div class="gap-2 flex items-center">
-			<a class="p-2 rounded-md hover:bg-muted dark:hover:bg-muted/50" href="/">
+		<div class="flex items-center gap-2">
+			<a class="rounded-md p-2 hover:bg-muted dark:hover:bg-muted/50" href="/">
 				<Logo class="h-4" />
 			</a>
-			<div aria-hidden="true" class="h-6 md:w-px shrink-0 bg-border"></div>
+			<div aria-hidden="true" class="h-6 shrink-0 bg-border md:w-px"></div>
 			<DesktopNav />
 		</div>
 		<div>
@@ -38,17 +40,5 @@
 </header>
 
 <!-- Content Example -->
-<div
-	class={cn(
-		"grid grid-cols-2 gap-px bg-border p-px lg:grid-cols-4",
-		"*:min-h-48 *:w-full *:bg-background/90"
-	)}
->
-	<div></div>
-	<div></div>
-	<div></div>
-	<div></div>
-	<div class="col-span-2 min-h-114! lg:col-span-4"></div>
-	<div class="col-span-2 min-h-92! lg:col-span-2"></div>
-	<div class="col-span-2 min-h-92! lg:col-span-2"></div>
-</div>
+<HeroOne />
+<FaqOne />

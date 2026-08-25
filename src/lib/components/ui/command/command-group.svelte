@@ -17,7 +17,7 @@
 <CommandPrimitive.Group
 	bind:ref
 	data-slot="command-group"
-	class={cn("p-1 overflow-hidden text-foreground", className)}
+	class={cn("overflow-hidden p-1 text-foreground", className)}
 	value={value ?? heading ?? `----${useId()}`}
 	{...restProps}
 >

@@ -32,13 +32,13 @@ export const registry = {
 		contact: contactBlocks,
 		footer: footerBlocks,
 		imageGallery: imageGalleryBlocks,
-		notFound: notFoundBlocks,
+		notFound: notFoundBlocks
 	}
 };
 
 /* So you can import like this in any page
-
-import { registry } from "$lib/registry";
-const efferd = registry["efferd-ui"];
-
+    
+    import { registry } from "$lib/registry";
+    const efferd = registry["efferd-ui"];
+    
 */

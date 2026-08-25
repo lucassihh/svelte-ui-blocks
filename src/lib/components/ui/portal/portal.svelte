@@ -35,7 +35,7 @@
 
 {#if mounted}
 	<Portal to="body">
-		<div class={cn("inset-0 fixed isolate z-40 flex flex-col", className)}>
+		<div class={cn("fixed inset-0 isolate z-40 flex flex-col", className)}>
 			{@render children?.()}
 		</div>
 	</Portal>

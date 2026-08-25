@@ -5,7 +5,7 @@
 </script>
 
 <section class="mb-12">
-	<h2 class="py-6 text-lg font-medium tracking-tight md:text-xl text-center text-muted-foreground">
+	<h2 class="py-6 text-center text-lg font-medium tracking-tight text-muted-foreground md:text-xl">
 		Trusted by <span class="text-foreground">experts</span>
 	</h2>
 	<div class="relative *:border-0">

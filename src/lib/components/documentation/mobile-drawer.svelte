@@ -36,20 +36,20 @@
 		</Drawer.Header>
 
 		<!-- Content -->
-		<div class="px-4 pb-4 no-scrollbar overflow-y-auto">
-			<nav class="gap-6 flex flex-col">
+		<div class="no-scrollbar overflow-y-auto px-4 pb-4">
+			<nav class="flex flex-col gap-6">
 				<!-- Get Started - Section -->
-				<div class="gap-2 flex flex-col">
+				<div class="flex flex-col gap-2">
 					<span class="px-2 text-xs font-normal text-primary/80">Get Started</span>
-					<ul class="ml-2 gap-1 pl-2 flex flex-col border-l border-border/60">
+					<ul class="ml-2 flex flex-col gap-1 border-l border-border/60 pl-2">
 						{#each docsPrimaryPages as item (item.title)}
 							{@const isActive = currentPath === normalizeDocsPath(item.href)}
 							<li>
 								<a
 									href={item.href}
 									onclick={() => (open = false)}
-									class="px-3 py-1.5 text-sm block rounded-md transition-colors hover:bg-accent/50 hover:text-foreground {isActive
-										? 'font-medium bg-accent text-foreground'
+									class="block rounded-md px-3 py-1.5 text-sm transition-colors hover:bg-accent/50 hover:text-foreground {isActive
+										? 'bg-accent font-medium text-foreground'
 										: 'text-muted-foreground'}"
 								>
 									{item.title}
@@ -60,17 +60,17 @@
 				</div>
 
 				<!-- Resources - Section -->
-				<div class="gap-2 flex flex-col">
+				<div class="flex flex-col gap-2">
 					<span class="px-2 text-xs font-normal text-primary/80">Resources</span>
-					<ul class="ml-2 gap-1 pl-2 flex flex-col border-l border-border/60">
+					<ul class="ml-2 flex flex-col gap-1 border-l border-border/60 pl-2">
 						{#each docsSecondaryPages as item (item.title)}
 							{@const isActive = currentPath === normalizeDocsPath(item.href)}
 							<li>
 								<a
 									href={item.href}
 									onclick={() => (open = false)}
-									class="px-3 py-1.5 text-sm block rounded-md transition-colors hover:bg-accent/50 hover:text-foreground {isActive
-										? 'font-medium bg-accent text-foreground'
+									class="block rounded-md px-3 py-1.5 text-sm transition-colors hover:bg-accent/50 hover:text-foreground {isActive
+										? 'bg-accent font-medium text-foreground'
 										: 'text-muted-foreground'}"
 								>
 									{item.title}

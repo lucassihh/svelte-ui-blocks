@@ -35,24 +35,24 @@
 	];
 </script>
 
-<section class="space-y-5 w-full">
-	<div class="max-w-lg mx-auto">
+<section class="w-full space-y-5">
+	<div class="mx-auto max-w-lg">
 		<div class="flex justify-center">
-			<div class="px-4 py-1 text-sm rounded-md border">Pricing</div>
+			<div class="rounded-md border px-4 py-1 text-sm">Pricing</div>
 		</div>
 
-		<h2 class="mt-4 text-2xl font-bold tracking-tight md:text-3xl text-center">
+		<h2 class="mt-4 text-center text-2xl font-bold tracking-tight md:text-3xl">
 			Pricing Based on Your Success
 		</h2>
 
-		<p class="mt-2 text-sm md:text-base text-center text-muted-foreground">
+		<p class="mt-2 text-center text-sm text-muted-foreground md:text-base">
 			We offer a single price for all our services. We believe that pricing is a critical component
 			of any successful business.
 		</p>
 	</div>
 
-	<div class="max-w-2xl space-y-2 mx-auto w-full">
-		<div class="p-4 shadow-xs md:grid-cols-2 relative grid border bg-background">
+	<div class="mx-auto w-full max-w-2xl space-y-2">
+		<div class="relative grid border bg-background p-4 shadow-xs md:grid-cols-2">
 			<DecorIcon class="size-3" position="top-left" />
 			<DecorIcon class="size-3" position="top-right" />
 			<DecorIcon class="size-3" position="bottom-left" />
@@ -63,23 +63,23 @@
 					class={cn(
 						"w-full",
 						plan.featured
-							? "p-4 shadow relative rounded-md border bg-card dark:bg-card/80"
+							? "relative rounded-md border bg-card p-4 shadow dark:bg-card/80"
 							: "px-4 pt-5 pb-4"
 					)}
 				>
 					<div class="space-y-1">
-						<div class="gap-3 flex items-center justify-between">
-							<h3 class="font-semibold leading-none">{plan.name}</h3>
+						<div class="flex items-center justify-between gap-3">
+							<h3 class="leading-none font-semibold">{plan.name}</h3>
 
-							<div class="gap-x-1 flex items-center">
+							<div class="flex items-center gap-x-1">
 								<span class="text-sm text-muted-foreground line-through">
 									{plan.originalPrice}
 								</span>
 								<span
 									class={cn(
-										"px-2 py-0.5 text-xs font-medium inline-flex items-center rounded-md border",
+										"inline-flex items-center rounded-md border px-2 py-0.5 text-xs font-medium",
 										plan.featured
-											? "shadow-xs bg-primary text-primary-foreground"
+											? "bg-primary text-primary-foreground shadow-xs"
 											: "bg-secondary text-secondary-foreground"
 									)}
 								>
@@ -92,7 +92,7 @@
 					</div>
 
 					<div class="mt-10 space-y-4">
-						<div class="gap-0.5 text-xl flex items-end text-muted-foreground">
+						<div class="flex items-end gap-0.5 text-xl text-muted-foreground">
 							<span>$</span>
 							<span class="-mb-0.5 text-4xl font-extrabold tracking-tighter text-foreground">
 								{plan.price}
@@ -108,7 +108,7 @@
 			{/each}
 		</div>
 
-		<div class="gap-x-2 text-sm flex items-center justify-center text-muted-foreground">
+		<div class="flex items-center justify-center gap-x-2 text-sm text-muted-foreground">
 			<ShieldCheck class="size-4" />
 			<span>Access to all features with no hidden fees</span>
 		</div>

@@ -51,8 +51,8 @@
 	];
 </script>
 
-<div class="max-w-5xl relative mx-auto border">
-	<div class="md:grid-cols-3 grid grid-cols-2 gap-px bg-border">
+<div class="relative mx-auto max-w-5xl border">
+	<div class="grid grid-cols-2 gap-px bg-border md:grid-cols-3">
 		{#each data as item (item.name)}
 			<IntegrationCardTwo integration={item} />
 		{/each}

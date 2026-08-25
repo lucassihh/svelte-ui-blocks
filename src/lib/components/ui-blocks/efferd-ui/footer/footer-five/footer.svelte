@@ -104,8 +104,8 @@
 </script>
 
 <footer class="border-t">
-	<div class="max-w-6xl px-4 lg:px-6 mx-auto">
-		<div class="gap-8 py-8 md:grid-cols-4 grid grid-cols-2">
+	<div class="mx-auto max-w-6xl px-4 lg:px-6">
+		<div class="grid grid-cols-2 gap-8 py-8 md:grid-cols-4">
 			{#each footerLinks as item (item.title)}
 				<div>
 					<h3 class="mb-4 text-xs">{item.title}</h3>
@@ -124,8 +124,8 @@
 
 		<div class="h-px bg-border"></div>
 
-		<div class="gap-4 py-5 flex flex-wrap items-center justify-between">
-			<div class="gap-2 flex items-center">
+		<div class="flex flex-wrap items-center justify-between gap-4 py-5">
+			<div class="flex items-center gap-2">
 				{#each socialLinks as item, index (`social-${item.href}-${index}`)}
 					{@const SocialIcon = item.icon}
 					<Button href={item.href} aria-label={item.label} size="icon-sm" variant="outline">
@@ -134,12 +134,12 @@
 				{/each}
 			</div>
 
-			<div class="gap-4 flex">
+			<div class="flex gap-4">
 				<Button href="https://play.google.com/store" class="h-11" target="_blank" rel="noreferrer">
 					<PlayStoreLogo class="size-5" />
-					<div class="pr-2 flex flex-col items-start justify-center text-left">
-						<span class="font-light tracking-tighter text-[10px] leading-none"> GET IT ON </span>
-						<p class="text-base font-bold leading-none">Google Play</p>
+					<div class="flex flex-col items-start justify-center pr-2 text-left">
+						<span class="text-[10px] leading-none font-light tracking-tighter"> GET IT ON </span>
+						<p class="text-base leading-none font-bold">Google Play</p>
 					</div>
 				</Button>
 
@@ -150,9 +150,9 @@
 					rel="noreferrer"
 				>
 					<AppleLogo class="size-5" />
-					<div class="pr-2 flex flex-col items-start justify-center text-left">
-						<span class="tracking-tighter text-[10px] leading-none">Download on the</span>
-						<p class="text-base font-bold leading-none">App Store</p>
+					<div class="flex flex-col items-start justify-center pr-2 text-left">
+						<span class="text-[10px] leading-none tracking-tighter">Download on the</span>
+						<p class="text-base leading-none font-bold">App Store</p>
 					</div>
 				</Button>
 			</div>
@@ -160,7 +160,7 @@
 
 		<div class="h-px bg-border"></div>
 
-		<div class="py-4 text-xs text-center text-muted-foreground">
+		<div class="py-4 text-center text-xs text-muted-foreground">
 			<p>&copy; {currentYear} efferd, All rights reserved</p>
 		</div>
 	</div>

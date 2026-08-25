@@ -39,14 +39,14 @@
 </script>
 
 <main
-	class={cn("md:h-screen md:overflow-hidden lg:grid lg:grid-cols-2 relative", className)}
+	class={cn("relative md:h-screen md:overflow-hidden lg:grid lg:grid-cols-2", className)}
 	{...restProps}
 >
 	<div
-		class="p-10 lg:flex relative hidden h-full flex-col border-r bg-secondary dark:bg-secondary/20"
+		class="relative hidden h-full flex-col border-r bg-secondary p-10 lg:flex dark:bg-secondary/20"
 	>
 		<div
-			class="inset-0 absolute bg-linear-to-b from-transparent via-transparent to-background"
+			class="absolute inset-0 bg-linear-to-b from-transparent via-transparent to-background"
 		></div>
 
 		<a aria-label="Home" class="relative z-10 mr-auto" href={logoHref}>
@@ -56,40 +56,40 @@
 		<div class="z-10 mt-auto">
 			<blockquote class="space-y-2">
 				<p class="text-xl">{quoteText}</p>
-				<footer class="text-sm font-semibold font-mono">{quoteAuthor}</footer>
+				<footer class="font-mono text-sm font-semibold">{quoteAuthor}</footer>
 			</blockquote>
 		</div>
 
-		<div class="inset-0 absolute">
+		<div class="absolute inset-0">
 			<FloatingPaths position={1} />
 			<FloatingPaths position={-1} />
 		</div>
 	</div>
 
-	<div class="px-8 relative flex min-h-screen flex-col justify-center">
-		<div aria-hidden="true" class="inset-0 absolute isolate -z-10 opacity-60 contain-strict">
+	<div class="relative flex min-h-screen flex-col justify-center px-8">
+		<div aria-hidden="true" class="absolute inset-0 isolate -z-10 opacity-60 contain-strict">
 			<div
-				class="top-0 right-0 h-320 w-140 -translate-y-87.5 absolute rounded-full bg-[radial-gradient(68.54%_68.72%_at_55.02%_31.46%,--theme(--color-foreground/.06)_0,hsla(0,0%,55%,.02)_50%,--theme(--color-foreground/.01)_80%)]"
+				class="absolute top-0 right-0 h-320 w-140 -translate-y-87.5 rounded-full bg-[radial-gradient(68.54%_68.72%_at_55.02%_31.46%,--theme(--color-foreground/.06)_0,hsla(0,0%,55%,.02)_50%,--theme(--color-foreground/.01)_80%)]"
 			></div>
 			<div
-				class="top-0 right-0 h-320 w-60 absolute [translate:5%_-50%] rounded-full bg-[radial-gradient(50%_50%_at_50%_50%,--theme(--color-foreground/.04)_0,--theme(--color-foreground/.01)_80%,transparent_100%)]"
+				class="absolute top-0 right-0 h-320 w-60 [translate:5%_-50%] rounded-full bg-[radial-gradient(50%_50%_at_50%_50%,--theme(--color-foreground/.04)_0,--theme(--color-foreground/.01)_80%,transparent_100%)]"
 			></div>
 			<div
-				class="top-0 right-0 h-320 w-60 -translate-y-87.5 absolute rounded-full bg-[radial-gradient(50%_50%_at_50%_50%,--theme(--color-foreground/.04)_0,--theme(--color-foreground/.01)_80%,transparent_100%)]"
+				class="absolute top-0 right-0 h-320 w-60 -translate-y-87.5 rounded-full bg-[radial-gradient(50%_50%_at_50%_50%,--theme(--color-foreground/.04)_0,--theme(--color-foreground/.01)_80%,transparent_100%)]"
 			></div>
 		</div>
 
-		<Button class="top-7 left-5 absolute" href={homeHref} variant="ghost">
+		<Button class="absolute top-7 left-5" href={homeHref} variant="ghost">
 			<ChevronLeftIcon data-icon="inline-start" />
 			Home
 		</Button>
 
-		<div class="max-w-sm space-y-4 mx-auto w-full">
-			<a aria-label="Home" class="lg:hidden w-fit" href={logoHref}>
+		<div class="mx-auto w-full max-w-sm space-y-4">
+			<a aria-label="Home" class="w-fit lg:hidden" href={logoHref}>
 				<Logo class="h-4.5 w-auto" />
 			</a>
 
-			<div class="space-y-1 flex flex-col">
+			<div class="flex flex-col space-y-1">
 				<h1 class="text-2xl font-bold tracking-wide">Sign In or Join Now!</h1>
 				<p class="text-base text-muted-foreground">login or create your efferd account.</p>
 			</div>
@@ -114,7 +114,7 @@
 			<AuthDivider>OR</AuthDivider>
 
 			<form class="space-y-2">
-				<p class="text-xs text-start text-muted-foreground">
+				<p class="text-start text-xs text-muted-foreground">
 					Enter your email address to sign in or create an account
 				</p>
 

@@ -19,7 +19,7 @@
 
 <a
 	class={cn(
-		"gap-1.5 border-emerald-500/20 bg-emerald-500/10 px-2.5 py-1 text-xs font-medium text-emerald-300 hover:border-emerald-400/30 hover:bg-emerald-500/15 hover:text-emerald-200 inline-flex items-center rounded-md border transition-colors",
+		"inline-flex items-center gap-1.5 rounded-md border border-emerald-500/20 bg-emerald-500/10 px-2.5 py-1 text-xs font-medium text-emerald-300 transition-colors hover:border-emerald-400/30 hover:bg-emerald-500/15 hover:text-emerald-200",
 		className
 	)}
 	{href}

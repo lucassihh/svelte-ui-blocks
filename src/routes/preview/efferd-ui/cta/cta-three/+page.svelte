@@ -7,6 +7,6 @@
 	<meta name="description" content="Standalone preview for Cta Three in Svelte Efferd." />
 </svelte:head>
 
-<div class="flex flex-col min-h-screen w-full justify-center p-2">
+<div class="flex min-h-screen w-full flex-col justify-center p-2">
 	<CtaThree />
 </div>

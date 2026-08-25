@@ -52,8 +52,7 @@ export const logoCloudBlocks: BlockShowcaseItem[] = [
 	{
 		id: "logo-cloud-one",
 		title: "Logo Cloud One",
-		description:
-			"A responsive logo grid/marquee component for showcasing partners and clients.",
+		description: "A responsive logo grid/marquee component for showcasing partners and clients.",
 		previewComponent: LogoCloudOnePreview,
 		previewHref: "/preview/efferd-ui/logo-cloud/logo-cloud-one",
 		previewMode: "iframe",
@@ -67,11 +66,11 @@ export const logoCloudBlocks: BlockShowcaseItem[] = [
 				code: logoCloudLogoCloudOneLogoCloudSource
 			}
 		])
-	},	{
+	},
+	{
 		id: "logo-cloud-two",
 		title: "Logo Cloud Two",
-		description:
-			"A responsive logo grid/marquee component for showcasing partners and clients.",
+		description: "A responsive logo grid/marquee component for showcasing partners and clients.",
 		previewComponent: LogoCloudTwoPreview,
 		previewHref: "/preview/efferd-ui/logo-cloud/logo-cloud-two",
 		previewMode: "iframe",
@@ -92,11 +91,11 @@ export const logoCloudBlocks: BlockShowcaseItem[] = [
 			},
 			...decorIconFiles
 		])
-	},	{
+	},
+	{
 		id: "logo-cloud-three",
 		title: "Logo Cloud Three",
-		description:
-			"A responsive logo grid/marquee component for showcasing partners and clients.",
+		description: "A responsive logo grid/marquee component for showcasing partners and clients.",
 		previewComponent: LogoCloudThreePreview,
 		previewHref: "/preview/efferd-ui/logo-cloud/logo-cloud-three",
 		previewMode: "iframe",
@@ -116,11 +115,11 @@ export const logoCloudBlocks: BlockShowcaseItem[] = [
 				code: logoCloudLogoCloudThreeShowcaseSource
 			}
 		])
-	},	{
+	},
+	{
 		id: "logo-cloud-four",
 		title: "Logo Cloud Four",
-		description:
-			"A responsive logo grid/marquee component for showcasing partners and clients.",
+		description: "A responsive logo grid/marquee component for showcasing partners and clients.",
 		previewComponent: LogoCloudFourPreview,
 		previewHref: "/preview/efferd-ui/logo-cloud/logo-cloud-four",
 		previewMode: "iframe",
@@ -134,11 +133,11 @@ export const logoCloudBlocks: BlockShowcaseItem[] = [
 				code: logoCloudLogoCloudFourLogoCloudSource
 			}
 		])
-	},	{
+	},
+	{
 		id: "logo-cloud-five",
 		title: "Logo Cloud Five",
-		description:
-			"A responsive logo grid/marquee component for showcasing partners and clients.",
+		description: "A responsive logo grid/marquee component for showcasing partners and clients.",
 		previewComponent: LogoCloudFivePreview,
 		previewHref: "/preview/efferd-ui/logo-cloud/logo-cloud-five",
 		previewMode: "iframe",

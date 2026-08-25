@@ -83,14 +83,14 @@
 		"dark:bg-[radial-gradient(35%_128px_at_50%_0%,--theme(--color-foreground/.08),transparent)]"
 	)}
 >
-	<div class="max-w-5xl px-4 relative mx-auto">
-		<div class="md:grid-cols-4 md:divide-x relative grid grid-cols-1 border-x">
+	<div class="relative mx-auto max-w-5xl px-4">
+		<div class="relative grid grid-cols-1 border-x md:grid-cols-4 md:divide-x">
 			{#each columns as column, index (column.social.title)}
 				<div>
 					<a
 						href={column.social.href}
 						class={cn(
-							"p-2 text-sm md:border-t-0 flex items-center justify-between border-y hover:bg-muted dark:hover:bg-muted/50",
+							"flex items-center justify-between border-y p-2 text-sm hover:bg-muted md:border-t-0 dark:hover:bg-muted/50",
 							index === 0 && "border-t-0"
 						)}
 					>
@@ -103,7 +103,7 @@
 		</div>
 	</div>
 
-	<div class="p-3 flex justify-center border-t">
+	<div class="flex justify-center border-t p-3">
 		<p class="text-xs text-muted-foreground">
 			&copy; {currentYear} efferd, All rights reserved
 		</p>

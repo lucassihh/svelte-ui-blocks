@@ -7,6 +7,6 @@
 	<meta name="description" content="Standalone preview for Header Two in Svelte Efferd." />
 </svelte:head>
 
-<div class="flex flex-col min-h-screen w-full">
+<div class="flex min-h-screen w-full flex-col">
 	<HeaderTwo />
 </div>

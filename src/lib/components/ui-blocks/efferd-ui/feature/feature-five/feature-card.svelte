@@ -18,12 +18,12 @@
 	let FeatureIcon: typeof Icon = $derived(feature.icon);
 </script>
 
-<div class={cn("p-6 relative overflow-hidden bg-background", className)} {...props}>
+<div class={cn("relative overflow-hidden bg-background p-6", className)} {...props}>
 	<div
-		class="top-0 -mt-2 -ml-20 pointer-events-none absolute left-1/2 size-full mask-[radial-gradient(farthest-side_at_top,white,transparent)]"
+		class="pointer-events-none absolute top-0 left-1/2 -mt-2 -ml-20 size-full mask-[radial-gradient(farthest-side_at_top,white,transparent)]"
 	>
 		<GridPattern
-			class="inset-0 absolute size-full stroke-foreground/20"
+			class="absolute inset-0 size-full stroke-foreground/20"
 			height={40}
 			width={40}
 			x={20}
@@ -34,7 +34,7 @@
 		<FeatureIcon />
 	</div>
 	<h3 class="mt-10 text-sm md:text-base">{feature.title}</h3>
-	<p class="mt-2 text-xs font-light relative z-20 text-muted-foreground">
+	<p class="relative z-20 mt-2 text-xs font-light text-muted-foreground">
 		{feature.description}
 	</p>
 </div>

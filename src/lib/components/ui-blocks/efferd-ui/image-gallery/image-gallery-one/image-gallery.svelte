@@ -33,12 +33,12 @@
 	);
 </script>
 
-<section class="px-4 py-10 relative flex min-h-screen w-full flex-col items-center justify-center">
+<section class="relative flex min-h-screen w-full flex-col items-center justify-center px-4 py-10">
 	<div
-		class="max-w-5xl gap-4 sm:grid-cols-2 md:grid-cols-4 md:gap-6 mx-auto grid w-full grid-cols-1"
+		class="mx-auto grid w-full max-w-5xl grid-cols-1 gap-4 sm:grid-cols-2 md:grid-cols-4 md:gap-6"
 	>
 		{#each columns as column, columnIndex (columnIndex)}
-			<div class="gap-4 grid">
+			<div class="grid gap-4">
 				{#each column as image (image.id)}
 					<LazyImage
 						alt={image.alt}

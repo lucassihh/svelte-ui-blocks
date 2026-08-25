@@ -3,40 +3,40 @@
 	import { Button } from "$lib/components/ui/button";
 </script>
 
-<section class="max-w-5xl pt-16 mx-auto w-full overflow-hidden">
-	<div aria-hidden="true" class="inset-0 absolute size-full overflow-hidden">
+<section class="mx-auto w-full max-w-5xl overflow-hidden pt-16">
+	<div aria-hidden="true" class="absolute inset-0 size-full overflow-hidden">
 		<div
-			class="inset-0 absolute isolate -z-10 bg-[radial-gradient(20%_80%_at_20%_0%,color-mix(in_oklab,var(--foreground)_10%,transparent),transparent)]"
+			class="absolute inset-0 isolate -z-10 bg-[radial-gradient(20%_80%_at_20%_0%,color-mix(in_oklab,var(--foreground)_10%,transparent),transparent)]"
 		></div>
 	</div>
 
-	<div class="max-w-2xl gap-5 px-4 relative z-10 flex flex-col">
+	<div class="relative z-10 flex max-w-2xl flex-col gap-5 px-4">
 		<a
-			class="group animate-in gap-3 p-1 shadow-xs ease-out fill-mode-backwards slide-in-from-bottom-10 fade-in flex w-fit items-center rounded-sm border bg-card transition-all delay-500 duration-500"
+			class="group animate-in fill-mode-backwards slide-in-from-bottom-10 fade-in flex w-fit items-center gap-3 rounded-sm border bg-card p-1 shadow-xs transition-all delay-500 duration-500 ease-out"
 			href="/"
 		>
-			<div class="rounded-xs px-1.5 py-0.5 shadow-sm border bg-card">
-				<p class="text-xs font-mono">NOW</p>
+			<div class="rounded-xs border bg-card px-1.5 py-0.5 shadow-sm">
+				<p class="font-mono text-xs">NOW</p>
 			</div>
 
 			<span class="text-xs">accepting new client projects</span>
-			<span class="h-5 block border-l"></span>
+			<span class="block h-5 border-l"></span>
 
 			<div class="pr-1">
 				<ArrowRight
-					class="size-3 -translate-x-0.5 ease-out group-hover:translate-x-0.5 duration-150"
+					class="size-3 -translate-x-0.5 duration-150 ease-out group-hover:translate-x-0.5"
 				/>
 			</div>
 		</a>
 
 		<h1
-			class="animate-in text-4xl leading-tight font-medium ease-out fill-mode-backwards slide-in-from-bottom-10 fade-in md:text-5xl text-balance text-foreground delay-100 duration-500"
+			class="animate-in fill-mode-backwards slide-in-from-bottom-10 fade-in text-4xl leading-tight font-medium text-balance text-foreground delay-100 duration-500 ease-out md:text-5xl"
 		>
 			Building Digital Experiences That Drive Growth
 		</h1>
 
 		<p
-			class="animate-in text-sm tracking-wider ease-out fill-mode-backwards slide-in-from-bottom-10 fade-in sm:text-lg md:text-xl text-muted-foreground delay-200 duration-500"
+			class="animate-in fill-mode-backwards slide-in-from-bottom-10 fade-in text-sm tracking-wider text-muted-foreground delay-200 duration-500 ease-out sm:text-lg md:text-xl"
 		>
 			We help brands scale faster through design, development
 			<br />
@@ -44,7 +44,7 @@
 		</p>
 
 		<div
-			class="animate-in gap-3 pt-2 ease-out fill-mode-backwards slide-in-from-bottom-10 fade-in flex w-fit items-center justify-center delay-300 duration-500"
+			class="animate-in fill-mode-backwards slide-in-from-bottom-10 fade-in flex w-fit items-center justify-center gap-3 pt-2 delay-300 duration-500 ease-out"
 		>
 			<Button href="/" variant="outline">
 				<PhoneCall class="size-4" />
@@ -59,24 +59,24 @@
 
 	<div class="relative">
 		<div
-			class="-inset-x-20 inset-y-0 absolute -translate-y-1/3 scale-120 rounded-full bg-[radial-gradient(ellipse_at_center,color-mix(in_oklab,var(--foreground)_10%,transparent),transparent,transparent)] blur-[50px]"
+			class="absolute -inset-x-20 inset-y-0 -translate-y-1/3 scale-120 rounded-full bg-[radial-gradient(ellipse_at_center,color-mix(in_oklab,var(--foreground)_10%,transparent),transparent,transparent)] blur-[50px]"
 		></div>
 		<div
-			class="mt-8 -mr-56 animate-in px-2 ease-out fill-mode-backwards slide-in-from-bottom-5 fade-in sm:mt-12 sm:mr-0 md:mt-20 relative overflow-hidden [mask-image:linear-gradient(to_bottom,black_0%,black_60%,transparent_100%)] delay-100 duration-1000"
+			class="animate-in fill-mode-backwards slide-in-from-bottom-5 fade-in relative mt-8 -mr-56 overflow-hidden [mask-image:linear-gradient(to_bottom,black_0%,black_60%,transparent_100%)] px-2 delay-100 duration-1000 ease-out sm:mt-12 sm:mr-0 md:mt-20"
 		>
 			<div
-				class="max-w-5xl p-2 shadow-xl inset-shadow-2xs dark:inset-shadow-xs relative mx-auto overflow-hidden rounded-lg border bg-background ring-1 ring-card inset-shadow-foreground/10 dark:inset-shadow-foreground/20"
+				class="relative mx-auto max-w-5xl overflow-hidden rounded-lg border bg-background p-2 shadow-xl ring-1 inset-shadow-2xs ring-card inset-shadow-foreground/10 dark:inset-shadow-xs dark:inset-shadow-foreground/20"
 			>
 				<img
 					alt="app screen"
-					class="aspect-video z-2 rounded-lg border dark:hidden"
+					class="z-2 aspect-video rounded-lg border dark:hidden"
 					height="1080"
 					src="https://storage.efferd.com/screen/dashboard-light.webp"
 					width="1920"
 				/>
 				<img
 					alt="app screen"
-					class="aspect-video hidden rounded-lg bg-background dark:block"
+					class="hidden aspect-video rounded-lg bg-background dark:block"
 					height="1080"
 					src="https://storage.efferd.com/screen/dashboard-dark.webp"
 					width="1920"

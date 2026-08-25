@@ -18,16 +18,16 @@
 </script>
 
 <!-- Documentation Layout -->
-<div class="mt-4 max-w-7xl md:flex-row md:p-2 mx-auto flex w-full flex-col justify-center bg-card">
+<div class="mx-auto mt-4 flex w-full max-w-7xl flex-col justify-center bg-card md:flex-row md:p-2">
 	<!-- Desktop Aside -->
-	<div class="md:block hidden">
+	<div class="hidden md:block">
 		<DesktopNavbar />
 	</div>
 
-	<main class="md:rounded-xl min-h-screen w-full overflow-hidden bg-background">
+	<main class="min-h-screen w-full overflow-hidden bg-background md:rounded-xl">
 		<!-- Breadcrumb and Mobile Drawer -->
-		<div class="gap-2 p-4 flex items-center">
-			<div class="md:hidden block">
+		<div class="flex items-center gap-2 p-4">
+			<div class="block md:hidden">
 				<MobileDrawer />
 			</div>
 			<DocsBreadcrumb />
@@ -40,7 +40,7 @@
 		{/if}
 
 		{#snippet scrollToTop()}
-			<div in:fly={{ y: 20 }} out:fly={{ y: 20 }} class="right-4 bottom-4 fixed z-50">
+			<div in:fly={{ y: 20 }} out:fly={{ y: 20 }} class="fixed right-4 bottom-4 z-50">
 				<Button
 					size="icon"
 					variant="secondary"

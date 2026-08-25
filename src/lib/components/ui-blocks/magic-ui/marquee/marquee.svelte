@@ -26,7 +26,7 @@
 <div
 	{...rest}
 	class={cn(
-		"group p-2 flex gap-(--gap) overflow-hidden [--duration:40s] [--gap:1rem]",
+		"group flex gap-(--gap) overflow-hidden p-2 [--duration:40s] [--gap:1rem]",
 		{
 			"flex-row": !vertical,
 			"flex-col": vertical

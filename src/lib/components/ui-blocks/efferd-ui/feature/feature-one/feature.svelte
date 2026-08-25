@@ -32,25 +32,25 @@
 	];
 </script>
 
-<div class="max-w-5xl gap-4 py-4 md:grid-cols-4 mx-auto grid grid-cols-2">
+<div class="mx-auto grid max-w-5xl grid-cols-2 gap-4 py-4 md:grid-cols-4">
 	{#each features as feature, index (feature.title)}
 		{@const FeatureIcon = feature.icon}
 		<div
 			class={cn(
-				"p-2 relative flex flex-col items-center justify-center",
-				"after:inset-y-0 after:right-0 after:absolute after:h-full after:w-px after:bg-linear-to-b after:from-foreground/6 after:via-foreground/25 after:to-foreground/6",
+				"relative flex flex-col items-center justify-center p-2",
+				"after:absolute after:inset-y-0 after:right-0 after:h-full after:w-px after:bg-linear-to-b after:from-foreground/6 after:via-foreground/25 after:to-foreground/6",
 				"[&_svg]:size-6 [&_svg]:text-muted-foreground",
 				{
 					"after:hidden": index === features.length - 1,
-					"after:md:block after:hidden": index === 1
+					"after:hidden after:md:block": index === 1
 				}
 			)}
 		>
 			<FeatureIcon />
-			<h3 class="mt-4 text-xs font-medium md:text-sm lg:text-base text-center">
+			<h3 class="mt-4 text-center text-xs font-medium md:text-sm lg:text-base">
 				{feature.title}
 			</h3>
-			<p class="mt-1 md:text-xs text-center text-[10px] text-muted-foreground">
+			<p class="mt-1 text-center text-[10px] text-muted-foreground md:text-xs">
 				{feature.description}
 			</p>
 		</div>

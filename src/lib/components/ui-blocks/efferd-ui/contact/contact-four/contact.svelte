@@ -35,21 +35,21 @@
 </script>
 
 <div
-	class="max-w-4xl rounded-2xl md:grid-cols-[1fr_0.70fr] relative mx-auto grid h-full w-full border"
+	class="relative mx-auto grid h-full w-full max-w-4xl rounded-2xl border md:grid-cols-[1fr_0.70fr]"
 >
-	<div class="space-y-4 p-8 lg:p-10 col-span-1 flex flex-col">
+	<div class="col-span-1 flex flex-col space-y-4 p-8 lg:p-10">
 		<h1 class="text-2xl font-medium tracking-wide md:text-3xl">Contact With Us</h1>
-		<p class="max-w-md text-sm leading-relaxed md:text-base text-muted-foreground">
+		<p class="max-w-md text-sm leading-relaxed text-muted-foreground md:text-base">
 			If you have any questions regarding our Services or need help, please fill out the form here.
 		</p>
-		<p class="max-w-md text-xs leading-relaxed md:text-sm text-muted-foreground">
+		<p class="max-w-md text-xs leading-relaxed text-muted-foreground md:text-sm">
 			We do our best to respond within 1 business day.
 		</p>
-		<div class="gap-4 grid">
+		<div class="grid gap-4">
 			{#each contactInfo as info}
 				{@const Icon = info.icon}
-				<div class={cn("gap-3 py-3 flex items-center")}>
-					<div class="p-3 shadow-xs [&_svg]:size-5 rounded-lg border bg-card">
+				<div class={cn("flex items-center gap-3 py-3")}>
+					<div class="rounded-lg border bg-card p-3 shadow-xs [&_svg]:size-5">
 						<Icon />
 					</div>
 					<div>
@@ -63,7 +63,7 @@
 		</div>
 	</div>
 
-	<div class="p-8 md:border-t-0 md:border-l col-span-1 flex items-center border-t">
+	<div class="col-span-1 flex items-center border-t p-8 md:border-t-0 md:border-l">
 		<form class="w-full">
 			<FieldGroup>
 				<Field>

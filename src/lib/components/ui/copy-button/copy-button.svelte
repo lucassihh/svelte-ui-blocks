@@ -36,7 +36,7 @@
 	{variant}
 	{size}
 	{tabindex}
-	class={cn("gap-2 flex items-center", className)}
+	class={cn("flex items-center gap-2", className)}
 	type="button"
 	name="copy"
 	onclick={async () => {

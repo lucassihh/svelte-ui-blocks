@@ -136,17 +136,17 @@
 	];
 </script>
 
-<div class="max-w-5xl mx-auto w-full grow">
+<div class="mx-auto w-full max-w-5xl grow">
 	<div class="space-y-1 px-4 py-8 md:px-6">
 		<h1 class="text-2xl font-semibold tracking-wide md:text-4xl">Blog Section</h1>
-		<p class="text-sm md:text-base text-muted-foreground">
+		<p class="text-sm text-muted-foreground md:text-base">
 			Discover the latest trends and insights in the world of design and technology.
 		</p>
 	</div>
 
 	<FullWidthDivider contained={true} />
 
-	<div class="gap-2 p-4 md:grid-cols-2 lg:grid-cols-3 grid">
+	<div class="grid gap-2 p-4 md:grid-cols-2 lg:grid-cols-3">
 		{#each blogs as blog}
 			<BlogCard {...blog} />
 		{/each}

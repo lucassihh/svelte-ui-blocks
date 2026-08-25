@@ -4,27 +4,29 @@
 	import Logo from "$lib/assets/svg/logo.svelte";
 	import { cn } from "$lib/utils";
 	import MobileNav from "./mobile-nav.svelte";
+	import HeroOne from "../../hero/hero-one/hero.svelte";
+	import FaqOne from "../../faq/faq-one/faq.svelte";
 	import { navLinks } from "./nav-links";
 	let scroll = createScroll(10);
 </script>
 
 <header
 	class={cn(
-		"top-0 max-w-4xl md:rounded-md md:border md:transition-all md:ease-out sticky z-50 mx-auto w-full border-b border-transparent",
+		"sticky top-0 z-50 mx-auto w-full max-w-4xl border-b border-transparent md:rounded-md md:border md:transition-all md:ease-out",
 		scroll.scrolled &&
-			"backdrop-blur-sm md:top-2 md:max-w-3xl md:shadow border-border bg-background/95 supports-backdrop-filter:bg-background/50"
+			"border-border bg-background/95 backdrop-blur-sm supports-backdrop-filter:bg-background/50 md:top-2 md:max-w-3xl md:shadow"
 	)}
 >
 	<nav
 		class={cn(
-			"h-14 px-4 md:h-12 md:transition-all md:ease-out flex w-full items-center justify-between",
+			"flex h-14 w-full items-center justify-between px-4 md:h-12 md:transition-all md:ease-out",
 			scroll.scrolled && "md:px-2"
 		)}
 	>
-		<a class="p-2 rounded-md hover:bg-muted dark:hover:bg-muted/50" href="/">
+		<a class="rounded-md p-2 hover:bg-muted dark:hover:bg-muted/50" href="/">
 			<Logo class="h-4" />
 		</a>
-		<div class="gap-2 md:flex hidden items-center">
+		<div class="hidden items-center gap-2 md:flex">
 			<div>
 				{#each navLinks as { label, href }}
 					<Button size="sm" variant="ghost" {href}>
@@ -40,18 +42,5 @@
 </header>
 
 <!-- Content Example -->
-<div
-	class={cn(
-		"grid grid-cols-2 gap-px bg-border p-px lg:grid-cols-4",
-		"*:min-h-48 *:w-full *:bg-background/90"
-	)}
->
-	<div></div>
-	<div></div>
-	<div></div>
-	<div></div>
-	<div class="col-span-2 min-h-114! lg:col-span-4"></div>
-	<div class="col-span-2 min-h-92! lg:col-span-2"></div>
-	<div class="col-span-2 min-h-92! lg:col-span-2"></div>
-</div>
-
+<HeroOne />
+<FaqOne />

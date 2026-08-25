@@ -8,7 +8,7 @@
 
 <form class="w-full">
 	<FieldGroup>
-		<div class="gap-4 grid grid-cols-2">
+		<div class="grid grid-cols-2 gap-4">
 			<Field>
 				<FieldLabel for="first-name">First name</FieldLabel>
 				<Input autocomplete="off" id="first-name" placeholder="John" />

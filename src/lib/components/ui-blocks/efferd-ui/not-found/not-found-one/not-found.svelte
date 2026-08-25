@@ -11,14 +11,14 @@
 			<FullWidthDivider />
 			<Empty.Root>
 				<Empty.Header>
-					<Empty.Title class="text-8xl font-black font-mono">404</Empty.Title>
+					<Empty.Title class="font-mono text-8xl font-black">404</Empty.Title>
 					<Empty.Description class="text-nowrap">
 						The page you're looking for might have been <br />
 						moved or doesn't exist.
 					</Empty.Description>
 				</Empty.Header>
 				<Empty.Content>
-					<div class="gap-2 flex">
+					<div class="flex gap-2">
 						<Button href="/">
 							<HomeIcon data-icon="inline-start" />
 							Go Home

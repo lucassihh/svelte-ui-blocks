@@ -36,7 +36,7 @@
 	];
 </script>
 
-<div class="-mt-10 max-w-5xl gap-8 md:grid-cols-3 md:gap-6 mx-auto grid w-full">
+<div class="mx-auto -mt-10 grid w-full max-w-5xl gap-8 md:grid-cols-3 md:gap-6">
 	{#each testimonials as testimonial, index}
 		<TestimonialCard {index} {testimonial} />
 	{/each}

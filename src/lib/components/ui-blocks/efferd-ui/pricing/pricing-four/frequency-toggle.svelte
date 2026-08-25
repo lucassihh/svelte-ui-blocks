@@ -33,13 +33,13 @@
 </script>
 
 <div
-	class={cn("p-1 shadow-xs mx-auto flex w-fit rounded-xl border bg-card", className)}
+	class={cn("mx-auto flex w-fit rounded-xl border bg-card p-1 shadow-xs", className)}
 	{...restProps}
 >
 	{#each frequencies as freq}
 		<button
 			aria-pressed={frequency === freq}
-			class="px-4 py-1 text-sm relative capitalize"
+			class="relative px-4 py-1 text-sm capitalize"
 			onclick={() => selectFrequency(freq)}
 			type="button"
 		>
@@ -47,7 +47,7 @@
 
 			{#if frequency === freq}
 				<layout.span
-					class="inset-0 absolute z-10 rounded-xl bg-background mix-blend-difference dark:bg-foreground"
+					class="absolute inset-0 z-10 rounded-xl bg-background mix-blend-difference dark:bg-foreground"
 					layoutId="frequency-toggle"
 					transition={{ type: "spring", duration: 0.4 }}
 				/>
