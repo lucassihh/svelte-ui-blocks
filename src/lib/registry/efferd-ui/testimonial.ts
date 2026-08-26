@@ -2,35 +2,23 @@
 import type { BlockShowcaseItem } from "$lib/components/blocks/blocks-code-tree";
 import { createBlockCodeTree } from "$lib/components/blocks/blocks-code-tree";
 
-// Preview Imports
-import TestimonialFivePreview from "$lib/components/ui-blocks/efferd-ui/testimonial/testimonial-five/testimonial-card.svelte";
-import TestimonialFourPreview from "$lib/components/ui-blocks/efferd-ui/testimonial/testimonial-four/testimonial-card.svelte";
-import TestimonialOnePreview from "$lib/components/ui-blocks/efferd-ui/testimonial/testimonial-one/testimonial.svelte";
-import TestimonialThreePreview from "$lib/components/ui-blocks/efferd-ui/testimonial/testimonial-three/testimonial-card.svelte";
-import TestimonialTwoPreview from "$lib/components/ui-blocks/efferd-ui/testimonial/testimonial-two/testimonial.svelte";
+// Sources for preview & code
+import TestimonialFivePreview from "$lib/components/blocks/efferd-ui/testimonial/testimonial-five/testimonial-card.svelte";
+import TestimonialFourPreview from "$lib/components/blocks/efferd-ui/testimonial/testimonial-four/testimonial-card.svelte";
+import TestimonialOnePreview from "$lib/components/blocks/efferd-ui/testimonial/testimonial-one/testimonial.svelte";
+import TestimonialThreePreview from "$lib/components/blocks/efferd-ui/testimonial/testimonial-three/testimonial-card.svelte";
+import TestimonialTwoPreview from "$lib/components/blocks/efferd-ui/testimonial/testimonial-two/testimonial.svelte";
 
 // Raw
-import avatarFallbackSource from "$lib/components/ui/avatar/avatar-fallback.svelte?raw";
-import avatarImageSource from "$lib/components/ui/avatar/avatar-image.svelte?raw";
 import avatarIndexSource from "$lib/components/ui/avatar/index.ts?raw";
-import avatarSource from "$lib/components/ui/avatar/avatar.svelte?raw";
 import decorIconIndexSource from "$lib/components/ui/decor-icon/index.ts?raw";
-import decorIconSource from "$lib/components/ui/decor-icon/decor-icon.svelte?raw";
-import dividerIndexSource from "$lib/components/ui/full-width-divider/index.ts?raw";
-import dividerSource from "$lib/components/ui/full-width-divider/full-width-divider.svelte?raw";
-import gridFillerIndexSource from "$lib/components/ui/grid-filler/index.ts?raw";
-import gridFillerSource from "$lib/components/ui/grid-filler/grid-filler.svelte?raw";
 import gridPatternIndexSource from "$lib/components/ui/grid-pattern/index.ts?raw";
-import gridPatternSource from "$lib/components/ui/grid-pattern/grid-pattern.svelte?raw";
 import maskLineSource from "$lib/components/ui/mask-line/mask-line.svelte?raw";
-import testimonialTestimonialFiveTestimonialCardSource from "$lib/components/ui-blocks/efferd-ui/testimonial/testimonial-five/testimonial-card.svelte?raw";
-import testimonialTestimonialFiveTestimonialSource from "$lib/components/ui-blocks/efferd-ui/testimonial/testimonial-five/testimonial.svelte?raw";
-import testimonialTestimonialFourTestimonialCardSource from "$lib/components/ui-blocks/efferd-ui/testimonial/testimonial-four/testimonial-card.svelte?raw";
-import testimonialTestimonialFourTestimonialSource from "$lib/components/ui-blocks/efferd-ui/testimonial/testimonial-four/testimonial.svelte?raw";
-import testimonialTestimonialOneTestimonialSource from "$lib/components/ui-blocks/efferd-ui/testimonial/testimonial-one/testimonial.svelte?raw";
-import testimonialTestimonialThreeTestimonialCardSource from "$lib/components/ui-blocks/efferd-ui/testimonial/testimonial-three/testimonial-card.svelte?raw";
-import testimonialTestimonialThreeTestimonialSource from "$lib/components/ui-blocks/efferd-ui/testimonial/testimonial-three/testimonial.svelte?raw";
-import testimonialTestimonialTwoTestimonialSource from "$lib/components/ui-blocks/efferd-ui/testimonial/testimonial-two/testimonial.svelte?raw";
+import testimonialTestimonialFiveTestimonialCardSource from "$lib/components/blocks/efferd-ui/testimonial/testimonial-five/testimonial-card.svelte?raw";
+import testimonialTestimonialFourTestimonialCardSource from "$lib/components/blocks/efferd-ui/testimonial/testimonial-four/testimonial-card.svelte?raw";
+import testimonialTestimonialOneTestimonialSource from "$lib/components/blocks/efferd-ui/testimonial/testimonial-one/testimonial.svelte?raw";
+import testimonialTestimonialThreeTestimonialCardSource from "$lib/components/blocks/efferd-ui/testimonial/testimonial-three/testimonial-card.svelte?raw";
+import testimonialTestimonialTwoTestimonialSource from "$lib/components/blocks/efferd-ui/testimonial/testimonial-two/testimonial.svelte?raw";
 
 // Shared Items
 const buttonFiles = [
@@ -43,30 +31,10 @@ const buttonFiles = [
 ];
 const decorIconFiles = [
 	{
-		id: "shared:decor-icon",
-		path: "components/ui/decor-icon/decor-icon.svelte",
-		lang: "svelte" as const,
-		code: decorIconSource
-	},
-	{
 		id: "shared:decor-icon-index",
 		path: "components/ui/decor-icon/index.ts",
 		lang: "typescript" as const,
 		code: decorIconIndexSource
-	}
-];
-const dividerFiles = [
-	{
-		id: "shared:divider",
-		path: "components/ui/full-width-divider/full-width-divider.svelte",
-		lang: "svelte" as const,
-		code: dividerSource
-	},
-	{
-		id: "shared:divider-index",
-		path: "components/ui/full-width-divider/index.ts",
-		lang: "typescript" as const,
-		code: dividerIndexSource
 	}
 ];
 
@@ -74,112 +42,93 @@ export const testimonialBlocks: BlockShowcaseItem[] = [
 	{
 		id: "testimonial-one",
 		title: "Testimonial One",
-		description: "A Testimonial One composition.",
+		description:
+			"A Testimonial One composition.",
 		previewComponent: TestimonialOnePreview,
 		previewHref: "/preview/efferd-ui/testimonial/testimonial-one",
 		previewMode: "iframe",
-		previewHeight: 820,
+		previewHeight: 420,
 		installId: "testimonial-one",
-		codeTree: createBlockCodeTree("testimonial-one:testimonial", [
+		codeTree: createBlockCodeTree("testimonial-one", [
 			{
-				id: "testimonial-one:testimonial",
-				path: "src/lib/components/ui-blocks/efferd-ui/testimonial/testimonial-one/testimonial.svelte",
+				id: "testimonial-one",
+				path: "src/lib/components/blocks/efferd-ui/testimonial/testimonial-one/testimonial.svelte",
 				lang: "svelte",
 				code: testimonialTestimonialOneTestimonialSource
 			}
 		])
-	},
-	{
+	},	{
 		id: "testimonial-two",
 		title: "Testimonial Two",
-		description: "A Testimonial Two composition.",
+		description:
+			"A Testimonial Two composition.",
 		previewComponent: TestimonialTwoPreview,
 		previewHref: "/preview/efferd-ui/testimonial/testimonial-two",
 		previewMode: "iframe",
-		previewHeight: 820,
+		previewHeight: 420,
 		installId: "testimonial-two",
-		codeTree: createBlockCodeTree("testimonial-two:testimonial", [
+		codeTree: createBlockCodeTree("testimonial-two", [
 			{
-				id: "testimonial-two:testimonial",
-				path: "src/lib/components/ui-blocks/efferd-ui/testimonial/testimonial-two/testimonial.svelte",
+				id: "testimonial-two",
+				path: "src/lib/components/blocks/efferd-ui/testimonial/testimonial-two/testimonial.svelte",
 				lang: "svelte",
 				code: testimonialTestimonialTwoTestimonialSource
 			}
 		])
-	},
-	{
+	},	{
 		id: "testimonial-three",
 		title: "Testimonial Three",
-		description: "A Testimonial Three composition.",
+		description:
+			"A Testimonial Three composition.",
 		previewComponent: TestimonialThreePreview,
 		previewHref: "/preview/efferd-ui/testimonial/testimonial-three",
 		previewMode: "iframe",
-		previewHeight: 820,
+		previewHeight: 420,
 		installId: "testimonial-three",
-		codeTree: createBlockCodeTree("testimonial-three:testimonial", [
+		codeTree: createBlockCodeTree("testimonial-three", [
 			{
-				id: "testimonial-three:testimonial-card",
-				path: "src/lib/components/ui-blocks/efferd-ui/testimonial/testimonial-three/testimonial-card.svelte",
+				id: "testimonial-three",
+				path: "src/lib/components/blocks/efferd-ui/testimonial/testimonial-three/testimonial-card.svelte",
 				lang: "svelte",
 				code: testimonialTestimonialThreeTestimonialCardSource
 			},
-			{
-				id: "testimonial-three:testimonial",
-				path: "src/lib/components/ui-blocks/efferd-ui/testimonial/testimonial-three/testimonial.svelte",
-				lang: "svelte",
-				code: testimonialTestimonialThreeTestimonialSource
-			},
 			...decorIconFiles
 		])
-	},
-	{
+	},	{
 		id: "testimonial-four",
 		title: "Testimonial Four",
-		description: "A Testimonial Four composition.",
+		description:
+			"A Testimonial Four composition.",
 		previewComponent: TestimonialFourPreview,
 		previewHref: "/preview/efferd-ui/testimonial/testimonial-four",
 		previewMode: "iframe",
-		previewHeight: 820,
+		previewHeight: 420,
 		installId: "testimonial-four",
-		codeTree: createBlockCodeTree("testimonial-four:testimonial", [
+		codeTree: createBlockCodeTree("testimonial-four", [
 			{
-				id: "testimonial-four:testimonial-card",
-				path: "src/lib/components/ui-blocks/efferd-ui/testimonial/testimonial-four/testimonial-card.svelte",
+				id: "testimonial-four",
+				path: "src/lib/components/blocks/efferd-ui/testimonial/testimonial-four/testimonial-card.svelte",
 				lang: "svelte",
 				code: testimonialTestimonialFourTestimonialCardSource
-			},
-			{
-				id: "testimonial-four:testimonial",
-				path: "src/lib/components/ui-blocks/efferd-ui/testimonial/testimonial-four/testimonial.svelte",
-				lang: "svelte",
-				code: testimonialTestimonialFourTestimonialSource
-			},
-			...dividerFiles
+			}
 		])
-	},
-	{
+	},	{
 		id: "testimonial-five",
 		title: "Testimonial Five",
-		description: "A Testimonial Five composition.",
+		description:
+			"A Testimonial Five composition.",
 		previewComponent: TestimonialFivePreview,
 		previewHref: "/preview/efferd-ui/testimonial/testimonial-five",
 		previewMode: "iframe",
-		previewHeight: 820,
+		previewHeight: 420,
 		installId: "testimonial-five",
-		codeTree: createBlockCodeTree("testimonial-five:testimonial", [
+		codeTree: createBlockCodeTree("testimonial-five", [
 			{
-				id: "testimonial-five:testimonial-card",
-				path: "src/lib/components/ui-blocks/efferd-ui/testimonial/testimonial-five/testimonial-card.svelte",
+				id: "testimonial-five",
+				path: "src/lib/components/blocks/efferd-ui/testimonial/testimonial-five/testimonial-card.svelte",
 				lang: "svelte",
 				code: testimonialTestimonialFiveTestimonialCardSource
-			},
-			{
-				id: "testimonial-five:testimonial",
-				path: "src/lib/components/ui-blocks/efferd-ui/testimonial/testimonial-five/testimonial.svelte",
-				lang: "svelte",
-				code: testimonialTestimonialFiveTestimonialSource
-			},
-			...dividerFiles
+			}
 		])
 	}
 ];

@@ -6,12 +6,24 @@ from pathlib import Path
 ROOT_DIR = Path.cwd()
 
 # Blocks-ui names
-UI_NAMES = ["efferd-ui"]
+UI_NAMES = ["efferd-ui", "magic-ui"]
 
 ENGLISH_NUMBERS = {
-    "one": 1, "two": 2, "three": 3, "four": 4, "five": 5,
-    "six": 6, "seven": 7, "eight": 8, "nine": 9, "ten": 10,
-    "eleven": 11, "twelve": 12, "thirteen": 13, "fourteen": 14, "fifteen": 15
+  "one": 1, 
+  "two": 2, 
+  "three": 3, 
+  "four": 4, 
+  "five": 5,
+  "six": 6, 
+  "seven": 7, 
+  "eight": 8, 
+  "nine": 9, 
+  "ten": 10,
+  "eleven": 11, 
+  "twelve": 12, 
+  "thirteen": 13, 
+  "fourteen": 14, 
+  "fifteen": 15
 }
 
 # Settings for preview pages
@@ -19,7 +31,7 @@ PREVIEW_LAYOUT_PATTERNS = {
     "hero": "flex flex-col min-h-screen w-full",
     "header": "flex flex-col min-h-screen w-full",
     "logo": "flex flex-col min-h-screen w-full justify-center p-2",
-    "default": "flex flex-col min-h-screen w-full justify-center p-2"
+    "default": "flex flex-col min-h-screen w-full items-center justify-center p-2"
 }
 
 # Helpers
@@ -183,7 +195,7 @@ def process_category(category_dir: Path, ui_name: str):
 
 def main():
     for ui_name in UI_NAMES:
-        source_dir = ROOT_DIR / "src" / "lib" / "components" / "ui-blocks/" / ui_name
+        source_dir = ROOT_DIR / "src" / "lib" / "components" / "blocks/" / ui_name
         if not source_dir.exists():
             print(f"Source directory not found for '{ui_name}': {source_dir}")
             continue

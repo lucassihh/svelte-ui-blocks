@@ -17,6 +17,10 @@ export const navLinks: NavLink[] = [
 		href: "/blocks/efferd-ui/hero"
 	},
 	{
+		label: "Magic-UI Components",
+		href: "/blocks/magic-ui/animated-beam"
+	},
+	{
 		label: "Documentation",
 		href: "/documentation"
 	},

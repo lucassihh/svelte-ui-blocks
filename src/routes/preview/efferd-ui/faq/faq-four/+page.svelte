@@ -1,5 +1,5 @@
 <script lang="ts">
-	import FaqFour from "$lib/components/ui-blocks/efferd-ui/faq/faq-four/faq.svelte";
+	import FaqFour from "$lib/components/blocks/efferd-ui/faq/faq-four/faq.svelte";
 </script>
 
 <svelte:head>
@@ -7,6 +7,6 @@
 	<meta name="description" content="Standalone preview for Faq Four in Svelte Efferd." />
 </svelte:head>
 
-<div class="flex min-h-screen w-full flex-col justify-center p-2">
+<div class="flex flex-col min-h-screen w-full items-center justify-center p-2">
 	<FaqFour />
 </div>

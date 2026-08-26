@@ -1,5 +1,5 @@
 <script lang="ts">
-	import HeaderTwo from "$lib/components/ui-blocks/efferd-ui/header/header-two/header.svelte";
+	import HeaderTwo from "$lib/components/blocks/efferd-ui/header/header-two/header.svelte";
 </script>
 
 <svelte:head>
@@ -7,6 +7,6 @@
 	<meta name="description" content="Standalone preview for Header Two in Svelte Efferd." />
 </svelte:head>
 
-<div class="flex min-h-screen w-full flex-col">
+<div class="flex flex-col min-h-screen w-full">
 	<HeaderTwo />
 </div>

@@ -2,26 +2,20 @@
 import type { BlockShowcaseItem } from "$lib/components/blocks/blocks-code-tree";
 import { createBlockCodeTree } from "$lib/components/blocks/blocks-code-tree";
 
-// Preview Imports
-import IntegrationFivePreview from "$lib/components/ui-blocks/efferd-ui/integration/integration-five/integration.svelte";
-import IntegrationFourPreview from "$lib/components/ui-blocks/efferd-ui/integration/integration-four/integration-card-four.svelte";
-import IntegrationOnePreview from "$lib/components/ui-blocks/efferd-ui/integration/integration-one/integration.svelte";
-import IntegrationThreePreview from "$lib/components/ui-blocks/efferd-ui/integration/integration-three/integration-card-three.svelte";
-import IntegrationTwoPreview from "$lib/components/ui-blocks/efferd-ui/integration/integration-two/integration-card-two.svelte";
+// Sources for preview & code
+import IntegrationFivePreview from "$lib/components/blocks/efferd-ui/integration/integration-five/integration.svelte";
+import IntegrationFourPreview from "$lib/components/blocks/efferd-ui/integration/integration-four/integration-card-four.svelte";
+import IntegrationOnePreview from "$lib/components/blocks/efferd-ui/integration/integration-one/integration.svelte";
+import IntegrationThreePreview from "$lib/components/blocks/efferd-ui/integration/integration-three/integration-card-three.svelte";
+import IntegrationTwoPreview from "$lib/components/blocks/efferd-ui/integration/integration-two/integration-card-two.svelte";
 
 // Raw
 import decorIconIndexSource from "$lib/components/ui/decor-icon/index.ts?raw";
-import decorIconSource from "$lib/components/ui/decor-icon/decor-icon.svelte?raw";
-import dividerIndexSource from "$lib/components/ui/full-width-divider/index.ts?raw";
-import dividerSource from "$lib/components/ui/full-width-divider/full-width-divider.svelte?raw";
-import integrationIntegrationFiveIntegrationSource from "$lib/components/ui-blocks/efferd-ui/integration/integration-five/integration.svelte?raw";
-import integrationIntegrationFourIntegrationCardFourSource from "$lib/components/ui-blocks/efferd-ui/integration/integration-four/integration-card-four.svelte?raw";
-import integrationIntegrationFourIntegrationSource from "$lib/components/ui-blocks/efferd-ui/integration/integration-four/integration.svelte?raw";
-import integrationIntegrationOneIntegrationSource from "$lib/components/ui-blocks/efferd-ui/integration/integration-one/integration.svelte?raw";
-import integrationIntegrationThreeIntegrationCardThreeSource from "$lib/components/ui-blocks/efferd-ui/integration/integration-three/integration-card-three.svelte?raw";
-import integrationIntegrationThreeIntegrationSource from "$lib/components/ui-blocks/efferd-ui/integration/integration-three/integration.svelte?raw";
-import integrationIntegrationTwoIntegrationCardTwoSource from "$lib/components/ui-blocks/efferd-ui/integration/integration-two/integration-card-two.svelte?raw";
-import integrationIntegrationTwoIntegrationSource from "$lib/components/ui-blocks/efferd-ui/integration/integration-two/integration.svelte?raw";
+import integrationIntegrationFiveIntegrationSource from "$lib/components/blocks/efferd-ui/integration/integration-five/integration.svelte?raw";
+import integrationIntegrationFourIntegrationCardFourSource from "$lib/components/blocks/efferd-ui/integration/integration-four/integration-card-four.svelte?raw";
+import integrationIntegrationOneIntegrationSource from "$lib/components/blocks/efferd-ui/integration/integration-one/integration.svelte?raw";
+import integrationIntegrationThreeIntegrationCardThreeSource from "$lib/components/blocks/efferd-ui/integration/integration-three/integration-card-three.svelte?raw";
+import integrationIntegrationTwoIntegrationCardTwoSource from "$lib/components/blocks/efferd-ui/integration/integration-two/integration-card-two.svelte?raw";
 
 // Shared Items
 const buttonFiles = [
@@ -34,30 +28,10 @@ const buttonFiles = [
 ];
 const decorIconFiles = [
 	{
-		id: "shared:decor-icon",
-		path: "components/ui/decor-icon/decor-icon.svelte",
-		lang: "svelte" as const,
-		code: decorIconSource
-	},
-	{
 		id: "shared:decor-icon-index",
 		path: "components/ui/decor-icon/index.ts",
 		lang: "typescript" as const,
 		code: decorIconIndexSource
-	}
-];
-const dividerFiles = [
-	{
-		id: "shared:divider",
-		path: "components/ui/full-width-divider/full-width-divider.svelte",
-		lang: "svelte" as const,
-		code: dividerSource
-	},
-	{
-		id: "shared:divider-index",
-		path: "components/ui/full-width-divider/index.ts",
-		lang: "typescript" as const,
-		code: dividerIndexSource
 	}
 ];
 
@@ -65,110 +39,91 @@ export const integrationBlocks: BlockShowcaseItem[] = [
 	{
 		id: "integration-one",
 		title: "Integration One",
-		description: "A Integration One composition.",
+		description:
+			"A Integration One composition.",
 		previewComponent: IntegrationOnePreview,
 		previewHref: "/preview/efferd-ui/integration/integration-one",
 		previewMode: "iframe",
-		previewHeight: 820,
+		previewHeight: 420,
 		installId: "integration-one",
-		codeTree: createBlockCodeTree("integration-one:integration", [
+		codeTree: createBlockCodeTree("integration-one", [
 			{
-				id: "integration-one:integration",
-				path: "src/lib/components/ui-blocks/efferd-ui/integration/integration-one/integration.svelte",
+				id: "integration-one",
+				path: "src/lib/components/blocks/efferd-ui/integration/integration-one/integration.svelte",
 				lang: "svelte",
 				code: integrationIntegrationOneIntegrationSource
 			},
 			...buttonFiles
 		])
-	},
-	{
+	},	{
 		id: "integration-two",
 		title: "Integration Two",
-		description: "A Integration Two composition.",
+		description:
+			"A Integration Two composition.",
 		previewComponent: IntegrationTwoPreview,
 		previewHref: "/preview/efferd-ui/integration/integration-two",
 		previewMode: "iframe",
-		previewHeight: 820,
+		previewHeight: 420,
 		installId: "integration-two",
-		codeTree: createBlockCodeTree("integration-two:integration", [
+		codeTree: createBlockCodeTree("integration-two", [
 			{
-				id: "integration-two:integration-card-two",
-				path: "src/lib/components/ui-blocks/efferd-ui/integration/integration-two/integration-card-two.svelte",
+				id: "integration-two",
+				path: "src/lib/components/blocks/efferd-ui/integration/integration-two/integration-card-two.svelte",
 				lang: "svelte",
 				code: integrationIntegrationTwoIntegrationCardTwoSource
 			},
-			{
-				id: "integration-two:integration",
-				path: "src/lib/components/ui-blocks/efferd-ui/integration/integration-two/integration.svelte",
-				lang: "svelte",
-				code: integrationIntegrationTwoIntegrationSource
-			},
 			...decorIconFiles
 		])
-	},
-	{
+	},	{
 		id: "integration-three",
 		title: "Integration Three",
-		description: "A Integration Three composition.",
+		description:
+			"A Integration Three composition.",
 		previewComponent: IntegrationThreePreview,
 		previewHref: "/preview/efferd-ui/integration/integration-three",
 		previewMode: "iframe",
-		previewHeight: 820,
+		previewHeight: 420,
 		installId: "integration-three",
-		codeTree: createBlockCodeTree("integration-three:integration", [
+		codeTree: createBlockCodeTree("integration-three", [
 			{
-				id: "integration-three:integration-card-three",
-				path: "src/lib/components/ui-blocks/efferd-ui/integration/integration-three/integration-card-three.svelte",
+				id: "integration-three",
+				path: "src/lib/components/blocks/efferd-ui/integration/integration-three/integration-card-three.svelte",
 				lang: "svelte",
 				code: integrationIntegrationThreeIntegrationCardThreeSource
-			},
-			{
-				id: "integration-three:integration",
-				path: "src/lib/components/ui-blocks/efferd-ui/integration/integration-three/integration.svelte",
-				lang: "svelte",
-				code: integrationIntegrationThreeIntegrationSource
-			},
-			...buttonFiles,
-			...dividerFiles
+			}
 		])
-	},
-	{
+	},	{
 		id: "integration-four",
 		title: "Integration Four",
-		description: "A Integration Four composition.",
+		description:
+			"A Integration Four composition.",
 		previewComponent: IntegrationFourPreview,
 		previewHref: "/preview/efferd-ui/integration/integration-four",
 		previewMode: "iframe",
-		previewHeight: 820,
+		previewHeight: 420,
 		installId: "integration-four",
-		codeTree: createBlockCodeTree("integration-four:integration", [
+		codeTree: createBlockCodeTree("integration-four", [
 			{
-				id: "integration-four:integration-card-four",
-				path: "src/lib/components/ui-blocks/efferd-ui/integration/integration-four/integration-card-four.svelte",
+				id: "integration-four",
+				path: "src/lib/components/blocks/efferd-ui/integration/integration-four/integration-card-four.svelte",
 				lang: "svelte",
 				code: integrationIntegrationFourIntegrationCardFourSource
-			},
-			{
-				id: "integration-four:integration",
-				path: "src/lib/components/ui-blocks/efferd-ui/integration/integration-four/integration.svelte",
-				lang: "svelte",
-				code: integrationIntegrationFourIntegrationSource
 			}
 		])
-	},
-	{
+	},	{
 		id: "integration-five",
 		title: "Integration Five",
-		description: "A Integration Five composition.",
+		description:
+			"A Integration Five composition.",
 		previewComponent: IntegrationFivePreview,
 		previewHref: "/preview/efferd-ui/integration/integration-five",
 		previewMode: "iframe",
-		previewHeight: 820,
+		previewHeight: 420,
 		installId: "integration-five",
-		codeTree: createBlockCodeTree("integration-five:integration", [
+		codeTree: createBlockCodeTree("integration-five", [
 			{
-				id: "integration-five:integration",
-				path: "src/lib/components/ui-blocks/efferd-ui/integration/integration-five/integration.svelte",
+				id: "integration-five",
+				path: "src/lib/components/blocks/efferd-ui/integration/integration-five/integration.svelte",
 				lang: "svelte",
 				code: integrationIntegrationFiveIntegrationSource
 			},

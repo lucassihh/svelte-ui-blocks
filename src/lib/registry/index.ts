@@ -15,6 +15,14 @@ import { footerBlocks } from "./efferd-ui/footer";
 import { imageGalleryBlocks } from "./efferd-ui/image-gallery";
 import { notFoundBlocks } from "./efferd-ui/not-found";
 
+// Imports for magic-ui
+import { animatedBeamBlocks } from "./magic-ui/animated-beam";
+import { animatedListBlocks } from "./magic-ui/animated-list";
+import { animatedGradientTextBlocks } from "./magic-ui/animated-gradient-text";
+import { avatarCirclesBlocks } from "./magic-ui/avatar-circles";
+import { dockBlocks } from "./magic-ui/dock";
+import { flowBlocks } from "./magic-ui/flow";
+
 // Exports
 export const registry = {
 	"efferd-ui": {
@@ -33,6 +41,14 @@ export const registry = {
 		footer: footerBlocks,
 		imageGallery: imageGalleryBlocks,
 		notFound: notFoundBlocks
+	},
+	"magic-ui": {
+		animatedBeam: animatedBeamBlocks,
+		animatedList: animatedListBlocks,
+		animatedGradientText: animatedGradientTextBlocks,
+		avatarCircles: avatarCirclesBlocks,
+		dock: dockBlocks,
+    flow: flowBlocks
 	}
 };
 

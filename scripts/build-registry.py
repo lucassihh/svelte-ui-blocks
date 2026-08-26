@@ -2,20 +2,26 @@ import os
 import re
 from pathlib import Path
 
-
-# Settings
+# Settings & Valid Extensions
 ROOT_DIR = Path.cwd()
 
-# Add block UIs names
-UI_NAMES = ["efferd-ui"]
+VALID_EXTENSIONS = [
+    ".svelte",
+    ".ts",
+    ".js"
+]
 
-# Project Aliases
+_ext_pattern = r'\.(' + '|'.join([re.escape(ext.lstrip('.')) for ext in VALID_EXTENSIONS]) + r')$'
+CLEAN_EXT_REGEX = re.compile(_ext_pattern, flags=re.IGNORECASE)
+
+# Blocks-ui names
+UI_NAMES = ["efferd-ui", "magic-ui"]
+
 ALIAS_MAP = {
     "$lib/": "src/lib/",
     "@/": "src/"
 }
 
-# Only for Order
 ENGLISH_NUMBERS = {
     "one": 1, 
     "two": 2, 
@@ -27,14 +33,8 @@ ENGLISH_NUMBERS = {
     "eight": 8, 
     "nine": 9, 
     "ten": 10,
-    "eleven": 11, 
-    "twelve": 12, 
-    "thirteen": 13, 
-    "fourteen": 14, 
-    "fifteen": 15
-}
+}   
 
-# Mapping of Shared Moduless (Shared)
 SHARED_MODULE_MAP = {
     "components/ui/button": "buttonFiles",
     "components/ui/decor-icon": "decorIconFiles",
@@ -46,12 +46,17 @@ SHARED_MODULE_MAP = {
     "hooks/use-scroll": "scrollHookFiles"
 }
 
-# Metadata settings
+# Metadata
 BLOCK_METADATA_PATTERNS = {
     "hero": {
         "description": "A full hero composition with sticky header, editorial spotlight, and a marquee trust band.",
         "height": 820,
         "previewMode": "iframe"
+    },
+    "header": {
+       "description": "Header component",
+       "height": 820,
+       "previewMode": "iframe"
     },
     "logo": {
         "description": "A responsive logo grid/marquee component for showcasing partners and clients.",
@@ -65,14 +70,17 @@ BLOCK_METADATA_PATTERNS = {
     },
     "default": {
         "description": "A {title} composition.",
-        "height": 820,
+        "height": 420,
         "previewMode": "iframe"
     }
 }
 
 
-
 # Helpers
+def clean_extension(filename: str) -> str:
+    return CLEAN_EXT_REGEX.sub('', filename)
+
+
 def extract_number_rank(block_id: str) -> tuple[str, int]:
     parts = block_id.split("-")
     last_part = parts[-1].lower()
@@ -85,7 +93,6 @@ def extract_number_rank(block_id: str) -> tuple[str, int]:
         prefix = "-".join(parts[:-1])
         return (prefix, int(last_part))
 
-    # Fallback
     return (block_id, 0)
 
 
@@ -100,18 +107,21 @@ def resolve_file_extension(base_path: Path) -> Path | None:
     if base_path.is_file():
         return base_path
 
-    extensions = [
-        ".svelte", ".ts", ".js", ".svelte.ts",
-        "/index.svelte", "/index.ts", "/index.js"
-    ]
-    for ext in extensions:
+    for ext in VALID_EXTENSIONS:
         test_path = Path(str(base_path) + ext)
         if test_path.is_file():
             return test_path
+
+    for ext in VALID_EXTENSIONS:
+        test_path = base_path / f"index{ext}"
+        if test_path.is_file():
+            return test_path
+
     return None
 
 
-def parse_imports(file_path: Path) -> set[Path]:
+def parse_direct_imports(file_path: Path) -> set[Path]:
+    """Extract direct imports from the root file only."""
     found_paths = set()
     try:
         content = file_path.read_text(encoding="utf-8")
@@ -139,20 +149,17 @@ def parse_imports(file_path: Path) -> set[Path]:
     return found_paths
 
 
-def resolve_dependencies_recursively(start_file: Path, visited=None) -> set[Path]:
-    if visited is None:
-        visited = set()
-
-    if start_file in visited:
-        return visited
-
-    visited.add(start_file)
-    child_imports = parse_imports(start_file)
-
-    for child in child_imports:
-        resolve_dependencies_recursively(child, visited)
-
-    return visited
+def get_main_component_file(block_files: list[Path], block_id: str) -> Path:
+    """Find the entry point file for the component block."""
+    sveltes = [f for f in block_files if f.name.endswith(".svelte") and "preview" not in f.name.lower()]
+    if sveltes:
+        category_stem = block_id.split("-")[0]
+        for f in sveltes:
+            if category_stem in f.name.lower():
+                return f
+        return sveltes[0]
+    
+    return block_files[0]
 
 
 def get_unique_var_name(rel_path: str, ui_name: str) -> str:
@@ -175,63 +182,62 @@ def get_unique_var_name(rel_path: str, ui_name: str) -> str:
         
         clean_parts = []
         for pt in relevant:
-            stem = re.sub(r'\.(svelte|ts|js|\.svelte\.ts)$', '', pt)
+            stem = clean_extension(pt)
             if not clean_parts or clean_parts[-1] != stem:
                 clean_parts.append(stem)
 
         words = []
         for pt in clean_parts:
-            words.extend([w for w in re.split(r'[-_]', pt) if w])
+            words.extend([w for w in re.split(r'[-_.]', pt) if w])
 
         camel = words[0].lower() + "".join(w.capitalize() for w in words[1:])
         return f"{camel}Source"
 
     parent_name = p.parent.name
-    file_stem = p.stem.replace(".svelte", "")
+    file_stem = clean_extension(p.name)
 
     if file_stem == "index":
-        words = [w for w in re.split(r'[-_]', parent_name) if w]
+        words = [w for w in re.split(r'[-_.]', parent_name) if w]
         camel = words[0].lower() + "".join(w.capitalize() for w in words[1:])
         return f"{camel}IndexSource"
 
     if file_stem == parent_name:
-        words = [w for w in re.split(r'[-_]', file_stem) if w]
+        words = [w for w in re.split(r'[-_.]', file_stem) if w]
         camel = words[0].lower() + "".join(w.capitalize() for w in words[1:])
         return f"{camel}RootSource" if file_stem == "navigation-menu" else f"{camel}Source"
 
-    words = [w for w in re.split(r'[-_]', file_stem) if w]
+    words = [w for w in re.split(r'[-_.]', file_stem) if w]
     camel = words[0].lower() + "".join(w.capitalize() for w in words[1:])
     return f"{camel}Source"
 
 
 def format_title(name: str) -> str:
-    clean_name = re.sub(r'\.(svelte|ts|js)$', '', name)
-    return " ".join(word.capitalize() for word in re.split(r'[-_]', clean_name))
+    clean_name = clean_extension(name)
+    return " ".join(word.capitalize() for word in re.split(r'[-_.]', clean_name))
 
 
 def to_pascal_case(text: str) -> str:
-    clean_text = re.sub(r'\.(svelte|ts|js)$', '', text)
-    parts = re.split(r'[-_]', clean_text)
+    clean_text = clean_extension(text)
+    parts = re.split(r'[-_.]', clean_text)
     return "".join(p.capitalize() for p in parts if p)
 
 
 def discover_blocks(category_dir: Path) -> list[tuple[str, list[Path]]]:
-    """Scans the category's subfolders (ex: hero/hero-one)."""
     blocks = []
     subdirs = [d for d in category_dir.iterdir() if d.is_dir()]
 
     for d in subdirs:
-        files = list(d.glob("**/*.*"))
+        files = [
+            f for f in d.glob("**/*.*")
+            if any(f.name.lower().endswith(ext) for ext in VALID_EXTENSIONS)
+        ]
         if files:
             blocks.append((d.name, files))
 
     return blocks
 
 
-# Block metadata function
 def get_block_metadata(block_id: str, block_title: str) -> dict:
-    """Retorna os metadados resolvendo os padrões definidos ou aplicando fallback."""
-    # Look up a corresponding prefix in the dictionary
     matched_config = None
     for pattern, config in BLOCK_METADATA_PATTERNS.items():
         if pattern != "default" and block_id.startswith(pattern):
@@ -250,10 +256,9 @@ def get_block_metadata(block_id: str, block_title: str) -> dict:
         "height": matched_config.get("height", 500),
         "previewMode": matched_config.get("previewMode", "inline")
     }
-    
 
 
-# CATEGORY AND UI PROCESSING
+# Category & UI Processing
 def process_category(category_dir: Path, ui_name: str, output_dir: Path):
     category_name = category_dir.name
     category_camel = re.sub(r'[-_]([a-z])', lambda m: m.group(1).upper(), category_name)
@@ -263,7 +268,6 @@ def process_category(category_dir: Path, ui_name: str, output_dir: Path):
     if not blocks:
         return
 
-    # SEQUENTIAL ORDERING
     blocks.sort(key=lambda x: extract_number_rank(x[0]))
 
     raw_imports = set()
@@ -300,14 +304,22 @@ def process_category(category_dir: Path, ui_name: str, output_dir: Path):
         alias_preview = rel_preview.replace("src/lib/", "$lib/")
         preview_imports.append(f'import {preview_component_name} from "{alias_preview}";')
 
-        all_dependencies = set()
-        for bf in block_files:
-            all_dependencies.update(resolve_dependencies_recursively(bf))
+        # Read imports exclusively from the entry component
+        main_component_file = get_main_component_file(block_files, block_id)
+        direct_dependencies = parse_direct_imports(main_component_file)
+        direct_dependencies.add(main_component_file)
 
         block_local_files = []
         block_spread_refs = set()
 
-        for abs_file in sorted(all_dependencies):
+        # Identify local dependencies to check if there is only 1 file
+        local_deps = [
+            f for f in direct_dependencies 
+            if f"{ui_name}/{category_name}/{block_id}" in f.relative_to(ROOT_DIR).as_posix()
+        ]
+        is_single_local_file = len(local_deps) == 1
+
+        for abs_file in sorted(direct_dependencies):
             rel_path = abs_file.relative_to(ROOT_DIR).as_posix()
             var_name = get_unique_var_name(rel_path, ui_name)
             alias_import = rel_path.replace("src/lib/", "$lib/")
@@ -328,7 +340,7 @@ def process_category(category_dir: Path, ui_name: str, output_dir: Path):
                     if shared_array_name == "buttonFiles":
                         continue
 
-                    file_stem = abs_file.stem
+                    file_stem = clean_extension(abs_file.name)
                     if shared_array_name == "decorIconFiles":
                         item_id = "shared:decor-icon-index" if file_stem == "index" else "shared:decor-icon"
                     elif shared_array_name == "dividerFiles":
@@ -370,8 +382,8 @@ def process_category(category_dir: Path, ui_name: str, output_dir: Path):
             display_path = rel_path.replace(f"src/lib/components/{ui_name}/", f"components/{ui_name}/")
 
             if f"{ui_name}/{category_name}/{block_id}" in rel_path:
-                file_stem = abs_file.stem
-                local_id = f"{block_id}:{file_stem}"
+                file_stem = clean_extension(abs_file.name)
+                local_id = block_id if is_single_local_file else f"{block_id}:{file_stem}"
 
                 block_local_files.append(
                     f'\t\t\t{{\n'
@@ -391,8 +403,9 @@ def process_category(category_dir: Path, ui_name: str, output_dir: Path):
                     sub_array_name = f"{to_pascal_case(sub_cat)}{to_pascal_case(sub_block)}Files"
                     sub_array_name = sub_array_name[0].lower() + sub_array_name[1:]
 
-                    file_stem = abs_file.stem
-                    sub_item_id = f"{block_id}:{sub_cat if file_stem == sub_block else file_stem}"
+                    file_stem = clean_extension(abs_file.name)
+                    clean_sub_block = clean_extension(sub_block)
+                    sub_item_id = f"{block_id}:{clean_extension(sub_cat) if file_stem == clean_sub_block else file_stem}"
 
                     sub_item_code = (
                         f'\t{{\n'
@@ -421,6 +434,8 @@ def process_category(category_dir: Path, ui_name: str, output_dir: Path):
         
         preview_href = f"/preview/{ui_name}/{category_name}/{block_id}"
 
+        entry_tree_id = block_id if is_single_local_file else f"{block_id}:{category_name}"
+
         block_items_code.append(
             f'\t{{\n'
             f'\t\tid: "{block_id}",\n'
@@ -432,7 +447,7 @@ def process_category(category_dir: Path, ui_name: str, output_dir: Path):
             f'\t\tpreviewMode: "{meta["previewMode"]}",\n'
             f'\t\tpreviewHeight: {meta["height"]},\n'
             f'\t\tinstallId: "{block_id}",\n'
-            f'\t\tcodeTree: createBlockCodeTree("{block_id}:{category_name}", [\n'
+            f'\t\tcodeTree: createBlockCodeTree("{entry_tree_id}", [\n'
             f'{code_tree_str}\n'
             f'\t\t])\n'
             f'\t}}'
@@ -453,12 +468,11 @@ def process_category(category_dir: Path, ui_name: str, output_dir: Path):
         formatted_items = ",\n".join(items)
         shared_arrays_code.append(f"const {arr_name} = [\n{formatted_items}\n];")
         
-    # Template output
     ts_content = f"""// CodeTree Component
 import type {{ BlockShowcaseItem }} from "$lib/components/blocks/blocks-code-tree";
 import {{ createBlockCodeTree }} from "$lib/components/blocks/blocks-code-tree";
 
-// Preview Imports
+// Sources for preview & code
 {chr(10).join(sorted(preview_imports))}
 
 // Raw
@@ -479,16 +493,16 @@ export function get{category_cap}Block(id: string) {{
     output_dir.mkdir(parents=True, exist_ok=True)
     out_file = output_dir / f"{category_name}.ts"
     out_file.write_text(ts_content, encoding="utf-8")
-    print(f" [{ui_name}] Registry generated: {out_file.relative_to(ROOT_DIR)}")
+    print(f" [{ui_name}] Registry generated successfully: {out_file.relative_to(ROOT_DIR)}")
 
 
 def main():
     for ui_name in UI_NAMES:
-        source_dir = ROOT_DIR / "src" / "lib" / "components" / "ui-blocks/" / ui_name
+        source_dir = ROOT_DIR / "src" / "lib" / "components" / "blocks" / ui_name
         output_dir = ROOT_DIR / "src" / "lib" / "registry" / ui_name
 
         if not source_dir.exists():
-            print(f"Source directory not found for '{ui_name}': {source_dir}")
+            print(f"Source path not found for '{ui_name}': {source_dir}")
             continue
 
         for category_folder in source_dir.iterdir():

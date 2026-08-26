@@ -2,14 +2,12 @@
 import type { BlockShowcaseItem } from "$lib/components/blocks/blocks-code-tree";
 import { createBlockCodeTree } from "$lib/components/blocks/blocks-code-tree";
 
-// Preview Imports
-import ImageGalleryOnePreview from "$lib/components/ui-blocks/efferd-ui/image-gallery/image-gallery-one/image-gallery.svelte";
+// Sources for preview & code
+import ImageGalleryOnePreview from "$lib/components/blocks/efferd-ui/image-gallery/image-gallery-one/image-gallery.svelte";
 
 // Raw
-import aspectRatioIndexSource from "$lib/components/ui/aspect-ratio/index.ts?raw";
-import aspectRatioSource from "$lib/components/ui/aspect-ratio/aspect-ratio.svelte?raw";
-import imageGalleryImageGalleryOneImageGallerySource from "$lib/components/ui-blocks/efferd-ui/image-gallery/image-gallery-one/image-gallery.svelte?raw";
-import imageGalleryImageGalleryOneLazyImageSource from "$lib/components/ui-blocks/efferd-ui/image-gallery/image-gallery-one/lazy-image.svelte?raw";
+import imageGalleryImageGalleryOneImageGallerySource from "$lib/components/blocks/efferd-ui/image-gallery/image-gallery-one/image-gallery.svelte?raw";
+import imageGalleryImageGalleryOneLazyImageSource from "$lib/components/blocks/efferd-ui/image-gallery/image-gallery-one/lazy-image.svelte?raw";
 
 // Shared Items
 const buttonFiles = [
@@ -25,22 +23,23 @@ export const imageGalleryBlocks: BlockShowcaseItem[] = [
 	{
 		id: "image-gallery-one",
 		title: "Image Gallery One",
-		description: "A Image Gallery One composition.",
+		description:
+			"A Image Gallery One composition.",
 		previewComponent: ImageGalleryOnePreview,
 		previewHref: "/preview/efferd-ui/image-gallery/image-gallery-one",
 		previewMode: "iframe",
-		previewHeight: 820,
+		previewHeight: 420,
 		installId: "image-gallery-one",
 		codeTree: createBlockCodeTree("image-gallery-one:image-gallery", [
 			{
 				id: "image-gallery-one:image-gallery",
-				path: "src/lib/components/ui-blocks/efferd-ui/image-gallery/image-gallery-one/image-gallery.svelte",
+				path: "src/lib/components/blocks/efferd-ui/image-gallery/image-gallery-one/image-gallery.svelte",
 				lang: "svelte",
 				code: imageGalleryImageGalleryOneImageGallerySource
 			},
 			{
 				id: "image-gallery-one:lazy-image",
-				path: "src/lib/components/ui-blocks/efferd-ui/image-gallery/image-gallery-one/lazy-image.svelte",
+				path: "src/lib/components/blocks/efferd-ui/image-gallery/image-gallery-one/lazy-image.svelte",
 				lang: "svelte",
 				code: imageGalleryImageGalleryOneLazyImageSource
 			}

@@ -1,5 +1,5 @@
 <script lang="ts">
-	import NotFoundOne from "$lib/components/ui-blocks/efferd-ui/not-found/not-found-one/not-found.svelte";
+	import NotFoundOne from "$lib/components/blocks/efferd-ui/not-found/not-found-one/not-found.svelte";
 </script>
 
 <svelte:head>
@@ -7,6 +7,6 @@
 	<meta name="description" content="Standalone preview for Not Found One in Svelte Efferd." />
 </svelte:head>
 
-<div class="flex min-h-screen w-full flex-col justify-center p-2">
+<div class="flex flex-col min-h-screen w-full items-center justify-center p-2">
 	<NotFoundOne />
 </div>

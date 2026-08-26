@@ -2,24 +2,16 @@
 import type { BlockShowcaseItem } from "$lib/components/blocks/blocks-code-tree";
 import { createBlockCodeTree } from "$lib/components/blocks/blocks-code-tree";
 
-// Preview Imports
-import BlogOnePreview from "$lib/components/ui-blocks/efferd-ui/blog/blog-one/blog-card.svelte";
-import BlogThreePreview from "$lib/components/ui-blocks/efferd-ui/blog/blog-three/blog-card.svelte";
-import BlogTwoPreview from "$lib/components/ui-blocks/efferd-ui/blog/blog-two/blog-card.svelte";
+// Sources for preview & code
+import BlogOnePreview from "$lib/components/blocks/efferd-ui/blog/blog-one/blog-card.svelte";
+import BlogThreePreview from "$lib/components/blocks/efferd-ui/blog/blog-three/blog-card.svelte";
+import BlogTwoPreview from "$lib/components/blocks/efferd-ui/blog/blog-two/blog-card.svelte";
 
 // Raw
 import aspectRatioIndexSource from "$lib/components/ui/aspect-ratio/index.ts?raw";
-import aspectRatioSource from "$lib/components/ui/aspect-ratio/aspect-ratio.svelte?raw";
-import blogBlogOneBlogCardSource from "$lib/components/ui-blocks/efferd-ui/blog/blog-one/blog-card.svelte?raw";
-import blogBlogOneBlogSource from "$lib/components/ui-blocks/efferd-ui/blog/blog-one/blog.svelte?raw";
-import blogBlogThreeBlogCardSource from "$lib/components/ui-blocks/efferd-ui/blog/blog-three/blog-card.svelte?raw";
-import blogBlogThreeBlogSource from "$lib/components/ui-blocks/efferd-ui/blog/blog-three/blog.svelte?raw";
-import blogBlogTwoBlogCardSource from "$lib/components/ui-blocks/efferd-ui/blog/blog-two/blog-card.svelte?raw";
-import blogBlogTwoBlogSource from "$lib/components/ui-blocks/efferd-ui/blog/blog-two/blog.svelte?raw";
-import dividerIndexSource from "$lib/components/ui/full-width-divider/index.ts?raw";
-import dividerSource from "$lib/components/ui/full-width-divider/full-width-divider.svelte?raw";
-import gridFillerIndexSource from "$lib/components/ui/grid-filler/index.ts?raw";
-import gridFillerSource from "$lib/components/ui/grid-filler/grid-filler.svelte?raw";
+import blogBlogOneBlogCardSource from "$lib/components/blocks/efferd-ui/blog/blog-one/blog-card.svelte?raw";
+import blogBlogThreeBlogCardSource from "$lib/components/blocks/efferd-ui/blog/blog-three/blog-card.svelte?raw";
+import blogBlogTwoBlogCardSource from "$lib/components/blocks/efferd-ui/blog/blog-two/blog-card.svelte?raw";
 
 // Shared Items
 const buttonFiles = [
@@ -30,95 +22,61 @@ const buttonFiles = [
 		externalLabel: "Shadcn Svelte Button"
 	}
 ];
-const dividerFiles = [
-	{
-		id: "shared:divider",
-		path: "components/ui/full-width-divider/full-width-divider.svelte",
-		lang: "svelte" as const,
-		code: dividerSource
-	},
-	{
-		id: "shared:divider-index",
-		path: "components/ui/full-width-divider/index.ts",
-		lang: "typescript" as const,
-		code: dividerIndexSource
-	}
-];
 
 export const blogBlocks: BlockShowcaseItem[] = [
 	{
 		id: "blog-one",
 		title: "Blog One",
-		description: "A Blog One composition.",
+		description:
+			"A Blog One composition.",
 		previewComponent: BlogOnePreview,
 		previewHref: "/preview/efferd-ui/blog/blog-one",
 		previewMode: "iframe",
-		previewHeight: 820,
+		previewHeight: 420,
 		installId: "blog-one",
-		codeTree: createBlockCodeTree("blog-one:blog", [
+		codeTree: createBlockCodeTree("blog-one", [
 			{
-				id: "blog-one:blog-card",
-				path: "src/lib/components/ui-blocks/efferd-ui/blog/blog-one/blog-card.svelte",
+				id: "blog-one",
+				path: "src/lib/components/blocks/efferd-ui/blog/blog-one/blog-card.svelte",
 				lang: "svelte",
 				code: blogBlogOneBlogCardSource
-			},
-			{
-				id: "blog-one:blog",
-				path: "src/lib/components/ui-blocks/efferd-ui/blog/blog-one/blog.svelte",
-				lang: "svelte",
-				code: blogBlogOneBlogSource
-			},
-			...dividerFiles
+			}
 		])
-	},
-	{
+	},	{
 		id: "blog-two",
 		title: "Blog Two",
-		description: "A Blog Two composition.",
+		description:
+			"A Blog Two composition.",
 		previewComponent: BlogTwoPreview,
 		previewHref: "/preview/efferd-ui/blog/blog-two",
 		previewMode: "iframe",
-		previewHeight: 820,
+		previewHeight: 420,
 		installId: "blog-two",
-		codeTree: createBlockCodeTree("blog-two:blog", [
+		codeTree: createBlockCodeTree("blog-two", [
 			{
-				id: "blog-two:blog-card",
-				path: "src/lib/components/ui-blocks/efferd-ui/blog/blog-two/blog-card.svelte",
+				id: "blog-two",
+				path: "src/lib/components/blocks/efferd-ui/blog/blog-two/blog-card.svelte",
 				lang: "svelte",
 				code: blogBlogTwoBlogCardSource
-			},
-			{
-				id: "blog-two:blog",
-				path: "src/lib/components/ui-blocks/efferd-ui/blog/blog-two/blog.svelte",
-				lang: "svelte",
-				code: blogBlogTwoBlogSource
-			},
-			...dividerFiles
+			}
 		])
-	},
-	{
+	},	{
 		id: "blog-three",
 		title: "Blog Three",
-		description: "A Blog Three composition.",
+		description:
+			"A Blog Three composition.",
 		previewComponent: BlogThreePreview,
 		previewHref: "/preview/efferd-ui/blog/blog-three",
 		previewMode: "iframe",
-		previewHeight: 820,
+		previewHeight: 420,
 		installId: "blog-three",
-		codeTree: createBlockCodeTree("blog-three:blog", [
+		codeTree: createBlockCodeTree("blog-three", [
 			{
-				id: "blog-three:blog-card",
-				path: "src/lib/components/ui-blocks/efferd-ui/blog/blog-three/blog-card.svelte",
+				id: "blog-three",
+				path: "src/lib/components/blocks/efferd-ui/blog/blog-three/blog-card.svelte",
 				lang: "svelte",
 				code: blogBlogThreeBlogCardSource
-			},
-			{
-				id: "blog-three:blog",
-				path: "src/lib/components/ui-blocks/efferd-ui/blog/blog-three/blog.svelte",
-				lang: "svelte",
-				code: blogBlogThreeBlogSource
-			},
-			...dividerFiles
+			}
 		])
 	}
 ];

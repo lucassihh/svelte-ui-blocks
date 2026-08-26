@@ -1,5 +1,5 @@
 <script lang="ts">
-	import AuthThree from "$lib/components/ui-blocks/efferd-ui/auth/auth-three/auth.svelte";
+	import AuthThree from "$lib/components/blocks/efferd-ui/auth/auth-three/auth.svelte";
 </script>
 
 <svelte:head>
@@ -7,6 +7,6 @@
 	<meta name="description" content="Standalone preview for Auth Three in Svelte Efferd." />
 </svelte:head>
 
-<div class="flex min-h-screen w-full flex-col justify-center p-2">
+<div class="flex flex-col min-h-screen w-full items-center justify-center p-2">
 	<AuthThree />
 </div>
