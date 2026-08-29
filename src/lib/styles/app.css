@@ -6,3 +6,5 @@
 /* Imports */
 @import "$lib/styles/theme.css";
 @import "$lib/styles/animations.css";
+@import "$lib/styles/magic-ui.css";
+@import "$lib/styles/fancy-ui.css";

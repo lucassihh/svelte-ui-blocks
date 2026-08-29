@@ -101,4 +101,15 @@
 	:global(pre.line-numbers .line) {
 		@apply px-2;
 	}
+
+
+  /* Added for Code card */
+	:global(pre.shiki) {
+		@apply overflow-x-auto rounded-lg bg-inherit py-4 text-sm border border-transparent;
+	}
+
+	:global(.dark pre.shiki),
+	:global(html.dark pre.shiki) {
+		@apply bg-card border border-border;
+	}
 </style>

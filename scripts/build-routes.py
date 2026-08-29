@@ -5,8 +5,13 @@ from pathlib import Path
 # Settings
 ROOT_DIR = Path.cwd()
 
-# Blocks-ui names
-UI_NAMES = ["efferd-ui", "magic-ui"]
+# Blocks names $lib/components/blocks/[ui-name]
+UI_NAMES = [
+  "efferd",
+  "magic",
+  "fancy",
+  "spell"
+]
 
 ENGLISH_NUMBERS = {
   "one": 1, 

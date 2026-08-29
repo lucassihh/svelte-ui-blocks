@@ -63,7 +63,7 @@
 		</button>
 
 		{#if isOpen}
-			<div transition:slide={{ duration: 180 }} class="ml-4 border-l border-border/60 pl-1.5">
+			<div transition:slide={{ duration: 180 }} class="ml-4 border-l border-border/60 pl-1.5 border-border">
 				{#each node.children as child (child.id)}
 					<CodeTreeNode
 						node={child}

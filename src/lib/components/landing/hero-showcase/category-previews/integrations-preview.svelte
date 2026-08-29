@@ -3,7 +3,6 @@
 		title: string;
 		countLabel: string;
 	}
-
 	let { title, description, countLabel }: Props = $props();
 </script>
 

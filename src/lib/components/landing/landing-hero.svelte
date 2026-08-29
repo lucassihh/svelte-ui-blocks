@@ -3,6 +3,7 @@
 	import { ArrowRight, Rocket } from "@lucide/svelte";
 
 	// UI
+  import { ShimmerButton } from "$lib/components/ui/magic-ui/shimmer-button";
 	import { Button } from "$lib/components/ui/button";
 	import { DecorIcon } from "$lib/components/ui/decor-icon";
 	import { DashedLine } from "$lib/components/ui/dashed-line";
@@ -36,22 +37,6 @@
 	<DecorIcon class="z-40 size-4 bg-background stroke-muted-foreground/80" position="bottom-right" />
 
 	<div class=" relative z-10 mx-auto flex flex-col items-center text-center">
-		<!-- Version -->
-		<a
-			class="group mx-auto flex w-fit items-center gap-3 rounded-full border bg-transparent py-1 pr-1 pl-3 shadow-lg backdrop-blur-lg"
-			href="/blocks/efferd-ui/hero"
-			id="link"
-		>
-			<Rocket class="size-3 text-muted-foreground" />
-			<span class="font-mono text-sm">60 New Blocks</span>
-			<span class="block h-5 border-l"></span>
-			<span class="flex items-center justify-center rounded-full bg-background p-2">
-				<ArrowRight
-					class="size-3 -rotate-45 rounded-full duration-150 ease-out group-hover:rotate-0"
-				/>
-			</span>
-		</a>
-
 		<!-- Hero Text -->
 		<div class="flex flex-col gap-1">
 			<h1
@@ -69,11 +54,15 @@
 		</div>
 
 		<!-- Hero Buttons -->
-		<div class="mt-8 flex flex-col items-center gap-3 sm:flex-row">
-			<Button class="rounded-none" href="blocks/efferd-ui/hero" size="lg">
-				<span>Explore</span>
-			</Button>
-		</div>
+		<a href="blocks/efferd/hero" class="mt-8 flex flex-col items-center gap-3 sm:flex-row">
+			<ShimmerButton class="shadow-2xl">
+    	<span
+    		class="text-center text-sm leading-none font-medium tracking-tight whitespace-pre-wrap text-white lg:text-lg dark:from-white dark:to-slate-900/10"
+    	>
+    		See Blocks :)
+    	</span>
+    </ShimmerButton>
+		</a>
 	</div>
 </section>
 

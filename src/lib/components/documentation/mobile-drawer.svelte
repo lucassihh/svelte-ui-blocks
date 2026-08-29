@@ -28,7 +28,7 @@
 	</Drawer.Trigger>
 
 	<Drawer.Content
-		class="data-[vaul-drawer-direction=bottom]:max-h-[50vh] data-[vaul-drawer-direction=top]:max-h-[50vh]"
+		class="data-[vaul-drawer-direction=bottom]:max-h-[50vh] data-[vaul-drawer-direction=top]:max-h-[50vh] border-border"
 	>
 		<Drawer.Header>
 			<Drawer.Title>Documentation</Drawer.Title>

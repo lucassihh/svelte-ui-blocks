@@ -13,7 +13,7 @@
 				{@const PreviewComponent = block.previewComponent}
 				<a
 					href={block.href}
-					class="group relative block aspect-video rounded-xl border transition-all duration-200 hover:border-muted-foreground/40"
+					class="group relative block aspect-video rounded-xl border border-border transition-all duration-200 hover:border-muted-foreground/40"
 					aria-label={`${block.title} - ${block.countLabel}`}
 				>
 					<div class="relative h-full">

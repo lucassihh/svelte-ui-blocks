@@ -5,9 +5,6 @@
 	// Icon
 	import Logo from "$lib/assets/svg/logo.svelte";
 
-	// Data
-	import { blocksLinks, documentationLinks } from "./footer-links.ts";
-
 	// Local Imports
 	import Social from "./social.svelte";
 	import ThemeToggle from "./theme-toggle.svelte";
@@ -38,33 +35,6 @@
 				<div class="flex gap-2">
 					<ThemeToggle />
 					<Social />
-				</div>
-			</div>
-
-			<!-- Links -->
-			<div class="col-span-8 flex justify-center md:col-span-4">
-				<!-- Blocks Links -->
-				<div class="w-full">
-					<span class="text-xs text-muted-foreground">All Blocks</span>
-					<div class="mt-2 flex flex-col gap-2">
-						{#each blocksLinks as item (item.title)}
-							<a class="w-max text-sm hover:underline" href={item.href}>
-								{item.title}
-							</a>
-						{/each}
-					</div>
-				</div>
-
-				<!-- Documentation Links -->
-				<div class="w-full">
-					<span class="text-xs text-muted-foreground">Documentation</span>
-					<div class="mt-2 flex flex-col gap-2">
-						{#each documentationLinks as item (item.title)}
-							<a class="w-max text-sm hover:underline" href={item.href}>
-								{item.title}
-							</a>
-						{/each}
-					</div>
 				</div>
 			</div>
 		</div>

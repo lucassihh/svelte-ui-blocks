@@ -1,0 +1,12 @@
+<script lang="ts">
+	import AnimatedBeamOne from "$lib/components/blocks/magic/animated-beam/animated-beam-one/animated-beam.svelte";
+</script>
+
+<svelte:head>
+	<title>Animated Beam One Preview | Svelte Efferd</title>
+	<meta name="description" content="Standalone preview for Animated Beam One in Svelte Efferd." />
+</svelte:head>
+
+<div class="flex flex-col min-h-screen w-full items-center justify-center p-2">
+	<AnimatedBeamOne />
+</div>

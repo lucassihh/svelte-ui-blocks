@@ -12,7 +12,7 @@ src/
 ├── lib/
 │ └── components/
 │ └── blocks/ # Source code for components
-│ └── [ui-name]/ # ex: efferd-ui, magic-ui
+│ └── [ui-name]/ # ex: efferd, magic
 │ └── [category]/ # ex: hero, footer, faq
 │ └── [block-id]/ # ex: hero-one, hero-two
 │
@@ -34,7 +34,7 @@ src/
 
 All folder and file parameters must use kebab-case:
 
-- [ui-name]: The UI library identifier (ex: efferd-ui, magic-ui)
+- [ui-name]: The UI library identifier (ex: efferd, magic)
 - [category]: The component category type (ex: hero, logo-cloud, faqs)
 - [block-id]: Unique block identifier (ex: hero-one, hero-two, hero-three)
 
@@ -62,7 +62,7 @@ Access registered block components directly anywhere
 <script lang="ts">
   import { registry } from "$lib/registry";
 
-  const efferd = registry["efferd-ui"];
+  const efferd = registry["efferd"];
   const heroBlockList = efferd.hero;
 </script>
 ```

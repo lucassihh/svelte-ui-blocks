@@ -1,6 +1,6 @@
-// Import efferd-ui blocks informations
+// Import efferd blocks informations
 import { registry } from "$lib/registry";
-const efferd = registry["efferd-ui"];
+const efferd = registry["efferd"];
 
 import type { Component } from "svelte";
 
@@ -38,7 +38,7 @@ export const dataBlocks: TypesCard[] = [
 		slug: "header",
 		title: "Header",
 		description: "Responsive navigation bars and mega-menus",
-		href: "/blocks/efferd-ui/header",
+		href: "/blocks/efferd/header",
 		count: efferd.header.length,
 		countLabel: isSingularOrPlural(efferd.header.length),
 		previewComponent: HeaderPreview
@@ -47,7 +47,7 @@ export const dataBlocks: TypesCard[] = [
 		slug: "hero",
 		title: "Hero Sections",
 		description: "High-impact landing page entrance sections",
-		href: "/blocks/efferd-ui/hero",
+		href: "/blocks/efferd/hero",
 		count: efferd.hero.length,
 		countLabel: isSingularOrPlural(efferd.hero.length),
 		previewComponent: HeroPreview
@@ -56,7 +56,7 @@ export const dataBlocks: TypesCard[] = [
 		slug: "auth",
 		title: "Auth",
 		description: "Login, registration, and password recovery forms",
-		href: "/blocks/efferd-ui/auth",
+		href: "/blocks/efferd/auth",
 		count: efferd.auth.length,
 		countLabel: isSingularOrPlural(efferd.auth.length),
 		previewComponent: AuthPreview
@@ -65,7 +65,7 @@ export const dataBlocks: TypesCard[] = [
 		slug: "features",
 		title: "Features",
 		description: "Grids and lists to showcase product capabilities",
-		href: "/blocks/efferd-ui/feature",
+		href: "/blocks/efferd/feature",
 		count: efferd.feature.length,
 		countLabel: isSingularOrPlural(efferd.feature.length),
 		previewComponent: FeaturesPreview
@@ -74,7 +74,7 @@ export const dataBlocks: TypesCard[] = [
 		slug: "blog",
 		title: "Blog Sections",
 		description: "Article previews and content feed layouts",
-		href: "/blocks/efferd-ui/blog",
+		href: "/blocks/efferd/blog",
 		count: efferd.blog.length,
 		countLabel: isSingularOrPlural(efferd.blog.length),
 		previewComponent: BlogPreview
@@ -83,7 +83,7 @@ export const dataBlocks: TypesCard[] = [
 		slug: "contact",
 		title: "Contact",
 		description: "Support channels and lead generation forms",
-		href: "/blocks/efferd-ui/contact",
+		href: "/blocks/efferd/contact",
 		count: efferd.contact.length,
 		countLabel: isSingularOrPlural(efferd.contact.length),
 		previewComponent: ContactPreview
@@ -92,7 +92,7 @@ export const dataBlocks: TypesCard[] = [
 		slug: "cta",
 		title: "Call to Action",
 		description: "Conversion-focused prompts and buttons",
-		href: "/blocks/efferd-ui/cta",
+		href: "/blocks/efferd/cta",
 		count: efferd.cta.length,
 		countLabel: isSingularOrPlural(efferd.cta.length),
 		previewComponent: CtaPreview
@@ -101,7 +101,7 @@ export const dataBlocks: TypesCard[] = [
 		slug: "faqs",
 		title: "FAQs",
 		description: "Accordion-style frequently asked questions",
-		href: "/blocks/efferd-ui/faq",
+		href: "/blocks/efferd/faq",
 		count: efferd.faq.length,
 		countLabel: isSingularOrPlural(efferd.faq.length),
 		previewComponent: FaqsPreview
@@ -110,7 +110,7 @@ export const dataBlocks: TypesCard[] = [
 		slug: "logo-cloud",
 		title: "Logo Cloud",
 		description: "Display grids for partner and client logos",
-		href: "/blocks/efferd-ui/logo-cloud",
+		href: "/blocks/efferd/logo-cloud",
 		count: efferd.logoCloud.length,
 		countLabel: isSingularOrPlural(efferd.logoCloud.length),
 		previewComponent: LogoCloudPreview
@@ -119,7 +119,7 @@ export const dataBlocks: TypesCard[] = [
 		slug: "footer",
 		title: "Footer",
 		description: "Site-wide navigation and legal information",
-		href: "/blocks/efferd-ui/footer",
+		href: "/blocks/efferd/footer",
 		count: efferd.footer.length,
 		countLabel: isSingularOrPlural(efferd.footer.length),
 		previewComponent: FooterPreview
@@ -128,7 +128,7 @@ export const dataBlocks: TypesCard[] = [
 		slug: "image-gallery",
 		title: "Image Gallery",
 		description: "Visual showcases for photos and portfolios",
-		href: "/blocks/efferd-ui/image-gallery",
+		href: "/blocks/efferd/image-gallery",
 		count: efferd.imageGallery.length,
 		countLabel: isSingularOrPlural(efferd.imageGallery.length),
 		previewComponent: ImageGalleryPreview
@@ -137,7 +137,7 @@ export const dataBlocks: TypesCard[] = [
 		slug: "integrations",
 		title: "Integrations",
 		description: "Connectors for third-party tools and services",
-		href: "/blocks/efferd-ui/integration",
+		href: "/blocks/efferd/integration",
 		count: efferd.integration.length,
 		countLabel: isSingularOrPlural(efferd.integration.length),
 		previewComponent: IntegrationsPreview

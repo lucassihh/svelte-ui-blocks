@@ -65,7 +65,7 @@
 	onmousemove={(e) => mouseX.set(e.pageX)}
 	onmouseleave={() => mouseX.set(Infinity)}
 	class={cn(
-		"mx-auto mt-8 flex h-14 w-max items-center justify-center gap-2 rounded-2xl border p-2 backdrop-blur-md supports-backdrop-blur:bg-white/10 supports-backdrop-blur:dark:bg-black/10",
+		"mx-auto mt-8 flex h-14 w-max items-center justify-center gap-2 rounded-2xl border border-border p-2 backdrop-blur-md supports-backdrop-blur:bg-white/10 supports-backdrop-blur:dark:bg-black/10",
 		{
 			"items-start": direction === "top",
 			"items-center": direction === "middle",

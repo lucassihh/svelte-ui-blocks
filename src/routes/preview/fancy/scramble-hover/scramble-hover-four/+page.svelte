@@ -1,0 +1,12 @@
+<script lang="ts">
+	import ScrambleHoverFour from "$lib/components/blocks/fancy/scramble-hover/scramble-hover-four/special-symbols-example.svelte";
+</script>
+
+<svelte:head>
+	<title>Scramble Hover Four Preview | Svelte Efferd</title>
+	<meta name="description" content="Standalone preview for Scramble Hover Four in Svelte Efferd." />
+</svelte:head>
+
+<div class="flex flex-col min-h-screen w-full items-center justify-center p-2">
+	<ScrambleHoverFour />
+</div>

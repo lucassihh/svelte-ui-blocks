@@ -14,8 +14,13 @@ VALID_EXTENSIONS = [
 _ext_pattern = r'\.(' + '|'.join([re.escape(ext.lstrip('.')) for ext in VALID_EXTENSIONS]) + r')$'
 CLEAN_EXT_REGEX = re.compile(_ext_pattern, flags=re.IGNORECASE)
 
-# Blocks-ui names
-UI_NAMES = ["efferd-ui", "magic-ui"]
+# Blocks names $lib/components/blocks/[ui-name]
+UI_NAMES = [
+  "efferd",
+  "magic",
+  "fancy",
+  "spell"
+]
 
 ALIAS_MAP = {
     "$lib/": "src/lib/",

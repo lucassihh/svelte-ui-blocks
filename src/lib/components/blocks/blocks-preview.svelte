@@ -128,7 +128,7 @@
 </script>
 
 <!-- Block Preview -->
-<main {id} class="group mt-4">
+<main {id} class="group">
 	<!-- Component Description & Action Buttons -->
 	<section
 		class="mx-auto flex w-full max-w-7xl flex-col border-y border-border p-4 dark:bg-[radial-gradient(35%_80%_at_15%_0%,--theme(--color-foreground/.1),transparent)]"
@@ -483,10 +483,10 @@
 
 							{#if isLoading}
 								<div
-									class="absolute inset-0 right-2 flex items-center justify-center border-x bg-background"
+									class="absolute inset-0 right-2 flex items-center justify-center border-x bg-background border-border"
 								>
 									<div
-										class="size-6 animate-spin rounded-full border border-primary border-t-transparent"
+										class="size-6 animate-spin rounded-full border border-border border-primary border-t-transparent"
 									></div>
 								</div>
 							{/if}
