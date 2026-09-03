@@ -25,7 +25,7 @@
 </script>
 
 <div class="relative mx-auto w-full max-w-lg border border-border">
-	<div class="border-b px-6 py-8 border-border">
+	<div class="border-b border-border px-6 py-8">
 		<div class="mb-8 flex flex-col gap-2">
 			<h1 class="text-xl font-semibold md:text-2xl">Get in touch</h1>
 			{" "}

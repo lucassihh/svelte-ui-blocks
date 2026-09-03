@@ -55,7 +55,7 @@
 				Continue with Google
 			</Button>
 
-			<AuthDivider>OR CONTINUE WITH EMAIL</AuthDivider>
+			<AuthDivider class="text-border">OR CONTINUE WITH EMAIL</AuthDivider>
 
 			<form class="space-y-2">
 				<InputGroup>

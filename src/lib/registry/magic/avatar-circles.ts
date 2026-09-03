@@ -28,7 +28,7 @@ export const avatarCirclesBlocks: BlockShowcaseItem[] = [
 		previewComponent: AvatarCircleOnePreview,
 		previewHref: "/preview/magic/avatar-circles/avatar-circle-one",
 		previewMode: "iframe",
-		previewHeight: 420,
+		previewHeight: 820,
 		installId: "avatar-circle-one",
 		codeTree: createBlockCodeTree("avatar-circle-one", [
 			{

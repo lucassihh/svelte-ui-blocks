@@ -2,9 +2,13 @@
 @import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap");
 
 @import "tailwindcss";
+@import "tw-animate-css";
 
-/* Imports */
-@import "$lib/styles/theme.css";
-@import "$lib/styles/animations.css";
+/* Themes & Animations */
+@import "$lib/styles/themes/serenitas.css";
+@import "$lib/styles/themes/veil-theme.css";
+@import "./app-animations.css";
+
+/* Necessary for UI Components  */
 @import "$lib/styles/magic-ui.css";
 @import "$lib/styles/fancy-ui.css";

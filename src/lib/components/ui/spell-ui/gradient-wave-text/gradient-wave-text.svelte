@@ -88,9 +88,7 @@
 	});
 
 	const gradient = $derived(
-		radial
-			? `radial-gradient(circle at 50% bottom, ${stops})`
-			: `linear-gradient(0deg, ${stops})`
+		radial ? `radial-gradient(circle at 50% bottom, ${stops})` : `linear-gradient(0deg, ${stops})`
 	);
 
 	const rootStyle = $derived(
@@ -115,7 +113,7 @@
 			"transform: translateZ(0)",
 			`padding-bottom: ${bottomOffset}%`,
 			`margin-bottom: -${bottomOffset}%`,
-			"padding-inline: 2px",
+			"padding-inline: 2px"
 		].join("; ")
 	);
 

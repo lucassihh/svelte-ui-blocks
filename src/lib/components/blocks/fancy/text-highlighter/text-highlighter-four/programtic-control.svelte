@@ -17,64 +17,62 @@
 	const highlightClass = "rounded-[0.3em]! px-px";
 	const lightHighlightColor = "#F7F764";
 	const darkHighlightColor = "#F7005F";
-	let highlightColor = $derived(
-		mode.current === "dark" ? darkHighlightColor : lightHighlightColor
-	);
+	let highlightColor = $derived(mode.current === "dark" ? darkHighlightColor : lightHighlightColor);
 
 	const paragraphs: Fragment[][] = [
 		[
 			{
-				text: "The present-day designer has a host of printing types at his disposal. Since ",
+				text: "The present-day designer has a host of printing types at his disposal. Since "
 			},
 			{ text: "Gutenberg", highlight: true },
 			{
-				text: " first invented movable type in 1436-55 hundreds of different types have been designed and cast in lead. The ",
+				text: " first invented movable type in 1436-55 hundreds of different types have been designed and cast in lead. The "
 			},
 			{ text: "most recent technical developments", highlight: true },
 			{
-				text: " with computer and photo-typesetting have once again brought new faces or variations of old ones on the market.",
-			},
+				text: " with computer and photo-typesetting have once again brought new faces or variations of old ones on the market."
+			}
 		],
 		[
 			{
-				text: "Knowledge of the quality of a typeface is of the greatest importance for the ",
+				text: "Knowledge of the quality of a typeface is of the greatest importance for the "
 			},
 			{ text: "functional, aesthetic and psychological effect", highlight: true },
 			{
-				text: " of printed matter. Again, the typographic design, i.e. the correct spaces between letters and words and the length and spacing of lines conducive to easy reading, does much to enhance the impression created.",
-			},
+				text: " of printed matter. Again, the typographic design, i.e. the correct spaces between letters and words and the length and spacing of lines conducive to easy reading, does much to enhance the impression created."
+			}
 		],
 		[
 			{ text: "By studying the classic designs of " },
 			{ text: "Garamond, Caslon, Bodoni, Walbaum", highlight: true },
 			{
-				text: " and others, the designer can learn what the timeless criteria are which produce a refined and artistic typeface that makes for ease of reading.",
-			},
+				text: " and others, the designer can learn what the timeless criteria are which produce a refined and artistic typeface that makes for ease of reading."
+			}
 		],
 		[
 			{ text: "The lead type designs of " },
 			{ text: "Berthold, Helvetica, Folio, Univers", highlight: true },
 			{
-				text: " etc. produce pleasant and easily legible type areas. The typographic rules that apply to the roman typefaces are also valid for the sans serifs.",
-			},
+				text: " etc. produce pleasant and easily legible type areas. The typographic rules that apply to the roman typefaces are also valid for the sans serifs."
+			}
 		],
 		[
 			{ text: "The creators of these type designs", highlight: true },
 			{
-				text: " were extremely intelligent artists with high creative powers. This is shown by the fact that for more than four centuries innumerable type designers have sought to create new type alphabets but very few of these have gained acceptance. An ",
+				text: " were extremely intelligent artists with high creative powers. This is shown by the fact that for more than four centuries innumerable type designers have sought to create new type alphabets but very few of these have gained acceptance. An "
 			},
 			{ text: "alphabet of Garamond", highlight: true },
-			{ text: " for example, is an artistic achievement of the first order." },
+			{ text: " for example, is an artistic achievement of the first order." }
 		],
 		[
 			{
-				text: "Every designer who is concerned with typography should take the trouble when creating graphic designs to ",
+				text: "Every designer who is concerned with typography should take the trouble when creating graphic designs to "
 			},
 			{ text: "sketch words and sentences by hand", highlight: true },
 			{
-				text: ". Many designers take advantage of the Letraset process, which can undoubtedly produce a clean draft design that is almost ready for press.",
-			},
-		],
+				text: ". Many designers take advantage of the Letraset process, which can undoubtedly produce a clean draft design that is almost ready for press."
+			}
+		]
 	];
 
 	let highlighterRefs = $state<(HighlighterRef | null)[]>([]);
@@ -123,10 +121,7 @@
 					<div class="space-y-2">
 						<p>
 							{#each paragraph as fragment, fragmentIndex (fragmentIndex)}
-								{@const highlightIndex = getHighlightIndex(
-									paragraphIndex,
-									fragmentIndex
-								)}
+								{@const highlightIndex = getHighlightIndex(paragraphIndex, fragmentIndex)}
 								{#if fragment.highlight}
 									<TextHighlighter
 										bind:this={highlighterRefs[highlightIndex]}
@@ -151,7 +146,7 @@
 	<div class="absolute top-4 left-4 flex gap-4">
 		<button
 			onclick={isHighlighted ? handleReset : handleHighlight}
-			class="border-border cursor-pointer rounded-md border bg-transparent px-3 py-1.5 text-xs text-black backdrop-blur-lg hover:bg-black/5 dark:text-white dark:hover:bg-white/10"
+			class="cursor-pointer rounded-md border border-border bg-transparent px-3 py-1.5 text-xs text-black backdrop-blur-lg hover:bg-black/5 dark:text-white dark:hover:bg-white/10"
 		>
 			{isHighlighted ? "Reset" : "Highlight"}
 		</button>

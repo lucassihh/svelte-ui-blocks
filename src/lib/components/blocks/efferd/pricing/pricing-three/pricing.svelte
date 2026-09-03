@@ -80,7 +80,7 @@
 	];
 </script>
 
-<section class="w-full">
+<section class="w-full p-4">
 	<div class="mx-auto mb-4 max-w-md space-y-2">
 		<div class="flex justify-center">
 			<div class="rounded-md border border-border px-4 py-1 text-sm">Pricing</div>

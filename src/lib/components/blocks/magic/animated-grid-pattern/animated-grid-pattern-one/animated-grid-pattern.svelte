@@ -4,7 +4,7 @@
 </script>
 
 <div
-	class="bg-background relative flex h-125 w-70 items-center justify-center overflow-hidden rounded-lg border border-border md:min-w-2xl md:p-20"
+	class="relative flex h-125 w-70 items-center justify-center overflow-hidden rounded-lg border border-border bg-background md:min-w-2xl md:p-20"
 >
 	<AnimatedGridPattern
 		numSquares={30}

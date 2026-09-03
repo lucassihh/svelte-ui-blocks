@@ -21,7 +21,7 @@
 		fuchsia: "var(--color-fuchsia-500)",
 		rose: "var(--color-rose-500)",
 		sky: "var(--color-sky-500)",
-		amber: "var(--color-amber-500)",
+		amber: "var(--color-amber-500)"
 	} as const;
 
 	export const colorSelectorDotVariants = tv({
@@ -30,17 +30,17 @@
 			size: {
 				sm: "size-4",
 				default: "size-5",
-				lg: "size-6",
+				lg: "size-6"
 			},
 			selected: {
 				true: "ring-2 ring-offset-2",
-				false: "",
-			},
+				false: ""
+			}
 		},
 		defaultVariants: {
 			size: "default",
-			selected: false,
-		},
+			selected: false
+		}
 	});
 
 	export type ColorSelectorPresetColor = keyof typeof colorMap;

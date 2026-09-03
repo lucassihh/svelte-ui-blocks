@@ -2,7 +2,9 @@
 	import FlickeringGrid from "$lib/components/ui/magic-ui/flickering-grid/flickering-grid.svelte";
 </script>
 
-<div class="bg-background relative h-125 w-full overflow-hidden rounded-lg border border-border md:max-w-xl">
+<div
+	class="relative h-125 w-full overflow-hidden rounded-lg border border-border bg-background md:max-w-xl"
+>
 	<FlickeringGrid
 		class="absolute inset-0 z-0 size-full"
 		squareSize={4}

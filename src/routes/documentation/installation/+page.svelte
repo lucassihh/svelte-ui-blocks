@@ -22,7 +22,7 @@
 	description="Efferd follows the same registry-style flow already built into the block preview experience: initialize once, then add the block you want."
 >
 	{#snippet actions()}
-		<Button href="/blocks/efferd-ui/hero" size="sm">See Blocks</Button>
+		<Button href="/blocks/efferd/hero" size="sm">See Blocks</Button>
 		<Button
 			href="https://jsrepo.dev/docs/cli/add"
 			size="sm"

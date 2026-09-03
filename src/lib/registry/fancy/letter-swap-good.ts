@@ -32,7 +32,7 @@ export const letterSwapGoodBlocks: BlockShowcaseItem[] = [
 		previewComponent: LetterSwapOnePreview,
 		previewHref: "/preview/fancy/letter-swap-good/letter-swap-one",
 		previewMode: "iframe",
-		previewHeight: 420,
+		previewHeight: 820,
 		installId: "letter-swap-one",
 		codeTree: createBlockCodeTree("letter-swap-one", [
 			{
@@ -50,7 +50,7 @@ export const letterSwapGoodBlocks: BlockShowcaseItem[] = [
 		previewComponent: LetterSwapTwoPreview,
 		previewHref: "/preview/fancy/letter-swap-good/letter-swap-two",
 		previewMode: "iframe",
-		previewHeight: 420,
+		previewHeight: 820,
 		installId: "letter-swap-two",
 		codeTree: createBlockCodeTree("letter-swap-two", [
 			{
@@ -68,7 +68,7 @@ export const letterSwapGoodBlocks: BlockShowcaseItem[] = [
 		previewComponent: LetterSwapThreePreview,
 		previewHref: "/preview/fancy/letter-swap-good/letter-swap-three",
 		previewMode: "iframe",
-		previewHeight: 420,
+		previewHeight: 820,
 		installId: "letter-swap-three",
 		codeTree: createBlockCodeTree("letter-swap-three", [
 			{

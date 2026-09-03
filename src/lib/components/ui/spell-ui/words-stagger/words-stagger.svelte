@@ -46,7 +46,7 @@
 		triggerOnView = false,
 		once = true,
 		onStart,
-		onComplete,
+		onComplete
 	}: WordsStaggerProps = $props();
 
 	let MotionComponent = $derived(motion[as]);
@@ -116,7 +116,7 @@
 				return {
 					kind: "whitespace",
 					id: `whitespace-${tokenIndex}`,
-					value: token.value,
+					value: token.value
 				};
 			}
 
@@ -124,7 +124,7 @@
 				kind: "word" as const,
 				id: `word-${tokenIndex}`,
 				content: token.value,
-				index: wordIndex,
+				index: wordIndex
 			};
 
 			wordIndex += 1;
@@ -141,7 +141,7 @@
 	const transition = $derived.by(() => ({
 		type: "tween" as const,
 		ease: "easeOut" as const,
-		duration: safeSpeed,
+		duration: safeSpeed
 	}));
 
 	const containerVariants = $derived.by<Variants>(() => ({
@@ -149,9 +149,9 @@
 		visible: {
 			transition: {
 				delayChildren: safeDelay,
-				staggerChildren: safeStagger,
-			},
-		},
+				staggerChildren: safeStagger
+			}
+		}
 	}));
 
 	const wordVariants = $derived.by<Variants>(() => ({
@@ -159,14 +159,14 @@
 			opacity: 0,
 			y: 10,
 			filter: "blur(10px)",
-			transition,
+			transition
 		},
 		visible: {
 			opacity: 1,
 			y: 0,
 			filter: "blur(0px)",
-			transition,
-		},
+			transition
+		}
 	}));
 
 	const shouldAnimate = $derived(wordCount > 0 && trigger && isInView);
@@ -183,7 +183,7 @@
 		observer.observe(sourceElement, {
 			childList: true,
 			subtree: true,
-			characterData: true,
+			characterData: true
 		});
 
 		return () => observer.disconnect();

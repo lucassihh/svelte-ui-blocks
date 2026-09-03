@@ -28,7 +28,7 @@ export const scrollProgressBlocks: BlockShowcaseItem[] = [
 		previewComponent: ScrollProgressOnePreview,
 		previewHref: "/preview/magic/scroll-progress/scroll-progress-one",
 		previewMode: "iframe",
-		previewHeight: 420,
+		previewHeight: 820,
 		installId: "scroll-progress-one",
 		codeTree: createBlockCodeTree("scroll-progress-one", [
 			{

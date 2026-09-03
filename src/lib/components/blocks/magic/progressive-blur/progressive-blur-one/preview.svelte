@@ -7,7 +7,9 @@
 	<ScrollArea fadeEffect={false} class="relative h-100 overflow-hidden">
 		<div class="flex flex-col gap-2 p-4">
 			{#each { length: 20 } as _, index}
-				<div class="bg-card flex h-20 w-full items-center justify-center rounded-xl border border-border">
+				<div
+					class="flex h-20 w-full items-center justify-center rounded-xl border border-border bg-card"
+				>
 					{index}
 				</div>
 			{/each}

@@ -5,8 +5,7 @@
 	import { cn } from "$lib/utils";
 
 	type RevealDirection = "start" | "end" | "center";
-	type MotionSpanProps = Omit<MotionProps<"span">, "as" | "asChild"> &
-		MotionHTMLAttributes<"span">;
+	type MotionSpanProps = Omit<MotionProps<"span">, "as" | "asChild"> & MotionHTMLAttributes<"span">;
 	type MouseEnterEvent = Parameters<NonNullable<MotionSpanProps["onmouseenter"]>>[0];
 	type MouseLeaveEvent = Parameters<NonNullable<MotionSpanProps["onmouseleave"]>>[0];
 
@@ -64,9 +63,7 @@
 	let sourceSegments = $derived.by(() => splitGraphemes(text));
 	let availableCharacters = $derived.by(() => {
 		if (useOriginalCharsOnly) {
-			return Array.from(
-				new Set(sourceSegments.filter((segment) => !isWhitespaceSegment(segment)))
-			);
+			return Array.from(new Set(sourceSegments.filter((segment) => !isWhitespaceSegment(segment))));
 		}
 
 		const providedCharacters = splitGraphemes(characters).filter(
@@ -77,9 +74,7 @@
 			return providedCharacters;
 		}
 
-		return Array.from(
-			new Set(sourceSegments.filter((segment) => !isWhitespaceSegment(segment)))
-		);
+		return Array.from(new Set(sourceSegments.filter((segment) => !isWhitespaceSegment(segment))));
 	});
 
 	let displaySegments = $state<string[]>([]);
@@ -123,8 +118,7 @@
 			case "center": {
 				const middle = Math.floor(length / 2);
 				const offset = Math.floor(revealedIndices.size / 2);
-				const nextIndex =
-					revealedIndices.size % 2 === 0 ? middle + offset : middle - offset - 1;
+				const nextIndex = revealedIndices.size % 2 === 0 ? middle + offset : middle - offset - 1;
 
 				if (nextIndex >= 0 && nextIndex < length && !revealedIndices.has(nextIndex)) {
 					return nextIndex;
@@ -147,7 +141,7 @@
 				segment,
 				index,
 				isWhitespace: isWhitespaceSegment(segment),
-				isRevealed: revealedIndices.has(index),
+				isRevealed: revealedIndices.has(index)
 			}));
 
 			const scrambledCharacters = shuffleArray(
@@ -242,11 +236,7 @@
 				if (revealedIndices.size < segments.length) {
 					const nextIndex = getNextRevealIndex(segments.length, activeRevealDirection);
 					revealedIndices.add(nextIndex);
-					displaySegments = scrambleTextSegments(
-						segments,
-						randomPool,
-						activeUseOriginalCharsOnly
-					);
+					displaySegments = scrambleTextSegments(segments, randomPool, activeUseOriginalCharsOnly);
 
 					if (revealedIndices.size >= segments.length) {
 						clearAnimationInterval();
@@ -262,11 +252,7 @@
 				return;
 			}
 
-			displaySegments = scrambleTextSegments(
-				segments,
-				randomPool,
-				activeUseOriginalCharsOnly
-			);
+			displaySegments = scrambleTextSegments(segments, randomPool, activeUseOriginalCharsOnly);
 			currentIteration += 1;
 
 			if (currentIteration >= activeMaxIterations) {

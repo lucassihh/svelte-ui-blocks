@@ -46,7 +46,7 @@ export const flowBlocks: BlockShowcaseItem[] = [
 		previewComponent: FlowOnePreview,
 		previewHref: "/preview/magic/flow/flow-one",
 		previewMode: "iframe",
-		previewHeight: 420,
+		previewHeight: 820,
 		installId: "flow-one",
 		codeTree: createBlockCodeTree("flow-one", [
 			{
@@ -64,7 +64,7 @@ export const flowBlocks: BlockShowcaseItem[] = [
 		previewComponent: FlowTwoPreview,
 		previewHref: "/preview/magic/flow/flow-two",
 		previewMode: "iframe",
-		previewHeight: 420,
+		previewHeight: 820,
 		installId: "flow-two",
 		codeTree: createBlockCodeTree("flow-two", [
 			{
@@ -82,7 +82,7 @@ export const flowBlocks: BlockShowcaseItem[] = [
 		previewComponent: FlowThreePreview,
 		previewHref: "/preview/magic/flow/flow-three",
 		previewMode: "iframe",
-		previewHeight: 420,
+		previewHeight: 820,
 		installId: "flow-three",
 		codeTree: createBlockCodeTree("flow-three", [
 			{
@@ -100,7 +100,7 @@ export const flowBlocks: BlockShowcaseItem[] = [
 		previewComponent: FlowFourPreview,
 		previewHref: "/preview/magic/flow/flow-four",
 		previewMode: "iframe",
-		previewHeight: 420,
+		previewHeight: 820,
 		installId: "flow-four",
 		codeTree: createBlockCodeTree("flow-four", [
 			{
@@ -118,7 +118,7 @@ export const flowBlocks: BlockShowcaseItem[] = [
 		previewComponent: FlowFivePreview,
 		previewHref: "/preview/magic/flow/flow-five",
 		previewMode: "iframe",
-		previewHeight: 420,
+		previewHeight: 820,
 		installId: "flow-five",
 		codeTree: createBlockCodeTree("flow-five", [
 			{
@@ -136,7 +136,7 @@ export const flowBlocks: BlockShowcaseItem[] = [
 		previewComponent: FlowSixPreview,
 		previewHref: "/preview/magic/flow/flow-six",
 		previewMode: "iframe",
-		previewHeight: 420,
+		previewHeight: 820,
 		installId: "flow-six",
 		codeTree: createBlockCodeTree("flow-six", [
 			{
@@ -154,7 +154,7 @@ export const flowBlocks: BlockShowcaseItem[] = [
 		previewComponent: FlowSevenPreview,
 		previewHref: "/preview/magic/flow/flow-seven",
 		previewMode: "iframe",
-		previewHeight: 420,
+		previewHeight: 820,
 		installId: "flow-seven",
 		codeTree: createBlockCodeTree("flow-seven", [
 			{
@@ -172,7 +172,7 @@ export const flowBlocks: BlockShowcaseItem[] = [
 		previewComponent: FlowEightPreview,
 		previewHref: "/preview/magic/flow/flow-eight",
 		previewMode: "iframe",
-		previewHeight: 420,
+		previewHeight: 820,
 		installId: "flow-eight",
 		codeTree: createBlockCodeTree("flow-eight", [
 			{
@@ -190,7 +190,7 @@ export const flowBlocks: BlockShowcaseItem[] = [
 		previewComponent: FlowNinePreview,
 		previewHref: "/preview/magic/flow/flow-nine",
 		previewMode: "iframe",
-		previewHeight: 420,
+		previewHeight: 820,
 		installId: "flow-nine",
 		codeTree: createBlockCodeTree("flow-nine", [
 			{
@@ -208,7 +208,7 @@ export const flowBlocks: BlockShowcaseItem[] = [
 		previewComponent: FlowTenPreview,
 		previewHref: "/preview/magic/flow/flow-ten",
 		previewMode: "iframe",
-		previewHeight: 420,
+		previewHeight: 820,
 		installId: "flow-ten",
 		codeTree: createBlockCodeTree("flow-ten", [
 			{

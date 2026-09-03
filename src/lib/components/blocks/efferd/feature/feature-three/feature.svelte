@@ -33,7 +33,9 @@
 	];
 </script>
 
-<div class="mx-auto min-h-screen w-full max-w-5xl place-content-center space-y-12 border-x py-4 border-border">
+<div
+	class="mx-auto min-h-screen w-full max-w-5xl place-content-center space-y-12 border-x border-border p-8 py-4"
+>
 	<div class="relative grid grid-cols-1 gap-px bg-border md:grid-cols-2 lg:grid-cols-4">
 		<FullWidthDivider position="top" />
 

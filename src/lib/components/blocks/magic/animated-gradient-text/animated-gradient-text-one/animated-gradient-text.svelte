@@ -21,9 +21,7 @@
 		></span>
 		🎉
 		<hr class="mx-2 h-4 w-px shrink-0 bg-neutral-500" />
-		<AnimatedGradientText class="text-sm font-medium">
-			Introducing Magic UI
-		</AnimatedGradientText>
+		<AnimatedGradientText class="text-sm font-medium">Introducing Magic UI</AnimatedGradientText>
 		<ChevronRight
 			class="ml-1 size-4 stroke-neutral-500 transition-transform duration-300 ease-in-out group-hover:translate-x-0.5"
 		/>

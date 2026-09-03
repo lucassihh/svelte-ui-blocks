@@ -34,7 +34,7 @@ export const hexagonPatternBlocks: BlockShowcaseItem[] = [
 		previewComponent: HexagonPatternOnePreview,
 		previewHref: "/preview/magic/hexagon-pattern/hexagon-pattern-one",
 		previewMode: "iframe",
-		previewHeight: 420,
+		previewHeight: 820,
 		installId: "hexagon-pattern-one",
 		codeTree: createBlockCodeTree("hexagon-pattern-one", [
 			{
@@ -52,7 +52,7 @@ export const hexagonPatternBlocks: BlockShowcaseItem[] = [
 		previewComponent: HexagonPatternTwoPreview,
 		previewHref: "/preview/magic/hexagon-pattern/hexagon-pattern-two",
 		previewMode: "iframe",
-		previewHeight: 420,
+		previewHeight: 820,
 		installId: "hexagon-pattern-two",
 		codeTree: createBlockCodeTree("hexagon-pattern-two", [
 			{
@@ -70,7 +70,7 @@ export const hexagonPatternBlocks: BlockShowcaseItem[] = [
 		previewComponent: HexagonPatternThreePreview,
 		previewHref: "/preview/magic/hexagon-pattern/hexagon-pattern-three",
 		previewMode: "iframe",
-		previewHeight: 420,
+		previewHeight: 820,
 		installId: "hexagon-pattern-three",
 		codeTree: createBlockCodeTree("hexagon-pattern-three", [
 			{
@@ -88,7 +88,7 @@ export const hexagonPatternBlocks: BlockShowcaseItem[] = [
 		previewComponent: HexagonPatternFourPreview,
 		previewHref: "/preview/magic/hexagon-pattern/hexagon-pattern-four",
 		previewMode: "iframe",
-		previewHeight: 420,
+		previewHeight: 820,
 		installId: "hexagon-pattern-four",
 		codeTree: createBlockCodeTree("hexagon-pattern-four", [
 			{

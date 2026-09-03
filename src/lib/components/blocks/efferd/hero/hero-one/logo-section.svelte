@@ -2,7 +2,7 @@
 	import LogoCloudThree from "$lib/components/efferd-ui/logo-cloud/logo-cloud-three/logo-cloud.svelte";
 </script>
 
-<section class="relative space-y-4 border-t pt-6 pb-10 border-border">
+<section class="relative space-y-4 border-t border-border pt-6 pb-10">
 	<h2 class="text-center text-lg font-medium tracking-tight text-muted-foreground md:text-xl">
 		Trusted by <span class="text-foreground">experts</span>
 	</h2>

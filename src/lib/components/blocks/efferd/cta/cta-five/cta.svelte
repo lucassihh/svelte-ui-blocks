@@ -25,7 +25,7 @@
 </script>
 
 <div
-	class="relative mx-auto flex w-full max-w-3xl flex-col justify-between gap-y-6 border-x bg-secondary/80 px-2 py-8 md:px-4 dark:bg-secondary/40 border-border"
+	class="relative mx-auto flex w-full max-w-3xl flex-col justify-between gap-y-6 border-x border-border bg-secondary/80 px-2 py-8 md:px-4 dark:bg-secondary/40"
 >
 	<FullWidthDivider position="top" />
 

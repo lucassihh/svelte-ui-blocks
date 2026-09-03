@@ -28,7 +28,7 @@ export const morphingTextBlocks: BlockShowcaseItem[] = [
 		previewComponent: MorphingTextOnePreview,
 		previewHref: "/preview/magic/morphing-text/morphing-text-one",
 		previewMode: "iframe",
-		previewHeight: 420,
+		previewHeight: 820,
 		installId: "morphing-text-one",
 		codeTree: createBlockCodeTree("morphing-text-one", [
 			{

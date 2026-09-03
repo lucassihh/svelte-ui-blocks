@@ -47,7 +47,7 @@
 	const defaultTransition: AnimationOptions = {
 		type: "tween",
 		ease: [0.625, 0.05, 0, 1],
-		duration: 0.5,
+		duration: 0.5
 	};
 
 	let {
@@ -100,9 +100,9 @@
 					{
 						id: `line-${index}-0`,
 						value: line || "\u00A0",
-						index,
-					},
-				],
+						index
+					}
+				]
 			}));
 		}
 
@@ -115,7 +115,7 @@
 					kind: "whitespace",
 					id: `whitespace-${tokenIndex}`,
 					value: token.value,
-					index: cursor,
+					index: cursor
 				});
 
 				cursor += 1;
@@ -127,14 +127,14 @@
 					? splitGraphemes(token.value).map((value, characterIndex) => ({
 							id: `token-${tokenIndex}-${characterIndex}`,
 							value,
-							index: cursor + characterIndex,
+							index: cursor + characterIndex
 						}))
 					: [
 							{
 								id: `token-${tokenIndex}-0`,
 								value: token.value,
-								index: cursor,
-							},
+								index: cursor
+							}
 						];
 
 			cursor += characters.length;
@@ -142,7 +142,7 @@
 			renderItems.push({
 				kind: "group",
 				id: `group-${tokenIndex}`,
-				characters,
+				characters
 			});
 		}
 
@@ -179,9 +179,9 @@
 				delay:
 					delay +
 					(typeof transition.delay === "number" ? transition.delay : 0) +
-					getStaggerDelay(index),
-			},
-		}),
+					getStaggerDelay(index)
+			}
+		})
 	}));
 
 	function startInternalAnimation() {
@@ -225,7 +225,7 @@
 		observer.observe(sourceElement, {
 			childList: true,
 			subtree: true,
-			characterData: true,
+			characterData: true
 		});
 
 		return () => observer.disconnect();
@@ -308,8 +308,7 @@
 							animate={shouldAnimate ? "visible" : "hidden"}
 							custom={character.index}
 							{variants}
-							onAnimationComplete={(definition) =>
-								handleUnitComplete(definition, character.index)}
+							onAnimationComplete={(definition) => handleUnitComplete(definition, character.index)}
 						>
 							{character.value}
 						</motion.span>

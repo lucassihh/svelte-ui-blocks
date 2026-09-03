@@ -14,7 +14,7 @@
 	const springTransition = {
 		type: "spring",
 		duration: 0.4,
-		bounce: 0.2,
+		bounce: 0.2
 	} as const;
 
 	let {
@@ -73,11 +73,11 @@
 				initial={{ pathLength: defaultChecked ? 1 : 0, opacity: defaultChecked ? 1 : 0 }}
 				animate={{
 					pathLength: isChecked ? 1 : 0,
-					opacity: isChecked ? 1 : 0,
+					opacity: isChecked ? 1 : 0
 				}}
 				transition={{
 					pathLength: { ease: "easeOut", duration: 0.3 },
-					opacity: { duration: 0 },
+					opacity: { duration: 0 }
 				}}
 			/>
 		</svg>
@@ -87,9 +87,7 @@
 		<span
 			class={cn(
 				"text-base font-medium transition-colors duration-200",
-				isChecked
-					? "text-slate-500 dark:text-slate-400"
-					: "text-slate-950 dark:text-slate-50"
+				isChecked ? "text-slate-500 dark:text-slate-400" : "text-slate-950 dark:text-slate-50"
 			)}
 		>
 			{title}
@@ -100,7 +98,7 @@
 			initial={{ width: defaultChecked ? "100%" : 0, opacity: defaultChecked ? 1 : 0 }}
 			animate={{
 				width: isChecked ? "100%" : 0,
-				opacity: isChecked ? 1 : 0,
+				opacity: isChecked ? 1 : 0
 			}}
 			transition={springTransition}
 		/>

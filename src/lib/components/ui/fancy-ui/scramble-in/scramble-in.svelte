@@ -65,9 +65,7 @@
 	let sourceSegments = $derived.by(() => splitIntoGraphemes(text));
 	let displaySegments = $derived.by(() => splitIntoGraphemes(displayText));
 	let scrambleSegments = $derived.by(() => splitIntoGraphemes(characters));
-	let revealedText = $derived.by(() =>
-		joinSegments(displaySegments.slice(0, visibleLetterCount))
-	);
+	let revealedText = $derived.by(() => joinSegments(displaySegments.slice(0, visibleLetterCount)));
 	let scrambledText = $derived.by(() => joinSegments(displaySegments.slice(visibleLetterCount)));
 
 	let previousAutoStart = false;

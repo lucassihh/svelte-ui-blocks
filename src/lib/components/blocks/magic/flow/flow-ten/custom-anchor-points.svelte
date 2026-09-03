@@ -1,5 +1,5 @@
 <script lang="ts">
-	import * as Flow from '$lib/components/ui/magic-ui/flow';
+	import * as Flow from "$lib/components/ui/magic-ui/flow";
 
 	type RenderArgs = {
 		props: Record<string, unknown>;

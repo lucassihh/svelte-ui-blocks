@@ -4,7 +4,7 @@
 </script>
 
 <div
-	class="bg-background relative flex h-125 w-full flex-col items-center justify-center overflow-hidden rounded-lg border border-border"
+	class="relative flex h-125 w-full flex-col items-center justify-center overflow-hidden rounded-lg border border-border bg-background"
 >
 	<GridPattern
 		squares={[
@@ -19,7 +19,7 @@
 			[10, 15],
 			[15, 10],
 			[10, 15],
-			[15, 10],
+			[15, 10]
 		]}
 		class={cn(
 			"[mask-image:radial-gradient(400px_circle_at_center,white,transparent)]",

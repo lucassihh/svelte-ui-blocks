@@ -17,7 +17,9 @@
 			<NavigationMenu.Trigger class="bg-transparent">Product</NavigationMenu.Trigger>
 			<NavigationMenu.Content class="NavigationMenuContent p-0">
 				<div class="bg-muted/50 p-1 pr-1.5 dark:bg-background">
-					<div class="grid w-lg grid-cols-2 gap-2 rounded-lg border border-border bg-popover p-2 shadow">
+					<div
+						class="grid w-lg grid-cols-2 gap-2 rounded-lg border border-border bg-popover p-2 shadow"
+					>
 						{#each productLinks as item, i}
 							<NavigationMenu.Link>
 								<LinkItem {...item} />

@@ -33,7 +33,7 @@ export const noiseTextureBlocks: BlockShowcaseItem[] = [
 		previewComponent: NoiseTextureOnePreview,
 		previewHref: "/preview/magic/noise-texture/noise-texture-one",
 		previewMode: "iframe",
-		previewHeight: 420,
+		previewHeight: 820,
 		installId: "noise-texture-one",
 		codeTree: createBlockCodeTree("noise-texture-one", [
 			{
@@ -52,7 +52,7 @@ export const noiseTextureBlocks: BlockShowcaseItem[] = [
 		previewComponent: NoiseTextureTwoPreview,
 		previewHref: "/preview/magic/noise-texture/noise-texture-two",
 		previewMode: "iframe",
-		previewHeight: 420,
+		previewHeight: 820,
 		installId: "noise-texture-two",
 		codeTree: createBlockCodeTree("noise-texture-two", [
 			{

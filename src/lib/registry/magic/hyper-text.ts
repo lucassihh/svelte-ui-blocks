@@ -28,7 +28,7 @@ export const hyperTextBlocks: BlockShowcaseItem[] = [
 		previewComponent: HyperTextOnePreview,
 		previewHref: "/preview/magic/hyper-text/hyper-text-one",
 		previewMode: "iframe",
-		previewHeight: 420,
+		previewHeight: 820,
 		installId: "hyper-text-one",
 		codeTree: createBlockCodeTree("hyper-text-one", [
 			{

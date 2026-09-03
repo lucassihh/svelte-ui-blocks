@@ -1,5 +1,6 @@
 import os
 import re
+from collections import Counter
 from pathlib import Path
 
 # Settings & Directory Paths
@@ -10,12 +11,12 @@ INDEX_FILE_PATH = REGISTRY_DIR / "index.ts"
 # Blocks names $lib/components/blocks/[ui-name]
 UI_NAMES = [
   "efferd",
-  "magic",
   "fancy",
-  "spell"
+  "magic",
+  "veil"
 ]
 
-# Regex to detect exported block arrays (e.g., "export const heroBlocks: BlockShowcaseItem[]")
+# Regex to detect exported block arrays (ex: "export const heroBlocks: BlockShowcaseItem[]")
 BLOCK_EXPORT_REGEX = re.compile(r'export\s+const\s+([a-zA-Z0-9_]+Blocks)\b')
 
 
@@ -32,7 +33,6 @@ def discover_ui_registry_modules(ui_name: str) -> list[tuple[str, str, str]]:
     """
     ui_dir = REGISTRY_DIR / ui_name
     if not ui_dir.exists():
-        print(f"Directory not found for UI '{ui_name}': {ui_dir}")
         return []
 
     modules = []
@@ -52,41 +52,60 @@ def discover_ui_registry_modules(ui_name: str) -> list[tuple[str, str, str]]:
 
         match = BLOCK_EXPORT_REGEX.search(content)
         if match:
-            var_name = match.group(1)  # e.g., 'animatedGradientTextBlocks'
-            modules.append((category_slug, category_key, var_name))
+            var_name = match.group(1)  # e.g., 'heroBlocks'
         else:
-            # Fallback naming strategy if regex match fails
-            fallback_var_name = f"{category_key}Blocks"
-            modules.append((category_slug, category_key, fallback_var_name))
+            var_name = f"{category_key}Blocks"
+
+        modules.append((category_slug, category_key, var_name))
 
     return modules
 
 
 def generate_registry_index_content() -> str:
-    import_sections = []
-    registry_entries = []
+    # First pass: Collect all modules from all UIs
+    ui_data: dict[str, list[tuple[str, str, str]]] = {}
+    all_var_names = []
 
     for ui_name in UI_NAMES:
         modules = discover_ui_registry_modules(ui_name)
-        if not modules:
-            continue
+        if modules:
+            ui_data[ui_name] = modules
+            for _, _, var_name in modules:
+                all_var_names.append(var_name)
 
-        # Build imports block
+    # Count occurrences of each variable name to detect duplicates
+    var_counts = Counter(all_var_names)
+
+    import_sections = []
+    registry_entries = []
+
+    # Second pass: Build imports and dictionary with smart alias logic
+    for ui_name, modules in ui_data.items():
         import_lines = [f"// Imports for {ui_name}"]
-        for category_slug, _, var_name in modules:
-            import_lines.append(
-                f'import {{ {var_name} }} from "./{ui_name}/{category_slug}";'
-            )
-        import_sections.append("\n".join(import_lines))
-
-        # Build registry dictionary entry
         dict_lines = [f'\t"{ui_name}": {{']
-        for idx, (_, category_key, var_name) in enumerate(modules):
+
+        for idx, (category_slug, category_key, orig_var_name) in enumerate(modules):
+            # Check if this variable name is duplicated across different UIs
+            is_duplicate = var_counts[orig_var_name] > 1
+
+            if is_duplicate:
+                # Ex: heroBlocks -> veilHeroBlocks
+                local_alias = f"{to_camel_case(ui_name)}{orig_var_name[0].upper()}{orig_var_name[1:]}"
+                import_stmt = f'import {{ {orig_var_name} as {local_alias} }} from "./{ui_name}/{category_slug}";'
+                var_to_use_in_dict = local_alias
+            else:
+                import_stmt = f'import {{ {orig_var_name} }} from "./{ui_name}/{category_slug}";'
+                var_to_use_in_dict = orig_var_name
+
+            import_lines.append(import_stmt)
+
             is_last = idx == len(modules) - 1
             comma = "" if is_last else ","
-            dict_lines.append(f'\t\t{category_key}: {var_name}{comma}')
+            dict_lines.append(f'\t\t{category_key}: {var_to_use_in_dict}{comma}')
+
         dict_lines.append("\t}")
 
+        import_sections.append("\n".join(import_lines))
         registry_entries.append("\n".join(dict_lines))
 
     imports_block = "\n\n".join(import_sections)
@@ -104,7 +123,7 @@ export type RegistryKey = keyof typeof registry;
 /* So you can import like this in any page:
 
     import {{ registry }} from "$lib/registry";
-    const efferd = registry["efferd-ui"];
+    const efferd = registry["efferd"];
 */
 """
     return output

@@ -4,7 +4,7 @@
 		img,
 		name,
 		username,
-		body,
+		body
 	}: {
 		img: string;
 		name: string;

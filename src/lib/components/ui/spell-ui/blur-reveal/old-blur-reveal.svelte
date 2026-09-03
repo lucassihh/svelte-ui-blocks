@@ -51,7 +51,7 @@
 		once = true,
 		letterSpacing,
 		onStart,
-		onComplete,
+		onComplete
 	}: BlurRevealProps = $props();
 
 	let MotionComponent = $derived(motion[as]);
@@ -132,7 +132,7 @@
 					kind: "space",
 					id: `space-${tokenIndex}`,
 					value: token,
-					index: cursor,
+					index: cursor
 				});
 
 				cursor += 1;
@@ -141,7 +141,7 @@
 
 			let characters = splitIntoCharacters(token).map((value, characterIndex) => ({
 				value,
-				index: cursor + characterIndex,
+				index: cursor + characterIndex
 			}));
 
 			cursor += characters.length;
@@ -149,7 +149,7 @@
 			renderTokens.push({
 				kind: "word",
 				id: `word-${tokenIndex}`,
-				characters,
+				characters
 			});
 		}
 
@@ -170,16 +170,16 @@
 			opacity: 0,
 			transition: {
 				staggerChildren: safeStagger,
-				staggerDirection: -1,
-			},
+				staggerDirection: -1
+			}
 		},
 		visible: {
 			opacity: 1,
 			transition: {
 				delayChildren: safeDelay,
-				staggerChildren: safeStagger,
-			},
-		},
+				staggerChildren: safeStagger
+			}
+		}
 	}));
 
 	let itemVariants = $derived.by<Variants>(() => ({
@@ -188,17 +188,17 @@
 			filter: "blur(12px)",
 			y: 10,
 			transition: {
-				duration: safeDuration,
-			},
+				duration: safeDuration
+			}
 		},
 		visible: {
 			opacity: 1,
 			filter: "blur(0px)",
 			y: 0,
 			transition: {
-				duration: safeDuration,
-			},
-		},
+				duration: safeDuration
+			}
+		}
 	}));
 
 	$effect(() => {
@@ -275,8 +275,7 @@
 						class="inline-block"
 						variants={itemVariants}
 						style={letterSpacingValue ? { marginRight: letterSpacingValue } : undefined}
-						onAnimationComplete={(definition) =>
-							handleUnitComplete(definition, character.index)}
+						onAnimationComplete={(definition) => handleUnitComplete(definition, character.index)}
 					>
 						{character.value}
 					</motion.span>

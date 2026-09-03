@@ -10,7 +10,7 @@
 	let steps = $state<Step[]>([
 		{ id: 1, label: "Start" },
 		{ id: 2, label: "Review" },
-		{ id: 3, label: "Complete" },
+		{ id: 3, label: "Complete" }
 	]);
 
 	function addNode() {
@@ -28,7 +28,7 @@
 	<div class="flex justify-center gap-2">
 		<button
 			type="button"
-			class="bg-primary text-primary-foreground rounded-md px-3 py-1.5 text-sm disabled:opacity-50"
+			class="rounded-md bg-primary px-3 py-1.5 text-sm text-primary-foreground disabled:opacity-50"
 			disabled={steps.length >= 6}
 			onclick={addNode}>Add node</button
 		>

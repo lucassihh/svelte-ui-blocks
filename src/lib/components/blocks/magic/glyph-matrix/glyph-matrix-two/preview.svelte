@@ -3,7 +3,7 @@
 	import { mode } from "mode-watcher";
 </script>
 
-<div class="bg-background relative h-100 w-full overflow-hidden rounded-lg">
+<div class="relative h-100 w-full overflow-hidden rounded-lg bg-background">
 	<GlyphMatrix
 		glyphs="01·•+*/\<>="
 		cellSize={14}

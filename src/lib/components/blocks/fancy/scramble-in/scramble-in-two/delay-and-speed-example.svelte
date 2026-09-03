@@ -7,22 +7,22 @@
 			text: "Immediate and sharp for hero headlines",
 			delay: 0,
 			speed: 16,
-			scrambledLetterCount: 6,
+			scrambledLetterCount: 6
 		},
 		{
 			label: "300ms delay / 28ms speed",
 			text: "Balanced pacing for supporting copy",
 			delay: 300,
 			speed: 28,
-			scrambledLetterCount: 5,
+			scrambledLetterCount: 5
 		},
 		{
 			label: "700ms delay / 42ms speed",
 			text: "Slower reveal for deliberate callouts",
 			delay: 700,
 			speed: 42,
-			scrambledLetterCount: 4,
-		},
+			scrambledLetterCount: 4
+		}
 	];
 </script>
 

@@ -9,7 +9,7 @@
 		ltr: { type: "spring", duration: 0.68, bounce: 0 },
 		rtl: { type: "spring", duration: 0.8, bounce: 0 },
 		ttb: { type: "spring", duration: 0.8, bounce: 0 },
-		btt: { type: "spring", duration: 0.8, bounce: 0 },
+		btt: { type: "spring", duration: 0.8, bounce: 0 }
 	};
 </script>
 

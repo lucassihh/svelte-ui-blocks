@@ -8,7 +8,7 @@ export interface Dimensions {
 export function useDimensions(getElement: () => HTMLElement | SVGElement | null): Dimensions {
 	let dimensions = $state<Dimensions>({
 		width: 0,
-		height: 0,
+		height: 0
 	});
 
 	onMount(() => {

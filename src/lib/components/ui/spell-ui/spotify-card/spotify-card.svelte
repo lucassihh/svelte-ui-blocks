@@ -116,7 +116,7 @@
 		void (async () => {
 			try {
 				const response = await fetch(`/api/spotify?url=${encodeURIComponent(currentUrl)}`, {
-					signal: controller.signal,
+					signal: controller.signal
 				});
 
 				if (!response.ok) {
@@ -149,18 +149,18 @@
 		bind:this={ref}
 		data-slot="spotify-card-skeleton"
 		class={cn(
-			"border-border bg-muted/50 relative flex h-full max-h-[100px] w-full items-stretch justify-center overflow-hidden rounded-2xl border p-3",
+			"relative flex h-full max-h-[100px] w-full items-stretch justify-center overflow-hidden rounded-2xl border border-border bg-muted/50 p-3",
 			className
 		)}
 		{...restProps}
 	>
 		<div
-			class="bg-muted aspect-square w-full max-w-[75px] animate-pulse self-center rounded-lg"
+			class="aspect-square w-full max-w-[75px] animate-pulse self-center rounded-lg bg-muted"
 		></div>
 		<div class="z-10 flex w-full flex-col justify-end">
 			<div class="flex flex-col items-end gap-1 pl-6">
-				<div class="bg-muted h-4 w-24 animate-pulse rounded"></div>
-				<div class="bg-muted h-4 w-16 animate-pulse rounded"></div>
+				<div class="h-4 w-24 animate-pulse rounded bg-muted"></div>
+				<div class="h-4 w-16 animate-pulse rounded bg-muted"></div>
 			</div>
 		</div>
 	</div>
@@ -169,7 +169,7 @@
 		bind:this={ref}
 		data-slot="spotify-card-error"
 		class={cn(
-			"border-border bg-muted/50 text-muted-foreground flex h-[100px] w-full items-center justify-center rounded-2xl border p-6",
+			"flex h-[100px] w-full items-center justify-center rounded-2xl border border-border bg-muted/50 p-6 text-muted-foreground",
 			className
 		)}
 		{...restProps}
@@ -181,7 +181,7 @@
 		bind:this={ref}
 		data-slot="spotify-card"
 		class={cn(
-			"border-border relative flex h-full max-h-[100px] w-full items-stretch justify-center overflow-hidden rounded-2xl border p-3",
+			"relative flex h-full max-h-[100px] w-full items-stretch justify-center overflow-hidden rounded-2xl border border-border p-3",
 			className
 		)}
 		{...restProps}
@@ -228,9 +228,7 @@
 				<div
 					class={cn(
 						"absolute top-1/2 left-1/2 -z-[1] size-[80%] -translate-y-1/2 transition-all duration-300",
-						isPlaying
-							? "translate-x-[-10%]"
-							: "translate-x-[-50%] group-hover:translate-x-[-10%]"
+						isPlaying ? "translate-x-[-10%]" : "translate-x-[-50%] group-hover:translate-x-[-10%]"
 					)}
 				>
 					<svg
@@ -254,58 +252,22 @@
 						</mask>
 						<g mask={`url(#${maskId})`}>
 							<g filter={`url(#${filterId0})`}>
-								<circle
-									cx="55"
-									cy="55"
-									r="51.5"
-									stroke="#fff"
-									stroke-opacity="0.21"
-								/>
+								<circle cx="55" cy="55" r="51.5" stroke="#fff" stroke-opacity="0.21" />
 							</g>
 							<g filter={`url(#${filterId1})`}>
-								<circle
-									cx="55"
-									cy="55"
-									r="47.5"
-									stroke="#fff"
-									stroke-opacity="0.21"
-								/>
+								<circle cx="55" cy="55" r="47.5" stroke="#fff" stroke-opacity="0.21" />
 							</g>
 							<g filter={`url(#${filterId2})`}>
-								<circle
-									cx="55"
-									cy="55"
-									r="45.5"
-									stroke="#fff"
-									stroke-opacity="0.21"
-								/>
+								<circle cx="55" cy="55" r="45.5" stroke="#fff" stroke-opacity="0.21" />
 							</g>
 							<g filter={`url(#${filterId3})`}>
-								<circle
-									cx="55"
-									cy="55"
-									r="43.5"
-									stroke="#fff"
-									stroke-opacity="0.21"
-								/>
+								<circle cx="55" cy="55" r="43.5" stroke="#fff" stroke-opacity="0.21" />
 							</g>
 							<g filter={`url(#${filterId4})`}>
-								<circle
-									cx="55"
-									cy="55"
-									r="37.5"
-									stroke="#fff"
-									stroke-opacity="0.21"
-								/>
+								<circle cx="55" cy="55" r="37.5" stroke="#fff" stroke-opacity="0.21" />
 							</g>
 							<g filter={`url(#${filterId5})`}>
-								<circle
-									cx="55"
-									cy="55"
-									r="34.5"
-									stroke="#fff"
-									stroke-opacity="0.21"
-								/>
+								<circle cx="55" cy="55" r="34.5" stroke="#fff" stroke-opacity="0.21" />
 							</g>
 							<g filter={`url(#${filterId6})`} opacity="0.4">
 								<path fill="#fff" d="M-14 38l68 19.579L-14 74V38z" />
@@ -331,15 +293,8 @@
 								filterUnits="userSpaceOnUse"
 							>
 								<feFlood flood-opacity="0" result="BackgroundImageFix" />
-								<feBlend
-									in="SourceGraphic"
-									in2="BackgroundImageFix"
-									result="shape"
-								/>
-								<feGaussianBlur
-									result="effect1_foregroundBlur_6138_16576"
-									stdDeviation="1"
-								/>
+								<feBlend in="SourceGraphic" in2="BackgroundImageFix" result="shape" />
+								<feGaussianBlur result="effect1_foregroundBlur_6138_16576" stdDeviation="1" />
 							</filter>
 							<filter
 								id={filterId1}
@@ -351,15 +306,8 @@
 								filterUnits="userSpaceOnUse"
 							>
 								<feFlood flood-opacity="0" result="BackgroundImageFix" />
-								<feBlend
-									in="SourceGraphic"
-									in2="BackgroundImageFix"
-									result="shape"
-								/>
-								<feGaussianBlur
-									result="effect1_foregroundBlur_6138_16576"
-									stdDeviation="1"
-								/>
+								<feBlend in="SourceGraphic" in2="BackgroundImageFix" result="shape" />
+								<feGaussianBlur result="effect1_foregroundBlur_6138_16576" stdDeviation="1" />
 							</filter>
 							<filter
 								id={filterId2}
@@ -371,15 +319,8 @@
 								filterUnits="userSpaceOnUse"
 							>
 								<feFlood flood-opacity="0" result="BackgroundImageFix" />
-								<feBlend
-									in="SourceGraphic"
-									in2="BackgroundImageFix"
-									result="shape"
-								/>
-								<feGaussianBlur
-									result="effect1_foregroundBlur_6138_16576"
-									stdDeviation="1"
-								/>
+								<feBlend in="SourceGraphic" in2="BackgroundImageFix" result="shape" />
+								<feGaussianBlur result="effect1_foregroundBlur_6138_16576" stdDeviation="1" />
 							</filter>
 							<filter
 								id={filterId3}
@@ -391,15 +332,8 @@
 								filterUnits="userSpaceOnUse"
 							>
 								<feFlood flood-opacity="0" result="BackgroundImageFix" />
-								<feBlend
-									in="SourceGraphic"
-									in2="BackgroundImageFix"
-									result="shape"
-								/>
-								<feGaussianBlur
-									result="effect1_foregroundBlur_6138_16576"
-									stdDeviation="1"
-								/>
+								<feBlend in="SourceGraphic" in2="BackgroundImageFix" result="shape" />
+								<feGaussianBlur result="effect1_foregroundBlur_6138_16576" stdDeviation="1" />
 							</filter>
 							<filter
 								id={filterId4}
@@ -411,15 +345,8 @@
 								filterUnits="userSpaceOnUse"
 							>
 								<feFlood flood-opacity="0" result="BackgroundImageFix" />
-								<feBlend
-									in="SourceGraphic"
-									in2="BackgroundImageFix"
-									result="shape"
-								/>
-								<feGaussianBlur
-									result="effect1_foregroundBlur_6138_16576"
-									stdDeviation="1"
-								/>
+								<feBlend in="SourceGraphic" in2="BackgroundImageFix" result="shape" />
+								<feGaussianBlur result="effect1_foregroundBlur_6138_16576" stdDeviation="1" />
 							</filter>
 							<filter
 								id={filterId5}
@@ -431,15 +358,8 @@
 								filterUnits="userSpaceOnUse"
 							>
 								<feFlood flood-opacity="0" result="BackgroundImageFix" />
-								<feBlend
-									in="SourceGraphic"
-									in2="BackgroundImageFix"
-									result="shape"
-								/>
-								<feGaussianBlur
-									result="effect1_foregroundBlur_6138_16576"
-									stdDeviation="1"
-								/>
+								<feBlend in="SourceGraphic" in2="BackgroundImageFix" result="shape" />
+								<feGaussianBlur result="effect1_foregroundBlur_6138_16576" stdDeviation="1" />
 							</filter>
 							<filter
 								id={filterId6}
@@ -451,15 +371,8 @@
 								filterUnits="userSpaceOnUse"
 							>
 								<feFlood flood-opacity="0" result="BackgroundImageFix" />
-								<feBlend
-									in="SourceGraphic"
-									in2="BackgroundImageFix"
-									result="shape"
-								/>
-								<feGaussianBlur
-									result="effect1_foregroundBlur_6138_16576"
-									stdDeviation="8"
-								/>
+								<feBlend in="SourceGraphic" in2="BackgroundImageFix" result="shape" />
+								<feGaussianBlur result="effect1_foregroundBlur_6138_16576" stdDeviation="8" />
 							</filter>
 							<filter
 								id={filterId7}
@@ -471,15 +384,8 @@
 								filterUnits="userSpaceOnUse"
 							>
 								<feFlood flood-opacity="0" result="BackgroundImageFix" />
-								<feBlend
-									in="SourceGraphic"
-									in2="BackgroundImageFix"
-									result="shape"
-								/>
-								<feGaussianBlur
-									result="effect1_foregroundBlur_6138_16576"
-									stdDeviation="8"
-								/>
+								<feBlend in="SourceGraphic" in2="BackgroundImageFix" result="shape" />
+								<feGaussianBlur result="effect1_foregroundBlur_6138_16576" stdDeviation="8" />
 							</filter>
 							<filter
 								id={filterId8}
@@ -491,15 +397,8 @@
 								filterUnits="userSpaceOnUse"
 							>
 								<feFlood flood-opacity="0" result="BackgroundImageFix" />
-								<feBlend
-									in="SourceGraphic"
-									in2="BackgroundImageFix"
-									result="shape"
-								/>
-								<feGaussianBlur
-									result="effect1_foregroundBlur_6138_16576"
-									stdDeviation="8"
-								/>
+								<feBlend in="SourceGraphic" in2="BackgroundImageFix" result="shape" />
+								<feGaussianBlur result="effect1_foregroundBlur_6138_16576" stdDeviation="8" />
 							</filter>
 							<filter
 								id={filterId9}
@@ -511,15 +410,8 @@
 								filterUnits="userSpaceOnUse"
 							>
 								<feFlood flood-opacity="0" result="BackgroundImageFix" />
-								<feBlend
-									in="SourceGraphic"
-									in2="BackgroundImageFix"
-									result="shape"
-								/>
-								<feGaussianBlur
-									result="effect1_foregroundBlur_6138_16576"
-									stdDeviation="8"
-								/>
+								<feBlend in="SourceGraphic" in2="BackgroundImageFix" result="shape" />
+								<feGaussianBlur result="effect1_foregroundBlur_6138_16576" stdDeviation="8" />
 							</filter>
 						</defs>
 					</svg>
@@ -536,12 +428,7 @@
 					class="cursor-pointer text-[#BAAEBA]"
 					aria-label={`Open ${data.title} on Spotify`}
 				>
-					<svg
-						viewBox="0 0 24 24"
-						class="size-[18px]"
-						fill="currentColor"
-						aria-hidden="true"
-					>
+					<svg viewBox="0 0 24 24" class="size-[18px]" fill="currentColor" aria-hidden="true">
 						<circle cx="12" cy="12" r="10" />
 						<path
 							d="M7.6 9.4c3.3-1 6.8-.6 9.3.8"
@@ -569,9 +456,7 @@
 			</div>
 
 			<div class="pl-6 text-end">
-				<h2
-					class="text-sm font-semibold tracking-[-.006em] whitespace-nowrap text-[#D6D1D4]"
-				>
+				<h2 class="text-sm font-semibold tracking-[-.006em] whitespace-nowrap text-[#D6D1D4]">
 					{data.title}
 				</h2>
 				<h2 class="text-sm font-medium tracking-[-.006em] whitespace-nowrap text-[#BAAEBA]">

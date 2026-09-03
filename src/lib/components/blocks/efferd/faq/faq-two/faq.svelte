@@ -58,11 +58,11 @@
 	];
 </script>
 
-<div class="mx-auto min-h-screen w-full max-w-5xl lg:border-x border-border">
+<div class="mx-auto min-h-screen w-full max-w-5xl border-border lg:border-x">
 	<div
-		class="mx-4 grid h-[calc(100vh-3.5rem)] grid-cols-1 border-x md:mx-0 md:grid-cols-2 md:border-x-0 border-border"
+		class="mx-4 grid h-[calc(100vh-3.5rem)] grid-cols-1 border-x border-border md:mx-0 md:grid-cols-2 md:border-x-0"
 	>
-		<div class="space-y-4 px-4 pt-12 pb-4 md:border-r border-border">
+		<div class="space-y-4 border-border px-4 pt-12 pb-4 md:border-r">
 			<h2 class="text-3xl font-black md:text-4xl">FAQs</h2>
 			<p class="text-muted-foreground">
 				Here are some common questions and answers that you might encounter when using Efferd.
@@ -72,7 +72,7 @@
 		<div class="place-content-center">
 			<Accordion type="single" class="rounded-none border-x-0 border-y border-border">
 				{#each questions as item (item.id)}
-					<AccordionItem value={item.id} class="px-4 border-border">
+					<AccordionItem value={item.id} class="border-border px-4">
 						<AccordionTrigger
 							class="py-4 hover:no-underline focus-visible:underline focus-visible:ring-0"
 						>

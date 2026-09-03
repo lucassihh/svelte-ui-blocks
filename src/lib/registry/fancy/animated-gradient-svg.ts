@@ -28,7 +28,7 @@ export const animatedGradientSvgBlocks: BlockShowcaseItem[] = [
 		previewComponent: AnimatedGradientSvgTwoPreview,
 		previewHref: "/preview/fancy/animated-gradient-svg/animated-gradient-svg-two",
 		previewMode: "iframe",
-		previewHeight: 420,
+		previewHeight: 820,
 		installId: "animated-gradient-svg-two",
 		codeTree: createBlockCodeTree("animated-gradient-svg-two", [
 			{

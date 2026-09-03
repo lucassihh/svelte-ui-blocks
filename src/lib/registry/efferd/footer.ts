@@ -6,7 +6,6 @@ import { createBlockCodeTree } from "$lib/components/blocks/blocks-code-tree";
 import FooterFivePreview from "$lib/components/blocks/efferd/footer/footer-five/footer.svelte";
 import FooterFourPreview from "$lib/components/blocks/efferd/footer/footer-four/LinkGroup.svelte";
 import FooterOnePreview from "$lib/components/blocks/efferd/footer/footer-one/footer.svelte";
-import FooterSixPreview from "$lib/components/blocks/efferd/footer/footer-six/AnimatedContainer.svelte";
 import FooterThreePreview from "$lib/components/blocks/efferd/footer/footer-three/AnimatedContainer.svelte";
 import FooterTwoPreview from "$lib/components/blocks/efferd/footer/footer-two/footer.svelte";
 
@@ -17,8 +16,6 @@ import footerFooterFiveFooterSource from "$lib/components/blocks/efferd/footer/f
 import footerFooterFourFooterSource from "$lib/components/blocks/efferd/footer/footer-four/footer.svelte?raw";
 import footerFooterFourLinkgroupSource from "$lib/components/blocks/efferd/footer/footer-four/LinkGroup.svelte?raw";
 import footerFooterOneFooterSource from "$lib/components/blocks/efferd/footer/footer-one/footer.svelte?raw";
-import footerFooterSixAnimatedcontainerSource from "$lib/components/blocks/efferd/footer/footer-six/AnimatedContainer.svelte?raw";
-import footerFooterSixFooterSource from "$lib/components/blocks/efferd/footer/footer-six/footer.svelte?raw";
 import footerFooterThreeAnimatedcontainerSource from "$lib/components/blocks/efferd/footer/footer-three/AnimatedContainer.svelte?raw";
 import footerFooterThreeFooterSource from "$lib/components/blocks/efferd/footer/footer-three/footer.svelte?raw";
 import footerFooterTwoFooterSource from "$lib/components/blocks/efferd/footer/footer-two/footer.svelte?raw";
@@ -57,7 +54,7 @@ export const footerBlocks: BlockShowcaseItem[] = [
 		previewComponent: FooterOnePreview,
 		previewHref: "/preview/efferd/footer/footer-one",
 		previewMode: "iframe",
-		previewHeight: 420,
+		previewHeight: 820,
 		installId: "footer-one",
 		codeTree: createBlockCodeTree("footer-one", [
 			{
@@ -77,7 +74,7 @@ export const footerBlocks: BlockShowcaseItem[] = [
 		previewComponent: FooterTwoPreview,
 		previewHref: "/preview/efferd/footer/footer-two",
 		previewMode: "iframe",
-		previewHeight: 420,
+		previewHeight: 820,
 		installId: "footer-two",
 		codeTree: createBlockCodeTree("footer-two", [
 			{
@@ -97,7 +94,7 @@ export const footerBlocks: BlockShowcaseItem[] = [
 		previewComponent: FooterThreePreview,
 		previewHref: "/preview/efferd/footer/footer-three",
 		previewMode: "iframe",
-		previewHeight: 420,
+		previewHeight: 820,
 		installId: "footer-three",
 		codeTree: createBlockCodeTree("footer-three:footer", [
 			{
@@ -122,7 +119,7 @@ export const footerBlocks: BlockShowcaseItem[] = [
 		previewComponent: FooterFourPreview,
 		previewHref: "/preview/efferd/footer/footer-four",
 		previewMode: "iframe",
-		previewHeight: 420,
+		previewHeight: 820,
 		installId: "footer-four",
 		codeTree: createBlockCodeTree("footer-four:footer", [
 			{
@@ -146,7 +143,7 @@ export const footerBlocks: BlockShowcaseItem[] = [
 		previewComponent: FooterFivePreview,
 		previewHref: "/preview/efferd/footer/footer-five",
 		previewMode: "iframe",
-		previewHeight: 420,
+		previewHeight: 820,
 		installId: "footer-five",
 		codeTree: createBlockCodeTree("footer-five", [
 			{
@@ -156,32 +153,6 @@ export const footerBlocks: BlockShowcaseItem[] = [
 				code: footerFooterFiveFooterSource
 			},
 			...buttonFiles
-		])
-	},	{
-		id: "footer-six",
-		title: "Footer Six",
-		description:
-			"A Footer Six composition.",
-		previewComponent: FooterSixPreview,
-		previewHref: "/preview/efferd/footer/footer-six",
-		previewMode: "iframe",
-		previewHeight: 420,
-		installId: "footer-six",
-		codeTree: createBlockCodeTree("footer-six:footer", [
-			{
-				id: "footer-six:AnimatedContainer",
-				path: "src/lib/components/blocks/efferd/footer/footer-six/AnimatedContainer.svelte",
-				lang: "svelte",
-				code: footerFooterSixAnimatedcontainerSource
-			},
-			{
-				id: "footer-six:footer",
-				path: "src/lib/components/blocks/efferd/footer/footer-six/footer.svelte",
-				lang: "svelte",
-				code: footerFooterSixFooterSource
-			},
-			...buttonFiles,
-			...logoFiles
 		])
 	}
 ];

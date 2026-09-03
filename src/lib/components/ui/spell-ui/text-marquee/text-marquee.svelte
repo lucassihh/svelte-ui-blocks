@@ -85,11 +85,7 @@
 	}
 
 	.spell-text-marquee__viewport {
-		mask-image: linear-gradient(
-			rgba(0, 0, 0, 0) 0%,
-			rgb(0, 0, 0) 43.6902%,
-			rgba(0, 0, 0, 0) 100%
-		);
+		mask-image: linear-gradient(rgba(0, 0, 0, 0) 0%, rgb(0, 0, 0) 43.6902%, rgba(0, 0, 0, 0) 100%);
 		-webkit-mask-image: linear-gradient(
 			rgba(0, 0, 0, 0) 0%,
 			rgb(0, 0, 0) 43.6902%,

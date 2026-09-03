@@ -2,7 +2,7 @@
 	import { type VariantProps, tv } from "tailwind-variants";
 
 	export const labelInputVariants = tv({
-		base: "peer text-primary block h-10 w-full rounded-lg border px-3.5 text-sm shadow-xs transition-[color,box-shadow,border-color] outline-none autofill:shadow-[inset_0_0_0px_1000px_var(--color-background)] focus:ring-[2px] disabled:cursor-not-allowed disabled:opacity-50 dark:border-neutral-700/75 dark:bg-neutral-950",
+		base: "peer block h-10 w-full rounded-lg border px-3.5 text-sm text-primary shadow-xs transition-[color,box-shadow,border-color] outline-none autofill:shadow-[inset_0_0_0px_1000px_var(--color-background)] focus:ring-[2px] disabled:cursor-not-allowed disabled:opacity-50 dark:border-neutral-700/75 dark:bg-neutral-950",
 		variants: {
 			ringColor: {
 				muted: "border-input bg-background focus:ring-muted!",
@@ -25,15 +25,15 @@
 				emerald: "border-input bg-background focus:ring-emerald-600",
 				sky: "border-input bg-background focus:ring-sky-600",
 				slate: "border-input bg-background focus:ring-slate-600",
-				fuchsia: "border-input bg-background focus:ring-fuchsia-600",
+				fuchsia: "border-input bg-background focus:ring-fuchsia-600"
 			},
 			hasPasswordToggle: {
-				true: "pr-9",
-			},
+				true: "pr-9"
+			}
 		},
 		defaultVariants: {
-			ringColor: "muted",
-		},
+			ringColor: "muted"
+		}
 	});
 
 	export type RingColor = VariantProps<typeof labelInputVariants>["ringColor"];
@@ -100,7 +100,7 @@
 	/>
 
 	<label
-		class="bg-background text-muted-foreground pointer-events-none absolute inset-y-0 left-1.75 my-auto block h-fit origin-top-left -translate-y-[19px] scale-[.8] px-2 text-sm whitespace-nowrap transition-transform duration-200 will-change-transform peer-placeholder-shown:translate-y-0 peer-placeholder-shown:scale-100 peer-focus:-translate-y-[19px] peer-focus:scale-[.8] dark:bg-neutral-950"
+		class="pointer-events-none absolute inset-y-0 left-1.75 my-auto block h-fit origin-top-left -translate-y-[19px] scale-[.8] bg-background px-2 text-sm whitespace-nowrap text-muted-foreground transition-transform duration-200 will-change-transform peer-placeholder-shown:translate-y-0 peer-placeholder-shown:scale-100 peer-focus:-translate-y-[19px] peer-focus:scale-[.8] dark:bg-neutral-950"
 		for={id}
 	>
 		{label}
@@ -108,7 +108,7 @@
 
 	{#if isPasswordType}
 		<button
-			class="text-muted-foreground/80 hover:text-foreground focus-visible:border-ring focus-visible:ring-ring/50 absolute inset-y-0 end-0 flex h-full w-9 items-center justify-center rounded-e-md transition-[color,box-shadow] outline-none focus:z-10 focus-visible:ring-[3px] disabled:pointer-events-none disabled:cursor-not-allowed disabled:opacity-50"
+			class="absolute inset-y-0 end-0 flex h-full w-9 items-center justify-center rounded-e-md text-muted-foreground/80 transition-[color,box-shadow] outline-none hover:text-foreground focus:z-10 focus-visible:border-ring focus-visible:ring-[3px] focus-visible:ring-ring/50 disabled:pointer-events-none disabled:cursor-not-allowed disabled:opacity-50"
 			type="button"
 			onclick={toggleVisibility}
 			aria-label={isVisible ? "Hide password" : "Show password"}

@@ -1,13 +1,13 @@
 <script lang="ts">
 	// UI
-  import AnimatedShinyText from "$lib/components/ui/magic-ui/animated-shiny-text/animated-shiny-text.svelte";
+	import AnimatedShinyText from "$lib/components/ui/magic-ui/animated-shiny-text/animated-shiny-text.svelte";
 	import { Button } from "$lib/components/ui/button";
 
 	// Hooks & Other
 	import { cn } from "$lib/utils";
 
 	// Icon
-  import Logo from "$lib/assets/svg/logo.svelte";
+	import Logo from "$lib/assets/svg/logo.svelte";
 	import { MoonIcon, SunIcon } from "@lucide/svelte";
 
 	// Local Imports
@@ -25,14 +25,12 @@
 		<div class="flex items-center gap-1">
 			<MobileNav />
 			<!-- Logo -->
-				<a aria-label="home" class="flex items-center gap-1" href="/">
-					<Logo />
-          <AnimatedShinyText
-		  	class="transition ease-out text-primary"
-	  	>
+			<a aria-label="home" class="flex items-center gap-1" href="/">
+				<Logo />
+				<AnimatedShinyText class="text-primary transition ease-out">
 					<span class="font-mono font-medium tracking-tight">Svelte UI</span>
-          </AnimatedShinyText>
-        </a>
+				</AnimatedShinyText>
+			</a>
 		</div>
 		<div class="hidden items-center gap-2 md:flex">
 			<div>

@@ -34,7 +34,7 @@ export const scrambleHoverBlocks: BlockShowcaseItem[] = [
 		previewComponent: ScrambleHoverOnePreview,
 		previewHref: "/preview/fancy/scramble-hover/scramble-hover-one",
 		previewMode: "iframe",
-		previewHeight: 420,
+		previewHeight: 820,
 		installId: "scramble-hover-one",
 		codeTree: createBlockCodeTree("scramble-hover-one", [
 			{
@@ -52,7 +52,7 @@ export const scrambleHoverBlocks: BlockShowcaseItem[] = [
 		previewComponent: ScrambleHoverTwoPreview,
 		previewHref: "/preview/fancy/scramble-hover/scramble-hover-two",
 		previewMode: "iframe",
-		previewHeight: 420,
+		previewHeight: 820,
 		installId: "scramble-hover-two",
 		codeTree: createBlockCodeTree("scramble-hover-two", [
 			{
@@ -70,7 +70,7 @@ export const scrambleHoverBlocks: BlockShowcaseItem[] = [
 		previewComponent: ScrambleHoverThreePreview,
 		previewHref: "/preview/fancy/scramble-hover/scramble-hover-three",
 		previewMode: "iframe",
-		previewHeight: 420,
+		previewHeight: 820,
 		installId: "scramble-hover-three",
 		codeTree: createBlockCodeTree("scramble-hover-three", [
 			{
@@ -88,7 +88,7 @@ export const scrambleHoverBlocks: BlockShowcaseItem[] = [
 		previewComponent: ScrambleHoverFourPreview,
 		previewHref: "/preview/fancy/scramble-hover/scramble-hover-four",
 		previewMode: "iframe",
-		previewHeight: 420,
+		previewHeight: 820,
 		installId: "scramble-hover-four",
 		codeTree: createBlockCodeTree("scramble-hover-four", [
 			{

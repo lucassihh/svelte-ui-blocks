@@ -141,7 +141,7 @@
 	</div>
 
 	<div class="relative grid min-h-full grid-cols-1 py-12 md:grid-cols-3">
-		<div class="flex h-full items-start justify-center border-b pb-2 md:border-b-0 border-border">
+		<div class="flex h-full items-start justify-center border-b border-border pb-2 md:border-b-0">
 			<div
 				class="flex w-max flex-wrap items-start justify-start gap-2 md:flex-col md:justify-center"
 			>

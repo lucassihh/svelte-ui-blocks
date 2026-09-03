@@ -35,7 +35,9 @@
 	];
 </script>
 
-<div class="mx-auto flex min-h-screen w-full max-w-3xl flex-col justify-start md:border-x md:border-border border-border">
+<div
+	class="mx-auto flex min-h-screen w-full max-w-3xl flex-col justify-start border-border md:border-x md:border-border"
+>
 	<div class="space-y-2 px-4 py-8 md:py-12">
 		<h1 class="text-2xl font-semibold tracking-wide md:text-4xl">Latest Blogs</h1>
 		<p class="text-sm text-muted-foreground">

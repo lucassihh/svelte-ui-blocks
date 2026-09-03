@@ -4,7 +4,7 @@
 </script>
 
 <div
-	class="bg-background relative flex h-125 w-full flex-col items-center justify-center overflow-hidden rounded-lg border border-border"
+	class="relative flex h-125 w-full flex-col items-center justify-center overflow-hidden rounded-lg border border-border bg-background"
 >
 	<GridPattern />
 </div>

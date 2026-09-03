@@ -40,8 +40,8 @@
 		animate: {
 			width: "auto",
 			opacity: 1,
-			transition: { duration: 0.4, type: "spring", bounce: 0 } satisfies AnimationOptions,
-		},
+			transition: { duration: 0.4, type: "spring", bounce: 0 } satisfies AnimationOptions
+		}
 	};
 
 	let {
@@ -62,7 +62,7 @@
 		useInViewOptionsProp = {
 			once: true,
 			amount: 0.5,
-			root: containerRef ?? undefined,
+			root: containerRef ?? undefined
 		},
 		animationVariants = defaultAnimationVariants,
 		class: className,
@@ -83,7 +83,7 @@
 			once: useInViewOptionsProp.once ?? true,
 			amount: useInViewOptionsProp.amount ?? 0.5,
 			margin: useInViewOptionsProp.margin,
-			root: useInViewOptionsProp.root ?? containerRef ?? undefined,
+			root: useInViewOptionsProp.root ?? containerRef ?? undefined
 		})
 	);
 

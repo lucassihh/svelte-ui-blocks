@@ -20,7 +20,7 @@
 	const defaultOffset: UseScrollOptions["offset"] = ["0 0", "0 1"];
 	const defaultSpringConfig: SpringOptions = {
 		stiffness: 200,
-		damping: 30,
+		damping: 30
 	};
 
 	let {
@@ -52,7 +52,7 @@
 	let scroll = useScroll({
 		container: untrack(() => scrollContainer),
 		target: untrack(() => root),
-		offset: untrack(() => offset),
+		offset: untrack(() => offset)
 	});
 
 	let springScrollYProgress = useSpring(scroll.scrollYProgress, () => springConfig);

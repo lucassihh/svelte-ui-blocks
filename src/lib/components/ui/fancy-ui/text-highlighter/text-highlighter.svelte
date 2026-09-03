@@ -33,12 +33,12 @@
 		type: "spring",
 		duration: 1,
 		delay: 0,
-		bounce: 0,
+		bounce: 0
 	};
 
 	const defaultUseInViewOptions: ViewOptions = {
 		once: true,
-		amount: 0.1,
+		amount: 0.1
 	};
 
 	let {
@@ -93,7 +93,7 @@
 			once: useInViewOptions.once ?? true,
 			amount: useInViewOptions.amount ?? 0.1,
 			margin: useInViewOptions.margin,
-			root: useInViewOptions.root,
+			root: useInViewOptions.root
 		})
 	);
 
@@ -129,7 +129,7 @@
 		backgroundPosition,
 		backgroundSize: initialBackgroundSize,
 		boxDecorationBreak: "clone",
-		WebkitBoxDecorationBreak: "clone",
+		WebkitBoxDecorationBreak: "clone"
 	}));
 
 	function handleMouseEnter(event: MouseEnterEvent) {

@@ -39,7 +39,7 @@
 </script>
 
 <div
-	class="relative border-x border-y bg-linear-to-r from-secondary/50 via-transparent to-secondary/50 py-6 border-border"
+	class="relative border-x border-y border-border bg-linear-to-r from-secondary/50 via-transparent to-secondary/50 py-6"
 >
 	<Marquee class="flex items-center gap-20" style="--duration: 30s; --gap: 2rem;">
 		{#each logos as logo}

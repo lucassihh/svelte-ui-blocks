@@ -29,7 +29,7 @@ export const animatedListBlocks: BlockShowcaseItem[] = [
 		previewComponent: AnimatedListOnePreview,
 		previewHref: "/preview/magic/animated-list/animated-list-one",
 		previewMode: "iframe",
-		previewHeight: 420,
+		previewHeight: 820,
 		installId: "animated-list-one",
 		codeTree: createBlockCodeTree("animated-list-one:animated-list", [
 			{

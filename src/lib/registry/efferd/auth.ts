@@ -65,11 +65,11 @@ export const authBlocks: BlockShowcaseItem[] = [
 		id: "auth-one",
 		title: "Auth One",
 		description:
-			"A Auth One composition.",
+			"Auth components",
 		previewComponent: AuthOnePreview,
 		previewHref: "/preview/efferd/auth/auth-one",
 		previewMode: "iframe",
-		previewHeight: 420,
+		previewHeight: 820,
 		installId: "auth-one",
 		codeTree: createBlockCodeTree("auth-one", [
 			{
@@ -85,11 +85,11 @@ export const authBlocks: BlockShowcaseItem[] = [
 		id: "auth-two",
 		title: "Auth Two",
 		description:
-			"A Auth Two composition.",
+			"Auth components",
 		previewComponent: AuthTwoPreview,
 		previewHref: "/preview/efferd/auth/auth-two",
 		previewMode: "iframe",
-		previewHeight: 420,
+		previewHeight: 820,
 		installId: "auth-two",
 		codeTree: createBlockCodeTree("auth-two", [
 			{
@@ -105,11 +105,11 @@ export const authBlocks: BlockShowcaseItem[] = [
 		id: "auth-three",
 		title: "Auth Three",
 		description:
-			"A Auth Three composition.",
+			"Auth components",
 		previewComponent: AuthThreePreview,
 		previewHref: "/preview/efferd/auth/auth-three",
 		previewMode: "iframe",
-		previewHeight: 420,
+		previewHeight: 820,
 		installId: "auth-three",
 		codeTree: createBlockCodeTree("auth-three", [
 			{
@@ -125,11 +125,11 @@ export const authBlocks: BlockShowcaseItem[] = [
 		id: "auth-four",
 		title: "Auth Four",
 		description:
-			"A Auth Four composition.",
+			"Auth components",
 		previewComponent: AuthFourPreview,
 		previewHref: "/preview/efferd/auth/auth-four",
 		previewMode: "iframe",
-		previewHeight: 420,
+		previewHeight: 820,
 		installId: "auth-four",
 		codeTree: createBlockCodeTree("auth-four", [
 			{
@@ -146,11 +146,11 @@ export const authBlocks: BlockShowcaseItem[] = [
 		id: "auth-five",
 		title: "Auth Five",
 		description:
-			"A Auth Five composition.",
+			"Auth components",
 		previewComponent: AuthFivePreview,
 		previewHref: "/preview/efferd/auth/auth-five",
 		previewMode: "iframe",
-		previewHeight: 420,
+		previewHeight: 820,
 		installId: "auth-five",
 		codeTree: createBlockCodeTree("auth-five", [
 			{

@@ -9,7 +9,7 @@
 		"Component",
 		"Smooth",
 		"Transition",
-		"Engaging",
+		"Engaging"
 	];
 </script>
 

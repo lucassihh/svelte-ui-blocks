@@ -16,7 +16,9 @@
 	}
 </script>
 
-<div class="text-foreground flex h-56 w-full flex-col justify-between rounded-xl border border-border p-6 sm:p-8">
+<div
+	class="flex h-56 w-full flex-col justify-between rounded-xl border border-border p-6 text-foreground sm:p-8"
+>
 	<div class="flex items-center gap-2">
 		<Button size="sm" onclick={handleStart}>Start</Button>
 		<Button size="sm" variant="outline" onclick={handleReset}>Reset</Button>
@@ -34,5 +36,5 @@
 		onComplete={() => (status = "Animation complete")}
 	/>
 
-	<p class="text-muted-foreground text-sm">{status}</p>
+	<p class="text-sm text-muted-foreground">{status}</p>
 </div>

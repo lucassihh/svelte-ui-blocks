@@ -33,12 +33,12 @@
 		initial: {
 			width: isSmallScreen.current ? "100px" : "120px",
 			height: 0,
-			transition: { duration: 0.5, ease: [0.944, 0.008, 0.147, 1.002] },
+			transition: { duration: 0.5, ease: [0.944, 0.008, 0.147, 1.002] }
 		},
 		animate: {
 			width: isSmallScreen.current ? "120px" : "160px",
 			height: isSmallScreen.current ? "120px" : "140px",
-			transition: { duration: 0.6, ease: [0.944, 0.008, 0.147, 1.002] },
-		},
+			transition: { duration: 0.6, ease: [0.944, 0.008, 0.147, 1.002] }
+		}
 	}}
 />

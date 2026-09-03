@@ -6,26 +6,26 @@
 			src: "https://github.com/rich-harris.png",
 			left: "Rich",
 			right: "Harris",
-			url: "https://github.com/rich-harris",
+			url: "https://github.com/rich-harris"
 		},
 		{
 			src: "https://github.com/dummdidumm.png",
 			left: "Simon ",
 			right: "Holthausen",
-			url: "https://github.com/dummdidumm",
+			url: "https://github.com/dummdidumm"
 		},
 		{
 			src: "https://github.com/trueadm.png",
 			left: "Dominic",
 			right: "Gannaway",
-			url: "https://github.com/trueadm",
+			url: "https://github.com/trueadm"
 		},
 		{
 			src: "https://github.com/PuruVJ.png",
 			left: "Puru",
 			right: "Vijay",
-			url: "https://github.com/PuruVJ",
-		},
+			url: "https://github.com/PuruVJ"
+		}
 	];
 
 	let ref: HTMLDivElement | null = $state(null);
@@ -33,7 +33,7 @@
 </script>
 
 <div
-	class="bg-background thin-scrollbar h-[80vh] w-dvw items-center justify-center overflow-auto"
+	class="thin-scrollbar h-[80vh] w-dvw items-center justify-center overflow-auto bg-background"
 	bind:this={ref}
 >
 	<div class="relative flex h-full w-full">
@@ -60,7 +60,7 @@
 						once: false,
 						amount: 1,
 						margin: "-5% 0px -0% 0px",
-						root: ref,
+						root: ref
 					}}
 					containerRef={ref}
 					mediaContainerClass="w-full h-[40px] sm:h-[100px] rounded-xl overflow-hidden mx-1 sm:mx-2 mt-1 sm:mt-4"
@@ -73,9 +73,9 @@
 								duration: 1,
 								type: "spring",
 								bounce: 0,
-								delay: 0.1,
-							},
-						},
+								delay: 0.1
+							}
+						}
 					}}
 				/>
 			</a>

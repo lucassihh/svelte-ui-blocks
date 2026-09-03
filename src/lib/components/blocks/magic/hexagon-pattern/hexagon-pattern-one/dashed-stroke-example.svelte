@@ -3,7 +3,7 @@
 </script>
 
 <div
-	class="bg-background relative flex h-125 w-full items-center justify-center overflow-hidden rounded-lg border border-border p-20"
+	class="relative flex h-125 w-full items-center justify-center overflow-hidden rounded-lg border border-border bg-background p-20"
 >
 	<HexagonPattern radius={40} x={-1} y={-1} strokeDasharray="4 2" />
 </div>

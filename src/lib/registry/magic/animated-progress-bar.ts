@@ -28,7 +28,7 @@ export const animatedProgressBarBlocks: BlockShowcaseItem[] = [
 		previewComponent: AnimatedProgressBarOnePreview,
 		previewHref: "/preview/magic/animated-progress-bar/animated-progress-bar-one",
 		previewMode: "iframe",
-		previewHeight: 420,
+		previewHeight: 820,
 		installId: "animated-progress-bar-one",
 		codeTree: createBlockCodeTree("animated-progress-bar-one", [
 			{

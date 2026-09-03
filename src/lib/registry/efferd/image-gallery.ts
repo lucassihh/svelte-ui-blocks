@@ -28,7 +28,7 @@ export const imageGalleryBlocks: BlockShowcaseItem[] = [
 		previewComponent: ImageGalleryOnePreview,
 		previewHref: "/preview/efferd/image-gallery/image-gallery-one",
 		previewMode: "iframe",
-		previewHeight: 420,
+		previewHeight: 820,
 		installId: "image-gallery-one",
 		codeTree: createBlockCodeTree("image-gallery-one:image-gallery", [
 			{

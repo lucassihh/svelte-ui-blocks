@@ -44,7 +44,7 @@ export const separatorBlocks: BlockShowcaseItem[] = [
 		previewComponent: SeparatorOnePreview,
 		previewHref: "/preview/magic/separator/separator-one",
 		previewMode: "iframe",
-		previewHeight: 420,
+		previewHeight: 820,
 		installId: "separator-one",
 		codeTree: createBlockCodeTree("separator-one", [
 			{
@@ -62,7 +62,7 @@ export const separatorBlocks: BlockShowcaseItem[] = [
 		previewComponent: SeparatorTwoPreview,
 		previewHref: "/preview/magic/separator/separator-two",
 		previewMode: "iframe",
-		previewHeight: 420,
+		previewHeight: 820,
 		installId: "separator-two",
 		codeTree: createBlockCodeTree("separator-two", [
 			{
@@ -80,7 +80,7 @@ export const separatorBlocks: BlockShowcaseItem[] = [
 		previewComponent: SeparatorThreePreview,
 		previewHref: "/preview/magic/separator/separator-three",
 		previewMode: "iframe",
-		previewHeight: 420,
+		previewHeight: 820,
 		installId: "separator-three",
 		codeTree: createBlockCodeTree("separator-three", [
 			{
@@ -98,7 +98,7 @@ export const separatorBlocks: BlockShowcaseItem[] = [
 		previewComponent: SeparatorFourPreview,
 		previewHref: "/preview/magic/separator/separator-four",
 		previewMode: "iframe",
-		previewHeight: 420,
+		previewHeight: 820,
 		installId: "separator-four",
 		codeTree: createBlockCodeTree("separator-four", [
 			{
@@ -116,7 +116,7 @@ export const separatorBlocks: BlockShowcaseItem[] = [
 		previewComponent: SeparatorFivePreview,
 		previewHref: "/preview/magic/separator/separator-five",
 		previewMode: "iframe",
-		previewHeight: 420,
+		previewHeight: 820,
 		installId: "separator-five",
 		codeTree: createBlockCodeTree("separator-five", [
 			{
@@ -134,7 +134,7 @@ export const separatorBlocks: BlockShowcaseItem[] = [
 		previewComponent: SeparatorSixPreview,
 		previewHref: "/preview/magic/separator/separator-six",
 		previewMode: "iframe",
-		previewHeight: 420,
+		previewHeight: 820,
 		installId: "separator-six",
 		codeTree: createBlockCodeTree("separator-six", [
 			{
@@ -152,7 +152,7 @@ export const separatorBlocks: BlockShowcaseItem[] = [
 		previewComponent: SeparatorSevenPreview,
 		previewHref: "/preview/magic/separator/separator-seven",
 		previewMode: "iframe",
-		previewHeight: 420,
+		previewHeight: 820,
 		installId: "separator-seven",
 		codeTree: createBlockCodeTree("separator-seven", [
 			{
@@ -170,7 +170,7 @@ export const separatorBlocks: BlockShowcaseItem[] = [
 		previewComponent: SeparatorEightPreview,
 		previewHref: "/preview/magic/separator/separator-eight",
 		previewMode: "iframe",
-		previewHeight: 420,
+		previewHeight: 820,
 		installId: "separator-eight",
 		codeTree: createBlockCodeTree("separator-eight", [
 			{

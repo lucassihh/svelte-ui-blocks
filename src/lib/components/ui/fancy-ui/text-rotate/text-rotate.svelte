@@ -7,7 +7,7 @@
 		motion,
 		type AnimatePresenceProps,
 		type MotionProps,
-		type Transition,
+		type Transition
 	} from "motion-sv";
 	import type { HTMLAttributes, SvelteHTMLElements } from "svelte/elements";
 
@@ -53,7 +53,7 @@
 	const defaultTransition: Transition = {
 		type: "spring",
 		damping: 25,
-		stiffness: 300,
+		stiffness: 300
 	};
 
 	function splitIntoCharacters(text: string) {
@@ -80,7 +80,7 @@
 					characters,
 					needsSpace: index !== words.length - 1,
 					offset,
-					key: `${indexSeed}-${index}-${word}`,
+					key: `${indexSeed}-${index}-${word}`
 				};
 
 				offset += characters.length;
@@ -102,7 +102,7 @@
 				characters: [segment],
 				needsSpace: splitMode === "words" && index !== segments.length - 1,
 				offset,
-				key: `${indexSeed}-${index}-${segment}`,
+				key: `${indexSeed}-${index}-${segment}`
 			};
 
 			offset += 1;
@@ -208,7 +208,7 @@
 		return {
 			initial: pickMotionState(initial, index) as MotionProps["initial"],
 			animate: pickMotionState(animate, index) as MotionProps["animate"],
-			exit: pickMotionState(exit, index) as MotionProps["exit"],
+			exit: pickMotionState(exit, index) as MotionProps["exit"]
 		};
 	}
 
@@ -218,11 +218,7 @@
 		}
 
 		const nextIndex =
-			currentTextIndex === texts.length - 1
-				? loop
-					? 0
-					: currentTextIndex
-				: currentTextIndex + 1;
+			currentTextIndex === texts.length - 1 ? (loop ? 0 : currentTextIndex) : currentTextIndex + 1;
 
 		if (nextIndex !== currentTextIndex) {
 			applyIndexChange(nextIndex);
@@ -235,11 +231,7 @@
 		}
 
 		const previousIndex =
-			currentTextIndex === 0
-				? loop
-					? texts.length - 1
-					: currentTextIndex
-				: currentTextIndex - 1;
+			currentTextIndex === 0 ? (loop ? texts.length - 1 : currentTextIndex) : currentTextIndex - 1;
 
 		if (previousIndex !== currentTextIndex) {
 			applyIndexChange(previousIndex);
@@ -396,13 +388,7 @@
 				layout
 			>
 				{#each renderGroups as group (group.key)}
-					<span
-						class={cn(
-							"inline-flex",
-							splitBy === "lines" && "w-full",
-							splitLevelClassName
-						)}
-					>
+					<span class={cn("inline-flex", splitBy === "lines" && "w-full", splitLevelClassName)}>
 						{#each group.characters as character, charIndex (`${group.key}-${charIndex}`)}
 							{@const totalIndex = group.offset + charIndex}
 							{@const animationProps = getAnimationProps(totalIndex)}
@@ -414,7 +400,7 @@
 									exit={animationProps.exit}
 									transition={{
 										...transition,
-										delay: getStaggerDelay(totalIndex, totalCharacters),
+										delay: getStaggerDelay(totalIndex, totalCharacters)
 									}}
 									class="inline-block"
 								>

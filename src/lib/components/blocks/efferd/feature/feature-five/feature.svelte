@@ -50,7 +50,7 @@
 	];
 </script>
 
-<div class="mx-auto w-full max-w-5xl space-y-8">
+<div class="mx-auto w-full max-w-5xl space-y-8 p-4">
 	<div class="mx-auto max-w-3xl text-center">
 		<h2 class="text-2xl font-medium text-balance md:text-4xl lg:text-5xl">
 			Power. Speed. Control.

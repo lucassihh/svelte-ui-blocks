@@ -167,7 +167,9 @@
 					plan.highlighted && "scale-105"
 				)}
 			>
-				<div class={cn("border-b border-border p-4", plan.highlighted && "bg-card dark:bg-card/80")}>
+				<div
+					class={cn("border-b border-border p-4", plan.highlighted && "bg-card dark:bg-card/80")}
+				>
 					<layout.div
 						class="absolute top-2 right-2 z-10 flex items-center gap-2"
 						layout
@@ -232,7 +234,10 @@
 				</div>
 
 				<div
-					class={cn("mt-auto w-full border-t border-border p-3", plan.highlighted && "bg-card dark:bg-card/80")}
+					class={cn(
+						"mt-auto w-full border-t border-border p-3",
+						plan.highlighted && "bg-card dark:bg-card/80"
+					)}
 				>
 					<Button
 						class="w-full"

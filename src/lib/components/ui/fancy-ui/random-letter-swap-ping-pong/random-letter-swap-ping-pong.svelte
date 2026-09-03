@@ -17,7 +17,7 @@
 		reverse = true,
 		transition = {
 			type: "spring",
-			duration: 0.8,
+			duration: 0.8
 		},
 		staggerDuration = 0.02,
 		class: className,
@@ -38,7 +38,7 @@
 
 	let mergeTransition = (baseTransition: AnimationOptions, index: number) => ({
 		...baseTransition,
-		delay: index * staggerDuration,
+		delay: index * staggerDuration
 	});
 
 	let getShuffledIndices = () =>
@@ -60,7 +60,7 @@
 			animate(
 				`.letter-${randomIndex}`,
 				{
-					y: reverse ? "100%" : "-100%",
+					y: reverse ? "100%" : "-100%"
 				},
 				mergeTransition(transition, orderIndex) as any
 			);
@@ -68,7 +68,7 @@
 			animate(
 				`.letter-secondary-${randomIndex}`,
 				{
-					top: "0%",
+					top: "0%"
 				},
 				mergeTransition(transition, orderIndex) as any
 			);
@@ -89,7 +89,7 @@
 			animate(
 				`.letter-${randomIndex}`,
 				{
-					y: 0,
+					y: 0
 				},
 				mergeTransition(transition, orderIndex) as any
 			);
@@ -97,7 +97,7 @@
 			animate(
 				`.letter-secondary-${randomIndex}`,
 				{
-					top: reverse ? "-100%" : "100%",
+					top: reverse ? "-100%" : "100%"
 				},
 				mergeTransition(transition, orderIndex) as any
 			);

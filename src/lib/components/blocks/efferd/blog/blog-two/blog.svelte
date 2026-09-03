@@ -88,7 +88,7 @@
 	];
 </script>
 
-<div class="mx-auto w-full max-w-5xl py-4 lg:border-x border-border">
+<div class="mx-auto w-full max-w-5xl border-border py-4 lg:border-x">
 	<div class="space-y-2 px-4 py-8 md:py-12">
 		<h1 class="text-2xl font-semibold tracking-wide md:text-4xl">Latest Blogs</h1>
 		<p class="text-sm text-muted-foreground">

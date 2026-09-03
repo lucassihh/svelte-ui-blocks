@@ -4,21 +4,21 @@
 </script>
 
 <div class="grid grid-cols-1 gap-6 md:grid-cols-2 md:grid-rows-2">
-	<div class="border-border rounded-lg border p-4">
+	<div class="rounded-lg border border-border p-4">
 		<div class="relative flex h-40 flex-col items-center justify-center">
 			<h3 class="text-xl font-semibold">Animated Pointer</h3>
-			<p class="text-muted-foreground text-sm">Animated pointer</p>
+			<p class="text-sm text-muted-foreground">Animated pointer</p>
 		</div>
 		<Pointer>
 			<motion.div
 				animate={{
 					scale: [0.8, 1, 0.8],
-					rotate: [0, 5, -5, 0],
+					rotate: [0, 5, -5, 0]
 				}}
 				transition={{
 					duration: 1.5,
 					repeat: Infinity,
-					ease: "easeInOut",
+					ease: "easeInOut"
 				}}
 			>
 				<svg
@@ -36,24 +36,24 @@
 						transition={{
 							duration: 0.8,
 							repeat: Infinity,
-							ease: "easeInOut",
+							ease: "easeInOut"
 						}}
 					/>
 				</svg>
 			</motion.div>
 		</Pointer>
 	</div>
-	<div class="border-border rounded-lg border p-4">
+	<div class="rounded-lg border border-border p-4">
 		<div class="relative flex h-40 flex-col items-center justify-center">
 			<h3 class="text-xl font-semibold">Colored Pointer</h3>
-			<p class="text-muted-foreground text-sm">A custom pointer with different color</p>
+			<p class="text-sm text-muted-foreground">A custom pointer with different color</p>
 		</div>
 		<Pointer class="fill-blue-500" />
 	</div>
-	<div class="border-border rounded-lg border p-4">
+	<div class="rounded-lg border border-border p-4">
 		<div class="relative flex h-40 flex-col items-center justify-center">
 			<h3 class="text-xl font-semibold">Custom Shape</h3>
-			<p class="text-muted-foreground text-sm">A pointer with a custom SVG shape</p>
+			<p class="text-sm text-muted-foreground">A pointer with a custom SVG shape</p>
 		</div>
 		<Pointer>
 			<svg
@@ -68,10 +68,10 @@
 			</svg>
 		</Pointer>
 	</div>
-	<div class="border-border rounded-lg border p-4">
+	<div class="rounded-lg border border-border p-4">
 		<div class="relative flex h-40 flex-col items-center justify-center">
 			<h3 class="text-xl font-semibold">Emoji Pointer</h3>
-			<p class="text-muted-foreground text-sm">Using an emoji as a custom pointer</p>
+			<p class="text-sm text-muted-foreground">Using an emoji as a custom pointer</p>
 		</div>
 		<Pointer>
 			<div class="text-2xl">👆</div>

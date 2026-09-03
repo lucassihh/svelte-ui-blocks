@@ -4,7 +4,7 @@
 </script>
 
 <div
-	class="bg-background relative flex h-80 w-70 items-center justify-center overflow-hidden rounded-lg border border-border p-20 md:min-w-2xl"
+	class="relative flex h-80 w-70 items-center justify-center overflow-hidden rounded-lg border border-border bg-background p-20 md:min-w-2xl"
 >
 	<DotPattern
 		width={20}

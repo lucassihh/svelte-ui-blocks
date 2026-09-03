@@ -17,9 +17,9 @@ CLEAN_EXT_REGEX = re.compile(_ext_pattern, flags=re.IGNORECASE)
 # Blocks names $lib/components/blocks/[ui-name]
 UI_NAMES = [
   "efferd",
-  "magic",
   "fancy",
-  "spell"
+  "magic",
+  "veil"
 ]
 
 ALIAS_MAP = {
@@ -65,7 +65,7 @@ BLOCK_METADATA_PATTERNS = {
     },
     "logo": {
         "description": "A responsive logo grid/marquee component for showcasing partners and clients.",
-        "height": 320,
+        "height": 520,
         "previewMode": "iframe"
     },
     "feature": {
@@ -73,9 +73,29 @@ BLOCK_METADATA_PATTERNS = {
         "height": 520,
         "previewMode": "iframe"
     },
+   "auth": {
+        "description": "Auth components",
+        "height": 820,
+        "previewMode": "iframe"
+    },
+   "login": {
+        "description": "Login components",
+        "height": 820,
+        "previewMode": "iframe"
+    },
+    "signup": {
+        "description": "Signup components",
+        "height": 820,
+        "previewMode": "iframe"
+    },
+    "blog": {
+        "description": "Blog components",
+        "height": 820,
+        "previewMode": "iframe"
+    },
     "default": {
         "description": "A {title} composition.",
-        "height": 420,
+        "height": 820,
         "previewMode": "iframe"
     }
 }

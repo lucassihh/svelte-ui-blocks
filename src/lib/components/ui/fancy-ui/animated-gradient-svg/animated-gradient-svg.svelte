@@ -90,7 +90,7 @@
 				tx3: randomBetween(random, -0.5, 0.5),
 				ty3: randomBetween(random, -0.5, 0.5),
 				tx4: randomBetween(random, -0.5, 0.5),
-				ty4: randomBetween(random, -0.5, 0.5),
+				ty4: randomBetween(random, -0.5, 0.5)
 			};
 		})
 	);

@@ -37,7 +37,7 @@ export const logoCloudBlocks: BlockShowcaseItem[] = [
 		previewComponent: LogoCloudOnePreview,
 		previewHref: "/preview/efferd/logo-cloud/logo-cloud-one",
 		previewMode: "iframe",
-		previewHeight: 320,
+		previewHeight: 520,
 		installId: "logo-cloud-one",
 		codeTree: createBlockCodeTree("logo-cloud-one", [
 			{
@@ -55,7 +55,7 @@ export const logoCloudBlocks: BlockShowcaseItem[] = [
 		previewComponent: LogoCloudTwoPreview,
 		previewHref: "/preview/efferd/logo-cloud/logo-cloud-two",
 		previewMode: "iframe",
-		previewHeight: 320,
+		previewHeight: 520,
 		installId: "logo-cloud-two",
 		codeTree: createBlockCodeTree("logo-cloud-two", [
 			{
@@ -73,7 +73,7 @@ export const logoCloudBlocks: BlockShowcaseItem[] = [
 		previewComponent: LogoCloudThreePreview,
 		previewHref: "/preview/efferd/logo-cloud/logo-cloud-three",
 		previewMode: "iframe",
-		previewHeight: 320,
+		previewHeight: 520,
 		installId: "logo-cloud-three",
 		codeTree: createBlockCodeTree("logo-cloud-three", [
 			{
@@ -91,7 +91,7 @@ export const logoCloudBlocks: BlockShowcaseItem[] = [
 		previewComponent: LogoCloudFourPreview,
 		previewHref: "/preview/efferd/logo-cloud/logo-cloud-four",
 		previewMode: "iframe",
-		previewHeight: 320,
+		previewHeight: 520,
 		installId: "logo-cloud-four",
 		codeTree: createBlockCodeTree("logo-cloud-four", [
 			{
@@ -109,7 +109,7 @@ export const logoCloudBlocks: BlockShowcaseItem[] = [
 		previewComponent: LogoCloudFivePreview,
 		previewHref: "/preview/efferd/logo-cloud/logo-cloud-five",
 		previewMode: "iframe",
-		previewHeight: 320,
+		previewHeight: 520,
 		installId: "logo-cloud-five",
 		codeTree: createBlockCodeTree("logo-cloud-five", [
 			{

@@ -122,7 +122,7 @@
 	);
 </script>
 
-<div class="mx-auto min-h-screen w-full max-w-3xl md:border-x border-border">
+<div class="mx-auto min-h-screen w-full max-w-3xl border-border md:border-x">
 	<div class="px-4 py-16 lg:px-6">
 		<h1 class="mb-4 text-3xl font-semibold md:text-4xl">Frequently Asked Questions</h1>
 		<p class="mb-8 max-w-2xl text-muted-foreground">
@@ -140,7 +140,7 @@
 
 	<FullWidthDivider contained={true} />
 
-	<div class="flex flex-wrap gap-1 border-b px-4 md:gap-3 border-border">
+	<div class="flex flex-wrap gap-1 border-b border-border px-4 md:gap-3">
 		{#each categories as category (category.id)}
 			<Button
 				type="button"

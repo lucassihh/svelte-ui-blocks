@@ -18,14 +18,7 @@
 		style?: string;
 	};
 
-	let {
-		name,
-		size = 32,
-		animated = true,
-		class: className,
-		style,
-		...restProps
-	}: Props = $props();
+	let { name, size = 32, animated = true, class: className, style, ...restProps }: Props = $props();
 
 	let canvas = $state<HTMLCanvasElement | null>(null);
 

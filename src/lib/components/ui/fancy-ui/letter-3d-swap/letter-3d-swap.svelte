@@ -43,7 +43,7 @@
 	const defaultTransition: AnimationOptions = {
 		type: "spring",
 		damping: 30,
-		stiffness: 300,
+		stiffness: 300
 	};
 
 	let {
@@ -108,8 +108,8 @@
 				return {
 					type: "space",
 					data: {
-						value: entry,
-					},
+						value: entry
+					}
 				} satisfies TextSegment;
 			}
 
@@ -121,8 +121,8 @@
 				type: "word",
 				data: {
 					characters,
-					startIndex,
-				},
+					startIndex
+				}
 			} satisfies TextSegment;
 		});
 	});
@@ -163,14 +163,10 @@
 
 		await animate(".letter-3d-swap-char-box-item", { transform: rotationTransform }, {
 			...transition,
-			delay: (index: number) => delays[index],
+			delay: (index: number) => delays[index]
 		} as any);
 
-		await animate(
-			".letter-3d-swap-char-box-item",
-			{ transform: restTransform },
-			{ duration: 0 }
-		);
+		await animate(".letter-3d-swap-char-box-item", { transform: restTransform }, { duration: 0 });
 
 		isAnimating = false;
 	};

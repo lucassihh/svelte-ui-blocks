@@ -17,10 +17,7 @@
 	import { setContext } from "svelte";
 
 	const DEFAULT_SCALE_MULTIPLIER = 0.03;
-	const DEFAULT_OFFSET: NonNullable<RuntimeUseScrollOptions["offset"]> = [
-		"start start",
-		"end end",
-	];
+	const DEFAULT_OFFSET: NonNullable<RuntimeUseScrollOptions["offset"]> = ["start start", "end end"];
 
 	type StackingCardsContext = {
 		progress: ReturnType<typeof useScroll>["scrollYProgress"];
@@ -44,7 +41,7 @@
 	let scroll = useScroll((() => ({
 		offset: DEFAULT_OFFSET,
 		...scrollOptions,
-		target: root,
+		target: root
 	})) as unknown as RuntimeUseScrollOptions);
 
 	setContext<StackingCardsContext>("stacking-cards", {
@@ -56,7 +53,7 @@
 		},
 		get totalCards() {
 			return totalCards;
-		},
+		}
 	});
 </script>
 

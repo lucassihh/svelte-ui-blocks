@@ -44,7 +44,7 @@
 		duration = 1.2,
 		trigger = true,
 		triggerOnView = false,
-		once = true,
+		once = true
 	}: RandomizedTextProps = $props();
 
 	let MotionComponent = $derived(motion[as]);
@@ -128,7 +128,7 @@
 	const rootStyle = $derived.by(() => ({
 		display: "inline-block",
 		wordBreak: "break-word",
-		...(parsedStyle ?? {}),
+		...(parsedStyle ?? {})
 	}));
 
 	const tokens = $derived.by<RandomizedToken[]>(() => {
@@ -144,7 +144,7 @@
 					return {
 						kind: "whitespace",
 						id: `space-${index}`,
-						value: segment,
+						value: segment
 					};
 				}
 
@@ -153,10 +153,7 @@
 					id: `char-${index}`,
 					content: segment,
 					index: segmentIndex,
-					delay: createStableDelay(
-						`chars:${segmentIndex}:${segment}:${sourceText}`,
-						safeDelay
-					),
+					delay: createStableDelay(`chars:${segmentIndex}:${segment}:${sourceText}`, safeDelay)
 				};
 
 				segmentIndex += 1;
@@ -171,7 +168,7 @@
 				return {
 					kind: "whitespace",
 					id: `space-${index}`,
-					value: token.value,
+					value: token.value
 				};
 			}
 
@@ -180,10 +177,7 @@
 				id: `word-${index}`,
 				content: token.value,
 				index: segmentIndex,
-				delay: createStableDelay(
-					`words:${segmentIndex}:${token.value}:${sourceText}`,
-					safeDelay
-				),
+				delay: createStableDelay(`words:${segmentIndex}:${token.value}:${sourceText}`, safeDelay)
 			};
 
 			segmentIndex += 1;
@@ -197,7 +191,7 @@
 
 	const containerVariants = $derived.by<Variants>(() => ({
 		hidden: { opacity: 0 },
-		visible: { opacity: 1 },
+		visible: { opacity: 1 }
 	}));
 
 	const itemVariants = $derived.by<Variants>(() => ({
@@ -207,9 +201,9 @@
 			transition: {
 				duration: safeDuration,
 				delay: segmentDelay,
-				ease: expoOut,
-			},
-		}),
+				ease: expoOut
+			}
+		})
 	}));
 
 	const shouldAnimate = $derived(segmentCount > 0 && trigger && isInView);
@@ -226,7 +220,7 @@
 		observer.observe(sourceElement, {
 			childList: true,
 			subtree: true,
-			characterData: true,
+			characterData: true
 		});
 
 		return () => observer.disconnect();

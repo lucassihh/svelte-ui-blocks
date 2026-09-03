@@ -18,26 +18,26 @@
 	const transition: AnimationOptions = {
 		type: "spring",
 		damping: 30,
-		stiffness: 300,
+		stiffness: 300
 	};
 
 	const fromVariants: Record<From, Variants> = {
 		left: {
 			hidden: { x: "-100%" },
-			visible: { x: "0%" },
+			visible: { x: "0%" }
 		},
 		right: {
 			hidden: { x: "100%" },
-			visible: { x: "0%" },
+			visible: { x: "0%" }
 		},
 		top: {
 			hidden: { y: "-100%" },
-			visible: { y: "0%" },
+			visible: { y: "0%" }
 		},
 		bottom: {
 			hidden: { y: "100%" },
-			visible: { y: "0%" },
-		},
+			visible: { y: "0%" }
+		}
 	};
 
 	let {

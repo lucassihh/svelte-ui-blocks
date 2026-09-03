@@ -30,7 +30,7 @@ export const gridPatternBlocks: BlockShowcaseItem[] = [
 		previewComponent: GridPatternOnePreview,
 		previewHref: "/preview/magic/grid-pattern/grid-pattern-one",
 		previewMode: "iframe",
-		previewHeight: 420,
+		previewHeight: 820,
 		installId: "grid-pattern-one",
 		codeTree: createBlockCodeTree("grid-pattern-one", [
 			{
@@ -48,7 +48,7 @@ export const gridPatternBlocks: BlockShowcaseItem[] = [
 		previewComponent: GridPatternTwoPreview,
 		previewHref: "/preview/magic/grid-pattern/grid-pattern-two",
 		previewMode: "iframe",
-		previewHeight: 420,
+		previewHeight: 820,
 		installId: "grid-pattern-two",
 		codeTree: createBlockCodeTree("grid-pattern-two", [
 			{

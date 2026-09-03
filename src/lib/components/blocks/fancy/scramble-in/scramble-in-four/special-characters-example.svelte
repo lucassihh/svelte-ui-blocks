@@ -4,7 +4,7 @@
 	const commandLines = [
 		"Wake up, Neo...",
 		"The Matrix has you...",
-		"Follow the White Rabbit, Neo.",
+		"Follow the White Rabbit, Neo."
 	];
 
 	const characterPool = "01<>[]{}()/\\\\|+-_=*#@!?$%^&:";

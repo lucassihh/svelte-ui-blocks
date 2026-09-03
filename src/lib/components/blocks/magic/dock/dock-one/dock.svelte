@@ -9,7 +9,7 @@
 
 <div class="flex flex-col gap-8">
 	<div class="flex flex-col items-center gap-2">
-		<span class="text-muted-foreground text-sm">Direction: Top</span>
+		<span class="text-sm text-muted-foreground">Direction: Top</span>
 		<Dock direction="top" class="mt-0">
 			<DockIcon class="bg-black/10 dark:bg-white/10">
 				<Home class="size-full" />
@@ -27,7 +27,7 @@
 	</div>
 
 	<div class="flex flex-col items-center gap-2">
-		<span class="text-muted-foreground text-sm">Direction: Middle (Default)</span>
+		<span class="text-sm text-muted-foreground">Direction: Middle (Default)</span>
 		<Dock direction="middle" class="mt-0">
 			<DockIcon class="bg-black/10 dark:bg-white/10">
 				<Home class="size-full" />
@@ -45,7 +45,7 @@
 	</div>
 
 	<div class="flex flex-col items-center gap-2">
-		<span class="text-muted-foreground text-sm">Direction: Bottom</span>
+		<span class="text-sm text-muted-foreground">Direction: Bottom</span>
 		<Dock direction="bottom" class="mt-0">
 			<DockIcon class="bg-black/10 dark:bg-white/10">
 				<Home class="size-full" />

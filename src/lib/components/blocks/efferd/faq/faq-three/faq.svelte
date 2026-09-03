@@ -59,7 +59,9 @@
 	];
 </script>
 
-<section class="mx-auto grid min-h-screen w-full max-w-5xl grid-cols-1 md:grid-cols-2 lg:border-x border-border">
+<section
+	class="mx-auto grid min-h-screen w-full max-w-5xl grid-cols-1 border-border md:grid-cols-2 lg:border-x"
+>
 	<div class="px-4 pt-12 pb-6">
 		<div class="space-y-5">
 			<h2 class="text-4xl font-bold text-balance md:text-6xl lg:font-black">
@@ -83,7 +85,7 @@
 
 		<Accordion type="single" class="rounded-none border-x-0 border-y border-border">
 			{#each faqs as item (item.id)}
-				<AccordionItem value={item.id} class="group relative pl-5 border-border">
+				<AccordionItem value={item.id} class="group relative border-border pl-5">
 					<DecorIcon position="bottom-left" class="left-[13px] size-3 group-last:hidden" />
 
 					<AccordionTrigger

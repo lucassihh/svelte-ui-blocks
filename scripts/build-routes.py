@@ -8,9 +8,9 @@ ROOT_DIR = Path.cwd()
 # Blocks names $lib/components/blocks/[ui-name]
 UI_NAMES = [
   "efferd",
-  "magic",
   "fancy",
-  "spell"
+  "magic",
+  "veil"
 ]
 
 ENGLISH_NUMBERS = {
@@ -35,8 +35,9 @@ ENGLISH_NUMBERS = {
 PREVIEW_LAYOUT_PATTERNS = {
     "hero": "flex flex-col min-h-screen w-full",
     "header": "flex flex-col min-h-screen w-full",
-    "logo": "flex flex-col min-h-screen w-full justify-center p-2",
-    "default": "flex flex-col min-h-screen w-full items-center justify-center p-2"
+    "logo": "flex flex-col min-h-screen w-full justify-center",
+    "features" : "min-h-screen w-full",
+    "default": "flex flex-col min-h-screen w-full justify-center p-4"
 }
 
 # Helpers

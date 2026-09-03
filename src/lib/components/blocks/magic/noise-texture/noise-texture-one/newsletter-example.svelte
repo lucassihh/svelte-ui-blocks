@@ -7,13 +7,13 @@
 </script>
 
 <div class="flex justify-center p-4">
-	<Card.Root class="bg-card/80 relative w-full overflow-hidden border border-border md:w-120">
+	<Card.Root class="relative w-full overflow-hidden border border-border bg-card/80 md:w-120">
 		<NoiseTexture noiseOpacity={0.45} />
 		<Card.Header class="relative z-10 space-y-1 pb-4">
 			<Card.Title class="text-xl">The weekly digest</Card.Title>
 			<Card.Description>
-				One email on Sundays—new components, tips, and changelog highlights. No spam,
-				unsubscribe anytime.
+				One email on Sundays—new components, tips, and changelog highlights. No spam, unsubscribe
+				anytime.
 			</Card.Description>
 		</Card.Header>
 		<Card.Content class="relative z-10 space-y-4 pt-0">

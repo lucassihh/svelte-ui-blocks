@@ -6,7 +6,7 @@
 </script>
 
 <div
-	class="font-overused-grotesk text-foreground dark:text-muted flex h-dvh w-dvw flex-row items-center justify-center overflow-hidden bg-white p-12 text-2xl font-light sm:p-20 sm:text-3xl md:p-24 md:text-5xl"
+	class="font-overused-grotesk flex h-dvh w-dvw flex-row items-center justify-center overflow-hidden bg-white p-12 text-2xl font-light text-foreground sm:p-20 sm:text-3xl md:p-24 md:text-5xl dark:text-muted"
 >
 	<LayoutGroup>
 		<motion.p class="flex whitespace-pre" layout>

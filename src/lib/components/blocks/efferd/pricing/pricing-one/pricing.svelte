@@ -35,7 +35,7 @@
 	];
 </script>
 
-<section class="w-full space-y-5">
+<section class="w-full space-y-5 p-4">
 	<div class="mx-auto max-w-lg">
 		<div class="flex justify-center">
 			<div class="rounded-md border border-border px-4 py-1 text-sm">Pricing</div>
@@ -63,7 +63,7 @@
 					class={cn(
 						"w-full",
 						plan.featured
-							? "relative rounded-md border bg-card p-4 shadow dark:bg-card/80"
+							? "relative rounded-md border border-border bg-card p-4 shadow dark:bg-card/80"
 							: "px-4 pt-5 pb-4"
 					)}
 				>

@@ -108,7 +108,10 @@
 
 <AspectRatio
 	bind:ref={containerRef}
-	class={cn("relative size-full overflow-hidden border border-border bg-accent/30", containerClassName)}
+	class={cn(
+		"relative size-full overflow-hidden border border-border bg-accent/30",
+		containerClassName
+	)}
 	{ratio}
 >
 	{#if imageSource}

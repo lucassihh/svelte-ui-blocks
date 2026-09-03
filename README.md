@@ -3,32 +3,30 @@
 ### A collection of beautifully crafted Svelte Shadcn & Tailwind CSS Marketing blocks.
 
 This is a Fork from [Svelte Efferd](https://github.com/SikandarJODD/sv-efferd)
-With some modifications.
+With some pessoal modifications
 
 ### Todo
 
 **Landing**
 
-- [x] - Improve footer
-- [x] - Added mobile sidebar
+- Added mobile menu (top)
 
 **Documentation**
 
-- [x] - Added mobile sidebar (bottom)
-- [x] - Added header breadcrumb style
+- Added mobile drawer (bottom)
+- Added desktop sidebar (left)
+- Added breadcrumb
 
 **Blocks**
 
-- [x] - Fix blocks-preview
-- [x] - Make blocks-navigation dinamyc
-- [x] - Better `src/routes/blocks/` folder structure
-- [x] - Better `src/routes/preview/` folder structure
+- Improve blocks-preview
+- Make blocks-navigation dinamyc
+- Move [blocks-ui] for `$lib/blocks/`
 
 **Project structure**
 
-- [x] Move `lib/svgs` to `assets/svg`
-- [x] Move `src/layout.css` to `lib/styles/app.css`
-- [x] Added `lib/components/markdown` components for documentation page
-- [x] Rename `lib/components/efferd` to `lib/components/efferd-ui`
-- [x] Rename `lib/components/magic` to `lib/components/magic-ui`
-- [x] Remove `lib/blocks` and move imports to `lib/registry`
+- Simplified folders and remove unnecessary components
+- Move `lib/svgs` to `lib/assets/svg`
+- Move `src/layout.css` to `lib/styles/app.css`
+- Added `lib/components/ui/markdown` components
+- Move`lib/blocks` imports to `lib/registry`

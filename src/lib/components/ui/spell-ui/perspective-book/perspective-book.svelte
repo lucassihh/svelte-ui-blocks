@@ -14,7 +14,7 @@
 	let sizeMap: Record<BookSize, SizeConfig> = {
 		sm: { width: "150px", spineTranslation: "122px" },
 		default: { width: "196px", spineTranslation: "168px" },
-		lg: { width: "300px", spineTranslation: "272px" },
+		lg: { width: "300px", spineTranslation: "272px" }
 	};
 
 	let borderRadius = "6px 4px 4px 6px";

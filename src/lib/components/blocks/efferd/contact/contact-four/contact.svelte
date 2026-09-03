@@ -63,7 +63,7 @@
 		</div>
 	</div>
 
-	<div class="col-span-1 flex items-center border-t p-8 md:border-t-0 md:border-l border-border">
+	<div class="col-span-1 flex items-center border-t border-border p-8 md:border-t-0 md:border-l">
 		<form class="w-full">
 			<FieldGroup>
 				<Field>

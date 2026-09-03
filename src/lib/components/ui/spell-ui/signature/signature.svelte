@@ -30,12 +30,7 @@
 					rlig?: boolean;
 				};
 			},
-			callback: (
-				glyph: GlyphLike,
-				glyphX: number,
-				glyphY: number,
-				glyphFontSize: number
-			) => void
+			callback: (glyph: GlyphLike, glyphX: number, glyphY: number, glyphFontSize: number) => void
 		) => void;
 		getAdvanceWidth: (
 			text: string,
@@ -70,7 +65,7 @@
 	let height = 100;
 	let strokeTransition: AnimationOptions = {
 		type: "tween",
-		ease: "easeInOut",
+		ease: "easeInOut"
 	};
 
 	let {
@@ -81,7 +76,7 @@
 		delay = 0,
 		class: className,
 		inView = false,
-		once = true,
+		once = true
 	}: SignatureProps = $props();
 
 	let paths = $state<SignaturePath[]>([]);
@@ -92,7 +87,7 @@
 	let baseline = $derived(Math.min(height - 5, topMargin + fontSize));
 	let pathVariants = $derived({
 		hidden: { pathLength: 0, opacity: 1, fillOpacity: 0 },
-		visible: { pathLength: 1, opacity: 1, fillOpacity: 1 },
+		visible: { pathLength: 1, opacity: 1, fillOpacity: 1 }
 	});
 
 	let requestId = 0;
@@ -117,8 +112,8 @@
 				kerning: true,
 				features: {
 					liga: true,
-					rlig: true,
-				},
+					rlig: true
+				}
 			};
 
 			font.forEachGlyph(
@@ -128,16 +123,13 @@
 				fontSize,
 				fontOptions,
 				(glyph, glyphX, glyphY, glyphFontSize) => {
-					let pathData = glyph
-						.getPath(glyphX, glyphY, glyphFontSize)
-						.toPathData(3)
-						.trim();
+					let pathData = glyph.getPath(glyphX, glyphY, glyphFontSize).toPathData(3).trim();
 
 					if (pathData) {
 						nextPaths.push({
 							id: `path-${nextPaths.length}`,
 							d: pathData,
-							delay: delay + nextPaths.length * 0.2,
+							delay: delay + nextPaths.length * 0.2
 						});
 					}
 				}
@@ -177,18 +169,18 @@
 			pathLength: {
 				...strokeTransition,
 				delay: pathDelay,
-				duration,
+				duration
 			},
 			opacity: {
 				type: "tween",
 				delay: pathDelay,
-				duration: 0.01,
+				duration: 0.01
 			},
 			fillOpacity: {
 				type: "tween",
 				delay: pathDelay + duration * 0.65,
-				duration: Math.min(0.25, duration * 0.35),
-			},
+				duration: Math.min(0.25, duration * 0.35)
+			}
 		};
 	}
 </script>

@@ -28,7 +28,7 @@ export const shimmerButtonBlocks: BlockShowcaseItem[] = [
 		previewComponent: ShimmerButtonOnePreview,
 		previewHref: "/preview/magic/shimmer-button/shimmer-button-one",
 		previewMode: "iframe",
-		previewHeight: 420,
+		previewHeight: 820,
 		installId: "shimmer-button-one",
 		codeTree: createBlockCodeTree("shimmer-button-one", [
 			{

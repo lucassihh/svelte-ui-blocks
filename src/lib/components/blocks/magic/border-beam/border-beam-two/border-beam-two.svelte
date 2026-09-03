@@ -17,10 +17,10 @@
 		<div class="flex flex-col items-center gap-4">
 			<div class="h-48 w-48 rounded-lg bg-linear-to-br from-purple-500 to-pink-500"></div>
 
-			<div class="bg-secondary h-1 w-full rounded-full">
-				<div class="bg-primary h-full w-1/3 rounded-full"></div>
+			<div class="h-1 w-full rounded-full bg-secondary">
+				<div class="h-full w-1/3 rounded-full bg-primary"></div>
 			</div>
-			<div class="text-muted-foreground flex w-full justify-between text-sm">
+			<div class="flex w-full justify-between text-sm text-muted-foreground">
 				<span>2:45</span>
 				<span>8:02</span>
 			</div>

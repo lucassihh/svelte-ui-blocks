@@ -59,18 +59,18 @@
 
 	const DEFAULT_DIRECTION: Required<DirectionConfig> = {
 		horizontal: "center",
-		vertical: "top",
+		vertical: "top"
 	};
 
 	const DEFAULT_SCALE: Required<ScaleConfig> = {
 		value: 1,
 		randomize: false,
-		randomVariation: 0,
+		randomVariation: 0
 	};
 
 	const DEFAULT_ROTATION: Required<RotationConfig> = {
 		value: 0,
-		animate: false,
+		animate: false
 	};
 
 	let {
@@ -103,7 +103,7 @@
 			"inset: 0",
 			"overflow: hidden",
 			"background-color: transparent",
-			"pointer-events: none",
+			"pointer-events: none"
 		];
 
 		return styles.filter(Boolean).join("; ");
@@ -188,7 +188,7 @@
 
 		return {
 			x,
-			y: inputRect.top + inputRect.height / 2,
+			y: inputRect.top + inputRect.height / 2
 		};
 	}
 
@@ -205,15 +205,15 @@
 	function spawnParticle(x: number, y: number) {
 		const normalizedDirection = {
 			...DEFAULT_DIRECTION,
-			...direction,
+			...direction
 		};
 		const normalizedScale = {
 			...DEFAULT_SCALE,
-			...scale,
+			...scale
 		};
 		const normalizedRotation = {
 			...DEFAULT_ROTATION,
-			...rotation,
+			...rotation
 		};
 		const safeDuration = Math.max(0.01, toFiniteNumber(duration, 3));
 		const safeGravity = clamp(toFiniteNumber(gravity, 0.7), -1, 1);
@@ -265,7 +265,7 @@
 			scaleStart: safeScale,
 			scaleEnd: safeScale,
 			rotateStart: initialRotate,
-			rotateEnd: endRotate,
+			rotateEnd: endRotate
 		};
 
 		particles = [...particles, particle];
@@ -334,13 +334,7 @@
 						0.1,
 						3
 					);
-					const nextRotate = mapLinear(
-						progress,
-						0,
-						1,
-						particle.rotateStart,
-						particle.rotateEnd
-					);
+					const nextRotate = mapLinear(progress, 0, 1, particle.rotateStart, particle.rotateEnd);
 					const nextOpacity = progress > 0.7 ? mapLinear(progress, 0.7, 1, 1, 0) : 1;
 
 					if (
@@ -359,7 +353,7 @@
 						vy: nextVy,
 						scale: nextScale,
 						rotate: nextRotate,
-						opacity: nextOpacity,
+						opacity: nextOpacity
 					};
 				})
 				.filter((particle): particle is Particle => particle !== null);

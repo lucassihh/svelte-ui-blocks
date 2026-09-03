@@ -3,21 +3,32 @@
 	import { ArrowRight, Rocket } from "@lucide/svelte";
 
 	// UI
-  import { ShimmerButton } from "$lib/components/ui/magic-ui/shimmer-button";
+	import { LineShadowText } from "$lib/components/ui/magic-ui/line-shadow-text";
+	import { mode } from "mode-watcher";
+	import { StripedPattern } from "$lib/components/ui/magic-ui/striped-pattern";
+	import { BlurFade } from "$lib/components/ui/magic-ui/blur-fade";
 	import { Button } from "$lib/components/ui/button";
+	import { BorderBeam } from "$lib/components/ui/magic-ui/border-beam";
 	import { DecorIcon } from "$lib/components/ui/decor-icon";
 	import { DashedLine } from "$lib/components/ui/dashed-line";
 	import { BorderSeparator } from "$lib/components/ui/border-seperator";
-	import { DashedLines } from "$lib/components/ui/dashed-lines";
 
-	// Hero ShowCase
-	import HeroShowcase from "$lib/components/landing/hero-showcase/hero-showcase.svelte";
+	// Hero ShowCase Cards
+	import AuthCard from "$lib/components/landing/showcase/AuthCard.svelte";
+	import FeaturesCard from "$lib/components/landing/showcase/FeaturesCard.svelte";
+	import FooterCard from "$lib/components/landing/showcase/FooterCard.svelte";
+	import HeaderCard from "$lib/components/landing/showcase/HeaderCard.svelte";
+	import HeroCard from "$lib/components/landing/showcase/HeroCard.svelte";
 </script>
 
 <section
-	class="relative m-4 flex items-center justify-center border-b border-border/80 px-4 py-20 sm:px-6 sm:py-24 lg:px-8 lg:py-32"
+	class="relative m-1 mx-2 flex items-center justify-center border-b border-border/80 p-4 py-10"
 	id="blocks"
 >
+	<StripedPattern
+		class="mask-[radial-gradient(300px_circle_at_center,white,transparent)] opacity-20"
+	/>
+
 	<div aria-hidden="true" class="pointer-events-none absolute inset-0">
 		<div
 			class="absolute top-1/2 left-1/2 size-[30rem] -translate-x-1/2 -translate-y-1/2 rounded-full bg-[radial-gradient(circle,color-mix(in_oklab,var(--foreground)_12%,transparent)_0%,transparent_70%)] blur-3xl"
@@ -27,10 +38,6 @@
 		></div>
 	</div>
 
-	<DashedLines
-		class="absolute bottom-0 h-12 mask-[linear-gradient(to_bottom,transparent,var(--muted-foreground),var(--muted-foreground))] stroke-muted-foreground/50 dark:stroke-muted-foreground/30"
-	/>
-
 	<DecorIcon class="z-40 size-4 bg-background stroke-muted-foreground/80" position="top-left" />
 	<DecorIcon class="z-40 size-4 bg-background stroke-muted-foreground/80" position="top-right" />
 	<DecorIcon class="z-40 size-4 bg-background stroke-muted-foreground/80" position="bottom-left" />
@@ -38,32 +45,70 @@
 
 	<div class=" relative z-10 mx-auto flex flex-col items-center text-center">
 		<!-- Hero Text -->
-		<div class="flex flex-col gap-1">
+		<div class="flex flex-col gap-2">
 			<h1
-				class="mt-8 max-w-4xl text-4xl font-semibold tracking-normal text-balance sm:text-5xl lg:text-6xl"
+				class="text-5xl leading-none font-semibold tracking-tighter text-balance sm:text-6xl md:text-7xl lg:text-8xl"
 			>
-				Svelte UI Blocks
+				Svelte
+				<LineShadowText
+					content="UI"
+					class="italic"
+					shadowColor={mode.current === "dark" ? "white" : "black"}
+				></LineShadowText>
 			</h1>
 
 			<p
-				class="mt-6 max-w-2xl text-base leading-7 text-pretty text-muted-foreground sm:text-lg sm:leading-8"
+				class="max-w-2xl text-base leading-7 text-pretty text-muted-foreground sm:text-lg sm:leading-8"
 			>
-				Save hours of design time with clean, ready-to-use shadcn blocks that just work, modern,
-				responsive, and built for speed.
+				Save hours of design time with clean, ready-to-use shadcn blocks.
 			</p>
 		</div>
 
 		<!-- Hero Buttons -->
-		<a href="blocks/efferd/hero" class="mt-8 flex flex-col items-center gap-3 sm:flex-row">
-			<ShimmerButton class="shadow-2xl">
-    	<span
-    		class="text-center text-sm leading-none font-medium tracking-tight whitespace-pre-wrap text-white lg:text-lg dark:from-white dark:to-slate-900/10"
-    	>
-    		See Blocks :)
-    	</span>
-    </ShimmerButton>
-		</a>
+		<div class="flex items-center gap-2">
+			<!-- All Blocks Btn -->
+			<a href="blocks/efferd/auth" class="mt-8 flex flex-col items-center gap-3 sm:flex-row">
+				<Button variant="default">All Blocks</Button>
+			</a>
+			<!-- Documentation Btn -->
+			<a href="documentation/" class="mt-8 flex flex-col items-center gap-3 sm:flex-row">
+				<Button class="relative overflow-hidden dark:bg-card" size="lg" variant="outline">
+					Documentation
+					<BorderBeam
+						size={40}
+						initialOffset={20}
+						class="from-card via-primary to-transparent"
+						transition={{
+							type: "spring",
+							stiffness: 60,
+							damping: 20
+						}}
+					/>
+				</Button>
+			</a>
+		</div>
 	</div>
 </section>
 
-<HeroShowcase />
+<!-- Showcase Cards -->
+<div class="grid grid-cols-1 gap-4 p-4 md:grid-cols-3">
+	<BlurFade delay={0}>
+		<HeroCard />
+	</BlurFade>
+
+	<BlurFade delay={0.1}>
+		<HeaderCard />
+	</BlurFade>
+
+	<BlurFade delay={0.2}>
+		<FooterCard />
+	</BlurFade>
+
+	<BlurFade delay={0.3}>
+		<FeaturesCard />
+	</BlurFade>
+
+	<BlurFade delay={0.4}>
+		<AuthCard />
+	</BlurFade>
+</div>

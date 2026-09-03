@@ -108,7 +108,7 @@ export function ensureWebGLRenderer(): WebGLRenderer | null {
 	const gl = canvas.getContext("webgl", {
 		antialias: false,
 		depth: false,
-		preserveDrawingBuffer: true,
+		preserveDrawingBuffer: true
 	});
 
 	if (!gl) {
@@ -166,7 +166,7 @@ export function ensureWebGLRenderer(): WebGLRenderer | null {
 		pointsQUniform: gl.getUniformLocation(program, "Q"),
 		colorOneUniform: gl.getUniformLocation(program, "C1"),
 		colorTwoUniform: gl.getUniformLocation(program, "C2"),
-		timeUniform: gl.getUniformLocation(program, "T"),
+		timeUniform: gl.getUniformLocation(program, "T")
 	};
 
 	return cachedRenderer;
@@ -225,7 +225,7 @@ function colorFromUniform(uniformColor: Uniforms["C1"] | Uniforms["C2"]): RGBCol
 	return [
 		Math.round(uniformColor[0] * 255),
 		Math.round(uniformColor[1] * 255),
-		Math.round(uniformColor[2] * 255),
+		Math.round(uniformColor[2] * 255)
 	];
 }
 
@@ -233,7 +233,7 @@ function mixColor(first: RGBColor, second: RGBColor, ratio: number): RGBColor {
 	return [
 		Math.round(first[0] + (second[0] - first[0]) * ratio),
 		Math.round(first[1] + (second[1] - first[1]) * ratio),
-		Math.round(first[2] + (second[2] - first[2]) * ratio),
+		Math.round(first[2] + (second[2] - first[2]) * ratio)
 	];
 }
 
@@ -245,16 +245,16 @@ function blobCenters(uniforms: Uniforms, time: number) {
 	return [
 		{
 			x: baseOne.x + Math.sin(time * 0.7 + baseOne.x * 6) * 0.08,
-			y: baseOne.y + Math.cos(time * 0.9 + baseOne.y * 6) * 0.08,
+			y: baseOne.y + Math.cos(time * 0.9 + baseOne.y * 6) * 0.08
 		},
 		{
 			x: baseTwo.x + Math.sin(time * 0.6 + 2.1) * 0.1,
-			y: baseTwo.y + Math.cos(time * 0.8 + 1.3) * 0.07,
+			y: baseTwo.y + Math.cos(time * 0.8 + 1.3) * 0.07
 		},
 		{
 			x: baseThree.x + Math.sin(time * 0.5 + 4.2) * 0.07,
-			y: baseThree.y + Math.cos(time * 1.1 + 3.7) * 0.09,
-		},
+			y: baseThree.y + Math.cos(time * 1.1 + 3.7) * 0.09
+		}
 	] as const;
 }
 

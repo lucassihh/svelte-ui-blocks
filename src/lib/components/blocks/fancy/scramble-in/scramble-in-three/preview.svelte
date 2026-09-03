@@ -15,12 +15,12 @@
 		"11. Veridis Quo - 5:44",
 		"12. Short Circuit - 3:26",
 		"13. Face to Face (featuring Todd Edwards) - 3:58",
-		"14. Too Long (featuring Romanthony) - 10:00",
+		"14. Too Long (featuring Romanthony) - 10:00"
 	];
 </script>
 
 <div
-	class="text-foreground dark:text-muted flex h-120 w-dvw flex-col items-start justify-center overflow-hidden rounded-xl bg-white px-2 py-16 text-left text-sm font-normal sm:px-16 md:px-20 md:text-center md:text-lg lg:px-24 lg:text-lg xl:text-xl"
+	class="flex h-120 w-dvw flex-col items-start justify-center overflow-hidden rounded-xl bg-white px-2 py-16 text-left text-sm font-normal text-foreground sm:px-16 md:px-20 md:text-center md:text-lg lg:px-24 lg:text-lg xl:text-xl dark:text-muted"
 >
 	{#each titles as model, index}
 		<ScrambleIn

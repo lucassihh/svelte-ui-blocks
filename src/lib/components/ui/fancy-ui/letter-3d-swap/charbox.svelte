@@ -10,12 +10,7 @@
 		rotateDirection: RotateDirection;
 	}
 
-	let {
-		char,
-		frontFaceClass = "",
-		secondFaceClass = "",
-		rotateDirection,
-	}: CharBoxProps = $props();
+	let { char, frontFaceClass = "", secondFaceClass = "", rotateDirection }: CharBoxProps = $props();
 
 	let outerTransform = $derived(
 		rotateDirection === "top" || rotateDirection === "bottom"

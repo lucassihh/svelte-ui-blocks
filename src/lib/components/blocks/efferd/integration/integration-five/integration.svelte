@@ -56,7 +56,9 @@
 		</p>
 	</div>
 
-	<div class="flex flex-col justify-center rounded-full border border-border bg-secondary dark:bg-secondary/10">
+	<div
+		class="flex flex-col justify-center rounded-full border border-border bg-secondary dark:bg-secondary/10"
+	>
 		<div class="flex items-center justify-center -space-x-4 mask-r-from-90 mask-l-from-90 p-1">
 			{#each data as item (item.name)}
 				<div

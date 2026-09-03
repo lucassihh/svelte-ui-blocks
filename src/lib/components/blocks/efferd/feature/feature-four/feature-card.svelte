@@ -35,7 +35,7 @@
 
 	<div
 		class={cn(
-			"relative z-10 flex w-fit items-center justify-center rounded-lg border bg-muted/20 p-3",
+			"relative z-10 flex w-fit items-center justify-center rounded-lg border border-border bg-muted/20 p-3",
 			"[&_svg]:size-5 [&_svg]:stroke-[1.5] [&_svg]:text-foreground"
 		)}
 	>

@@ -15,7 +15,7 @@
 	description="Svelte Efferd is a growing collection of production-ready Svelte blocks designed to save build time without making the site feel generic."
 >
 	{#snippet actions()}
-		<Button href="/blocks/efferd-ui/hero" size="sm">Browse Blocks</Button>
+		<Button href="/blocks/efferd/hero" size="sm">Browse Blocks</Button>
 		<Button href="/changelog" size="sm" variant="outline">View Changelog</Button>
 	{/snippet}
 </DocsPage>

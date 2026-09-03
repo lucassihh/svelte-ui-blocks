@@ -7,6 +7,6 @@
 	<meta name="description" content="Standalone preview for Shimmer Button One in Svelte Efferd." />
 </svelte:head>
 
-<div class="flex flex-col min-h-screen w-full items-center justify-center p-2">
+<div class="flex flex-col min-h-screen w-full justify-center p-4">
 	<ShimmerButtonOne />
 </div>

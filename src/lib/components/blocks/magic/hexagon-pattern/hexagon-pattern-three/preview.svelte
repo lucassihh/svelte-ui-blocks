@@ -4,7 +4,7 @@
 </script>
 
 <div
-	class="bg-background relative flex h-[500px] w-full flex-col items-center justify-center overflow-hidden rounded-lg border border-border"
+	class="relative flex h-[500px] w-full flex-col items-center justify-center overflow-hidden rounded-lg border border-border bg-background"
 >
 	<HexagonPattern
 		hexagons={[
@@ -16,7 +16,7 @@
 			[8, 2],
 			[6, 3],
 			[8, 5],
-			[10, 10],
+			[10, 10]
 		]}
 		class={cn(
 			"mask-[radial-gradient(420px_circle_at_center,white,transparent)]",

@@ -22,11 +22,11 @@ bun x shadcn-svelte@latest add https://sv-animations.vercel.app/r/stagger-text.j
 
 ```svelte
 <script lang="ts">
-	import { StaggerText } from "$lib/components/ui/magic-ui/stagger-text";
+  import { StaggerText } from "$lib/components/ui/magic-ui/stagger-text";
 </script>
 
 <div>
-	<StaggerText text="Stagger Text!!" />
+  <StaggerText text="Stagger Text!!" />
 </div>
 
 <style>
@@ -39,11 +39,11 @@ bun x shadcn-svelte@latest add https://sv-animations.vercel.app/r/stagger-text.j
 
 ```svelte
 <script lang="ts">
-	import { StaggerText } from "$lib/components/ui/magic-ui/stagger-text";
+  import { StaggerText } from "$lib/components/ui/magic-ui/stagger-text";
 </script>
 
 <div>
-	<StaggerText text="Stagger Text!!" />
+  <StaggerText text="Stagger Text!!" />
 </div>
 
 <style>
@@ -58,6 +58,6 @@ Import `StaggerText` from `$lib/components/ui/magic-ui/stagger-text` and pass th
 
 A component for Stagger Text.
 
-| Prop | Type | Default | Description |
-| --- | --- | --- | --- |
-| `class` | `string` | `""` | Additional CSS classes to apply |
+| Prop    | Type     | Default | Description                     |
+| ------- | -------- | ------- | ------------------------------- |
+| `class` | `string` | `""`    | Additional CSS classes to apply |

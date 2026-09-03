@@ -6,12 +6,12 @@
 </script>
 
 <form
-	class="bg-card mx-auto w-full max-w-sm space-y-5 rounded-xl border border-border p-6 shadow-sm"
+	class="mx-auto w-full max-w-sm space-y-5 rounded-xl border border-border bg-card p-6 shadow-sm"
 	onsubmit={(event) => event.preventDefault()}
 >
 	<div class="space-y-1 text-center">
 		<h3 class="text-xl font-semibold">Create an account</h3>
-		<p class="text-muted-foreground text-sm">Enter your details to get started.</p>
+		<p class="text-sm text-muted-foreground">Enter your details to get started.</p>
 	</div>
 
 	<div class="space-y-4">

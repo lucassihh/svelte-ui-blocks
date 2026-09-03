@@ -4,7 +4,7 @@
 </script>
 
 <div
-	class="bg-background relative flex h-125 w-70 flex-col items-center justify-center overflow-hidden rounded-lg border border-border md:min-w-2xl"
+	class="relative flex h-125 w-70 flex-col items-center justify-center overflow-hidden rounded-lg border border-border bg-background md:min-w-2xl"
 >
 	<DotPattern class={cn("mask-[radial-gradient(300px_circle_at_center,white,transparent)]")} />
 </div>

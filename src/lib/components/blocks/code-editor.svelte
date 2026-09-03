@@ -67,9 +67,11 @@
 <!-- border-t -->
 <div class="flex flex-col sm:min-h-[36rem] sm:flex-row">
 	<div
-		class="w-full border-b bg-neutral-50 text-black [--color-background:var(--color-zinc-900)] [--color-foreground:white] [--color-muted:var(--color-zinc-800)] sm:w-72 sm:border-r sm:border-b-0 dark:bg-zinc-900/25 dark:text-white border-border"
+		class="w-full border-b border-border bg-neutral-50 text-black [--color-background:var(--color-zinc-900)] [--color-foreground:white] [--color-muted:var(--color-zinc-800)] sm:w-72 sm:border-r sm:border-b-0 dark:bg-zinc-900/25 dark:text-white"
 	>
-		<div class="border-b px-4 py-3 font-mono text-sm tracking-wider text-muted-foreground border-border">
+		<div
+			class="border-b border-border px-4 py-3 font-mono text-sm tracking-wider text-muted-foreground"
+		>
 			Files
 		</div>
 		<div class="max-h-[18rem] overflow-auto px-2 py-3 sm:max-h-[36rem]">
@@ -86,7 +88,7 @@
 	</div>
 
 	<div class="relative min-h-[32rem] min-w-0 flex-1">
-		<div class="flex items-center justify-between gap-3 border-b py-1.5 pr-2 pl-4 border-border">
+		<div class="flex items-center justify-between gap-3 border-b border-border py-1.5 pr-2 pl-4">
 			<p
 				class="flex min-w-0 items-center gap-2 truncate font-mono text-sm tracking-wider text-muted-foreground"
 			>

@@ -44,7 +44,7 @@ export const integrationBlocks: BlockShowcaseItem[] = [
 		previewComponent: IntegrationOnePreview,
 		previewHref: "/preview/efferd/integration/integration-one",
 		previewMode: "iframe",
-		previewHeight: 420,
+		previewHeight: 820,
 		installId: "integration-one",
 		codeTree: createBlockCodeTree("integration-one", [
 			{
@@ -63,7 +63,7 @@ export const integrationBlocks: BlockShowcaseItem[] = [
 		previewComponent: IntegrationTwoPreview,
 		previewHref: "/preview/efferd/integration/integration-two",
 		previewMode: "iframe",
-		previewHeight: 420,
+		previewHeight: 820,
 		installId: "integration-two",
 		codeTree: createBlockCodeTree("integration-two", [
 			{
@@ -82,7 +82,7 @@ export const integrationBlocks: BlockShowcaseItem[] = [
 		previewComponent: IntegrationThreePreview,
 		previewHref: "/preview/efferd/integration/integration-three",
 		previewMode: "iframe",
-		previewHeight: 420,
+		previewHeight: 820,
 		installId: "integration-three",
 		codeTree: createBlockCodeTree("integration-three", [
 			{
@@ -100,7 +100,7 @@ export const integrationBlocks: BlockShowcaseItem[] = [
 		previewComponent: IntegrationFourPreview,
 		previewHref: "/preview/efferd/integration/integration-four",
 		previewMode: "iframe",
-		previewHeight: 420,
+		previewHeight: 820,
 		installId: "integration-four",
 		codeTree: createBlockCodeTree("integration-four", [
 			{
@@ -118,7 +118,7 @@ export const integrationBlocks: BlockShowcaseItem[] = [
 		previewComponent: IntegrationFivePreview,
 		previewHref: "/preview/efferd/integration/integration-five",
 		previewMode: "iframe",
-		previewHeight: 420,
+		previewHeight: 820,
 		installId: "integration-five",
 		codeTree: createBlockCodeTree("integration-five", [
 			{

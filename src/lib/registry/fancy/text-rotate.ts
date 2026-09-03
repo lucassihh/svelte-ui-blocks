@@ -28,7 +28,7 @@ export const textRotateBlocks: BlockShowcaseItem[] = [
 		previewComponent: TextRotateOnePreview,
 		previewHref: "/preview/fancy/text-rotate/text-rotate-one",
 		previewMode: "iframe",
-		previewHeight: 420,
+		previewHeight: 820,
 		installId: "text-rotate-one",
 		codeTree: createBlockCodeTree("text-rotate-one", [
 			{

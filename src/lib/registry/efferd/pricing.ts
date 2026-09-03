@@ -52,7 +52,7 @@ export const pricingBlocks: BlockShowcaseItem[] = [
 		previewComponent: PricingOnePreview,
 		previewHref: "/preview/efferd/pricing/pricing-one",
 		previewMode: "iframe",
-		previewHeight: 420,
+		previewHeight: 820,
 		installId: "pricing-one",
 		codeTree: createBlockCodeTree("pricing-one", [
 			{
@@ -72,7 +72,7 @@ export const pricingBlocks: BlockShowcaseItem[] = [
 		previewComponent: PricingTwoPreview,
 		previewHref: "/preview/efferd/pricing/pricing-two",
 		previewMode: "iframe",
-		previewHeight: 420,
+		previewHeight: 820,
 		installId: "pricing-two",
 		codeTree: createBlockCodeTree("pricing-two", [
 			{
@@ -92,7 +92,7 @@ export const pricingBlocks: BlockShowcaseItem[] = [
 		previewComponent: PricingThreePreview,
 		previewHref: "/preview/efferd/pricing/pricing-three",
 		previewMode: "iframe",
-		previewHeight: 420,
+		previewHeight: 820,
 		installId: "pricing-three",
 		codeTree: createBlockCodeTree("pricing-three", [
 			{
@@ -111,7 +111,7 @@ export const pricingBlocks: BlockShowcaseItem[] = [
 		previewComponent: PricingFourPreview,
 		previewHref: "/preview/efferd/pricing/pricing-four",
 		previewMode: "iframe",
-		previewHeight: 420,
+		previewHeight: 820,
 		installId: "pricing-four",
 		codeTree: createBlockCodeTree("pricing-four:pricing", [
 			{

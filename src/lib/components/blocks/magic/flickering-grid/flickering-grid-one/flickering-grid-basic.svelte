@@ -2,7 +2,7 @@
 	import { FlickeringGrid } from "$lib/components/ui/magic-ui/flickering-grid";
 </script>
 
-<div class="bg-background relative size-150 w-full overflow-hidden rounded-lg border border-border">
+<div class="relative size-150 w-full overflow-hidden rounded-lg border border-border bg-background">
 	<FlickeringGrid
 		class="relative inset-0 z-0 mask-[radial-gradient(450px_circle_at_center,white,transparent)]"
 		squareSize={4}

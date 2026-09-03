@@ -36,7 +36,7 @@ export const borderBeamBlocks: BlockShowcaseItem[] = [
 		previewComponent: BorderBeamOnePreview,
 		previewHref: "/preview/magic/border-beam/border-beam-one",
 		previewMode: "iframe",
-		previewHeight: 420,
+		previewHeight: 820,
 		installId: "border-beam-one",
 		codeTree: createBlockCodeTree("border-beam-one", [
 			{
@@ -55,7 +55,7 @@ export const borderBeamBlocks: BlockShowcaseItem[] = [
 		previewComponent: BorderBeamTwoPreview,
 		previewHref: "/preview/magic/border-beam/border-beam-two",
 		previewMode: "iframe",
-		previewHeight: 420,
+		previewHeight: 820,
 		installId: "border-beam-two",
 		codeTree: createBlockCodeTree("border-beam-two", [
 			{
@@ -74,7 +74,7 @@ export const borderBeamBlocks: BlockShowcaseItem[] = [
 		previewComponent: BorderBeamThreePreview,
 		previewHref: "/preview/magic/border-beam/border-beam-three",
 		previewMode: "iframe",
-		previewHeight: 420,
+		previewHeight: 820,
 		installId: "border-beam-three",
 		codeTree: createBlockCodeTree("border-beam-three", [
 			{
@@ -93,7 +93,7 @@ export const borderBeamBlocks: BlockShowcaseItem[] = [
 		previewComponent: BorderBeamFourPreview,
 		previewHref: "/preview/magic/border-beam/border-beam-four",
 		previewMode: "iframe",
-		previewHeight: 420,
+		previewHeight: 820,
 		installId: "border-beam-four",
 		codeTree: createBlockCodeTree("border-beam-four", [
 			{

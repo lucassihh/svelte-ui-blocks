@@ -67,7 +67,7 @@
 					<Button class="w-full" size="sm" type="button">Continue With Email</Button>
 				</form>
 
-				<AuthDivider>OR</AuthDivider>
+				<AuthDivider class="text-border">OR</AuthDivider>
 
 				<div class="grid grid-cols-2 gap-2">
 					<Button class="w-full" type="button" variant="outline">

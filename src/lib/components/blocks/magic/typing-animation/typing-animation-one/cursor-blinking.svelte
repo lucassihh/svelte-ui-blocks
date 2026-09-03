@@ -4,7 +4,7 @@
 
 <div class="flex-1 space-y-8">
 	<div>
-		<p class="text-muted-foreground mb-2 text-sm">
+		<p class="mb-2 text-sm text-muted-foreground">
 			With blinking cursor (default) - watch during pause
 		</p>
 		<TypingAnimation
@@ -18,9 +18,7 @@
 		</TypingAnimation>
 	</div>
 	<div>
-		<p class="text-muted-foreground mb-2 text-sm">
-			Without blinking cursor - static during pause
-		</p>
+		<p class="mb-2 text-sm text-muted-foreground">Without blinking cursor - static during pause</p>
 		<TypingAnimation
 			words={["Type", "Pause", "Delete"]}
 			blinkCursor={false}

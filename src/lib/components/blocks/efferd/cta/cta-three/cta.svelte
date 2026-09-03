@@ -5,7 +5,7 @@
 </script>
 
 <div
-	class="relative mx-auto flex w-full max-w-3xl flex-col justify-between gap-y-4 border-y px-4 py-8 dark:bg-[radial-gradient(35%_80%_at_25%_0%,--theme(--color-foreground/.08),transparent)] border-border"
+	class="relative mx-auto flex w-full max-w-3xl flex-col justify-between gap-y-4 border-y border-border px-4 py-8 dark:bg-[radial-gradient(35%_80%_at_25%_0%,--theme(--color-foreground/.08),transparent)]"
 >
 	<DecorIcon class="size-4" position="top-left" />
 	<DecorIcon class="size-4" position="top-right" />

@@ -15,92 +15,93 @@
 			steps: [
 				{
 					icon: globeIcon,
-					content: "Mapped workflow pain points across 18 customer interviews.",
+					content: "Mapped workflow pain points across 18 customer interviews."
 				},
 				{
 					icon: starIcon,
-					content: "Locked the core job-to-be-done and success metrics for v1.",
-				},
-			],
+					content: "Locked the core job-to-be-done and success metrics for v1."
+				}
+			]
 		},
 		{
 			time: "Alpha",
 			steps: [
 				{
 					icon: boxIcon,
-					content: "Shipped an internal prototype for structured content generation.",
+					content: "Shipped an internal prototype for structured content generation."
 				},
 				{
 					icon: settingsIcon,
-					content: "Added telemetry, prompt versioning, and error reporting.",
-				},
-			],
+					content: "Added telemetry, prompt versioning, and error reporting."
+				}
+			]
 		},
 		{
 			time: "Beta",
 			steps: [
 				{
 					icon: sparklesIcon,
-					content:
-						"Opened a private beta with AI-assisted campaign drafts and tone presets.",
+					content: "Opened a private beta with AI-assisted campaign drafts and tone presets."
 				},
 				{
 					icon: calendarIcon,
-					content: "Ran weekly release trains with guided feedback sessions.",
+					content: "Ran weekly release trains with guided feedback sessions."
 				},
 				{
 					icon: zapIcon,
-					content: "Reduced generation latency by 38% before public launch.",
-				},
-			],
+					content: "Reduced generation latency by 38% before public launch."
+				}
+			]
 		},
 		{
 			time: "Launch Week",
 			steps: [
 				{
 					icon: rocketIcon,
-					content: "Released self-serve onboarding, billing, and workspace templates.",
+					content: "Released self-serve onboarding, billing, and workspace templates."
 				},
 				{
 					icon: starIcon,
-					content: "Published customer stories and benchmark results on launch day.",
-				},
-			],
+					content: "Published customer stories and benchmark results on launch day."
+				}
+			]
 		},
 		{
 			time: "Expansion",
 			steps: [
 				{
 					icon: globeIcon,
-					content: "Localized the editor for multilingual teams across new regions.",
+					content: "Localized the editor for multilingual teams across new regions."
 				},
 				{
 					icon: boxIcon,
-					content: "Launched a template marketplace for partner-built workflows.",
+					content: "Launched a template marketplace for partner-built workflows."
 				},
 				{
 					icon: settingsIcon,
-					content: "Rolled out admin controls, approvals, and audit history.",
-				},
-			],
+					content: "Rolled out admin controls, approvals, and audit history."
+				}
+			]
 		},
 		{
 			time: "Platform",
 			steps: [
 				{
 					icon: sparklesIcon,
-					content: "Introduced automation recipes for briefs, ads, and landing pages.",
+					content: "Introduced automation recipes for briefs, ads, and landing pages."
 				},
 				{
 					icon: zapIcon,
-					content: "Added event streaming hooks for enterprise analytics pipelines.",
-				},
-			],
-		},
+					content: "Added event streaming hooks for enterprise analytics pipelines."
+				}
+			]
+		}
 	];
 </script>
 
-<div class="bg-card w-full max-w-6xl rounded-[2rem] border border-border px-4 py-10 shadow-sm sm:px-8">
+<div
+	class="w-full max-w-6xl rounded-[2rem] border border-border bg-card px-4 py-10 shadow-sm sm:px-8"
+>
 	<ArcTimeline
 		class="[--description-color:#334155] [--icon-active-color:#0f172a] [--icon-inactive-color:#94a3b8] [--placeholder-line-color:#cbd5e1] [--step-line-active-color:#0f766e] [--step-line-inactive-color:#9ca3af] [--time-active-color:#0f172a] [--time-inactive-color:#94a3b8] dark:[--description-color:#cbd5e1] dark:[--icon-active-color:#ecfeff] dark:[--icon-inactive-color:#94a3b8] dark:[--placeholder-line-color:#334155] dark:[--step-line-active-color:#5eead4] dark:[--step-line-inactive-color:#475569] dark:[--time-active-color:#ecfeff] dark:[--time-inactive-color:#94a3b8]"
 		data={ROADMAP}
@@ -109,7 +110,7 @@
 			circleWidth: 4100,
 			angleBetweenMinorSteps: 0.42,
 			lineCountFillBetweenSteps: 7,
-			boundaryPlaceholderLinesCount: 40,
+			boundaryPlaceholderLinesCount: 40
 		}}
 	/>
 </div>

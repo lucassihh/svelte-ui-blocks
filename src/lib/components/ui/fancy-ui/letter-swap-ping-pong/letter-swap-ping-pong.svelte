@@ -18,7 +18,7 @@
 		reverse = true,
 		transition = {
 			type: "spring",
-			duration: 0.7,
+			duration: 0.7
 		},
 		staggerDuration = 0.03,
 		staggerFrom = "first",
@@ -40,15 +40,15 @@
 	let mergeTransition = (baseTransition: AnimationOptions) => ({
 		...baseTransition,
 		delay: stagger(staggerDuration, {
-			from: staggerFrom,
-		}),
+			from: staggerFrom
+		})
 	});
 
 	let animatePrimary = (nextHovered: boolean) =>
 		animate(
 			".letter",
 			{
-				y: nextHovered ? (reverse ? "100%" : "-100%") : 0,
+				y: nextHovered ? (reverse ? "100%" : "-100%") : 0
 			},
 			mergeTransition(transition) as any
 		);
@@ -57,7 +57,7 @@
 		animate(
 			".letter-secondary",
 			{
-				top: nextHovered ? "0%" : reverse ? "-100%" : "100%",
+				top: nextHovered ? "0%" : reverse ? "-100%" : "100%"
 			},
 			mergeTransition(transition) as any
 		);
@@ -98,10 +98,7 @@
 			<motion.span class="letter relative" style={{ top: 0 }}>
 				{letter}
 			</motion.span>
-			<motion.span
-				class="letter-secondary absolute"
-				style={{ top: reverse ? "-100%" : "100%" }}
-			>
+			<motion.span class="letter-secondary absolute" style={{ top: reverse ? "-100%" : "100%" }}>
 				{letter}
 			</motion.span>
 		</span>

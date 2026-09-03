@@ -22,7 +22,7 @@ bun x shadcn-svelte@latest add https://sv-animations.vercel.app/r/animated-theme
 
 ```svelte
 <script lang="ts">
-	import { AnimatedThemeToggler } from "$lib/components/ui/magic-ui/animated-theme-toggler";
+  import { AnimatedThemeToggler } from "$lib/components/ui/magic-ui/animated-theme-toggler";
 </script>
 
 <AnimatedThemeToggler />
@@ -34,7 +34,7 @@ bun x shadcn-svelte@latest add https://sv-animations.vercel.app/r/animated-theme
 
 ```svelte
 <script lang="ts">
-	import { AnimatedThemeToggler } from "$lib/components/ui/magic-ui/animated-theme-toggler";
+  import { AnimatedThemeToggler } from "$lib/components/ui/magic-ui/animated-theme-toggler";
 </script>
 
 <AnimatedThemeToggler />
@@ -58,7 +58,7 @@ If the component depends on global CSS, add the following styles:
 
 A component for smooth theme switching with circular reveal animation.
 
-| Prop | Type | Default | Description |
-| --- | --- | --- | --- |
-| `class` | `string` | `""` | Additional CSS classes to apply |
-| `duration` | `number` | `400` | Duration of the animation in milliseconds |
+| Prop       | Type     | Default | Description                               |
+| ---------- | -------- | ------- | ----------------------------------------- |
+| `class`    | `string` | `""`    | Additional CSS classes to apply           |
+| `duration` | `number` | `400`   | Duration of the animation in milliseconds |

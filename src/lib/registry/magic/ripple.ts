@@ -28,7 +28,7 @@ export const rippleBlocks: BlockShowcaseItem[] = [
 		previewComponent: RippleOnePreview,
 		previewHref: "/preview/magic/ripple/ripple-one",
 		previewMode: "iframe",
-		previewHeight: 420,
+		previewHeight: 820,
 		installId: "ripple-one",
 		codeTree: createBlockCodeTree("ripple-one", [
 			{

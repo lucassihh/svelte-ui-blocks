@@ -3,7 +3,7 @@
 </script>
 
 <div
-	class="text-foreground dark:text-muted flex h-50 w-full items-center justify-center space-y-2 overflow-hidden rounded-xl bg-white p-24 text-4xl font-normal md:h-120"
+	class="flex h-50 w-full items-center justify-center space-y-2 overflow-hidden rounded-xl bg-white p-24 text-4xl font-normal text-foreground md:h-120 dark:text-muted"
 >
 	<ScrambleHover
 		text="special symbols"

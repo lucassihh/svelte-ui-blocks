@@ -95,7 +95,7 @@
 </script>
 
 <div
-	class="relative mx-auto grid max-w-4xl grid-cols-1 gap-12 border-x md:grid-cols-2 md:items-center border-border"
+	class="relative mx-auto grid max-w-4xl grid-cols-1 gap-12 border-x border-border md:grid-cols-2 md:items-center"
 >
 	<FullWidthDivider class="-top-px" />
 

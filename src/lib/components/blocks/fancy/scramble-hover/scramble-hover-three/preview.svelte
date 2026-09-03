@@ -15,12 +15,12 @@
 		"DBRX Instruct",
 		"MythoMax L2 13B",
 		"SOLAR 10.7B Instruct",
-		"Gemma 2B Instruct",
+		"Gemma 2B Instruct"
 	];
 </script>
 
 <div
-	class="text-foreground dark:text-muted flex h-80 w-full flex-col items-end justify-center overflow-hidden rounded-xl bg-white px-8 py-20 text-right text-sm font-normal sm:px-16 sm:text-lg md:h-130 md:px-24 md:text-xl lg:px-32"
+	class="flex h-80 w-full flex-col items-end justify-center overflow-hidden rounded-xl bg-white px-8 py-20 text-right text-sm font-normal text-foreground sm:px-16 sm:text-lg md:h-130 md:px-24 md:text-xl lg:px-32 dark:text-muted"
 >
 	{#each models as model, index}
 		<motion.div
@@ -29,7 +29,7 @@
 				duration: 0.1,
 				ease: "circInOut",
 				delay: index * 0.05 + 0.5,
-				times: [0, 0.2, 1],
+				times: [0, 0.2, 1]
 			}}
 		>
 			<ScrambleHover

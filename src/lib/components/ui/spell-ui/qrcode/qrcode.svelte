@@ -63,7 +63,7 @@
 	let finderPositions = $derived([
 		[0, 0],
 		[0, moduleCount - 7],
-		[moduleCount - 7, 0],
+		[moduleCount - 7, 0]
 	] as [number, number][]);
 
 	let finderSize = $derived(7 * moduleSize);
@@ -83,7 +83,7 @@
 				if (qrData.modules.get(row, col) && !isInFinderPattern(row, col, moduleCount)) {
 					nextCircles.push({
 						cx: (col + 0.5) * moduleSize,
-						cy: (row + 0.5) * moduleSize,
+						cy: (row + 0.5) * moduleSize
 					});
 				}
 			}
@@ -110,15 +110,7 @@
 			{@const y = row * moduleSize}
 
 			<g>
-				<rect
-					{x}
-					{y}
-					width={finderSize}
-					height={finderSize}
-					fill={fgColor}
-					rx="12"
-					ry="12"
-				/>
+				<rect {x} {y} width={finderSize} height={finderSize} fill={fgColor} rx="12" ry="12" />
 				<rect
 					x={x + innerPadding}
 					y={y + innerPadding}

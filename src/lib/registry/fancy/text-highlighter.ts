@@ -34,7 +34,7 @@ export const textHighlighterBlocks: BlockShowcaseItem[] = [
 		previewComponent: TextHighlighterOnePreview,
 		previewHref: "/preview/fancy/text-highlighter/text-highlighter-one",
 		previewMode: "iframe",
-		previewHeight: 420,
+		previewHeight: 820,
 		installId: "text-highlighter-one",
 		codeTree: createBlockCodeTree("text-highlighter-one", [
 			{
@@ -52,7 +52,7 @@ export const textHighlighterBlocks: BlockShowcaseItem[] = [
 		previewComponent: TextHighlighterTwoPreview,
 		previewHref: "/preview/fancy/text-highlighter/text-highlighter-two",
 		previewMode: "iframe",
-		previewHeight: 420,
+		previewHeight: 820,
 		installId: "text-highlighter-two",
 		codeTree: createBlockCodeTree("text-highlighter-two", [
 			{
@@ -70,7 +70,7 @@ export const textHighlighterBlocks: BlockShowcaseItem[] = [
 		previewComponent: TextHighlighterThreePreview,
 		previewHref: "/preview/fancy/text-highlighter/text-highlighter-three",
 		previewMode: "iframe",
-		previewHeight: 420,
+		previewHeight: 820,
 		installId: "text-highlighter-three",
 		codeTree: createBlockCodeTree("text-highlighter-three", [
 			{
@@ -88,7 +88,7 @@ export const textHighlighterBlocks: BlockShowcaseItem[] = [
 		previewComponent: TextHighlighterFourPreview,
 		previewHref: "/preview/fancy/text-highlighter/text-highlighter-four",
 		previewMode: "iframe",
-		previewHeight: 420,
+		previewHeight: 820,
 		installId: "text-highlighter-four",
 		codeTree: createBlockCodeTree("text-highlighter-four", [
 			{

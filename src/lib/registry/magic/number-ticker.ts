@@ -36,7 +36,7 @@ export const numberTickerBlocks: BlockShowcaseItem[] = [
 		previewComponent: NumberTickerOnePreview,
 		previewHref: "/preview/magic/number-ticker/number-ticker-one",
 		previewMode: "iframe",
-		previewHeight: 420,
+		previewHeight: 820,
 		installId: "number-ticker-one",
 		codeTree: createBlockCodeTree("number-ticker-one", [
 			{
@@ -54,7 +54,7 @@ export const numberTickerBlocks: BlockShowcaseItem[] = [
 		previewComponent: NumberTickerTwoPreview,
 		previewHref: "/preview/magic/number-ticker/number-ticker-two",
 		previewMode: "iframe",
-		previewHeight: 420,
+		previewHeight: 820,
 		installId: "number-ticker-two",
 		codeTree: createBlockCodeTree("number-ticker-two", [
 			{
@@ -72,7 +72,7 @@ export const numberTickerBlocks: BlockShowcaseItem[] = [
 		previewComponent: NumberTickerThreePreview,
 		previewHref: "/preview/magic/number-ticker/number-ticker-three",
 		previewMode: "iframe",
-		previewHeight: 420,
+		previewHeight: 820,
 		installId: "number-ticker-three",
 		codeTree: createBlockCodeTree("number-ticker-three", [
 			{
@@ -90,7 +90,7 @@ export const numberTickerBlocks: BlockShowcaseItem[] = [
 		previewComponent: NumberTickerFourPreview,
 		previewHref: "/preview/magic/number-ticker/number-ticker-four",
 		previewMode: "iframe",
-		previewHeight: 420,
+		previewHeight: 820,
 		installId: "number-ticker-four",
 		codeTree: createBlockCodeTree("number-ticker-four", [
 			{
@@ -108,7 +108,7 @@ export const numberTickerBlocks: BlockShowcaseItem[] = [
 		previewComponent: NumberTickerFivePreview,
 		previewHref: "/preview/magic/number-ticker/number-ticker-five",
 		previewMode: "iframe",
-		previewHeight: 420,
+		previewHeight: 820,
 		installId: "number-ticker-five",
 		codeTree: createBlockCodeTree("number-ticker-five", [
 			{

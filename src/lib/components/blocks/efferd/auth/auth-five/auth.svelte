@@ -43,7 +43,7 @@
 	{...restProps}
 >
 	<div
-		class="relative hidden h-full flex-col border-r bg-secondary p-10 lg:flex dark:bg-secondary/20 border-border"
+		class="relative hidden h-full flex-col border-r border-border bg-secondary p-10 lg:flex dark:bg-secondary/20"
 	>
 		<div
 			class="absolute inset-0 bg-linear-to-b from-transparent via-transparent to-background"
@@ -111,7 +111,7 @@
 				</Button>
 			</div>
 
-			<AuthDivider>OR</AuthDivider>
+			<AuthDivider class="text-border">OR</AuthDivider>
 
 			<form class="space-y-2">
 				<p class="text-start text-xs text-muted-foreground">

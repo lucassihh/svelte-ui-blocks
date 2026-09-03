@@ -39,7 +39,7 @@
 	];
 </script>
 
-<div class="mx-auto max-w-4xl">
+<div class="mx-auto max-w-4xl p-4">
 	<div class="mb-12 flex max-w-md flex-col justify-center gap-2">
 		<h1 class="text-2xl font-bold md:text-3xl">Contact Us</h1>
 		<p class="text-base text-muted-foreground">

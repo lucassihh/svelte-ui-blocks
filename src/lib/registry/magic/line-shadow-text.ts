@@ -28,7 +28,7 @@ export const lineShadowTextBlocks: BlockShowcaseItem[] = [
 		previewComponent: LineShadowTextOnePreview,
 		previewHref: "/preview/magic/line-shadow-text/line-shadow-text-one",
 		previewMode: "iframe",
-		previewHeight: 420,
+		previewHeight: 820,
 		installId: "line-shadow-text-one",
 		codeTree: createBlockCodeTree("line-shadow-text-one", [
 			{

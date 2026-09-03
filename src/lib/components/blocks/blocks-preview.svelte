@@ -483,7 +483,7 @@
 
 							{#if isLoading}
 								<div
-									class="absolute inset-0 right-2 flex items-center justify-center border-x bg-background border-border"
+									class="absolute inset-0 right-2 flex items-center justify-center border-x border-border bg-background"
 								>
 									<div
 										class="size-6 animate-spin rounded-full border border-border border-primary border-t-transparent"

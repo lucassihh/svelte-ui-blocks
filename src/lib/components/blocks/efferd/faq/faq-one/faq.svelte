@@ -69,7 +69,7 @@
 
 	<Accordion type="single" class="rounded-lg border border-border">
 		{#each questions as item (item.id)}
-			<AccordionItem value={item.id} class="px-4 border-border">
+			<AccordionItem value={item.id} class="border-border px-4">
 				<AccordionTrigger
 					class="py-4 hover:no-underline focus-visible:underline focus-visible:ring-0"
 				>

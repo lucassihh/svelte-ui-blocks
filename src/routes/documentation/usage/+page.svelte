@@ -18,7 +18,7 @@
 	description="Once the registry is ready, Efferd works best as a fast browse-to-build loop: compare variants, install the exact block, then tailor it to your product."
 >
 	{#snippet actions()}
-		<Button href="/blocks/efferd-ui/hero" size="sm">Browse Blocks</Button>
+		<Button href="/blocks/efferd/hero" size="sm">Browse Blocks</Button>
 		<Button href="/documentation/installation" size="sm" variant="outline"
 			>Review Installation</Button
 		>

@@ -28,10 +28,10 @@
 	];
 
 	const frameLines = [
-		"-top-[1.5px] right-3 left-3",
-		"top-3 -right-[1.5px] bottom-3",
-		"top-3 bottom-3 -left-[1.5px]",
-		"right-3 -bottom-[1.5px] left-3"
+		"-top-[1.5px] right-3 left-3 border border-border",
+		"top-3 -right-[1.5px] bottom-3 border border-border",
+		"top-3 bottom-3 -left-[1.5px] border border-border",
+		"right-3 -bottom-[1.5px] left-3 border border-border"
 	] as const;
 </script>
 
@@ -61,7 +61,7 @@
 					</p>
 
 					<DashedLine
-						class="right-5 bottom-0 left-5 group-last:hidden md:top-5 md:right-0 md:bottom-5 md:left-full"
+						class="right-5 bottom-0 left-5 border border-border group-last:hidden md:top-5 md:right-0 md:bottom-5 md:left-full"
 					/>
 				</div>
 			{/each}

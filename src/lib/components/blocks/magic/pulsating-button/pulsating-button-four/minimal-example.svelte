@@ -4,7 +4,7 @@
 
 <div class="flex justify-center">
 	<div class="space-y-5 text-center">
-		<p class="text-muted-foreground text-sm">Minimal Cyan Example</p>
+		<p class="text-sm text-muted-foreground">Minimal Cyan Example</p>
 
 		<!-- add any olkch colors: https://oklch.com -->
 		<PulsatingButton

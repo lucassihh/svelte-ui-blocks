@@ -6,5 +6,5 @@ export type {
 	ColorSelectorCssColor,
 	ColorSelectorPresetColor,
 	ColorSelectorProps,
-	ColorSelectorSize,
+	ColorSelectorSize
 } from "./color-selector.svelte";

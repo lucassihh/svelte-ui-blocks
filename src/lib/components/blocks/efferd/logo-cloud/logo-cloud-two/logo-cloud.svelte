@@ -3,9 +3,9 @@
 	import LogoCard from "./logo-card.svelte";
 </script>
 
-<div class="grid grid-cols-2 border border-border md:grid-cols-4">
+<div class="m-4 grid grid-cols-2 border border-border md:grid-cols-4">
 	<LogoCard
-		class="relative border-r border-b bg-secondary dark:bg-secondary/30 border-border"
+		class="relative border-r border-b border-border bg-secondary dark:bg-secondary/30"
 		logo={{
 			src: "https://storage.efferd.com/logo/nvidia-wordmark.svg",
 			alt: "Nvidia Logo"
@@ -15,7 +15,7 @@
 	</LogoCard>
 
 	<LogoCard
-		class="border-b md:border-r border-border"
+		class="border-b border-border md:border-r"
 		logo={{
 			src: "https://storage.efferd.com/logo/supabase-wordmark.svg",
 			alt: "Supabase Logo"
@@ -23,7 +23,7 @@
 	/>
 
 	<LogoCard
-		class="relative border-r border-b md:bg-secondary dark:md:bg-secondary/30 border-border"
+		class="relative border-r border-b border-border md:bg-secondary dark:md:bg-secondary/30"
 		logo={{
 			src: "https://storage.efferd.com/logo/github-wordmark.svg",
 			alt: "GitHub Logo"
@@ -34,7 +34,7 @@
 	</LogoCard>
 
 	<LogoCard
-		class="relative border-b bg-secondary md:bg-background dark:bg-secondary/30 md:dark:bg-background border-border"
+		class="relative border-b border-border bg-secondary md:bg-background dark:bg-secondary/30 md:dark:bg-background"
 		logo={{
 			src: "https://storage.efferd.com/logo/openai-wordmark.svg",
 			alt: "OpenAI Logo"
@@ -42,7 +42,7 @@
 	/>
 
 	<LogoCard
-		class="relative border-r border-b bg-secondary md:border-b-0 md:bg-background dark:bg-secondary/30 md:dark:bg-background border-border"
+		class="relative border-r border-b border-border bg-secondary md:border-b-0 md:bg-background dark:bg-secondary/30 md:dark:bg-background"
 		logo={{
 			src: "https://storage.efferd.com/logo/turso-wordmark.svg",
 			alt: "Turso Logo"
@@ -52,7 +52,7 @@
 	</LogoCard>
 
 	<LogoCard
-		class="border-b bg-background md:border-r md:border-b-0 md:bg-secondary dark:md:bg-secondary/30 border-border"
+		class="border-b border-border bg-background md:border-r md:border-b-0 md:bg-secondary dark:md:bg-secondary/30"
 		logo={{
 			src: "https://storage.efferd.com/logo/clerk-wordmark.svg",
 			alt: "Clerk Logo"

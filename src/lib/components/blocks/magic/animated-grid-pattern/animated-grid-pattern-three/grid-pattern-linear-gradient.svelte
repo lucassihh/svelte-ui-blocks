@@ -3,7 +3,7 @@
 </script>
 
 <div
-	class="bg-background relative flex size-full items-center justify-center overflow-hidden rounded-lg border border-border p-20"
+	class="relative flex size-full items-center justify-center overflow-hidden rounded-lg border border-border bg-background p-20"
 >
 	<GridPattern
 		width={20}

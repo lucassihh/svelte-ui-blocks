@@ -33,7 +33,7 @@ export const animatedGridPatternBlocks: BlockShowcaseItem[] = [
 		previewComponent: AnimatedGridPatternOnePreview,
 		previewHref: "/preview/magic/animated-grid-pattern/animated-grid-pattern-one",
 		previewMode: "iframe",
-		previewHeight: 420,
+		previewHeight: 820,
 		installId: "animated-grid-pattern-one",
 		codeTree: createBlockCodeTree("animated-grid-pattern-one", [
 			{
@@ -51,7 +51,7 @@ export const animatedGridPatternBlocks: BlockShowcaseItem[] = [
 		previewComponent: AnimatedGridPatternTwoPreview,
 		previewHref: "/preview/magic/animated-grid-pattern/animated-grid-pattern-two",
 		previewMode: "iframe",
-		previewHeight: 420,
+		previewHeight: 820,
 		installId: "animated-grid-pattern-two",
 		codeTree: createBlockCodeTree("animated-grid-pattern-two", [
 			{
@@ -69,7 +69,7 @@ export const animatedGridPatternBlocks: BlockShowcaseItem[] = [
 		previewComponent: AnimatedGridPatternThreePreview,
 		previewHref: "/preview/magic/animated-grid-pattern/animated-grid-pattern-three",
 		previewMode: "iframe",
-		previewHeight: 420,
+		previewHeight: 820,
 		installId: "animated-grid-pattern-three",
 		codeTree: createBlockCodeTree("animated-grid-pattern-three", [
 			{

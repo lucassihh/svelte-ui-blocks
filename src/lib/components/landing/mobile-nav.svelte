@@ -1,7 +1,7 @@
 <script lang="ts">
 	// UI
 	import { Button } from "$lib/components/ui/button";
-
+	import { TextAnimate } from "$lib/components/ui/magic-ui/text-animate";
 	// Portal for Menu
 	import { Portal, PortalBackdrop } from "$lib/components/ui/portal";
 
@@ -46,7 +46,7 @@
 					{#each navLinks as link, i}
 						<li>
 							<a href={link.href} class="text-xl font-medium" onclick={() => (open = false)}>
-								{link.label}
+								<TextAnimate content={link.label} animation="slideRight" delay="0.1" by="text" />
 							</a>
 						</li>
 					{/each}

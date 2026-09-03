@@ -84,7 +84,9 @@
 	)}
 >
 	<div class="relative mx-auto max-w-5xl px-4">
-		<div class="relative grid grid-cols-1 border-x md:grid-cols-4 md:divide-x border-border divide-border">
+		<div
+			class="relative grid grid-cols-1 divide-border border-x border-border md:grid-cols-4 md:divide-x"
+		>
 			{#each columns as column, index (column.social.title)}
 				<div>
 					<a
@@ -103,7 +105,7 @@
 		</div>
 	</div>
 
-	<div class="flex justify-center border-t p-3 border-border">
+	<div class="flex justify-center border-t border-border p-3">
 		<p class="text-xs text-muted-foreground">
 			&copy; {currentYear} efferd, All rights reserved
 		</p>

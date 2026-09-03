@@ -28,11 +28,11 @@ export const blogBlocks: BlockShowcaseItem[] = [
 		id: "blog-one",
 		title: "Blog One",
 		description:
-			"A Blog One composition.",
+			"Blog components",
 		previewComponent: BlogOnePreview,
 		previewHref: "/preview/efferd/blog/blog-one",
 		previewMode: "iframe",
-		previewHeight: 420,
+		previewHeight: 820,
 		installId: "blog-one",
 		codeTree: createBlockCodeTree("blog-one", [
 			{
@@ -46,11 +46,11 @@ export const blogBlocks: BlockShowcaseItem[] = [
 		id: "blog-two",
 		title: "Blog Two",
 		description:
-			"A Blog Two composition.",
+			"Blog components",
 		previewComponent: BlogTwoPreview,
 		previewHref: "/preview/efferd/blog/blog-two",
 		previewMode: "iframe",
-		previewHeight: 420,
+		previewHeight: 820,
 		installId: "blog-two",
 		codeTree: createBlockCodeTree("blog-two", [
 			{
@@ -64,11 +64,11 @@ export const blogBlocks: BlockShowcaseItem[] = [
 		id: "blog-three",
 		title: "Blog Three",
 		description:
-			"A Blog Three composition.",
+			"Blog components",
 		previewComponent: BlogThreePreview,
 		previewHref: "/preview/efferd/blog/blog-three",
 		previewMode: "iframe",
-		previewHeight: 420,
+		previewHeight: 820,
 		installId: "blog-three",
 		codeTree: createBlockCodeTree("blog-three", [
 			{

@@ -4,21 +4,36 @@
 	// UI
 	import * as Breadcrumb from "$lib/components/ui/breadcrumb";
 
-	// Data
-	import { getDocsPage } from "./data.ts";
+	// Function to format segment URL ("example-name" -> "Example Name")
+	function formatSegment(segment: string) {
+		return segment.replace(/-/g, " ").replace(/\b\w/g, (char) => char.toUpperCase());
+	}
 
-	// Get Current Page
-	let currentPage = $derived(getDocsPage(page.url.pathname));
+	// Function to Get URL and format
+	let currentPageTitle = $derived.by(() => {
+		const segments = page.url.pathname.split("/").filter(Boolean);
+		if (segments.length > 1) {
+			return formatSegment(segments[segments.length - 1]);
+		}
+		return null;
+	});
 </script>
 
 <Breadcrumb.Root>
 	<Breadcrumb.List>
 		<Breadcrumb.Item>
-			<Breadcrumb.Link href="/documentation">Documentation</Breadcrumb.Link>
+			{#if currentPageTitle}
+				<Breadcrumb.Link href="/documentation">Documentation</Breadcrumb.Link>
+			{:else}
+				<Breadcrumb.Page>Documentation</Breadcrumb.Page>
+			{/if}
 		</Breadcrumb.Item>
-		<Breadcrumb.Separator />
-		<Breadcrumb.Item>
-			<Breadcrumb.Page>{currentPage.title}</Breadcrumb.Page>
-		</Breadcrumb.Item>
+
+		{#if currentPageTitle}
+			<Breadcrumb.Separator />
+			<Breadcrumb.Item>
+				<Breadcrumb.Page>{currentPageTitle}</Breadcrumb.Page>
+			</Breadcrumb.Item>
+		{/if}
 	</Breadcrumb.List>
 </Breadcrumb.Root>

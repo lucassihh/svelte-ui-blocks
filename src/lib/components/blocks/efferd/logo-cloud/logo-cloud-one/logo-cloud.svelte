@@ -35,7 +35,7 @@
 	];
 </script>
 
-<div class="grid grid-cols-2 rounded-lg bg-border shadow md:grid-cols-4">
+<div class="m-4 grid grid-cols-2 rounded-lg bg-border shadow md:grid-cols-4">
 	{#each logos as logo, i}
 		<div class="flex items-center justify-center rounded-lg border border-border bg-background p-8">
 			<img

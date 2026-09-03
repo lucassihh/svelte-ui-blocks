@@ -59,7 +59,7 @@ export const contactBlocks: BlockShowcaseItem[] = [
 		previewComponent: ContactOnePreview,
 		previewHref: "/preview/efferd/contact/contact-one",
 		previewMode: "iframe",
-		previewHeight: 420,
+		previewHeight: 820,
 		installId: "contact-one",
 		codeTree: createBlockCodeTree("contact-one", [
 			{
@@ -78,7 +78,7 @@ export const contactBlocks: BlockShowcaseItem[] = [
 		previewComponent: ContactTwoPreview,
 		previewHref: "/preview/efferd/contact/contact-two",
 		previewMode: "iframe",
-		previewHeight: 420,
+		previewHeight: 820,
 		installId: "contact-two",
 		codeTree: createBlockCodeTree("contact-two", [
 			{
@@ -97,7 +97,7 @@ export const contactBlocks: BlockShowcaseItem[] = [
 		previewComponent: ContactThreePreview,
 		previewHref: "/preview/efferd/contact/contact-three",
 		previewMode: "iframe",
-		previewHeight: 420,
+		previewHeight: 820,
 		installId: "contact-three",
 		codeTree: createBlockCodeTree("contact-three", [
 			{
@@ -116,7 +116,7 @@ export const contactBlocks: BlockShowcaseItem[] = [
 		previewComponent: ContactFourPreview,
 		previewHref: "/preview/efferd/contact/contact-four",
 		previewMode: "iframe",
-		previewHeight: 420,
+		previewHeight: 820,
 		installId: "contact-four",
 		codeTree: createBlockCodeTree("contact-four", [
 			{
@@ -135,7 +135,7 @@ export const contactBlocks: BlockShowcaseItem[] = [
 		previewComponent: ContactFivePreview,
 		previewHref: "/preview/efferd/contact/contact-five",
 		previewMode: "iframe",
-		previewHeight: 420,
+		previewHeight: 820,
 		installId: "contact-five",
 		codeTree: createBlockCodeTree("contact-five:contact", [
 			{

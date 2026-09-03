@@ -28,7 +28,7 @@ export const lightRaysBlocks: BlockShowcaseItem[] = [
 		previewComponent: LightRaysOnePreview,
 		previewHref: "/preview/magic/light-rays/light-rays-one",
 		previewMode: "iframe",
-		previewHeight: 420,
+		previewHeight: 820,
 		installId: "light-rays-one",
 		codeTree: createBlockCodeTree("light-rays-one", [
 			{

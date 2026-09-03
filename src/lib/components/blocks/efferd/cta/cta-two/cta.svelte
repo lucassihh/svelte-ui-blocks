@@ -7,7 +7,7 @@
 <div class="relative mx-auto flex w-full max-w-3xl flex-col justify-between border-x border-border">
 	<FullWidthDivider position="top" />
 
-	<div class="border-b px-2 py-8 border-border">
+	<div class="border-b border-border px-2 py-8">
 		<h2 class="text-center text-lg font-semibold md:text-2xl">
 			Plan the present. Build the future.
 		</h2>

@@ -28,7 +28,7 @@ export const pointerBlocks: BlockShowcaseItem[] = [
 		previewComponent: PointerOnePreview,
 		previewHref: "/preview/magic/pointer/pointer-one",
 		previewMode: "iframe",
-		previewHeight: 420,
+		previewHeight: 820,
 		installId: "pointer-one",
 		codeTree: createBlockCodeTree("pointer-one", [
 			{

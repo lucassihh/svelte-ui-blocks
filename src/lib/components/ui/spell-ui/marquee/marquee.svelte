@@ -68,9 +68,7 @@
 	<div
 		class={cn(
 			"spell-marquee__scroller",
-			isVertical
-				? "spell-marquee__scroller--vertical"
-				: "spell-marquee__scroller--horizontal",
+			isVertical ? "spell-marquee__scroller--vertical" : "spell-marquee__scroller--horizontal",
 			`spell-marquee__scroller--${direction}`,
 			pauseOnHover && "spell-marquee__scroller--pause-on-hover"
 		)}
@@ -79,9 +77,7 @@
 		<div
 			class={cn(
 				"spell-marquee__segment",
-				isVertical
-					? "spell-marquee__segment--vertical"
-					: "spell-marquee__segment--horizontal"
+				isVertical ? "spell-marquee__segment--vertical" : "spell-marquee__segment--horizontal"
 			)}
 		>
 			{@render children()}
@@ -91,9 +87,7 @@
 			aria-hidden="true"
 			class={cn(
 				"spell-marquee__segment",
-				isVertical
-					? "spell-marquee__segment--vertical"
-					: "spell-marquee__segment--horizontal"
+				isVertical ? "spell-marquee__segment--vertical" : "spell-marquee__segment--horizontal"
 			)}
 		>
 			{@render children()}

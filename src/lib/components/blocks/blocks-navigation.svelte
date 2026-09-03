@@ -52,7 +52,7 @@
 </script>
 
 <div
-	class="sticky top-15 right-0 left-0 z-40 mx-auto w-full max-w-7xl border border-border border-dashed bg-background/20 backdrop-blur-xs"
+	class="sticky top-15 right-0 left-0 z-40 mx-auto w-full max-w-7xl border border-dashed border-border bg-background/20 backdrop-blur-xs"
 >
 	<ScrollArea orientation="horizontal" fade={false} class="w-full" scrollbarXClasses="hidden">
 		<nav class="mx-auto w-fit max-w-7xl">

@@ -2,10 +2,10 @@
 	import { page } from "$app/state";
 
 	// Data
-	import { docsPrimaryPages, docsSecondaryPages, normalizeDocsPath } from "./data.ts";
+	import { getstart } from "./data.ts";
 
-	// Current Path
-	let currentPath = $derived(normalizeDocsPath(page.url.pathname));
+	// function to normalize path (url) | remove final "/""
+	const normalizePath = (path: string) => path.replace(/\/$/, "") || "/";
 </script>
 
 <!-- Sidebar Desktop - Hidden on Mobile -->
@@ -20,8 +20,8 @@
 			<div class="flex flex-col gap-2">
 				<span class="px-2 text-xs font-normal text-primary/80">Get Started</span>
 				<ul class="ml-2 flex flex-col gap-1 border-l border-border/60 pl-2">
-					{#each docsPrimaryPages as item (item.title)}
-						{@const isActive = currentPath === normalizeDocsPath(item.href)}
+					{#each getstart as item (item.title)}
+						{@const isActive = normalizePath(page.url.pathname) === normalizePath(item.href)}
 						<li>
 							<a
 								href={item.href}
@@ -37,6 +37,7 @@
 			</div>
 
 			<!-- Resources - Section -->
+			<!--
 			<div class="flex flex-col gap-2">
 				<span class="px-2 text-xs font-normal text-primary/80">Resources</span>
 				<ul class="ml-2 flex flex-col gap-1 border-l border-border/60 pl-2">
@@ -55,6 +56,7 @@
 					{/each}
 				</ul>
 			</div>
+      -->
 		</nav>
 	</div>
 </aside>

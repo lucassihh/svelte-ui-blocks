@@ -32,7 +32,7 @@ export const shineBorderBlocks: BlockShowcaseItem[] = [
 		previewComponent: ShineBorderOnePreview,
 		previewHref: "/preview/magic/shine-border/shine-border-one",
 		previewMode: "iframe",
-		previewHeight: 420,
+		previewHeight: 820,
 		installId: "shine-border-one",
 		codeTree: createBlockCodeTree("shine-border-one", [
 			{
@@ -51,7 +51,7 @@ export const shineBorderBlocks: BlockShowcaseItem[] = [
 		previewComponent: ShineBorderTwoPreview,
 		previewHref: "/preview/magic/shine-border/shine-border-two",
 		previewMode: "iframe",
-		previewHeight: 420,
+		previewHeight: 820,
 		installId: "shine-border-two",
 		codeTree: createBlockCodeTree("shine-border-two", [
 			{

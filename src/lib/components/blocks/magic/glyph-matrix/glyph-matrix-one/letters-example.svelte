@@ -1,10 +1,10 @@
 <script lang="ts">
 	import { GlyphMatrix } from "$lib/components/ui/magic-ui/glyph-matrix";
 	import { mode } from "mode-watcher";
-    // Visit https://www.fffuel.co/cccolor/ for colors
+	// Visit https://www.fffuel.co/cccolor/ for colors
 </script>
 
-<div class="bg-background relative h-100 w-full overflow-hidden rounded-lg">
+<div class="relative h-100 w-full overflow-hidden rounded-lg bg-background">
 	<GlyphMatrix
 		glyphs="SVELTE"
 		cellSize={16}

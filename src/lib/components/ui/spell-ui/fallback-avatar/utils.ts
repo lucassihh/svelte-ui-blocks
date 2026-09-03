@@ -69,7 +69,7 @@ export function oklchToRgb(lightness: number, chroma: number, hue: number): RGBC
 	return [
 		Math.round(Math.max(0, Math.min(1, gammaCorrect(red))) * 255),
 		Math.round(Math.max(0, Math.min(1, gammaCorrect(green))) * 255),
-		Math.round(Math.max(0, Math.min(1, gammaCorrect(blue))) * 255),
+		Math.round(Math.max(0, Math.min(1, gammaCorrect(blue))) * 255)
 	];
 }
 
@@ -95,6 +95,6 @@ export function computeUniforms(name: string): Uniforms {
 		P: [points[0], points[1], points[2], points[3]],
 		Q: [points[4], points[5], points[6], points[7]],
 		C1: [colorOne[0] / 255, colorOne[1] / 255, colorOne[2] / 255],
-		C2: [colorTwo[0] / 255, colorTwo[1] / 255, colorTwo[2] / 255],
+		C2: [colorTwo[0] / 255, colorTwo[1] / 255, colorTwo[2] / 255]
 	};
 }

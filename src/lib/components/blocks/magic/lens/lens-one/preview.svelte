@@ -4,7 +4,7 @@
 	import * as Card from "$lib/components/ui/card/index.js";
 </script>
 
-<Card.Root class="relative max-w-md shadow-none border border-border">
+<Card.Root class="relative max-w-md border border-border shadow-none">
 	<Card.Header>
 		<Lens zoomFactor={2} lensSize={150} isStatic={false} ariaLabel="Zoom Area">
 			<img

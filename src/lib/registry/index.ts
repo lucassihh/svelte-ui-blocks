@@ -1,19 +1,29 @@
 // Imports for efferd
 import { authBlocks } from "./efferd/auth";
 import { blogBlocks } from "./efferd/blog";
-import { contactBlocks } from "./efferd/contact";
+import { contactBlocks as efferdContactBlocks } from "./efferd/contact";
 import { ctaBlocks } from "./efferd/cta";
 import { faqBlocks } from "./efferd/faq";
 import { featureBlocks } from "./efferd/feature";
-import { footerBlocks } from "./efferd/footer";
-import { headerBlocks } from "./efferd/header";
-import { heroBlocks } from "./efferd/hero";
+import { footerBlocks as efferdFooterBlocks } from "./efferd/footer";
+import { headerBlocks as efferdHeaderBlocks } from "./efferd/header";
+import { heroBlocks as efferdHeroBlocks } from "./efferd/hero";
 import { imageGalleryBlocks } from "./efferd/image-gallery";
-import { integrationBlocks } from "./efferd/integration";
-import { logoCloudBlocks } from "./efferd/logo-cloud";
+import { integrationBlocks as efferdIntegrationBlocks } from "./efferd/integration";
+import { logoCloudBlocks as efferdLogoCloudBlocks } from "./efferd/logo-cloud";
 import { notFoundBlocks } from "./efferd/not-found";
-import { pricingBlocks } from "./efferd/pricing";
-import { testimonialBlocks } from "./efferd/testimonial";
+import { pricingBlocks as efferdPricingBlocks } from "./efferd/pricing";
+import { testimonialBlocks as efferdTestimonialBlocks } from "./efferd/testimonial";
+
+// Imports for fancy
+import { animatedGradientSvgBlocks } from "./fancy/animated-gradient-svg";
+import { letterSwapGoodBlocks } from "./fancy/letter-swap-good";
+import { mediaBetweenTextBlocks } from "./fancy/media-between-text";
+import { scrambleHoverBlocks } from "./fancy/scramble-hover";
+import { scrambleInBlocks } from "./fancy/scramble-in";
+import { textHighlighterBlocks } from "./fancy/text-highlighter";
+import { textRotateBlocks } from "./fancy/text-rotate";
+import { underlineToBackgroundBlocks } from "./fancy/underline-to-background";
 
 // Imports for magic
 import { animatedBeamBlocks } from "./magic/animated-beam";
@@ -65,34 +75,54 @@ import { typingAnimationBlocks } from "./magic/typing-animation";
 import { videoTextBlocks } from "./magic/video-text";
 import { wordRotateBlocks } from "./magic/word-rotate";
 
-// Imports for fancy
-import { animatedGradientSvgBlocks } from "./fancy/animated-gradient-svg";
-import { letterSwapGoodBlocks } from "./fancy/letter-swap-good";
-import { mediaBetweenTextBlocks } from "./fancy/media-between-text";
-import { scrambleHoverBlocks } from "./fancy/scramble-hover";
-import { scrambleInBlocks } from "./fancy/scramble-in";
-import { textHighlighterBlocks } from "./fancy/text-highlighter";
-import { textRotateBlocks } from "./fancy/text-rotate";
-import { underlineToBackgroundBlocks } from "./fancy/underline-to-background";
+// Imports for veil
+import { callToActionBlocks } from "./veil/call-to-action";
+import { comparatorBlocks } from "./veil/comparator";
+import { contactBlocks as veilContactBlocks } from "./veil/contact";
+import { contentBlocks } from "./veil/content";
+import { faqsBlocks } from "./veil/faqs";
+import { featuresBlocks } from "./veil/features";
+import { footerBlocks as veilFooterBlocks } from "./veil/footer";
+import { forgotPasswordBlocks } from "./veil/forgot-password";
+import { headerBlocks as veilHeaderBlocks } from "./veil/header";
+import { heroBlocks as veilHeroBlocks } from "./veil/hero";
+import { integrationBlocks as veilIntegrationBlocks } from "./veil/integration";
+import { loginBlocks } from "./veil/login";
+import { logoCloudBlocks as veilLogoCloudBlocks } from "./veil/logo-cloud";
+import { pricingBlocks as veilPricingBlocks } from "./veil/pricing";
+import { signupBlocks } from "./veil/signup";
+import { statsBlocks } from "./veil/stats";
+import { teamBlocks } from "./veil/team";
+import { testimonialBlocks as veilTestimonialBlocks } from "./veil/testimonial";
 
 // Exports
 export const registry = {
 	"efferd": {
 		auth: authBlocks,
 		blog: blogBlocks,
-		contact: contactBlocks,
+		contact: efferdContactBlocks,
 		cta: ctaBlocks,
 		faq: faqBlocks,
 		feature: featureBlocks,
-		footer: footerBlocks,
-		header: headerBlocks,
-		hero: heroBlocks,
+		footer: efferdFooterBlocks,
+		header: efferdHeaderBlocks,
+		hero: efferdHeroBlocks,
 		imageGallery: imageGalleryBlocks,
-		integration: integrationBlocks,
-		logoCloud: logoCloudBlocks,
+		integration: efferdIntegrationBlocks,
+		logoCloud: efferdLogoCloudBlocks,
 		notFound: notFoundBlocks,
-		pricing: pricingBlocks,
-		testimonial: testimonialBlocks
+		pricing: efferdPricingBlocks,
+		testimonial: efferdTestimonialBlocks
+	},
+	"fancy": {
+		animatedGradientSvg: animatedGradientSvgBlocks,
+		letterSwapGood: letterSwapGoodBlocks,
+		mediaBetweenText: mediaBetweenTextBlocks,
+		scrambleHover: scrambleHoverBlocks,
+		scrambleIn: scrambleInBlocks,
+		textHighlighter: textHighlighterBlocks,
+		textRotate: textRotateBlocks,
+		underlineToBackground: underlineToBackgroundBlocks
 	},
 	"magic": {
 		animatedBeam: animatedBeamBlocks,
@@ -144,15 +174,25 @@ export const registry = {
 		videoText: videoTextBlocks,
 		wordRotate: wordRotateBlocks
 	},
-	"fancy": {
-		animatedGradientSvg: animatedGradientSvgBlocks,
-		letterSwapGood: letterSwapGoodBlocks,
-		mediaBetweenText: mediaBetweenTextBlocks,
-		scrambleHover: scrambleHoverBlocks,
-		scrambleIn: scrambleInBlocks,
-		textHighlighter: textHighlighterBlocks,
-		textRotate: textRotateBlocks,
-		underlineToBackground: underlineToBackgroundBlocks
+	"veil": {
+		callToAction: callToActionBlocks,
+		comparator: comparatorBlocks,
+		contact: veilContactBlocks,
+		content: contentBlocks,
+		faqs: faqsBlocks,
+		features: featuresBlocks,
+		footer: veilFooterBlocks,
+		forgotPassword: forgotPasswordBlocks,
+		header: veilHeaderBlocks,
+		hero: veilHeroBlocks,
+		integration: veilIntegrationBlocks,
+		login: loginBlocks,
+		logoCloud: veilLogoCloudBlocks,
+		pricing: veilPricingBlocks,
+		signup: signupBlocks,
+		stats: statsBlocks,
+		team: teamBlocks,
+		testimonial: veilTestimonialBlocks
 	}
 } as const;
 
@@ -161,5 +201,5 @@ export type RegistryKey = keyof typeof registry;
 /* So you can import like this in any page:
 
     import { registry } from "$lib/registry";
-    const efferd = registry["efferd-ui"];
+    const efferd = registry["efferd"];
 */

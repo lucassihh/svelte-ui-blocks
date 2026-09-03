@@ -57,7 +57,7 @@
 				<Button class="w-full" size="sm" type="button">Continue With Email</Button>
 			</form>
 
-			<AuthDivider>OR CONTINUE WITH</AuthDivider>
+			<AuthDivider class="text-border">OR CONTINUE WITH</AuthDivider>
 
 			<div class="space-y-2">
 				<Button class="w-full" type="button" variant="outline">

@@ -1,10 +1,10 @@
 <script lang="ts">
 	import XIcon from "$lib/assets/svg/social/x.svelte";
-  import InstagramIcon from "$lib/assets/svg/social/instagram.svelte";
-  import YoutubeIcon from "$lib/assets/svg/social/youtube.svelte";
-  import FacebookIcon from "$lib/assets/svg/social/facebook.svelte";
-  import LinkedinIcon from "$lib/assets/svg/social/linkedin.svelte";
-  
+	import InstagramIcon from "$lib/assets/svg/social/instagram.svelte";
+	import YoutubeIcon from "$lib/assets/svg/social/youtube.svelte";
+	import FacebookIcon from "$lib/assets/svg/social/facebook.svelte";
+	import LinkedinIcon from "$lib/assets/svg/social/linkedin.svelte";
+
 	import { Dock, DockIcon } from "$lib/components/ui/magic-ui/dock";
 </script>
 

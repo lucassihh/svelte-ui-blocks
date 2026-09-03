@@ -22,7 +22,7 @@
 		<h3 class="text-lg font-medium whitespace-nowrap text-foreground md:text-xl">
 			{title}
 		</h3>
-		<span class="mb-1.5 w-full border-b-2 border-border border-dashed"></span>
+		<span class="mb-1.5 w-full border-b-2 border-dashed border-border"></span>
 		<span
 			class="font-mono text-xs whitespace-nowrap text-muted-foreground uppercase group-hover:text-foreground md:text-sm"
 		>

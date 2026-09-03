@@ -24,7 +24,7 @@
 	let defaultTransition: Transition = {
 		type: "spring",
 		damping: 30,
-		stiffness: 300,
+		stiffness: 300
 	};
 
 	let {
@@ -94,12 +94,12 @@
 		() =>
 			({
 				initial: {
-					height: "var(--underline-height, 0px)",
+					height: "var(--underline-height, 0px)"
 				},
 				target: {
 					height: "100%",
-					transition,
-				},
+					transition
+				}
 			}) satisfies Variants
 	);
 
@@ -107,12 +107,12 @@
 		() =>
 			({
 				initial: {
-					color: baseTextColor,
+					color: baseTextColor
 				},
 				target: {
 					color: targetTextColor,
-					transition,
-				},
+					transition
+				}
 			}) satisfies Variants
 	);
 </script>
@@ -130,7 +130,7 @@
 			height: "var(--underline-height, 0px)",
 			bottom: "calc(-1 * var(--underline-padding, 0px))",
 			backgroundColor: baseTextColor,
-			willChange: "height",
+			willChange: "height"
 		}}
 		variants={underlineVariants}
 		aria-hidden="true"

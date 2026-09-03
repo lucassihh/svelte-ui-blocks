@@ -17,13 +17,17 @@ export const navLinks: NavLink[] = [
 		href: "/blocks/efferd/hero"
 	},
 	{
+		label: "Veil Blocks",
+		href: "/blocks/veil/call-to-action"
+	},
+	{
 		label: "Magic Components",
 		href: "/blocks/magic/animated-beam"
 	},
-  {
-    label: "Fancy Components",
-    href: "/blocks/fancy/animated-gradient-svg"
-  },
+	{
+		label: "Fancy Components",
+		href: "/blocks/fancy/animated-gradient-svg"
+	},
 	{
 		label: "Documentation",
 		href: "/documentation"
