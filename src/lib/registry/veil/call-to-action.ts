@@ -9,12 +9,10 @@ import CallToActionThreePreview from "$lib/components/blocks/veil/call-to-action
 import CallToActionTwoPreview from "$lib/components/blocks/veil/call-to-action/call-to-action-two/call-to-action-two.svelte";
 
 // Raw
-import buttonIndexSource from "$lib/components/ui/veil-ui/button/index.ts?raw";
 import callToActionCallToActionFourSource from "$lib/components/blocks/veil/call-to-action/call-to-action-four/call-to-action-four.svelte?raw";
 import callToActionCallToActionOneSource from "$lib/components/blocks/veil/call-to-action/call-to-action-one/call-to-action-one.svelte?raw";
 import callToActionCallToActionThreeSource from "$lib/components/blocks/veil/call-to-action/call-to-action-three/call-to-action-three.svelte?raw";
 import callToActionCallToActionTwoSource from "$lib/components/blocks/veil/call-to-action/call-to-action-two/call-to-action-two.svelte?raw";
-import cardIndexSource from "$lib/components/ui/veil-ui/card/index.ts?raw";
 
 // Shared Items
 const buttonFiles = [
@@ -35,7 +33,7 @@ export const callToActionBlocks: BlockShowcaseItem[] = [
 		previewComponent: CallToActionOnePreview,
 		previewHref: "/preview/veil/call-to-action/call-to-action-one",
 		previewMode: "iframe",
-		previewHeight: 820,
+		previewHeight: 520,
 		installId: "call-to-action-one",
 		codeTree: createBlockCodeTree("call-to-action-one", [
 			{
@@ -53,7 +51,7 @@ export const callToActionBlocks: BlockShowcaseItem[] = [
 		previewComponent: CallToActionTwoPreview,
 		previewHref: "/preview/veil/call-to-action/call-to-action-two",
 		previewMode: "iframe",
-		previewHeight: 820,
+		previewHeight: 520,
 		installId: "call-to-action-two",
 		codeTree: createBlockCodeTree("call-to-action-two", [
 			{
@@ -71,7 +69,7 @@ export const callToActionBlocks: BlockShowcaseItem[] = [
 		previewComponent: CallToActionThreePreview,
 		previewHref: "/preview/veil/call-to-action/call-to-action-three",
 		previewMode: "iframe",
-		previewHeight: 820,
+		previewHeight: 520,
 		installId: "call-to-action-three",
 		codeTree: createBlockCodeTree("call-to-action-three", [
 			{
@@ -89,7 +87,7 @@ export const callToActionBlocks: BlockShowcaseItem[] = [
 		previewComponent: CallToActionFourPreview,
 		previewHref: "/preview/veil/call-to-action/call-to-action-four",
 		previewMode: "iframe",
-		previewHeight: 820,
+		previewHeight: 520,
 		installId: "call-to-action-four",
 		codeTree: createBlockCodeTree("call-to-action-four", [
 			{

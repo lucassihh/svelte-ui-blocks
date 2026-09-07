@@ -33,7 +33,7 @@ export const statsBlocks: BlockShowcaseItem[] = [
 		previewComponent: StatsOnePreview,
 		previewHref: "/preview/veil/stats/stats-one",
 		previewMode: "iframe",
-		previewHeight: 820,
+		previewHeight: 520,
 		installId: "stats-one",
 		codeTree: createBlockCodeTree("stats-one", [
 			{
@@ -51,7 +51,7 @@ export const statsBlocks: BlockShowcaseItem[] = [
 		previewComponent: StatsTwoPreview,
 		previewHref: "/preview/veil/stats/stats-two",
 		previewMode: "iframe",
-		previewHeight: 820,
+		previewHeight: 520,
 		installId: "stats-two",
 		codeTree: createBlockCodeTree("stats-two", [
 			{
@@ -69,7 +69,7 @@ export const statsBlocks: BlockShowcaseItem[] = [
 		previewComponent: StatsThreePreview,
 		previewHref: "/preview/veil/stats/stats-three",
 		previewMode: "iframe",
-		previewHeight: 820,
+		previewHeight: 520,
 		installId: "stats-three",
 		codeTree: createBlockCodeTree("stats-three", [
 			{
@@ -87,7 +87,7 @@ export const statsBlocks: BlockShowcaseItem[] = [
 		previewComponent: StatsFourPreview,
 		previewHref: "/preview/veil/stats/stats-four",
 		previewMode: "iframe",
-		previewHeight: 820,
+		previewHeight: 520,
 		installId: "stats-four",
 		codeTree: createBlockCodeTree("stats-four", [
 			{

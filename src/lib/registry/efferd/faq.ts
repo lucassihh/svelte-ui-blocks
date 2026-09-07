@@ -56,7 +56,7 @@ export const faqBlocks: BlockShowcaseItem[] = [
 		previewComponent: FaqOnePreview,
 		previewHref: "/preview/efferd/faq/faq-one",
 		previewMode: "iframe",
-		previewHeight: 820,
+		previewHeight: 520,
 		installId: "faq-one",
 		codeTree: createBlockCodeTree("faq-one", [
 			{
@@ -74,7 +74,7 @@ export const faqBlocks: BlockShowcaseItem[] = [
 		previewComponent: FaqTwoPreview,
 		previewHref: "/preview/efferd/faq/faq-two",
 		previewMode: "iframe",
-		previewHeight: 820,
+		previewHeight: 520,
 		installId: "faq-two",
 		codeTree: createBlockCodeTree("faq-two", [
 			{
@@ -92,7 +92,7 @@ export const faqBlocks: BlockShowcaseItem[] = [
 		previewComponent: FaqThreePreview,
 		previewHref: "/preview/efferd/faq/faq-three",
 		previewMode: "iframe",
-		previewHeight: 820,
+		previewHeight: 520,
 		installId: "faq-three",
 		codeTree: createBlockCodeTree("faq-three", [
 			{
@@ -111,7 +111,7 @@ export const faqBlocks: BlockShowcaseItem[] = [
 		previewComponent: FaqFourPreview,
 		previewHref: "/preview/efferd/faq/faq-four",
 		previewMode: "iframe",
-		previewHeight: 820,
+		previewHeight: 520,
 		installId: "faq-four",
 		codeTree: createBlockCodeTree("faq-four", [
 			{
@@ -130,7 +130,7 @@ export const faqBlocks: BlockShowcaseItem[] = [
 		previewComponent: FaqFivePreview,
 		previewHref: "/preview/efferd/faq/faq-five",
 		previewMode: "iframe",
-		previewHeight: 820,
+		previewHeight: 520,
 		installId: "faq-five",
 		codeTree: createBlockCodeTree("faq-five", [
 			{

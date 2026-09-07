@@ -28,7 +28,7 @@ export const animatedShinyTextBlocks: BlockShowcaseItem[] = [
 		previewComponent: AnimatedShinyTextOnePreview,
 		previewHref: "/preview/magic/animated-shiny-text/animated-shiny-text-one",
 		previewMode: "iframe",
-		previewHeight: 820,
+		previewHeight: 520,
 		installId: "animated-shiny-text-one",
 		codeTree: createBlockCodeTree("animated-shiny-text-one", [
 			{

@@ -28,7 +28,7 @@ export const terminalBlocks: BlockShowcaseItem[] = [
 		previewComponent: TerminalOnePreview,
 		previewHref: "/preview/magic/terminal/terminal-one",
 		previewMode: "iframe",
-		previewHeight: 820,
+		previewHeight: 520,
 		installId: "terminal-one",
 		codeTree: createBlockCodeTree("terminal-one", [
 			{

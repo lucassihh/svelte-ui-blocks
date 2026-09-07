@@ -51,7 +51,7 @@ export const featureBlocks: BlockShowcaseItem[] = [
 		id: "feature-one",
 		title: "Feature One",
 		description:
-			"Interactive feature showcase section with custom graphics and controls.",
+			"A Feature One composition.",
 		previewComponent: FeatureOnePreview,
 		previewHref: "/preview/efferd/feature/feature-one",
 		previewMode: "iframe",
@@ -69,7 +69,7 @@ export const featureBlocks: BlockShowcaseItem[] = [
 		id: "feature-two",
 		title: "Feature Two",
 		description:
-			"Interactive feature showcase section with custom graphics and controls.",
+			"A Feature Two composition.",
 		previewComponent: FeatureTwoPreview,
 		previewHref: "/preview/efferd/feature/feature-two",
 		previewMode: "iframe",
@@ -88,7 +88,7 @@ export const featureBlocks: BlockShowcaseItem[] = [
 		id: "feature-three",
 		title: "Feature Three",
 		description:
-			"Interactive feature showcase section with custom graphics and controls.",
+			"A Feature Three composition.",
 		previewComponent: FeatureThreePreview,
 		previewHref: "/preview/efferd/feature/feature-three",
 		previewMode: "iframe",
@@ -107,7 +107,7 @@ export const featureBlocks: BlockShowcaseItem[] = [
 		id: "feature-four",
 		title: "Feature Four",
 		description:
-			"Interactive feature showcase section with custom graphics and controls.",
+			"A Feature Four composition.",
 		previewComponent: FeatureFourPreview,
 		previewHref: "/preview/efferd/feature/feature-four",
 		previewMode: "iframe",
@@ -126,7 +126,7 @@ export const featureBlocks: BlockShowcaseItem[] = [
 		id: "feature-five",
 		title: "Feature Five",
 		description:
-			"Interactive feature showcase section with custom graphics and controls.",
+			"A Feature Five composition.",
 		previewComponent: FeatureFivePreview,
 		previewHref: "/preview/efferd/feature/feature-five",
 		previewMode: "iframe",

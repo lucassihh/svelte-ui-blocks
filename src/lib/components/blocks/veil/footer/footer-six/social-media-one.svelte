@@ -1,6 +1,6 @@
 <script lang="ts">
 	import { GithubIcon, XIcon } from "$lib/assets/svg/index.ts";
-	import { Button } from "$lib/components/ui/veil-ui/button";
+	import { Button } from "$lib/components/ui/button";
 	import type { Component } from "svelte";
 
 	type SocialMedia = "twitter" | "linkedin" | "youtube";

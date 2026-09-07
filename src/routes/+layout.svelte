@@ -36,13 +36,12 @@
 		{@render children()}
 	</div>
 {:else}
-
 	<!-- Main Content -->
-	<main class="mx-auto w-full max-w-7xl font-jakarta">
-	 <!-- Landing Header -->
-	  <LandingHeader />
-    
-    {@render children()}
+	<main class="font-jakarta mx-auto w-full max-w-7xl">
+		<!-- Landing Header -->
+		<LandingHeader />
+
+		{@render children()}
 
 		{#if !isDocumentation}
 			<LandingFooter />

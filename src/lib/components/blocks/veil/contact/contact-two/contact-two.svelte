@@ -1,10 +1,10 @@
 <script lang="ts">
-	import { Button } from "$lib/components/ui/veil-ui/button";
-	import { Card } from "$lib/components/ui/veil-ui/card";
-	import { Input } from "$lib/components/ui/veil-ui/input";
+	import { Button } from "$lib/components/ui/button";
+	import { Card } from "$lib/components/ui/card";
+	import { Input } from "$lib/components/ui/input";
 	import { Label } from "$lib/components/ui/label";
 	import * as Select from "$lib/components/ui/select";
-	import { Textarea } from "$lib/components/ui/veil-ui/textarea";
+	import { Textarea } from "$lib/components/ui/textarea";
 </script>
 
 <section data-theme="veil" class="@container bg-background py-24">

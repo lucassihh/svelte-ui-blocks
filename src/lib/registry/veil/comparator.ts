@@ -8,8 +8,6 @@ import ComparatorThreePreview from "$lib/components/blocks/veil/comparator/compa
 import ComparatorTwoPreview from "$lib/components/blocks/veil/comparator/comparator-two/comparator-two.svelte";
 
 // Raw
-import buttonIndexSource from "$lib/components/ui/veil-ui/button/index.ts?raw";
-import cardIndexSource from "$lib/components/ui/veil-ui/card/index.ts?raw";
 import comparatorComparatorOneSource from "$lib/components/blocks/veil/comparator/comparator-one/comparator-one.svelte?raw";
 import comparatorComparatorThreeSource from "$lib/components/blocks/veil/comparator/comparator-three/comparator-three.svelte?raw";
 import comparatorComparatorTwoSource from "$lib/components/blocks/veil/comparator/comparator-two/comparator-two.svelte?raw";
@@ -33,7 +31,7 @@ export const comparatorBlocks: BlockShowcaseItem[] = [
 		previewComponent: ComparatorOnePreview,
 		previewHref: "/preview/veil/comparator/comparator-one",
 		previewMode: "iframe",
-		previewHeight: 820,
+		previewHeight: 520,
 		installId: "comparator-one",
 		codeTree: createBlockCodeTree("comparator-one", [
 			{
@@ -51,7 +49,7 @@ export const comparatorBlocks: BlockShowcaseItem[] = [
 		previewComponent: ComparatorTwoPreview,
 		previewHref: "/preview/veil/comparator/comparator-two",
 		previewMode: "iframe",
-		previewHeight: 820,
+		previewHeight: 520,
 		installId: "comparator-two",
 		codeTree: createBlockCodeTree("comparator-two", [
 			{
@@ -69,7 +67,7 @@ export const comparatorBlocks: BlockShowcaseItem[] = [
 		previewComponent: ComparatorThreePreview,
 		previewHref: "/preview/veil/comparator/comparator-three",
 		previewMode: "iframe",
-		previewHeight: 820,
+		previewHeight: 520,
 		installId: "comparator-three",
 		codeTree: createBlockCodeTree("comparator-three", [
 			{

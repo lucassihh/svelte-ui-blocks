@@ -14,7 +14,7 @@ export const navLinks: NavLink[] = [
 	},
 	{
 		label: "Efferd Blocks",
-		href: "/blocks/efferd/hero"
+		href: "/blocks/efferd/auth"
 	},
 	{
 		label: "Veil Blocks",

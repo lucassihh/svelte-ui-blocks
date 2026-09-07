@@ -34,7 +34,7 @@ export const mediaBetweenTextBlocks: BlockShowcaseItem[] = [
 		previewComponent: MediaBetweenTextOnePreview,
 		previewHref: "/preview/fancy/media-between-text/media-between-text-one",
 		previewMode: "iframe",
-		previewHeight: 820,
+		previewHeight: 520,
 		installId: "media-between-text-one",
 		codeTree: createBlockCodeTree("media-between-text-one", [
 			{
@@ -53,7 +53,7 @@ export const mediaBetweenTextBlocks: BlockShowcaseItem[] = [
 		previewComponent: MediaBetweenTextTwoPreview,
 		previewHref: "/preview/fancy/media-between-text/media-between-text-two",
 		previewMode: "iframe",
-		previewHeight: 820,
+		previewHeight: 520,
 		installId: "media-between-text-two",
 		codeTree: createBlockCodeTree("media-between-text-two", [
 			{
@@ -71,7 +71,7 @@ export const mediaBetweenTextBlocks: BlockShowcaseItem[] = [
 		previewComponent: MediaBetweenTextThreePreview,
 		previewHref: "/preview/fancy/media-between-text/media-between-text-three",
 		previewMode: "iframe",
-		previewHeight: 820,
+		previewHeight: 520,
 		installId: "media-between-text-three",
 		codeTree: createBlockCodeTree("media-between-text-three", [
 			{
@@ -89,7 +89,7 @@ export const mediaBetweenTextBlocks: BlockShowcaseItem[] = [
 		previewComponent: MediaBetweenTextFourPreview,
 		previewHref: "/preview/fancy/media-between-text/media-between-text-four",
 		previewMode: "iframe",
-		previewHeight: 820,
+		previewHeight: 520,
 		installId: "media-between-text-four",
 		codeTree: createBlockCodeTree("media-between-text-four", [
 			{

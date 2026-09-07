@@ -10,7 +10,6 @@ import FaqsTwoPreview from "$lib/components/blocks/veil/faqs/faqs-two/faqs-two.s
 
 // Raw
 import accordionIndexSource from "$lib/components/ui/accordion/index.ts?raw";
-import cardIndexSource from "$lib/components/ui/veil-ui/card/index.ts?raw";
 import faqsFaqsFourSource from "$lib/components/blocks/veil/faqs/faqs-four/faqs-four.svelte?raw";
 import faqsFaqsOneSource from "$lib/components/blocks/veil/faqs/faqs-one/faqs-one.svelte?raw";
 import faqsFaqsThreeSource from "$lib/components/blocks/veil/faqs/faqs-three/faqs-three.svelte?raw";
@@ -35,7 +34,7 @@ export const faqsBlocks: BlockShowcaseItem[] = [
 		previewComponent: FaqsOnePreview,
 		previewHref: "/preview/veil/faqs/faqs-one",
 		previewMode: "iframe",
-		previewHeight: 820,
+		previewHeight: 520,
 		installId: "faqs-one",
 		codeTree: createBlockCodeTree("faqs-one", [
 			{
@@ -53,7 +52,7 @@ export const faqsBlocks: BlockShowcaseItem[] = [
 		previewComponent: FaqsTwoPreview,
 		previewHref: "/preview/veil/faqs/faqs-two",
 		previewMode: "iframe",
-		previewHeight: 820,
+		previewHeight: 520,
 		installId: "faqs-two",
 		codeTree: createBlockCodeTree("faqs-two", [
 			{
@@ -71,7 +70,7 @@ export const faqsBlocks: BlockShowcaseItem[] = [
 		previewComponent: FaqsThreePreview,
 		previewHref: "/preview/veil/faqs/faqs-three",
 		previewMode: "iframe",
-		previewHeight: 820,
+		previewHeight: 520,
 		installId: "faqs-three",
 		codeTree: createBlockCodeTree("faqs-three", [
 			{
@@ -89,7 +88,7 @@ export const faqsBlocks: BlockShowcaseItem[] = [
 		previewComponent: FaqsFourPreview,
 		previewHref: "/preview/veil/faqs/faqs-four",
 		previewMode: "iframe",
-		previewHeight: 820,
+		previewHeight: 520,
 		installId: "faqs-four",
 		codeTree: createBlockCodeTree("faqs-four", [
 			{

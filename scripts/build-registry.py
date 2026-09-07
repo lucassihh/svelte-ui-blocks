@@ -14,12 +14,12 @@ VALID_EXTENSIONS = [
 _ext_pattern = r'\.(' + '|'.join([re.escape(ext.lstrip('.')) for ext in VALID_EXTENSIONS]) + r')$'
 CLEAN_EXT_REGEX = re.compile(_ext_pattern, flags=re.IGNORECASE)
 
-# Blocks names $lib/components/blocks/[ui-name]
+# Blocks-ui names $lib/components/blocks/[ui-name]
 UI_NAMES = [
   "efferd",
-  "fancy",
+  "veil",
   "magic",
-  "veil"
+  "fancy"
 ]
 
 ALIAS_MAP = {
@@ -53,6 +53,16 @@ SHARED_MODULE_MAP = {
 
 # Metadata
 BLOCK_METADATA_PATTERNS = {
+    "auth": {
+        "description": "Authentication components",
+        "height": 820,
+        "previewMode": "iframe"
+    },
+    "blog": {
+        "description": "Blog components",
+        "height": 820,
+        "previewMode": "iframe"
+    },
     "hero": {
         "description": "A full hero composition with sticky header, editorial spotlight, and a marquee trust band.",
         "height": 820,
@@ -63,22 +73,7 @@ BLOCK_METADATA_PATTERNS = {
        "height": 820,
        "previewMode": "iframe"
     },
-    "logo": {
-        "description": "A responsive logo grid/marquee component for showcasing partners and clients.",
-        "height": 520,
-        "previewMode": "iframe"
-    },
-    "feature": {
-        "description": "Interactive feature showcase section with custom graphics and controls.",
-        "height": 520,
-        "previewMode": "iframe"
-    },
-   "auth": {
-        "description": "Auth components",
-        "height": 820,
-        "previewMode": "iframe"
-    },
-   "login": {
+    "login": {
         "description": "Login components",
         "height": 820,
         "previewMode": "iframe"
@@ -88,14 +83,9 @@ BLOCK_METADATA_PATTERNS = {
         "height": 820,
         "previewMode": "iframe"
     },
-    "blog": {
-        "description": "Blog components",
-        "height": 820,
-        "previewMode": "iframe"
-    },
     "default": {
         "description": "A {title} composition.",
-        "height": 820,
+        "height": 520,
         "previewMode": "iframe"
     }
 }

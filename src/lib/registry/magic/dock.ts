@@ -40,7 +40,7 @@ export const dockBlocks: BlockShowcaseItem[] = [
 		previewComponent: DockOnePreview,
 		previewHref: "/preview/magic/dock/dock-one",
 		previewMode: "iframe",
-		previewHeight: 820,
+		previewHeight: 520,
 		installId: "dock-one",
 		codeTree: createBlockCodeTree("dock-one", [
 			{
@@ -58,7 +58,7 @@ export const dockBlocks: BlockShowcaseItem[] = [
 		previewComponent: DockTwoPreview,
 		previewHref: "/preview/magic/dock/dock-two",
 		previewMode: "iframe",
-		previewHeight: 820,
+		previewHeight: 520,
 		installId: "dock-two",
 		codeTree: createBlockCodeTree("dock-two", [
 			{
@@ -76,7 +76,7 @@ export const dockBlocks: BlockShowcaseItem[] = [
 		previewComponent: DockThreePreview,
 		previewHref: "/preview/magic/dock/dock-three",
 		previewMode: "iframe",
-		previewHeight: 820,
+		previewHeight: 520,
 		installId: "dock-three",
 		codeTree: createBlockCodeTree("dock-three", [
 			{
@@ -94,7 +94,7 @@ export const dockBlocks: BlockShowcaseItem[] = [
 		previewComponent: DockFourPreview,
 		previewHref: "/preview/magic/dock/dock-four",
 		previewMode: "iframe",
-		previewHeight: 820,
+		previewHeight: 520,
 		installId: "dock-four",
 		codeTree: createBlockCodeTree("dock-four", [
 			{

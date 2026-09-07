@@ -4,7 +4,7 @@
 	import Cpu from "@lucide/svelte/icons/cpu";
 	import Shield from "@lucide/svelte/icons/shield";
 
-	import { Button } from "$lib/components/ui/veil-ui/button";
+	import { Button } from "$lib/components/ui/button";
 	import { cn } from "$lib/utils";
 	import {
 		ClerkIcon,

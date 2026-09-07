@@ -34,7 +34,7 @@ export const blurFadeBlocks: BlockShowcaseItem[] = [
 		previewComponent: BlurFadeOnePreview,
 		previewHref: "/preview/magic/blur-fade/blur-fade-one",
 		previewMode: "iframe",
-		previewHeight: 820,
+		previewHeight: 520,
 		installId: "blur-fade-one",
 		codeTree: createBlockCodeTree("blur-fade-one", [
 			{
@@ -52,7 +52,7 @@ export const blurFadeBlocks: BlockShowcaseItem[] = [
 		previewComponent: BlurFadeTwoPreview,
 		previewHref: "/preview/magic/blur-fade/blur-fade-two",
 		previewMode: "iframe",
-		previewHeight: 820,
+		previewHeight: 520,
 		installId: "blur-fade-two",
 		codeTree: createBlockCodeTree("blur-fade-two", [
 			{
@@ -70,7 +70,7 @@ export const blurFadeBlocks: BlockShowcaseItem[] = [
 		previewComponent: BlurFadeThreePreview,
 		previewHref: "/preview/magic/blur-fade/blur-fade-three",
 		previewMode: "iframe",
-		previewHeight: 820,
+		previewHeight: 520,
 		installId: "blur-fade-three",
 		codeTree: createBlockCodeTree("blur-fade-three", [
 			{
@@ -88,7 +88,7 @@ export const blurFadeBlocks: BlockShowcaseItem[] = [
 		previewComponent: BlurFadeFourPreview,
 		previewHref: "/preview/magic/blur-fade/blur-fade-four",
 		previewMode: "iframe",
-		previewHeight: 820,
+		previewHeight: 520,
 		installId: "blur-fade-four",
 		codeTree: createBlockCodeTree("blur-fade-four", [
 			{

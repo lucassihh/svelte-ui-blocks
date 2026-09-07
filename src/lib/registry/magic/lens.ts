@@ -28,7 +28,7 @@ export const lensBlocks: BlockShowcaseItem[] = [
 		previewComponent: LensOnePreview,
 		previewHref: "/preview/magic/lens/lens-one",
 		previewMode: "iframe",
-		previewHeight: 820,
+		previewHeight: 520,
 		installId: "lens-one",
 		codeTree: createBlockCodeTree("lens-one", [
 			{

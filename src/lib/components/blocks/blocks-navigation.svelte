@@ -1,6 +1,6 @@
 <script lang="ts">
 	import { page } from "$app/state";
-	import { registry } from "$lib/registry/index.ts";
+	import { registry } from "$lib/registry/";
 
 	// UI
 	import ScrollArea from "$lib/components/ui/scroll-area/scroll-area.svelte";
@@ -30,17 +30,15 @@
 			.trim();
 	}
 
-	// Identifies the current library (example: "efferd-ui")
-	const library = $derived(
-		(page.url.pathname.split("/")[2] || "efferd-ui") as keyof typeof registry
-	);
+	// Identifies the current library (example: "efferd")
+	const library = $derived((page.url.pathname.split("/")[2] || "efferd") as keyof typeof registry);
 
 	// Get the selected category from the URL
 	const currentCategory = $derived(page.url.pathname.split("/")[3] ?? "");
 
 	// Generates categories dynamically from the selected registry
 	const blockCategories = $derived.by(() => {
-		const currentRegistry = registry[library] || registry["efferd-ui"];
+		const currentRegistry = registry[library] || registry["efferd"];
 
 		return Object.keys(currentRegistry).map((key) => ({
 			slug: camelToKebab(key), // "logoCloud" -> "logo-cloud"

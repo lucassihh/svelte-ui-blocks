@@ -46,7 +46,7 @@
 					{#each navLinks as link, i}
 						<li>
 							<a href={link.href} class="text-xl font-medium" onclick={() => (open = false)}>
-								<TextAnimate content={link.label} animation="slideRight" delay="0.1" by="text" />
+								<TextAnimate content={link.label} animation="slideRight" delay={0.1} by="text" />
 							</a>
 						</li>
 					{/each}

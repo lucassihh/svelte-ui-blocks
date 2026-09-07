@@ -30,7 +30,7 @@ export const arcTimelineBlocks: BlockShowcaseItem[] = [
 		previewComponent: ArcTimelineOnePreview,
 		previewHref: "/preview/magic/arc-timeline/arc-timeline-one",
 		previewMode: "iframe",
-		previewHeight: 820,
+		previewHeight: 520,
 		installId: "arc-timeline-one",
 		codeTree: createBlockCodeTree("arc-timeline-one", [
 			{
@@ -48,7 +48,7 @@ export const arcTimelineBlocks: BlockShowcaseItem[] = [
 		previewComponent: ArcTimelineTwoPreview,
 		previewHref: "/preview/magic/arc-timeline/arc-timeline-two",
 		previewMode: "iframe",
-		previewHeight: 820,
+		previewHeight: 520,
 		installId: "arc-timeline-two",
 		codeTree: createBlockCodeTree("arc-timeline-two", [
 			{

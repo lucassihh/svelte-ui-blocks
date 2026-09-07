@@ -8,8 +8,6 @@ import PricingThreePreview from "$lib/components/blocks/veil/pricing/pricing-thr
 import PricingTwoPreview from "$lib/components/blocks/veil/pricing/pricing-two/pricing-two.svelte";
 
 // Raw
-import buttonIndexSource from "$lib/components/ui/veil-ui/button/index.ts?raw";
-import cardIndexSource from "$lib/components/ui/veil-ui/card/index.ts?raw";
 import pricingPricingOneSource from "$lib/components/blocks/veil/pricing/pricing-one/pricing-one.svelte?raw";
 import pricingPricingThreeSource from "$lib/components/blocks/veil/pricing/pricing-three/pricing-three.svelte?raw";
 import pricingPricingTwoSource from "$lib/components/blocks/veil/pricing/pricing-two/pricing-two.svelte?raw";
@@ -33,7 +31,7 @@ export const pricingBlocks: BlockShowcaseItem[] = [
 		previewComponent: PricingOnePreview,
 		previewHref: "/preview/veil/pricing/pricing-one",
 		previewMode: "iframe",
-		previewHeight: 820,
+		previewHeight: 520,
 		installId: "pricing-one",
 		codeTree: createBlockCodeTree("pricing-one", [
 			{
@@ -51,7 +49,7 @@ export const pricingBlocks: BlockShowcaseItem[] = [
 		previewComponent: PricingTwoPreview,
 		previewHref: "/preview/veil/pricing/pricing-two",
 		previewMode: "iframe",
-		previewHeight: 820,
+		previewHeight: 520,
 		installId: "pricing-two",
 		codeTree: createBlockCodeTree("pricing-two", [
 			{
@@ -69,7 +67,7 @@ export const pricingBlocks: BlockShowcaseItem[] = [
 		previewComponent: PricingThreePreview,
 		previewHref: "/preview/veil/pricing/pricing-three",
 		previewMode: "iframe",
-		previewHeight: 820,
+		previewHeight: 520,
 		installId: "pricing-three",
 		codeTree: createBlockCodeTree("pricing-three", [
 			{

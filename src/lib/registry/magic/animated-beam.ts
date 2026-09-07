@@ -66,7 +66,7 @@ export const animatedBeamBlocks: BlockShowcaseItem[] = [
 		previewComponent: AnimatedBeamOnePreview,
 		previewHref: "/preview/magic/animated-beam/animated-beam-one",
 		previewMode: "iframe",
-		previewHeight: 820,
+		previewHeight: 520,
 		installId: "animated-beam-one",
 		codeTree: createBlockCodeTree("animated-beam-one:animated-beam", [
 			{
@@ -102,7 +102,7 @@ export const animatedBeamBlocks: BlockShowcaseItem[] = [
 		previewComponent: AnimatedBeamTwoPreview,
 		previewHref: "/preview/magic/animated-beam/animated-beam-two",
 		previewMode: "iframe",
-		previewHeight: 820,
+		previewHeight: 520,
 		installId: "animated-beam-two",
 		codeTree: createBlockCodeTree("animated-beam-two:animated-beam", [
 			{
@@ -138,7 +138,7 @@ export const animatedBeamBlocks: BlockShowcaseItem[] = [
 		previewComponent: AnimatedBeamThreePreview,
 		previewHref: "/preview/magic/animated-beam/animated-beam-three",
 		previewMode: "iframe",
-		previewHeight: 820,
+		previewHeight: 520,
 		installId: "animated-beam-three",
 		codeTree: createBlockCodeTree("animated-beam-three:animated-beam", [
 			{
@@ -174,7 +174,7 @@ export const animatedBeamBlocks: BlockShowcaseItem[] = [
 		previewComponent: AnimatedBeamFivePreview,
 		previewHref: "/preview/magic/animated-beam/animated-beam-five",
 		previewMode: "iframe",
-		previewHeight: 820,
+		previewHeight: 520,
 		installId: "animated-beam-five",
 		codeTree: createBlockCodeTree("animated-beam-five:animated-beam", [
 			{
@@ -240,7 +240,7 @@ export const animatedBeamBlocks: BlockShowcaseItem[] = [
 		previewComponent: AnimatedBeamSixPreview,
 		previewHref: "/preview/magic/animated-beam/animated-beam-six",
 		previewMode: "iframe",
-		previewHeight: 820,
+		previewHeight: 520,
 		installId: "animated-beam-six",
 		codeTree: createBlockCodeTree("animated-beam-six:animated-beam", [
 			{
@@ -276,7 +276,7 @@ export const animatedBeamBlocks: BlockShowcaseItem[] = [
 		previewComponent: AnimatedBeamSevenPreview,
 		previewHref: "/preview/magic/animated-beam/animated-beam-seven",
 		previewMode: "iframe",
-		previewHeight: 820,
+		previewHeight: 520,
 		installId: "animated-beam-seven",
 		codeTree: createBlockCodeTree("animated-beam-seven:animated-beam", [
 			{

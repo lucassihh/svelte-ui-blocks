@@ -28,7 +28,7 @@ export const underlineToBackgroundBlocks: BlockShowcaseItem[] = [
 		previewComponent: UnderlineToBackgroundOnePreview,
 		previewHref: "/preview/fancy/underline-to-background/underline-to-background-one",
 		previewMode: "iframe",
-		previewHeight: 820,
+		previewHeight: 520,
 		installId: "underline-to-background-one",
 		codeTree: createBlockCodeTree("underline-to-background-one", [
 			{

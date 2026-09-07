@@ -28,7 +28,7 @@ export const stripedPatternBlocks: BlockShowcaseItem[] = [
 		previewComponent: StripedPatternOnePreview,
 		previewHref: "/preview/magic/striped-pattern/striped-pattern-one",
 		previewMode: "iframe",
-		previewHeight: 820,
+		previewHeight: 520,
 		installId: "striped-pattern-one",
 		codeTree: createBlockCodeTree("striped-pattern-one", [
 			{

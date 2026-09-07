@@ -1,6 +1,6 @@
 <script lang="ts">
 	import { onMount } from "svelte";
-	import { Button } from "$lib/components/ui/veil-ui/button";
+	import { Button } from "$lib/components/ui/button";
 	import Logo from "$lib/assets/svg/logo.svelte";
 	import { cn } from "$lib/utils";
 	import Menu from "@lucide/svelte/icons/menu";

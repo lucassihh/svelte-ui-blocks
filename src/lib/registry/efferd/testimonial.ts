@@ -47,7 +47,7 @@ export const testimonialBlocks: BlockShowcaseItem[] = [
 		previewComponent: TestimonialOnePreview,
 		previewHref: "/preview/efferd/testimonial/testimonial-one",
 		previewMode: "iframe",
-		previewHeight: 820,
+		previewHeight: 520,
 		installId: "testimonial-one",
 		codeTree: createBlockCodeTree("testimonial-one", [
 			{
@@ -65,7 +65,7 @@ export const testimonialBlocks: BlockShowcaseItem[] = [
 		previewComponent: TestimonialTwoPreview,
 		previewHref: "/preview/efferd/testimonial/testimonial-two",
 		previewMode: "iframe",
-		previewHeight: 820,
+		previewHeight: 520,
 		installId: "testimonial-two",
 		codeTree: createBlockCodeTree("testimonial-two", [
 			{
@@ -83,7 +83,7 @@ export const testimonialBlocks: BlockShowcaseItem[] = [
 		previewComponent: TestimonialThreePreview,
 		previewHref: "/preview/efferd/testimonial/testimonial-three",
 		previewMode: "iframe",
-		previewHeight: 820,
+		previewHeight: 520,
 		installId: "testimonial-three",
 		codeTree: createBlockCodeTree("testimonial-three", [
 			{
@@ -102,7 +102,7 @@ export const testimonialBlocks: BlockShowcaseItem[] = [
 		previewComponent: TestimonialFourPreview,
 		previewHref: "/preview/efferd/testimonial/testimonial-four",
 		previewMode: "iframe",
-		previewHeight: 820,
+		previewHeight: 520,
 		installId: "testimonial-four",
 		codeTree: createBlockCodeTree("testimonial-four", [
 			{
@@ -120,7 +120,7 @@ export const testimonialBlocks: BlockShowcaseItem[] = [
 		previewComponent: TestimonialFivePreview,
 		previewHref: "/preview/efferd/testimonial/testimonial-five",
 		previewMode: "iframe",
-		previewHeight: 820,
+		previewHeight: 520,
 		installId: "testimonial-five",
 		codeTree: createBlockCodeTree("testimonial-five", [
 			{

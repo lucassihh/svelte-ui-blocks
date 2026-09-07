@@ -28,7 +28,7 @@ export const wordRotateBlocks: BlockShowcaseItem[] = [
 		previewComponent: WordRotateOnePreview,
 		previewHref: "/preview/magic/word-rotate/word-rotate-one",
 		previewMode: "iframe",
-		previewHeight: 820,
+		previewHeight: 520,
 		installId: "word-rotate-one",
 		codeTree: createBlockCodeTree("word-rotate-one", [
 			{

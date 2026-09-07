@@ -34,7 +34,7 @@ export const marqueeBlocks: BlockShowcaseItem[] = [
 		previewComponent: MarqueeOnePreview,
 		previewHref: "/preview/magic/marquee/marquee-one",
 		previewMode: "iframe",
-		previewHeight: 820,
+		previewHeight: 520,
 		installId: "marquee-one",
 		codeTree: createBlockCodeTree("marquee-one:marquee", [
 			{
@@ -58,7 +58,7 @@ export const marqueeBlocks: BlockShowcaseItem[] = [
 		previewComponent: MarqueeTwoPreview,
 		previewHref: "/preview/magic/marquee/marquee-two",
 		previewMode: "iframe",
-		previewHeight: 820,
+		previewHeight: 520,
 		installId: "marquee-two",
 		codeTree: createBlockCodeTree("marquee-two:marquee", [
 			{
@@ -82,7 +82,7 @@ export const marqueeBlocks: BlockShowcaseItem[] = [
 		previewComponent: MarqueeThreePreview,
 		previewHref: "/preview/magic/marquee/marquee-three",
 		previewMode: "iframe",
-		previewHeight: 820,
+		previewHeight: 520,
 		installId: "marquee-three",
 		codeTree: createBlockCodeTree("marquee-three", [
 			{

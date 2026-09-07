@@ -1,5 +1,6 @@
 <script lang="ts">
 	import { motion, AnimatePresence } from "motion-sv";
+	import { PulsatingButton } from "$lib/components/ui/magic-ui/pulsating-button/";
 	import { cn } from "$lib/utils";
 
 	type AnimationStyle =
@@ -83,40 +84,37 @@
 </script>
 
 <div class={cn("relative", className)}>
-	<button
-		type="button"
-		aria-label="Play video"
-		class="group relative cursor-pointer border-0 bg-transparent p-0"
-		onclick={() => (isVideoOpen = true)}
-	>
+	<div class="group relative cursor-pointer border-0 bg-transparent p-4">
+		<!-- Thumb Image -->
 		<img
 			src={thumbnailSrc}
 			alt={thumbnailAlt}
 			width={1920}
 			height={1080}
-			class="w-full rounded-md border shadow-lg transition-all duration-200 ease-out group-hover:brightness-[0.8]"
+			class="w-full rounded-md border border-border shadow-lg transition-all duration-200 ease-out group-hover:brightness-[0.8]"
 		/>
-		<div
-			class="absolute inset-0 flex scale-[0.9] items-center justify-center rounded-2xl transition-all duration-200 ease-out group-hover:scale-100"
-		>
-			<div
-				class="flex size-28 items-center justify-center rounded-full bg-primary/10 backdrop-blur-md"
+
+		<!-- Pulsating Button Icon -->
+		<div class="absolute inset-0 flex scale-[0.9] items-center justify-center">
+			<PulsatingButton
+				pulseColor="oklch(0.7297 0.1631 52.7157 / 44.6%)"
+				distance="15px"
+				aria-label="Play video"
+				class="flex size-18 items-center justify-center rounded-full bg-gradient-to-b from-primary/30 to-primary"
+				onclick={() => (isVideoOpen = true)}
 			>
-				<div
-					class="relative flex size-20 scale-100 items-center justify-center rounded-full bg-gradient-to-b from-primary/30 to-primary shadow-md transition-all duration-200 ease-out group-hover:scale-[1.2]"
+				<svg
+					class="size-8 scale-100 fill-white text-white transition-transform duration-200 ease-out group-hover:scale-105"
+					style="filter: drop-shadow(0 4px 3px rgb(0 0 0 / 0.07)) drop-shadow(0 2px 2px rgb(0 0 0 / 0.06));"
+					xmlns="http://www.w3.org/2000/svg"
+					viewBox="0 0 24 24"
 				>
-					<svg
-						class="size-8 scale-100 fill-white text-white transition-transform duration-200 ease-out group-hover:scale-105"
-						style="filter: drop-shadow(0 4px 3px rgb(0 0 0 / 0.07)) drop-shadow(0 2px 2px rgb(0 0 0 / 0.06));"
-						xmlns="http://www.w3.org/2000/svg"
-						viewBox="0 0 24 24"
-					>
-						<polygon points="5 3 19 12 5 21 5 3" />
-					</svg>
-				</div>
-			</div>
+					<polygon points="5 3 19 12 5 21 5 3" />
+				</svg>
+			</PulsatingButton>
 		</div>
-	</button>
+	</div>
+
 	<AnimatePresence>
 		{#if isVideoOpen}
 			<motion.div

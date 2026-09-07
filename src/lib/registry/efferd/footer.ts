@@ -54,7 +54,7 @@ export const footerBlocks: BlockShowcaseItem[] = [
 		previewComponent: FooterOnePreview,
 		previewHref: "/preview/efferd/footer/footer-one",
 		previewMode: "iframe",
-		previewHeight: 820,
+		previewHeight: 520,
 		installId: "footer-one",
 		codeTree: createBlockCodeTree("footer-one", [
 			{
@@ -74,7 +74,7 @@ export const footerBlocks: BlockShowcaseItem[] = [
 		previewComponent: FooterTwoPreview,
 		previewHref: "/preview/efferd/footer/footer-two",
 		previewMode: "iframe",
-		previewHeight: 820,
+		previewHeight: 520,
 		installId: "footer-two",
 		codeTree: createBlockCodeTree("footer-two", [
 			{
@@ -94,7 +94,7 @@ export const footerBlocks: BlockShowcaseItem[] = [
 		previewComponent: FooterThreePreview,
 		previewHref: "/preview/efferd/footer/footer-three",
 		previewMode: "iframe",
-		previewHeight: 820,
+		previewHeight: 520,
 		installId: "footer-three",
 		codeTree: createBlockCodeTree("footer-three:footer", [
 			{
@@ -119,7 +119,7 @@ export const footerBlocks: BlockShowcaseItem[] = [
 		previewComponent: FooterFourPreview,
 		previewHref: "/preview/efferd/footer/footer-four",
 		previewMode: "iframe",
-		previewHeight: 820,
+		previewHeight: 520,
 		installId: "footer-four",
 		codeTree: createBlockCodeTree("footer-four:footer", [
 			{
@@ -143,7 +143,7 @@ export const footerBlocks: BlockShowcaseItem[] = [
 		previewComponent: FooterFivePreview,
 		previewHref: "/preview/efferd/footer/footer-five",
 		previewMode: "iframe",
-		previewHeight: 820,
+		previewHeight: 520,
 		installId: "footer-five",
 		codeTree: createBlockCodeTree("footer-five", [
 			{

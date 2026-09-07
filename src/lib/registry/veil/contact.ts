@@ -7,14 +7,10 @@ import ContactOnePreview from "$lib/components/blocks/veil/contact/contact-one/c
 import ContactTwoPreview from "$lib/components/blocks/veil/contact/contact-two/contact-two.svelte";
 
 // Raw
-import buttonIndexSource from "$lib/components/ui/veil-ui/button/index.ts?raw";
-import cardIndexSource from "$lib/components/ui/veil-ui/card/index.ts?raw";
 import contactContactOneSource from "$lib/components/blocks/veil/contact/contact-one/contact-one.svelte?raw";
 import contactContactTwoSource from "$lib/components/blocks/veil/contact/contact-two/contact-two.svelte?raw";
-import inputIndexSource from "$lib/components/ui/veil-ui/input/index.ts?raw";
 import labelIndexSource from "$lib/components/ui/label/index.ts?raw";
 import selectIndexSource from "$lib/components/ui/select/index.ts?raw";
-import textareaIndexSource from "$lib/components/ui/veil-ui/textarea/index.ts?raw";
 
 // Shared Items
 const buttonFiles = [
@@ -35,7 +31,7 @@ export const contactBlocks: BlockShowcaseItem[] = [
 		previewComponent: ContactOnePreview,
 		previewHref: "/preview/veil/contact/contact-one",
 		previewMode: "iframe",
-		previewHeight: 820,
+		previewHeight: 520,
 		installId: "contact-one",
 		codeTree: createBlockCodeTree("contact-one", [
 			{
@@ -53,7 +49,7 @@ export const contactBlocks: BlockShowcaseItem[] = [
 		previewComponent: ContactTwoPreview,
 		previewHref: "/preview/veil/contact/contact-two",
 		previewMode: "iframe",
-		previewHeight: 820,
+		previewHeight: 520,
 		installId: "contact-two",
 		codeTree: createBlockCodeTree("contact-two", [
 			{

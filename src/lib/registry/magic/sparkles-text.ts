@@ -28,7 +28,7 @@ export const sparklesTextBlocks: BlockShowcaseItem[] = [
 		previewComponent: SparklesTextOnePreview,
 		previewHref: "/preview/magic/sparkles-text/sparkles-text-one",
 		previewMode: "iframe",
-		previewHeight: 820,
+		previewHeight: 520,
 		installId: "sparkles-text-one",
 		codeTree: createBlockCodeTree("sparkles-text-one", [
 			{

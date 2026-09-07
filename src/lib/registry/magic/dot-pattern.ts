@@ -32,7 +32,7 @@ export const dotPatternBlocks: BlockShowcaseItem[] = [
 		previewComponent: DotPatternOnePreview,
 		previewHref: "/preview/magic/dot-pattern/dot-pattern-one",
 		previewMode: "iframe",
-		previewHeight: 820,
+		previewHeight: 520,
 		installId: "dot-pattern-one",
 		codeTree: createBlockCodeTree("dot-pattern-one", [
 			{
@@ -50,7 +50,7 @@ export const dotPatternBlocks: BlockShowcaseItem[] = [
 		previewComponent: DotPatternTwoPreview,
 		previewHref: "/preview/magic/dot-pattern/dot-pattern-two",
 		previewMode: "iframe",
-		previewHeight: 820,
+		previewHeight: 520,
 		installId: "dot-pattern-two",
 		codeTree: createBlockCodeTree("dot-pattern-two", [
 			{
@@ -68,7 +68,7 @@ export const dotPatternBlocks: BlockShowcaseItem[] = [
 		previewComponent: DotPatternThreePreview,
 		previewHref: "/preview/magic/dot-pattern/dot-pattern-three",
 		previewMode: "iframe",
-		previewHeight: 820,
+		previewHeight: 520,
 		installId: "dot-pattern-three",
 		codeTree: createBlockCodeTree("dot-pattern-three", [
 			{

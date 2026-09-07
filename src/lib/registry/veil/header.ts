@@ -9,7 +9,6 @@ import HeaderThreePreview from "$lib/components/blocks/veil/header/header-three/
 import HeaderTwoPreview from "$lib/components/blocks/veil/header/header-two/header-two.svelte";
 
 // Raw
-import buttonIndexSource from "$lib/components/ui/veil-ui/button/index.ts?raw";
 import headerHeaderFourSource from "$lib/components/blocks/veil/header/header-four/header-four.svelte?raw";
 import headerHeaderOneSource from "$lib/components/blocks/veil/header/header-one/header-one.svelte?raw";
 import headerHeaderThreeSource from "$lib/components/blocks/veil/header/header-three/header-three.svelte?raw";

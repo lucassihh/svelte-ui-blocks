@@ -30,7 +30,7 @@ export const animatedGradientTextBlocks: BlockShowcaseItem[] = [
 		previewComponent: AnimatedGradientTextOnePreview,
 		previewHref: "/preview/magic/animated-gradient-text/animated-gradient-text-one",
 		previewMode: "iframe",
-		previewHeight: 820,
+		previewHeight: 520,
 		installId: "animated-gradient-text-one",
 		codeTree: createBlockCodeTree("animated-gradient-text-one", [
 			{
@@ -48,7 +48,7 @@ export const animatedGradientTextBlocks: BlockShowcaseItem[] = [
 		previewComponent: AnimatedGradientTextTwoPreview,
 		previewHref: "/preview/magic/animated-gradient-text/animated-gradient-text-two",
 		previewMode: "iframe",
-		previewHeight: 820,
+		previewHeight: 520,
 		installId: "animated-gradient-text-two",
 		codeTree: createBlockCodeTree("animated-gradient-text-two", [
 			{

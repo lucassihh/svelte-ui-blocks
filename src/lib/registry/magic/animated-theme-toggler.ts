@@ -28,7 +28,7 @@ export const animatedThemeTogglerBlocks: BlockShowcaseItem[] = [
 		previewComponent: AnimatedThemeToggleOnePreview,
 		previewHref: "/preview/magic/animated-theme-toggler/animated-theme-toggle-one",
 		previewMode: "iframe",
-		previewHeight: 820,
+		previewHeight: 520,
 		installId: "animated-theme-toggle-one",
 		codeTree: createBlockCodeTree("animated-theme-toggle-one", [
 			{

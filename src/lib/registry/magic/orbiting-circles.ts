@@ -28,7 +28,7 @@ export const orbitingCirclesBlocks: BlockShowcaseItem[] = [
 		previewComponent: OrbitingCirclesOnePreview,
 		previewHref: "/preview/magic/orbiting-circles/orbiting-circles-one",
 		previewMode: "iframe",
-		previewHeight: 820,
+		previewHeight: 520,
 		installId: "orbiting-circles-one",
 		codeTree: createBlockCodeTree("orbiting-circles-one", [
 			{

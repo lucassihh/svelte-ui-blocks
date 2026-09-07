@@ -7,7 +7,6 @@ import IntegrationOnePreview from "$lib/components/blocks/veil/integration/integ
 import IntegrationTwoPreview from "$lib/components/blocks/veil/integration/integration-two/integration-illustration.svelte";
 
 // Raw
-import buttonIndexSource from "$lib/components/ui/veil-ui/button/index.ts?raw";
 import integrationIntegrationOneIntegrationIllustrationSource from "$lib/components/blocks/veil/integration/integration-one/integration-illustration.svelte?raw";
 import integrationIntegrationOneSource from "$lib/components/blocks/veil/integration/integration-one/integration-one.svelte?raw";
 import integrationIntegrationTwoIntegrationIllustrationSource from "$lib/components/blocks/veil/integration/integration-two/integration-illustration.svelte?raw";
@@ -32,7 +31,7 @@ export const integrationBlocks: BlockShowcaseItem[] = [
 		previewComponent: IntegrationOnePreview,
 		previewHref: "/preview/veil/integration/integration-one",
 		previewMode: "iframe",
-		previewHeight: 820,
+		previewHeight: 520,
 		installId: "integration-one",
 		codeTree: createBlockCodeTree("integration-one:integration", [
 			{
@@ -56,7 +55,7 @@ export const integrationBlocks: BlockShowcaseItem[] = [
 		previewComponent: IntegrationTwoPreview,
 		previewHref: "/preview/veil/integration/integration-two",
 		previewMode: "iframe",
-		previewHeight: 820,
+		previewHeight: 520,
 		installId: "integration-two",
 		codeTree: createBlockCodeTree("integration-two", [
 			{

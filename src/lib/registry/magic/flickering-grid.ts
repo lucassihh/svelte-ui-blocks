@@ -31,7 +31,7 @@ export const flickeringGridBlocks: BlockShowcaseItem[] = [
 		previewComponent: FlickeringGridOnePreview,
 		previewHref: "/preview/magic/flickering-grid/flickering-grid-one",
 		previewMode: "iframe",
-		previewHeight: 820,
+		previewHeight: 520,
 		installId: "flickering-grid-one",
 		codeTree: createBlockCodeTree("flickering-grid-one", [
 			{
@@ -49,7 +49,7 @@ export const flickeringGridBlocks: BlockShowcaseItem[] = [
 		previewComponent: FlickeringGridTwoPreview,
 		previewHref: "/preview/magic/flickering-grid/flickering-grid-two",
 		previewMode: "iframe",
-		previewHeight: 820,
+		previewHeight: 520,
 		installId: "flickering-grid-two",
 		codeTree: createBlockCodeTree("flickering-grid-two", [
 			{

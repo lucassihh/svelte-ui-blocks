@@ -54,7 +54,7 @@ export const ctaBlocks: BlockShowcaseItem[] = [
 		previewComponent: CtaOnePreview,
 		previewHref: "/preview/efferd/cta/cta-one",
 		previewMode: "iframe",
-		previewHeight: 820,
+		previewHeight: 520,
 		installId: "cta-one",
 		codeTree: createBlockCodeTree("cta-one", [
 			{
@@ -74,7 +74,7 @@ export const ctaBlocks: BlockShowcaseItem[] = [
 		previewComponent: CtaTwoPreview,
 		previewHref: "/preview/efferd/cta/cta-two",
 		previewMode: "iframe",
-		previewHeight: 820,
+		previewHeight: 520,
 		installId: "cta-two",
 		codeTree: createBlockCodeTree("cta-two", [
 			{
@@ -94,7 +94,7 @@ export const ctaBlocks: BlockShowcaseItem[] = [
 		previewComponent: CtaThreePreview,
 		previewHref: "/preview/efferd/cta/cta-three",
 		previewMode: "iframe",
-		previewHeight: 820,
+		previewHeight: 520,
 		installId: "cta-three",
 		codeTree: createBlockCodeTree("cta-three", [
 			{
@@ -114,7 +114,7 @@ export const ctaBlocks: BlockShowcaseItem[] = [
 		previewComponent: CtaFourPreview,
 		previewHref: "/preview/efferd/cta/cta-four",
 		previewMode: "iframe",
-		previewHeight: 820,
+		previewHeight: 520,
 		installId: "cta-four",
 		codeTree: createBlockCodeTree("cta-four", [
 			{
@@ -133,7 +133,7 @@ export const ctaBlocks: BlockShowcaseItem[] = [
 		previewComponent: CtaFivePreview,
 		previewHref: "/preview/efferd/cta/cta-five",
 		previewMode: "iframe",
-		previewHeight: 820,
+		previewHeight: 520,
 		installId: "cta-five",
 		codeTree: createBlockCodeTree("cta-five", [
 			{

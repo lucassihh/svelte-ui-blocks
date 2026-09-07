@@ -31,7 +31,7 @@ export const contentBlocks: BlockShowcaseItem[] = [
 		previewComponent: ContentOnePreview,
 		previewHref: "/preview/veil/content/content-one",
 		previewMode: "iframe",
-		previewHeight: 820,
+		previewHeight: 520,
 		installId: "content-one",
 		codeTree: createBlockCodeTree("content-one", [
 			{
@@ -49,7 +49,7 @@ export const contentBlocks: BlockShowcaseItem[] = [
 		previewComponent: ContentTwoPreview,
 		previewHref: "/preview/veil/content/content-two",
 		previewMode: "iframe",
-		previewHeight: 820,
+		previewHeight: 520,
 		installId: "content-two",
 		codeTree: createBlockCodeTree("content-two", [
 			{
@@ -67,7 +67,7 @@ export const contentBlocks: BlockShowcaseItem[] = [
 		previewComponent: ContentThreePreview,
 		previewHref: "/preview/veil/content/content-three",
 		previewMode: "iframe",
-		previewHeight: 820,
+		previewHeight: 520,
 		installId: "content-three",
 		codeTree: createBlockCodeTree("content-three", [
 			{

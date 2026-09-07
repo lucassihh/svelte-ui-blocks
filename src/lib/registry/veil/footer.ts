@@ -50,7 +50,7 @@ export const footerBlocks: BlockShowcaseItem[] = [
 		previewComponent: FooterOnePreview,
 		previewHref: "/preview/veil/footer/footer-one",
 		previewMode: "iframe",
-		previewHeight: 820,
+		previewHeight: 520,
 		installId: "footer-one",
 		codeTree: createBlockCodeTree("footer-one", [
 			{
@@ -69,7 +69,7 @@ export const footerBlocks: BlockShowcaseItem[] = [
 		previewComponent: FooterTwoPreview,
 		previewHref: "/preview/veil/footer/footer-two",
 		previewMode: "iframe",
-		previewHeight: 820,
+		previewHeight: 520,
 		installId: "footer-two",
 		codeTree: createBlockCodeTree("footer-two", [
 			{
@@ -88,7 +88,7 @@ export const footerBlocks: BlockShowcaseItem[] = [
 		previewComponent: FooterThreePreview,
 		previewHref: "/preview/veil/footer/footer-three",
 		previewMode: "iframe",
-		previewHeight: 820,
+		previewHeight: 520,
 		installId: "footer-three",
 		codeTree: createBlockCodeTree("footer-three", [
 			{
@@ -107,7 +107,7 @@ export const footerBlocks: BlockShowcaseItem[] = [
 		previewComponent: FooterFourPreview,
 		previewHref: "/preview/veil/footer/footer-four",
 		previewMode: "iframe",
-		previewHeight: 820,
+		previewHeight: 520,
 		installId: "footer-four",
 		codeTree: createBlockCodeTree("footer-four", [
 			{
@@ -126,7 +126,7 @@ export const footerBlocks: BlockShowcaseItem[] = [
 		previewComponent: FooterFivePreview,
 		previewHref: "/preview/veil/footer/footer-five",
 		previewMode: "iframe",
-		previewHeight: 820,
+		previewHeight: 520,
 		installId: "footer-five",
 		codeTree: createBlockCodeTree("footer-five:footer", [
 			{
@@ -151,7 +151,7 @@ export const footerBlocks: BlockShowcaseItem[] = [
 		previewComponent: FooterSixPreview,
 		previewHref: "/preview/veil/footer/footer-six",
 		previewMode: "iframe",
-		previewHeight: 820,
+		previewHeight: 520,
 		installId: "footer-six",
 		codeTree: createBlockCodeTree("footer-six:footer", [
 			{

@@ -7,8 +7,6 @@ import FeaturesOnePreview from "$lib/components/blocks/veil/features/features-on
 import FeaturesTwoPreview from "$lib/components/blocks/veil/features/features-two/features-two.svelte";
 
 // Raw
-import buttonIndexSource from "$lib/components/ui/veil-ui/button/index.ts?raw";
-import cardIndexSource from "$lib/components/ui/veil-ui/card/index.ts?raw";
 import featuresFeaturesOneSource from "$lib/components/blocks/veil/features/features-one/features-one.svelte?raw";
 import featuresFeaturesTwoSource from "$lib/components/blocks/veil/features/features-two/features-two.svelte?raw";
 import svgIndexSource from "$lib/assets/svg/index.ts?raw";
@@ -28,7 +26,7 @@ export const featuresBlocks: BlockShowcaseItem[] = [
 		id: "features-one",
 		title: "Features One",
 		description:
-			"Interactive feature showcase section with custom graphics and controls.",
+			"A Features One composition.",
 		previewComponent: FeaturesOnePreview,
 		previewHref: "/preview/veil/features/features-one",
 		previewMode: "iframe",
@@ -46,7 +44,7 @@ export const featuresBlocks: BlockShowcaseItem[] = [
 		id: "features-two",
 		title: "Features Two",
 		description:
-			"Interactive feature showcase section with custom graphics and controls.",
+			"A Features Two composition.",
 		previewComponent: FeaturesTwoPreview,
 		previewHref: "/preview/veil/features/features-two",
 		previewMode: "iframe",

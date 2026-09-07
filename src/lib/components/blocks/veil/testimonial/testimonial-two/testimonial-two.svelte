@@ -1,5 +1,5 @@
 <script lang="ts">
-	import { Card } from "$lib/components/ui/veil-ui/card";
+	import { Card } from "$lib/components/ui/card";
 
 	const testimonials = [
 		{

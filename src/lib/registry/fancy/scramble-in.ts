@@ -34,7 +34,7 @@ export const scrambleInBlocks: BlockShowcaseItem[] = [
 		previewComponent: ScrambleInOnePreview,
 		previewHref: "/preview/fancy/scramble-in/scramble-in-one",
 		previewMode: "iframe",
-		previewHeight: 820,
+		previewHeight: 520,
 		installId: "scramble-in-one",
 		codeTree: createBlockCodeTree("scramble-in-one", [
 			{
@@ -53,7 +53,7 @@ export const scrambleInBlocks: BlockShowcaseItem[] = [
 		previewComponent: ScrambleInTwoPreview,
 		previewHref: "/preview/fancy/scramble-in/scramble-in-two",
 		previewMode: "iframe",
-		previewHeight: 820,
+		previewHeight: 520,
 		installId: "scramble-in-two",
 		codeTree: createBlockCodeTree("scramble-in-two", [
 			{
@@ -71,7 +71,7 @@ export const scrambleInBlocks: BlockShowcaseItem[] = [
 		previewComponent: ScrambleInThreePreview,
 		previewHref: "/preview/fancy/scramble-in/scramble-in-three",
 		previewMode: "iframe",
-		previewHeight: 820,
+		previewHeight: 520,
 		installId: "scramble-in-three",
 		codeTree: createBlockCodeTree("scramble-in-three", [
 			{
@@ -89,7 +89,7 @@ export const scrambleInBlocks: BlockShowcaseItem[] = [
 		previewComponent: ScrambleInFourPreview,
 		previewHref: "/preview/fancy/scramble-in/scramble-in-four",
 		previewMode: "iframe",
-		previewHeight: 820,
+		previewHeight: 520,
 		installId: "scramble-in-four",
 		codeTree: createBlockCodeTree("scramble-in-four", [
 			{

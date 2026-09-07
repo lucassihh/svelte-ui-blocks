@@ -2,7 +2,7 @@
 	import { page } from "$app/state";
 
 	// Local Imports
-	import type { BlockCodeTree } from "./blocks-code-three";
+	import type { BlockCodeTree } from "./blocks-code-three.svelte";
 	import CodeEditor from "./code-editor.svelte";
 
 	// UI
@@ -36,6 +36,7 @@
 		previewHref?: string;
 		previewMode: "inline" | "iframe";
 		previewHeight?: number;
+		installId?: string;
 	}
 
 	// Props
@@ -47,7 +48,8 @@
 		previewComponent: PreviewComponent,
 		previewHref,
 		previewMode,
-		previewHeight
+		previewHeight,
+		installId
 	}: BlockPreviewProps = $props();
 
 	// Constants
@@ -131,7 +133,7 @@
 <main {id} class="group">
 	<!-- Component Description & Action Buttons -->
 	<section
-		class="mx-auto flex w-full max-w-7xl flex-col border-y border-border p-4 dark:bg-[radial-gradient(35%_80%_at_15%_0%,--theme(--color-foreground/.1),transparent)]"
+		class="mx-auto flex w-full max-w-7xl flex-col border-t border-border p-4 dark:bg-[radial-gradient(35%_80%_at_15%_0%,--theme(--color-foreground/.1),transparent)]"
 	>
 		<!-- Text Container -->
 		<div class="md:text-center">

@@ -29,7 +29,7 @@ export const progressiveBlurBlocks: BlockShowcaseItem[] = [
 		previewComponent: ProgressiveBlurOnePreview,
 		previewHref: "/preview/magic/progressive-blur/progressive-blur-one",
 		previewMode: "iframe",
-		previewHeight: 820,
+		previewHeight: 520,
 		installId: "progressive-blur-one",
 		codeTree: createBlockCodeTree("progressive-blur-one", [
 			{

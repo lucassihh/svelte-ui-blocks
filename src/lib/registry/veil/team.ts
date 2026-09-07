@@ -29,7 +29,7 @@ export const teamBlocks: BlockShowcaseItem[] = [
 		previewComponent: TeamOnePreview,
 		previewHref: "/preview/veil/team/team-one",
 		previewMode: "iframe",
-		previewHeight: 820,
+		previewHeight: 520,
 		installId: "team-one",
 		codeTree: createBlockCodeTree("team-one", [
 			{
@@ -47,7 +47,7 @@ export const teamBlocks: BlockShowcaseItem[] = [
 		previewComponent: TeamTwoPreview,
 		previewHref: "/preview/veil/team/team-two",
 		previewMode: "iframe",
-		previewHeight: 820,
+		previewHeight: 520,
 		installId: "team-two",
 		codeTree: createBlockCodeTree("team-two", [
 			{

@@ -8,9 +8,6 @@ import SignupThreePreview from "$lib/components/blocks/veil/signup/signup-three/
 import SignupTwoPreview from "$lib/components/blocks/veil/signup/signup-two/signup-two.svelte";
 
 // Raw
-import buttonIndexSource from "$lib/components/ui/veil-ui/button/index.ts?raw";
-import cardIndexSource from "$lib/components/ui/veil-ui/card/index.ts?raw";
-import inputIndexSource from "$lib/components/ui/veil-ui/input/index.ts?raw";
 import labelIndexSource from "$lib/components/ui/label/index.ts?raw";
 import logoSvgSource from "$lib/assets/svg/logo.svelte?raw";
 import signupSignupOneSource from "$lib/components/blocks/veil/signup/signup-one/signup-one.svelte?raw";

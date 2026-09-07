@@ -15,15 +15,25 @@ import { notFoundBlocks } from "./efferd/not-found";
 import { pricingBlocks as efferdPricingBlocks } from "./efferd/pricing";
 import { testimonialBlocks as efferdTestimonialBlocks } from "./efferd/testimonial";
 
-// Imports for fancy
-import { animatedGradientSvgBlocks } from "./fancy/animated-gradient-svg";
-import { letterSwapGoodBlocks } from "./fancy/letter-swap-good";
-import { mediaBetweenTextBlocks } from "./fancy/media-between-text";
-import { scrambleHoverBlocks } from "./fancy/scramble-hover";
-import { scrambleInBlocks } from "./fancy/scramble-in";
-import { textHighlighterBlocks } from "./fancy/text-highlighter";
-import { textRotateBlocks } from "./fancy/text-rotate";
-import { underlineToBackgroundBlocks } from "./fancy/underline-to-background";
+// Imports for veil
+import { callToActionBlocks } from "./veil/call-to-action";
+import { comparatorBlocks } from "./veil/comparator";
+import { contactBlocks as veilContactBlocks } from "./veil/contact";
+import { contentBlocks } from "./veil/content";
+import { faqsBlocks } from "./veil/faqs";
+import { featuresBlocks } from "./veil/features";
+import { footerBlocks as veilFooterBlocks } from "./veil/footer";
+import { forgotPasswordBlocks } from "./veil/forgot-password";
+import { headerBlocks as veilHeaderBlocks } from "./veil/header";
+import { heroBlocks as veilHeroBlocks } from "./veil/hero";
+import { integrationBlocks as veilIntegrationBlocks } from "./veil/integration";
+import { loginBlocks } from "./veil/login";
+import { logoCloudBlocks as veilLogoCloudBlocks } from "./veil/logo-cloud";
+import { pricingBlocks as veilPricingBlocks } from "./veil/pricing";
+import { signupBlocks } from "./veil/signup";
+import { statsBlocks } from "./veil/stats";
+import { teamBlocks } from "./veil/team";
+import { testimonialBlocks as veilTestimonialBlocks } from "./veil/testimonial";
 
 // Imports for magic
 import { animatedBeamBlocks } from "./magic/animated-beam";
@@ -75,25 +85,15 @@ import { typingAnimationBlocks } from "./magic/typing-animation";
 import { videoTextBlocks } from "./magic/video-text";
 import { wordRotateBlocks } from "./magic/word-rotate";
 
-// Imports for veil
-import { callToActionBlocks } from "./veil/call-to-action";
-import { comparatorBlocks } from "./veil/comparator";
-import { contactBlocks as veilContactBlocks } from "./veil/contact";
-import { contentBlocks } from "./veil/content";
-import { faqsBlocks } from "./veil/faqs";
-import { featuresBlocks } from "./veil/features";
-import { footerBlocks as veilFooterBlocks } from "./veil/footer";
-import { forgotPasswordBlocks } from "./veil/forgot-password";
-import { headerBlocks as veilHeaderBlocks } from "./veil/header";
-import { heroBlocks as veilHeroBlocks } from "./veil/hero";
-import { integrationBlocks as veilIntegrationBlocks } from "./veil/integration";
-import { loginBlocks } from "./veil/login";
-import { logoCloudBlocks as veilLogoCloudBlocks } from "./veil/logo-cloud";
-import { pricingBlocks as veilPricingBlocks } from "./veil/pricing";
-import { signupBlocks } from "./veil/signup";
-import { statsBlocks } from "./veil/stats";
-import { teamBlocks } from "./veil/team";
-import { testimonialBlocks as veilTestimonialBlocks } from "./veil/testimonial";
+// Imports for fancy
+import { animatedGradientSvgBlocks } from "./fancy/animated-gradient-svg";
+import { letterSwapGoodBlocks } from "./fancy/letter-swap-good";
+import { mediaBetweenTextBlocks } from "./fancy/media-between-text";
+import { scrambleHoverBlocks } from "./fancy/scramble-hover";
+import { scrambleInBlocks } from "./fancy/scramble-in";
+import { textHighlighterBlocks } from "./fancy/text-highlighter";
+import { textRotateBlocks } from "./fancy/text-rotate";
+import { underlineToBackgroundBlocks } from "./fancy/underline-to-background";
 
 // Exports
 export const registry = {
@@ -114,15 +114,25 @@ export const registry = {
 		pricing: efferdPricingBlocks,
 		testimonial: efferdTestimonialBlocks
 	},
-	"fancy": {
-		animatedGradientSvg: animatedGradientSvgBlocks,
-		letterSwapGood: letterSwapGoodBlocks,
-		mediaBetweenText: mediaBetweenTextBlocks,
-		scrambleHover: scrambleHoverBlocks,
-		scrambleIn: scrambleInBlocks,
-		textHighlighter: textHighlighterBlocks,
-		textRotate: textRotateBlocks,
-		underlineToBackground: underlineToBackgroundBlocks
+	"veil": {
+		callToAction: callToActionBlocks,
+		comparator: comparatorBlocks,
+		contact: veilContactBlocks,
+		content: contentBlocks,
+		faqs: faqsBlocks,
+		features: featuresBlocks,
+		footer: veilFooterBlocks,
+		forgotPassword: forgotPasswordBlocks,
+		header: veilHeaderBlocks,
+		hero: veilHeroBlocks,
+		integration: veilIntegrationBlocks,
+		login: loginBlocks,
+		logoCloud: veilLogoCloudBlocks,
+		pricing: veilPricingBlocks,
+		signup: signupBlocks,
+		stats: statsBlocks,
+		team: teamBlocks,
+		testimonial: veilTestimonialBlocks
 	},
 	"magic": {
 		animatedBeam: animatedBeamBlocks,
@@ -174,25 +184,15 @@ export const registry = {
 		videoText: videoTextBlocks,
 		wordRotate: wordRotateBlocks
 	},
-	"veil": {
-		callToAction: callToActionBlocks,
-		comparator: comparatorBlocks,
-		contact: veilContactBlocks,
-		content: contentBlocks,
-		faqs: faqsBlocks,
-		features: featuresBlocks,
-		footer: veilFooterBlocks,
-		forgotPassword: forgotPasswordBlocks,
-		header: veilHeaderBlocks,
-		hero: veilHeroBlocks,
-		integration: veilIntegrationBlocks,
-		login: loginBlocks,
-		logoCloud: veilLogoCloudBlocks,
-		pricing: veilPricingBlocks,
-		signup: signupBlocks,
-		stats: statsBlocks,
-		team: teamBlocks,
-		testimonial: veilTestimonialBlocks
+	"fancy": {
+		animatedGradientSvg: animatedGradientSvgBlocks,
+		letterSwapGood: letterSwapGoodBlocks,
+		mediaBetweenText: mediaBetweenTextBlocks,
+		scrambleHover: scrambleHoverBlocks,
+		scrambleIn: scrambleInBlocks,
+		textHighlighter: textHighlighterBlocks,
+		textRotate: textRotateBlocks,
+		underlineToBackground: underlineToBackgroundBlocks
 	}
 } as const;
 

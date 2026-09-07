@@ -28,7 +28,7 @@ export const videoTextBlocks: BlockShowcaseItem[] = [
 		previewComponent: VideoTextOnePreview,
 		previewHref: "/preview/magic/video-text/video-text-one",
 		previewMode: "iframe",
-		previewHeight: 820,
+		previewHeight: 520,
 		installId: "video-text-one",
 		codeTree: createBlockCodeTree("video-text-one", [
 			{

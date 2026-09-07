@@ -5,12 +5,12 @@ from pathlib import Path
 # Settings
 ROOT_DIR = Path.cwd()
 
-# Blocks names $lib/components/blocks/[ui-name]
+# Blocks-ui names $lib/components/blocks/[ui-name]
 UI_NAMES = [
   "efferd",
-  "fancy",
+  "veil",
   "magic",
-  "veil"
+  "fancy"
 ]
 
 ENGLISH_NUMBERS = {
@@ -33,11 +33,23 @@ ENGLISH_NUMBERS = {
 
 # Settings for preview pages
 PREVIEW_LAYOUT_PATTERNS = {
+    "contact": "flex flex-col min-h-screen w-full",
+    "content": "flex flex-col min-h-screen w-full",
     "hero": "flex flex-col min-h-screen w-full",
     "header": "flex flex-col min-h-screen w-full",
-    "logo": "flex flex-col min-h-screen w-full justify-center",
+    "faqs": "flex flex-col min-h-screen w-full",
+    "forgot-password": "flex flex-col min-h-screen w-full",
     "features" : "min-h-screen w-full",
-    "default": "flex flex-col min-h-screen w-full justify-center p-4"
+    "footer": "min-h-screen w-full",
+    "login": "flex flex-col min-h-screen w-full",
+    "logo-clound": "flex flex-col min-h-screen w-full",
+    "pricing": "flex flex-col min-h-screen w-full",
+    "integration": "flex flex-col min-h-screen w-full",
+    "signup": "flex flex-col min-h-screen w-full",
+    "stats": "flex flex-col min-h-screen w-full",
+    "team": "flex flex-col min-h-screen w-full",
+    "testimonial": "flex flex-col min-h-screen w-full",
+    "default": "flex flex-col min-h-screen w-full items-center justify-center p-4"
 }
 
 # Helpers

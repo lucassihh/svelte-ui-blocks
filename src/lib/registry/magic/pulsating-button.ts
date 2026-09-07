@@ -40,7 +40,7 @@ export const pulsatingButtonBlocks: BlockShowcaseItem[] = [
 		previewComponent: PulsatingButtonOnePreview,
 		previewHref: "/preview/magic/pulsating-button/pulsating-button-one",
 		previewMode: "iframe",
-		previewHeight: 820,
+		previewHeight: 520,
 		installId: "pulsating-button-one",
 		codeTree: createBlockCodeTree("pulsating-button-one", [
 			{
@@ -58,7 +58,7 @@ export const pulsatingButtonBlocks: BlockShowcaseItem[] = [
 		previewComponent: PulsatingButtonTwoPreview,
 		previewHref: "/preview/magic/pulsating-button/pulsating-button-two",
 		previewMode: "iframe",
-		previewHeight: 820,
+		previewHeight: 520,
 		installId: "pulsating-button-two",
 		codeTree: createBlockCodeTree("pulsating-button-two", [
 			{
@@ -76,7 +76,7 @@ export const pulsatingButtonBlocks: BlockShowcaseItem[] = [
 		previewComponent: PulsatingButtonThreePreview,
 		previewHref: "/preview/magic/pulsating-button/pulsating-button-three",
 		previewMode: "iframe",
-		previewHeight: 820,
+		previewHeight: 520,
 		installId: "pulsating-button-three",
 		codeTree: createBlockCodeTree("pulsating-button-three", [
 			{
@@ -94,7 +94,7 @@ export const pulsatingButtonBlocks: BlockShowcaseItem[] = [
 		previewComponent: PulsatingButtonFourPreview,
 		previewHref: "/preview/magic/pulsating-button/pulsating-button-four",
 		previewMode: "iframe",
-		previewHeight: 820,
+		previewHeight: 520,
 		installId: "pulsating-button-four",
 		codeTree: createBlockCodeTree("pulsating-button-four", [
 			{
@@ -112,7 +112,7 @@ export const pulsatingButtonBlocks: BlockShowcaseItem[] = [
 		previewComponent: PulsatingButtonFivePreview,
 		previewHref: "/preview/magic/pulsating-button/pulsating-button-five",
 		previewMode: "iframe",
-		previewHeight: 820,
+		previewHeight: 520,
 		installId: "pulsating-button-five",
 		codeTree: createBlockCodeTree("pulsating-button-five", [
 			{
@@ -130,7 +130,7 @@ export const pulsatingButtonBlocks: BlockShowcaseItem[] = [
 		previewComponent: PulsatingButtonSixPreview,
 		previewHref: "/preview/magic/pulsating-button/pulsating-button-six",
 		previewMode: "iframe",
-		previewHeight: 820,
+		previewHeight: 520,
 		installId: "pulsating-button-six",
 		codeTree: createBlockCodeTree("pulsating-button-six", [
 			{
@@ -148,7 +148,7 @@ export const pulsatingButtonBlocks: BlockShowcaseItem[] = [
 		previewComponent: PulsatingButtonSevenPreview,
 		previewHref: "/preview/magic/pulsating-button/pulsating-button-seven",
 		previewMode: "iframe",
-		previewHeight: 820,
+		previewHeight: 520,
 		installId: "pulsating-button-seven",
 		codeTree: createBlockCodeTree("pulsating-button-seven", [
 			{

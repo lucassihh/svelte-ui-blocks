@@ -9,7 +9,6 @@ import TestimonialThreePreview from "$lib/components/blocks/veil/testimonial/tes
 import TestimonialTwoPreview from "$lib/components/blocks/veil/testimonial/testimonial-two/testimonial-two.svelte";
 
 // Raw
-import cardIndexSource from "$lib/components/ui/veil-ui/card/index.ts?raw";
 import testimonialTestimonialFourSource from "$lib/components/blocks/veil/testimonial/testimonial-four/testimonial-four.svelte?raw";
 import testimonialTestimonialOneSource from "$lib/components/blocks/veil/testimonial/testimonial-one/testimonial-one.svelte?raw";
 import testimonialTestimonialThreeSource from "$lib/components/blocks/veil/testimonial/testimonial-three/testimonial-three.svelte?raw";
@@ -34,7 +33,7 @@ export const testimonialBlocks: BlockShowcaseItem[] = [
 		previewComponent: TestimonialOnePreview,
 		previewHref: "/preview/veil/testimonial/testimonial-one",
 		previewMode: "iframe",
-		previewHeight: 820,
+		previewHeight: 520,
 		installId: "testimonial-one",
 		codeTree: createBlockCodeTree("testimonial-one", [
 			{
@@ -52,7 +51,7 @@ export const testimonialBlocks: BlockShowcaseItem[] = [
 		previewComponent: TestimonialTwoPreview,
 		previewHref: "/preview/veil/testimonial/testimonial-two",
 		previewMode: "iframe",
-		previewHeight: 820,
+		previewHeight: 520,
 		installId: "testimonial-two",
 		codeTree: createBlockCodeTree("testimonial-two", [
 			{
@@ -70,7 +69,7 @@ export const testimonialBlocks: BlockShowcaseItem[] = [
 		previewComponent: TestimonialThreePreview,
 		previewHref: "/preview/veil/testimonial/testimonial-three",
 		previewMode: "iframe",
-		previewHeight: 820,
+		previewHeight: 520,
 		installId: "testimonial-three",
 		codeTree: createBlockCodeTree("testimonial-three", [
 			{
@@ -88,7 +87,7 @@ export const testimonialBlocks: BlockShowcaseItem[] = [
 		previewComponent: TestimonialFourPreview,
 		previewHref: "/preview/veil/testimonial/testimonial-four",
 		previewMode: "iframe",
-		previewHeight: 820,
+		previewHeight: 520,
 		installId: "testimonial-four",
 		codeTree: createBlockCodeTree("testimonial-four", [
 			{

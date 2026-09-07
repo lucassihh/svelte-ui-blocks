@@ -21,7 +21,7 @@
 
 <script lang="ts">
 	import { cn } from "$lib/utils.js";
-	import { Button, type ButtonElementProps } from "$lib/components/ui/button";
+	import { Button, type ButtonProps } from "$lib/components/ui/button";
 
 	let {
 		ref = $bindable(null),
@@ -31,7 +31,7 @@
 		variant = "ghost",
 		size = "xs",
 		...restProps
-	}: Omit<ButtonElementProps, "size"> & {
+	}: Omit<ButtonProps, "size"> & {
 		size?: InputGroupButtonSize;
 	} = $props();
 </script>

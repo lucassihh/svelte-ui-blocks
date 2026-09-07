@@ -65,7 +65,7 @@ export const authBlocks: BlockShowcaseItem[] = [
 		id: "auth-one",
 		title: "Auth One",
 		description:
-			"Auth components",
+			"Authentication components",
 		previewComponent: AuthOnePreview,
 		previewHref: "/preview/efferd/auth/auth-one",
 		previewMode: "iframe",
@@ -85,7 +85,7 @@ export const authBlocks: BlockShowcaseItem[] = [
 		id: "auth-two",
 		title: "Auth Two",
 		description:
-			"Auth components",
+			"Authentication components",
 		previewComponent: AuthTwoPreview,
 		previewHref: "/preview/efferd/auth/auth-two",
 		previewMode: "iframe",
@@ -105,7 +105,7 @@ export const authBlocks: BlockShowcaseItem[] = [
 		id: "auth-three",
 		title: "Auth Three",
 		description:
-			"Auth components",
+			"Authentication components",
 		previewComponent: AuthThreePreview,
 		previewHref: "/preview/efferd/auth/auth-three",
 		previewMode: "iframe",
@@ -125,7 +125,7 @@ export const authBlocks: BlockShowcaseItem[] = [
 		id: "auth-four",
 		title: "Auth Four",
 		description:
-			"Auth components",
+			"Authentication components",
 		previewComponent: AuthFourPreview,
 		previewHref: "/preview/efferd/auth/auth-four",
 		previewMode: "iframe",
@@ -146,7 +146,7 @@ export const authBlocks: BlockShowcaseItem[] = [
 		id: "auth-five",
 		title: "Auth Five",
 		description:
-			"Auth components",
+			"Authentication components",
 		previewComponent: AuthFivePreview,
 		previewHref: "/preview/efferd/auth/auth-five",
 		previewMode: "iframe",

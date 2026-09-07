@@ -30,7 +30,7 @@ export const glyphMatrixBlocks: BlockShowcaseItem[] = [
 		previewComponent: GlyphMatrixOnePreview,
 		previewHref: "/preview/magic/glyph-matrix/glyph-matrix-one",
 		previewMode: "iframe",
-		previewHeight: 820,
+		previewHeight: 520,
 		installId: "glyph-matrix-one",
 		codeTree: createBlockCodeTree("glyph-matrix-one", [
 			{
@@ -48,7 +48,7 @@ export const glyphMatrixBlocks: BlockShowcaseItem[] = [
 		previewComponent: GlyphMatrixTwoPreview,
 		previewHref: "/preview/magic/glyph-matrix/glyph-matrix-two",
 		previewMode: "iframe",
-		previewHeight: 820,
+		previewHeight: 520,
 		installId: "glyph-matrix-two",
 		codeTree: createBlockCodeTree("glyph-matrix-two", [
 			{

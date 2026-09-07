@@ -28,7 +28,7 @@ export const fileTreeBlocks: BlockShowcaseItem[] = [
 		previewComponent: FileTreeOnePreview,
 		previewHref: "/preview/magic/file-tree/file-tree-one",
 		previewMode: "iframe",
-		previewHeight: 820,
+		previewHeight: 520,
 		installId: "file-tree-one",
 		codeTree: createBlockCodeTree("file-tree-one", [
 			{

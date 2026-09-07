@@ -1,6 +1,6 @@
 <script lang="ts">
 	import HeaderThree from "$lib/components/blocks/veil/header/header-three/header-three.svelte";
-	import { Button } from "$lib/components/ui/veil-ui/button";
+	import { Button } from "$lib/components/ui/button";
 	import AudioLines from "@lucide/svelte/icons/audio-lines";
 	import ChevronRight from "@lucide/svelte/icons/chevron-right";
 	import MessageCircle from "@lucide/svelte/icons/message-circle";

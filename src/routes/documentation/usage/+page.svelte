@@ -35,7 +35,7 @@
 		<Step>
 			<H2 class="mt-0 text-xl">Start with the right category</H2>
 			<Paragraph>
-				Open <Link href="/blocks/efferd-ui/hero/">Blocks</Link> and go to the section family that matches
+				Open <Link href="/blocks/efferd/hero/">Blocks</Link> and go to the section family that matches
 				your page: hero, pricing, FAQ, footer, and so on.
 			</Paragraph>
 		</Step>

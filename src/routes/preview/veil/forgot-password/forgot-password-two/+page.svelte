@@ -7,6 +7,6 @@
 	<meta name="description" content="Standalone preview for Forgot Password Two in Svelte Efferd." />
 </svelte:head>
 
-<div class="flex flex-col min-h-screen w-full justify-center p-4">
+<div class="flex flex-col min-h-screen w-full">
 	<ForgotPasswordTwo />
 </div>

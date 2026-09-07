@@ -26,12 +26,12 @@
 >
 	{#snippet actions()}
 		<Button href="https://github.com" variant="default" size="sm">GitHub</Button>
-		<Button href="#" variant="outline" size="sm">Documentação</Button>
+		<Button href="/documentation" variant="outline" size="sm">Documentação</Button>
 	{/snippet}
 
 	<H1>Título Principal (H1)</H1>
 	<Paragraph>
-		Este é um parágrafo padrão utilizando o componente <Code.Inline>Paragraph</Code.Inline>. Ele
+		Este é um parágrafo padrão utilizando o componente `Paragraph`. Ele
 		suporta links internos como este: <Link href="#steps">Ir para Steps</Link>.
 	</Paragraph>
 
@@ -45,7 +45,6 @@
 	<H2>Listas e Citações</H2>
 	<Ol>
 		<Li>Item de lista não ordenada 1</Li>
-		<Li>Item de lista com <Link href="#">link interno</Link></Li>
 		<Li>Item de lista com <Strong>negrito</Strong></Li>
 	</Ol>
 

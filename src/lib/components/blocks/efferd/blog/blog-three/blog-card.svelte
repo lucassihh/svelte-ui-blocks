@@ -29,7 +29,7 @@
 		...props
 	}: Props = $props();
 
-	let imageSrc = $state("");
+	let imageSrc = $state(image);
 
 	$effect(() => {
 		imageSrc = image;

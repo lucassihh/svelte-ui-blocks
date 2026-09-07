@@ -39,7 +39,7 @@ export const notFoundBlocks: BlockShowcaseItem[] = [
 		previewComponent: NotFoundOnePreview,
 		previewHref: "/preview/efferd/not-found/not-found-one",
 		previewMode: "iframe",
-		previewHeight: 820,
+		previewHeight: 520,
 		installId: "not-found-one",
 		codeTree: createBlockCodeTree("not-found-one", [
 			{
@@ -59,7 +59,7 @@ export const notFoundBlocks: BlockShowcaseItem[] = [
 		previewComponent: NotFoundTwoPreview,
 		previewHref: "/preview/efferd/not-found/not-found-two",
 		previewMode: "iframe",
-		previewHeight: 820,
+		previewHeight: 520,
 		installId: "not-found-two",
 		codeTree: createBlockCodeTree("not-found-two", [
 			{

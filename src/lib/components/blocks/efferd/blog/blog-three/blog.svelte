@@ -12,13 +12,22 @@
 		image: string;
 	};
 
+  // Image Imports
+  import Landscape1 from "$lib/assets/img/landscape-1.jpg";
+  import Landscape2 from "$lib/assets/img/landscape-2.jpg";
+  import Landscape3 from "$lib/assets/img/landscape-3.jpg";
+  import Landscape4 from "$lib/assets/img/landscape-4.jpg";
+  import Landscape5 from "$lib/assets/img/landscape-5.jpg";
+  import Landscape6 from "$lib/assets/img/landscape-6.jpg";
+  import Landscape7 from "$lib/assets/img/landscape-7.jpg";
+  
 	const blogs: BlogType[] = [
 		{
 			title: "Design Systems That Scale",
 			href: "/",
 			description:
 				"Learn how to build and maintain scalable design systems that empower teams to move faster while staying consistent.",
-			image: "https://storage.efferd.com/creative/beams.webp",
+			image: Landscape1,
 			createdAt: "2025-08-25",
 			author: "Ava Mitchell",
 			readTime: "7 min read"
@@ -28,7 +37,7 @@
 			href: "/",
 			description:
 				"Explore how different colors influence user perception, emotion, and conversion in digital product design.",
-			image: "https://storage.efferd.com/creative/plasma.webp",
+			image: Landscape2,
 			createdAt: "2025-07-14",
 			author: "Liam Carter",
 			readTime: "5 min read"
@@ -38,7 +47,7 @@
 			href: "/",
 			description:
 				"Discover how subtle animations and interactions can enhance usability and bring joy to your users.",
-			image: "https://storage.efferd.com/creative/ripple-grid.webp",
+			image: Landscape3,
 			createdAt: "2025-06-30",
 			author: "Sophia Kim",
 			readTime: "6 min read"
@@ -48,7 +57,7 @@
 			href: "/",
 			description:
 				"Practical steps to make your UI accessible, not just legally compliant, but genuinely inclusive for everyone.",
-			image: "https://storage.efferd.com/creative/silk.webp",
+			image: Landscape4,
 			createdAt: "2025-06-18",
 			author: "Ethan Rodriguez",
 			readTime: "8 min read"
@@ -58,7 +67,7 @@
 			href: "/",
 			description:
 				"Tips and tricks to design beautiful and functional dark mode experiences that users will love.",
-			image: "https://storage.efferd.com/creative/dark-veil.webp",
+			image: Landscape5,
 			createdAt: "2025-05-20",
 			author: "Maya Chen",
 			readTime: "4 min read"
@@ -68,7 +77,7 @@
 			href: "/",
 			description:
 				"How to select and pair typefaces that enhance readability, hierarchy, and brand personality.",
-			image: "https://storage.efferd.com/creative/threads.webp",
+			image: Landscape6,
 			createdAt: "2025-05-02",
 			author: "Noah Patel",
 			readTime: "9 min read"
@@ -78,61 +87,11 @@
 			href: "/",
 			description:
 				"From motion guidelines to advanced prototyping-discover where UI animation is headed in 2025.",
-			image: "https://storage.efferd.com/creative/hyperspeed.webp",
+			image: Landscape7,
 			createdAt: "2025-04-15",
 			author: "Chloe Ramirez",
 			readTime: "10 min read"
-		},
-		{
-			title: "Minimalism vs Maximalism",
-			href: "/",
-			description:
-				"A deep dive into two opposing design philosophies and how to decide which fits your product.",
-			image: "https://storage.efferd.com/creative/pixel-blast.webp",
-			createdAt: "2025-04-01",
-			author: "Benjamin Scott",
-			readTime: "6 min read"
-		},
-		{
-			title: "Designing for Mobile-First",
-			href: "/",
-			description:
-				"Best practices for mobile-first design, from layout decisions to performance optimization.",
-			image: "https://storage.efferd.com/creative/floating-lines.webp",
-			createdAt: "2025-03-22",
-			author: "Isabella White",
-			readTime: "7 min read"
-		},
-		{
-			title: "Figma Hacks for Power Users",
-			href: "/",
-			description:
-				"Hidden features, shortcuts, and workflows in Figma that can dramatically speed up your design process.",
-			image: "https://storage.efferd.com/creative/color-bends.webp",
-			createdAt: "2025-03-09",
-			author: "James Walker",
-			readTime: "5 min read"
-		},
-		{
-			title: "Designing With AI Tools",
-			href: "/",
-			description:
-				"A practical look at how AI tools are shaping UI/UX workflows-from ideation to final delivery.",
-			image: "https://storage.efferd.com/creative/light-rays.webp",
-			createdAt: "2025-02-28",
-			author: "Olivia Brooks",
-			readTime: "8 min read"
-		},
-		{
-			title: "The Art of Prototyping",
-			href: "/",
-			description:
-				"How to create prototypes that effectively communicate your ideas and speed up stakeholder feedback.",
-			image: "https://storage.efferd.com/creative/orb.webp",
-			createdAt: "2025-02-14",
-			author: "Daniel Green",
-			readTime: "6 min read"
-		}
+    }
 	];
 </script>
 

@@ -6,7 +6,6 @@ import CiscoIcon from "./brand/cisco.svelte";
 import ClaudeIcon from "./brand/claude.svelte";
 import ClerkIcon from "./brand/clerk.svelte";
 import FigmaIcon from "./brand/figma.svelte";
-import FirebaseFullIcon from "./brand/firebase-full.svelte";
 import FirebaseIcon from "./brand/firebase.svelte";
 import GoogleIcon from "./brand/google.svelte";
 import HuluIcon from "./brand/hulu.svelte";
@@ -18,12 +17,11 @@ import SendFeedbackIcon from "./brand/send-feedback.svelte";
 import SlackIcon from "./brand/slack.svelte";
 import SponsorProjectIcon from "./brand/sponsor-project.svelte";
 import SpotifyIcon from "./brand/spotify.svelte";
-import SupabaseFullIcon from "./brand/supabase-full.svelte";
 import SupabaseIcon from "./brand/supabase.svelte";
 import SvelteBrandIcon from "./brand/svelte.svelte";
 import TursoIcon from "./brand/turso.svelte";
 import TwilioIcon from "./brand/twilio.svelte";
-import VercelIcon from "./brand/vercel-full.svelte";
+import VercelIcon from "./brand/vercel.svelte";
 
 // Imports Logos
 import AzureDevopsIcon from "./logos/azure-devops.svelte";
@@ -56,7 +54,6 @@ export {
 	ClaudeIcon,
 	ClerkIcon,
 	FigmaIcon,
-	FirebaseFullIcon,
 	FirebaseIcon,
 	GoogleIcon,
 	HuluIcon,
@@ -68,7 +65,6 @@ export {
 	SlackIcon,
 	SponsorProjectIcon,
 	SpotifyIcon,
-	SupabaseFullIcon,
 	SupabaseIcon,
 	SvelteBrandIcon,
 	TursoIcon,

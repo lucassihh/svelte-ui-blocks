@@ -28,7 +28,7 @@ export const staggerTextBlocks: BlockShowcaseItem[] = [
 		previewComponent: StaggerTextOnePreview,
 		previewHref: "/preview/magic/stagger-text/stagger-text-one",
 		previewMode: "iframe",
-		previewHeight: 820,
+		previewHeight: 520,
 		installId: "stagger-text-one",
 		codeTree: createBlockCodeTree("stagger-text-one", [
 			{

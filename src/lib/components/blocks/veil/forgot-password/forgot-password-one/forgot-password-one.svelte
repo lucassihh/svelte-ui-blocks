@@ -1,8 +1,8 @@
 <script lang="ts">
 	import Logo from "$lib/assets/svg/logo.svelte";
-	import { Button } from "$lib/components/ui/veil-ui/button";
-	import { Card } from "$lib/components/ui/veil-ui/card";
-	import { Input } from "$lib/components/ui/veil-ui/input";
+	import { Button } from "$lib/components/ui/button";
+	import { Card } from "$lib/components/ui/card";
+	import { Input } from "$lib/components/ui/input";
 	import { Label } from "$lib/components/ui/label";
 </script>
 

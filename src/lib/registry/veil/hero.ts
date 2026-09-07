@@ -10,8 +10,6 @@ import HeroThreePreview from "$lib/components/blocks/veil/hero/hero-three/hero-t
 import HeroTwoPreview from "$lib/components/blocks/veil/hero/hero-two/hero-two.svelte";
 
 // Raw
-import buttonIndexSource from "$lib/components/ui/veil-ui/button/index.ts?raw";
-import cardIndexSource from "$lib/components/ui/veil-ui/card/index.ts?raw";
 import githubSource from "$lib/assets/svg/social/github.svelte?raw";
 import headerHeaderFourSource from "$lib/components/blocks/veil/header/header-four/header-four.svelte?raw";
 import headerHeaderOneSource from "$lib/components/blocks/veil/header/header-one/header-one.svelte?raw";

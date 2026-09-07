@@ -44,7 +44,7 @@ export const textAnimateBlocks: BlockShowcaseItem[] = [
 		previewComponent: TextAnimateOnePreview,
 		previewHref: "/preview/magic/text-animate/text-animate-one",
 		previewMode: "iframe",
-		previewHeight: 820,
+		previewHeight: 520,
 		installId: "text-animate-one",
 		codeTree: createBlockCodeTree("text-animate-one", [
 			{
@@ -62,7 +62,7 @@ export const textAnimateBlocks: BlockShowcaseItem[] = [
 		previewComponent: TextAnimateTwoPreview,
 		previewHref: "/preview/magic/text-animate/text-animate-two",
 		previewMode: "iframe",
-		previewHeight: 820,
+		previewHeight: 520,
 		installId: "text-animate-two",
 		codeTree: createBlockCodeTree("text-animate-two", [
 			{
@@ -80,7 +80,7 @@ export const textAnimateBlocks: BlockShowcaseItem[] = [
 		previewComponent: TextAnimateThreePreview,
 		previewHref: "/preview/magic/text-animate/text-animate-three",
 		previewMode: "iframe",
-		previewHeight: 820,
+		previewHeight: 520,
 		installId: "text-animate-three",
 		codeTree: createBlockCodeTree("text-animate-three", [
 			{
@@ -98,7 +98,7 @@ export const textAnimateBlocks: BlockShowcaseItem[] = [
 		previewComponent: TextAnimateFourPreview,
 		previewHref: "/preview/magic/text-animate/text-animate-four",
 		previewMode: "iframe",
-		previewHeight: 820,
+		previewHeight: 520,
 		installId: "text-animate-four",
 		codeTree: createBlockCodeTree("text-animate-four", [
 			{
@@ -116,7 +116,7 @@ export const textAnimateBlocks: BlockShowcaseItem[] = [
 		previewComponent: TextAnimateFivePreview,
 		previewHref: "/preview/magic/text-animate/text-animate-five",
 		previewMode: "iframe",
-		previewHeight: 820,
+		previewHeight: 520,
 		installId: "text-animate-five",
 		codeTree: createBlockCodeTree("text-animate-five", [
 			{
@@ -134,7 +134,7 @@ export const textAnimateBlocks: BlockShowcaseItem[] = [
 		previewComponent: TextAnimateSixPreview,
 		previewHref: "/preview/magic/text-animate/text-animate-six",
 		previewMode: "iframe",
-		previewHeight: 820,
+		previewHeight: 520,
 		installId: "text-animate-six",
 		codeTree: createBlockCodeTree("text-animate-six", [
 			{
@@ -152,7 +152,7 @@ export const textAnimateBlocks: BlockShowcaseItem[] = [
 		previewComponent: TextAnimateSevenPreview,
 		previewHref: "/preview/magic/text-animate/text-animate-seven",
 		previewMode: "iframe",
-		previewHeight: 820,
+		previewHeight: 520,
 		installId: "text-animate-seven",
 		codeTree: createBlockCodeTree("text-animate-seven", [
 			{
@@ -170,7 +170,7 @@ export const textAnimateBlocks: BlockShowcaseItem[] = [
 		previewComponent: TextAnimateEightPreview,
 		previewHref: "/preview/magic/text-animate/text-animate-eight",
 		previewMode: "iframe",
-		previewHeight: 820,
+		previewHeight: 520,
 		installId: "text-animate-eight",
 		codeTree: createBlockCodeTree("text-animate-eight", [
 			{
@@ -188,7 +188,7 @@ export const textAnimateBlocks: BlockShowcaseItem[] = [
 		previewComponent: TextAnimateNinePreview,
 		previewHref: "/preview/magic/text-animate/text-animate-nine",
 		previewMode: "iframe",
-		previewHeight: 820,
+		previewHeight: 520,
 		installId: "text-animate-nine",
 		codeTree: createBlockCodeTree("text-animate-nine", [
 			{

@@ -31,7 +31,7 @@ export const auroraTextBlocks: BlockShowcaseItem[] = [
 		previewComponent: AuroraTextOnePreview,
 		previewHref: "/preview/magic/aurora-text/aurora-text-one",
 		previewMode: "iframe",
-		previewHeight: 820,
+		previewHeight: 520,
 		installId: "aurora-text-one",
 		codeTree: createBlockCodeTree("aurora-text-one", [
 			{
@@ -49,7 +49,7 @@ export const auroraTextBlocks: BlockShowcaseItem[] = [
 		previewComponent: AuroraTextTwoPreview,
 		previewHref: "/preview/magic/aurora-text/aurora-text-two",
 		previewMode: "iframe",
-		previewHeight: 820,
+		previewHeight: 520,
 		installId: "aurora-text-two",
 		codeTree: createBlockCodeTree("aurora-text-two", [
 			{

@@ -1,7 +1,7 @@
 <script lang="ts">
 	import HeaderOne from "$lib/components/blocks/veil/header/header-one/header-one.svelte";
-	import { Button } from "$lib/components/ui/veil-ui/button";
-	import { Card } from "$lib/components/ui/veil-ui/card";
+	import { Button } from "$lib/components/ui/button";
+	import { Card } from "$lib/components/ui/card";
 	import {
 		ClerkIcon,
 		GoogleIcon,

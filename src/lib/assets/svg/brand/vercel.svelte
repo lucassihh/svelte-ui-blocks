@@ -10,10 +10,8 @@
 {#if variant === "full"}
 	<svg
 		aria-label="Vercel logotype"
-		height="1em"
 		role="img"
 		viewBox="0 0 262 52"
-		width="1em"
 		xmlns="http://www.w3.org/2000/svg"
 		{...props}
 	>
@@ -25,8 +23,6 @@
 {:else}
 	<svg
 		viewBox="0 0 256 222"
-		width="1em"
-		height="1em"
 		xmlns="http://www.w3.org/2000/svg"
 		preserveAspectRatio="xMidYMid"
 		{...props}

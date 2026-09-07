@@ -35,7 +35,7 @@ export const pixelImageBlocks: BlockShowcaseItem[] = [
 		previewComponent: PixelImageOnePreview,
 		previewHref: "/preview/magic/pixel-image/pixel-image-one",
 		previewMode: "iframe",
-		previewHeight: 820,
+		previewHeight: 520,
 		installId: "pixel-image-one",
 		codeTree: createBlockCodeTree("pixel-image-one", [
 			{
@@ -53,7 +53,7 @@ export const pixelImageBlocks: BlockShowcaseItem[] = [
 		previewComponent: PixelImageTwoPreview,
 		previewHref: "/preview/magic/pixel-image/pixel-image-two",
 		previewMode: "iframe",
-		previewHeight: 820,
+		previewHeight: 520,
 		installId: "pixel-image-two",
 		codeTree: createBlockCodeTree("pixel-image-two", [
 			{
@@ -71,7 +71,7 @@ export const pixelImageBlocks: BlockShowcaseItem[] = [
 		previewComponent: PixelImageThreePreview,
 		previewHref: "/preview/magic/pixel-image/pixel-image-three",
 		previewMode: "iframe",
-		previewHeight: 820,
+		previewHeight: 520,
 		installId: "pixel-image-three",
 		codeTree: createBlockCodeTree("pixel-image-three", [
 			{
@@ -89,7 +89,7 @@ export const pixelImageBlocks: BlockShowcaseItem[] = [
 		previewComponent: PixelImageFourPreview,
 		previewHref: "/preview/magic/pixel-image/pixel-image-four",
 		previewMode: "iframe",
-		previewHeight: 820,
+		previewHeight: 520,
 		installId: "pixel-image-four",
 		codeTree: createBlockCodeTree("pixel-image-four", [
 			{

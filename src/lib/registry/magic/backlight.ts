@@ -32,7 +32,7 @@ export const backlightBlocks: BlockShowcaseItem[] = [
 		previewComponent: BacklightOnePreview,
 		previewHref: "/preview/magic/backlight/backlight-one",
 		previewMode: "iframe",
-		previewHeight: 820,
+		previewHeight: 520,
 		installId: "backlight-one",
 		codeTree: createBlockCodeTree("backlight-one", [
 			{
@@ -50,7 +50,7 @@ export const backlightBlocks: BlockShowcaseItem[] = [
 		previewComponent: BacklightTwoPreview,
 		previewHref: "/preview/magic/backlight/backlight-two",
 		previewMode: "iframe",
-		previewHeight: 820,
+		previewHeight: 520,
 		installId: "backlight-two",
 		codeTree: createBlockCodeTree("backlight-two", [
 			{
@@ -68,7 +68,7 @@ export const backlightBlocks: BlockShowcaseItem[] = [
 		previewComponent: BacklightThreePreview,
 		previewHref: "/preview/magic/backlight/backlight-three",
 		previewMode: "iframe",
-		previewHeight: 820,
+		previewHeight: 520,
 		installId: "backlight-three",
 		codeTree: createBlockCodeTree("backlight-three", [
 			{

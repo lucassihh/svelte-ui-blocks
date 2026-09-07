@@ -8,12 +8,9 @@ import ForgotPasswordThreePreview from "$lib/components/blocks/veil/forgot-passw
 import ForgotPasswordTwoPreview from "$lib/components/blocks/veil/forgot-password/forgot-password-two/forgot-password-two.svelte";
 
 // Raw
-import buttonIndexSource from "$lib/components/ui/veil-ui/button/index.ts?raw";
-import cardIndexSource from "$lib/components/ui/veil-ui/card/index.ts?raw";
 import forgotPasswordForgotPasswordOneSource from "$lib/components/blocks/veil/forgot-password/forgot-password-one/forgot-password-one.svelte?raw";
 import forgotPasswordForgotPasswordThreeSource from "$lib/components/blocks/veil/forgot-password/forgot-password-three/forgot-password-three.svelte?raw";
 import forgotPasswordForgotPasswordTwoSource from "$lib/components/blocks/veil/forgot-password/forgot-password-two/forgot-password-two.svelte?raw";
-import inputIndexSource from "$lib/components/ui/veil-ui/input/index.ts?raw";
 import labelIndexSource from "$lib/components/ui/label/index.ts?raw";
 import logoSvgSource from "$lib/assets/svg/logo.svelte?raw";
 
@@ -44,7 +41,7 @@ export const forgotPasswordBlocks: BlockShowcaseItem[] = [
 		previewComponent: ForgotPasswordOnePreview,
 		previewHref: "/preview/veil/forgot-password/forgot-password-one",
 		previewMode: "iframe",
-		previewHeight: 820,
+		previewHeight: 520,
 		installId: "forgot-password-one",
 		codeTree: createBlockCodeTree("forgot-password-one", [
 			{
@@ -63,7 +60,7 @@ export const forgotPasswordBlocks: BlockShowcaseItem[] = [
 		previewComponent: ForgotPasswordTwoPreview,
 		previewHref: "/preview/veil/forgot-password/forgot-password-two",
 		previewMode: "iframe",
-		previewHeight: 820,
+		previewHeight: 520,
 		installId: "forgot-password-two",
 		codeTree: createBlockCodeTree("forgot-password-two", [
 			{
@@ -82,7 +79,7 @@ export const forgotPasswordBlocks: BlockShowcaseItem[] = [
 		previewComponent: ForgotPasswordThreePreview,
 		previewHref: "/preview/veil/forgot-password/forgot-password-three",
 		previewMode: "iframe",
-		previewHeight: 820,
+		previewHeight: 520,
 		installId: "forgot-password-three",
 		codeTree: createBlockCodeTree("forgot-password-three", [
 			{

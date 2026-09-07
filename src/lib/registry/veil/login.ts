@@ -8,9 +8,6 @@ import LoginThreePreview from "$lib/components/blocks/veil/login/login-three/log
 import LoginTwoPreview from "$lib/components/blocks/veil/login/login-two/login-two.svelte";
 
 // Raw
-import buttonIndexSource from "$lib/components/ui/veil-ui/button/index.ts?raw";
-import cardIndexSource from "$lib/components/ui/veil-ui/card/index.ts?raw";
-import inputIndexSource from "$lib/components/ui/veil-ui/input/index.ts?raw";
 import labelIndexSource from "$lib/components/ui/label/index.ts?raw";
 import loginLoginOneSource from "$lib/components/blocks/veil/login/login-one/login-one.svelte?raw";
 import loginLoginThreeSource from "$lib/components/blocks/veil/login/login-three/login-three.svelte?raw";

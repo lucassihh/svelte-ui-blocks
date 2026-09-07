@@ -40,7 +40,7 @@ export const typingAnimationBlocks: BlockShowcaseItem[] = [
 		previewComponent: TypingAnimationOnePreview,
 		previewHref: "/preview/magic/typing-animation/typing-animation-one",
 		previewMode: "iframe",
-		previewHeight: 820,
+		previewHeight: 520,
 		installId: "typing-animation-one",
 		codeTree: createBlockCodeTree("typing-animation-one", [
 			{
@@ -58,7 +58,7 @@ export const typingAnimationBlocks: BlockShowcaseItem[] = [
 		previewComponent: TypingAnimationTwoPreview,
 		previewHref: "/preview/magic/typing-animation/typing-animation-two",
 		previewMode: "iframe",
-		previewHeight: 820,
+		previewHeight: 520,
 		installId: "typing-animation-two",
 		codeTree: createBlockCodeTree("typing-animation-two", [
 			{
@@ -76,7 +76,7 @@ export const typingAnimationBlocks: BlockShowcaseItem[] = [
 		previewComponent: TypingAnimationThreePreview,
 		previewHref: "/preview/magic/typing-animation/typing-animation-three",
 		previewMode: "iframe",
-		previewHeight: 820,
+		previewHeight: 520,
 		installId: "typing-animation-three",
 		codeTree: createBlockCodeTree("typing-animation-three", [
 			{
@@ -94,7 +94,7 @@ export const typingAnimationBlocks: BlockShowcaseItem[] = [
 		previewComponent: TypingAnimationFourPreview,
 		previewHref: "/preview/magic/typing-animation/typing-animation-four",
 		previewMode: "iframe",
-		previewHeight: 820,
+		previewHeight: 520,
 		installId: "typing-animation-four",
 		codeTree: createBlockCodeTree("typing-animation-four", [
 			{
@@ -112,7 +112,7 @@ export const typingAnimationBlocks: BlockShowcaseItem[] = [
 		previewComponent: TypingAnimationFivePreview,
 		previewHref: "/preview/magic/typing-animation/typing-animation-five",
 		previewMode: "iframe",
-		previewHeight: 820,
+		previewHeight: 520,
 		installId: "typing-animation-five",
 		codeTree: createBlockCodeTree("typing-animation-five", [
 			{
@@ -130,7 +130,7 @@ export const typingAnimationBlocks: BlockShowcaseItem[] = [
 		previewComponent: TypingAnimationSixPreview,
 		previewHref: "/preview/magic/typing-animation/typing-animation-six",
 		previewMode: "iframe",
-		previewHeight: 820,
+		previewHeight: 520,
 		installId: "typing-animation-six",
 		codeTree: createBlockCodeTree("typing-animation-six", [
 			{
@@ -148,7 +148,7 @@ export const typingAnimationBlocks: BlockShowcaseItem[] = [
 		previewComponent: TypingAnimationSevenPreview,
 		previewHref: "/preview/magic/typing-animation/typing-animation-seven",
 		previewMode: "iframe",
-		previewHeight: 820,
+		previewHeight: 520,
 		installId: "typing-animation-seven",
 		codeTree: createBlockCodeTree("typing-animation-seven", [
 			{
